@@ -31,26 +31,26 @@ const EN_BENEFITS = [
   {
     icon: Users,
     iconColor: 'text-brand-500',
-    title: 'Engaging Group Lessons',
-    desc: 'Games and real match situations that work perfectly for clinics and group lessons with mixed levels.',
+    title: 'Built for Group & Private Lessons',
+    desc: 'Every drill is tagged for drill-feed (solo), live ball, or group games — so you always pick what fits your session.',
   },
   {
     icon: Star,
     iconColor: 'text-yellow-500',
-    title: 'Student Retention',
-    desc: "Novelty drives dopamine. Your students will eagerly anticipate each lesson with drills they've never experienced before.",
+    title: 'Students Keep Coming Back',
+    desc: "Novelty drives dopamine. Your students will look forward to every lesson because no two sessions feel the same.",
   },
   {
     icon: Brain,
     iconColor: 'text-purple-500',
-    title: 'Tactical & Cognitive Training',
-    desc: 'Drills designed not just for technique, but for decision-making and tennis intelligence on the court.',
+    title: 'Tactical & Cognitive Drills',
+    desc: 'Not just technique — the platform includes decision-making and game-intelligence drills for smarter players.',
   },
   {
     icon: RefreshCw,
     iconColor: 'text-blue-500',
-    title: 'Quarterly Updates',
-    desc: 'Tennis evolves, and so do you. Receive new drill packs every 3 months — completely free, forever.',
+    title: 'New Drills Added Regularly',
+    desc: 'The platform keeps growing. New drills with fresh diagrams are added every quarter — included in your membership.',
   },
 ]
 

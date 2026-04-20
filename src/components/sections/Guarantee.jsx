@@ -8,7 +8,7 @@ const PT_CONTENT = {
 
 const EN_CONTENT = {
   title: '7-Day Money Back Guarantee',
-  body: "Test the Playbook for 7 days. Apply it in your lessons. If you don't see results in student engagement, we'll refund your money.",
+  body: "Explore the platform for 7 days. Run the drills with your students. If you don't see a difference in engagement and lesson quality, we'll refund your money.",
   btn: 'BUY WITH CONFIDENCE',
 }
 
