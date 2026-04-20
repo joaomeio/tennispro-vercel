@@ -1,4 +1,4 @@
-import { Check, Mail, Download, Lock } from 'lucide-react'
+import { Check, Mail, KeyRound, LayoutGrid } from 'lucide-react'
 
 export default function ObrigadoEn() {
   const date = new Date().toLocaleDateString('en-US')
@@ -15,10 +15,10 @@ export default function ObrigadoEn() {
               <Check className="w-10 h-10 text-emerald-600" strokeWidth={3} />
             </div>
             <h1 className="text-3xl md:text-4xl font-bold text-gray-900 mb-4">
-              Thank you for your purchase!
+              Welcome to TennisPro!
             </h1>
             <p className="text-lg text-gray-600 max-w-lg mx-auto">
-              Your order has been successfully confirmed. You will receive an email with the transaction details shortly.
+              Your purchase is confirmed. We're setting up your platform access — check your inbox in the next minute.
             </p>
           </div>
 
@@ -35,7 +35,7 @@ export default function ObrigadoEn() {
           {/* Steps */}
           <div className="space-y-8">
             <h2 className="text-xl font-bold text-gray-900 border-b border-gray-100 pb-4">
-              How to access your materials
+              How to access your platform
             </h2>
 
             <div className="grid gap-6 md:grid-cols-3">
@@ -46,9 +46,9 @@ export default function ObrigadoEn() {
                 <div className="w-10 h-10 bg-blue-50 rounded-lg flex items-center justify-center mb-4 text-blue-600">
                   <Mail className="w-6 h-6" />
                 </div>
-                <h3 className="font-semibold text-gray-900 mb-2">Check your Email</h3>
+                <h3 className="font-semibold text-gray-900 mb-2">Check your email</h3>
                 <p className="text-sm text-gray-600 leading-relaxed">
-                  We've sent an access link to your registered email address. Please also check your spam folder.
+                  You'll receive an email from us with your personal platform access link. Check spam if you don't see it.
                 </p>
               </div>
 
@@ -57,11 +57,11 @@ export default function ObrigadoEn() {
                   STEP 2
                 </div>
                 <div className="w-10 h-10 bg-purple-50 rounded-lg flex items-center justify-center mb-4 text-purple-600">
-                  <Download className="w-6 h-6" />
+                  <KeyRound className="w-6 h-6" />
                 </div>
-                <h3 className="font-semibold text-gray-900 mb-2">Download</h3>
+                <h3 className="font-semibold text-gray-900 mb-2">Set your password</h3>
                 <p className="text-sm text-gray-600 leading-relaxed">
-                  Click the download button inside the email to save your materials (PDF or ZIP file).
+                  Click the link in the email and create your password. Takes less than 30 seconds.
                 </p>
               </div>
 
@@ -70,11 +70,11 @@ export default function ObrigadoEn() {
                   STEP 3
                 </div>
                 <div className="w-10 h-10 bg-orange-50 rounded-lg flex items-center justify-center mb-4 text-orange-600">
-                  <Lock className="w-6 h-6" />
+                  <LayoutGrid className="w-6 h-6" />
                 </div>
-                <h3 className="font-semibold text-gray-900 mb-2">Access</h3>
+                <h3 className="font-semibold text-gray-900 mb-2">Start coaching</h3>
                 <p className="text-sm text-gray-600 leading-relaxed">
-                  If the file is protected, use the password sent along with your receipt to unlock it.
+                  Browse 200+ drills organized by stroke, level, and group size — all with visual diagrams.
                 </p>
               </div>
             </div>
@@ -84,7 +84,7 @@ export default function ObrigadoEn() {
             <p className="text-sm text-gray-400">
               Need help?{' '}
               <a
-                href="mailto:suporte@tennispro.site"
+                href="mailto:support@tennispro.site"
                 className="text-emerald-600 underline hover:text-emerald-700"
               >
                 Contact support

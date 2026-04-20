@@ -28,7 +28,7 @@ export default async function handler(req, res) {
       mode: 'payment',
       line_items: lineItems,
       success_url: `${siteUrl}/obrigado`,
-      cancel_url: `${siteUrl}/en`,
+      cancel_url: `${siteUrl}/`,
       allow_promotion_codes: true,
     })
 
