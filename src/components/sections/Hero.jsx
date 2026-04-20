@@ -104,14 +104,15 @@ function HeroEn({ onCtaClick }) {
           </h1>
 
           <p className="text-lg md:text-xl text-slate-600 mb-8 max-w-3xl mx-auto leading-relaxed font-medium">
-            Open the ebook. Pick a drill. Walk on court with confidence. 200+ proven drills
-            organized by stroke, level, and situation — built by ATP/WTA certified coaches.
+            Log in. Search by stroke, level, or situation. Get a visual diagram and step-by-step
+            setup in seconds. 200+ proven drills organized on a platform built for coaches — by
+            ATP/WTA certified coaches.
           </p>
 
           <div className="w-full max-w-[260px] md:max-w-[380px] mx-auto mb-12 relative z-20">
             <img
               src="/en/capa.png"
-              alt="TennisPro Ebook Cover"
+              alt="TennisPro Platform Preview"
               className="w-full rounded-2xl shadow-2xl shadow-slate-900/20 hover:scale-105 transition-transform duration-500"
             />
           </div>
@@ -121,14 +122,14 @@ function HeroEn({ onCtaClick }) {
               onClick={onCtaClick}
               className="inline-flex items-center justify-center rounded-2xl font-bold transition-all duration-200 transform hover:-translate-y-0.5 animate-heartbeat bg-green-600 hover:bg-green-500 text-white shadow-xl shadow-green-500/30 px-10 py-5 text-lg md:text-xl w-auto group hover:shadow-2xl hover:shadow-green-500/40"
             >
-              Download Your Drill Library
+              Access Your Drill Platform
               <ArrowRight className="ml-2 w-5 h-5 group-hover:translate-x-1 transition-transform" />
             </button>
             <div className="flex items-center justify-center gap-3 text-sm font-medium text-slate-500 bg-white/60 backdrop-blur-sm py-2 px-6 rounded-full border border-slate-100 shadow-sm hover:bg-white transition-colors">
               <ShieldCheck className="w-4 h-4 text-green-500" />
-              <span>100% Digital Material</span>
+              <span>Instant Platform Access</span>
               <span className="w-1 h-1 bg-slate-300 rounded-full" />
-              <span>It's yours Forever</span>
+              <span>Lifetime Membership</span>
             </div>
           </div>
         </div>

@@ -27,23 +27,23 @@ const PT_FAQS = [
 const EN_FAQS = [
   {
     q: 'Does it work for private and group lessons?',
-    a: "Yes! The material classifies exercises. You'll have specific options for drill feed (solo student) and live ball games (groups and clinics).",
+    a: "Yes! Every drill on the platform is tagged — drill feed (solo), live ball, or group game — so you always find what fits your session format.",
   },
   {
     q: 'Do I need a lot of equipment (cones, ladders)?',
-    a: '80% of drills only require the court, balls, and a racket. Extra equipment is optional for variations.',
+    a: '80% of drills only require the court, balls, and a racket. Extra equipment is optional for variations and is noted in the drill diagram.',
   },
   {
-    q: "I'm a new coach — can I apply these drills?",
-    a: 'Absolutely. The guide works like a pocket mentor. Step-by-step explanations with diagrams make it easy to apply right away.',
+    q: "I'm a new coach — can I use this platform?",
+    a: 'Absolutely. Each drill includes a visual court diagram and step-by-step instructions. You can walk on court confident in what you\'re running.',
   },
   {
     q: 'How do I get access?',
-    a: 'Immediately after payment confirmation, you receive an email with a link to download all materials and access the members area.',
+    a: 'Immediately after payment confirmation, you receive an email with your login credentials to access the platform on any device.',
   },
   {
     q: 'Is there a guarantee?',
-    a: "Yes, an unconditional 7-day guarantee. If you feel the material didn't elevate your lessons, we'll refund 100% of your money.",
+    a: "Yes, an unconditional 7-day guarantee. If you feel the platform didn't elevate your lessons, we'll refund 100% of your money.",
   },
 ]
 

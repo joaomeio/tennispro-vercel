@@ -21,24 +21,24 @@ const PT_FEATURES = [
 const EN_FEATURES = [
   {
     icon: Zap,
-    title: 'High-Intensity Drills',
-    desc: 'End the standing-in-line problem. Movement and conditioning drills that keep students active 100% of the time.',
+    title: '200+ Drills with Visual Diagrams',
+    desc: 'Every drill includes a court diagram so you can visualize the setup instantly — no guesswork, no wasted time.',
   },
   {
     icon: MapPin,
-    title: 'Level Progressions',
-    desc: 'Adaptable exercises from beginners (red/orange ball) all the way to advanced competitive players.',
+    title: 'Organized by Stroke, Level & Situation',
+    desc: 'Filter by forehand, serve, volleys, beginners, advanced, warm-up, match play — find the right drill in seconds.',
   },
   {
     icon: Smartphone,
-    title: 'Pocket Planning',
-    desc: 'No inspiration before class? Open the PDF on your phone and build a champion session in 2 minutes.',
+    title: 'Access From Any Device',
+    desc: 'Open the platform on your phone, tablet, or laptop. Your entire drill library is always one tap away on the court.',
   },
 ]
 
 export default function Features({ lang = 'pt' }) {
   const items = lang === 'en' ? EN_FEATURES : PT_FEATURES
-  const heading = lang === 'en' ? "What You'll Receive" : 'O que você vai receber'
+  const heading = lang === 'en' ? "What's Inside the Platform" : 'O que você vai receber'
 
   return (
     <section className="py-24 bg-white">
