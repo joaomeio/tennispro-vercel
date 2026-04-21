@@ -11,10 +11,10 @@ const supabaseAdmin = createClient(
   { auth: { autoRefreshToken: false, persistSession: false } }
 )
 
-const PRICE_BASIC      = 'price_1T1s5JCz3W9Jpqrl8CV9AGqW'
-const PRICE_ADVANCED   = 'price_1T1s4cCz3W9Jpqrlwjyfat0e'
-const PRICE_DOWNSELL   = 'price_1T1s5oCz3W9JpqrlGiQZSZIS'
-const PRICE_ORDER_BUMP = 'price_1T1sCECz3W9JpqrlOgQRiPot'
+const PRICE_BASIC      = 'price_1TONBjCz3W9JpqrlXyirmBW7'
+const PRICE_ADVANCED   = 'price_1T1spNCz3W9JpqrliooB8TI0'
+const PRICE_DOWNSELL   = 'price_1TONAaCz3W9Jpqrl938ERDdk'
+const PRICE_ORDER_BUMP = 'price_1T1spVCz3W9JpqrlD1BisICz'
 
 export const config = { api: { bodyParser: false } }
 
