@@ -2,7 +2,7 @@ import Stripe from 'stripe'
 
 const stripe = new Stripe(process.env.STRIPE_SECRET_KEY)
 
-const ORDER_BUMP_PRICE_ID = 'price_1T1sCECz3W9JpqrlOgQRiPot'
+const ORDER_BUMP_PRICE_ID = 'price_1T1spVCz3W9JpqrlD1BisICz'
 
 export default async function handler(req, res) {
   if (req.method !== 'POST') {
@@ -28,7 +28,7 @@ export default async function handler(req, res) {
       mode: 'payment',
       line_items: lineItems,
       success_url: `${siteUrl}/obrigado`,
-      cancel_url: `${siteUrl}/en`,
+      cancel_url: `${siteUrl}/`,
       allow_promotion_codes: true,
     })
 

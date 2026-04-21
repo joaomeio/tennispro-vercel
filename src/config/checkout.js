@@ -7,10 +7,10 @@ export const PT_LINKS = {
 
 // EN checkout — Stripe price IDs
 export const EN_PRICE_IDS = {
-  BASIC: 'price_1T1s5JCz3W9Jpqrl8CV9AGqW',
-  PREMIUM: 'price_1T1s4cCz3W9Jpqrlwjyfat0e',
-  DOWNSELL: 'price_1T1s5oCz3W9JpqrlGiQZSZIS',
-  ORDER_BUMP: 'price_1T1sCECz3W9JpqrlOgQRiPot',
+  BASIC: 'price_1TONBjCz3W9JpqrlXyirmBW7',
+  PREMIUM: 'price_1T1spNCz3W9JpqrliooB8TI0',
+  DOWNSELL: 'price_1TONAaCz3W9Jpqrl938ERDdk',
+  ORDER_BUMP: 'price_1T1spVCz3W9JpqrlD1BisICz',
 }
 
 export function handlePtCheckout(url) {
