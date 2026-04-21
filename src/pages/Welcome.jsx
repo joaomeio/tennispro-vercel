@@ -15,6 +15,7 @@ export default function Welcome() {
   const [requestingNew, setRequestingNew] = useState(false)
   const [email, setEmail] = useState('')
   const [resendSent, setResendSent] = useState(false)
+  const [autoEmail, setAutoEmail] = useState('')
 
   useEffect(() => {
     supabase.auth.getSession().then(({ data: { session } }) => {
@@ -28,6 +29,24 @@ export default function Welcome() {
     })
 
     return () => subscription.unsubscribe()
+  }, [])
+
+  useEffect(() => {
+    const params = new URLSearchParams(window.location.search)
+    const sessionId = params.get('session_id')
+    if (!sessionId) return
+
+    fetch(`/api/session-email?id=${sessionId}`)
+      .then((r) => r.json())
+      .then(({ email }) => {
+        if (!email) return
+        setAutoEmail(email)
+        return supabase.auth.resetPasswordForEmail(email, {
+          redirectTo: `${window.location.origin}/welcome`,
+        })
+      })
+      .then(() => setResendSent(true))
+      .catch(() => {})
   }, [])
 
   async function handleSetPassword(e) {
@@ -75,7 +94,9 @@ export default function Welcome() {
 
           {resendSent ? (
             <div className="bg-green-50 border border-green-200 rounded-xl p-4 text-green-700 text-sm font-medium">
-              Check your inbox — a new access link is on its way.
+              {autoEmail
+                ? `We sent your access link to ${autoEmail}. Check your inbox!`
+                : 'Check your inbox — your access link is on its way.'}
             </div>
           ) : (
             <form onSubmit={handleResendLink} className="flex flex-col gap-3">
