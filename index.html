@@ -6,6 +6,16 @@
     <title>+150 Dinâmicas para Treinadores de Tênis | Tennis Pro</title>
     <link rel="icon" type="image/x-icon" href="/icon.png" />
 
+    <!-- Auth recovery redirect — must run before any JS bundle -->
+    <script>
+      (function () {
+        var h = window.location.hash;
+        if (h && h.includes('type=recovery') && window.location.pathname !== '/welcome') {
+          window.location.replace('/welcome' + h);
+        }
+      })();
+    </script>
+
     <!-- VTurb preload -->
     <script>!function(i,n){i._plt=i._plt||(n&&n.timeOrigin?n.timeOrigin+n.now():Date.now())}(window,performance);</script>
     <link rel="preload" href="https://scripts.converteai.net/9bd390f0-c3f7-4946-b784-12be56743228/players/695b299d96807c66f23fb0c6/v4/player.js" as="script" />
