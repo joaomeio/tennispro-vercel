@@ -159,7 +159,10 @@ export default async function handler(req, res) {
   if (event.type === 'checkout.session.completed') {
     const session = event.data.object
     const email = session.customer_details?.email
-    const siteUrl = process.env.SITE_URL || 'https://www.tennispro.site'
+    const rawSiteUrl = process.env.SITE_URL || ''
+    const siteUrl = rawSiteUrl && !rawSiteUrl.includes('localhost')
+      ? rawSiteUrl
+      : 'https://www.tennispro.site'
 
     if (email) {
       try {
