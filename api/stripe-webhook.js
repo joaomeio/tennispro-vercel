@@ -75,7 +75,9 @@ async function provisionAccess(email, packages, siteUrl) {
     }
   }
 
-  return linkData?.properties?.action_link
+  const hashedToken = linkData?.properties?.hashed_token
+  const redirectTo = encodeURIComponent(`${siteUrl}/welcome`)
+  return `${process.env.SUPABASE_URL}/auth/v1/verify?token=${hashedToken}&type=recovery&redirect_to=${redirectTo}`
 }
 
 function buildEmail(accessLink, packages, siteUrl) {

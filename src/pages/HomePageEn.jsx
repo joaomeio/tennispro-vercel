@@ -1,4 +1,5 @@
-import { useState } from 'react'
+import { useState, useEffect } from 'react'
+import { useNavigate } from 'react-router-dom'
 import StickyBanner from '../components/StickyBanner'
 import FloatingNotification from '../components/FloatingNotification'
 import UpsellModal from '../components/UpsellModal'
@@ -14,6 +15,13 @@ import Footer from '../components/Footer'
 import { EN_PRICE_IDS } from '../config/checkout'
 
 export default function HomePageEn() {
+  const navigate = useNavigate()
+  useEffect(() => {
+    if (window.location.hash.includes('type=recovery')) {
+      navigate('/welcome' + window.location.hash, { replace: true })
+    }
+  }, [navigate])
+
   const [upsellOpen, setUpsellOpen] = useState(false)
   // priceId queued for the order-bump step; null = modal closed
   const [orderBumpPriceId, setOrderBumpPriceId] = useState(null)
