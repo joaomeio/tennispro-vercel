@@ -164,7 +164,7 @@ export default async function handler(req, res) {
     const rawSiteUrl = process.env.SITE_URL || ''
     const siteUrl = rawSiteUrl && !rawSiteUrl.includes('localhost')
       ? rawSiteUrl
-      : 'https://www.tennispro.site'
+      : 'https://tennispro.site'
 
     if (email) {
       try {
