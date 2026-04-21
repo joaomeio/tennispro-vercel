@@ -27,7 +27,7 @@ export default async function handler(req, res) {
     const session = await stripe.checkout.sessions.create({
       mode: 'payment',
       line_items: lineItems,
-      success_url: `${siteUrl}/obrigado`,
+      success_url: `${siteUrl}/welcome`,
       cancel_url: `${siteUrl}/`,
       allow_promotion_codes: true,
     })

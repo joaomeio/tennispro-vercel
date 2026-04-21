@@ -65,12 +65,12 @@ export default function Welcome() {
     return (
       <div className="min-h-screen bg-slate-50 flex items-center justify-center px-4">
         <div className="bg-white rounded-2xl shadow-xl p-8 max-w-md w-full text-center">
-          <div className="w-14 h-14 bg-orange-100 rounded-full flex items-center justify-center mx-auto mb-5">
-            <ShieldCheck className="w-7 h-7 text-orange-500" />
+          <div className="w-14 h-14 bg-green-100 rounded-full flex items-center justify-center mx-auto mb-5">
+            <ShieldCheck className="w-7 h-7 text-green-600" />
           </div>
-          <h1 className="text-xl font-bold text-slate-900 mb-2">Link expired or invalid</h1>
+          <h1 className="text-xl font-bold text-slate-900 mb-2">Set up your access</h1>
           <p className="text-slate-500 text-sm mb-6">
-            Access links expire after 24 hours. Enter your email to receive a new one.
+            Enter your purchase email and we'll send you a link to set your password.
           </p>
 
           {resendSent ? (
@@ -93,7 +93,7 @@ export default function Welcome() {
                 className="bg-green-600 hover:bg-green-500 text-white font-bold py-3 rounded-lg text-sm transition-colors disabled:opacity-60 flex items-center justify-center gap-2"
               >
                 {requestingNew && <Loader2 className="w-4 h-4 animate-spin" />}
-                Send New Access Link
+                Send Access Link
               </button>
             </form>
           )}
