@@ -1,4 +1,5 @@
-import { Brain, Shield, Focus, RefreshCw } from 'lucide-react'
+import { useNavigate } from 'react-router-dom'
+import { Brain, Shield, Focus, RefreshCw, ChevronLeft } from 'lucide-react'
 
 const SECTIONS = [
   {
@@ -30,8 +31,16 @@ const TOPICS = [
 ]
 
 export default function MentalGame() {
+  const navigate = useNavigate()
   return (
-    <div className="p-6 md:p-8 max-w-4xl mx-auto">
+    <div className="min-h-screen bg-gray-950 pt-14">
+      <div className="sticky top-14 z-30 bg-gray-950/95 backdrop-blur border-b border-gray-800 px-4 py-3 flex items-center gap-3">
+        <button onClick={() => navigate('/dashboard')} className="text-gray-400 hover:text-white transition-colors">
+          <ChevronLeft className="w-5 h-5" />
+        </button>
+        <span className="text-white font-semibold text-sm">Mental Game Mastery</span>
+      </div>
+    <div className="p-6 md:p-8 max-w-4xl mx-auto text-gray-300">
       <div className="mb-8">
         <div className="inline-flex items-center gap-2 bg-purple-50 text-purple-700 text-xs font-bold px-3 py-1 rounded-full uppercase tracking-wide mb-3">
           Bonus Content
@@ -73,6 +82,7 @@ export default function MentalGame() {
           The Mental Game Mastery guide is being finalized. You'll be notified by email when it's live on the platform.
         </p>
       </div>
+    </div>
     </div>
   )
 }

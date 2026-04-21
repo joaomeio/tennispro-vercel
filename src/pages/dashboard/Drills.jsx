@@ -1,5 +1,6 @@
 import { useEffect, useRef, useState } from 'react'
-import { Search, X, Loader2, AlertCircle, ChevronRight, Clock, Users } from 'lucide-react'
+import { useNavigate } from 'react-router-dom'
+import { Search, X, Loader2, AlertCircle, ChevronRight, Clock, Users, ChevronLeft } from 'lucide-react'
 import { supabase } from '../../lib/supabase'
 import CourtDiagram from '../../components/CourtDiagram'
 
@@ -164,6 +165,7 @@ function HeroDrill({ drill, onClick }) {
 // ── Main page ──────────────────────────────────────────────────────────────
 
 export default function Drills() {
+  const navigate = useNavigate()
   const [drills, setDrills]   = useState([])
   const [loading, setLoading] = useState(true)
   const [error, setError]     = useState('')
@@ -202,9 +204,12 @@ export default function Drills() {
   const featured = drills.find((d) => d.type === 'forehand' && d.level === 'advanced') ?? drills[0]
 
   return (
-    <div className="min-h-full bg-gray-950">
+    <div className="min-h-full bg-gray-950 pt-14">
       {/* Sticky search header */}
-      <div className="sticky top-0 z-30 bg-gray-950/95 backdrop-blur border-b border-gray-800 px-4 sm:px-6 py-3">
+      <div className="sticky top-14 z-30 bg-gray-950/95 backdrop-blur border-b border-gray-800 px-4 sm:px-6 py-3 flex items-center gap-3">
+        <button onClick={() => navigate('/dashboard')} className="text-gray-400 hover:text-white transition-colors shrink-0">
+          <ChevronLeft className="w-5 h-5" />
+        </button>
         <div className="relative max-w-md">
           <Search className="absolute left-3 top-1/2 -translate-y-1/2 w-4 h-4 text-gray-500" />
           <input

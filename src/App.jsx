@@ -1,10 +1,12 @@
-import { BrowserRouter, Routes, Route, Navigate } from 'react-router-dom'
+import { BrowserRouter, Routes, Route, Navigate, useNavigate } from 'react-router-dom'
+import { useEffect } from 'react'
 import { useAuth } from './context/AuthContext'
 import HomePageEn from './pages/HomePageEn'
 import ObrigadoEn from './pages/ObrigadoEn'
 import UpsellEn from './pages/UpsellEn'
 import Welcome from './pages/Welcome'
 import Dashboard from './pages/Dashboard'
+import DashboardHome from './pages/dashboard/Home'
 import Drills from './pages/dashboard/Drills'
 import TennisKids from './pages/dashboard/TennisKids'
 import LessonTemplates from './pages/dashboard/LessonTemplates'
@@ -17,11 +19,22 @@ function ProtectedRoute({ children }) {
   return children
 }
 
+function AuthRedirect() {
+  const navigate = useNavigate()
+  useEffect(() => {
+    const hash = window.location.hash
+    if (hash.includes('access_token') && hash.includes('type=recovery')) {
+      navigate('/welcome' + hash, { replace: true })
+    }
+  }, [navigate])
+  return <HomePageEn />
+}
+
 export default function App() {
   return (
     <BrowserRouter>
       <Routes>
-        <Route path="/" element={<HomePageEn />} />
+        <Route path="/" element={<AuthRedirect />} />
         <Route path="/obrigado" element={<ObrigadoEn />} />
         <Route path="/en/obrigado" element={<ObrigadoEn />} />
         <Route path="/upsell-courtly" element={<UpsellEn />} />
@@ -35,7 +48,7 @@ export default function App() {
             </ProtectedRoute>
           }
         >
-          <Route index element={<Navigate to="drills" replace />} />
+          <Route index element={<DashboardHome />} />
           <Route path="drills" element={<Drills />} />
           <Route path="tennis-kids" element={<TennisKids />} />
           <Route path="lesson-templates" element={<LessonTemplates />} />

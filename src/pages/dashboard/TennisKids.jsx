@@ -1,4 +1,5 @@
-import { Users, Star, Smile, Zap } from 'lucide-react'
+import { useNavigate } from 'react-router-dom'
+import { Users, Star, Smile, Zap, ChevronLeft } from 'lucide-react'
 
 const SECTIONS = [
   {
@@ -24,8 +25,16 @@ const SECTIONS = [
 ]
 
 export default function TennisKids() {
+  const navigate = useNavigate()
   return (
-    <div className="p-6 md:p-8 max-w-4xl mx-auto">
+    <div className="min-h-screen bg-gray-950 pt-14">
+      <div className="sticky top-14 z-30 bg-gray-950/95 backdrop-blur border-b border-gray-800 px-4 py-3 flex items-center gap-3">
+        <button onClick={() => navigate('/dashboard')} className="text-gray-400 hover:text-white transition-colors">
+          <ChevronLeft className="w-5 h-5" />
+        </button>
+        <span className="text-white font-semibold text-sm">Kids Tennis Manual</span>
+      </div>
+    <div className="p-6 md:p-8 max-w-4xl mx-auto text-gray-300">
       <div className="mb-8">
         <div className="inline-flex items-center gap-2 bg-teal-50 text-teal-700 text-xs font-bold px-3 py-1 rounded-full uppercase tracking-wide mb-3">
           Bonus Content
@@ -55,6 +64,7 @@ export default function TennisKids() {
           The complete Tennis Kids Manual is being uploaded to the platform. You'll be notified by email when it's ready.
         </p>
       </div>
+    </div>
     </div>
   )
 }

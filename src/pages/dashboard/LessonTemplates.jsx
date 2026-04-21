@@ -1,4 +1,5 @@
-import { Clock, FileText, CheckSquare, Calendar } from 'lucide-react'
+import { useNavigate } from 'react-router-dom'
+import { Clock, FileText, CheckSquare, Calendar, ChevronLeft } from 'lucide-react'
 
 const TEMPLATES = [
   { duration: '30 min', desc: 'Fast private lesson. Warm-up + one technical focus + live ball.' },
@@ -31,8 +32,16 @@ const SECTIONS = [
 ]
 
 export default function LessonTemplates() {
+  const navigate = useNavigate()
   return (
-    <div className="p-6 md:p-8 max-w-4xl mx-auto">
+    <div className="min-h-screen bg-gray-950 pt-14">
+      <div className="sticky top-14 z-30 bg-gray-950/95 backdrop-blur border-b border-gray-800 px-4 py-3 flex items-center gap-3">
+        <button onClick={() => navigate('/dashboard')} className="text-gray-400 hover:text-white transition-colors">
+          <ChevronLeft className="w-5 h-5" />
+        </button>
+        <span className="text-white font-semibold text-sm">Lesson Templates</span>
+      </div>
+    <div className="p-6 md:p-8 max-w-4xl mx-auto text-gray-300">
       <div className="mb-8">
         <div className="inline-flex items-center gap-2 bg-blue-50 text-blue-700 text-xs font-bold px-3 py-1 rounded-full uppercase tracking-wide mb-3">
           Bonus Content
@@ -72,6 +81,7 @@ export default function LessonTemplates() {
           All downloadable template files are being prepared. You'll receive an email when they're available on the platform.
         </p>
       </div>
+    </div>
     </div>
   )
 }
