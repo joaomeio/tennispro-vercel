@@ -1,97 +1,174 @@
-import { useEffect, useState } from 'react'
-import { Search, X, Loader2, AlertCircle } from 'lucide-react'
+import { useEffect, useRef, useState } from 'react'
+import { Search, X, Loader2, AlertCircle, ChevronRight, Clock, Users } from 'lucide-react'
 import { supabase } from '../../lib/supabase'
-
-// SVG tennis court diagram placeholder
-function CourtDiagram() {
-  return (
-    <svg viewBox="0 0 160 100" className="w-full h-full" xmlns="http://www.w3.org/2000/svg">
-      {/* Court surface */}
-      <rect x="0" y="0" width="160" height="100" fill="#2d6a4f" />
-      {/* Court outline */}
-      <rect x="10" y="8" width="140" height="84" fill="none" stroke="white" strokeWidth="1.5" />
-      {/* Singles sidelines */}
-      <line x1="22" y1="8" x2="22" y2="92" stroke="white" strokeWidth="1" />
-      <line x1="138" y1="8" x2="138" y2="92" stroke="white" strokeWidth="1" />
-      {/* Net */}
-      <line x1="10" y1="50" x2="150" y2="50" stroke="white" strokeWidth="2" strokeDasharray="4,3" />
-      {/* Service boxes */}
-      <line x1="80" y1="8" x2="80" y2="92" stroke="white" strokeWidth="1" />
-      <line x1="22" y1="29" x2="138" y2="29" stroke="white" strokeWidth="1" />
-      <line x1="22" y1="71" x2="138" y2="71" stroke="white" strokeWidth="1" />
-      {/* Center mark */}
-      <line x1="80" y1="46" x2="80" y2="54" stroke="white" strokeWidth="1.5" />
-    </svg>
-  )
-}
+import CourtDiagram from '../../components/CourtDiagram'
 
 const LEVEL_STYLES = {
-  beginner:     'bg-green-100 text-green-700',
-  intermediate: 'bg-yellow-100 text-yellow-700',
-  advanced:     'bg-red-100 text-red-700',
+  beginner:     'bg-green-900/60 text-green-300',
+  intermediate: 'bg-yellow-900/60 text-yellow-300',
+  advanced:     'bg-red-900/60 text-red-300',
 }
 
-const TYPE_OPTIONS     = ['All', 'forehand', 'backhand', 'serve', 'volley', 'footwork', 'return', 'groundstrokes', 'match play']
-const LEVEL_OPTIONS    = ['All', 'beginner', 'intermediate', 'advanced']
-const GROUP_OPTIONS    = ['All', 'individual', 'pairs', 'group']
+const TYPE_LABELS = {
+  forehand:      'Forehand',
+  backhand:      'Backhand',
+  serve:         'Serve',
+  volley:        'Volley',
+  footwork:      'Footwork',
+  return:        'Return',
+  groundstrokes: 'Groundstrokes',
+  'match play':  'Match Play',
+}
 
-function FilterPill({ label, active, onClick }) {
+const TYPE_ORDER = ['forehand','backhand','serve','volley','footwork','return','groundstrokes','match play']
+
+// ── Drill detail modal ──────────────────────────────────────────────────────
+
+function DrillModal({ drill, onClose }) {
+  if (!drill) return null
   return (
-    <button
-      onClick={onClick}
-      className={`px-3 py-1.5 rounded-full text-xs font-semibold transition-all duration-150 capitalize ${
-        active
-          ? 'bg-green-600 text-white shadow-sm'
-          : 'bg-white text-slate-600 border border-slate-200 hover:border-green-400 hover:text-green-700'
-      }`}
+    <div
+      className="fixed inset-0 z-50 flex items-end sm:items-center justify-center p-0 sm:p-4"
+      onClick={onClose}
     >
-      {label}
-    </button>
-  )
-}
-
-function DrillCard({ drill }) {
-  return (
-    <div className="bg-white rounded-2xl border border-slate-100 shadow-sm hover:shadow-md transition-all duration-200 overflow-hidden group">
-      {/* Court diagram */}
-      <div className="h-28 bg-[#1a4731] overflow-hidden">
-        <CourtDiagram />
-      </div>
-
-      <div className="p-4">
-        {/* Name + level badge */}
-        <div className="flex items-start gap-2 mb-2">
-          <h3 className="font-bold text-slate-900 text-sm leading-snug flex-1">{drill.name}</h3>
-          <span className={`text-[10px] font-bold px-2 py-0.5 rounded-full capitalize shrink-0 ${LEVEL_STYLES[drill.level] ?? 'bg-slate-100 text-slate-600'}`}>
-            {drill.level}
-          </span>
+      <div className="absolute inset-0 bg-black/75" />
+      <div
+        className="relative z-10 bg-gray-900 rounded-t-2xl sm:rounded-2xl w-full sm:max-w-lg overflow-hidden shadow-2xl"
+        onClick={(e) => e.stopPropagation()}
+      >
+        {/* Court diagram */}
+        <div className="h-44 sm:h-52 bg-gray-800">
+          <CourtDiagram type={drill.diagram_type} />
         </div>
 
-        <p className="text-slate-500 text-xs leading-relaxed mb-3 line-clamp-2">
-          {drill.description}
-        </p>
+        <div className="p-5">
+          {/* Level + type */}
+          <div className="flex items-center gap-2 mb-2">
+            <span className={`text-[10px] font-bold px-2 py-0.5 rounded-full capitalize ${LEVEL_STYLES[drill.level] ?? 'bg-gray-700 text-gray-300'}`}>
+              {drill.level}
+            </span>
+            <span className="text-[10px] bg-gray-800 text-gray-400 font-semibold px-2 py-0.5 rounded-full capitalize">
+              {drill.type}
+            </span>
+          </div>
 
-        <div className="flex flex-wrap gap-1.5">
-          <span className="text-[10px] bg-green-50 text-green-700 px-2 py-0.5 rounded-full font-semibold capitalize">
-            {drill.type}
-          </span>
-          <span className="text-[10px] bg-slate-100 text-slate-500 px-2 py-0.5 rounded-full font-semibold capitalize">
-            {drill.group_size}
-          </span>
+          <h2 className="text-lg font-extrabold text-white mb-2">{drill.name}</h2>
+          <p className="text-gray-400 text-sm leading-relaxed mb-4">{drill.description}</p>
+
+          <div className="flex gap-4 text-sm text-gray-500">
+            <span className="flex items-center gap-1.5">
+              <Clock className="w-3.5 h-3.5 text-green-500" />
+              {drill.duration_min ?? 10} min
+            </span>
+            <span className="flex items-center gap-1.5">
+              <Users className="w-3.5 h-3.5 text-green-500" />
+              <span className="capitalize">{drill.group_size}</span>
+            </span>
+          </div>
         </div>
+
+        <button
+          onClick={onClose}
+          className="absolute top-3 right-3 w-8 h-8 rounded-full bg-black/40 flex items-center justify-center text-white hover:bg-black/60 transition-colors"
+        >
+          <X className="w-4 h-4" />
+        </button>
       </div>
     </div>
   )
 }
 
+// ── Drill card (Netflix thumbnail) ─────────────────────────────────────────
+
+function DrillCard({ drill, onClick }) {
+  return (
+    <button
+      onClick={() => onClick(drill)}
+      className="shrink-0 w-40 sm:w-48 rounded-xl overflow-hidden bg-gray-800 hover:scale-105 hover:shadow-2xl transition-transform duration-200 text-left group"
+    >
+      <div className="h-24 sm:h-28 bg-gray-700">
+        <CourtDiagram type={drill.diagram_type} />
+      </div>
+      <div className="p-2.5">
+        <p className="text-white text-xs font-bold line-clamp-1 group-hover:text-green-400 transition-colors">{drill.name}</p>
+        <div className="flex items-center gap-1.5 mt-1">
+          <span className={`text-[9px] font-bold px-1.5 py-0.5 rounded-full capitalize ${LEVEL_STYLES[drill.level] ?? 'bg-gray-600 text-gray-300'}`}>
+            {drill.level}
+          </span>
+          <span className="text-[9px] text-gray-500 capitalize">{drill.group_size}</span>
+        </div>
+      </div>
+    </button>
+  )
+}
+
+// ── Category row (horizontal carousel) ────────────────────────────────────
+
+function CategoryRow({ type, drills, onCardClick }) {
+  const scrollRef = useRef(null)
+
+  function scrollRight() {
+    scrollRef.current?.scrollBy({ left: 320, behavior: 'smooth' })
+  }
+
+  return (
+    <div className="mb-8">
+      <div className="flex items-center justify-between px-4 sm:px-6 mb-3">
+        <h2 className="text-white font-bold text-base sm:text-lg">{TYPE_LABELS[type] ?? type}</h2>
+        <button
+          onClick={scrollRight}
+          className="flex items-center gap-0.5 text-green-400 text-xs font-semibold hover:text-green-300 transition-colors"
+        >
+          See all <ChevronRight className="w-3.5 h-3.5" />
+        </button>
+      </div>
+
+      <div
+        ref={scrollRef}
+        className="flex gap-3 overflow-x-auto px-4 sm:px-6 pb-2 scroll-smooth"
+        style={{ scrollbarWidth: 'none', msOverflowStyle: 'none' }}
+      >
+        {drills.map((drill) => (
+          <DrillCard key={drill.id} drill={drill} onClick={onCardClick} />
+        ))}
+      </div>
+    </div>
+  )
+}
+
+// ── Hero featured drill ────────────────────────────────────────────────────
+
+function HeroDrill({ drill, onClick }) {
+  if (!drill) return null
+  return (
+    <button
+      onClick={() => onClick(drill)}
+      className="relative w-full h-52 sm:h-64 overflow-hidden bg-gray-800 text-left group mb-8"
+    >
+      <div className="absolute inset-0">
+        <CourtDiagram type={drill.diagram_type} />
+      </div>
+      <div className="absolute inset-0 bg-gradient-to-t from-gray-950 via-gray-950/60 to-transparent" />
+      <div className="absolute bottom-0 left-0 right-0 p-4 sm:p-6">
+        <span className="text-[10px] font-bold text-green-400 uppercase tracking-widest">Featured Drill</span>
+        <h2 className="text-white text-xl sm:text-2xl font-extrabold mt-1 mb-1">{drill.name}</h2>
+        <p className="text-gray-400 text-xs sm:text-sm line-clamp-2">{drill.description}</p>
+        <span className="inline-flex items-center gap-1.5 mt-3 text-xs text-white bg-green-600 px-3 py-1.5 rounded-full font-semibold group-hover:bg-green-500 transition-colors">
+          View Drill
+        </span>
+      </div>
+    </button>
+  )
+}
+
+// ── Main page ──────────────────────────────────────────────────────────────
+
 export default function Drills() {
-  const [drills, setDrills]         = useState([])
-  const [loading, setLoading]       = useState(true)
-  const [error, setError]           = useState('')
-  const [search, setSearch]         = useState('')
-  const [typeFilter, setTypeFilter] = useState('All')
-  const [levelFilter, setLevelFilter] = useState('All')
-  const [groupFilter, setGroupFilter] = useState('All')
+  const [drills, setDrills]   = useState([])
+  const [loading, setLoading] = useState(true)
+  const [error, setError]     = useState('')
+  const [search, setSearch]   = useState('')
+  const [selected, setSelected] = useState(null)
 
   useEffect(() => {
     async function fetchDrills() {
@@ -107,108 +184,85 @@ export default function Drills() {
     fetchDrills()
   }, [])
 
-  const filtered = drills.filter((d) => {
-    const matchSearch = !search || d.name.toLowerCase().includes(search.toLowerCase()) || d.description?.toLowerCase().includes(search.toLowerCase())
-    const matchType   = typeFilter  === 'All' || d.type       === typeFilter
-    const matchLevel  = levelFilter === 'All' || d.level      === levelFilter
-    const matchGroup  = groupFilter === 'All' || d.group_size === groupFilter
-    return matchSearch && matchType && matchLevel && matchGroup
-  })
+  const filtered = search
+    ? drills.filter(
+        (d) =>
+          d.name.toLowerCase().includes(search.toLowerCase()) ||
+          d.description?.toLowerCase().includes(search.toLowerCase()),
+      )
+    : drills
 
-  const hasActiveFilters = typeFilter !== 'All' || levelFilter !== 'All' || groupFilter !== 'All' || search
+  // Group by type preserving category order
+  const grouped = TYPE_ORDER.reduce((acc, type) => {
+    const list = filtered.filter((d) => d.type === type)
+    if (list.length) acc[type] = list
+    return acc
+  }, {})
 
-  function clearAll() {
-    setSearch('')
-    setTypeFilter('All')
-    setLevelFilter('All')
-    setGroupFilter('All')
-  }
+  const featured = drills.find((d) => d.type === 'forehand' && d.level === 'advanced') ?? drills[0]
 
   return (
-    <div className="p-6 md:p-8 max-w-7xl mx-auto">
-      {/* Header */}
-      <div className="mb-6">
-        <h1 className="text-2xl font-extrabold text-slate-900 tracking-tight">Drills</h1>
-        <p className="text-slate-500 text-sm mt-1">
-          {loading ? '…' : `${filtered.length} drill${filtered.length !== 1 ? 's' : ''} available`}
-        </p>
-      </div>
-
-      {/* Search */}
-      <div className="relative mb-5">
-        <Search className="absolute left-3.5 top-1/2 -translate-y-1/2 w-4 h-4 text-slate-400" />
-        <input
-          type="text"
-          placeholder="Search drills…"
-          value={search}
-          onChange={(e) => setSearch(e.target.value)}
-          className="w-full bg-white border border-slate-200 rounded-xl pl-10 pr-4 py-2.5 text-sm focus:outline-none focus:ring-2 focus:ring-green-500 focus:border-transparent shadow-sm"
-        />
-        {search && (
-          <button onClick={() => setSearch('')} className="absolute right-3.5 top-1/2 -translate-y-1/2 text-slate-400 hover:text-slate-600">
-            <X className="w-4 h-4" />
-          </button>
-        )}
-      </div>
-
-      {/* Filters */}
-      <div className="flex flex-col gap-3 mb-6">
-        <div className="flex flex-wrap gap-2 items-center">
-          <span className="text-xs font-bold text-slate-400 uppercase tracking-wide w-14 shrink-0">Type</span>
-          {TYPE_OPTIONS.map((opt) => (
-            <FilterPill key={opt} label={opt} active={typeFilter === opt} onClick={() => setTypeFilter(opt)} />
-          ))}
+    <div className="min-h-full bg-gray-950">
+      {/* Sticky search header */}
+      <div className="sticky top-0 z-30 bg-gray-950/95 backdrop-blur border-b border-gray-800 px-4 sm:px-6 py-3">
+        <div className="relative max-w-md">
+          <Search className="absolute left-3 top-1/2 -translate-y-1/2 w-4 h-4 text-gray-500" />
+          <input
+            type="text"
+            placeholder="Search drills…"
+            value={search}
+            onChange={(e) => setSearch(e.target.value)}
+            className="w-full bg-gray-800 text-white text-sm rounded-full pl-9 pr-9 py-2 focus:outline-none focus:ring-2 focus:ring-green-500 placeholder-gray-500"
+          />
+          {search && (
+            <button
+              onClick={() => setSearch('')}
+              className="absolute right-3 top-1/2 -translate-y-1/2 text-gray-500 hover:text-white"
+            >
+              <X className="w-4 h-4" />
+            </button>
+          )}
         </div>
-        <div className="flex flex-wrap gap-2 items-center">
-          <span className="text-xs font-bold text-slate-400 uppercase tracking-wide w-14 shrink-0">Level</span>
-          {LEVEL_OPTIONS.map((opt) => (
-            <FilterPill key={opt} label={opt} active={levelFilter === opt} onClick={() => setLevelFilter(opt)} />
-          ))}
-        </div>
-        <div className="flex flex-wrap gap-2 items-center">
-          <span className="text-xs font-bold text-slate-400 uppercase tracking-wide w-14 shrink-0">Group</span>
-          {GROUP_OPTIONS.map((opt) => (
-            <FilterPill key={opt} label={opt} active={groupFilter === opt} onClick={() => setGroupFilter(opt)} />
-          ))}
-        </div>
-        {hasActiveFilters && (
-          <button onClick={clearAll} className="self-start flex items-center gap-1.5 text-xs text-slate-500 hover:text-red-500 transition-colors font-medium mt-1">
-            <X className="w-3.5 h-3.5" />
-            Clear all filters
-          </button>
-        )}
       </div>
 
       {/* States */}
       {loading && (
-        <div className="flex items-center justify-center py-20">
-          <Loader2 className="w-6 h-6 animate-spin text-green-600" />
+        <div className="flex items-center justify-center py-32">
+          <Loader2 className="w-6 h-6 animate-spin text-green-500" />
         </div>
       )}
 
       {!loading && error && (
-        <div className="flex items-center gap-3 bg-red-50 border border-red-100 rounded-xl p-4 text-red-600 text-sm">
+        <div className="m-6 flex items-center gap-3 bg-red-900/30 border border-red-800 rounded-xl p-4 text-red-400 text-sm">
           <AlertCircle className="w-5 h-5 shrink-0" />
           {error}
         </div>
       )}
 
-      {!loading && !error && filtered.length === 0 && (
-        <div className="text-center py-20">
-          <p className="text-slate-400 font-medium">No drills match your filters.</p>
-          <button onClick={clearAll} className="mt-3 text-sm text-green-600 hover:underline font-medium">
-            Clear filters
-          </button>
-        </div>
+      {!loading && !error && (
+        <>
+          {/* Hero — only when not searching */}
+          {!search && <HeroDrill drill={featured} onClick={setSelected} />}
+
+          {Object.keys(grouped).length === 0 ? (
+            <div className="text-center py-24">
+              <p className="text-gray-500 font-medium">No drills match your search.</p>
+              <button onClick={() => setSearch('')} className="mt-3 text-sm text-green-400 hover:underline">
+                Clear search
+              </button>
+            </div>
+          ) : (
+            <div className="pt-2 pb-6">
+              {Object.entries(grouped).map(([type, list]) => (
+                <CategoryRow key={type} type={type} drills={list} onCardClick={setSelected} />
+              ))}
+            </div>
+          )}
+        </>
       )}
 
-      {!loading && !error && filtered.length > 0 && (
-        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-4">
-          {filtered.map((drill) => (
-            <DrillCard key={drill.id} drill={drill} />
-          ))}
-        </div>
-      )}
+      {/* Drill detail modal */}
+      {selected && <DrillModal drill={selected} onClose={() => setSelected(null)} />}
     </div>
   )
 }
