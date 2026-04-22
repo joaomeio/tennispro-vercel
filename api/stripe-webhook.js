@@ -27,22 +27,12 @@ async function getRawBody(req) {
   })
 }
 
-async function getPurchasedPriceIds(sessionId) {
+async function getPurchasedPackages(sessionId) {
   const lineItems = await stripe.checkout.sessions.listLineItems(sessionId, { limit: 10 })
-  return new Set(lineItems.data.map((item) => item.price?.id).filter(Boolean))
-}
-
-function resolvePackages(priceIds) {
-  const packages = []
-  if (priceIds.has(PRICE_ADVANCED) || priceIds.has(PRICE_DOWNSELL)) {
-    packages.push({ name: 'Pro Premium Plan', price_id: PRICE_ADVANCED })
-  } else if (priceIds.has(PRICE_BASIC)) {
-    packages.push({ name: 'Basic Plan', price_id: PRICE_BASIC })
-  }
-  if (priceIds.has(PRICE_ORDER_BUMP)) {
-    packages.push({ name: 'Coaching Planner Kit', price_id: PRICE_ORDER_BUMP })
-  }
-  return packages
+  return lineItems.data.filter(item => item.price?.id).map((item) => ({
+    name: item.description || 'TennisPro Product',
+    price_id: item.price.id
+  }))
 }
 
 async function provisionAccess(email, packages, siteUrl) {
@@ -168,8 +158,7 @@ export default async function handler(req, res) {
 
     if (email) {
       try {
-        const priceIds = await getPurchasedPriceIds(session.id)
-        const packages = resolvePackages(priceIds)
+        const packages = await getPurchasedPackages(session.id)
 
         if (packages.length > 0) {
           const accessLink = await provisionAccess(email, packages, siteUrl)
