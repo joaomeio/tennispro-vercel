@@ -63,24 +63,82 @@ export default function MentalGame() {
         ))}
       </div>
 
-      {/* Topics grid */}
-      <div className="bg-white rounded-2xl border border-slate-100 shadow-sm p-6 mb-6">
-        <h2 className="font-bold text-slate-900 mb-4 text-sm">Topics covered</h2>
-        <div className="flex flex-wrap gap-2">
-          {TOPICS.map((t) => (
-            <span key={t} className="text-xs bg-purple-50 text-purple-700 px-3 py-1 rounded-full font-medium capitalize">
-              {t}
-            </span>
-          ))}
-        </div>
-      </div>
+      {/* Mental Frameworks */}
+      <div className="mt-12 mb-6">
+        <h2 className="text-xl font-extrabold text-slate-900 tracking-tight mb-4">Core Mental Frameworks</h2>
+        
+        <div className="grid gap-6">
+          {/* Framework 1 */}
+          <div className="bg-white rounded-2xl border border-slate-100 p-6">
+            <h3 className="font-bold text-slate-900 text-lg mb-3">1. The 16-Second Cure</h3>
+            <p className="text-sm text-slate-600 mb-4 leading-relaxed">
+              Based on Dr. Jim Loehr's research on top players. The time between points is crucial. This four-step process helps players reset emotionally between every single point, regardless of whether they won or lost it.
+            </p>
+            <div className="bg-purple-50/50 rounded-xl p-4 grid sm:grid-cols-4 gap-4">
+              <div>
+                <span className="font-bold text-purple-700 text-xs block mb-1">A. Positive Physical Response</span>
+                <p className="text-xs text-slate-500">Turn away from the net immediately. Head up, shoulders back, confident walk to baseline.</p>
+              </div>
+              <div>
+                <span className="font-bold text-purple-700 text-xs block mb-1">B. Relaxation</span>
+                <p className="text-xs text-slate-500">Take a deep abdominal breath. Look at the strings or a fixed object to center the eyes.</p>
+              </div>
+              <div>
+                <span className="font-bold text-purple-700 text-xs block mb-1">C. Preparation</span>
+                <p className="text-xs text-slate-500">Think about the next point. "Where am I serving?" "What's my return strategy?"</p>
+              </div>
+              <div>
+                <span className="font-bold text-purple-700 text-xs block mb-1">D. Ritual</span>
+                <p className="text-xs text-slate-500">Bounce the ball identical number of times. Stepping into the stance. Firing physical trigger.</p>
+              </div>
+            </div>
+          </div>
+          
+          {/* Framework 2 */}
+          <div className="bg-white rounded-2xl border border-slate-100 p-6">
+            <h3 className="font-bold text-slate-900 text-lg mb-3">2. Anchor Words & Self-Talk</h3>
+            <p className="text-sm text-slate-600 mb-4 leading-relaxed">
+              Negative self-talk tightens muscles. Teach players to develop personal "Anchor Words" they can say before the serve or return to create a specific physical or tactical goal.
+            </p>
+            <div className="grid sm:grid-cols-2 gap-4">
+              <div className="border border-slate-100 rounded-xl p-4">
+                <span className="font-bold text-slate-900 text-sm block mb-2">Examples of Anchor Words</span>
+                <ul className="text-sm text-slate-500 space-y-2">
+                  <li><span className="font-bold text-purple-600">"Heavy"</span> - Focus on hitting deep, heavy topspin instead of trying to hit winners.</li>
+                  <li><span className="font-bold text-purple-600">"Loose"</span> - Reminds the body to relax grip tension and swing freely.</li>
+                  <li><span className="font-bold text-purple-600">"Bounce, Hit"</span> - Saying it out loud to track the ball and stop overthinking.</li>
+                </ul>
+              </div>
+              <div className="bg-slate-50 rounded-xl p-4 flex items-center justify-center text-center">
+                <p className="text-sm text-slate-600 italic">
+                  "Instead of saying 'Don't double fault', say 'Hit up and out'. The brain does not process the word 'don't' well under stress."
+                </p>
+              </div>
+            </div>
+          </div>
 
-      <div className="bg-gradient-to-br from-purple-50 to-pink-50 border border-purple-100 rounded-2xl p-6 text-center">
-        <div className="text-3xl mb-3">🧠</div>
-        <h2 className="text-lg font-bold text-slate-900 mb-2">Full content coming soon</h2>
-        <p className="text-slate-500 text-sm max-w-sm mx-auto">
-          The Mental Game Mastery guide is being finalized. You'll be notified by email when it's live on the platform.
-        </p>
+          {/* Framework 3 */}
+          <div className="bg-white rounded-2xl border border-slate-100 p-6">
+            <h3 className="font-bold text-slate-900 text-lg mb-3">3. Managing Nerves</h3>
+            <p className="text-sm text-slate-600 mb-4 leading-relaxed">
+              Players get nervous when they care about the result. To calm nerves, bring their focus back to the present moment and tactical execution (the process) rather than winning/losing (the outcome).
+            </p>
+            <div className="grid gap-3">
+              <div className="flex gap-4 items-center border-b border-slate-50 pb-3">
+                <div className="w-8 h-8 rounded-full bg-slate-100 flex items-center justify-center shrink-0 text-slate-600 font-bold">1</div>
+                <p className="text-sm text-slate-600"><span className="font-bold text-slate-900">Name It:</span> Acknowledge the nerves. "I'm feeling tight because I want to win. That's normal."</p>
+              </div>
+              <div className="flex gap-4 items-center border-b border-slate-50 pb-3">
+                <div className="w-8 h-8 rounded-full bg-slate-100 flex items-center justify-center shrink-0 text-slate-600 font-bold">2</div>
+                <p className="text-sm text-slate-600"><span className="font-bold text-slate-900">Get Physical:</span> Nerves make footwork lazy and swings tight. The antidote is exaggerated footwork and high net clearance.</p>
+              </div>
+              <div className="flex gap-4 items-center">
+                <div className="w-8 h-8 rounded-full bg-slate-100 flex items-center justify-center shrink-0 text-slate-600 font-bold">3</div>
+                <p className="text-sm text-slate-600"><span className="font-bold text-slate-900">Small Targets:</span> In tight moments, focus on playing high percentage tennis to big targets. Pick a specific target and hit it.</p>
+              </div>
+            </div>
+          </div>
+        </div>
       </div>
     </div>
     </div>

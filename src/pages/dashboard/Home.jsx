@@ -168,67 +168,33 @@ function TemplatesPoster() {
 
 // ── Section definitions ───────────────────────────────────────────────────
 
-const SECTIONS = [
-  {
-    id: 'drills',
-    title: 'Premium Drill Library',
-    subtitle: 'TennisPro',
-    description: '250+ professional drills for every skill level — organised by category with court diagrams.',
-    badge: '250+ Drills',
-    tag: 'PREMIUM',
-    tagColor: 'bg-green-500',
-    route: '/dashboard/drills',
-    Poster: DrillsPoster,
-    locked: false,
-  },
-  {
-    id: 'tennis-kids',
-    title: 'Kids Tennis Manual',
-    subtitle: 'Bonus Content',
-    description: 'Age-appropriate games, drills, and progressions designed for juniors aged 6–14.',
-    badge: 'Ages 6–14',
-    tag: 'BONUS',
-    tagColor: 'bg-orange-500',
-    route: '/dashboard/tennis-kids',
-    Poster: KidsPoster,
-    locked: false,
-  },
-  {
-    id: 'mental-game',
-    title: 'Mental Game Mastery',
-    subtitle: 'Bonus Content',
-    description: 'Competition psychology, self-talk, focus routines, and pressure management strategies.',
-    badge: '8 Modules',
-    tag: 'BONUS',
-    tagColor: 'bg-purple-500',
-    route: '/dashboard/mental-game',
-    Poster: MentalPoster,
-    locked: false,
-  },
-  {
-    id: 'lesson-templates',
-    title: 'Lesson Templates',
-    subtitle: 'Bonus Content',
-    description: 'Ready-to-use lesson plans for 30, 45, 60, and 90-minute sessions. Print and coach.',
-    badge: '30–90 Min Plans',
-    tag: 'BONUS',
-    tagColor: 'bg-blue-500',
-    route: '/dashboard/lesson-templates',
-    Poster: TemplatesPoster,
-    locked: false,
-  },
-]
+import { MODULES } from '../../config/modules'
+import { useUserModules } from '../../hooks/useUserModules'
+
+export const SECTIONS = MODULES.map((m) => {
+  let Poster
+  if (m.id === 'drills') Poster = DrillsPoster
+  else if (m.id === 'tennis-kids') Poster = KidsPoster
+  else if (m.id === 'mental-game') Poster = MentalPoster
+  else if (m.id === 'lesson-templates') Poster = TemplatesPoster
+  else Poster = () => <div className={`w-full h-full bg-gradient-to-br ${m.color}`} />
+
+  return { ...m, Poster }
+})
 
 // ── Section card ──────────────────────────────────────────────────────────
 
-function SectionCard({ section }) {
+function SectionCard({ section, locked }) {
   const navigate = useNavigate()
-  const { title, subtitle, description, badge, tag, tagColor, route, Poster, locked } = section
+  const { title, subtitle, description, badge, tag, tagColor, route, Poster } = section
 
   return (
     <button
-      onClick={() => navigate(route)}
-      className="group relative rounded-xl overflow-hidden bg-gray-800 text-left w-full transition-all duration-300 hover:scale-[1.03] hover:shadow-2xl hover:shadow-black/60 focus:outline-none focus:ring-2 focus:ring-green-500"
+      onClick={() => {
+        if (!locked) navigate(route)
+        else navigate('/dashboard/settings')
+      }}
+      className={`group relative rounded-xl overflow-hidden bg-gray-800 text-left w-full transition-all duration-300 hover:scale-[1.03] hover:shadow-2xl hover:shadow-black/60 focus:outline-none focus:ring-2 focus:ring-green-500 ${locked ? 'opacity-80 grayscale-[0.5] hover:grayscale-0' : ''}`}
     >
       {/* Poster image */}
       <div className="w-full aspect-video relative">
@@ -308,6 +274,10 @@ function Hero() {
 // ── Home page ─────────────────────────────────────────────────────────────
 
 export default function Home() {
+  const { hasAccess, loading } = useUserModules()
+
+  if (loading) return null
+
   return (
     <div className="min-h-full bg-gray-950">
       {/* Hero */}
@@ -318,7 +288,7 @@ export default function Home() {
         <h2 className="text-white font-bold text-base sm:text-lg mb-4">Your Library</h2>
         <div className="grid grid-cols-2 lg:grid-cols-4 gap-3 sm:gap-4">
           {SECTIONS.map((s) => (
-            <SectionCard key={s.id} section={s} />
+            <SectionCard key={s.id} section={s} locked={!hasAccess(s)} />
           ))}
         </div>
       </div>

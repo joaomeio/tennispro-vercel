@@ -1,6 +1,6 @@
 import { useState, useRef, useEffect } from 'react'
 import { Outlet, useNavigate } from 'react-router-dom'
-import { LogOut, User, ChevronDown } from 'lucide-react'
+import { LogOut, User, ChevronDown, Settings as SettingsIcon } from 'lucide-react'
 import { useAuth } from '../context/AuthContext'
 
 function TopNav() {
@@ -56,6 +56,13 @@ function TopNav() {
             <div className="px-3 py-2.5 border-b border-gray-700">
               <p className="text-xs text-gray-500 font-medium truncate">{user?.email}</p>
             </div>
+            <button
+              onClick={() => { setMenuOpen(false); navigate('/dashboard/settings') }}
+              className="flex items-center gap-2.5 w-full px-3 py-2.5 text-sm text-gray-300 hover:bg-gray-700 transition-colors"
+            >
+              <SettingsIcon className="w-4 h-4" />
+              Settings
+            </button>
             <button
               onClick={handleSignOut}
               className="flex items-center gap-2.5 w-full px-3 py-2.5 text-sm text-gray-300 hover:bg-gray-700 hover:text-red-400 transition-colors"

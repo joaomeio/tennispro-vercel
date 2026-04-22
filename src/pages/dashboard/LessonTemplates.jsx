@@ -74,12 +74,67 @@ export default function LessonTemplates() {
         ))}
       </div>
 
-      <div className="bg-gradient-to-br from-blue-50 to-indigo-50 border border-blue-100 rounded-2xl p-6 text-center">
-        <div className="text-3xl mb-3">📋</div>
-        <h2 className="text-lg font-bold text-slate-900 mb-2">Full content coming soon</h2>
-        <p className="text-slate-500 text-sm max-w-sm mx-auto">
-          All downloadable template files are being prepared. You'll receive an email when they're available on the platform.
-        </p>
+      {/* Templates List */}
+      <div className="mt-12 mb-6">
+        <h2 className="text-xl font-extrabold text-slate-900 tracking-tight mb-4">Printable Templates</h2>
+        
+        <div className="grid sm:grid-cols-2 gap-4">
+          <div className="bg-white border border-slate-200 rounded-xl p-5 hover:border-blue-300 transition-colors group cursor-pointer" onClick={() => alert('Download starting...')}>
+            <div className="flex justify-between items-start mb-3">
+              <div className="w-10 h-10 bg-blue-50 text-blue-600 rounded-lg flex items-center justify-center">
+                <FileText className="w-5 h-5" />
+              </div>
+              <span className="text-xs font-bold bg-slate-100 text-slate-500 px-2 py-1 rounded">PDF</span>
+            </div>
+            <h3 className="font-bold text-slate-900 mb-1">30-Min Fast Track Lesson</h3>
+            <p className="text-xs text-slate-500 line-clamp-2">High intensity framework focused on a single technical correction followed by heavy live ball reps.</p>
+            <div className="mt-4 pt-4 border-t border-slate-100 flex items-center gap-2 text-blue-600 group-hover:text-blue-700 font-semibold text-sm">
+              <span className="underline group-hover:no-underline">Download Template</span>
+            </div>
+          </div>
+          
+          <div className="bg-white border border-slate-200 rounded-xl p-5 hover:border-blue-300 transition-colors group cursor-pointer" onClick={() => alert('Download starting...')}>
+            <div className="flex justify-between items-start mb-3">
+              <div className="w-10 h-10 bg-blue-50 text-blue-600 rounded-lg flex items-center justify-center">
+                <FileText className="w-5 h-5" />
+              </div>
+              <span className="text-xs font-bold bg-slate-100 text-slate-500 px-2 py-1 rounded">PDF</span>
+            </div>
+            <h3 className="font-bold text-slate-900 mb-1">60-Min Standard Group</h3>
+            <p className="text-xs text-slate-500 line-clamp-2">Structure for 4-6 players. Rotation systems, feeding queues, and tactical progression games.</p>
+            <div className="mt-4 pt-4 border-t border-slate-100 flex items-center gap-2 text-blue-600 group-hover:text-blue-700 font-semibold text-sm">
+              <span className="underline group-hover:no-underline">Download Template</span>
+            </div>
+          </div>
+          
+          <div className="bg-white border border-slate-200 rounded-xl p-5 hover:border-blue-300 transition-colors group cursor-pointer" onClick={() => alert('Download starting...')}>
+            <div className="flex justify-between items-start mb-3">
+              <div className="w-10 h-10 bg-blue-50 text-blue-600 rounded-lg flex items-center justify-center">
+                <CheckSquare className="w-5 h-5" />
+              </div>
+              <span className="text-xs font-bold bg-slate-100 text-slate-500 px-2 py-1 rounded">EXCEL</span>
+            </div>
+            <h3 className="font-bold text-slate-900 mb-1">Student Progress Tracker</h3>
+            <p className="text-xs text-slate-500 line-clamp-2">Spreadsheet to track skill acquisition and log what was worked on during private lessons.</p>
+            <div className="mt-4 pt-4 border-t border-slate-100 flex items-center gap-2 text-blue-600 group-hover:text-blue-700 font-semibold text-sm">
+              <span className="underline group-hover:no-underline">Download Tracker</span>
+            </div>
+          </div>
+          
+          <div className="bg-white border border-slate-200 rounded-xl p-5 hover:border-blue-300 transition-colors group cursor-pointer" onClick={() => alert('Download starting...')}>
+            <div className="flex justify-between items-start mb-3">
+              <div className="w-10 h-10 bg-blue-50 text-blue-600 rounded-lg flex items-center justify-center">
+                <Calendar className="w-5 h-5" />
+              </div>
+              <span className="text-xs font-bold bg-slate-100 text-slate-500 px-2 py-1 rounded">PDF</span>
+            </div>
+            <h3 className="font-bold text-slate-900 mb-1">Junior Competitive Planner</h3>
+            <p className="text-xs text-slate-500 line-clamp-2">Macrocycle organization detailing pre-season preparation, competition phases, and active rest.</p>
+            <div className="mt-4 pt-4 border-t border-slate-100 flex items-center gap-2 text-blue-600 group-hover:text-blue-700 font-semibold text-sm">
+              <span className="underline group-hover:no-underline">Download Planner</span>
+            </div>
+          </div>
+        </div>
       </div>
     </div>
     </div>

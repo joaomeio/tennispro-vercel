@@ -11,6 +11,7 @@ import Drills from './pages/dashboard/Drills'
 import TennisKids from './pages/dashboard/TennisKids'
 import LessonTemplates from './pages/dashboard/LessonTemplates'
 import MentalGame from './pages/dashboard/MentalGame'
+import Settings from './pages/dashboard/Settings'
 
 function ProtectedRoute({ children }) {
   const { user, loading } = useAuth()
@@ -53,6 +54,7 @@ export default function App() {
           <Route path="tennis-kids" element={<TennisKids />} />
           <Route path="lesson-templates" element={<LessonTemplates />} />
           <Route path="mental-game" element={<MentalGame />} />
+          <Route path="settings" element={<Settings />} />
         </Route>
       </Routes>
     </BrowserRouter>
