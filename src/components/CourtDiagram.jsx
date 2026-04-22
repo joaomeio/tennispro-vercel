@@ -318,10 +318,28 @@ export function CourtLegend() {
   )
 }
 
+// ── Data-Driven Renderer ──────────────────────────────────────────────────────
+
+function DataRenderer({ data }) {
+  if (!data) return null
+  return (
+    <Court>
+      {data.p2 && <P2 x={data.p2.x} y={data.p2.y} />}
+      {data.moves && data.moves.map((m, i) => <Move key={i} x1={m.x1} y1={m.y1} x2={m.x2} y2={m.y2} />)}
+      {data.p1 && <P1 x={data.p1.x} y={data.p1.y} />}
+      {data.shots && data.shots.map((s, i) => <Shot key={i} x1={s.x1} y1={s.y1} x2={s.x2} y2={s.y2} />)}
+      {data.areas && data.areas.map((a, i) => <TargetArea key={i} x={a.x} y={a.y} r={a.r ?? 25} />)}
+      {data.cones && data.cones.map((c, i) => <TargetCone key={i} x={c.x} y={c.y} />)}
+    </Court>
+  )
+}
+
 // ── Public API ────────────────────────────────────────────────────────────────
 
-export default function CourtDiagram({ type = 'crosscourt_fh_rally', showLegend = false }) {
-  const Diagram = TYPES[type] ?? CrosscourtFHRally
+export default function CourtDiagram({ type = 'crosscourt_fh_rally', diagramData = null, showLegend = false }) {
+  const isDataDriven = type === 'json' && diagramData
+
+  const Diagram = isDataDriven ? () => <DataRenderer data={diagramData} /> : (TYPES[type] ?? CrosscourtFHRally)
 
   if (showLegend) {
     return (
