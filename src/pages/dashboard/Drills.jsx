@@ -2,7 +2,7 @@ import { useEffect, useRef, useState } from 'react'
 import { useNavigate } from 'react-router-dom'
 import { Search, X, Loader2, AlertCircle, ChevronRight, Clock, Users, ChevronLeft } from 'lucide-react'
 import { supabase } from '../../lib/supabase'
-import CourtDiagram from '../../components/CourtDiagram'
+import CourtDiagram, { CourtLegend } from '../../components/CourtDiagram'
 
 const LEVEL_STYLES = {
   beginner:     'bg-green-900/60 text-green-300',
@@ -38,8 +38,12 @@ function DrillModal({ drill, onClose }) {
         onClick={(e) => e.stopPropagation()}
       >
         {/* Court diagram */}
-        <div className="h-44 sm:h-52 bg-gray-800">
-          <CourtDiagram type={drill.diagram_type} drillName={drill.name} />
+        <div className="h-64 sm:h-80 bg-gray-800">
+          <CourtDiagram type={drill.diagram_type} />
+        </div>
+
+        <div className="p-0 sm:p-2 bg-gray-950">
+          <CourtLegend />
         </div>
 
         <div className="p-5">
@@ -87,8 +91,8 @@ function DrillCard({ drill, onClick }) {
       onClick={() => onClick(drill)}
       className="shrink-0 w-40 sm:w-48 rounded-xl overflow-hidden bg-gray-800 hover:scale-105 hover:shadow-2xl transition-transform duration-200 text-left group"
     >
-      <div className="h-24 sm:h-28 bg-gray-700">
-        <CourtDiagram type={drill.diagram_type} drillName={drill.name} />
+      <div className="h-40 sm:h-48 bg-gray-700">
+        <CourtDiagram type={drill.diagram_type} />
       </div>
       <div className="p-2.5">
         <p className="text-white text-xs font-bold line-clamp-1 group-hover:text-green-400 transition-colors">{drill.name}</p>
@@ -147,7 +151,7 @@ function HeroDrill({ drill, onClick }) {
       className="relative w-full h-52 sm:h-64 overflow-hidden bg-gray-800 text-left group mb-8"
     >
       <div className="absolute inset-0">
-        <CourtDiagram type={drill.diagram_type} drillName={drill.name} />
+        <CourtDiagram type={drill.diagram_type} />
       </div>
       <div className="absolute inset-0 bg-gradient-to-t from-gray-950 via-gray-950/60 to-transparent" />
       <div className="absolute bottom-0 left-0 right-0 p-4 sm:p-6">
