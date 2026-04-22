@@ -11,10 +11,13 @@ const supabaseAdmin = createClient(
   { auth: { autoRefreshToken: false, persistSession: false } }
 )
 
-const PRICE_BASIC      = 'price_1TONBjCz3W9JpqrlXyirmBW7'
-const PRICE_ADVANCED   = 'price_1T1spNCz3W9JpqrliooB8TI0'
-const PRICE_DOWNSELL   = 'price_1TONAaCz3W9Jpqrl938ERDdk'
-const PRICE_ORDER_BUMP = 'price_1T1spVCz3W9JpqrlD1BisICz'
+const PRICE_TO_MODULES = {
+  'price_1TONBjCz3W9JpqrlXyirmBW7': ['drills'],
+  'price_1T1spNCz3W9JpqrliooB8TI0': ['drills', 'tennis-kids', 'mental-game'],
+  'price_1TONAaCz3W9Jpqrl938ERDdk': ['drills', 'tennis-kids', 'mental-game'],
+  'price_1T1spVCz3W9JpqrlD1BisICz': ['lesson-templates']
+}
+
 
 export const config = { api: { bodyParser: false } }
 
@@ -57,10 +60,20 @@ async function provisionAccess(email, packages, siteUrl) {
   const user = allUsers.find((u) => u.email === email)
 
   if (user) {
+    const grantedModules = new Set()
     for (const pkg of packages) {
-      await supabaseAdmin.from('user_purchases').upsert(
-        { user_id: user.id, package_name: pkg.name, price_id: pkg.price_id },
-        { onConflict: 'user_id,price_id' }
+      if (PRICE_TO_MODULES[pkg.price_id]) {
+        PRICE_TO_MODULES[pkg.price_id].forEach(m => grantedModules.add(m))
+      } else {
+        // Fallback: ALWAYS unlock basic drills if a random/unmapped purchase happens
+        grantedModules.add('drills')
+      }
+    }
+
+    for (const moduleId of grantedModules) {
+      await supabaseAdmin.from('user_modules').upsert(
+        { user_id: user.id, module_id: moduleId },
+        { onConflict: 'user_id,module_id' }
       )
     }
   }

@@ -101,7 +101,7 @@ function ChangePasswordForm({ onDone }) {
 export default function Settings() {
   const navigate = useNavigate()
   const { user, signOut } = useAuth()
-  const { purchases, hasAccess } = useUserModules()
+  const { hasAccess } = useUserModules()
   const [changingPassword, setChangingPassword] = useState(false)
 
   async function handleSignOut() {

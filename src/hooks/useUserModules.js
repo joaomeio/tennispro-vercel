@@ -4,33 +4,34 @@ import { useAuth } from '../context/AuthContext'
 
 export function useUserModules() {
   const { user } = useAuth()
-  const [purchases, setPurchases] = useState([])
+  const [unlockedModules, setUnlockedModules] = useState([])
   const [loading, setLoading] = useState(true)
 
   useEffect(() => {
     if (!user) { setLoading(false); return }
     supabase
-      .from('user_purchases')
-      .select('price_id, package_name')
+      .from('user_modules')
+      .select('module_id')
       .eq('user_id', user.id)
       .then(({ data }) => {
-        setPurchases(data ?? [])
+        setUnlockedModules(data?.map(d => d.module_id) ?? [])
         setLoading(false)
       })
   }, [user])
 
   function hasAccess(module) {
     if (!module) return false
-    // Any paying user unlocks modules marked includedInAnyPurchase
-    if (module.includedInAnyPurchase && purchases.length > 0) return true
-    // Specific allowed prices
-    if (module.allowedPriceIds?.length > 0) {
-      return module.allowedPriceIds.some(price => 
-        purchases.some((p) => p.price_id === price)
-      )
-    }
+    // If it's a module explicitly locked with comingSoon
+    if (module.comingSoon) return false
+    
+    // Always trust the database first
+    if (unlockedModules.includes(module.id)) return true
+    
+    // Fallback: if it's set as included in any purchase on the frontend, AND they own at least one module
+    if (module.includedInAnyPurchase && unlockedModules.length > 0) return true
+    
     return false
   }
 
-  return { purchases, loading, hasAccess }
+  return { unlockedModules, loading, hasAccess }
 }

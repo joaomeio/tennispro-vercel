@@ -5,20 +5,11 @@
 //   1. Add an entry here
 //   2. Create src/pages/dashboard/<YourPage>.jsx
 //   3. Add the route in App.jsx
-//   4. If it's a paid add-on, set allowedPriceIds to an array of Stripe price IDs
 //
 // Access rules:
-//   includedInAnyPurchase: true  → unlocked for any paying user
-//   allowedPriceIds: ['price_xxx']  → requires one of these specific purchases
-//   Both can be true             → unlocked either way
+//   Access is verified via the Supabase user_modules table.
+//   includedInAnyPurchase: true  → visually and functionally unlocked for any paying user
 // ─────────────────────────────────────────────────────────────────────────────
-
-export const STRIPE_PRICES = {
-  BASIC: 'price_1TONBjCz3W9JpqrlXyirmBW7',
-  ADVANCED: 'price_1T1spNCz3W9JpqrliooB8TI0', 
-  DOWNSELL: 'price_1TONAaCz3W9Jpqrl938ERDdk',
-  ORDER_BUMP: 'price_1T1spVCz3W9JpqrlD1BisICz'
-}
 
 export const MODULES = [
   {
@@ -33,7 +24,6 @@ export const MODULES = [
     color: 'from-green-950 to-green-900',
     // Access
     includedInAnyPurchase: true,
-    allowedPriceIds: null,
   },
   {
     id: 'tennis-kids',
@@ -46,7 +36,6 @@ export const MODULES = [
     route: '/dashboard/tennis-kids',
     color: 'from-orange-950 to-orange-900',
     includedInAnyPurchase: false,
-    allowedPriceIds: [STRIPE_PRICES.ADVANCED],
   },
   {
     id: 'mental-game',
@@ -59,7 +48,6 @@ export const MODULES = [
     route: '/dashboard/mental-game',
     color: 'from-purple-950 to-purple-900',
     includedInAnyPurchase: false,
-    allowedPriceIds: [STRIPE_PRICES.ADVANCED],
   },
   {
     id: 'lesson-templates',
@@ -72,7 +60,6 @@ export const MODULES = [
     route: '/dashboard/lesson-templates',
     color: 'from-blue-950 to-blue-900',
     includedInAnyPurchase: false,
-    allowedPriceIds: [STRIPE_PRICES.ADVANCED, STRIPE_PRICES.ORDER_BUMP],
   },
 
   // ── LOCKED ADD-ONS (future modules) ────────────────────────────────────────
@@ -87,7 +74,6 @@ export const MODULES = [
     route: '/dashboard/video-analysis',
     color: 'from-yellow-950 to-yellow-900',
     includedInAnyPurchase: false,
-    allowedPriceIds: null, // Set Stripe price ID when available
     comingSoon: true,
   },
   {
@@ -101,7 +87,6 @@ export const MODULES = [
     route: '/dashboard/tactics-board',
     color: 'from-red-950 to-red-900',
     includedInAnyPurchase: false,
-    allowedPriceIds: null,
     comingSoon: true,
   },
 ]
