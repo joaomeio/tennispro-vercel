@@ -11,6 +11,10 @@ export const EN_PRICE_IDS = {
   PREMIUM: 'price_1T1spNCz3W9JpqrliooB8TI0',
   DOWNSELL: 'price_1TONAaCz3W9Jpqrl938ERDdk',
   ORDER_BUMP: 'price_1T1spVCz3W9JpqrlD1BisICz',
+  // Add-on modules — replace placeholders with real Stripe price IDs
+  ADDON_GYM: 'price_1TP8eICz3W9Jpqrl3CFU1A1E',
+  ADDON_SERVE: 'price_1TP8edCz3W9JpqrlGX4clzHo',
+  ADDON_DOUBLES: 'price_1TP8epCz3W9JpqrlyP9EDMDt',
 }
 
 export function handlePtCheckout(url) {

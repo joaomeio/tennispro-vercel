@@ -12,6 +12,9 @@ import TennisKids from './pages/dashboard/TennisKids'
 import LessonTemplates from './pages/dashboard/LessonTemplates'
 import MentalGame from './pages/dashboard/MentalGame'
 import Settings from './pages/dashboard/Settings'
+import GymTraining from './pages/dashboard/GymTraining'
+import ServeMasterclass from './pages/dashboard/ServeMasterclass'
+import DoublesTactics from './pages/dashboard/DoublesTactics'
 
 function ProtectedRoute({ children }) {
   const { user, loading } = useAuth()
@@ -55,6 +58,9 @@ export default function App() {
           <Route path="lesson-templates" element={<LessonTemplates />} />
           <Route path="mental-game" element={<MentalGame />} />
           <Route path="settings" element={<Settings />} />
+          <Route path="gym-training" element={<GymTraining />} />
+          <Route path="serve-masterclass" element={<ServeMasterclass />} />
+          <Route path="doubles-tactics" element={<DoublesTactics />} />
         </Route>
       </Routes>
     </BrowserRouter>

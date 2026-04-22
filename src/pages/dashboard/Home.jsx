@@ -1,5 +1,7 @@
+import { useState } from 'react'
 import { useNavigate } from 'react-router-dom'
 import { Play, Lock } from 'lucide-react'
+import AddonPaywallModal from '../../components/AddonPaywallModal'
 
 // ── Section poster illustrations ─────────────────────────────────────────
 
@@ -166,6 +168,117 @@ function TemplatesPoster() {
   )
 }
 
+function GymPoster() {
+  return (
+    <svg viewBox="0 0 320 180" className="w-full h-full" xmlns="http://www.w3.org/2000/svg">
+      <defs>
+        <linearGradient id="gg" x1="0%" y1="0%" x2="100%" y2="100%">
+          <stop offset="0%" stopColor="#042f2e" />
+          <stop offset="100%" stopColor="#0d9488" />
+        </linearGradient>
+      </defs>
+      <rect width="320" height="180" fill="url(#gg)" />
+      {/* Dumbbell left */}
+      <rect x="30" y="82" width="80" height="16" rx="4" fill="rgba(255,255,255,0.12)" />
+      <rect x="22" y="72" width="16" height="36" rx="4" fill="rgba(255,255,255,0.2)" />
+      <rect x="102" y="72" width="16" height="36" rx="4" fill="rgba(255,255,255,0.2)" />
+      {/* Dumbbell right */}
+      <rect x="210" y="82" width="80" height="16" rx="4" fill="rgba(255,255,255,0.12)" />
+      <rect x="202" y="72" width="16" height="36" rx="4" fill="rgba(255,255,255,0.2)" />
+      <rect x="282" y="72" width="16" height="36" rx="4" fill="rgba(255,255,255,0.2)" />
+      {/* Center energy burst */}
+      <circle cx="160" cy="90" r="30" fill="rgba(45,212,191,0.2)" />
+      <circle cx="160" cy="90" r="18" fill="rgba(45,212,191,0.3)" />
+      <circle cx="160" cy="90" r="9" fill="#2dd4bf" opacity="0.9" />
+      {/* Speed lines */}
+      {[[-40,-25],[40,-25],[-50,0],[50,0],[-40,25],[40,25]].map(([dx, dy], i) => (
+        <line key={i}
+          x1={160 + dx * 0.6} y1={90 + dy * 0.6}
+          x2={160 + dx} y2={90 + dy}
+          stroke="rgba(45,212,191,0.5)" strokeWidth="2"
+        />
+      ))}
+      {/* Court silhouette below */}
+      <rect x="80" y="145" width="160" height="3" rx="1.5" fill="rgba(255,255,255,0.1)" />
+      <line x1="160" y1="145" x2="160" y2="148" stroke="rgba(255,255,255,0.2)" strokeWidth="1.5" />
+    </svg>
+  )
+}
+
+function ServePoster() {
+  return (
+    <svg viewBox="0 0 320 180" className="w-full h-full" xmlns="http://www.w3.org/2000/svg">
+      <defs>
+        <linearGradient id="sg" x1="0%" y1="0%" x2="100%" y2="100%">
+          <stop offset="0%" stopColor="#4c0519" />
+          <stop offset="100%" stopColor="#e11d48" />
+        </linearGradient>
+        <marker id="sa" markerWidth="5" markerHeight="5" refX="2.5" refY="2.5" orient="auto">
+          <path d="M0,0 L5,2.5 L0,5 Z" fill="#fca5a5" />
+        </marker>
+      </defs>
+      <rect width="320" height="180" fill="url(#sg)" />
+      {/* Court net line */}
+      <line x1="40" y1="120" x2="280" y2="120" stroke="rgba(255,255,255,0.2)" strokeWidth="2" />
+      <line x1="160" y1="115" x2="160" y2="125" stroke="rgba(255,255,255,0.4)" strokeWidth="2" />
+      {/* Serve arc — high trajectory */}
+      <path d="M80,150 Q160,20 240,110"
+        stroke="#fca5a5" strokeWidth="2.5" fill="none" strokeDasharray="8,4" markerEnd="url(#sa)" opacity="0.9" />
+      {/* Second arc */}
+      <path d="M80,155 Q140,60 200,110"
+        stroke="rgba(252,165,165,0.4)" strokeWidth="1.5" fill="none" strokeDasharray="5,4" />
+      {/* Server figure */}
+      <circle cx="80" cy="142" r="9" fill="#fda4af" stroke="white" strokeWidth="1.5" />
+      <line x1="80" y1="151" x2="80" y2="168" stroke="white" strokeWidth="2.5" opacity="0.8" />
+      {/* Racket arm raised */}
+      <line x1="80" y1="154" x2="100" y2="130" stroke="white" strokeWidth="2.5" opacity="0.8" />
+      <rect x="97" y="122" width="14" height="6" rx="2" fill="white" opacity="0.8" transform="rotate(-40 97 122)" />
+      {/* Ball at contact */}
+      <circle cx="109" cy="122" r="5" fill="#fde047" />
+      {/* Target zones */}
+      <rect x="140" y="95" width="40" height="25" rx="3" fill="none" stroke="rgba(252,165,165,0.5)" strokeWidth="1.5" strokeDasharray="4,3" />
+      <rect x="195" y="95" width="40" height="25" rx="3" fill="none" stroke="rgba(252,165,165,0.3)" strokeWidth="1" strokeDasharray="4,3" />
+      <text x="157" y="112" fontSize="9" fill="rgba(252,165,165,0.9)" fontWeight="bold">T</text>
+      <text x="206" y="112" fontSize="8" fill="rgba(252,165,165,0.6)">Wide</text>
+    </svg>
+  )
+}
+
+function DoublesPoster() {
+  return (
+    <svg viewBox="0 0 320 180" className="w-full h-full" xmlns="http://www.w3.org/2000/svg">
+      <defs>
+        <linearGradient id="dpg" x1="0%" y1="0%" x2="100%" y2="100%">
+          <stop offset="0%" stopColor="#1e1b4b" />
+          <stop offset="100%" stopColor="#4338ca" />
+        </linearGradient>
+      </defs>
+      <rect width="320" height="180" fill="url(#dpg)" />
+      {/* Court outline */}
+      <rect x="30" y="15" width="260" height="150" fill="none" stroke="rgba(255,255,255,0.15)" strokeWidth="1.5" />
+      {/* Net */}
+      <line x1="30" y1="90" x2="290" y2="90" stroke="rgba(255,255,255,0.3)" strokeWidth="2" strokeDasharray="5,3" />
+      {/* Service boxes */}
+      <line x1="160" y1="40" x2="160" y2="140" stroke="rgba(255,255,255,0.1)" strokeWidth="1" />
+      <line x1="30" y1="40" x2="290" y2="40" stroke="rgba(255,255,255,0.1)" strokeWidth="1" />
+      <line x1="30" y1="140" x2="290" y2="140" stroke="rgba(255,255,255,0.1)" strokeWidth="1" />
+      {/* Team 1 — both at net (top) */}
+      <circle cx="120" cy="60" r="8" fill="#818cf8" stroke="white" strokeWidth="1.5" />
+      <circle cx="200" cy="60" r="8" fill="#818cf8" stroke="white" strokeWidth="1.5" />
+      {/* Team 2 — one up one back (bottom) */}
+      <circle cx="120" cy="120" r="8" fill="#f97316" stroke="white" strokeWidth="1.5" />
+      <circle cx="200" cy="158" r="8" fill="#f97316" stroke="white" strokeWidth="1.5" />
+      {/* Ball path */}
+      <line x1="200" y1="158" x2="120" y2="120"
+        stroke="#fde047" strokeWidth="2" strokeDasharray="6,3" opacity="0.7" />
+      <line x1="120" y1="120" x2="200" y2="60"
+        stroke="#fde047" strokeWidth="2" strokeDasharray="6,3" opacity="0.7" />
+      {/* Formation label */}
+      <text x="240" y="32" fontSize="8" fill="rgba(129,140,248,0.8)" fontWeight="bold">BOTH UP</text>
+    </svg>
+  )
+}
+
 // ── Section definitions ───────────────────────────────────────────────────
 
 import { MODULES } from '../../config/modules'
@@ -177,6 +290,9 @@ export const SECTIONS = MODULES.map((m) => {
   else if (m.id === 'tennis-kids') Poster = KidsPoster
   else if (m.id === 'mental-game') Poster = MentalPoster
   else if (m.id === 'lesson-templates') Poster = TemplatesPoster
+  else if (m.id === 'gym-training') Poster = GymPoster
+  else if (m.id === 'serve-masterclass') Poster = ServePoster
+  else if (m.id === 'doubles-tactics') Poster = DoublesPoster
   else Poster = () => <div className={`w-full h-full bg-gradient-to-br ${m.color}`} />
 
   return { ...m, Poster }
@@ -184,16 +300,19 @@ export const SECTIONS = MODULES.map((m) => {
 
 // ── Section card ──────────────────────────────────────────────────────────
 
-function SectionCard({ section, locked }) {
+function SectionCard({ section, locked, onPaywall }) {
   const navigate = useNavigate()
   const { title, subtitle, description, badge, tag, tagColor, route, Poster } = section
 
+  function handleClick() {
+    if (!locked) return navigate(route)
+    if (section.isAddon) return onPaywall(section)
+    navigate('/dashboard/settings')
+  }
+
   return (
     <button
-      onClick={() => {
-        if (!locked) navigate(route)
-        else navigate('/dashboard/settings')
-      }}
+      onClick={handleClick}
       className={`group relative rounded-xl overflow-hidden bg-gray-800 text-left w-full transition-all duration-300 hover:scale-[1.03] hover:shadow-2xl hover:shadow-black/60 focus:outline-none focus:ring-2 focus:ring-green-500 ${locked ? 'opacity-80 grayscale-[0.5] hover:grayscale-0' : ''}`}
     >
       {/* Poster image */}
@@ -275,8 +394,13 @@ function Hero() {
 
 export default function Home() {
   const { hasAccess, loading } = useUserModules()
+  const [paywallModule, setPaywallModule] = useState(null)
 
   if (loading) return null
+
+  const coreModules = SECTIONS.filter((s) => !s.isAddon && !s.comingSoon)
+  const addonModules = SECTIONS.filter((s) => s.isAddon)
+  const comingSoonModules = SECTIONS.filter((s) => s.comingSoon)
 
   return (
     <div className="min-h-full bg-gray-950">
@@ -287,14 +411,35 @@ export default function Home() {
       <div className="px-4 sm:px-6 py-6">
         <h2 className="text-white font-bold text-base sm:text-lg mb-4">Your Library</h2>
         <div className="grid grid-cols-2 lg:grid-cols-4 gap-3 sm:gap-4">
-          {SECTIONS.map((s) => (
-            <SectionCard key={s.id} section={s} locked={!hasAccess(s)} />
+          {coreModules.map((s) => (
+            <SectionCard key={s.id} section={s} locked={!hasAccess(s)} onPaywall={setPaywallModule} />
+          ))}
+        </div>
+      </div>
+
+      {/* Add-on Modules */}
+      <div className="px-4 sm:px-6 pb-6">
+        <div className="flex items-center gap-3 mb-4">
+          <h2 className="text-white font-bold text-base sm:text-lg">Add-on Modules</h2>
+          <span className="text-[9px] font-black text-amber-400 bg-amber-400/10 border border-amber-400/30 px-2 py-0.5 rounded uppercase tracking-widest">Unlock separately</span>
+        </div>
+        <div className="grid grid-cols-2 lg:grid-cols-4 gap-3 sm:gap-4">
+          {addonModules.map((s) => (
+            <SectionCard key={s.id} section={s} locked={!hasAccess(s)} onPaywall={setPaywallModule} />
+          ))}
+          {comingSoonModules.map((s) => (
+            <SectionCard key={s.id} section={s} locked={true} onPaywall={setPaywallModule} />
           ))}
         </div>
       </div>
 
       {/* Quick access — drill categories */}
       <QuickAccess />
+
+      {/* Paywall modal */}
+      {paywallModule && (
+        <AddonPaywallModal module={paywallModule} onClose={() => setPaywallModule(null)} />
+      )}
     </div>
   )
 }
