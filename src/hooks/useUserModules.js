@@ -23,9 +23,11 @@ export function useUserModules() {
     if (!module) return false
     // Any paying user unlocks modules marked includedInAnyPurchase
     if (module.includedInAnyPurchase && purchases.length > 0) return true
-    // Specific add-on price required
-    if (module.addOnPriceId) {
-      return purchases.some((p) => p.price_id === module.addOnPriceId)
+    // Specific allowed prices
+    if (module.allowedPriceIds?.length > 0) {
+      return module.allowedPriceIds.some(price => 
+        purchases.some((p) => p.price_id === price)
+      )
     }
     return false
   }
