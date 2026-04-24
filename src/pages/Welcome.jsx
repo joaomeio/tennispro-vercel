@@ -36,18 +36,21 @@ export default function Welcome() {
     const sessionId = params.get('session_id')
     if (!sessionId) return
 
-    // Provision modules + send welcome email, all server-side
+    // Provision modules and get a direct recovery link — no email needed
     fetch('/api/provision-access', {
       method: 'POST',
       headers: { 'Content-Type': 'application/json' },
       body: JSON.stringify({ sessionId }),
     })
       .then((r) => r.json())
-      .then(({ email: provisionedEmail }) => {
-        if (provisionedEmail) setAutoEmail(provisionedEmail)
-        setResendSent(true)
+      .then(({ accessLink }) => {
+        if (accessLink) {
+          // Redirect straight to the Supabase verify URL — it will bounce back
+          // to /welcome with an active session, showing the password form
+          window.location.href = accessLink
+        }
       })
-      .catch(() => { setResendSent(true) })
+      .catch(() => {})
   }, [])
 
   async function handleSetPassword(e) {
