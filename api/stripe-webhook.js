@@ -42,45 +42,62 @@ async function getPurchasedPackages(sessionId) {
   }))
 }
 
-async function provisionAccess(email, packages, siteUrl) {
-  // Create user if not exists
-  const { data: { users } } = await supabaseAdmin.auth.admin.listUsers()
-  const existing = users.find((u) => u.email === email)
+// Returns { user, isNew } — never relies on a single page of listUsers
+async function getOrCreateUser(email) {
+  const { data: createData, error: createError } = await supabaseAdmin.auth.admin.createUser({
+    email,
+    email_confirm: true,
+  })
 
-  if (!existing) {
-    await supabaseAdmin.auth.admin.createUser({ email, email_confirm: true })
+  if (createData?.user) {
+    return { user: createData.user, isNew: true }
   }
 
-  // Generate a recovery link so user can set their password
+  // User already exists — paginate until found
+  let page = 1
+  while (true) {
+    const { data: { users }, error: listError } = await supabaseAdmin.auth.admin.listUsers({
+      page,
+      perPage: 1000,
+    })
+    if (listError) throw listError
+    const found = users.find((u) => u.email === email)
+    if (found) return { user: found, isNew: false }
+    if (users.length < 1000) throw new Error(`User not found after creation attempt: ${email}`)
+    page++
+  }
+}
+
+async function provisionAccess(email, packages, siteUrl) {
+  const { user, isNew } = await getOrCreateUser(email)
+
+  // Write module access rows
+  const grantedModules = new Set()
+  for (const pkg of packages) {
+    if (PRICE_TO_MODULES[pkg.price_id]) {
+      PRICE_TO_MODULES[pkg.price_id].forEach((m) => grantedModules.add(m))
+    } else {
+      grantedModules.add('drills')
+    }
+  }
+
+  for (const moduleId of grantedModules) {
+    const { error: upsertError } = await supabaseAdmin.from('user_modules').upsert(
+      { user_id: user.id, module_id: moduleId },
+      { onConflict: 'user_id,module_id' }
+    )
+    if (upsertError) throw upsertError
+  }
+
+  // Only generate a "set your password" link for brand-new users
+  if (!isNew) return null
+
   const { data: linkData, error: linkError } = await supabaseAdmin.auth.admin.generateLink({
     type: 'recovery',
     email,
     options: { redirectTo: `${siteUrl}/welcome` },
   })
   if (linkError) throw linkError
-
-  // Re-fetch to get the user id after possible creation
-  const { data: { users: allUsers } } = await supabaseAdmin.auth.admin.listUsers()
-  const user = allUsers.find((u) => u.email === email)
-
-  if (user) {
-    const grantedModules = new Set()
-    for (const pkg of packages) {
-      if (PRICE_TO_MODULES[pkg.price_id]) {
-        PRICE_TO_MODULES[pkg.price_id].forEach(m => grantedModules.add(m))
-      } else {
-        // Fallback: ALWAYS unlock basic drills if a random/unmapped purchase happens
-        grantedModules.add('drills')
-      }
-    }
-
-    for (const moduleId of grantedModules) {
-      await supabaseAdmin.from('user_modules').upsert(
-        { user_id: user.id, module_id: moduleId },
-        { onConflict: 'user_id,module_id' }
-      )
-    }
-  }
 
   const hashedToken = linkData?.properties?.hashed_token
   const redirectTo = encodeURIComponent(`${siteUrl}/welcome`)
@@ -179,14 +196,17 @@ export default async function handler(req, res) {
 
         if (packages.length > 0) {
           const accessLink = await provisionAccess(email, packages, siteUrl)
-          const { subject, html } = buildEmail(accessLink, packages, siteUrl)
 
-          await resend.emails.send({
-            from: 'Tennis Pro <contato@tennispro.site>',
-            to: email,
-            subject,
-            html,
-          })
+          // Only send the "set your password" email to brand-new users
+          if (accessLink) {
+            const { subject, html } = buildEmail(accessLink, packages, siteUrl)
+            await resend.emails.send({
+              from: 'Tennis Pro <contato@tennispro.site>',
+              to: email,
+              subject,
+              html,
+            })
+          }
         }
       } catch (err) {
         console.error('Failed to provision access:', err)
