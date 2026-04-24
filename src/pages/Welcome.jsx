@@ -167,11 +167,6 @@ export default function Welcome() {
           </div>
 
           {/* Welcome badge */}
-          <div className="inline-flex items-center gap-1.5 bg-green-500/10 border border-green-500/20 text-green-400 text-xs font-bold px-3 py-1.5 rounded-full mb-4 uppercase tracking-widest">
-            <CheckCircle2 className="w-3.5 h-3.5" />
-            Purchase confirmed
-          </div>
-
           <h1 className="text-3xl font-extrabold text-white mb-2 leading-tight">
             Welcome aboard,<br />Coach.
           </h1>

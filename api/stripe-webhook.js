@@ -15,7 +15,11 @@ const PRICE_TO_MODULES = {
   'price_1TONBjCz3W9JpqrlXyirmBW7': ['drills'],
   'price_1T1spNCz3W9JpqrliooB8TI0': ['drills', 'tennis-kids', 'mental-game'],
   'price_1TONAaCz3W9Jpqrl938ERDdk': ['drills', 'tennis-kids', 'mental-game'],
-  'price_1T1spVCz3W9JpqrlD1BisICz': ['lesson-templates']
+  'price_1T1spVCz3W9JpqrlD1BisICz': ['lesson-templates'],
+  // Add-on modules
+  'price_1TP8eICz3W9Jpqrl3CFU1A1E': ['gym-training'],
+  'price_1TP8edCz3W9JpqrlGX4clzHo': ['serve-masterclass'],
+  'price_1TP8epCz3W9JpqrlyP9EDMDt': ['doubles-tactics'],
 }
 
 

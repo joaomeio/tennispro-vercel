@@ -399,8 +399,11 @@ export default function Home() {
   if (loading) return null
 
   const coreModules = SECTIONS.filter((s) => !s.isAddon && !s.comingSoon)
-  const addonModules = SECTIONS.filter((s) => s.isAddon)
+  const unlockedAddons = SECTIONS.filter((s) => s.isAddon && hasAccess(s))
+  const lockedAddons = SECTIONS.filter((s) => s.isAddon && !hasAccess(s))
   const comingSoonModules = SECTIONS.filter((s) => s.comingSoon)
+
+  const libraryModules = [...coreModules, ...unlockedAddons]
 
   return (
     <div className="min-h-full bg-gray-950">
@@ -411,27 +414,29 @@ export default function Home() {
       <div className="px-4 sm:px-6 py-6">
         <h2 className="text-white font-bold text-base sm:text-lg mb-4">Your Library</h2>
         <div className="grid grid-cols-2 lg:grid-cols-4 gap-3 sm:gap-4">
-          {coreModules.map((s) => (
+          {libraryModules.map((s) => (
             <SectionCard key={s.id} section={s} locked={!hasAccess(s)} onPaywall={setPaywallModule} />
           ))}
         </div>
       </div>
 
-      {/* Add-on Modules */}
-      <div className="px-4 sm:px-6 pb-6">
-        <div className="flex items-center gap-3 mb-4">
-          <h2 className="text-white font-bold text-base sm:text-lg">Add-on Modules</h2>
-          <span className="text-[9px] font-black text-amber-400 bg-amber-400/10 border border-amber-400/30 px-2 py-0.5 rounded uppercase tracking-widest">Unlock separately</span>
+      {/* Add-on Modules — only shown if there are still locked addons or coming soon */}
+      {(lockedAddons.length > 0 || comingSoonModules.length > 0) && (
+        <div className="px-4 sm:px-6 pb-6">
+          <div className="flex items-center gap-3 mb-4">
+            <h2 className="text-white font-bold text-base sm:text-lg">Add-on Modules</h2>
+            <span className="text-[9px] font-black text-amber-400 bg-amber-400/10 border border-amber-400/30 px-2 py-0.5 rounded uppercase tracking-widest">Unlock separately</span>
+          </div>
+          <div className="grid grid-cols-2 lg:grid-cols-4 gap-3 sm:gap-4">
+            {lockedAddons.map((s) => (
+              <SectionCard key={s.id} section={s} locked={true} onPaywall={setPaywallModule} />
+            ))}
+            {comingSoonModules.map((s) => (
+              <SectionCard key={s.id} section={s} locked={true} onPaywall={setPaywallModule} />
+            ))}
+          </div>
         </div>
-        <div className="grid grid-cols-2 lg:grid-cols-4 gap-3 sm:gap-4">
-          {addonModules.map((s) => (
-            <SectionCard key={s.id} section={s} locked={!hasAccess(s)} onPaywall={setPaywallModule} />
-          ))}
-          {comingSoonModules.map((s) => (
-            <SectionCard key={s.id} section={s} locked={true} onPaywall={setPaywallModule} />
-          ))}
-        </div>
-      </div>
+      )}
 
       {/* Quick access — drill categories */}
       <QuickAccess />
