@@ -67,7 +67,7 @@ export default function AddonPaywallModal({ module, onClose }) {
     setLoading(true)
     setError(null)
     try {
-      await createCheckoutSession(module.priceId)
+      await createCheckoutSession(module.priceId, false, true)
     } catch (err) {
       setError(err.message || 'Something went wrong. Please try again.')
       setLoading(false)

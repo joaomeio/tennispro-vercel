@@ -1,6 +1,6 @@
 import { useEffect, useState } from 'react'
 import { useNavigate } from 'react-router-dom'
-import { ShieldCheck, Eye, EyeOff, Loader2 } from 'lucide-react'
+import { Eye, EyeOff, Loader2, Mail, CheckCircle2 } from 'lucide-react'
 import { supabase } from '../lib/supabase'
 
 export default function Welcome() {
@@ -74,121 +74,172 @@ export default function Welcome() {
 
   if (initializing) {
     return (
-      <div className="min-h-screen bg-slate-50 flex items-center justify-center">
-        <Loader2 className="w-8 h-8 animate-spin text-green-600" />
+      <div className="min-h-screen bg-slate-950 flex items-center justify-center">
+        <Loader2 className="w-8 h-8 animate-spin text-green-400" />
       </div>
     )
   }
 
   if (!session) {
     return (
-      <div className="min-h-screen bg-slate-50 flex items-center justify-center px-4">
-        <div className="bg-white rounded-2xl shadow-xl p-8 max-w-md w-full text-center">
-          <div className="w-14 h-14 bg-green-100 rounded-full flex items-center justify-center mx-auto mb-5">
-            <ShieldCheck className="w-7 h-7 text-green-600" />
-          </div>
-          <h1 className="text-xl font-bold text-slate-900 mb-2">Set up your access</h1>
-          <p className="text-slate-500 text-sm mb-6">
-            Enter your purchase email and we'll send you a link to set your password.
-          </p>
+      <div className="min-h-screen bg-slate-950 flex items-center justify-center px-4 relative overflow-hidden">
+        {/* Background decoration */}
+        <div className="absolute inset-0 pointer-events-none">
+          <div className="absolute -top-40 -right-40 w-96 h-96 rounded-full bg-green-500/5 blur-3xl" />
+          <div className="absolute -bottom-40 -left-40 w-96 h-96 rounded-full bg-green-500/5 blur-3xl" />
+        </div>
 
-          {resendSent ? (
-            <div className="bg-green-50 border border-green-200 rounded-xl p-4 text-green-700 text-sm font-medium">
-              {autoEmail
-                ? `We sent your access link to ${autoEmail}. Check your inbox!`
-                : 'Check your inbox — your access link is on its way.'}
+        <div className="relative w-full max-w-sm">
+          {/* Logo */}
+          <div className="text-center mb-8">
+            <div className="inline-flex items-center gap-2 mb-6">
+              <div className="w-8 h-8 bg-green-500 rounded-lg flex items-center justify-center">
+                <span className="text-white font-black text-sm">T</span>
+              </div>
+              <span className="text-white font-extrabold text-lg tracking-tight">TennisPro</span>
             </div>
-          ) : (
-            <form onSubmit={handleResendLink} className="flex flex-col gap-3">
-              <input
-                type="email"
-                placeholder="Your email address"
-                value={email}
-                onChange={(e) => setEmail(e.target.value)}
-                required
-                className="border border-slate-200 rounded-lg px-4 py-3 text-sm focus:outline-none focus:ring-2 focus:ring-green-500"
-              />
-              <button
-                type="submit"
-                disabled={requestingNew}
-                className="bg-green-600 hover:bg-green-500 text-white font-bold py-3 rounded-lg text-sm transition-colors disabled:opacity-60 flex items-center justify-center gap-2"
-              >
-                {requestingNew && <Loader2 className="w-4 h-4 animate-spin" />}
-                Send Access Link
-              </button>
-            </form>
-          )}
+            <h1 className="text-2xl font-extrabold text-white mb-2">Check your inbox</h1>
+            <p className="text-slate-400 text-sm leading-relaxed">
+              Enter your purchase email and we'll send you a secure link to activate your account.
+            </p>
+          </div>
+
+          <div className="bg-slate-900 border border-slate-800 rounded-2xl p-6">
+            {resendSent ? (
+              <div className="text-center py-4">
+                <div className="w-14 h-14 bg-green-500/10 rounded-full flex items-center justify-center mx-auto mb-4">
+                  <CheckCircle2 className="w-7 h-7 text-green-400" />
+                </div>
+                <p className="text-white font-bold mb-1">Link sent!</p>
+                <p className="text-slate-400 text-sm">
+                  {autoEmail
+                    ? `We sent your access link to ${autoEmail}.`
+                    : 'Your access link is on its way.'}
+                  {' '}Check your inbox (and spam folder).
+                </p>
+              </div>
+            ) : (
+              <form onSubmit={handleResendLink} className="flex flex-col gap-3">
+                <div className="relative">
+                  <Mail className="absolute left-3.5 top-1/2 -translate-y-1/2 w-4 h-4 text-slate-500" />
+                  <input
+                    type="email"
+                    placeholder="Your purchase email"
+                    value={email}
+                    onChange={(e) => setEmail(e.target.value)}
+                    required
+                    className="w-full bg-slate-800 border border-slate-700 rounded-xl pl-10 pr-4 py-3 text-sm text-white placeholder-slate-500 focus:outline-none focus:ring-2 focus:ring-green-500 focus:border-transparent"
+                  />
+                </div>
+                <button
+                  type="submit"
+                  disabled={requestingNew}
+                  className="bg-green-500 hover:bg-green-400 text-white font-bold py-3 rounded-xl text-sm transition-colors disabled:opacity-60 flex items-center justify-center gap-2"
+                >
+                  {requestingNew && <Loader2 className="w-4 h-4 animate-spin" />}
+                  Send Access Link
+                </button>
+              </form>
+            )}
+          </div>
         </div>
       </div>
     )
   }
 
   return (
-    <div className="min-h-screen bg-gradient-to-br from-green-50 to-white flex items-center justify-center px-4">
-      <div className="bg-white rounded-2xl shadow-xl p-8 max-w-md w-full">
+    <div className="min-h-screen bg-slate-950 flex items-center justify-center px-4 relative overflow-hidden">
+      {/* Background decoration */}
+      <div className="absolute inset-0 pointer-events-none">
+        <div className="absolute -top-40 -right-40 w-96 h-96 rounded-full bg-green-500/8 blur-3xl" />
+        <div className="absolute -bottom-40 -left-40 w-96 h-96 rounded-full bg-green-500/8 blur-3xl" />
+        <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[600px] h-[600px] rounded-full bg-green-500/3 blur-3xl" />
+      </div>
+
+      <div className="relative w-full max-w-sm">
+        {/* Logo */}
         <div className="text-center mb-8">
-          <div className="w-14 h-14 bg-green-100 rounded-full flex items-center justify-center mx-auto mb-4">
-            <ShieldCheck className="w-7 h-7 text-green-600" />
+          <div className="inline-flex items-center gap-2 mb-6">
+            <div className="w-8 h-8 bg-green-500 rounded-lg flex items-center justify-center">
+              <span className="text-white font-black text-sm">T</span>
+            </div>
+            <span className="text-white font-extrabold text-lg tracking-tight">TennisPro</span>
           </div>
-          <h1 className="text-2xl font-extrabold text-slate-900 mb-1">Set your password</h1>
-          <p className="text-slate-500 text-sm">
-            Welcome to TennisPro! Create a password to access your drill platform.
+
+          {/* Welcome badge */}
+          <div className="inline-flex items-center gap-1.5 bg-green-500/10 border border-green-500/20 text-green-400 text-xs font-bold px-3 py-1.5 rounded-full mb-4 uppercase tracking-widest">
+            <CheckCircle2 className="w-3.5 h-3.5" />
+            Purchase confirmed
+          </div>
+
+          <h1 className="text-3xl font-extrabold text-white mb-2 leading-tight">
+            Welcome aboard,<br />Coach.
+          </h1>
+          <p className="text-slate-400 text-sm leading-relaxed">
+            Your platform is ready. Set a password to access your drills, plans, and modules.
           </p>
         </div>
 
-        <form onSubmit={handleSetPassword} className="flex flex-col gap-4">
-          <div>
-            <label className="block text-xs font-semibold text-slate-600 mb-1.5 uppercase tracking-wide">
-              Password
-            </label>
-            <div className="relative">
+        {/* Card */}
+        <div className="bg-slate-900 border border-slate-800 rounded-2xl p-6">
+          <form onSubmit={handleSetPassword} className="flex flex-col gap-4">
+            <div>
+              <label className="block text-xs font-bold text-slate-400 mb-2 uppercase tracking-widest">
+                Password
+              </label>
+              <div className="relative">
+                <input
+                  type={showPw ? 'text' : 'password'}
+                  value={password}
+                  onChange={(e) => setPassword(e.target.value)}
+                  placeholder="At least 8 characters"
+                  required
+                  className="w-full bg-slate-800 border border-slate-700 rounded-xl px-4 py-3 text-sm text-white placeholder-slate-500 pr-11 focus:outline-none focus:ring-2 focus:ring-green-500 focus:border-transparent"
+                />
+                <button
+                  type="button"
+                  onClick={() => setShowPw((v) => !v)}
+                  className="absolute right-3.5 top-1/2 -translate-y-1/2 text-slate-500 hover:text-slate-300 transition-colors"
+                >
+                  {showPw ? <EyeOff className="w-4 h-4" /> : <Eye className="w-4 h-4" />}
+                </button>
+              </div>
+            </div>
+
+            <div>
+              <label className="block text-xs font-bold text-slate-400 mb-2 uppercase tracking-widest">
+                Confirm Password
+              </label>
               <input
                 type={showPw ? 'text' : 'password'}
-                value={password}
-                onChange={(e) => setPassword(e.target.value)}
-                placeholder="At least 8 characters"
+                value={confirm}
+                onChange={(e) => setConfirm(e.target.value)}
+                placeholder="Repeat your password"
                 required
-                className="w-full border border-slate-200 rounded-lg px-4 py-3 text-sm pr-10 focus:outline-none focus:ring-2 focus:ring-green-500 focus:border-transparent"
+                className="w-full bg-slate-800 border border-slate-700 rounded-xl px-4 py-3 text-sm text-white placeholder-slate-500 focus:outline-none focus:ring-2 focus:ring-green-500 focus:border-transparent"
               />
-              <button
-                type="button"
-                onClick={() => setShowPw((v) => !v)}
-                className="absolute right-3 top-1/2 -translate-y-1/2 text-slate-400 hover:text-slate-600"
-              >
-                {showPw ? <EyeOff className="w-4 h-4" /> : <Eye className="w-4 h-4" />}
-              </button>
             </div>
-          </div>
 
-          <div>
-            <label className="block text-xs font-semibold text-slate-600 mb-1.5 uppercase tracking-wide">
-              Confirm Password
-            </label>
-            <input
-              type={showPw ? 'text' : 'password'}
-              value={confirm}
-              onChange={(e) => setConfirm(e.target.value)}
-              placeholder="Repeat your password"
-              required
-              className="w-full border border-slate-200 rounded-lg px-4 py-3 text-sm focus:outline-none focus:ring-2 focus:ring-green-500 focus:border-transparent"
-            />
-          </div>
+            {error && (
+              <p className="text-red-400 text-sm bg-red-500/10 border border-red-500/20 rounded-xl px-4 py-3">
+                {error}
+              </p>
+            )}
 
-          {error && (
-            <p className="text-red-500 text-sm bg-red-50 border border-red-100 rounded-lg px-4 py-3">
-              {error}
-            </p>
-          )}
+            <button
+              type="submit"
+              disabled={submitting}
+              className="bg-green-500 hover:bg-green-400 text-white font-extrabold py-3.5 rounded-xl text-sm transition-colors disabled:opacity-60 flex items-center justify-center gap-2 mt-1"
+            >
+              {submitting && <Loader2 className="w-4 h-4 animate-spin" />}
+              {submitting ? 'Setting up your account…' : 'Enter the Platform →'}
+            </button>
+          </form>
+        </div>
 
-          <button
-            type="submit"
-            disabled={submitting}
-            className="bg-green-600 hover:bg-green-500 text-white font-bold py-3.5 rounded-xl text-sm transition-colors disabled:opacity-60 flex items-center justify-center gap-2 mt-1"
-          >
-            {submitting && <Loader2 className="w-4 h-4 animate-spin" />}
-            {submitting ? 'Setting password…' : 'Enter the Platform →'}
-          </button>
-        </form>
+        <p className="text-center text-xs text-slate-600 mt-4">
+          Secure login · Your data is protected
+        </p>
       </div>
     </div>
   )

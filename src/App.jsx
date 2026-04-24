@@ -24,13 +24,22 @@ function ProtectedRoute({ children }) {
 }
 
 function AuthRedirect() {
+  const { user, loading } = useAuth()
   const navigate = useNavigate()
+
   useEffect(() => {
+    if (loading) return
+    if (user) {
+      navigate('/dashboard', { replace: true })
+      return
+    }
     const hash = window.location.hash
     if (hash.includes('access_token') && hash.includes('type=recovery')) {
       navigate('/welcome' + hash, { replace: true })
     }
-  }, [navigate])
+  }, [navigate, user, loading])
+
+  if (loading || user) return null
   return <HomePageEn />
 }
 

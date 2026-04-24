@@ -9,7 +9,7 @@ export default async function handler(req, res) {
     return res.status(405).json({ error: 'Method not allowed' })
   }
 
-  const { priceId, orderBump = false } = req.body
+  const { priceId, orderBump = false, isAddon = false } = req.body
 
   if (!priceId) {
     return res.status(400).json({ error: 'priceId is required' })
@@ -27,7 +27,9 @@ export default async function handler(req, res) {
     const session = await stripe.checkout.sessions.create({
       mode: 'payment',
       line_items: lineItems,
-      success_url: `${siteUrl}/welcome?session_id={CHECKOUT_SESSION_ID}`,
+      success_url: isAddon
+        ? `${siteUrl}/dashboard`
+        : `${siteUrl}/welcome?session_id={CHECKOUT_SESSION_ID}`,
       cancel_url: `${siteUrl}/`,
       allow_promotion_codes: true,
     })
