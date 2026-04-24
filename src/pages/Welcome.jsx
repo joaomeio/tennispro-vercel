@@ -36,7 +36,7 @@ export default function Welcome() {
     const sessionId = params.get('session_id')
     if (!sessionId) return
 
-    // Provision modules immediately — don't wait for the webhook
+    // Provision modules + send welcome email, all server-side
     fetch('/api/provision-access', {
       method: 'POST',
       headers: { 'Content-Type': 'application/json' },
@@ -44,14 +44,10 @@ export default function Welcome() {
     })
       .then((r) => r.json())
       .then(({ email: provisionedEmail }) => {
-        if (!provisionedEmail) return
-        setAutoEmail(provisionedEmail)
-        return supabase.auth.resetPasswordForEmail(provisionedEmail, {
-          redirectTo: `${window.location.origin}/welcome`,
-        })
+        if (provisionedEmail) setAutoEmail(provisionedEmail)
+        setResendSent(true)
       })
-      .then(() => setResendSent(true))
-      .catch(() => {})
+      .catch(() => { setResendSent(true) })
   }, [])
 
   async function handleSetPassword(e) {

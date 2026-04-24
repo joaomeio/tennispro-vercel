@@ -46,6 +46,16 @@ export default function HomePageEn() {
 
   return (
     <div className="bg-white text-slate-800 w-full overflow-x-hidden relative">
+      {/* Discrete sign-in link */}
+      <div className="fixed top-3 right-4 z-50">
+        <button
+          onClick={() => navigate('/welcome')}
+          className="text-xs text-slate-400 hover:text-slate-600 transition-colors px-3 py-1.5 rounded-full hover:bg-slate-100"
+        >
+          Sign in
+        </button>
+      </div>
+
       <StickyBanner text="EXCLUSIVE DISCOUNT TODAY" />
       <FloatingNotification lang="en" />
 
