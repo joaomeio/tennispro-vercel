@@ -1,4 +1,4 @@
-import { useState } from 'react'
+import { useState, useEffect } from 'react'
 import { useNavigate } from 'react-router-dom'
 import { Play, Lock } from 'lucide-react'
 import AddonPaywallModal from '../../components/AddonPaywallModal'
@@ -393,8 +393,27 @@ function Hero() {
 // ── Home page ─────────────────────────────────────────────────────────────
 
 export default function Home() {
-  const { hasAccess, loading } = useUserModules()
+  const { hasAccess, loading, refresh } = useUserModules()
   const [paywallModule, setPaywallModule] = useState(null)
+  const navigate = useNavigate()
+
+  useEffect(() => {
+    const params = new URLSearchParams(window.location.search)
+    const sessionId = params.get('session_id')
+    if (!sessionId) return
+
+    // Clean the URL immediately so a refresh doesn't re-provision
+    navigate('/dashboard', { replace: true })
+
+    fetch('/api/provision-access', {
+      method: 'POST',
+      headers: { 'Content-Type': 'application/json' },
+      body: JSON.stringify({ sessionId }),
+    })
+      .then((r) => r.json())
+      .then((data) => { if (data.success) refresh() })
+      .catch(() => {})
+  }, [])
 
   if (loading) return null
 

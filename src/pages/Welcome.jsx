@@ -36,12 +36,17 @@ export default function Welcome() {
     const sessionId = params.get('session_id')
     if (!sessionId) return
 
-    fetch(`/api/session-email?id=${sessionId}`)
+    // Provision modules immediately — don't wait for the webhook
+    fetch('/api/provision-access', {
+      method: 'POST',
+      headers: { 'Content-Type': 'application/json' },
+      body: JSON.stringify({ sessionId }),
+    })
       .then((r) => r.json())
-      .then(({ email }) => {
-        if (!email) return
-        setAutoEmail(email)
-        return supabase.auth.resetPasswordForEmail(email, {
+      .then(({ email: provisionedEmail }) => {
+        if (!provisionedEmail) return
+        setAutoEmail(provisionedEmail)
+        return supabase.auth.resetPasswordForEmail(provisionedEmail, {
           redirectTo: `${window.location.origin}/welcome`,
         })
       })

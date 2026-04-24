@@ -28,7 +28,7 @@ export default async function handler(req, res) {
       mode: 'payment',
       line_items: lineItems,
       success_url: isAddon
-        ? `${siteUrl}/dashboard`
+        ? `${siteUrl}/dashboard?session_id={CHECKOUT_SESSION_ID}`
         : `${siteUrl}/welcome?session_id={CHECKOUT_SESSION_ID}`,
       cancel_url: `${siteUrl}/`,
       allow_promotion_codes: true,

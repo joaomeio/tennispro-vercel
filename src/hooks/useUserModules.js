@@ -1,4 +1,4 @@
-import { useEffect, useState } from 'react'
+import { useEffect, useState, useCallback } from 'react'
 import { supabase } from '../lib/supabase'
 import { useAuth } from '../context/AuthContext'
 
@@ -7,7 +7,7 @@ export function useUserModules() {
   const [unlockedModules, setUnlockedModules] = useState([])
   const [loading, setLoading] = useState(true)
 
-  useEffect(() => {
+  const fetchModules = useCallback(() => {
     if (!user) { setLoading(false); return }
     supabase
       .from('user_modules')
@@ -18,6 +18,8 @@ export function useUserModules() {
         setLoading(false)
       })
   }, [user])
+
+  useEffect(() => { fetchModules() }, [fetchModules])
 
   function hasAccess(module) {
     if (!module) return false
@@ -33,5 +35,5 @@ export function useUserModules() {
     return false
   }
 
-  return { unlockedModules, loading, hasAccess }
+  return { unlockedModules, loading, hasAccess, refresh: fetchModules }
 }
