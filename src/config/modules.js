@@ -129,34 +129,6 @@ export const MODULES = [
       'Communication frameworks to build winning partnerships',
     ],
   },
-
-  // ── COMING SOON ADD-ONS ───────────────────────────────────────────────────
-  {
-    id: 'video-analysis',
-    title: 'Video Analysis Toolkit',
-    subtitle: 'Add-on Module',
-    description: 'Frame-by-frame video analysis templates, swing checklists, and player evaluation forms.',
-    badge: 'Coming Soon',
-    tag: 'ADD-ON',
-    tagColor: 'bg-yellow-600',
-    route: '/dashboard/video-analysis',
-    color: 'from-yellow-950 to-yellow-900',
-    includedInAnyPurchase: false,
-    comingSoon: true,
-  },
-  {
-    id: 'tactics-board',
-    title: 'Tactics & Pattern Library',
-    subtitle: 'Add-on Module',
-    description: '100+ tactical point construction patterns with professional matchplay scenarios and court positioning.',
-    badge: '100+ Patterns',
-    tag: 'ADD-ON',
-    tagColor: 'bg-red-600',
-    route: '/dashboard/tactics-board',
-    color: 'from-red-950 to-red-900',
-    includedInAnyPurchase: false,
-    comingSoon: true,
-  },
 ]
 
 export function getModule(id) {

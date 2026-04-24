@@ -1,6 +1,7 @@
 import { useEffect, useState } from 'react'
 import { X, Check, Lock, Zap, ShieldCheck } from 'lucide-react'
 import { createCheckoutSession } from '../config/checkout'
+import { useAuth } from '../context/AuthContext'
 
 const MODULE_VISUALS = {
   'gym-training': {
@@ -43,6 +44,7 @@ const DEFAULT_VISUAL = {
 }
 
 export default function AddonPaywallModal({ module, onClose }) {
+  const { user } = useAuth()
   const [loading, setLoading] = useState(false)
   const [error, setError] = useState(null)
 
@@ -67,7 +69,7 @@ export default function AddonPaywallModal({ module, onClose }) {
     setLoading(true)
     setError(null)
     try {
-      await createCheckoutSession(module.priceId, false, true)
+      await createCheckoutSession(module.priceId, false, true, user?.email ?? null)
     } catch (err) {
       setError(err.message || 'Something went wrong. Please try again.')
       setLoading(false)

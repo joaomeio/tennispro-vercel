@@ -1,6 +1,5 @@
 import { useState, useEffect } from 'react'
 import { useNavigate } from 'react-router-dom'
-import StickyBanner from '../components/StickyBanner'
 import FloatingNotification from '../components/FloatingNotification'
 import UpsellModal from '../components/UpsellModal'
 import OrderBumpModal from '../components/OrderBumpModal'
@@ -56,7 +55,6 @@ export default function HomePageEn() {
         </button>
       </div>
 
-      <StickyBanner text="EXCLUSIVE DISCOUNT TODAY" />
       <FloatingNotification lang="en" />
 
       {/* Step 1: upsell when basic is chosen */}

@@ -381,52 +381,47 @@ export default function ServeMasterclass() {
   const navigate = useNavigate()
   const [activeTab, setActiveTab] = useState('mechanics')
 
-  const renderTab = () => {
-    switch (activeTab) {
-      case 'mechanics': return <MechanicsTab />
-      case 'spin-serves': return <SpinServesTab />
-      case 'placement': return <PlacementTab />
-      case 'second-serve': return <SecondServeTab />
-      case 'practice': return <PracticeTab />
-      default: return null
-    }
-  }
-
   return (
-    <div className="min-h-full bg-slate-50">
-      <div className="bg-gradient-to-r from-rose-950 to-rose-900 px-4 sm:px-6 pt-5 pb-6">
-        <button
-          onClick={() => navigate('/dashboard')}
-          className="flex items-center gap-1.5 text-rose-300 hover:text-white text-sm font-medium mb-4 transition-colors"
-        >
-          <ChevronLeft className="w-4 h-4" />
-          Back
+    <div className="min-h-screen bg-gray-950 pt-14">
+      <div className="sticky top-14 z-30 bg-gray-950/95 backdrop-blur border-b border-gray-800 px-4 py-3 flex items-center gap-3">
+        <button onClick={() => navigate('/dashboard')} className="text-gray-400 hover:text-white transition-colors">
+          <ChevronLeft className="w-5 h-5" />
         </button>
-        <div className="flex items-center gap-3 mb-1">
-          <span className="bg-rose-600 text-white text-[9px] font-black px-2 py-0.5 rounded tracking-widest uppercase">ADD-ON</span>
-        </div>
-        <h1 className="text-white text-xl sm:text-2xl font-extrabold mb-1">Serve Masterclass</h1>
-        <p className="text-rose-300 text-sm">Master every serve variation and become the player who controls every game</p>
+        <span className="text-white font-semibold text-sm">Serve Masterclass</span>
       </div>
 
-      <div className="bg-white border-b border-slate-200 overflow-x-auto">
-        <div className="flex min-w-max px-4 sm:px-6">
-          {TABS.map(({ id, label }) => (
+      <div className="max-w-4xl mx-auto px-4 md:px-8 pt-6 pb-12">
+        <div className="mb-6">
+          <div className="inline-flex items-center gap-2 bg-rose-900/50 text-rose-400 text-xs font-bold px-3 py-1 rounded-full uppercase tracking-wide mb-3">
+            Add-On
+          </div>
+          <h1 className="text-2xl font-extrabold text-white tracking-tight">Serve Masterclass</h1>
+          <p className="text-gray-400 text-sm mt-1.5 max-w-xl">
+            Master every serve variation and become the player who controls every game.
+          </p>
+        </div>
+
+        <div className="flex gap-1 mb-6 overflow-x-auto pb-1">
+          {TABS.map(tab => (
             <button
-              key={id}
-              onClick={() => setActiveTab(id)}
-              className={`px-4 py-3 text-sm font-semibold border-b-2 transition-colors whitespace-nowrap ${
-                activeTab === id ? 'border-rose-600 text-rose-700' : 'border-transparent text-slate-500 hover:text-slate-800'
+              key={tab.id}
+              onClick={() => setActiveTab(tab.id)}
+              className={`px-4 py-2 rounded-lg text-xs font-semibold whitespace-nowrap transition-colors ${
+                activeTab === tab.id
+                  ? 'bg-rose-600 text-white'
+                  : 'bg-gray-800 text-gray-400 hover:text-white hover:bg-gray-700'
               }`}
             >
-              {label}
+              {tab.label}
             </button>
           ))}
         </div>
-      </div>
 
-      <div className="px-4 sm:px-6 py-6 max-w-4xl mx-auto">
-        {renderTab()}
+        {activeTab === 'mechanics' && <MechanicsTab />}
+        {activeTab === 'spin-serves' && <SpinServesTab />}
+        {activeTab === 'placement' && <PlacementTab />}
+        {activeTab === 'second-serve' && <SecondServeTab />}
+        {activeTab === 'practice' && <PracticeTab />}
       </div>
     </div>
   )
