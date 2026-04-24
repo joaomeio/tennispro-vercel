@@ -1,6 +1,9 @@
 import { useState } from 'react'
 import { useNavigate } from 'react-router-dom'
 import { ChevronLeft } from 'lucide-react'
+import { useUserModules } from '../../hooks/useUserModules'
+import { getModule } from '../../config/modules'
+import AddonPaywallModal from '../../components/AddonPaywallModal'
 
 const TABS = [
   { id: 'how', label: 'How It Works' },
@@ -359,6 +362,12 @@ function PlanningTab() {
 export default function LessonTemplates() {
   const navigate = useNavigate()
   const [activeTab, setActiveTab] = useState('how')
+  const { hasAccess, loading } = useUserModules()
+  const module = getModule('lesson-templates')
+
+  if (!loading && !hasAccess(module)) {
+    return <AddonPaywallModal module={module} onClose={() => navigate('/dashboard')} />
+  }
 
   return (
     <div className="min-h-screen bg-gray-950 pt-14">
@@ -372,7 +381,7 @@ export default function LessonTemplates() {
       <div className="max-w-4xl mx-auto px-4 md:px-8 pt-6 pb-12">
         <div className="mb-6">
           <div className="inline-flex items-center gap-2 bg-blue-900/50 text-blue-400 text-xs font-bold px-3 py-1 rounded-full uppercase tracking-wide mb-3">
-            Bonus Content
+            Add-On
           </div>
           <h1 className="text-2xl font-extrabold text-white tracking-tight">Planned Lesson Sessions</h1>
           <p className="text-gray-400 text-sm mt-1.5 max-w-xl">

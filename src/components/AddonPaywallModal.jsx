@@ -4,6 +4,15 @@ import { createCheckoutSession } from '../config/checkout'
 import { useAuth } from '../context/AuthContext'
 
 const MODULE_VISUALS = {
+  'lesson-templates': {
+    gradient: 'from-blue-950 via-blue-900 to-blue-800',
+    accent: 'text-blue-400',
+    accentBg: 'bg-blue-500',
+    accentBorder: 'border-blue-500',
+    accentLight: 'bg-blue-50 text-blue-800',
+    ctaColor: 'bg-blue-600 hover:bg-blue-500',
+    icon: '📋',
+  },
   'gym-training': {
     gradient: 'from-teal-950 via-teal-900 to-teal-800',
     accent: 'text-teal-400',

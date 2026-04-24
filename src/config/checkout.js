@@ -14,6 +14,7 @@ export const EN_PRICE_IDS = {
   ADDON_GYM: 'price_1TPlP6EFtoy3ZjcS8uH4dKg7',
   ADDON_SERVE: 'price_1TPlPFEFtoy3ZjcSQxuxPygO',
   ADDON_DOUBLES: 'price_1TPlPNEFtoy3ZjcSaIG4dIGp',
+  ADDON_LESSON_TEMPLATES: 'price_1TPlOhEFtoy3ZjcStPtthqZQ',
 }
 
 export function handlePtCheckout(url) {

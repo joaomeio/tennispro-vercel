@@ -52,14 +52,24 @@ export const MODULES = [
   {
     id: 'lesson-templates',
     title: 'Lesson Templates',
-    subtitle: 'Bonus Content',
+    subtitle: 'Add-on Module',
     description: 'Ready-to-use lesson plans for 30, 45, 60, and 90-minute sessions. Print and coach.',
     badge: '30–90 Min Plans',
-    tag: 'BONUS',
-    tagColor: 'bg-blue-500',
+    tag: 'ADD-ON',
+    tagColor: 'bg-blue-600',
     route: '/dashboard/lesson-templates',
     color: 'from-blue-950 to-blue-900',
     includedInAnyPurchase: false,
+    isAddon: true,
+    price: 9,
+    priceId: 'price_1TPlOhEFtoy3ZjcStPtthqZQ',
+    paywallBenefits: [
+      'Ready-to-use lesson plans for 30, 45, 60, and 90-minute sessions',
+      'Structured for beginner, intermediate, and advanced players',
+      'Print and coach — zero prep time needed',
+      'Age-grouped templates: 6–9, 10–13, and 14–18',
+      'Session planning framework to build your own templates',
+    ],
   },
 
   // ── PURCHASABLE ADD-ONS ────────────────────────────────────────────────────
