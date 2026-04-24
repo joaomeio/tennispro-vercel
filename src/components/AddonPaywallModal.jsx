@@ -60,14 +60,16 @@ export default function AddonPaywallModal({ module, onClose }) {
     }
   }, [onClose])
 
+  const isPlaceholder = !module?.priceId || module.priceId.includes('placeholder')
+
   async function handleUnlock() {
-    if (!module?.priceId) return
+    if (isPlaceholder) return
     setLoading(true)
     setError(null)
     try {
       await createCheckoutSession(module.priceId)
     } catch (err) {
-      setError('Something went wrong. Please try again.')
+      setError(err.message || 'Something went wrong. Please try again.')
       setLoading(false)
     }
   }
@@ -157,23 +159,30 @@ export default function AddonPaywallModal({ module, onClose }) {
               <p className="text-xs text-red-600 mb-3 bg-red-50 rounded-lg px-3 py-2">{error}</p>
             )}
 
-            <button
-              onClick={handleUnlock}
-              disabled={loading}
-              className={`w-full ${visual.ctaColor} text-white font-extrabold py-3.5 rounded-xl transition-all text-sm flex items-center justify-center gap-2 disabled:opacity-60 disabled:cursor-not-allowed shadow-lg`}
-            >
-              {loading ? (
-                <>
-                  <div className="w-4 h-4 border-2 border-white/30 border-t-white rounded-full animate-spin" />
-                  Processing…
-                </>
-              ) : (
-                <>
-                  <Zap className="w-4 h-4" />
-                  Unlock {module.title} — ${price}
-                </>
-              )}
-            </button>
+            {isPlaceholder ? (
+              <div className="w-full bg-slate-200 text-slate-500 font-bold py-3.5 rounded-xl text-sm flex items-center justify-center gap-2 cursor-not-allowed">
+                <Lock className="w-4 h-4" />
+                Coming Soon — Price not yet configured
+              </div>
+            ) : (
+              <button
+                onClick={handleUnlock}
+                disabled={loading}
+                className={`w-full ${visual.ctaColor} text-white font-extrabold py-3.5 rounded-xl transition-all text-sm flex items-center justify-center gap-2 disabled:opacity-60 disabled:cursor-not-allowed shadow-lg`}
+              >
+                {loading ? (
+                  <>
+                    <div className="w-4 h-4 border-2 border-white/30 border-t-white rounded-full animate-spin" />
+                    Processing…
+                  </>
+                ) : (
+                  <>
+                    <Zap className="w-4 h-4" />
+                    Unlock {module.title} — ${price}
+                  </>
+                )}
+              </button>
+            )}
           </div>
 
           {/* Trust signals */}

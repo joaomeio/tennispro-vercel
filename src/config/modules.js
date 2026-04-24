@@ -76,7 +76,7 @@ export const MODULES = [
     includedInAnyPurchase: false,
     isAddon: true,
     price: 17,
-    priceId: 'price_addon_gym_placeholder',
+    priceId: 'price_1TP8eICz3W9Jpqrl3CFU1A1E',
     paywallBenefits: [
       '5 complete gym programs built around tennis performance',
       'Strength, agility, explosiveness & injury prevention',
@@ -98,7 +98,7 @@ export const MODULES = [
     includedInAnyPurchase: false,
     isAddon: true,
     price: 17,
-    priceId: 'price_addon_serve_placeholder',
+    priceId: 'price_1TP8edCz3W9JpqrlGX4clzHo',
     paywallBenefits: [
       'Full mechanics breakdown: flat, slice, and kick serves',
       'Spin and placement strategy for every court position',
@@ -120,7 +120,7 @@ export const MODULES = [
     includedInAnyPurchase: false,
     isAddon: true,
     price: 17,
-    priceId: 'price_addon_doubles_placeholder',
+    priceId: 'price_1TP8epCz3W9JpqrlyP9EDMDt',
     paywallBenefits: [
       '40+ tactical patterns for competitive doubles play',
       'I-formation, Australian, and hybrid systems explained',
