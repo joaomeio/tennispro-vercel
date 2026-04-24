@@ -12,10 +12,10 @@ const supabaseAdmin = createClient(
 )
 
 const PRICE_TO_MODULES = {
-  'price_1TPlNcEFtoy3ZjcSuiAd8tve': ['drills'],
-  'price_1TPlO1EFtoy3ZjcSwKmNbokV': ['drills', 'tennis-kids', 'mental-game'],
-  'price_1TPlONEFtoy3ZjcSc40OwjdO': ['drills', 'tennis-kids', 'mental-game'],
-  'price_1TPlOhEFtoy3ZjcStPtthqZQ': ['lesson-templates'],
+  'price_1T1s5JCz3W9Jpqrl8CV9AGqW': ['drills'],
+  'price_1T1s4cCz3W9Jpqrlwjyfat0e': ['drills', 'tennis-kids', 'mental-game'],
+  'price_1T1s5oCz3W9JpqrlGiQZSZIS': ['drills', 'tennis-kids', 'mental-game'],
+  'price_1T1sCECz3W9JpqrlOgQRiPot': ['lesson-templates'],
   'price_1TPlP6EFtoy3ZjcS8uH4dKg7': ['gym-training'],
   'price_1TPlPFEFtoy3ZjcSQxuxPygO': ['serve-masterclass'],
   'price_1TPlPNEFtoy3ZjcSaIG4dIGp': ['doubles-tactics'],

@@ -62,7 +62,7 @@ export const MODULES = [
     includedInAnyPurchase: false,
     isAddon: true,
     price: 9,
-    priceId: 'price_1TPlOhEFtoy3ZjcStPtthqZQ',
+    priceId: 'price_1T1sCECz3W9JpqrlOgQRiPot',
     paywallBenefits: [
       'Ready-to-use lesson plans for 30, 45, 60, and 90-minute sessions',
       'Structured for beginner, intermediate, and advanced players',
