@@ -7,14 +7,13 @@ export const PT_LINKS = {
 
 // EN checkout — Stripe price IDs
 export const EN_PRICE_IDS = {
-  BASIC: 'price_1TONBjCz3W9JpqrlXyirmBW7',
-  PREMIUM: 'price_1T1spNCz3W9JpqrliooB8TI0',
-  DOWNSELL: 'price_1TONAaCz3W9Jpqrl938ERDdk',
-  ORDER_BUMP: 'price_1T1spVCz3W9JpqrlD1BisICz',
-  // Add-on modules — replace placeholders with real Stripe price IDs
-  ADDON_GYM: 'price_1TP8eICz3W9Jpqrl3CFU1A1E',
-  ADDON_SERVE: 'price_1TP8edCz3W9JpqrlGX4clzHo',
-  ADDON_DOUBLES: 'price_1TP8epCz3W9JpqrlyP9EDMDt',
+  BASIC: 'price_1TPlNcEFtoy3ZjcSuiAd8tve',
+  PREMIUM: 'price_1TPlO1EFtoy3ZjcSwKmNbokV',
+  DOWNSELL: 'price_1TPlONEFtoy3ZjcSc40OwjdO',
+  ORDER_BUMP: 'price_1TPlOhEFtoy3ZjcStPtthqZQ',
+  ADDON_GYM: 'price_1TPlP6EFtoy3ZjcS8uH4dKg7',
+  ADDON_SERVE: 'price_1TPlPFEFtoy3ZjcSQxuxPygO',
+  ADDON_DOUBLES: 'price_1TPlPNEFtoy3ZjcSaIG4dIGp',
 }
 
 export function handlePtCheckout(url) {

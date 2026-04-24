@@ -2,7 +2,7 @@ import Stripe from 'stripe'
 
 const stripe = new Stripe(process.env.STRIPE_SECRET_KEY)
 
-const ORDER_BUMP_PRICE_ID = 'price_1T1spVCz3W9JpqrlD1BisICz'
+const ORDER_BUMP_PRICE_ID = 'price_1TPlOhEFtoy3ZjcStPtthqZQ'
 
 export default async function handler(req, res) {
   if (req.method !== 'POST') {
