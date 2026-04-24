@@ -32,7 +32,6 @@ export default async function handler(req, res) {
         : `${siteUrl}/welcome?session_id={CHECKOUT_SESSION_ID}`,
       cancel_url: `${siteUrl}/`,
       allow_promotion_codes: true,
-      customer_creation: 'always',
     }
 
     // For addon purchases by logged-in users, look up their existing Stripe customer
@@ -41,9 +40,6 @@ export default async function handler(req, res) {
       const existing = await stripe.customers.list({ email: customerEmail, limit: 1 })
       if (existing.data.length > 0) {
         sessionParams.customer = existing.data[0].id
-        delete sessionParams.customer_creation
-      } else {
-        sessionParams.customer_email = customerEmail
       }
     }
 
