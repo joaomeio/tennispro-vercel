@@ -34,13 +34,18 @@ export default async function handler(req, res) {
       allow_promotion_codes: true,
     }
 
-    // For addon purchases by logged-in users, look up their existing Stripe customer
-    // so email and saved payment methods are pre-filled at checkout.
+    // For addon purchases, look up the existing Stripe customer to pre-fill
+    // email and saved payment methods. Otherwise always create a customer so
+    // future addon purchases can find them.
     if (isAddon && customerEmail) {
       const existing = await stripe.customers.list({ email: customerEmail, limit: 1 })
       if (existing.data.length > 0) {
         sessionParams.customer = existing.data[0].id
+      } else {
+        sessionParams.customer_creation = 'always'
       }
+    } else {
+      sessionParams.customer_creation = 'always'
     }
 
     const session = await stripe.checkout.sessions.create(sessionParams)
