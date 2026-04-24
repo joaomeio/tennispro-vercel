@@ -1,12 +1,18 @@
 import { useEffect, useState } from 'react'
 import { useNavigate } from 'react-router-dom'
-import { Eye, EyeOff, Loader2, Mail, CheckCircle2 } from 'lucide-react'
+import { Eye, EyeOff, Loader2, Mail, CheckCircle2, AlertCircle } from 'lucide-react'
 import { supabase } from '../lib/supabase'
 
 export default function Welcome() {
   const navigate = useNavigate()
   const [session, setSession] = useState(null)
   const [initializing, setInitializing] = useState(true)
+  // True while we're provisioning from a fresh Stripe session_id
+  const [provisioning, setProvisioning] = useState(
+    () => !!new URLSearchParams(window.location.search).get('session_id')
+  )
+  const [provisionError, setProvisionError] = useState('')
+
   const [password, setPassword] = useState('')
   const [confirm, setConfirm] = useState('')
   const [showPw, setShowPw] = useState(false)
@@ -15,7 +21,6 @@ export default function Welcome() {
   const [requestingNew, setRequestingNew] = useState(false)
   const [email, setEmail] = useState('')
   const [resendSent, setResendSent] = useState(false)
-  const [autoEmail, setAutoEmail] = useState('')
 
   useEffect(() => {
     supabase.auth.getSession().then(({ data: { session } }) => {
@@ -36,21 +41,30 @@ export default function Welcome() {
     const sessionId = params.get('session_id')
     if (!sessionId) return
 
-    // Provision modules and get a direct recovery link — no email needed
     fetch('/api/provision-access', {
       method: 'POST',
       headers: { 'Content-Type': 'application/json' },
       body: JSON.stringify({ sessionId }),
     })
       .then((r) => r.json())
-      .then(({ accessLink }) => {
+      .then(({ accessLink, error }) => {
+        if (error) {
+          setProvisionError(error)
+          setProvisioning(false)
+          return
+        }
         if (accessLink) {
-          // Redirect straight to the Supabase verify URL — it will bounce back
-          // to /welcome with an active session, showing the password form
+          // Navigate to Supabase verify URL — bounces back here with an active session
           window.location.href = accessLink
+        } else {
+          // Existing user buying an addon — shouldn't land here, but handle gracefully
+          setProvisioning(false)
         }
       })
-      .catch(() => {})
+      .catch(() => {
+        setProvisionError('Something went wrong activating your account. Please contact support.')
+        setProvisioning(false)
+      })
   }, [])
 
   async function handleSetPassword(e) {
@@ -76,10 +90,14 @@ export default function Welcome() {
     setResendSent(true)
   }
 
-  if (initializing) {
+  // Show spinner while Supabase session is loading OR while provisioning from session_id
+  if (initializing || provisioning) {
     return (
-      <div className="min-h-screen bg-slate-950 flex items-center justify-center">
+      <div className="min-h-screen bg-slate-950 flex flex-col items-center justify-center gap-3">
         <Loader2 className="w-8 h-8 animate-spin text-green-400" />
+        {provisioning && (
+          <p className="text-slate-500 text-sm">Setting up your account…</p>
+        )}
       </div>
     )
   }
@@ -87,14 +105,12 @@ export default function Welcome() {
   if (!session) {
     return (
       <div className="min-h-screen bg-slate-950 flex items-center justify-center px-4 relative overflow-hidden">
-        {/* Background decoration */}
         <div className="absolute inset-0 pointer-events-none">
           <div className="absolute -top-40 -right-40 w-96 h-96 rounded-full bg-green-500/5 blur-3xl" />
           <div className="absolute -bottom-40 -left-40 w-96 h-96 rounded-full bg-green-500/5 blur-3xl" />
         </div>
 
         <div className="relative w-full max-w-sm">
-          {/* Logo */}
           <div className="text-center mb-8">
             <div className="inline-flex items-center gap-2 mb-6">
               <div className="w-8 h-8 bg-green-500 rounded-lg flex items-center justify-center">
@@ -102,25 +118,28 @@ export default function Welcome() {
               </div>
               <span className="text-white font-extrabold text-lg tracking-tight">TennisPro</span>
             </div>
-            <h1 className="text-2xl font-extrabold text-white mb-2">Check your inbox</h1>
+            <h1 className="text-2xl font-extrabold text-white mb-2">Access your account</h1>
             <p className="text-slate-400 text-sm leading-relaxed">
-              Enter your purchase email and we'll send you a secure link to activate your account.
+              Enter your purchase email and we'll send you a link to sign in.
             </p>
           </div>
 
           <div className="bg-slate-900 border border-slate-800 rounded-2xl p-6">
-            {resendSent ? (
+            {provisionError ? (
+              <div className="text-center py-4">
+                <div className="w-14 h-14 bg-red-500/10 rounded-full flex items-center justify-center mx-auto mb-4">
+                  <AlertCircle className="w-7 h-7 text-red-400" />
+                </div>
+                <p className="text-white font-bold mb-1">Activation failed</p>
+                <p className="text-slate-400 text-sm">{provisionError}</p>
+              </div>
+            ) : resendSent ? (
               <div className="text-center py-4">
                 <div className="w-14 h-14 bg-green-500/10 rounded-full flex items-center justify-center mx-auto mb-4">
                   <CheckCircle2 className="w-7 h-7 text-green-400" />
                 </div>
                 <p className="text-white font-bold mb-1">Link sent!</p>
-                <p className="text-slate-400 text-sm">
-                  {autoEmail
-                    ? `We sent your access link to ${autoEmail}.`
-                    : 'Your access link is on its way.'}
-                  {' '}Check your inbox (and spam folder).
-                </p>
+                <p className="text-slate-400 text-sm">Check your inbox and spam folder.</p>
               </div>
             ) : (
               <form onSubmit={handleResendLink} className="flex flex-col gap-3">
@@ -153,7 +172,6 @@ export default function Welcome() {
 
   return (
     <div className="min-h-screen bg-slate-950 flex items-center justify-center px-4 relative overflow-hidden">
-      {/* Background decoration */}
       <div className="absolute inset-0 pointer-events-none">
         <div className="absolute -top-40 -right-40 w-96 h-96 rounded-full bg-green-500/8 blur-3xl" />
         <div className="absolute -bottom-40 -left-40 w-96 h-96 rounded-full bg-green-500/8 blur-3xl" />
@@ -161,7 +179,6 @@ export default function Welcome() {
       </div>
 
       <div className="relative w-full max-w-sm">
-        {/* Logo */}
         <div className="text-center mb-8">
           <div className="inline-flex items-center gap-2 mb-6">
             <div className="w-8 h-8 bg-green-500 rounded-lg flex items-center justify-center">
@@ -169,8 +186,6 @@ export default function Welcome() {
             </div>
             <span className="text-white font-extrabold text-lg tracking-tight">TennisPro</span>
           </div>
-
-          {/* Welcome badge */}
           <h1 className="text-3xl font-extrabold text-white mb-2 leading-tight">
             Welcome aboard,<br />Coach.
           </h1>
@@ -179,7 +194,6 @@ export default function Welcome() {
           </p>
         </div>
 
-        {/* Card */}
         <div className="bg-slate-900 border border-slate-800 rounded-2xl p-6">
           <form onSubmit={handleSetPassword} className="flex flex-col gap-4">
             <div>
