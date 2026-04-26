@@ -41,5 +41,10 @@ export async function createCheckoutSession(priceId, orderBump = false, isAddon 
   }
 
   const { url } = await res.json()
+
+  if (typeof window.fbq === 'function') {
+    window.fbq('track', 'InitiateCheckout')
+  }
+
   window.location.href = url
 }
