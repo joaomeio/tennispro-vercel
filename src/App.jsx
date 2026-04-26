@@ -1,5 +1,6 @@
 import { BrowserRouter, Routes, Route, Navigate, useNavigate } from 'react-router-dom'
 import { useEffect } from 'react'
+import { Analytics } from '@vercel/analytics/react'
 import { useAuth } from './context/AuthContext'
 import HomePageEn from './pages/HomePageEn'
 import ObrigadoEn from './pages/ObrigadoEn'
@@ -72,6 +73,7 @@ export default function App() {
           <Route path="doubles-tactics" element={<DoublesTactics />} />
         </Route>
       </Routes>
+      <Analytics />
     </BrowserRouter>
   )
 }
