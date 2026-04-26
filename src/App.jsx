@@ -48,6 +48,7 @@ export default function App() {
     <BrowserRouter>
       <Routes>
         <Route path="/" element={<AuthRedirect />} />
+        <Route path="/en" element={<Navigate to="/" replace />} />
         <Route path="/obrigado" element={<ObrigadoEn />} />
         <Route path="/en/obrigado" element={<ObrigadoEn />} />
         <Route path="/upsell-courtly" element={<UpsellEn />} />
