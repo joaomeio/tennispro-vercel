@@ -130,5 +130,13 @@ export default async function handler(req, res) {
     await posthog.shutdown()
   }
 
-  return res.status(200).json({ success: true, modules: [...grantedModules], email, isNew, accessLink })
+  return res.status(200).json({
+    success: true,
+    modules: [...grantedModules],
+    email,
+    isNew,
+    accessLink,
+    amount_total: session.amount_total,
+    currency: session.currency,
+  })
 }

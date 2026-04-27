@@ -332,11 +332,19 @@ export default function Welcome() {
       body: JSON.stringify({ sessionId }),
     })
       .then((r) => r.json())
-      .then(({ accessLink, error }) => {
+      .then(({ accessLink, error, amount_total, currency }) => {
         if (error) {
           setProvisionError(error)
           setProvisioning(false)
           return
+        }
+        if (typeof window.fbq === 'function') {
+          const value = amount_total != null ? amount_total / 100 : undefined
+          window.fbq('track', 'Purchase', {
+            currency: (currency || 'USD').toUpperCase(),
+            ...(value != null && { value }),
+            content_type: 'product',
+          })
         }
         if (accessLink) {
           // New user — navigate to Supabase verify URL which bounces back here with a session

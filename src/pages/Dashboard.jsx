@@ -78,6 +78,35 @@ function TopNav() {
 }
 
 export default function Dashboard() {
+  const navigate = useNavigate()
+
+  useEffect(() => {
+    const params = new URLSearchParams(window.location.search)
+    const sessionId = params.get('session_id')
+    if (!sessionId) return
+
+    // Clean the URL immediately so a refresh doesn't re-fire
+    navigate('/dashboard', { replace: true })
+
+    fetch('/api/provision-access', {
+      method: 'POST',
+      headers: { 'Content-Type': 'application/json' },
+      body: JSON.stringify({ sessionId }),
+    })
+      .then((r) => r.json())
+      .then(({ amount_total, currency }) => {
+        if (typeof window.fbq === 'function') {
+          const value = amount_total != null ? amount_total / 100 : undefined
+          window.fbq('track', 'Purchase', {
+            currency: (currency || 'USD').toUpperCase(),
+            ...(value != null && { value }),
+            content_type: 'product',
+          })
+        }
+      })
+      .catch(() => {})
+  }, [])
+
   return (
     <div className="min-h-screen bg-gray-950">
       <TopNav />
