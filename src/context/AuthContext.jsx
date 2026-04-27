@@ -1,4 +1,5 @@
 import { createContext, useContext, useEffect, useState } from 'react'
+import posthog from 'posthog-js'
 import { supabase } from '../lib/supabase'
 
 const AuthContext = createContext(null)
@@ -14,7 +15,13 @@ export function AuthProvider({ children }) {
     })
 
     const { data: { subscription } } = supabase.auth.onAuthStateChange((_event, session) => {
-      setUser(session?.user ?? null)
+      const u = session?.user ?? null
+      setUser(u)
+      if (u) {
+        posthog.identify(u.id, { email: u.email })
+      } else {
+        posthog.reset()
+      }
     })
 
     return () => subscription.unsubscribe()
