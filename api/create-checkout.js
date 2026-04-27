@@ -1,4 +1,5 @@
 import Stripe from 'stripe'
+import { createPostHogClient } from './lib/posthog.js'
 
 const stripe = new Stripe(process.env.STRIPE_SECRET_KEY)
 
@@ -49,6 +50,19 @@ export default async function handler(req, res) {
     }
 
     const session = await stripe.checkout.sessions.create(sessionParams)
+
+    const posthog = createPostHogClient()
+    posthog.capture({
+      distinctId: customerEmail || session.id,
+      event: 'checkout_started',
+      properties: {
+        price_id: priceId,
+        order_bump: orderBump,
+        is_addon: isAddon,
+        stripe_session_id: session.id,
+      },
+    })
+    await posthog.shutdown()
 
     return res.status(200).json({ url: session.url })
   } catch (err) {

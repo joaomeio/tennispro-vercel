@@ -1,6 +1,7 @@
 import Stripe from 'stripe'
 import { Resend } from 'resend'
 import { createClient } from '@supabase/supabase-js'
+import { createPostHogClient } from './lib/posthog.js'
 
 const stripe = new Stripe(process.env.STRIPE_SECRET_KEY)
 const resend = new Resend(process.env.RESEND_API_KEY)
@@ -195,6 +196,21 @@ export default async function handler(req, res) {
 
         if (packages.length > 0) {
           const accessLink = await provisionAccess(email, packages, siteUrl)
+
+          const posthog = createPostHogClient()
+          posthog.capture({
+            distinctId: email,
+            event: 'purchase_completed',
+            properties: {
+              stripe_session_id: session.id,
+              packages: packages.map((p) => p.price_id),
+              package_names: packages.map((p) => p.name),
+              is_new_user: accessLink !== null,
+              amount_total: session.amount_total,
+              currency: session.currency,
+            },
+          })
+          await posthog.shutdown()
 
           // Only send the "set your password" email to brand-new users
           if (accessLink) {

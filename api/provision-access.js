@@ -1,5 +1,6 @@
 import Stripe from 'stripe'
 import { createClient } from '@supabase/supabase-js'
+import { createPostHogClient } from './lib/posthog.js'
 
 const stripe = new Stripe(process.env.STRIPE_SECRET_KEY)
 
@@ -107,6 +108,25 @@ export default async function handler(req, res) {
       accessLink = `${process.env.SUPABASE_URL}/auth/v1/verify?token=${hashedToken}&type=recovery&redirect_to=${redirectTo}`
     }
   }
+
+  const posthog = createPostHogClient()
+  posthog.capture({
+    distinctId: email,
+    event: 'access_provisioned',
+    properties: {
+      stripe_session_id: sessionId,
+      modules: [...grantedModules],
+      is_new_user: isNew,
+    },
+  })
+  if (isNew) {
+    posthog.capture({
+      distinctId: email,
+      event: 'user_signed_up',
+      properties: { source: 'stripe_checkout' },
+    })
+  }
+  await posthog.shutdown()
 
   return res.status(200).json({ success: true, modules: [...grantedModules], email, isNew, accessLink })
 }
