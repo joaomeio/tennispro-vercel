@@ -78,19 +78,8 @@ function HeroPt({ onCtaClick }) {
   )
 }
 
-// EN hero with VTurb video player
-function HeroEn({ onCtaClick, onPremiumClick }) {
-  useEffect(() => {
-    const s = document.createElement('script')
-    s.src =
-      'https://scripts.converteai.net/9bd390f0-c3f7-4946-b784-12be56743228/players/695b299d96807c66f23fb0c6/v4/player.js'
-    s.async = true
-    document.head.appendChild(s)
-    return () => {
-      if (document.head.contains(s)) document.head.removeChild(s)
-    }
-  }, [])
-
+// EN hero
+function HeroEn({ onPremiumClick }) {
   return (
     <section className="relative bg-gradient-to-b from-white to-brand-50 pt-20 pb-24 md:pt-32 md:pb-40 overflow-hidden">
       <div className="container mx-auto px-4 max-w-6xl relative z-10">
@@ -103,30 +92,20 @@ function HeroEn({ onCtaClick, onPremiumClick }) {
           </div>
 
           <h1 className="text-4xl md:text-6xl lg:text-7xl font-extrabold text-slate-900 mb-8 leading-[1.2] max-w-5xl mx-auto tracking-tight drop-shadow-sm">
-            <span className="md:block py-1">
-              Stop Scrambling For <span style={{ color: 'red' }}>Drill Ideas</span>
-            </span>
-            <span className="md:block py-1">5 Minutes Before</span>
+            <span className="md:block py-1">The Drill Platform</span>
+            <span className="md:block py-1">Built for</span>
             <span className="md:block">
-              Your
-              <span className="inline-block bg-green-50 text-green-700 px-4 py-1 rounded-2xl border border-green-200 shadow-sm transform rotate-2 hover:rotate-0 transition-all duration-300 cursor-default ml-1">
-                Lesson
+              <span className="inline-block bg-green-50 text-green-700 px-4 py-1 rounded-2xl border border-green-200 shadow-sm transform rotate-2 hover:rotate-0 transition-all duration-300 cursor-default mr-2">
+                Tennis
               </span>
+              Coaches
             </span>
           </h1>
 
-          <p className="text-lg md:text-xl text-slate-600 mb-8 max-w-3xl mx-auto leading-relaxed font-medium">
-            Log in. Search by stroke, level, or situation. Get a visual diagram and step-by-step
-            setup in seconds. 200+ proven drills organized on a platform built for coaches — by
-            ATP/WTA certified coaches.
+          <p className="text-lg md:text-xl text-slate-600 mb-10 max-w-3xl mx-auto leading-relaxed font-medium">
+            200+ drills with visual court diagrams, organized by stroke, level, and situation.
+            Walk on court prepared — every single session.
           </p>
-
-          <div className="w-full max-w-[340px] md:max-w-[560px] mx-auto mb-10 relative z-20">
-            <vturb-smartplayer
-              id="vid-695b299d96807c66f23fb0c6"
-              style={{ display: 'block', margin: '0 auto', width: '100%' }}
-            />
-          </div>
 
           <div className="flex flex-col items-center w-full">
             <button
@@ -150,6 +129,6 @@ function HeroEn({ onCtaClick, onPremiumClick }) {
 }
 
 export default function Hero({ lang = 'pt', onCtaClick, onPremiumClick }) {
-  if (lang === 'en') return <HeroEn onCtaClick={onCtaClick} onPremiumClick={onPremiumClick} />
+  if (lang === 'en') return <HeroEn onPremiumClick={onPremiumClick} />
   return <HeroPt onCtaClick={onCtaClick} />
 }
