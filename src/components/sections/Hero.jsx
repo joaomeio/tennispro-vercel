@@ -1,5 +1,6 @@
 import { useEffect } from 'react'
 import { ArrowRight, ShieldCheck } from 'lucide-react'
+import GuaranteeBadge from '../GuaranteeBadge'
 
 // PT hero with vturb video
 function HeroPt({ onCtaClick }) {
@@ -77,8 +78,19 @@ function HeroPt({ onCtaClick }) {
   )
 }
 
-// EN hero with book cover image
-function HeroEn({ onCtaClick }) {
+// EN hero with VTurb video player
+function HeroEn({ onCtaClick, onPremiumClick }) {
+  useEffect(() => {
+    const s = document.createElement('script')
+    s.src =
+      'https://scripts.converteai.net/9bd390f0-c3f7-4946-b784-12be56743228/players/695b299d96807c66f23fb0c6/v4/player.js'
+    s.async = true
+    document.head.appendChild(s)
+    return () => {
+      if (document.head.contains(s)) document.head.removeChild(s)
+    }
+  }, [])
+
   return (
     <section className="relative bg-gradient-to-b from-white to-brand-50 pt-20 pb-24 md:pt-32 md:pb-40 overflow-hidden">
       <div className="container mx-auto px-4 max-w-6xl relative z-10">
@@ -109,28 +121,22 @@ function HeroEn({ onCtaClick }) {
             ATP/WTA certified coaches.
           </p>
 
-          <div className="w-full max-w-[260px] md:max-w-[380px] mx-auto mb-12 relative z-20">
-            <img
-              src="/en/capa.png"
-              alt="TennisPro Platform Preview"
-              className="w-full rounded-2xl shadow-2xl shadow-slate-900/20 hover:scale-105 transition-transform duration-500"
+          <div className="w-full max-w-[340px] md:max-w-[560px] mx-auto mb-10 relative z-20">
+            <vturb-smartplayer
+              id="vid-695b299d96807c66f23fb0c6"
+              style={{ display: 'block', margin: '0 auto', width: '100%' }}
             />
           </div>
 
-          <div className="flex flex-col items-center gap-6 w-full">
+          <div className="flex flex-col items-center w-full">
             <button
-              onClick={onCtaClick}
+              onClick={onPremiumClick}
               className="inline-flex items-center justify-center rounded-2xl font-bold transition-all duration-200 transform hover:-translate-y-0.5 animate-heartbeat bg-green-600 hover:bg-green-500 text-white shadow-xl shadow-green-500/30 px-10 py-5 text-lg md:text-xl w-auto group hover:shadow-2xl hover:shadow-green-500/40"
             >
-              Access Your Drill Platform
+              Get Pro Access — $27
               <ArrowRight className="ml-2 w-5 h-5 group-hover:translate-x-1 transition-transform" />
             </button>
-            <div className="flex items-center justify-center gap-3 text-sm font-medium text-slate-500 bg-white/60 backdrop-blur-sm py-2 px-6 rounded-full border border-slate-100 shadow-sm hover:bg-white transition-colors">
-              <ShieldCheck className="w-4 h-4 text-green-500" />
-              <span>Instant Platform Access</span>
-              <span className="w-1 h-1 bg-slate-300 rounded-full" />
-              <span>Lifetime Membership</span>
-            </div>
+            <GuaranteeBadge />
           </div>
         </div>
       </div>
@@ -143,7 +149,7 @@ function HeroEn({ onCtaClick }) {
   )
 }
 
-export default function Hero({ lang = 'pt', onCtaClick }) {
-  if (lang === 'en') return <HeroEn onCtaClick={onCtaClick} />
+export default function Hero({ lang = 'pt', onCtaClick, onPremiumClick }) {
+  if (lang === 'en') return <HeroEn onCtaClick={onCtaClick} onPremiumClick={onPremiumClick} />
   return <HeroPt onCtaClick={onCtaClick} />
 }

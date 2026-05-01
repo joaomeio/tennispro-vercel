@@ -1,5 +1,6 @@
 import { useState, useEffect } from 'react'
-import { Book, Zap, Check, ShieldCheck, Gift, ArrowRight } from 'lucide-react'
+import { Zap, Check, ShieldCheck, Gift, ArrowRight } from 'lucide-react'
+import GuaranteeBadge from '../GuaranteeBadge'
 
 function useCountdown() {
   const [time, setTime] = useState({ hours: 11, minutes: 20, seconds: 59 })
@@ -91,7 +92,7 @@ const EN_CONTENT = {
   premiumBtn: 'Get Pro Access',
 }
 
-export default function Pricing({ lang = 'pt', onBasicClick, onPremiumClick }) {
+export default function Pricing({ lang = 'pt', onPremiumClick }) {
   const { hours, minutes, seconds } = useCountdown()
   const c = lang === 'en' ? EN_CONTENT : PT_CONTENT
 
@@ -136,45 +137,9 @@ export default function Pricing({ lang = 'pt', onBasicClick, onPremiumClick }) {
           </div>
         </div>
 
-        <div className="grid md:grid-cols-2 gap-8 max-w-5xl mx-auto items-stretch">
-          {/* Basic Plan */}
-          <div className="bg-white p-8 md:p-10 rounded-3xl border border-slate-200 shadow-lg hover:shadow-2xl hover:-translate-y-1 transition-all duration-300 h-full flex flex-col items-center text-center group">
-            <div className="mb-6 flex flex-col items-center">
-              <div className="flex items-center gap-2 text-slate-500 mb-2 justify-center bg-slate-100 px-3 py-1 rounded-full group-hover:bg-slate-200 transition-colors">
-                <Book className="w-4 h-4" />
-                <span className="font-semibold uppercase tracking-wide text-xs">{c.basicTag}</span>
-              </div>
-              <h3 className="text-2xl font-bold text-slate-900 mt-2">{c.basicTitle}</h3>
-              <p className="text-slate-500 text-sm mt-2">{c.basicSub}</p>
-            </div>
-            <div className="mb-8">
-              <div className="flex items-baseline justify-center gap-1">
-                <span className="text-4xl font-extrabold text-slate-900">{c.basicPrice}</span>
-              </div>
-              <span className="text-slate-400 text-xs font-medium">{c.basicPayment}</span>
-            </div>
-            <div className="space-y-4 mb-8 flex-1 w-full">
-              {c.basicFeatures.map(({ included, label }) => (
-                <li key={label} className="flex items-center justify-center gap-3 text-sm list-none">
-                  <Check
-                    className={`w-5 h-5 shrink-0 ${included ? 'text-green-500' : 'text-slate-200'}`}
-                  />
-                  <span className={included ? 'text-slate-600' : 'text-slate-400 line-through decoration-slate-300'}>
-                    {label}
-                  </span>
-                </li>
-              ))}
-            </div>
-            <button
-              onClick={onBasicClick}
-              className="inline-flex items-center justify-center rounded-lg font-bold transition-all duration-200 transform hover:-translate-y-0.5 shadow-md animate-heartbeat bg-slate-600 hover:bg-slate-500 text-white shadow-slate-500/30 py-3 px-6 text-base w-full mt-auto"
-            >
-              {c.basicBtn}
-            </button>
-          </div>
-
-          {/* Premium Plan */}
-          <div className="bg-white p-8 md:p-10 rounded-3xl border-2 border-green-500 shadow-2xl shadow-green-900/10 relative overflow-hidden h-full flex flex-col items-center text-center transform md:scale-105 z-10 transition-transform hover:scale-[1.07] duration-300">
+        {/* Single offer — Pro Premium Plan */}
+        <div className="max-w-md mx-auto">
+          <div className="bg-white p-8 md:p-10 rounded-3xl border-2 border-green-500 shadow-2xl shadow-green-900/10 relative overflow-hidden flex flex-col items-center text-center z-10">
             <div className="absolute top-0 -inset-full h-full w-1/2 z-5 block transform -skew-x-12 bg-gradient-to-r from-transparent to-white opacity-40 animate-shine pointer-events-none" />
             <div className="absolute top-0 right-0 left-0 mx-auto w-fit bg-green-100 text-green-700 text-[10px] font-bold px-4 py-2 rounded-b-xl uppercase tracking-wider z-20 shadow-sm">
               {c.premiumBadge}
@@ -194,7 +159,7 @@ export default function Pricing({ lang = 'pt', onBasicClick, onPremiumClick }) {
                 </div>
                 <span className="text-green-600 text-xs font-bold block mt-1">{c.premiumPayment}</span>
               </div>
-              <div className="space-y-4 mb-10 flex-1 w-full">
+              <div className="space-y-4 mb-10 w-full">
                 {c.premiumFeatures.map((f) => (
                   <li key={f} className="flex items-center justify-center gap-3 text-slate-700 text-sm font-medium list-none">
                     <div className="bg-green-100 p-0.5 rounded-full">
@@ -229,9 +194,10 @@ export default function Pricing({ lang = 'pt', onBasicClick, onPremiumClick }) {
                 onClick={onPremiumClick}
                 className="inline-flex items-center justify-center rounded-lg font-bold transition-all duration-200 transform hover:-translate-y-0.5 shadow-md animate-heartbeat bg-green-600 hover:bg-green-500 text-white shadow-green-500/30 py-4 px-8 text-lg md:text-xl w-full shadow-lg shadow-green-600/30 group"
               >
-                {c.premiumBtn}
+                {lang === 'en' ? 'Get Pro Access — $27' : c.premiumBtn}
                 <ArrowRight className="ml-2 w-5 h-5 group-hover:translate-x-1 transition-transform" />
               </button>
+              <GuaranteeBadge />
             </div>
           </div>
         </div>

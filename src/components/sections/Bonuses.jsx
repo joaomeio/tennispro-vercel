@@ -49,7 +49,7 @@ export default function Bonuses({ lang = 'pt' }) {
     lang === 'en'
       ? 'Added value of $167 — 100% FREE for Coaches!'
       : 'Valor agregado de R$167 — 100% GRÁTIS para Treinadores!'
-  const note = lang === 'en' ? '*Available in the Premium Plan' : '*Disponível no Plano Premium'
+  const note = lang === 'en' ? '*Included with your membership' : '*Disponível no Plano Premium'
 
   return (
     <section className="py-20 bg-white">
