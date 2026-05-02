@@ -1,65 +1,56 @@
-import { Zap, MapPin, Smartphone } from 'lucide-react'
-
 const PT_FEATURES = [
   {
-    icon: Zap,
     title: 'Drills de Alta Intensidade',
-    desc: 'Acabe com a fila parada. Dinâmicas de movimentação e cardio que mantêm o aluno ativo 100% do tempo.',
+    desc: 'Dinâmicas de movimentação e cardio que mantêm o aluno ativo 100% do tempo — sem fila parada.',
   },
   {
-    icon: MapPin,
     title: 'Progressões por Nível',
     desc: 'Exercícios adaptáveis desde a iniciação (bola vermelha/laranja) até o nível competitivo avançado.',
   },
   {
-    icon: Smartphone,
     title: 'Planejamento de Bolso',
-    desc: 'Faltou criatividade antes da aula? Abra o PDF no celular e monte um treino campeão em 2 minutos.',
+    desc: 'Abra no celular antes da aula e monte um treino completo em 2 minutos. Diagramas de quadra inclusos.',
   },
 ]
 
 const EN_FEATURES = [
   {
-    icon: Zap,
-    title: '200+ Drills with Visual Diagrams',
-    desc: 'Every drill includes a court diagram so you can visualize the setup instantly — no guesswork, no wasted time.',
+    title: '200+ drills, each with a visual court diagram',
+    desc: 'See the exact positioning, ball path, and player movement before you step on court. No guesswork.',
   },
   {
-    icon: MapPin,
-    title: 'Organized by Stroke, Level & Situation',
-    desc: 'Filter by forehand, serve, volleys, beginners, advanced, warm-up, match play — find the right drill in seconds.',
+    title: 'Filter by stroke, level, or session format',
+    desc: 'Forehand, serve, beginner, advanced, solo feed, group game — find the right drill in under 10 seconds.',
   },
   {
-    icon: Smartphone,
-    title: 'Access From Any Device',
-    desc: 'Open the platform on your phone, tablet, or laptop. Your entire drill library is always one tap away on the court.',
+    title: 'On your phone, on the court, right now',
+    desc: "Your entire drill library in your pocket. Open it between points, between sets, anywhere you coach.",
   },
 ]
 
 export default function Features({ lang = 'pt' }) {
   const items = lang === 'en' ? EN_FEATURES : PT_FEATURES
-  const heading = lang === 'en' ? "What's Inside the Platform" : 'O que você vai receber'
+  const heading = lang === 'en' ? "What's inside" : 'O que você vai receber'
 
   return (
-    <section className="py-24 bg-white">
-      <div className="container mx-auto px-4 max-w-6xl">
-        <div className="text-center mb-16">
-          <h2 className="text-3xl md:text-5xl font-bold text-slate-900 tracking-tight">
-            {heading}
-          </h2>
-        </div>
-        <div className="grid grid-cols-1 md:grid-cols-3 gap-6 md:gap-8">
-          {items.map(({ icon: Icon, title, desc }) => (
-            <div key={title}>
-              <div className="bg-slate-50 p-8 rounded-2xl hover:bg-white border border-transparent hover:border-slate-100 shadow-sm hover:shadow-2xl hover:-translate-y-2 transition-all duration-300 group flex flex-col items-center text-center h-full cursor-default">
-                <div className="bg-white w-12 h-12 rounded-xl flex items-center justify-center shadow-sm mb-6 text-brand-600 group-hover:bg-brand-600 group-hover:text-white transition-colors duration-300 group-hover:rotate-6">
-                  <Icon className="w-6 h-6 group-hover:scale-110 transition-transform duration-300" />
-                </div>
-                <h3 className="text-lg font-bold text-slate-900 mb-3 group-hover:text-brand-600 transition-colors">
-                  {title}
-                </h3>
-                <p className="text-slate-500 leading-relaxed text-sm">{desc}</p>
-              </div>
+    <section className="py-16 bg-white">
+      <div className="container mx-auto px-4 max-w-5xl">
+        <h2 className="text-2xl md:text-3xl font-bold text-slate-900 mb-10 md:mb-14">
+          {heading}
+        </h2>
+        <div className="grid md:grid-cols-3 divide-y md:divide-y-0 md:divide-x divide-slate-100">
+          {items.map(({ title, desc }, i) => (
+            <div
+              key={title}
+              className="py-8 md:py-0 md:px-10 first:pt-0 last:pb-0 md:first:pl-0 md:last:pr-0"
+            >
+              <span className="block text-5xl font-extrabold text-slate-100 mb-5 leading-none select-none">
+                {String(i + 1).padStart(2, '0')}
+              </span>
+              <h3 className="text-base md:text-lg font-bold text-slate-900 mb-2 leading-snug">
+                {title}
+              </h3>
+              <p className="text-slate-500 text-sm leading-relaxed">{desc}</p>
             </div>
           ))}
         </div>

@@ -92,8 +92,8 @@ function HeroEn({ onPremiumClick }) {
           </div>
 
           <h1 className="text-4xl md:text-6xl lg:text-7xl font-extrabold text-slate-900 mb-8 leading-[1.2] max-w-5xl mx-auto tracking-tight drop-shadow-sm">
-            <span className="md:block py-1">The Drill Platform</span>
-            <span className="md:block py-1">Built for</span>
+            <span className="md:block py-1">The Drill Platform </span>
+            <span className="md:block py-1">Built for </span>
             <span className="md:block">
               <span className="inline-block bg-green-50 text-green-700 px-4 py-1 rounded-2xl border border-green-200 shadow-sm transform rotate-2 hover:rotate-0 transition-all duration-300 cursor-default mr-2">
                 Tennis
@@ -102,10 +102,25 @@ function HeroEn({ onPremiumClick }) {
             </span>
           </h1>
 
-          <p className="text-lg md:text-xl text-slate-600 mb-10 max-w-3xl mx-auto leading-relaxed font-medium">
+          <p className="text-lg md:text-xl text-slate-600 mb-8 max-w-3xl mx-auto leading-relaxed font-medium">
             200+ drills with visual court diagrams, organized by stroke, level, and situation.
             Walk on court prepared — every single session.
           </p>
+
+          <div className="w-full max-w-xs mx-auto mb-8 rounded-2xl overflow-hidden shadow-2xl shadow-slate-900/20">
+            <div style={{ position: 'relative', paddingTop: '177.77777777777777%' }}>
+              <iframe
+                id="panda-9ec11cb3-d85c-45c8-89b1-36327f18f729"
+                src="https://player-vz-c4a70263-7a1.tv.pandavideo.com.br/embed/?v=9ec11cb3-d85c-45c8-89b1-36327f18f729"
+                style={{ border: 'none', position: 'absolute', top: 0, left: 0 }}
+                allow="accelerometer;gyroscope;autoplay;encrypted-media;picture-in-picture"
+                allowFullScreen
+                width="100%"
+                height="100%"
+                fetchpriority="high"
+              />
+            </div>
+          </div>
 
           <div className="flex flex-col items-center w-full">
             <button

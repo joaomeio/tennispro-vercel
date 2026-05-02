@@ -1,8 +1,9 @@
 const ITEMS = [
-  'ATP/WTA Certified Coaches',
   '200+ Drills',
   'Coaches in 30+ Countries',
   'Lifetime Access',
+  'All Skill Levels',
+  '7-Day Guarantee',
 ]
 
 export default function AuthorityBar() {

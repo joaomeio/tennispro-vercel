@@ -4,7 +4,6 @@ import OrderBumpModal from '../components/OrderBumpModal'
 import Hero from '../components/sections/Hero'
 import AuthorityBar from '../components/sections/AuthorityBar'
 import Features from '../components/sections/Features'
-import Benefits from '../components/sections/Benefits'
 import Bonuses from '../components/sections/Bonuses'
 import DrillPreview from '../components/sections/DrillPreview'
 import Testimonials from '../components/sections/Testimonials'
@@ -12,7 +11,6 @@ import Pricing from '../components/sections/Pricing'
 import FAQ from '../components/sections/FAQ'
 import FinalCTA from '../components/sections/FinalCTA'
 import Footer from '../components/Footer'
-import StickyMobileBar from '../components/StickyMobileBar'
 import { EN_PRICE_IDS } from '../config/checkout'
 
 export default function HomePageEn() {
@@ -58,7 +56,6 @@ export default function HomePageEn() {
       <Hero lang="en" onCtaClick={scrollToPricing} onPremiumClick={onPremiumClick} />
       <AuthorityBar />
       <Features lang="en" />
-      <Benefits lang="en" />
       <Bonuses lang="en" />
       <DrillPreview onCtaClick={onPremiumClick} />
       <Testimonials />
@@ -67,7 +64,6 @@ export default function HomePageEn() {
       <FinalCTA onPremiumClick={onPremiumClick} />
       <Footer lang="en" />
 
-      <StickyMobileBar onPremiumClick={onPremiumClick} />
     </div>
   )
 }

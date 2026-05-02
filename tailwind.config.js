@@ -48,6 +48,10 @@ export default {
           '0%': { opacity: '0', transform: 'scale(0.95)' },
           '100%': { opacity: '1', transform: 'scale(1)' },
         },
+        marquee: {
+          '0%': { transform: 'translateX(0)' },
+          '100%': { transform: 'translateX(-50%)' },
+        },
       },
       animation: {
         heartbeat: 'heartbeat 2s infinite ease-in-out',
@@ -56,6 +60,8 @@ export default {
         shine: 'shine 3s infinite linear',
         'fade-in': 'fadeIn 0.2s ease-out',
         'zoom-in': 'zoomIn 0.3s ease-out',
+        marquee: 'marquee 28s linear infinite',
+        'marquee-slow': 'marquee 40s linear infinite',
       },
     },
   },

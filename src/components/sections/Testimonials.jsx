@@ -21,7 +21,7 @@ const TESTIMONIALS = [
     initials: 'CT',
     stars: 5,
     quote:
-      'The visual court diagrams are a game-changer. I can show my students exactly what the drill looks like on the court — they understand instantly and we spend more time actually playing.',
+      'The visual court diagrams are a game-changer. I can show my students exactly what the drill looks like — they understand instantly and we spend more time actually playing.',
   },
   {
     name: "James O'Brien",
@@ -37,7 +37,7 @@ const TESTIMONIALS = [
     initials: 'SA',
     stars: 5,
     quote:
-      'My junior academy has 3 coaches all using TennisPro now. We run the same drills across groups so our students have a consistent experience no matter who is coaching them.',
+      'My junior academy has 3 coaches all using TennisPro now. We run the same drills across groups so our students have a consistent experience no matter who is coaching.',
   },
 ]
 
@@ -45,7 +45,7 @@ function StarRating({ count = 5 }) {
   return (
     <div className="flex items-center gap-0.5">
       {Array.from({ length: count }).map((_, i) => (
-        <svg key={i} className="w-4 h-4 text-yellow-400 fill-current" viewBox="0 0 20 20">
+        <svg key={i} className="w-3.5 h-3.5 text-yellow-400 fill-current" viewBox="0 0 20 20">
           <path d="M10 15l-5.878 3.09 1.123-6.545L.489 6.91l6.572-.955L10 0l2.939 5.955 6.572.955-4.756 4.635 1.123 6.545z" />
         </svg>
       ))}
@@ -53,38 +53,39 @@ function StarRating({ count = 5 }) {
   )
 }
 
+const DOUBLED = [...TESTIMONIALS, ...TESTIMONIALS]
+
 export default function Testimonials() {
   return (
-    <section className="py-24 bg-slate-50">
-      <div className="container mx-auto px-4 max-w-6xl">
-        <div className="text-center mb-14">
-          <h2 className="text-3xl md:text-5xl font-bold text-slate-900 tracking-tight mb-4">
-            Coaches Who Already Made the Switch
-          </h2>
-          <p className="text-slate-500 text-lg max-w-xl mx-auto">
-            Real results from real coaches using TennisPro in their sessions every week.
-          </p>
-        </div>
-        <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-6">
-          {TESTIMONIALS.map(({ name, city, initials, stars, quote }) => (
-            <div
-              key={name}
-              className="bg-white rounded-2xl p-6 shadow-sm border border-slate-100 hover:shadow-xl hover:-translate-y-1 transition-all duration-300 flex flex-col gap-4"
-            >
-              <StarRating count={stars} />
-              <p className="text-slate-700 text-sm leading-relaxed flex-1">&ldquo;{quote}&rdquo;</p>
-              <div className="flex items-center gap-3 pt-2 border-t border-slate-100">
-                <div className="w-10 h-10 rounded-full bg-brand-600 flex items-center justify-center shrink-0">
-                  <span className="text-white font-bold text-xs">{initials}</span>
-                </div>
-                <div>
-                  <p className="font-bold text-slate-900 text-sm">{name}</p>
-                  <p className="text-slate-400 text-xs">{city}</p>
-                </div>
+    <section className="py-16 bg-slate-50 overflow-hidden">
+      <div className="text-center mb-10 px-4">
+        <h2 className="text-3xl md:text-4xl font-bold text-slate-900 tracking-tight mb-3">
+          Coaches Who Already Made the Switch
+        </h2>
+        <p className="text-slate-500 text-base max-w-lg mx-auto">
+          Real results from real coaches using TennisPro every week.
+        </p>
+      </div>
+
+      <div className="flex gap-4 animate-marquee w-max">
+        {DOUBLED.map(({ name, city, initials, stars, quote }, i) => (
+          <div
+            key={i}
+            className="w-72 shrink-0 bg-white rounded-2xl p-5 shadow-sm border border-slate-100 flex flex-col gap-3"
+          >
+            <StarRating count={stars} />
+            <p className="text-slate-700 text-sm leading-relaxed flex-1">&ldquo;{quote}&rdquo;</p>
+            <div className="flex items-center gap-2.5 pt-2 border-t border-slate-100">
+              <div className="w-8 h-8 rounded-full bg-brand-600 flex items-center justify-center shrink-0">
+                <span className="text-white font-bold text-[10px]">{initials}</span>
+              </div>
+              <div>
+                <p className="font-bold text-slate-900 text-xs">{name}</p>
+                <p className="text-slate-400 text-[10px]">{city}</p>
               </div>
             </div>
-          ))}
-        </div>
+          </div>
+        ))}
       </div>
     </section>
   )
