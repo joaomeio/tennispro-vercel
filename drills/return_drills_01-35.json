@@ -1,0 +1,1671 @@
+{
+  "batch": "Return drills 1-35",
+  "category": "Return",
+  "description": "Drills focused on return of serve — the second most important shot in tennis after the serve itself. Every drill in this category trains reading the serve early, positioning, compact swing mechanics, and tactical return placement. The return is unique because it is the only shot in tennis where the player has zero control over the incoming ball's pace, spin, or placement.",
+  "drills": [
+    {
+      "id": "RT-001",
+      "name": "Return Ready Position and Split Step",
+      "subcategory": "Technique",
+      "category": "Return",
+      "skill_level": "beginner",
+      "player_count": 2,
+      "duration_minutes": 10,
+      "objective": "Build the correct return ready position and split step timing — the two most fundamental return skills. Most return errors begin before the ball even arrives: either the player is standing in the wrong position, or their split step timing is off. This drill isolates and trains exactly those two components before any swing mechanics are introduced.",
+      "setup": "Player 1 stands in the return position on the deuce side. Player 2 serves from the opposite baseline. Player 1 focuses only on the ready position and split step — no emphasis yet on where the return goes.",
+      "instructions": [
+        "Player 1 stands in the ready position: weight on the balls of the feet, knees slightly bent, racket centered in front, eyes on the server.",
+        "Player 2 serves from the deuce court at medium pace.",
+        "Player 1 split steps as Player 2's racket contacts the ball — and immediately identifies the direction.",
+        "Player 1 returns the ball anywhere in the court — quality of return is not the focus.",
+        "After 15 returns from the deuce side, switch to the ad side. Repeat 3 rounds."
+      ],
+      "coaching_cues": [
+        "Stand 1-2 feet behind the baseline for a medium-pace server — closer for slow servers, further for fast servers.",
+        "Weight forward on the balls of the feet — heels never touch the ground in the ready position.",
+        "Split step exactly as the server's racket contacts the ball — use the contact sound as the trigger.",
+        "After the split step, first step must go toward the ball — decisive, not tentative.",
+        "Keep your eyes on the server's shoulder and toss — these are the earliest cues to serve direction."
+      ],
+      "common_errors": [
+        "Standing flat-footed — cannot react quickly from a flat-footed position.",
+        "Split stepping too early (before contact) — still in the air when the ball arrives.",
+        "Split stepping too late (after the ball has passed) — no time to move."
+      ],
+      "variations": [
+        "Eyes closed drill: Player 1 closes eyes during the toss, opens on the serve — trains sound-based read.",
+        "Footwork only: Player 1 moves into position but doesn't swing — pure footwork training.",
+        "Vary the serve pace: Player 2 alternates slow and fast — Player 1 must adjust split step timing."
+      ],
+      "tags": ["return", "ready position", "split step", "beginner", "technique", "foundation"],
+      "diagramData": {
+        "p1": { "x": 280, "y": 60 },
+        "p2": { "x": 240, "y": 860 },
+        "shots": [
+          { "x1": 240, "y1": 850, "x2": 200, "y2": 385 },
+          { "x1": 280, "y1": 70, "x2": 240, "y2": 820 }
+        ],
+        "areas": [{ "x": 240, "y": 820, "r": 30 }]
+      }
+    },
+    {
+      "id": "RT-002",
+      "name": "Block Return: Absorbing Pace on Fast Serves",
+      "subcategory": "Technique",
+      "category": "Return",
+      "skill_level": "beginner",
+      "player_count": 2,
+      "duration_minutes": 10,
+      "objective": "Develop the block return — the compact, abbreviated stroke used to handle fast serves when there is no time for a full swing. The block return is the foundation of returning hard serves. Rather than trying to generate pace of your own, the block uses the server's pace and redirects it with a firm, compact motion. This is the primary return used at the highest levels of the game against first serves.",
+      "setup": "Player 2 serves from the deuce and ad courts at increasing pace. Player 1 must return every serve with a block return — no full swing allowed. The goal is simply to get the ball back consistently and deep.",
+      "instructions": [
+        "Player 2 serves from the deuce court at 60% pace initially.",
+        "Player 1 returns with a block return — racket starts up, compact punch forward, no backswing.",
+        "After 10 returns, Player 2 increases to 80% pace.",
+        "After 10 more, Player 2 serves at full pace.",
+        "Switch to the ad court and repeat. Track in-percentage at each pace level."
+      ],
+      "coaching_cues": [
+        "Racket starts up in the ready position — there is no time to take it back.",
+        "Meet the ball in front of the body — if it gets beside you, the block goes in a random direction.",
+        "Firm wrist and arm — the block is a wall that redirects pace, not a soft jab.",
+        "Open the racket face slightly — helps the ball clear the net even on compact swings.",
+        "Aim for depth, not for a winner — a deep block return is highly effective."
+      ],
+      "common_errors": [
+        "Trying to take a full swing on a fast serve — contact happens before the swing is ready.",
+        "Loose wrist — sends the return in an unpredictable direction.",
+        "Letting the ball get too close to the body — causes a cramped, jammed return."
+      ],
+      "variations": [
+        "Block to specific targets: cross-court only, or down-the-line only.",
+        "Block and advance: Player 1 block returns and immediately advances to the net.",
+        "Reaction block: Player 2 serves wide without warning — Player 1 must block from a stretched position."
+      ],
+      "tags": ["return", "block return", "beginner", "technique", "fast serve", "compact"],
+      "diagramData": {
+        "p1": { "x": 280, "y": 60 },
+        "p2": { "x": 240, "y": 860 },
+        "shots": [
+          { "x1": 240, "y1": 850, "x2": 310, "y2": 385 },
+          { "x1": 280, "y1": 70, "x2": 100, "y2": 820 }
+        ],
+        "areas": [{ "x": 100, "y": 820, "r": 30 }]
+      }
+    },
+    {
+      "id": "RT-003",
+      "name": "Return Cross-Court: The Safest Target",
+      "subcategory": "Placement",
+      "category": "Return",
+      "skill_level": "beginner",
+      "player_count": 2,
+      "duration_minutes": 10,
+      "objective": "Train the cross-court return as the primary, default return target. The cross-court return is the highest-percentage return in tennis for three reasons: it travels over the lowest part of the net, it is the most natural directional extension of the return swing, and it pushes the server wide rather than opening the court. This drill builds cross-court return as the automatic default before introducing other directions.",
+      "setup": "Player 2 serves from both courts. Player 1 must return every serve cross-court — no exceptions. Cones mark the target zone in each cross-court corner.",
+      "instructions": [
+        "Player 2 serves from the deuce court. Player 1 returns cross-court to the ad side.",
+        "After 10 returns, Player 2 serves from the ad court. Player 1 returns cross-court to the deuce side.",
+        "Every return must land cross-court — any down-the-line return does not count.",
+        "Target zone: the deep cross-court corner, past the service line.",
+        "Play 4 rounds of 10 serves from each court."
+      ],
+      "coaching_cues": [
+        "Cross-court return from deuce court: swing the racket face toward the left side of the court.",
+        "Cross-court return from ad court: swing the racket face toward the right side of the court.",
+        "The cross-court return uses the most natural follow-through — don't fight the instinct.",
+        "Aim 3 feet over the net — the cross-court net is at its lowest point.",
+        "A deep cross-court return immediately puts the server in a neutral or defensive position."
+      ],
+      "common_errors": [
+        "Returning down-the-line instinctively — requires a conscious correction to go cross-court.",
+        "Returning short and mid-court — gives the server an easy attack.",
+        "Aiming at the line instead of 3 feet inside it — causes unnecessary wide errors."
+      ],
+      "variations": [
+        "Score only deep cross-court returns: landing past the service line = 1 point, past the 3-foot cone = 2 points.",
+        "Cross-court placement challenge: 8 out of 10 in the target zone.",
+        "Follow the return: after the cross-court return, Player 1 advances to the net — baseline to net on the return."
+      ],
+      "tags": ["return", "cross-court", "placement", "beginner", "safety", "default target"],
+      "diagramData": {
+        "p1": { "x": 280, "y": 60 },
+        "p2": { "x": 240, "y": 860 },
+        "shots": [
+          { "x1": 240, "y1": 850, "x2": 310, "y2": 385 },
+          { "x1": 280, "y1": 70, "x2": 120, "y2": 820 }
+        ],
+        "areas": [{ "x": 120, "y": 820, "r": 30 }]
+      }
+    },
+    {
+      "id": "RT-004",
+      "name": "Return Down the Line: The High-Risk Weapon",
+      "subcategory": "Placement",
+      "category": "Return",
+      "skill_level": "intermediate",
+      "player_count": 2,
+      "duration_minutes": 10,
+      "objective": "Develop the down-the-line return — the highest-risk, highest-reward return option. The DTL return is used to: surprise a server who is cheating to cover the cross-court, punish a wide serve by going back behind the server, or create a pattern change. This drill trains both the technical execution (redirecting the ball DTL) and the tactical judgment of when to use it.",
+      "setup": "Player 2 serves from the deuce court. Player 1 must return every ball down-the-line — to the deuce side on Player 2's court. Cones mark the target zone deep in the DTL corner.",
+      "instructions": [
+        "Player 2 serves from the deuce court at medium pace.",
+        "Player 1 must return every serve down-the-line — to the deuce side, away from the cross-court.",
+        "After 10 deuce-court DTL returns, switch to ad court: Player 1 returns DTL to the ad side.",
+        "Track accuracy: how many land in the target zone? Target: 6 out of 10.",
+        "After 2 sets of DTL practice, mix CC and DTL freely — Player 2 guesses which is coming."
+      ],
+      "coaching_cues": [
+        "DTL from deuce court: take the ball slightly earlier (more in front) than cross-court.",
+        "DTL from ad court: let the ball travel slightly further (more beside the body) than cross-court.",
+        "The same serve can go two directions — the difference is contact point, not swing path.",
+        "DTL is higher risk: the net is higher and the court is shorter. Add pace to compensate.",
+        "Use the DTL when the server is clearly leaning toward the cross-court return."
+      ],
+      "common_errors": [
+        "Going DTL on a wide serve — the angle makes DTL extremely difficult from a wide position.",
+        "DTL return landing short — gives the server an easy attack.",
+        "Using DTL too frequently — it must remain a surprise weapon, not a default."
+      ],
+      "variations": [
+        "DTL then CC alternation: Player 1 alternates return directions — Player 2 must guess.",
+        "Wide serve DTL challenge: Player 2 serves wide — Player 1 attempts the difficult DTL from wide.",
+        "Return rally: after the DTL return, play out the full point — test the consequences."
+      ],
+      "tags": ["return", "down-the-line", "placement", "intermediate", "weapon", "risk"],
+      "diagramData": {
+        "p1": { "x": 280, "y": 60 },
+        "p2": { "x": 240, "y": 860 },
+        "shots": [
+          { "x1": 240, "y1": 850, "x2": 310, "y2": 385 },
+          { "x1": 280, "y1": 70, "x2": 295, "y2": 820 }
+        ],
+        "areas": [{ "x": 295, "y": 820, "r": 28 }],
+        "cones": [{ "x": 295, "y": 820 }]
+      }
+    },
+    {
+      "id": "RT-005",
+      "name": "Chip Return: Low and Through the Court",
+      "subcategory": "Technique",
+      "category": "Return",
+      "skill_level": "intermediate",
+      "player_count": 2,
+      "duration_minutes": 10,
+      "objective": "Develop the chip return — a slice backhand return that stays low and skids through the court. The chip return is used primarily on second serves and wide serves where a full drive return is too difficult. Unlike a drive return, the chip uses the server's pace and stays low — forcing the server to hit up on the next ball. It is the classic chip-and-charge trigger: chip the return and follow it to the net.",
+      "setup": "Player 2 serves from both courts at moderate pace — simulating a second serve. Player 1 must return with a chip — a sliced, low, compact backhand return. The chip should barely clear the net and skid through the court.",
+      "instructions": [
+        "Player 2 serves at moderate second-serve pace from the deuce court.",
+        "Player 1 uses a chip return — a compact slice backhand motion.",
+        "The chip must stay low: target clearing the net by less than 1 foot.",
+        "After 10 chip returns from the deuce court, switch to the ad court.",
+        "After mastering the static chip, Player 1 follows the chip to the net on every return."
+      ],
+      "coaching_cues": [
+        "Short backswing — the chip is compact by design, not a full slice swing.",
+        "High to low racket path — slight downward motion through contact creates the low trajectory.",
+        "Open racket face just enough to clear the net — too open creates a floater.",
+        "Aim for the T (center service line) or DTL — these angles minimize the return angle available.",
+        "Stay sideways through contact — opening up creates a high floated chip."
+      ],
+      "common_errors": [
+        "Chip floating too high — gives the server an easy attack ball.",
+        "Chip landing too short — sits up in the service box, ideal for the server to attack.",
+        "No follow-through — stopping the racket before completion kills direction control."
+      ],
+      "variations": [
+        "Chip and charge: return is always followed by a sprint to the net.",
+        "Chip placement: alternate between T chip and wide chip — keep the server guessing.",
+        "Chip under pressure: Player 2 serves at full first-serve pace — Player 1 must still chip."
+      ],
+      "tags": ["return", "chip", "slice", "intermediate", "backhand", "second serve"],
+      "diagramData": {
+        "p1": { "x": 120, "y": 60 },
+        "p2": { "x": 160, "y": 860 },
+        "shots": [
+          { "x1": 160, "y1": 850, "x2": 250, "y2": 388 },
+          { "x1": 120, "y1": 70, "x2": 200, "y2": 810 }
+        ],
+        "areas": [{ "x": 200, "y": 810, "r": 30 }]
+      }
+    },
+    {
+      "id": "RT-006",
+      "name": "Drive Return: Attacking the Second Serve",
+      "subcategory": "Technique",
+      "category": "Return",
+      "skill_level": "intermediate",
+      "player_count": 2,
+      "duration_minutes": 12,
+      "objective": "Develop the drive return — a full, aggressive groundstroke taken on a second serve. The drive return is the primary weapon against weak second serves. When the server offers a slow, spinny, or misdirected second serve, the returner must step in, take the ball early, and drive it with full conviction. The drive return immediately puts the server on the defensive and changes the balance of the point.",
+      "setup": "Player 2 serves second serves only — kick or slice at moderate pace. Player 1 must step inside the baseline, take the ball early, and drive a full groundstroke return. No chip returns allowed during this drill.",
+      "instructions": [
+        "Player 2 serves second serves from the deuce court at 60-70% pace.",
+        "Player 1 steps inside the baseline to receive — foot should be inside the baseline.",
+        "Player 1 drives the return with a full forehand or backhand groundstroke.",
+        "Target: cross-court deep corner, past the service line.",
+        "Repeat 15 drive returns from each court. Track: how many land in the target zone?"
+      ],
+      "coaching_cues": [
+        "Step inside the baseline — if you stay on the baseline, the second serve pulls you back.",
+        "Take the ball early — before it reaches the peak of its bounce if possible.",
+        "Full backswing and follow-through — this is a groundstroke, not a block.",
+        "Drive through the ball with full hip and shoulder rotation.",
+        "The drive return should feel like a forehand or backhand from mid-court — same motion."
+      ],
+      "common_errors": [
+        "Staying on the baseline for a second serve — giving up the attack position.",
+        "Blocking instead of driving — uses only a fraction of the available power.",
+        "Stepping in but not completing the swing — foot in, but arm stays short."
+      ],
+      "variations": [
+        "Drive return plus one: after the drive return, Player 2 feeds a ball — Player 1 attacks again.",
+        "Inside-in drive: step inside and go inside-in forehand — attack the open court.",
+        "Drive return to DTL: step in and go down-the-line — maximum aggression."
+      ],
+      "tags": ["return", "drive", "aggressive", "intermediate", "second serve", "attack"],
+      "diagramData": {
+        "p1": { "x": 280, "y": 90 },
+        "p2": { "x": 240, "y": 860 },
+        "moves": [{ "x1": 280, "y1": 60, "x2": 280, "y2": 90 }],
+        "shots": [
+          { "x1": 240, "y1": 850, "x2": 220, "y2": 388 },
+          { "x1": 280, "y1": 90, "x2": 100, "y2": 820 }
+        ],
+        "areas": [{ "x": 100, "y": 820, "r": 30 }]
+      }
+    },
+    {
+      "id": "RT-007",
+      "name": "Return from Wide Serve: Deuce Court",
+      "subcategory": "Placement",
+      "category": "Return",
+      "skill_level": "intermediate",
+      "player_count": 2,
+      "duration_minutes": 12,
+      "objective": "Train the return of a wide serve from the deuce court — one of the most difficult return situations. The wide serve pulls the returner off the court, reduces the available return angles, and requires excellent footwork to reach in time. This drill trains both the movement to the wide serve and the limited return options available from a stretched position.",
+      "setup": "Player 2 serves wide slice serves to the deuce court — pulling Player 1 outside the singles sideline. Player 1 must reach the wide serve and return it back into the court. The cross-court return is almost always the only viable option from a wide position.",
+      "instructions": [
+        "Player 2 serves wide slice serves from the deuce court repeatedly.",
+        "Player 1 sprints wide to reach the serve and returns cross-court.",
+        "Target: return landing inside the ad service box or ad baseline corner.",
+        "Track: what percentage of wide serves can Player 1 return successfully? Target: 70%.",
+        "After 15 wide serve returns, Player 2 mixes wide and T — Player 1 must read and react."
+      ],
+      "coaching_cues": [
+        "First step: move laterally toward the ball immediately after the split step.",
+        "From a wide position, cross-court is almost always the only viable direction.",
+        "Use a compact swing from the wide position — there is less time and less balance available.",
+        "Open stance wide return: plant your outside foot and rotate from there.",
+        "After the return, sprint back toward the center — don't stop wide."
+      ],
+      "common_errors": [
+        "Trying to go DTL from a wide position — extremely high risk, usually goes wide.",
+        "No recovery after the wide return — stays wide and gives up the center.",
+        "Late split step — cannot get to the wide ball in time."
+      ],
+      "variations": [
+        "Wide return plus recovery: Player 2 hits a second ball to the center after Player 1's return.",
+        "No-man's land return: Player 2 serves a wide kick — Player 1 must handle the high bounce from wide.",
+        "Wide return accuracy: how many wide returns land inside the cross-court service box?"
+      ],
+      "tags": ["return", "wide serve", "deuce court", "intermediate", "movement", "positioning"],
+      "diagramData": {
+        "p1": { "x": 340, "y": 60 },
+        "p2": { "x": 240, "y": 860 },
+        "moves": [{ "x1": 280, "y1": 60, "x2": 340, "y2": 60 }],
+        "shots": [
+          { "x1": 240, "y1": 850, "x2": 330, "y2": 388 },
+          { "x1": 340, "y1": 65, "x2": 110, "y2": 820 }
+        ],
+        "areas": [{ "x": 110, "y": 820, "r": 30 }]
+      }
+    },
+    {
+      "id": "RT-008",
+      "name": "Return from T Serve: Reading the Middle",
+      "subcategory": "Reading",
+      "category": "Return",
+      "skill_level": "beginner",
+      "player_count": 2,
+      "duration_minutes": 10,
+      "objective": "Train the return of a T serve — a serve aimed at the center service line. The T serve eliminates most return angles and forces the returner to handle the ball directly in front or slightly to the backhand side. This drill trains both the positioning for T serves and the limited but effective return options available from this central position.",
+      "setup": "Player 2 serves T serves consistently from the deuce court. Player 1 positions slightly closer to center than usual to cover the T. Player 1 returns cross-court or DTL depending on the serve quality.",
+      "instructions": [
+        "Player 2 serves T serves from the deuce court.",
+        "Player 1 adjusts position: 2 feet closer to center than standard deuce court position.",
+        "Player 1 returns — cross-court is the primary target, DTL is the secondary option.",
+        "After 10 T serve returns from the deuce court, switch to the ad court.",
+        "Track: what percentage of T serves does Player 1 return successfully? Target: 75%."
+      ],
+      "coaching_cues": [
+        "Stand closer to center for the T serve — if you stand wide, the T serve jams you.",
+        "The T serve often comes at the body or slightly to the backhand side from deuce court.",
+        "Use a two-handed backhand block or a forehand block from this central position.",
+        "Cross-court is the natural direction from the T return position — don't fight it.",
+        "The T serve forces a reply down the middle — the server already has the center covered, so go wide."
+      ],
+      "common_errors": [
+        "Standing too wide — T serve jams the body and the return goes back to the center.",
+        "Slow first step to the T serve — the ball arrives quickly from the center.",
+        "Trying to go DTL from the T return — very difficult and usually goes wide."
+      ],
+      "variations": [
+        "T vs wide reading: Player 2 mixes T and wide — Player 1 must read and position correctly.",
+        "T return to DTL: specifically practice the difficult DTL return off a T serve.",
+        "T serve and rally: after the T return, play out the full point — server starts with the advantage."
+      ],
+      "tags": ["return", "T serve", "positioning", "beginner", "reading", "central"],
+      "diagramData": {
+        "p1": { "x": 230, "y": 60 },
+        "p2": { "x": 240, "y": 860 },
+        "shots": [
+          { "x1": 240, "y1": 850, "x2": 200, "y2": 380 },
+          { "x1": 230, "y1": 65, "x2": 100, "y2": 820 }
+        ],
+        "areas": [{ "x": 100, "y": 820, "r": 30 }]
+      }
+    },
+    {
+      "id": "RT-009",
+      "name": "Return and Rally: Neutralizing from the Return",
+      "subcategory": "Tactical",
+      "category": "Return",
+      "skill_level": "intermediate",
+      "player_count": 2,
+      "duration_minutes": 15,
+      "objective": "Train the return as a rally-starting shot rather than a point-ending shot. Many players try to hit winners on the return — a high-risk strategy that leads to unnecessary errors. This drill trains the neutralizing return: getting the ball in deep and cross-court, then winning the point in the rally. The return is a setup shot; the rally is where the point is won.",
+      "setup": "Player 2 serves from both courts. Player 1 returns cross-court deep and plays out the full point. The rule: Player 1 must return the ball first, and the point is scored normally after the return.",
+      "instructions": [
+        "Player 2 serves from the deuce court. Player 1 returns cross-court.",
+        "Both players play out the full point after the return.",
+        "Player 1's goal: neutral deep return, then win the rally — not a winner on the return.",
+        "After 10 points from deuce, switch to ad. Play 3 rounds of 10 points per court.",
+        "Track: what percentage of points does Player 1 win after a successful return?"
+      ],
+      "coaching_cues": [
+        "The return is a rally starter — treat it like the first ball of a rally, not a return winner.",
+        "Deep and cross-court is the safest and most effective neutralizing return.",
+        "After the return, immediately prepare for the server's reply — don't watch the return.",
+        "The server has the initiative — the returner's job is to take it away over the course of the rally.",
+        "A return that stays in starts a rally; a return winner attempt that misses gives the server a free point."
+      ],
+      "common_errors": [
+        "Going for return winners — high-risk, low-reward against good servers.",
+        "Return landing short — gives the server an easy attack on the next ball.",
+        "Not preparing for the rally after the return — caught thinking instead of moving."
+      ],
+      "variations": [
+        "Return and attack: on second serves, Player 1 may drive the return aggressively.",
+        "Return and come in: Player 1 returns and follows the return to the net.",
+        "Score tracking: play full sets — track first serve return won % and second serve return won %."
+      ],
+      "tags": ["return", "rally", "neutral", "intermediate", "tactical", "consistency"],
+      "diagramData": {
+        "p1": { "x": 280, "y": 60 },
+        "p2": { "x": 240, "y": 860 },
+        "shots": [
+          { "x1": 240, "y1": 850, "x2": 310, "y2": 385 },
+          { "x1": 280, "y1": 70, "x2": 110, "y2": 820 },
+          { "x1": 110, "y1": 830, "x2": 290, "y2": 100 }
+        ],
+        "areas": [{ "x": 110, "y": 820, "r": 28 }]
+      }
+    },
+    {
+      "id": "RT-010",
+      "name": "Reading the Toss: Predicting Serve Direction",
+      "subcategory": "Reading",
+      "category": "Return",
+      "skill_level": "advanced",
+      "player_count": 2,
+      "duration_minutes": 12,
+      "objective": "Train the ability to predict serve direction from the ball toss — the earliest possible cue available to the returner. The toss position is the server's biggest tell: a toss further right usually means wide from the deuce court, a toss further inside usually means T. Reading the toss allows the returner to start moving before the ball is even hit, gaining a critical head start on every return.",
+      "setup": "Player 2 serves from the deuce court to various locations. Player 1 must call the serve direction — 'T', 'wide', or 'body' — before the ball is hit, based only on the toss position. Player 2 confirms after each serve.",
+      "instructions": [
+        "Player 2 serves from the deuce court to random locations without declaring.",
+        "Player 1 must call the direction before the serve is hit — based on the toss.",
+        "Player 2 confirms the intended location after each serve.",
+        "Track: how often does Player 1 correctly read the toss? Target: 60%+ correct.",
+        "After 20 deuce court serves, switch to ad court. Repeat."
+      ],
+      "coaching_cues": [
+        "Watch the toss arm: if it goes further right (for right-hander serving deuce), usually wide.",
+        "Toss inside (left) from deuce court usually means T or body serve.",
+        "Watch the server's shoulder turn: if they turn more, usually more spin (kick or slice).",
+        "You don't need to be right 100% of the time — even 60% correct reading gives a massive advantage.",
+        "Even if you read wrong, the split step still gives you time to adjust."
+      ],
+      "common_errors": [
+        "Watching the ball after the toss instead of the server's body — loses the pre-contact cues.",
+        "Moving too early based on the read — must wait for the split step before committing.",
+        "Giving up on reading after a few wrong guesses — the reading skill takes time to develop."
+      ],
+      "variations": [
+        "Toss-only test: Player 2 tosses but doesn't serve — Player 1 calls the direction purely from the toss.",
+        "Reading competition: track Player 1's reading accuracy across 50 serves — measure improvement.",
+        "Reading with movement: Player 1 reads the toss and starts moving early — track how much earlier they arrive."
+      ],
+      "tags": ["return", "reading", "toss", "advanced", "anticipation", "serve prediction"],
+      "diagramData": {
+        "p1": { "x": 280, "y": 60 },
+        "p2": { "x": 240, "y": 860 },
+        "shots": [
+          { "x1": 240, "y1": 850, "x2": 200, "y2": 378 },
+          { "x1": 240, "y1": 850, "x2": 318, "y2": 388 },
+          { "x1": 240, "y1": 850, "x2": 152, "y2": 382 }
+        ],
+        "cones": [
+          { "x": 200, "y": 378 },
+          { "x": 318, "y": 388 },
+          { "x": 152, "y": 382 }
+        ]
+      }
+    },
+    {
+      "id": "RT-011",
+      "name": "Return Positioning by Server Type",
+      "subcategory": "Tactical",
+      "category": "Return",
+      "skill_level": "intermediate",
+      "player_count": 2,
+      "duration_minutes": 12,
+      "objective": "Train the ability to adjust return position based on the server's tendencies and serve type. Returner positioning is one of the most tactically sophisticated aspects of the return game. Standing in the wrong spot gives the server an automatic advantage on every serve. This drill develops the habit of actively adjusting position based on what the server shows.",
+      "setup": "Player 2 serves as three different 'types': hard flat server, kick serve specialist, and wide slice specialist. For each type, Player 1 must adjust their starting position. Player 2 announces which type they are serving as before each set.",
+      "instructions": [
+        "Round 1: Player 2 serves as a 'hard flat server'. Player 1 positions 2 feet further back.",
+        "Round 2: Player 2 serves as a 'kick specialist'. Player 1 positions further back and slightly wide — the kick bounces high.",
+        "Round 3: Player 2 serves as a 'wide slice specialist'. Player 1 positions slightly wider to cover the wide serve.",
+        "After each round, discuss: did the positioning help? What would you change?",
+        "Play 10 points per round. Track: return success rate at each position."
+      ],
+      "coaching_cues": [
+        "Hard flat server: stand further back — the extra foot of distance gives more reaction time.",
+        "Kick specialist: stand further back AND be ready to move wide — the kick pushes you out.",
+        "Wide slice specialist: cheat slightly wide on the side being served — cover the angle.",
+        "Never give up the center completely — a slight adjustment, not a full repositioning.",
+        "Adjust your position during the warm-up based on what the server shows you."
+      ],
+      "common_errors": [
+        "Standing in the same position regardless of server type — one position does not fit all servers.",
+        "Over-adjusting: cheating too far to one side gives up the other completely.",
+        "Not noticing the server's patterns during warm-up — crucial information is ignored."
+      ],
+      "variations": [
+        "Identify the type: Player 2 serves without announcing type — Player 1 identifies and adjusts mid-match.",
+        "Mixed types: Player 2 switches types after every 3 serves — Player 1 must spot and readjust.",
+        "Match simulation: play a practice set with Player 1 consciously adjusting return position every game."
+      ],
+      "tags": ["return", "positioning", "tactical", "intermediate", "server type", "adjustment"],
+      "diagramData": {
+        "p1": { "x": 280, "y": 80 },
+        "p2": { "x": 240, "y": 860 },
+        "shots": [
+          { "x1": 240, "y1": 850, "x2": 310, "y2": 385 },
+          { "x1": 280, "y1": 80, "x2": 110, "y2": 830 }
+        ],
+        "areas": [
+          { "x": 240, "y": 80, "r": 35 },
+          { "x": 110, "y": 830, "r": 28 }
+        ]
+      }
+    },
+    {
+      "id": "RT-012",
+      "name": "Return of Kick Serve: Handling the High Bounce",
+      "subcategory": "Technique",
+      "category": "Return",
+      "skill_level": "intermediate",
+      "player_count": 2,
+      "duration_minutes": 12,
+      "objective": "Train the specific challenge of returning a kick serve that bounces above shoulder height. The kick serve is the most effective second serve at competitive levels because it forces the returner to hit from an uncomfortable high contact point. Most players either back up to let it drop (losing attack position) or hit from too high (weak return). This drill trains the optimal response: step back slightly, take the ball at chest height on the rise, and drive it cross-court.",
+      "setup": "Player 2 serves kick serves from both courts designed to bounce above shoulder height. Player 1 must handle every kick serve with a quality return. Player 1 may step back slightly to take the ball at chest height on the rise.",
+      "instructions": [
+        "Player 2 serves high-kicking serves from the deuce court to Player 1's backhand.",
+        "Player 1 steps back one step to take the ball as it rises — at chest height, not shoulder height.",
+        "Player 1 returns cross-court with a drive or chip — whatever is most natural.",
+        "After 10 returns from deuce, switch to ad court.",
+        "Track: return quality on a scale of 1-3 (1=in court, 2=deep, 3=deep and cross-court target)."
+      ],
+      "coaching_cues": [
+        "Take one small step back to take the ball on the rise at chest height — not at shoulder or above.",
+        "Swing path must be low-to-high to handle the kick — meet the ball and brush upward.",
+        "Cross-court is the safest return off the kick — the natural swing path goes that direction.",
+        "Against a kick to the backhand: take it slightly later and drive through the ball.",
+        "Do NOT let the kick bounce twice — the returner who waits for the ball to drop concedes the point."
+      ],
+      "common_errors": [
+        "Staying in the same position and taking the kick at shoulder height — too uncomfortable.",
+        "Retreating too far back — gives the server the attack and concedes baseline position.",
+        "Blocking the kick instead of driving — produces a weak, short return."
+      ],
+      "variations": [
+        "Kick to the forehand: Player 2 kick serves to Player 1's forehand — unusual but effective.",
+        "Kick return attack: Player 1 must drive the kick return aggressively — no chips allowed.",
+        "Kick serve and rally: play full points after the kick — track server's advantage on kick serves."
+      ],
+      "tags": ["return", "kick serve", "high bounce", "intermediate", "backhand", "technique"],
+      "diagramData": {
+        "p1": { "x": 120, "y": 85 },
+        "p2": { "x": 160, "y": 860 },
+        "moves": [{ "x1": 120, "y1": 60, "x2": 120, "y2": 85 }],
+        "shots": [
+          { "x1": 160, "y1": 850, "x2": 250, "y2": 388 },
+          { "x1": 120, "y1": 85, "x2": 295, "y2": 830 }
+        ],
+        "areas": [{ "x": 295, "y": 830, "r": 30 }]
+      }
+    },
+    {
+      "id": "RT-013",
+      "name": "Return and Chip and Charge",
+      "subcategory": "Tactical",
+      "category": "Return",
+      "skill_level": "intermediate",
+      "player_count": 2,
+      "duration_minutes": 12,
+      "objective": "Develop the chip return and charge pattern — one of the most aggressive and effective return tactics available. On a second serve, the returner chips a low, skidding return and immediately sprints to the net. This pattern eliminates the server's rally advantage, creates an immediate net position, and forces the server to hit a passing shot from behind the baseline while still recovering from their serve.",
+      "setup": "Player 2 serves second serves from both courts. Player 1 chips a return and immediately sprints to the net on every ball. Player 2 attempts a passing shot — Player 1 volleys the finish.",
+      "instructions": [
+        "Player 2 serves a second serve from the deuce court.",
+        "Player 1 chips a compact slice return — low and deep, aimed at the T or DTL.",
+        "Player 1 immediately sprints to the net — no hesitation after the chip.",
+        "Player 2 attempts a passing shot from behind the baseline.",
+        "Player 1 split steps and volleys the finish. Play each as a full point. Repeat 15 times per court."
+      ],
+      "coaching_cues": [
+        "The chip must be low and deep — a high chip gives the server an easy passing shot angle.",
+        "Commit to the net charge the moment the chip leaves the racket — no hesitation.",
+        "Sprint diagonally toward the net — aim for the T to cut off both passing angles.",
+        "Split step as Player 2 contacts the passing shot — always, even mid-sprint.",
+        "Volley to the open court — the server is still recovering from their serve motion."
+      ],
+      "common_errors": [
+        "Chip landing short and floating — gives the server an easy attack from the service box.",
+        "Hesitating after the chip — arrives at the net too late for the volley.",
+        "No split step before the volley — cannot react to the passing shot direction."
+      ],
+      "variations": [
+        "Chip and charge on first serves: Player 1 chips and charges even on first serves.",
+        "Chip angle and charge: the chip goes sharply wide to open the court, then Player 1 charges.",
+        "Doubles chip and charge: works especially well when the partner is already at the net."
+      ],
+      "tags": ["return", "chip", "charge", "net play", "intermediate", "aggressive", "tactical"],
+      "diagramData": {
+        "p1": { "x": 280, "y": 550 },
+        "p2": { "x": 240, "y": 860 },
+        "moves": [
+          { "x1": 280, "y1": 60, "x2": 280, "y2": 120 },
+          { "x1": 280, "y1": 120, "x2": 280, "y2": 550 }
+        ],
+        "shots": [
+          { "x1": 240, "y1": 850, "x2": 310, "y2": 388 },
+          { "x1": 280, "y1": 115, "x2": 200, "y2": 820 },
+          { "x1": 240, "y1": 870, "x2": 240, "y2": 620 },
+          { "x1": 278, "y1": 545, "x2": 100, "y2": 120 }
+        ],
+        "areas": [{ "x": 100, "y": 120, "r": 25 }]
+      }
+    },
+    {
+      "id": "RT-014",
+      "name": "Second Serve Return Attack: Step In and Drive",
+      "subcategory": "Technique",
+      "category": "Return",
+      "skill_level": "intermediate",
+      "player_count": 2,
+      "duration_minutes": 12,
+      "objective": "Train the aggressive second serve return — one of the highest-value skills in competitive tennis. A player who consistently attacks second serves puts enormous pressure on the server, forces double faults under pressure, and wins a disproportionate number of return games. This drill specifically trains stepping inside the baseline and driving the return with full aggression on every second serve.",
+      "setup": "Player 2 serves only second serves from both courts. Player 1 must step inside the baseline before the ball bounces and attack the return aggressively. Conservative or neutral returns do not count — the goal is a return that puts the server immediately on the defensive.",
+      "instructions": [
+        "Player 2 serves second serves from the deuce court.",
+        "Player 1 steps 1-2 feet inside the baseline before the serve bounces.",
+        "Player 1 drives the return with full aggression — forehand or backhand groundstroke.",
+        "Target: return that lands deep and forces a defensive reply from the server.",
+        "Play 15 aggressive returns from each court. Track: how many put the server immediately on defense?"
+      ],
+      "coaching_cues": [
+        "Step inside the baseline before the ball bounces — position is the key to second serve attacks.",
+        "Take the ball early — stepping in and taking it on the rise increases pressure dramatically.",
+        "Commit fully to the swing — hesitation produces a halfhearted return that sits up.",
+        "Aim cross-court deep — the most reliable aggressive return direction.",
+        "After the aggressive return, be ready to rally — the server will try to hit a counterpunch."
+      ],
+      "common_errors": [
+        "Stepping in but still chipping — defeats the purpose of the inside position.",
+        "Stepping in too early — the ball bounces past you.",
+        "Aggressive swing but late contact — produces an error rather than an attack."
+      ],
+      "variations": [
+        "Inside-out attack: step in and go inside-out forehand — most aggressive option.",
+        "Pressure set: Player 1 must attack every second serve for an entire practice set.",
+        "Track the data: over 30 second serves, what percentage of attacks put the server on defense?"
+      ],
+      "tags": ["return", "second serve", "attack", "aggressive", "intermediate", "step-in"],
+      "diagramData": {
+        "p1": { "x": 280, "y": 90 },
+        "p2": { "x": 240, "y": 860 },
+        "moves": [{ "x1": 280, "y1": 60, "x2": 280, "y2": 90 }],
+        "shots": [
+          { "x1": 240, "y1": 850, "x2": 220, "y2": 385 },
+          { "x1": 280, "y1": 90, "x2": 100, "y2": 830 }
+        ],
+        "areas": [{ "x": 100, "y": 830, "r": 28 }],
+        "cones": [{ "x": 100, "y": 830 }]
+      }
+    },
+    {
+      "id": "RT-015",
+      "name": "Return of Body Serve: Getting Out of the Way",
+      "subcategory": "Technique",
+      "category": "Return",
+      "skill_level": "intermediate",
+      "player_count": 2,
+      "duration_minutes": 10,
+      "objective": "Train the response to body serves — serves aimed directly at the returner's hip or shoulder. The body serve is one of the most effective serves at all levels because it jams the returner, removes their swing space, and forces a cramped, weak return. The solution requires a quick lateral step to create space before swinging — a movement that must become automatic.",
+      "setup": "Player 2 serves body serves from both courts — aimed directly at Player 1's dominant hip or shoulder. Player 1 must step sideways to create space and return the ball.",
+      "instructions": [
+        "Player 2 serves body serves from the deuce court — aimed at Player 1's dominant side.",
+        "Player 1 must step sideways immediately to create space before swinging.",
+        "After creating space, Player 1 drives a return cross-court.",
+        "After 10 body serve returns from deuce, switch to ad court.",
+        "Track: how many body serves does Player 1 successfully create space and return?"
+      ],
+      "coaching_cues": [
+        "Step sideways immediately — one quick step creates enough space for the swing.",
+        "Step away from the ball, not toward it — resist the instinct to reach for body serves.",
+        "After the step, swing normally — the step was the adjustment, the swing should be unchanged.",
+        "Cross-court is the easiest direction after a body serve — the step opens that angle.",
+        "Train the body serve response until the step becomes automatic — it must be instinctive."
+      ],
+      "common_errors": [
+        "No lateral step — tries to swing from a jammed position, produces a weak return.",
+        "Stepping toward the ball instead of away — makes the jam worse.",
+        "Too large a step — takes too long and the ball is already past."
+      ],
+      "variations": [
+        "Mixed body and wide: Player 2 alternates body and wide serves — Player 1 must read and react.",
+        "Forehand body serve: Player 2 jams the forehand — Player 1 must step to the right.",
+        "Body serve pressure: Player 2 serves body serves at full pace — increases the jam effect."
+      ],
+      "tags": ["return", "body serve", "footwork", "intermediate", "technique", "space creation"],
+      "diagramData": {
+        "p1": { "x": 245, "y": 60 },
+        "p2": { "x": 240, "y": 860 },
+        "moves": [{ "x1": 280, "y1": 60, "x2": 245, "y2": 60 }],
+        "shots": [
+          { "x1": 240, "y1": 850, "x2": 155, "y2": 382 },
+          { "x1": 245, "y1": 65, "x2": 100, "y2": 820 }
+        ],
+        "areas": [{ "x": 100, "y": 820, "r": 28 }]
+      }
+    },
+    {
+      "id": "RT-016",
+      "name": "Return Placement Game: Server vs Returner",
+      "subcategory": "Tactical",
+      "category": "Return",
+      "skill_level": "intermediate",
+      "player_count": 2,
+      "duration_minutes": 15,
+      "objective": "Develop return placement under competitive pressure through a structured guessing game. The server must guess where the return will go — the returner scores by going the opposite direction. This game makes the returner think tactically about disguise and placement rather than just trying to hit the ball in, and makes the server think about what patterns the returner is using.",
+      "setup": "Player 2 serves from both courts. Before Player 1 returns, Player 2 guesses 'cross' or 'line'. Player 1 must go the opposite direction. Player 1 scores if Player 2 guesses wrong; Player 2 scores if correct. First to 10 wins.",
+      "instructions": [
+        "Player 2 serves from the deuce court.",
+        "Player 2 calls 'cross' or 'line' immediately before or as Player 1 hits the return.",
+        "Player 1 must return the opposite direction of Player 2's call.",
+        "Player 1 scores +1 for going the wrong direction from the guess.",
+        "Player 2 scores +1 for guessing correctly. First to 10 points wins."
+      ],
+      "coaching_cues": [
+        "Player 1: watch Player 2's call and react — but also try to disguise the setup.",
+        "Player 1: if Player 2 always guesses 'cross', just go cross-court every time — exploit predictability.",
+        "Player 2: watch the return setup to predict — contact point, racket face, body position are all tells.",
+        "Player 1: keep the same preparation for both directions — the switch happens at contact.",
+        "This game reveals your tells — if Player 2 guesses correctly more than 60%, you are telegraphing."
+      ],
+      "common_errors": [
+        "Player 1 telegraphing the direction with a different setup — Player 2 reads it before the guess.",
+        "Player 2 always guessing the same direction — not actually reading, just gambling.",
+        "Player 1 making poor contact in trying to change direction — placement must not hurt quality."
+      ],
+      "variations": [
+        "Add a third option: Player 2 can also call 'body' — Player 1 must go anywhere except the body.",
+        "Role reversal: Player 1 becomes the server and guesser after 10 points.",
+        "Full point version: after the return, play out the point — add real match consequences."
+      ],
+      "tags": ["return", "placement", "game", "intermediate", "tactical", "disguise"],
+      "diagramData": {
+        "p1": { "x": 280, "y": 60 },
+        "p2": { "x": 240, "y": 860 },
+        "shots": [
+          { "x1": 240, "y1": 850, "x2": 310, "y2": 385 },
+          { "x1": 280, "y1": 65, "x2": 110, "y2": 820 },
+          { "x1": 280, "y1": 65, "x2": 295, "y2": 820 }
+        ],
+        "areas": [
+          { "x": 110, "y": 820, "r": 25 },
+          { "x": 295, "y": 820, "r": 25 }
+        ]
+      }
+    },
+    {
+      "id": "RT-017",
+      "name": "Return from Ad Court: Wide and T",
+      "subcategory": "Placement",
+      "category": "Return",
+      "skill_level": "intermediate",
+      "player_count": 2,
+      "duration_minutes": 12,
+      "objective": "Train return from the ad court — the most pressure-laden return position in tennis. The ad court return is played at deuce and at ad-out, the two highest-pressure points in a game. This drill trains both the wide ad serve return and the T ad serve return, building the specific return patterns most needed in tight, high-pressure moments.",
+      "setup": "Player 2 serves from the ad court to Player 1 on the ad side. Player 2 alternates between wide (to Player 1's backhand) and T (to Player 1's forehand). Player 1 must read the serve and return appropriately.",
+      "instructions": [
+        "Player 2 serves wide from the ad court — to Player 1's backhand.",
+        "Player 1 returns cross-court (to deuce side) with a chip or drive.",
+        "After 5 wide returns, Player 2 serves T — to Player 1's forehand.",
+        "Player 1 returns cross-court (to ad side) or DTL.",
+        "Alternate 5 wide, 5 T, then mix randomly for 10 more. Total: 20 returns per set."
+      ],
+      "coaching_cues": [
+        "Ad court wide serve: to your backhand — chip cross-court is the safest and most effective response.",
+        "Ad court T serve: to your forehand — drive cross-court or go inside-in forehand.",
+        "The ad court wide serve is the most common pressure serve — practice it most.",
+        "From the ad court, the cross-court return goes to the deuce side — where the server wants to avoid.",
+        "At deuce and ad-out, breathe before the return — the point matters, the technique should not change."
+      ],
+      "common_errors": [
+        "Going DTL off the wide ad court serve — very high risk from a wide backhand position.",
+        "Chipping the T serve when a drive was available — giving up a free attack opportunity.",
+        "Changing the return under pressure — most errors in the ad court come from overthinking."
+      ],
+      "variations": [
+        "Pressure simulation: start every return point at deuce — full mental pressure.",
+        "Ad court return and win: Player 1 must win the point after the return — full point play.",
+        "Ad court consistency: 8 out of 10 wide ad returns must land cross-court past the service line."
+      ],
+      "tags": ["return", "ad court", "wide", "T serve", "intermediate", "pressure"],
+      "diagramData": {
+        "p1": { "x": 120, "y": 60 },
+        "p2": { "x": 160, "y": 860 },
+        "shots": [
+          { "x1": 160, "y1": 850, "x2": 80, "y2": 388 },
+          { "x1": 120, "y1": 65, "x2": 295, "y2": 820 },
+          { "x1": 160, "y1": 850, "x2": 200, "y2": 385 },
+          { "x1": 120, "y1": 65, "x2": 100, "y2": 820 }
+        ],
+        "areas": [
+          { "x": 295, "y": 820, "r": 25 },
+          { "x": 100, "y": 820, "r": 25 }
+        ]
+      }
+    },
+    {
+      "id": "RT-018",
+      "name": "Lob Return: When to Lob the Serve",
+      "subcategory": "Tactical",
+      "category": "Return",
+      "skill_level": "intermediate",
+      "player_count": 2,
+      "duration_minutes": 10,
+      "objective": "Develop the lob return — a high, deep return used in specific tactical situations: against serve-and-volleyers who rush the net, when the returner is pulled extremely wide, or as a surprise element to disrupt a server's rhythm. The lob return is underused by most club players and devastatingly effective when used at the right moment.",
+      "setup": "Player 2 serves and rushes the net on every serve — simulating a serve-and-volleyer. Player 1 must lob return over Player 2's head on most serves, with occasional drive returns to keep Player 2 honest.",
+      "instructions": [
+        "Player 2 serves and sprints to the net on every serve.",
+        "Player 1 lobs return over Player 2's head — high, deep, landing near the baseline.",
+        "After 8 lob returns, Player 1 drives 2 returns — keeps Player 2 from anticipating only lobs.",
+        "Switch courts and repeat.",
+        "Track: how many lob returns land in the back half of the court? Target: 7 out of 10."
+      ],
+      "coaching_cues": [
+        "Open the racket face significantly on the lob return — it must go high.",
+        "Aim well over Player 2's head — not just barely over. Safety first on the lob return.",
+        "The lob return must land deep — a short lob return is an overhead opportunity.",
+        "Use the lob return when Player 2 is clearly rushing the net — read the intention.",
+        "Mix the lob return with the occasional drive — the server must not know which is coming."
+      ],
+      "common_errors": [
+        "Lob return not going high enough — Player 2 smashes an easy overhead.",
+        "Lob return landing short — gives Player 2 a comfortable overhead from mid-court.",
+        "Using lob return too often — becomes predictable and Player 2 starts hanging back."
+      ],
+      "variations": [
+        "Lob return competition: Player 2 tries to overhead every lob, Player 1 tries to lob out of reach.",
+        "Surprise lob: Player 2 does not rush the net — Player 1 must choose when to lob independently.",
+        "Topspin lob return: add topspin to the lob — harder to smash, bounces further away."
+      ],
+      "tags": ["return", "lob", "tactical", "intermediate", "serve-and-volley", "surprise"],
+      "diagramData": {
+        "p1": { "x": 280, "y": 60 },
+        "p2": { "x": 200, "y": 560 },
+        "moves": [{ "x1": 240, "y1": 860, "x2": 200, "y2": 560 }],
+        "shots": [
+          { "x1": 240, "y1": 855, "x2": 310, "y2": 385 },
+          { "x1": 280, "y1": 65, "x2": 200, "y2": 820 }
+        ],
+        "areas": [{ "x": 200, "y": 820, "r": 35 }]
+      }
+    },
+    {
+      "id": "RT-019",
+      "name": "Return Under Time Pressure: Fast Serve Simulation",
+      "subcategory": "Technique",
+      "category": "Return",
+      "skill_level": "advanced",
+      "player_count": 2,
+      "duration_minutes": 12,
+      "objective": "Train the return under extreme time pressure — simulating returning a 120+ mph serve. When the serve is very fast, the returner has almost no time to prepare and must rely on a compact, automatic motion. This drill progressively increases serve pace until Player 1 is returning at the limits of their reaction time, forcing the compact return response to become completely automatic.",
+      "setup": "Player 2 serves at progressively increasing pace: starting at 50%, increasing to 70%, 85%, then maximum. At each pace level, Player 1 returns 5 balls before the pace increases. Player 2 always serves to the same location so Player 1 can focus on timing, not reading.",
+      "instructions": [
+        "Player 2 serves from the deuce court, always to the T, at 50% pace. Player 1 returns 5 balls.",
+        "Increase to 70% pace. Player 1 returns 5 balls.",
+        "Increase to 85% pace. Player 1 returns 5 balls.",
+        "Increase to maximum pace. Player 1 returns 5 balls.",
+        "Rest 90 seconds. Repeat to the ad court. Track in-percentage at each pace level."
+      ],
+      "coaching_cues": [
+        "At high pace, the backswing must be almost zero — the racket stays in front of the body.",
+        "Use the server's pace — don't try to generate your own. A wall return is the goal.",
+        "Firm wrist is the only consistent element under extreme time pressure.",
+        "Move your feet even at maximum pace — one step to the ball makes a critical difference.",
+        "Accept that at maximum pace, getting the ball in is the goal — placement comes second."
+      ],
+      "common_errors": [
+        "Trying to take a backswing at high pace — contact happens before the swing is ready.",
+        "Freezing under extreme pace — the body locks up and the ball goes unanswered.",
+        "Aiming for a specific target at maximum pace — reduces focus from the ball to the court."
+      ],
+      "variations": [
+        "Mixed pace: Player 2 alternates slow and fast with no warning — Player 1 must adjust each time.",
+        "Reaction test: Player 2 serves at maximum pace to random locations — pure reaction return.",
+        "Video analysis: film the return at high pace and compare backswing size to low pace — should be shorter."
+      ],
+      "tags": ["return", "time pressure", "fast serve", "advanced", "reaction", "compact"],
+      "diagramData": {
+        "p1": { "x": 280, "y": 60 },
+        "p2": { "x": 240, "y": 860 },
+        "shots": [
+          { "x1": 240, "y1": 850, "x2": 200, "y2": 378 },
+          { "x1": 280, "y1": 65, "x2": 100, "y2": 820 }
+        ],
+        "areas": [{ "x": 100, "y": 820, "r": 30 }]
+      }
+    },
+    {
+      "id": "RT-020",
+      "name": "Return Consistency Challenge: 10 in a Row",
+      "subcategory": "Technique",
+      "category": "Return",
+      "skill_level": "beginner",
+      "player_count": 2,
+      "duration_minutes": 10,
+      "objective": "Build return consistency through a count-based challenge — 10 consecutive returns without an error. The return is the most error-prone shot in tennis at club level, and the most common cause of return errors is over-aggression. This drill teaches players that getting the return in consistently is the primary goal, and that even a neutral deep return puts the server under pressure.",
+      "setup": "Player 2 serves from both courts at moderate pace. Player 1 must return every serve into the court — anywhere in the court counts. Any return into the net or wide resets the count to zero.",
+      "instructions": [
+        "Player 2 serves from the deuce court at 70% pace.",
+        "Player 1 must return every serve into the court. Count consecutive makes.",
+        "Any error resets to zero.",
+        "Target: 10 consecutive returns without an error.",
+        "Switch to ad court after reaching 10 and repeat."
+      ],
+      "coaching_cues": [
+        "Focus on getting the ball in, not on where it goes — consistency before placement.",
+        "Aim for a large target: the entire back half of the court. Don't aim for corners.",
+        "Keep the swing relaxed — tight, desperate swings produce errors.",
+        "Breathe as you swing — exhale on contact.",
+        "After reaching 10, add the constraint: returns must also land past the service line."
+      ],
+      "common_errors": [
+        "Aiming for specific targets — reduces the effective target area unnecessarily.",
+        "Tightening up on serve — the return swing is just a groundstroke.",
+        "Resetting the count with too much self-criticism — stay relaxed after misses."
+      ],
+      "variations": [
+        "Increase to 15 or 20 in a row after reaching 10.",
+        "Add a placement constraint: must land cross-court after reaching 10 in a row.",
+        "Timed version: how many consecutive returns in 5 minutes?"
+      ],
+      "tags": ["return", "consistency", "challenge", "beginner", "count", "mental"],
+      "diagramData": {
+        "p1": { "x": 280, "y": 60 },
+        "p2": { "x": 240, "y": 860 },
+        "shots": [
+          { "x1": 240, "y1": 850, "x2": 310, "y2": 385 },
+          { "x1": 280, "y1": 65, "x2": 180, "y2": 820 }
+        ],
+        "areas": [{ "x": 180, "y": 820, "r": 50 }]
+      }
+    },
+    {
+      "id": "RT-021",
+      "name": "Return to Target Zones: Three-Corner Accuracy",
+      "subcategory": "Placement",
+      "category": "Return",
+      "skill_level": "intermediate",
+      "player_count": 2,
+      "duration_minutes": 12,
+      "objective": "Develop precise return placement to all three key target zones — cross-court deep, down-the-line, and body of the server. Most players return to the same zone on every serve without conscious thought. This drill trains deliberate, intentional return placement to all three zones, building the tactical flexibility needed in match play.",
+      "setup": "Player 2 serves from the deuce court. Three cones mark the three return target zones: cross-court deep, DTL deep, and center (body of the server). Player 2 calls a target zone before each serve — Player 1 must land the return in the called zone.",
+      "instructions": [
+        "Player 2 serves from the deuce court and calls a target zone before each serve: 'cross', 'line', or 'body'.",
+        "Player 1 must return to the called zone.",
+        "Score: +2 for landing within 2 feet of the cone, +1 for landing in the correct half.",
+        "Play 15 serves per round. Target: 25+ points per round.",
+        "Switch to ad court and repeat with the corresponding three zones."
+      ],
+      "coaching_cues": [
+        "Decide the target before the swing — the contact point and racket face angle create the direction.",
+        "Cross: slightly earlier contact point, racket face open cross-court.",
+        "Line: slightly later contact point, block or redirect along the line.",
+        "Body: aim for the server's hip position — slightly inside the center of the service box.",
+        "Match the target to the serve: a wide serve naturally invites the cross-court return."
+      ],
+      "common_errors": [
+        "Deciding the target after the swing starts — always too late.",
+        "Over-aiming — reducing the effective target area by aiming right at the cone.",
+        "Using the same return direction regardless of the call — not responding to the target."
+      ],
+      "variations": [
+        "Player 2 does not call the zone — Player 1 must choose based on the serve placement.",
+        "Full points after the return: the called zone determines the starting tactical position.",
+        "Track the data: which zone does Player 1 hit most accurately? Focus extra reps there."
+      ],
+      "tags": ["return", "placement", "target zones", "intermediate", "accuracy", "deliberate"],
+      "diagramData": {
+        "p1": { "x": 280, "y": 60 },
+        "p2": { "x": 240, "y": 860 },
+        "shots": [
+          { "x1": 240, "y1": 850, "x2": 310, "y2": 385 },
+          { "x1": 280, "y1": 65, "x2": 110, "y2": 820 },
+          { "x1": 280, "y1": 65, "x2": 295, "y2": 820 },
+          { "x1": 280, "y1": 65, "x2": 200, "y2": 820 }
+        ],
+        "cones": [
+          { "x": 110, "y": 820 },
+          { "x": 295, "y": 820 },
+          { "x": 200, "y": 820 }
+        ]
+      }
+    },
+    {
+      "id": "RT-022",
+      "name": "Return at Deuce: High Pressure Point Practice",
+      "subcategory": "Mental",
+      "category": "Return",
+      "skill_level": "advanced",
+      "player_count": 2,
+      "duration_minutes": 15,
+      "objective": "Train the return specifically under the pressure of deuce — the highest-leverage point in any game. Most players' return quality changes at deuce: they become more conservative, more tense, or more erratic. This drill isolates the deuce return, provides concentrated repetitions at this exact score, and builds immunity to the tension that normally degrades return quality at high-pressure moments.",
+      "setup": "Every point begins at deuce. Player 2 serves from both courts. Player 1 returns. Both players play out each point. The deuce score is reset after every point — every single return is at deuce pressure.",
+      "instructions": [
+        "Start every point at deuce. Player 2 serves from the deuce court.",
+        "Player 1 returns — maintaining exactly the same technique as in non-pressure situations.",
+        "Play out the full point.",
+        "Reset to deuce and repeat immediately.",
+        "Play 20 deuce points from the deuce court, then 20 from the ad court. Track: return quality, wins and losses."
+      ],
+      "coaching_cues": [
+        "The ball doesn't know the score — the return technique must be identical at deuce.",
+        "Slow your breathing before the return — one exhale before the ball toss resets the nervous system.",
+        "Commit to a return target before the serve — indecision causes more errors than bad technique.",
+        "Notice if your swing gets shorter at deuce — shortening the swing is the most common pressure response.",
+        "After a missed return at deuce, reset with 'next point' — never carry one mistake into the next."
+      ],
+      "common_errors": [
+        "Shortening the backswing under pressure — produces a blocked, weak return.",
+        "Aiming more conservatively — landing the return short and giving the server an easy point.",
+        "Rushing the return motion — faster does not mean better under pressure."
+      ],
+      "variations": [
+        "Ad-out practice: start every point at ad-out — one of the most pressured return situations.",
+        "Win streak: Player 1 must win 3 consecutive deuce returns to win the drill round.",
+        "Track consistency: compare return quality at 0-0 vs deuce — the numbers reveal the mental impact."
+      ],
+      "tags": ["return", "deuce", "pressure", "mental", "advanced", "match-simulation"],
+      "diagramData": {
+        "p1": { "x": 280, "y": 60 },
+        "p2": { "x": 240, "y": 860 },
+        "shots": [
+          { "x1": 240, "y1": 850, "x2": 310, "y2": 385 },
+          { "x1": 280, "y1": 65, "x2": 110, "y2": 820 },
+          { "x1": 240, "y1": 855, "x2": 200, "y2": 382 },
+          { "x1": 280, "y1": 65, "x2": 295, "y2": 820 }
+        ],
+        "areas": [
+          { "x": 110, "y": 820, "r": 28 },
+          { "x": 295, "y": 820, "r": 28 }
+        ]
+      }
+    },
+    {
+      "id": "RT-023",
+      "name": "First Serve Return Percentage Tracking",
+      "subcategory": "Assessment",
+      "category": "Return",
+      "skill_level": "beginner",
+      "player_count": 2,
+      "duration_minutes": 15,
+      "objective": "Measure the baseline first serve return percentage and identify the most common error types. Most players have no idea what their actual first serve return percentage is. This data is essential: a 40% first serve return means the server wins the remaining 60% of points before the rally even starts. This drill creates the baseline measurement from which all return improvement is tracked.",
+      "setup": "Player 2 serves first serves from both courts at full pace. Player 1 tracks every return: in, into the net, or wide — and notes the approximate serve location. After 30 serves, calculate the first serve return percentage.",
+      "instructions": [
+        "Player 2 serves 15 first serves from the deuce court at full pace.",
+        "Player 1 returns and a third person (or Player 2 on the next ball) records: in, net, or wide.",
+        "After 15 deuce serves, switch to 15 ad court serves.",
+        "Calculate overall percentage: returns in / 30 total serves.",
+        "Identify the most common error type (net vs wide) — this points to the technical correction needed."
+      ],
+      "coaching_cues": [
+        "Net errors: contact is too late or racket face is too closed — open the face slightly.",
+        "Wide errors: swing path is too cross-body — keep the swing more neutral.",
+        "Low in-percentage: the backswing may be too large for the serve speed.",
+        "High in-percentage with short returns: can afford more aggression.",
+        "Use this data weekly — track how the percentage improves with targeted practice."
+      ],
+      "common_errors": [
+        "Not tracking honestly — every return must be recorded accurately.",
+        "Serving too slowly — the data must reflect real first serve pace.",
+        "Only tracking the in/out result — fault type (net vs wide) is equally important."
+      ],
+      "variations": [
+        "Second serve tracking: compare first serve return % to second serve return %.",
+        "Deuce vs ad comparison: which court is the weaker return side?",
+        "Weekly measurement: track the percentage every week for one month — measure improvement."
+      ],
+      "tags": ["return", "tracking", "percentage", "beginner", "assessment", "data"],
+      "diagramData": {
+        "p1": { "x": 200, "y": 60 },
+        "p2": { "x": 200, "y": 860 },
+        "shots": [
+          { "x1": 240, "y1": 855, "x2": 310, "y2": 385 },
+          { "x1": 160, "y1": 855, "x2": 80, "y2": 388 },
+          { "x1": 200, "y1": 60, "x2": 110, "y2": 820 }
+        ],
+        "cones": [
+          { "x": 310, "y": 385 },
+          { "x": 80, "y": 388 }
+        ]
+      }
+    },
+    {
+      "id": "RT-024",
+      "name": "Return Anticipation: Moving Before the Serve",
+      "subcategory": "Reading",
+      "category": "Return",
+      "skill_level": "advanced",
+      "player_count": 2,
+      "duration_minutes": 12,
+      "objective": "Train early anticipation on the return — moving before the ball is actually struck based on pre-contact cues from the server. Elite returners like Djokovic and Agassi start moving before the ball leaves the racket because they read the serve direction from the toss, shoulder angle, and swing path. Even partial anticipation dramatically improves return quality by giving the feet a head start.",
+      "setup": "Player 2 serves from both courts. Player 1 must begin moving toward the expected serve direction before the ball makes contact with the racket — based purely on pre-contact cues. Player 2 confirms the location after each serve to verify whether the anticipation was correct.",
+      "instructions": [
+        "Player 2 serves to random locations without declaring.",
+        "Player 1 must begin the first step of movement before the racket contacts the ball.",
+        "Player 2 confirms after each serve: was Player 1 moving in the right direction?",
+        "Track: what percentage of early reads are correct? Target: 55%+ correct.",
+        "Play 30 serves. Compare return quality when early read is correct vs incorrect."
+      ],
+      "coaching_cues": [
+        "Watch the toss arm direction and height — the toss is the earliest indicator of serve direction.",
+        "Watch the server's ball-side shoulder: if it opens early, usually a slice wide.",
+        "Watch the point of contact: very high contact = kick, middle height = flat, lower = slice.",
+        "A wrong early read is recoverable — but a late reaction never is.",
+        "You only need to be correct 55% of the time to gain a massive advantage over pure reaction."
+      ],
+      "common_errors": [
+        "Moving too aggressively too early — committed fully to wrong direction with no ability to recover.",
+        "Not reading anything — waiting to react after contact rather than anticipating.",
+        "Reading correctly but not trusting the read — hesitating despite the correct read."
+      ],
+      "variations": [
+        "Exaggerated anticipation: Player 1 must take 2 full steps before contact — very aggressive.",
+        "Video comparison: film 10 returns with anticipation and 10 without — compare arrival time.",
+        "Reading accuracy chart: track which pre-contact cues Player 1 reads most accurately."
+      ],
+      "tags": ["return", "anticipation", "reading", "advanced", "pre-contact", "early movement"],
+      "diagramData": {
+        "p1": { "x": 260, "y": 60 },
+        "p2": { "x": 240, "y": 860 },
+        "moves": [
+          { "x1": 280, "y1": 60, "x2": 260, "y2": 60 }
+        ],
+        "shots": [
+          { "x1": 240, "y1": 850, "x2": 310, "y2": 385 },
+          { "x1": 260, "y1": 65, "x2": 110, "y2": 820 }
+        ],
+        "areas": [{ "x": 110, "y": 820, "r": 30 }]
+      }
+    },
+    {
+      "id": "RT-025",
+      "name": "Return After a Long Rally: Fatigue Return",
+      "subcategory": "Mental",
+      "category": "Return",
+      "skill_level": "advanced",
+      "player_count": 2,
+      "duration_minutes": 15,
+      "objective": "Train the return under physical fatigue — the most honest test of return quality. In matches, the first return of each game often comes after 20-30 seconds of rest, but the return at the end of a close set comes after 10+ physically demanding rallies. This drill replicates that fatigue by requiring Player 1 to run before every return, then maintaining return quality despite being out of breath.",
+      "setup": "Player 1 sprints from the net to the baseline before every serve. Player 2 serves the moment Player 1's foot touches the baseline. Player 1 must return despite being out of breath from the sprint.",
+      "instructions": [
+        "Player 1 starts at the net.",
+        "Player 1 sprints to the baseline at full speed.",
+        "The moment Player 1's foot touches the baseline, Player 2 serves.",
+        "Player 1 must return despite being fatigued from the sprint.",
+        "Repeat 12 times per set. Rest 2 minutes. Play 3 sets. Track return quality under fatigue."
+      ],
+      "coaching_cues": [
+        "Control your breathing — exhale on the return contact, don't hold your breath.",
+        "Even when fatigued, maintain the split step — the fatigue will tempt you to skip it.",
+        "Under fatigue, go for a neutral deep return — this is not the time for aggression.",
+        "Keep the swing compact when fatigued — shorter but still committed.",
+        "The returner who maintains quality under fatigue wins the final games of tight sets."
+      ],
+      "common_errors": [
+        "Not sprinting hard enough — the drill must genuinely replicate fatigue.",
+        "Completely losing technique under fatigue — some degradation is expected, complete collapse is not.",
+        "Skipping the split step because tired — this is exactly when it matters most."
+      ],
+      "variations": [
+        "Side-to-side sprint: Player 1 sprints sideline to sideline before the return — different fatigue pattern.",
+        "Fitness return set: play a full set with Player 1 sprinting before every return.",
+        "Track the fatigue effect: compare return quality in set 1 vs set 3 — fatigue compounds."
+      ],
+      "tags": ["return", "fatigue", "mental", "advanced", "fitness", "pressure"],
+      "diagramData": {
+        "p1": { "x": 280, "y": 60 },
+        "p2": { "x": 240, "y": 860 },
+        "moves": [{ "x1": 280, "y1": 480, "x2": 280, "y2": 60 }],
+        "shots": [
+          { "x1": 240, "y1": 850, "x2": 310, "y2": 385 },
+          { "x1": 280, "y1": 65, "x2": 110, "y2": 820 }
+        ],
+        "areas": [{ "x": 110, "y": 820, "r": 30 }]
+      }
+    },
+    {
+      "id": "RT-026",
+      "name": "Forehand Return: Run Around the Backhand",
+      "subcategory": "Tactical",
+      "category": "Return",
+      "skill_level": "advanced",
+      "player_count": 2,
+      "duration_minutes": 12,
+      "objective": "Develop the run-around forehand return — moving around the backhand to hit a forehand return on a serve aimed to the backhand side. This is one of the most aggressive and effective return tactics against slow or moderate second serves. Running around to use the stronger forehand puts immediate offensive pressure on the server and sets up the inside-out forehand pattern.",
+      "setup": "Player 2 serves moderate second serves to Player 1's backhand side. Player 1 must run around the backhand and return with the forehand. After the run-around forehand return, Player 1 plays out the point.",
+      "instructions": [
+        "Player 2 serves moderate second serves to Player 1's backhand — from both courts.",
+        "Player 1 runs around the backhand and hits a forehand return.",
+        "The forehand return goes inside-out (cross-court from Player 1's backhand position).",
+        "Play out the full point after the run-around forehand.",
+        "Repeat 15 times from each court. Track: how many run-around forehands land in the target?"
+      ],
+      "coaching_cues": [
+        "Read the second serve early — the run-around must begin before the ball bounces.",
+        "Get completely around the ball — don't half-run-around and hit a compromised shot.",
+        "The inside-out forehand goes to the ad side from deuce court — or deuce side from ad court.",
+        "After the run-around return, recover to center — the DTL is now open.",
+        "Only run-around if you have enough time — a late run-around produces a rushed, weak shot."
+      ],
+      "common_errors": [
+        "Running around on a fast serve — not enough time, produces a total miss.",
+        "Half-running-around — ending up hitting a compromised forehand from the wrong position.",
+        "Not recovering after the run-around — DTL is completely open."
+      ],
+      "variations": [
+        "Run-around plus inside-in: after running around, go inside-in instead of inside-out.",
+        "Run-around return competition: Player 2 tries to serve fast enough that Player 1 cannot run around.",
+        "First serve run-around: Player 1 attempts the run-around on first serves — extreme aggression."
+      ],
+      "tags": ["return", "run-around", "forehand", "advanced", "second serve", "aggressive"],
+      "diagramData": {
+        "p1": { "x": 120, "y": 60 },
+        "p2": { "x": 160, "y": 860 },
+        "moves": [{ "x1": 280, "y1": 60, "x2": 120, "y2": 60 }],
+        "shots": [
+          { "x1": 160, "y1": 850, "x2": 250, "y2": 388 },
+          { "x1": 120, "y1": 65, "x2": 295, "y2": 830 }
+        ],
+        "areas": [{ "x": 295, "y": 830, "r": 28 }]
+      }
+    },
+    {
+      "id": "RT-027",
+      "name": "Return Pattern: Cross then DTL",
+      "subcategory": "Tactical",
+      "category": "Return",
+      "skill_level": "intermediate",
+      "player_count": 2,
+      "duration_minutes": 12,
+      "objective": "Develop the two-serve return pattern — returning cross-court consistently for several serves to establish a pattern, then redirecting down-the-line to surprise the server who has started to anticipate the cross-court. Pattern play on the return is an advanced tactical skill that transforms the return from a reactive shot into a proactive point-construction tool.",
+      "setup": "Player 2 serves from the deuce court. Player 1 returns cross-court for 3 serves in a row, then redirects DTL on the 4th. Player 2 is told to anticipate the cross-court on the 4th serve — replicating how a smart server begins to cheat after seeing a pattern.",
+      "instructions": [
+        "Player 2 serves 3 balls — Player 1 returns all 3 cross-court.",
+        "Player 2 announces they are anticipating cross-court on the 4th serve.",
+        "Player 2 serves the 4th — Player 1 goes DTL.",
+        "Play out each point fully after the return.",
+        "Repeat 8 four-serve sequences. Track: how many DTL redirects catch Player 2 cheating?"
+      ],
+      "coaching_cues": [
+        "Build the pattern first: 3 consecutive cross-court returns is enough to create expectation.",
+        "Watch the server start to lean: when they cheat to the cross-court, pull the trigger DTL.",
+        "The DTL on the 4th return should look identical to the first 3 in preparation.",
+        "After going DTL, immediately return to the cross-court pattern — reset the sequence.",
+        "The pattern only works if the cross-court returns are genuinely good — weak pattern balls give nothing."
+      ],
+      "common_errors": [
+        "Going DTL too early — one or two cross-courts are not enough to establish a pattern.",
+        "Going DTL from a wide position — the pattern must be set up from a neutral position.",
+        "DTL with different preparation — telegraphed to a smart server who reads the switch."
+      ],
+      "variations": [
+        "Two-cross then DTL: shorter pattern, more frequent DTL — for aggressive returners.",
+        "Four-cross then DTL: longer pattern, maximum expectation before the surprise.",
+        "Player 2 is allowed to react: after the cross pattern, Player 2 can cover either side — tests disguise quality."
+      ],
+      "tags": ["return", "pattern", "cross-court", "DTL", "intermediate", "tactical"],
+      "diagramData": {
+        "p1": { "x": 280, "y": 60 },
+        "p2": { "x": 240, "y": 860 },
+        "shots": [
+          { "x1": 240, "y1": 850, "x2": 310, "y2": 385 },
+          { "x1": 280, "y1": 65, "x2": 110, "y2": 820 },
+          { "x1": 280, "y1": 65, "x2": 295, "y2": 820 }
+        ],
+        "areas": [
+          { "x": 110, "y": 820, "r": 25 },
+          { "x": 295, "y": 820, "r": 25 }
+        ]
+      }
+    },
+    {
+      "id": "RT-028",
+      "name": "Return and Win: Second Serve Game",
+      "subcategory": "Match Simulation",
+      "category": "Return",
+      "skill_level": "intermediate",
+      "player_count": 2,
+      "duration_minutes": 15,
+      "objective": "Train the complete second serve return game — playing points starting from a second serve situation. The second serve return game is where the returner should have a significant advantage, but most players fail to exploit this advantage because they return passively. This drill creates explicit pressure to attack second serves and win the majority of these points.",
+      "setup": "Player 2 serves only second serves from both courts. Player 1 returns. Both players play out full points. Player 1 wins the drill by winning more than 50% of these points — anything less means the second serve return game is not being exploited.",
+      "instructions": [
+        "Player 2 serves only second serves — kick or slice.",
+        "Player 1 returns aggressively and plays out the full point.",
+        "Track: how many second serve return points does Player 1 win?",
+        "Play 20 second serve return points from each court.",
+        "Target: Player 1 wins 55%+ from each court."
+      ],
+      "coaching_cues": [
+        "On second serves, Player 1 should always be the aggressor — not the defender.",
+        "Step inside the baseline on every second serve — claim the court.",
+        "Drive the return — a chip or block gives the server an easy rally ball.",
+        "After the aggressive return, be ready to continue attacking — the server is on defense.",
+        "If Player 1 is winning less than 50%, they are returning too passively — be more aggressive."
+      ],
+      "common_errors": [
+        "Returning second serves as if they were first serves — conservative when aggression is warranted.",
+        "Chip returning weak second serves — leaving a free attack opportunity on the table.",
+        "Winning the return but losing the rally — the attack must continue past the first ball."
+      ],
+      "variations": [
+        "Only first serve: now compare to first serve points — the ratio reveals return effectiveness.",
+        "Handicap: Player 1 starts each second serve return point at 30-0 — but must still win.",
+        "Return game set: play a full set with only second serves — tests extended second serve return quality."
+      ],
+      "tags": ["return", "second serve", "match-simulation", "intermediate", "aggressive", "win rate"],
+      "diagramData": {
+        "p1": { "x": 280, "y": 90 },
+        "p2": { "x": 240, "y": 860 },
+        "moves": [{ "x1": 280, "y1": 60, "x2": 280, "y2": 90 }],
+        "shots": [
+          { "x1": 240, "y1": 850, "x2": 220, "y2": 388 },
+          { "x1": 280, "y1": 90, "x2": 100, "y2": 820 },
+          { "x1": 100, "y1": 830, "x2": 295, "y2": 100 }
+        ],
+        "areas": [{ "x": 100, "y": 820, "r": 30 }]
+      }
+    },
+    {
+      "id": "RT-029",
+      "name": "Return Wide Serve Ad Court: Backhand Stretch",
+      "subcategory": "Technique",
+      "category": "Return",
+      "skill_level": "intermediate",
+      "player_count": 2,
+      "duration_minutes": 10,
+      "objective": "Train the return of the wide serve to the ad court backhand — the serve that most commonly forces an error or a weak return from right-handed players. The wide ad serve pulls the returner off the court to their backhand side, which already feels uncomfortable for most players, and then forces a return from a stretched, off-balance position. This drill trains both the movement and the compact return motion needed from this specific position.",
+      "setup": "Player 2 serves wide slice serves from the ad court — pulling Player 1's backhand far outside the singles sideline. Player 1 must chase the wide serve and return it cross-court.",
+      "instructions": [
+        "Player 2 serves wide slice serves from the ad court.",
+        "Player 1 must sprint wide, reaching the ball before the second bounce.",
+        "Player 1 chips or drives the return cross-court — to the deuce side.",
+        "Player 1 recovers to the center after the return.",
+        "Repeat 15 times. Track: what percentage does Player 1 successfully return? Target: 70%."
+      ],
+      "coaching_cues": [
+        "Quick first step laterally — the wide ad serve moves away from the body quickly.",
+        "From a stretched position, use a compact chip return — there is no time for a drive.",
+        "Cross-court is the only viable option from a wide backhand position.",
+        "Plant the outside foot and rotate — open stance backhand from wide.",
+        "After the return, sprint back toward center — don't stay wide."
+      ],
+      "common_errors": [
+        "Going DTL from a stretched backhand position — extremely high risk, usually goes wide.",
+        "Taking a full backswing from the wide position — no time, produces a late mis-hit.",
+        "Not recovering to center — second ball catches Player 1 still wide."
+      ],
+      "variations": [
+        "Wide ad return then recovery rally: after the wide return, Player 2 hits to the center — Player 1 must get there.",
+        "Wide ad consistency: 8 of 10 wide ad backhands must land cross-court past the service line.",
+        "Chip and charge from wide: chip the wide ad return and follow to the net."
+      ],
+      "tags": ["return", "wide serve", "ad court", "backhand", "intermediate", "stretch"],
+      "diagramData": {
+        "p1": { "x": 65, "y": 60 },
+        "p2": { "x": 160, "y": 860 },
+        "moves": [{ "x1": 120, "y1": 60, "x2": 65, "y2": 60 }],
+        "shots": [
+          { "x1": 160, "y1": 850, "x2": 80, "y2": 388 },
+          { "x1": 65, "y1": 65, "x2": 295, "y2": 820 }
+        ],
+        "areas": [{ "x": 295, "y": 820, "r": 30 }]
+      }
+    },
+    {
+      "id": "RT-030",
+      "name": "Return Game Intelligence: Tracking Server Patterns",
+      "subcategory": "Tactical",
+      "category": "Return",
+      "skill_level": "advanced",
+      "player_count": 2,
+      "duration_minutes": 15,
+      "objective": "Develop the habit of tracking server patterns during a match — identifying tendencies and using that information to improve return positioning and anticipation over time. Elite returners keep a mental database of what the server likes to do at deuce, at ad-out, on first serves, and on second serves. This drill makes that tracking explicit and trains the habit of using patterns as a tactical weapon.",
+      "setup": "Player 2 serves a full game from both courts. Player 1 returns and a third person (or Player 1 themselves in between points) tracks every serve location and type. After every 5 serves, Player 1 identifies the pattern and adjusts position.",
+      "instructions": [
+        "Player 2 serves a game (at least 8 serves) from the deuce court.",
+        "Player 1 or a third person records every serve: location (T/wide/body), type (flat/kick/slice), and court (deuce/ad).",
+        "After 8 serves, Player 1 identifies the most common serve location.",
+        "Player 1 adjusts return position to favor the most common location on the next 5 serves.",
+        "Track: does the position adjustment improve return success rate?"
+      ],
+      "coaching_cues": [
+        "Most servers have tendencies: they serve to the same location at deuce, same at ad-out.",
+        "Watch for patterns in pressure moments: where does this server go at 30-40?",
+        "After identifying a pattern, cheat slightly — don't completely abandon the other side.",
+        "Track serve patterns in every warm-up — 10 warm-up serves reveal enormous information.",
+        "A returner who tracks patterns is always one step ahead of the server."
+      ],
+      "common_errors": [
+        "Not tracking at all — returning reactively without any pattern awareness.",
+        "Over-cheating after identifying a pattern — gives up the other direction entirely.",
+        "Forgetting the pattern after one exception — servers revert to their tendencies under pressure."
+      ],
+      "variations": [
+        "Pattern notebook: Player 1 physically writes down serve patterns during changeovers.",
+        "Pattern test: Player 2 intentionally follows a set pattern — how quickly does Player 1 identify it?",
+        "Pattern exploitation: once identified, track how many extra points the pattern awareness generates."
+      ],
+      "tags": ["return", "patterns", "tracking", "advanced", "tactical", "intelligence"],
+      "diagramData": {
+        "p1": { "x": 280, "y": 60 },
+        "p2": { "x": 240, "y": 860 },
+        "shots": [
+          { "x1": 240, "y1": 850, "x2": 200, "y2": 378 },
+          { "x1": 240, "y1": 850, "x2": 318, "y2": 388 },
+          { "x1": 240, "y1": 850, "x2": 152, "y2": 382 }
+        ],
+        "cones": [
+          { "x": 200, "y": 378 },
+          { "x": 318, "y": 388 }
+        ],
+        "areas": [{ "x": 318, "y": 388, "r": 30 }]
+      }
+    },
+    {
+      "id": "RT-031",
+      "name": "Return at Net: Attacking the Second Serve and Charging",
+      "subcategory": "Tactical",
+      "category": "Return",
+      "skill_level": "advanced",
+      "player_count": 2,
+      "duration_minutes": 12,
+      "objective": "Develop the return plus net rush pattern — attacking the second serve with a drive return and immediately following it to the net. This is one of the most aggressive tactics in tennis: the server expects the returner to stay back, but instead the returner drives the return deep and follows it to take the net away from the server. Used correctly, it creates immediate pressure and forces the server to make a passing shot from behind the baseline.",
+      "setup": "Player 2 serves only second serves. Player 1 drives the return aggressively and follows it immediately to the net. Player 2 attempts a passing shot or lob — Player 1 volleys the finish.",
+      "instructions": [
+        "Player 2 serves a second serve from the deuce court.",
+        "Player 1 drives the return aggressively and immediately sprints to the net.",
+        "Player 2 attempts a passing shot or lob.",
+        "Player 1 split steps and finishes with a volley or overhead.",
+        "Repeat 15 times from each court. Track: percentage of return-and-rush points won."
+      ],
+      "coaching_cues": [
+        "The return must be deep — a short return stops you from advancing safely.",
+        "Move to the net the moment the return leaves the racket — no hesitation.",
+        "Sprint diagonally toward the center of the net — not straight ahead.",
+        "Split step as Player 2 contacts the passing shot — always, even mid-sprint.",
+        "The server is often caught off guard — this pattern wins points even when executed imperfectly."
+      ],
+      "common_errors": [
+        "Drive return not deep enough — Player 2 has an easy passing shot from inside the baseline.",
+        "Stopping after the return instead of following to the net.",
+        "No split step — cannot volley or overhead without it."
+      ],
+      "variations": [
+        "Chip and charge on first serves: same pattern but with a chip on first serves.",
+        "Return plus net rush competition: track over 20 attempts — what percentage wins?",
+        "Doubles return plus charge: return deep and both players rush the net — full doubles pattern."
+      ],
+      "tags": ["return", "net rush", "aggressive", "advanced", "tactical", "second serve"],
+      "diagramData": {
+        "p1": { "x": 280, "y": 550 },
+        "p2": { "x": 240, "y": 860 },
+        "moves": [
+          { "x1": 280, "y1": 60, "x2": 280, "y2": 100 },
+          { "x1": 280, "y1": 100, "x2": 280, "y2": 550 }
+        ],
+        "shots": [
+          { "x1": 240, "y1": 850, "x2": 220, "y2": 388 },
+          { "x1": 280, "y1": 100, "x2": 100, "y2": 820 },
+          { "x1": 240, "y1": 870, "x2": 240, "y2": 630 },
+          { "x1": 278, "y1": 545, "x2": 100, "y2": 120 }
+        ],
+        "areas": [{ "x": 100, "y": 820, "r": 28 }]
+      }
+    },
+    {
+      "id": "RT-032",
+      "name": "Slow Serve Return: Building Patience",
+      "subcategory": "Mental",
+      "category": "Return",
+      "skill_level": "beginner",
+      "player_count": 2,
+      "duration_minutes": 10,
+      "objective": "Train the return of slow serves — a surprisingly common challenge that many players handle poorly. Against a slow server, the ball takes longer to arrive, which causes impatience, early eye movement, and mistiming. Many players actually return slow serves worse than fast ones because they overthink, overhit, or simply lose rhythm waiting for the ball. This drill builds patience and a controlled response to slow serves.",
+      "setup": "Player 2 serves very slow serves — 30-40% of normal pace. Player 1 must wait patiently for the ball, take it at the correct contact point, and return it deep and consistently. The temptation to overhit must be consciously resisted.",
+      "instructions": [
+        "Player 2 serves very slow serves from the deuce court.",
+        "Player 1 must wait for the ball — no rushing the swing.",
+        "Player 1 drives the return deep but controlled — not overhitting.",
+        "Target: return landing in the back half of the court.",
+        "Repeat 15 slow serve returns from each court. Track: consistency and depth."
+      ],
+      "coaching_cues": [
+        "Wait for the ball — let it come to your ideal contact zone, don't lunge at it.",
+        "Slow servers tempt players to overhit — resist the urge. Control is the goal.",
+        "Take a full backswing — you have the time on slow serves.",
+        "Aim for depth, not power — a deep, controlled return wins more points than an overhit error.",
+        "Eyes on the ball longer than normal — the extra time in the air makes eye tracking easier."
+      ],
+      "common_errors": [
+        "Rushing the swing because the ball takes too long — produces early contact and errors.",
+        "Overhitting the slow serve — giving away a free point.",
+        "Losing focus because of the slow pace — the mind wanders during the ball's flight."
+      ],
+      "variations": [
+        "Drop shot return: against a very slow serve, Player 1 returns with a drop shot.",
+        "Mix slow and normal: Player 2 alternates slow and normal serves — Player 1 must adjust each time.",
+        "Placement on slow serves: Player 1 must hit all four corners in rotation — uses the extra time productively."
+      ],
+      "tags": ["return", "slow serve", "patience", "beginner", "mental", "timing"],
+      "diagramData": {
+        "p1": { "x": 280, "y": 60 },
+        "p2": { "x": 240, "y": 860 },
+        "shots": [
+          { "x1": 240, "y1": 850, "x2": 310, "y2": 388 },
+          { "x1": 280, "y1": 65, "x2": 110, "y2": 820 }
+        ],
+        "areas": [{ "x": 110, "y": 820, "r": 40 }]
+      }
+    },
+    {
+      "id": "RT-033",
+      "name": "Return Game Full Set: First Serve Only",
+      "subcategory": "Match Simulation",
+      "category": "Return",
+      "skill_level": "advanced",
+      "player_count": 2,
+      "duration_minutes": 20,
+      "objective": "Train the return game under full match conditions using only first serves — the hardest return scenario. A full set where every point starts with a first serve forces Player 1 to solve the most difficult return challenge repeatedly across many points. Tracking performance across a full set reveals patterns, fatigue effects, and tactical tendencies that shorter drills cannot expose.",
+      "setup": "Player 2 serves only first serves from both courts — no second serves. Player 1 returns and both players play out full points. Play a full set (first to 6, win by 2). Both players track: return in-percentage, return depth, and points won after successful returns.",
+      "instructions": [
+        "Play a full practice set. Player 2 serves only first serves — no second serves allowed.",
+        "If Player 1 misses the return, the point goes to Player 2 (simulates an ace or return error).",
+        "If Player 1 returns successfully, play the full point out.",
+        "Track every game: Player 1's return in-percentage and whether points were won after the return.",
+        "After the set, review: which serves were hardest? Which return patterns worked? What tactical adjustments are needed?"
+      ],
+      "coaching_cues": [
+        "Treat every point identically — no letting up on important points or unimportant ones.",
+        "Identify which specific serves you struggled with and note them for practice.",
+        "Track whether your return quality changed in the second half of the set — fatigue reveals itself.",
+        "After the set, ask: did you return as aggressively on second serves as you planned? Probably not.",
+        "The full set reveals the gap between practice return quality and match return quality."
+      ],
+      "common_errors": [
+        "Becoming more conservative as the set progresses — the opposite of what is needed.",
+        "Not tracking data — the set is also an assessment tool, not just a competition.",
+        "Not adjusting based on what is working — smart players adapt within a set."
+      ],
+      "variations": [
+        "Second serve full set: play the same set but now Player 2 serves only second serves — compare.",
+        "Mixed set: odd games first serves only, even games second serves only — variety.",
+        "Track 3 sets: play 3 full sets and compare return statistics across all 3."
+      ],
+      "tags": ["return", "match-simulation", "full set", "advanced", "assessment", "first serve"],
+      "diagramData": {
+        "p1": { "x": 200, "y": 60 },
+        "p2": { "x": 200, "y": 860 },
+        "shots": [
+          { "x1": 240, "y1": 855, "x2": 310, "y2": 385 },
+          { "x1": 160, "y1": 855, "x2": 80, "y2": 388 },
+          { "x1": 200, "y1": 60, "x2": 110, "y2": 820 },
+          { "x1": 200, "y1": 60, "x2": 290, "y2": 820 }
+        ],
+        "areas": [
+          { "x": 110, "y": 820, "r": 25 },
+          { "x": 290, "y": 820, "r": 25 }
+        ]
+      }
+    },
+    {
+      "id": "RT-034",
+      "name": "Return Disguise: Same Setup, Two Directions",
+      "subcategory": "Tactical",
+      "category": "Return",
+      "skill_level": "advanced",
+      "player_count": 2,
+      "duration_minutes": 12,
+      "objective": "Train return disguise — using the same preparation and setup for both cross-court and down-the-line returns so the server cannot read the direction before the ball is hit. Return disguise is an advanced skill that requires isolating the direction change to the contact point rather than the swing path. When a returner can disguise direction, the server cannot cheat to cover the most likely return.",
+      "setup": "Player 2 serves from the deuce court. Player 2 tries to guess whether the return will go cross-court or down-the-line before the ball lands. Player 1 must go the opposite direction of the guess — using identical preparation for both.",
+      "instructions": [
+        "Player 2 serves from the deuce court.",
+        "Player 2 calls 'cross' or 'line' as Player 1 begins to swing.",
+        "Player 1 must go the opposite direction — using the same preparation for both.",
+        "Score: +1 for Player 1 if they go the opposite direction. +1 for Player 2 if Player 1 cannot redirect in time.",
+        "First to 10 wins. Switch roles."
+      ],
+      "coaching_cues": [
+        "Identical backswing for both directions — the disguise must be complete from the first movement.",
+        "The direction difference happens only at the contact point — earlier than the contact is a tell.",
+        "Cross-court: contact slightly earlier, racket face opens cross-court.",
+        "DTL: contact slightly later, racket face stays more neutral.",
+        "The more natural-looking the preparation, the harder it is for the server to read."
+      ],
+      "common_errors": [
+        "Different setup for each direction — immediately readable even to untrained observers.",
+        "Not being able to change direction in time — needs more deliberate practice of the contact point difference.",
+        "Always going cross-court when Player 2 calls 'line' — lack of reliable DTL return."
+      ],
+      "variations": [
+        "Add a third direction: body return — Player 2 can now call 'cross', 'line', or 'body'.",
+        "Random serving: Player 2 serves to random locations — Player 1 must disguise from various positions.",
+        "Video analysis: film the returns and check if the preparation actually looks the same."
+      ],
+      "tags": ["return", "disguise", "advanced", "direction", "tactical", "contact point"],
+      "diagramData": {
+        "p1": { "x": 280, "y": 60 },
+        "p2": { "x": 240, "y": 860 },
+        "shots": [
+          { "x1": 240, "y1": 850, "x2": 310, "y2": 385 },
+          { "x1": 280, "y1": 65, "x2": 110, "y2": 820 },
+          { "x1": 280, "y1": 65, "x2": 295, "y2": 820 }
+        ],
+        "areas": [
+          { "x": 110, "y": 820, "r": 25 },
+          { "x": 295, "y": 820, "r": 25 }
+        ]
+      }
+    },
+    {
+      "id": "RT-035",
+      "name": "Return Grand Finale: Full Return Game Assessment",
+      "subcategory": "Assessment",
+      "category": "Return",
+      "skill_level": "intermediate",
+      "player_count": 2,
+      "duration_minutes": 20,
+      "objective": "Synthesize all return skills in a comprehensive match-style assessment that covers every aspect of the return game. This final drill measures: first serve return percentage, second serve attack rate, placement accuracy, reading accuracy, and win rate. It generates a complete return game profile that identifies the highest-priority areas for future practice.",
+      "setup": "Player 2 serves a full practice set from both courts using first and second serves. A third person (or both players alternating) tracks all return data comprehensively. After the set, both players review all tracked data and identify the top 2 return priorities for the next training block.",
+      "instructions": [
+        "Play a full practice set using normal serving (first and second serves).",
+        "Track every return: court (deuce/ad), serve type (flat/kick/slice), serve location (T/wide/body), return direction, return depth, and point outcome.",
+        "After the set, calculate: first serve return %, second serve return %, return win rate.",
+        "Identify the 2 most common return errors and the 2 most successful patterns.",
+        "Create a specific practice plan for the next session based on the data."
+      ],
+      "coaching_cues": [
+        "Play your natural game — the assessment only works with authentic play.",
+        "First serve return % should be 55%+ for competitive players, 65%+ for advanced.",
+        "Second serve return win % should be above 50% — if not, you are returning too passively.",
+        "Most common error: net errors suggest closed face or late contact. Wide errors suggest rushing.",
+        "The data reveals the gap between perceived return quality and actual return quality."
+      ],
+      "common_errors": [
+        "Playing differently because of tracking — defeats the purpose of the assessment.",
+        "Not using the data to drive practice — collecting data without acting on it is worthless.",
+        "Only tracking outcomes — process data (placement, depth) is more actionable than just wins/losses."
+      ],
+      "variations": [
+        "Video assessment: film the full set and review alongside the tracking data.",
+        "Three-set assessment: track all three sets and compare to see how return quality changes.",
+        "Peer assessment: both players assess each other's return data and provide specific feedback."
+      ],
+      "tags": ["return", "assessment", "match-simulation", "intermediate", "comprehensive", "data"],
+      "diagramData": {
+        "p1": { "x": 200, "y": 60 },
+        "p2": { "x": 200, "y": 860 },
+        "shots": [
+          { "x1": 240, "y1": 855, "x2": 310, "y2": 385 },
+          { "x1": 200, "y1": 60, "x2": 110, "y2": 820 },
+          { "x1": 160, "y1": 855, "x2": 80, "y2": 388 },
+          { "x1": 200, "y1": 60, "x2": 295, "y2": 820 },
+          { "x1": 200, "y1": 60, "x2": 200, "y2": 820 }
+        ],
+        "cones": [
+          { "x": 110, "y": 820 },
+          { "x": 295, "y": 820 },
+          { "x": 200, "y": 820 }
+        ],
+        "areas": [
+          { "x": 200, "y": 810, "r": 50 }
+        ]
+      }
+    }
+  ]
+}

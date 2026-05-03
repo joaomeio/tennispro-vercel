@@ -27,16 +27,13 @@ export default function Footer({ lang = 'pt' }) {
           <div className="border-t border-brand-800 pt-8 flex flex-col items-center gap-4">
             <p className="opacity-70">© {year} All rights reserved.</p>
             <div className="flex gap-6 opacity-70 justify-center">
-              <span className="hover:text-white cursor-pointer transition-colors">
+              <Link to="/terms" className="hover:text-white transition-colors">
                 Terms of Service
-              </span>
-              <span className="hover:text-white cursor-pointer transition-colors">
+              </Link>
+              <Link to="/privacy" className="hover:text-white transition-colors">
                 Privacy Policy
-              </span>
-              <Link
-                to="/aviso-legal"
-                className="hover:text-white cursor-pointer transition-colors"
-              >
+              </Link>
+              <Link to="/legal" className="hover:text-white transition-colors">
                 Legal Notice
               </Link>
             </div>
@@ -75,11 +72,11 @@ export default function Footer({ lang = 'pt' }) {
         <div className="border-t border-brand-800 pt-8 flex flex-col items-center gap-4">
           <p className="opacity-70">© {year} Todos os direitos reservados.</p>
           <div className="flex gap-6 opacity-70 justify-center">
-            <span className="hover:text-white cursor-pointer transition-colors">Termos de Uso</span>
-            <span className="hover:text-white cursor-pointer transition-colors">
+            <Link to="/terms" className="hover:text-white transition-colors">Termos de Uso</Link>
+            <Link to="/privacy" className="hover:text-white transition-colors">
               Política de Privacidade
-            </span>
-            <Link to="/aviso-legal" className="hover:text-white cursor-pointer transition-colors">
+            </Link>
+            <Link to="/legal" className="hover:text-white transition-colors">
               Aviso Legal
             </Link>
           </div>

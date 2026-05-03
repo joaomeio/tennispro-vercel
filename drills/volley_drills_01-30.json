@@ -1,0 +1,1495 @@
+{
+  "batch": "Volley drills 1-30",
+  "category": "Volley",
+  "description": "Drills focused on forehand volley, backhand volley, half-volley, overhead, and net play patterns. The volley is the most time-pressured shot in tennis — every drill in this category trains compactness, early preparation, and the ability to finish points decisively at the net.",
+  "drills": [
+    {
+      "id": "VL-001",
+      "name": "Punch Volley Foundation: Forehand and Backhand",
+      "subcategory": "Forehand Volley",
+      "category": "Volley",
+      "skill_level": "beginner",
+      "player_count": 2,
+      "duration_minutes": 10,
+      "objective": "Build the foundational punch volley on both wings — the basic compact stroke that forms the basis of all net play. Unlike groundstrokes, the volley uses no backswing — the racket moves forward into the ball with a short, firm punch. This drill isolates that motion and trains players to resist the instinct to swing, replacing it with the correct short, decisive contact.",
+      "setup": "Player 2 stands at the service line and feeds medium-paced balls to Player 1 at the net, alternating between forehand and backhand volleys. Player 1 stands approximately 6-8 feet from the net inside the service box.",
+      "instructions": [
+        "Player 1 positions 6-8 feet from the net in a split step ready position.",
+        "Player 2 feeds a ball to Player 1's forehand — Player 1 punches a forehand volley.",
+        "Player 2 feeds a ball to Player 1's backhand — Player 1 punches a backhand volley.",
+        "Continue alternating for 10 volleys, then rest 30 seconds. Repeat 4 rounds.",
+        "Focus entirely on the punch motion — no backswing, no follow-through past the contact point."
+      ],
+      "coaching_cues": [
+        "No backswing — the racket starts in front of your body and stays there.",
+        "Punch through the ball, don't swing at it — the motion is forward, not circular.",
+        "Firm wrist throughout — a loose wrist produces a flicking, inconsistent volley.",
+        "Contact in front of your body — if the ball gets beside or behind you, it's too late.",
+        "Use your legs to move to the ball — don't just reach with the arm."
+      ],
+      "common_errors": [
+        "Taking a backswing — the single most common volley error at beginner level.",
+        "Floppy wrist at contact — sends the volley in random directions.",
+        "Letting the ball get beside the body — causes a cramped, awkward contact."
+      ],
+      "variations": [
+        "Slower feeds: Player 2 feeds very slowly to let Player 1 focus only on technique.",
+        "Add movement: Player 2 alternates wide forehand and wide backhand volleys — Player 1 must move.",
+        "Target cones: place cones in opposite corners — Player 1 aims the volley for the cone."
+      ],
+      "tags": ["volley", "forehand volley", "backhand volley", "beginner", "technique", "net play"],
+      "diagramData": {
+        "p1": { "x": 200, "y": 530 },
+        "p2": { "x": 200, "y": 480 },
+        "shots": [
+          { "x1": 200, "y1": 490, "x2": 200, "y2": 540 },
+          { "x1": 200, "y1": 530, "x2": 100, "y2": 820 },
+          { "x1": 200, "y1": 530, "x2": 300, "y2": 820 }
+        ],
+        "areas": [
+          { "x": 100, "y": 820, "r": 25 },
+          { "x": 300, "y": 820, "r": 25 }
+        ]
+      }
+    },
+    {
+      "id": "VL-002",
+      "name": "Volley-Volley Rapid Fire Exchange",
+      "subcategory": "Forehand Volley",
+      "category": "Volley",
+      "skill_level": "beginner",
+      "player_count": 2,
+      "duration_minutes": 10,
+      "objective": "Build volley reflexes and hand speed through a rapid-fire close-range volley exchange. Both players stand inside the service line and exchange volleys at close range — the short distance forces quick reactions, eliminates the temptation to take a backswing, and trains the hands to move automatically. This is the fastest way to develop natural volley instincts.",
+      "setup": "Both players stand inside their respective service lines — approximately 8-10 feet apart. They exchange volleys back and forth continuously, trying to keep the ball in play at close range.",
+      "instructions": [
+        "Both players stand inside the service line — close enough that each volley arrives quickly.",
+        "Exchange volleys back and forth — aim for the other player's body or racket to keep the rally going.",
+        "Count consecutive volleys without a miss. Target: 20 consecutive exchanges.",
+        "Rest 30 seconds between rounds. Play 5 rounds.",
+        "Increase pace after each round — faster exchanges demand faster reactions."
+      ],
+      "coaching_cues": [
+        "Keep the racket up between exchanges — never let it drop to your side.",
+        "Small, compact punches only — no swing, just redirect.",
+        "Watch the ball from the opponent's racket, not from the air — earliest possible read.",
+        "Keep your feet moving with small shuffle steps — never be completely flat-footed.",
+        "Relax your grip slightly between shots — tension causes slowness."
+      ],
+      "common_errors": [
+        "Letting the racket drop between exchanges — too slow to get it back up in time.",
+        "Swinging at close-range volleys — the ball arrives before the swing is complete.",
+        "Freezing the feet — movement is essential even at close range."
+      ],
+      "variations": [
+        "Forehand only: both players volley only on the forehand side.",
+        "Backhand only: both players volley only on the backhand side.",
+        "Winner: whoever hits a volley the other cannot reach wins a point — competitive version."
+      ],
+      "tags": ["volley", "reflex", "close range", "beginner", "hand speed", "exchange"],
+      "diagramData": {
+        "p1": { "x": 200, "y": 600 },
+        "p2": { "x": 200, "y": 390 },
+        "shots": [
+          { "x1": 200, "y1": 400, "x2": 200, "y2": 590 },
+          { "x1": 200, "y1": 590, "x2": 200, "y2": 410 }
+        ],
+        "areas": [
+          { "x": 200, "y": 390, "r": 20 },
+          { "x": 200, "y": 600, "r": 20 }
+        ]
+      }
+    },
+    {
+      "id": "VL-003",
+      "name": "Approach and Volley: The Full Net Attack",
+      "subcategory": "Forehand Volley",
+      "category": "Volley",
+      "skill_level": "intermediate",
+      "player_count": 2,
+      "duration_minutes": 12,
+      "objective": "Develop the complete approach-and-volley sequence — the most common way a player transitions from the baseline to the net in match play. Player 1 approaches on a short ball, takes up a net position, and finishes with a volley. This three-part sequence — approach shot, forward movement, split step, volley — must become one fluid pattern rather than three separate skills.",
+      "setup": "Player 2 feeds a short ball to Player 1 at the baseline. Player 1 approaches, moves to the net, and volleys the finish. Player 2 attempts a passing shot after Player 1's approach.",
+      "instructions": [
+        "Player 2 feeds a short ball to Player 1 — landing inside the service line.",
+        "Player 1 moves forward, hits an approach shot, and continues sprinting toward the net.",
+        "Player 1 split steps as Player 2 prepares to hit the passing shot.",
+        "Player 1 volleys the passing shot into an open area of the court.",
+        "Play each exchange as a full point. Repeat 15 times."
+      ],
+      "coaching_cues": [
+        "Never stop moving after the approach — keep your feet moving toward the net.",
+        "Split step timing: split as Player 2's racket moves forward, not after the ball is in flight.",
+        "Get inside the service line before the volley — closer to the net means more angles and less pass.",
+        "Approach DTL: it cuts off the CC passing angle and is easier to defend at net.",
+        "Volley to the open court — wherever Player 2 is not standing."
+      ],
+      "common_errors": [
+        "Stopping at the service line after the approach — too far back, passing shot has too many angles.",
+        "No split step — caught moving and cannot change direction for the volley.",
+        "Approach CC — gives the opponent the widest possible passing angle."
+      ],
+      "variations": [
+        "Player 2 can lob instead of pass — Player 1 must recognize lob and retreat for overhead.",
+        "Two-volley finish: Player 2 hits pass, Player 1 volleys, Player 2 hits a second ball, Player 1 finishes.",
+        "Scoring: Player 1 gets +2 for a volley winner, Player 2 gets +2 for a passing shot winner."
+      ],
+      "tags": ["volley", "approach", "net play", "intermediate", "pattern", "transition"],
+      "diagramData": {
+        "p1": { "x": 200, "y": 540 },
+        "p2": { "x": 200, "y": 60 },
+        "moves": [
+          { "x1": 200, "y1": 850, "x2": 200, "y2": 680 },
+          { "x1": 200, "y1": 670, "x2": 200, "y2": 540 }
+        ],
+        "shots": [
+          { "x1": 200, "y1": 70, "x2": 200, "y2": 680 },
+          { "x1": 200, "y1": 670, "x2": 90, "y2": 110 },
+          { "x1": 200, "y1": 70, "x2": 195, "y2": 620 },
+          { "x1": 195, "y1": 535, "x2": 305, "y2": 120 }
+        ],
+        "areas": [
+          { "x": 90, "y": 110, "r": 25 },
+          { "x": 305, "y": 120, "r": 25 }
+        ]
+      }
+    },
+    {
+      "id": "VL-004",
+      "name": "Backhand Volley Redirection",
+      "subcategory": "Backhand Volley",
+      "category": "Volley",
+      "skill_level": "intermediate",
+      "player_count": 2,
+      "duration_minutes": 10,
+      "objective": "Develop the backhand volley as a directional weapon — redirecting balls that come to the backhand side into open areas of the court. The backhand volley is often weaker than the forehand because players instinctively try to use their dominant arm and lose the compact structure. This drill isolates the backhand volley and trains it as a precise, intentional shot.",
+      "setup": "Player 2 stands at the baseline and feeds balls to Player 1's backhand side at the net. Player 1 must redirect every backhand volley cross-court or down-the-line depending on a target called by Player 2 before each feed.",
+      "instructions": [
+        "Player 1 positions at the net, 6-8 feet from the net.",
+        "Player 2 feeds to Player 1's backhand and calls a target before the ball arrives: 'cross' or 'line'.",
+        "Player 1 must redirect the backhand volley to the called target.",
+        "Alternate targets — 5 cross-court, 5 down-the-line — then randomize.",
+        "Repeat 20 volleys per set, 3 sets total."
+      ],
+      "coaching_cues": [
+        "One-handed backhand volley: use only the dominant arm, keep the off-hand on the throat for support.",
+        "Turn the shoulder slightly before contact — guides the ball in the intended direction.",
+        "Open the racket face slightly on the backhand volley — helps lift the ball cleanly.",
+        "Punch forward and slightly across for cross-court, punch forward and block for down-the-line.",
+        "Keep the wrist locked — it controls direction more than anything else."
+      ],
+      "common_errors": [
+        "Using a backswing on the backhand volley — most common technical error on this side.",
+        "Dropping the racket head below the ball — causes the ball to go into the net.",
+        "Late decision on direction — must decide before the ball arrives."
+      ],
+      "variations": [
+        "Low ball challenge: Player 2 feeds low balls — Player 1 must volley from below net height.",
+        "High ball challenge: Player 2 feeds high balls — Player 1 must put the ball away aggressively.",
+        "Combo: backhand volley then forehand volley — Player 2 feeds to backhand then immediately to forehand."
+      ],
+      "tags": ["volley", "backhand volley", "redirection", "intermediate", "direction", "net play"],
+      "diagramData": {
+        "p1": { "x": 150, "y": 530 },
+        "p2": { "x": 280, "y": 60 },
+        "shots": [
+          { "x1": 280, "y1": 70, "x2": 145, "y2": 540 },
+          { "x1": 145, "y1": 530, "x2": 300, "y2": 820 },
+          { "x1": 145, "y1": 530, "x2": 90, "y2": 820 }
+        ],
+        "areas": [
+          { "x": 300, "y": 820, "r": 25 },
+          { "x": 90, "y": 820, "r": 25 }
+        ]
+      }
+    },
+    {
+      "id": "VL-005",
+      "name": "The Overhead: Positioning and Execution",
+      "subcategory": "Overhead",
+      "category": "Volley",
+      "skill_level": "intermediate",
+      "player_count": 2,
+      "duration_minutes": 12,
+      "objective": "Develop the overhead smash — the aggressive finishing shot used to put away lobs. The overhead is often practiced too rarely, leading to errors on what should be a point-ending shot. This drill trains both the positioning (moving back, turning sideways, finding the ball) and the execution (contact above the head, drive down into the court).",
+      "setup": "Player 2 throws or feeds lobs over Player 1's head from the baseline. Player 1 starts at the net, recognizes the lob, moves back, and smashes the overhead. Player 2 must vary the height and depth of the lobs.",
+      "instructions": [
+        "Player 1 starts at the net in the ready position.",
+        "Player 2 feeds a lob — varying height from low to high and depth from short to deep.",
+        "Player 1 immediately turns sideways and moves back into position.",
+        "Player 1 smashes the overhead, aiming for an open area of the court.",
+        "Repeat 15 overheads per set. Rest 60 seconds. Play 3 sets."
+      ],
+      "coaching_cues": [
+        "Turn sideways immediately — face the net during the overhead and the ball goes sideways.",
+        "Point your non-dominant arm at the ball as you position — keeps your eyes on the ball.",
+        "Let the ball drop to the ideal contact point — don't rush the swing.",
+        "Contact at the same height as a serve — arm fully extended above the head.",
+        "Drive through the ball aggressively — a tentative overhead is dangerous, a confident one ends the point."
+      ],
+      "common_errors": [
+        "Facing the net instead of turning sideways — causes a weak, off-balance overhead.",
+        "Not pointing at the ball — leads to misjudging the position and being caught too far back or in front.",
+        "Too tentative — the overhead needs to be hit with full conviction."
+      ],
+      "variations": [
+        "Deep lob overhead: Player 2 lobs very deep — Player 1 must retreat to the baseline and smash.",
+        "Two-bounce overhead: Player 1 lets the lob bounce and hits an overhead on the second bounce.",
+        "Overhead to specific target: cones in both deep corners — Player 1 must alternate targets."
+      ],
+      "tags": ["volley", "overhead", "smash", "intermediate", "lob", "net play"],
+      "diagramData": {
+        "p1": { "x": 200, "y": 620 },
+        "p2": { "x": 200, "y": 60 },
+        "moves": [
+          { "x1": 200, "y1": 520, "x2": 200, "y2": 620 }
+        ],
+        "shots": [
+          { "x1": 200, "y1": 70, "x2": 200, "y2": 500 },
+          { "x1": 200, "y1": 615, "x2": 100, "y2": 820 },
+          { "x1": 200, "y1": 615, "x2": 300, "y2": 820 }
+        ],
+        "areas": [
+          { "x": 100, "y": 820, "r": 25 },
+          { "x": 300, "y": 820, "r": 25 }
+        ]
+      }
+    },
+    {
+      "id": "VL-006",
+      "name": "Half-Volley: The Short-Hop Recovery Shot",
+      "subcategory": "Half Volley",
+      "category": "Volley",
+      "skill_level": "intermediate",
+      "player_count": 2,
+      "duration_minutes": 10,
+      "objective": "Develop the half-volley — one of the most technically demanding shots in tennis, hit immediately after the bounce with a very short swing. The half-volley occurs when the player is caught in no-man's land (between the baseline and service line) and the ball bounces right at their feet. Rather than retreating, skilled players half-volley forward to continue approaching the net.",
+      "setup": "Player 2 feeds balls that bounce right at Player 1's feet in the no-man's land area between the service line and baseline. Player 1 must half-volley and continue moving forward.",
+      "instructions": [
+        "Player 1 stands in no-man's land — between the service line and baseline.",
+        "Player 2 feeds a low ball that bounces right at Player 1's feet.",
+        "Player 1 must half-volley — take the ball immediately after the bounce with a very short swing.",
+        "After the half-volley, Player 1 continues moving forward to the net.",
+        "Player 2 hits a passing shot — Player 1 volleys the finish. Repeat 15 times."
+      ],
+      "coaching_cues": [
+        "Get low — bend your knees deeply to get the racket below the ball before it bounces.",
+        "Minimal backswing — the ball bounces and rises fast; there is almost no time for any swing.",
+        "Soft hands — the half-volley needs feel, not force.",
+        "Aim the half-volley down the middle or DTL — anywhere that lets you continue to the net.",
+        "Never stop moving after the half-volley — it is a recovery shot that transitions to the net."
+      ],
+      "common_errors": [
+        "Standing up instead of getting low — causes the ball to hit the frame or go into the net.",
+        "Too much backswing — the ball has already passed before the swing is complete.",
+        "Stopping after the half-volley instead of continuing forward."
+      ],
+      "variations": [
+        "Half-volley into full point: Player 2 tries to force a half-volley then pass Player 1.",
+        "Forehand half-volley only: Player 2 feeds to the forehand side.",
+        "Backhand half-volley only: Player 2 feeds to the backhand side — often harder."
+      ],
+      "tags": ["volley", "half-volley", "no-man's land", "intermediate", "technique", "transition"],
+      "diagramData": {
+        "p1": { "x": 200, "y": 680 },
+        "p2": { "x": 200, "y": 60 },
+        "moves": [
+          { "x1": 200, "y1": 680, "x2": 200, "y2": 540 }
+        ],
+        "shots": [
+          { "x1": 200, "y1": 70, "x2": 200, "y2": 700 },
+          { "x1": 200, "y1": 675, "x2": 200, "y2": 100 },
+          { "x1": 200, "y1": 60, "x2": 200, "y2": 620 },
+          { "x1": 200, "y1": 535, "x2": 300, "y2": 120 }
+        ],
+        "areas": [{ "x": 300, "y": 120, "r": 25 }]
+      }
+    },
+    {
+      "id": "VL-007",
+      "name": "Volley Depth Control: Landing Past the Service Line",
+      "subcategory": "Forehand Volley",
+      "category": "Volley",
+      "skill_level": "intermediate",
+      "player_count": 2,
+      "duration_minutes": 10,
+      "objective": "Train the volley to land deep in the court — past the service line. Many players volley well in terms of technique but land the ball short, giving the opponent time to reach, set up, and hit a quality passing shot. Deep volleys push the opponent behind the baseline, reduce their passing angles, and force defensive replies. This drill treats depth as a specific, trainable quality.",
+      "setup": "Player 2 feeds from the baseline. Player 1 volleys from the net. A rope or line of cones marks the service line. Every volley that lands before the service line is a 'soft' volley — only volleys landing past the service line count as successful.",
+      "instructions": [
+        "Player 2 feeds medium-paced balls to Player 1 at the net.",
+        "Player 1 volleys — the ball must land past the service line to count.",
+        "Any volley landing before the service line = 0 points.",
+        "Any volley landing past the service line = 1 point.",
+        "Any volley landing in the back 3 feet before the baseline = 2 points.",
+        "Play 20 volleys per set. Target: 25+ points per set."
+      ],
+      "coaching_cues": [
+        "Drive through the ball on contact — volleys that land short usually have too little punch.",
+        "Contact the ball in front of the body — late contact kills pace and depth.",
+        "Angle the racket face slightly forward (less open) for depth — too open creates a soft high volley.",
+        "Use your legs to push forward into the volley — body momentum adds depth.",
+        "A flat volley lands deeper than an open-face volley — use this when depth is the goal."
+      ],
+      "common_errors": [
+        "Too much open face — creates a high, soft volley that lands short.",
+        "No forward momentum — standing still produces a pat-ball volley.",
+        "Late contact — ball gets beside the body and is deflected upward."
+      ],
+      "variations": [
+        "Directional depth: must land deep AND cross-court, or deep AND down-the-line.",
+        "Pressure: Player 2 hits faster balls — Player 1 must still land deep.",
+        "Two-touch depth: two volleys per feed — both must land past the service line."
+      ],
+      "tags": ["volley", "depth", "intermediate", "placement", "net play"],
+      "diagramData": {
+        "p1": { "x": 200, "y": 520 },
+        "p2": { "x": 200, "y": 60 },
+        "shots": [
+          { "x1": 200, "y1": 70, "x2": 200, "y2": 530 },
+          { "x1": 200, "y1": 520, "x2": 100, "y2": 790 },
+          { "x1": 200, "y1": 520, "x2": 300, "y2": 790 }
+        ],
+        "areas": [
+          { "x": 100, "y": 790, "r": 30 },
+          { "x": 300, "y": 790, "r": 30 }
+        ]
+      }
+    },
+    {
+      "id": "VL-008",
+      "name": "Drop Volley: The Touch Shot at the Net",
+      "subcategory": "Forehand Volley",
+      "category": "Volley",
+      "skill_level": "advanced",
+      "player_count": 2,
+      "duration_minutes": 10,
+      "objective": "Develop the drop volley — a soft, touch volley that barely clears the net and dies immediately after landing. The drop volley is the most deceptive volley in tennis: it looks like a normal volley until the last moment, then the player absorbs the pace and feathers the ball over the net. Used against opponents who are scrambling or positioned deep, it is virtually unreachable.",
+      "setup": "Player 2 feeds medium-paced balls to Player 1 at the net. Player 1 alternates between normal punch volleys (first 5) and drop volleys (next 5). The contrast between the two teaches the feel difference clearly.",
+      "instructions": [
+        "Player 2 feeds medium balls to Player 1 at the net.",
+        "First 5 balls: normal punch volleys — drive the ball deep.",
+        "Next 5 balls: drop volleys — absorb the pace, feather the ball just over the net.",
+        "After 10 alternating balls, Player 2 doesn't call which type — Player 1 decides.",
+        "Repeat 3 rounds of 10 balls."
+      ],
+      "coaching_cues": [
+        "The drop volley is NOT a soft swing — it is an absorbed punch. The racket decelerates at contact.",
+        "Open the racket face slightly more than normal — helps float the ball over the net.",
+        "Short contact: let the ball roll off the strings slowly — don't follow through.",
+        "The setup must look identical to a normal volley — the surprise is the entire point.",
+        "Best time to use it: when Player 2 is behind the baseline and you have time."
+      ],
+      "common_errors": [
+        "Swinging softly instead of absorbing — produces a mid-court floater, not a drop volley.",
+        "Different setup than a normal volley — telegraphs the drop volley.",
+        "Drop volley when Player 2 is inside the baseline — easily reachable."
+      ],
+      "variations": [
+        "Drop volley then lob: drop the volley, Player 2 sprints to reach it, Player 1 lobs.",
+        "Consecutive drop volleys: both players try to drop volley to each other at the net.",
+        "Touch challenge: 5 consecutive drop volleys that land within 3 feet of the net."
+      ],
+      "tags": ["volley", "drop volley", "touch", "advanced", "deception", "net play"],
+      "diagramData": {
+        "p1": { "x": 200, "y": 520 },
+        "p2": { "x": 200, "y": 60 },
+        "shots": [
+          { "x1": 200, "y1": 70, "x2": 200, "y2": 530 },
+          { "x1": 200, "y1": 520, "x2": 200, "y2": 380 }
+        ],
+        "areas": [{ "x": 200, "y": 380, "r": 20 }],
+        "cones": [{ "x": 200, "y": 380 }]
+      }
+    },
+    {
+      "id": "VL-009",
+      "name": "Volley Angles: Creating Winners from the Net",
+      "subcategory": "Forehand Volley",
+      "category": "Volley",
+      "skill_level": "intermediate",
+      "player_count": 2,
+      "duration_minutes": 12,
+      "objective": "Train the ability to create sharp angles with the volley — hitting the ball so far to the side that it lands near the doubles alley and is completely unreachable. Angled volleys require precise racket face control and an understanding that the closer to the net you are, the more extreme the angle you can create. This drill trains both the technical execution and the positional awareness needed for angled volleys.",
+      "setup": "Player 2 feeds balls to Player 1 at the net. Player 1 must create sharp angled volleys — targeting the doubles alley or very close to the sideline. Cones mark the target zones.",
+      "instructions": [
+        "Player 1 positions close to the net — 4-5 feet away.",
+        "Player 2 feeds balls to Player 1's forehand and backhand alternately.",
+        "Player 1 volleys sharply to the angle — forehand volleys angle cross-court, backhand volleys angle cross-court.",
+        "Target: land the volley within 3 feet of the doubles alley or sideline.",
+        "Play 20 volleys per set. Track how many reach the target angle."
+      ],
+      "coaching_cues": [
+        "The closer to the net you are, the more extreme the angle you can create — position matters.",
+        "Open the racket face in the direction of the angle — the face controls the direction.",
+        "Short punch across the ball — not straight through it.",
+        "Forehand angle: punch the racket face toward the sideline, not toward the back fence.",
+        "Backhand angle: turn the racket face toward the opposite sideline — same principle."
+      ],
+      "common_errors": [
+        "Punching straight through the ball instead of across — produces a flat volley with no angle.",
+        "Too far from the net — limited angle available, ball goes wide.",
+        "Overcomplicating the swing — angled volleys need touch, not power."
+      ],
+      "variations": [
+        "Both angles: alternate forehand cross and backhand cross — two different angles in one set.",
+        "Drop angle: combine drop volley with angle — barely clears the net and dies in the alley.",
+        "Passing angle: Player 2 at the net, Player 1 volleys to pass them — creates real pressure."
+      ],
+      "tags": ["volley", "angle", "net play", "intermediate", "placement", "winner"],
+      "diagramData": {
+        "p1": { "x": 200, "y": 500 },
+        "p2": { "x": 200, "y": 60 },
+        "shots": [
+          { "x1": 200, "y1": 70, "x2": 200, "y2": 510 },
+          { "x1": 200, "y1": 500, "x2": 65, "y2": 720 },
+          { "x1": 200, "y1": 500, "x2": 335, "y2": 720 }
+        ],
+        "areas": [
+          { "x": 65, "y": 720, "r": 22 },
+          { "x": 335, "y": 720, "r": 22 }
+        ]
+      }
+    },
+    {
+      "id": "VL-010",
+      "name": "Overhead from Deep: Retreat and Smash",
+      "subcategory": "Overhead",
+      "category": "Volley",
+      "skill_level": "advanced",
+      "player_count": 2,
+      "duration_minutes": 12,
+      "objective": "Train the deep overhead — the most difficult overhead in tennis. When the lob goes over the player's head and forces them to retreat near the baseline, the overhead becomes a very different shot: there is no forward momentum, the ball is farther away, and the court behind the opponent is much less open. This drill trains the retreat mechanics, court position judgment, and execution under the most challenging overhead conditions.",
+      "setup": "Player 1 starts at the net. Player 2 lobs deep — targeting well behind the service line. Player 1 must retreat, get under the ball, and smash the overhead from a deep position.",
+      "instructions": [
+        "Player 1 starts at the net in the ready position.",
+        "Player 2 lobs very deep — targeting the back half of Player 1's side.",
+        "Player 1 immediately turns sideways and retreats using crossover steps.",
+        "Player 1 positions under the ball and smashes an overhead from the deep position.",
+        "Repeat 15 times. Track: how many deep overheads land in the court?"
+      ],
+      "coaching_cues": [
+        "Turn sideways and use crossover steps to retreat — don't backpedal, it's too slow.",
+        "Never take your eyes off the ball — point with the non-dominant hand as you retreat.",
+        "From a deep position, aim for the deep corner — not the net tape.",
+        "Add more topspin from a deep position — it gives more margin to clear the net.",
+        "Don't try to end the point with a deep overhead — a reliable in-court smash is the goal."
+      ],
+      "common_errors": [
+        "Backpedaling instead of crossover steps — slow, unbalanced, and dangerous.",
+        "Losing sight of the ball while retreating — causes complete misjudgment of position.",
+        "Going for too much pace from deep — creates errors. Use spin for control."
+      ],
+      "variations": [
+        "Jump overhead: Player 2 lobs shorter — Player 1 must jump and smash.",
+        "Deep overhead then advance: after the deep smash, Player 2 feeds a short ball — Player 1 attacks.",
+        "Alternate deep and short lobs: Player 1 must read the depth and adjust retreat distance."
+      ],
+      "tags": ["volley", "overhead", "deep lob", "advanced", "retreat", "smash"],
+      "diagramData": {
+        "p1": { "x": 200, "y": 750 },
+        "p2": { "x": 200, "y": 60 },
+        "moves": [
+          { "x1": 200, "y1": 520, "x2": 200, "y2": 750 }
+        ],
+        "shots": [
+          { "x1": 200, "y1": 70, "x2": 200, "y2": 600 },
+          { "x1": 200, "y1": 745, "x2": 95, "y2": 100 },
+          { "x1": 200, "y1": 745, "x2": 305, "y2": 100 }
+        ],
+        "areas": [
+          { "x": 95, "y": 100, "r": 25 },
+          { "x": 305, "y": 100, "r": 25 }
+        ]
+      }
+    },
+    {
+      "id": "VL-011",
+      "name": "Net Poach: Reading and Intercepting",
+      "subcategory": "Forehand Volley",
+      "category": "Volley",
+      "skill_level": "advanced",
+      "player_count": 2,
+      "duration_minutes": 12,
+      "objective": "Train the poaching volley — moving laterally at the net to intercept a ball aimed at the partner in doubles or stepping into the center in singles to cut off a cross-court ball. The poach requires reading the opponent's shot early, committing to the movement before the ball is actually hit, and executing a decisive volley from an unexpected angle. Hesitation kills the poach.",
+      "setup": "Player 1 starts at the net in the center. Player 2 hits cross-court from the baseline. Player 1 must read the cross-court direction early and poach — moving laterally to intercept the ball and volley into the open court.",
+      "instructions": [
+        "Player 1 stands at the net center, ready to poach either direction.",
+        "Player 2 hits cross-court balls — either forehand CC or backhand CC.",
+        "Player 1 must read the cross-court direction and move to intercept.",
+        "Player 1 poaches the volley, redirecting the ball into the open court.",
+        "Repeat 15 times. Track: how many poaches result in a won point?"
+      ],
+      "coaching_cues": [
+        "Read the shot before it leaves the opponent's racket — watch the swing path and racket face angle.",
+        "Commit to the move before the ball is hit — a late poach arrives at a different angle.",
+        "Move diagonally, not just laterally — move toward the net and to the side simultaneously.",
+        "Volley into the open court — away from where Player 2 is running.",
+        "After the poach, keep moving — don't stop in the middle of the court."
+      ],
+      "common_errors": [
+        "Hesitating too long before moving — commits after the ball is already past the poach zone.",
+        "Moving too early — Player 2 reads the poach and changes direction.",
+        "Poaching and stopping in the middle — leaves a wide-open court on the side you left."
+      ],
+      "variations": [
+        "Signal poach: Player 1 signals poach to a doubles partner — structured timing.",
+        "Fake poach: Player 1 moves as if to poach then returns to position — tests Player 2's decision-making.",
+        "Poach competition: Player 1 gets a point for every successful poach, Player 2 gets a point for every successful pass."
+      ],
+      "tags": ["volley", "poach", "advanced", "net play", "reading", "doubles"],
+      "diagramData": {
+        "p1": { "x": 130, "y": 510 },
+        "p2": { "x": 280, "y": 60 },
+        "moves": [
+          { "x1": 200, "y1": 510, "x2": 130, "y2": 510 }
+        ],
+        "shots": [
+          { "x1": 280, "y1": 70, "x2": 120, "y2": 600 },
+          { "x1": 125, "y1": 505, "x2": 300, "y2": 820 }
+        ],
+        "areas": [{ "x": 300, "y": 820, "r": 25 }]
+      }
+    },
+    {
+      "id": "VL-012",
+      "name": "Low Volley: Getting Under the Net",
+      "subcategory": "Forehand Volley",
+      "category": "Volley",
+      "skill_level": "intermediate",
+      "player_count": 2,
+      "duration_minutes": 10,
+      "objective": "Train the low volley — the most physically demanding volley because it requires getting the racket well below the net level and hitting up on the ball to get it over. Low volleys occur when the opponent hits a passing shot that dips at the net player's feet. Most players panic on low volleys — this drill trains the correct mechanical response: get low, open the face, and lift cleanly.",
+      "setup": "Player 2 hits low, dipping balls aimed at Player 1's feet at the net — like a low passing shot or a topspin ball that dips over the net. Player 1 must get under the ball and volley up and over the net.",
+      "instructions": [
+        "Player 1 stands at the net in the ready position.",
+        "Player 2 hits low, dipping balls aimed at Player 1's feet.",
+        "Player 1 must get the racket below the ball and lift it over the net.",
+        "Target: land the low volley deep — past the service line.",
+        "Repeat 20 times. Track how many low volleys clear the net and land deep."
+      ],
+      "coaching_cues": [
+        "Bend your knees deeply — the legs lower you to the ball, not the back or the arm.",
+        "Open the racket face significantly — you are hitting up, so the face must aim upward.",
+        "Soft hands on a low volley — trying to drive a low volley usually sends it into the net.",
+        "Aim for 2-3 feet above the net tape — the upward trajectory needs this extra margin.",
+        "Keep your head down through contact — looking up early causes mis-hits."
+      ],
+      "common_errors": [
+        "Bending the back instead of the knees — creates an awkward, off-balance contact.",
+        "Not opening the racket face enough — ball goes straight into the net.",
+        "Trying to drive a low volley with pace — needs touch, not power."
+      ],
+      "variations": [
+        "Moving low volley: Player 2 feeds low balls to wide positions — Player 1 must move and get low.",
+        "Low volley plus approach: after the low volley, Player 2 feeds a normal ball — Player 1 volleys the finish.",
+        "Consecutive low volleys: Player 2 feeds 5 consecutive low balls — Player 1 must handle all 5."
+      ],
+      "tags": ["volley", "low volley", "intermediate", "technique", "net play"],
+      "diagramData": {
+        "p1": { "x": 200, "y": 520 },
+        "p2": { "x": 200, "y": 60 },
+        "shots": [
+          { "x1": 200, "y1": 70, "x2": 200, "y2": 540 },
+          { "x1": 200, "y1": 525, "x2": 100, "y2": 800 },
+          { "x1": 200, "y1": 525, "x2": 300, "y2": 800 }
+        ],
+        "areas": [
+          { "x": 100, "y": 800, "r": 30 },
+          { "x": 300, "y": 800, "r": 30 }
+        ]
+      }
+    },
+    {
+      "id": "VL-013",
+      "name": "Split Step Timing: The Net Ready Position",
+      "subcategory": "Forehand Volley",
+      "category": "Volley",
+      "skill_level": "beginner",
+      "player_count": 2,
+      "duration_minutes": 10,
+      "objective": "Isolate and train the split step timing at the net — the single most important movement skill for volleyers. The split step must occur exactly as the opponent's racket contacts the ball. Too early and the player is still in the air when they need to react. Too late and the feet never get into position. Perfect split step timing is the foundation of all net play.",
+      "setup": "Player 2 stands at the baseline and hits balls to Player 1 at the net. Before each ball, Player 2 counts aloud: '1, 2, 3 — HIT!' Player 1 must split step exactly on 'HIT'. Player 2 observes whether the split step timing is correct.",
+      "instructions": [
+        "Player 2 counts '1, 2, 3 — HIT!' before each ball.",
+        "Player 1 must split step exactly on 'HIT' — not before, not after.",
+        "Player 2 feeds the ball on 'HIT' — Player 1 must already be landing from the split step.",
+        "After 10 repetitions with the count, Player 2 feeds without counting — Player 1 must read the timing.",
+        "Repeat 20 total feeds — 10 with count, 10 without."
+      ],
+      "coaching_cues": [
+        "The split step is a small hop — not a large jump. Small and quick, not high and slow.",
+        "Split on the opponent's contact, not on their backswing — this is the exact timing cue.",
+        "Land softly with slightly bent knees — ready to explode in any direction.",
+        "Split step every time the opponent hits the ball — no exceptions, even when you are mid-movement.",
+        "After the split, explode toward the ball — the split loads the body for the directional step."
+      ],
+      "common_errors": [
+        "Splitting too early — still in the air when the ball is already past.",
+        "Splitting too late — no time to react and move to the ball.",
+        "Large jump instead of small hop — lands off-balance and slow."
+      ],
+      "variations": [
+        "Moving split step: Player 1 moves toward the net, must split step exactly as Player 2 hits.",
+        "Multiple splits: Player 2 hits 3 balls in a row — Player 1 must split step before each one.",
+        "Video timing check: film the split step from the side and verify the timing frame by frame."
+      ],
+      "tags": ["volley", "split step", "timing", "beginner", "footwork", "net play"],
+      "diagramData": {
+        "p1": { "x": 200, "y": 530 },
+        "p2": { "x": 200, "y": 60 },
+        "shots": [
+          { "x1": 200, "y1": 70, "x2": 200, "y2": 540 },
+          { "x1": 200, "y1": 530, "x2": 100, "y2": 820 }
+        ],
+        "areas": [{ "x": 200, "y": 530, "r": 20 }]
+      }
+    },
+    {
+      "id": "VL-014",
+      "name": "Two-Volley Finish: First to Get Close, Second to Win",
+      "subcategory": "Forehand Volley",
+      "category": "Volley",
+      "skill_level": "intermediate",
+      "player_count": 2,
+      "duration_minutes": 12,
+      "objective": "Train the two-volley sequence — the most common net play pattern in singles. The first volley is played from mid-court distance and is a positioning volley: getting the ball in play and moving closer to the net. The second volley is played from a closer, better position and is the finishing volley. Many players try to end the point on the first volley from too far back — this drill corrects that habit.",
+      "setup": "Player 2 feeds a ball to Player 1 at mid-court (service line area). Player 1 hits a first volley and moves closer to the net. Player 2 feeds a second ball — Player 1 finishes with a volley winner.",
+      "instructions": [
+        "Player 1 starts at the service line distance from the net.",
+        "Player 2 feeds a first ball — Player 1 volleys and moves closer to the net.",
+        "Player 2 immediately feeds a second ball — Player 1 finishes with a winning volley.",
+        "The first volley is a neutral shot, the second volley is aggressive.",
+        "Repeat 15 two-volley sequences per set."
+      ],
+      "coaching_cues": [
+        "First volley: deep and central — don't go for a winner here. Get close to the net.",
+        "Move toward the net immediately after the first volley — don't pause.",
+        "Second volley: now you are closer — go for the angle or the open court.",
+        "The closer you are for the second volley, the more angle you can create.",
+        "Never try to end the point on a first volley from the service line — too much risk."
+      ],
+      "common_errors": [
+        "Trying to win on the first volley from mid-court — usually goes into the net or out.",
+        "Not moving forward between volleys — second volley comes from the same bad position.",
+        "Second volley too conservative — having closed the net, be aggressive."
+      ],
+      "variations": [
+        "Three-volley sequence: positioning volley, setup volley, winner volley.",
+        "Player 2 can pass on any ball — Player 1 must read and defend.",
+        "Lob option: Player 2 can lob on the second ball — Player 1 must recognize and overhead."
+      ],
+      "tags": ["volley", "two-volley", "sequence", "intermediate", "net play", "pattern"],
+      "diagramData": {
+        "p1": { "x": 200, "y": 490 },
+        "p2": { "x": 200, "y": 60 },
+        "moves": [
+          { "x1": 200, "y1": 640, "x2": 200, "y2": 490 }
+        ],
+        "shots": [
+          { "x1": 200, "y1": 70, "x2": 200, "y2": 650 },
+          { "x1": 200, "y1": 640, "x2": 100, "y2": 820 },
+          { "x1": 200, "y1": 70, "x2": 200, "y2": 560 },
+          { "x1": 200, "y1": 490, "x2": 310, "y2": 100 }
+        ],
+        "areas": [
+          { "x": 100, "y": 820, "r": 25 },
+          { "x": 310, "y": 100, "r": 25 }
+        ]
+      }
+    },
+    {
+      "id": "VL-015",
+      "name": "Overhead Jump Smash",
+      "subcategory": "Overhead",
+      "category": "Volley",
+      "skill_level": "advanced",
+      "player_count": 2,
+      "duration_minutes": 10,
+      "objective": "Develop the jump overhead — the overhead hit while jumping to reach a ball that hangs in the air. The jump overhead is necessary when the lob is too high or too far back to reach while standing. It requires coordinating a jump, rotating sideways in the air, and smashing at the peak of the jump. It is one of the most athletic shots in tennis and, when executed well, completely unmissable.",
+      "setup": "Player 2 feeds high, looping lobs that hang in the air above Player 1 at the net. Player 1 must jump to reach the ball and execute a jump overhead smash.",
+      "instructions": [
+        "Player 1 positions at the net.",
+        "Player 2 feeds very high, hanging lobs that require a jump to reach.",
+        "Player 1 must turn sideways, jump, and smash the overhead at the peak of the jump.",
+        "Land balanced on both feet — the landing is as important as the jump.",
+        "Repeat 12 times per set. Rest 90 seconds. Play 3 sets."
+      ],
+      "coaching_cues": [
+        "Turn sideways before jumping — jumping forward-facing means no power.",
+        "Jump off the dominant foot — generates more height and rotation.",
+        "Reach full extension at the top of the jump — make contact at the highest possible point.",
+        "Pronation at contact — the forearm rolls through just like a serve.",
+        "Land on both feet together — one-foot landings cause instability and ankle risk."
+      ],
+      "common_errors": [
+        "Jumping while facing the net instead of turning sideways — weak, off-balance contact.",
+        "Jumping too early and reaching the peak before the ball — must time the jump with the ball.",
+        "Landing on one foot — dangerous and unstable."
+      ],
+      "variations": [
+        "Jump smash to specific targets: cones in both deep corners — must alternate.",
+        "Jump smash then play on: Player 2 retrieves and Player 1 must finish with a volley.",
+        "Running jump overhead: Player 2 lobs while Player 1 is moving laterally."
+      ],
+      "tags": ["volley", "overhead", "jump", "advanced", "athletic", "smash"],
+      "diagramData": {
+        "p1": { "x": 200, "y": 580 },
+        "p2": { "x": 200, "y": 60 },
+        "shots": [
+          { "x1": 200, "y1": 70, "x2": 200, "y2": 400 },
+          { "x1": 200, "y1": 575, "x2": 95, "y2": 820 }
+        ],
+        "areas": [{ "x": 95, "y": 820, "r": 25 }]
+      }
+    },
+    {
+      "id": "VL-016",
+      "name": "Serve and Volley: Kick Serve into Volley",
+      "subcategory": "Forehand Volley",
+      "category": "Volley",
+      "skill_level": "advanced",
+      "player_count": 2,
+      "duration_minutes": 12,
+      "objective": "Develop the kick serve and volley pattern — serving a kick to the backhand, rushing the net, and volleying the weak defensive return. The kick serve creates a high, uncomfortable bounce to the backhand which usually produces a defensive float or a short return — exactly the ball that is easiest to volley for a winner. This is the most reliable serve-and-volley pattern because the kick gives a predictable weak return.",
+      "setup": "Player 1 serves a kick serve to Player 2's backhand, then rushes the net. Player 2 returns defensively — Player 1 split steps and volleys the weak reply for a winner.",
+      "instructions": [
+        "Player 1 serves a kick to Player 2's backhand.",
+        "Player 1 immediately sprints toward the net after serving.",
+        "Player 2 returns — the kick makes a quality backhand return difficult.",
+        "Player 1 split steps as Player 2 contacts the return and volleys the reply.",
+        "Repeat 15 times from both the ad and deuce courts."
+      ],
+      "coaching_cues": [
+        "The kick serve must be high — a low kick serve gives the opponent too much time.",
+        "Start moving the moment the serve leaves the racket.",
+        "Get inside the service line before the split step — closer net position is always better.",
+        "The return will likely float or come back centrally — be ready to volley from the center.",
+        "Put the volley away — this is your designed attack opportunity, not a neutral ball."
+      ],
+      "common_errors": [
+        "Not moving fast enough after the kick serve — the split step happens too far from the net.",
+        "Kick serve too low — Player 2 can attack the return.",
+        "Volley too hesitant — must be decisive and aggressive."
+      ],
+      "variations": [
+        "Kick serve and volley from deuce court to T position: kick T serve, rush net.",
+        "Player 2 occasionally goes DTL instead of CC — Player 1 must read and adjust the volley.",
+        "Full point: Player 2 can try a high passing shot after the kick serve return."
+      ],
+      "tags": ["volley", "serve and volley", "kick serve", "advanced", "net play", "pattern"],
+      "diagramData": {
+        "p1": { "x": 200, "y": 560 },
+        "p2": { "x": 280, "y": 60 },
+        "moves": [{ "x1": 160, "y1": 855, "x2": 200, "y2": 560 }],
+        "shots": [
+          { "x1": 160, "y1": 855, "x2": 250, "y2": 385 },
+          { "x1": 280, "y1": 70, "x2": 195, "y2": 625 },
+          { "x1": 198, "y1": 555, "x2": 310, "y2": 120 }
+        ],
+        "areas": [{ "x": 310, "y": 120, "r": 25 }]
+      }
+    },
+    {
+      "id": "VL-017",
+      "name": "Volley to Passing Shot: One vs One Point Play",
+      "subcategory": "Forehand Volley",
+      "category": "Volley",
+      "skill_level": "intermediate",
+      "player_count": 2,
+      "duration_minutes": 15,
+      "objective": "Train the complete net-versus-baseline battle — Player 1 at the net trying to volley winners, Player 2 at the baseline trying to pass or lob. This one-versus-one format replicates the most common point structure in serve-and-volley or approach tennis and develops all the net skills in a competitive, realistic context.",
+      "setup": "Player 1 starts at the net in the ready position. Player 2 starts at the baseline. Player 2 feeds a ball to start the point. Player 1 volleys and tries to win the point. Player 2 tries to pass or lob.",
+      "instructions": [
+        "Player 2 feeds a medium ball from the baseline to start the point.",
+        "Player 1 at the net volleys and tries to win.",
+        "Player 2 tries to pass DTL, CC, or lob to beat the net player.",
+        "Play to 10 points. Switch roles. Best of 3 sets of 10 points each.",
+        "Player 1 must use all volley techniques: forehand, backhand, angle, drop, overhead."
+      ],
+      "coaching_cues": [
+        "Player 1: position yourself centrally — split the two passing angles equally.",
+        "Player 1: move diagonally forward with each volley — never retreat.",
+        "Player 2: watch Player 1's volley position — hit away from where they are, not where they were.",
+        "Player 1: overhead on every lob — don't retreat unless the lob is truly deep.",
+        "Player 2: mix up passing shots — don't always go to the same side."
+      ],
+      "common_errors": [
+        "Player 1 staying too far from the net — allows too many angles for passing shots.",
+        "Player 1 poaching too early — leaves the side they came from wide open.",
+        "Player 2 going DTL every time — predictable, Player 1 starts to cheat that direction."
+      ],
+      "variations": [
+        "Player 1 must win within 3 volleys — or the point goes to Player 2.",
+        "Handicap: Player 1 must only volley cross-court — Player 2 knows the direction but must still cover it.",
+        "Team version: 2v1 — two players at the net versus one at the baseline."
+      ],
+      "tags": ["volley", "passing shot", "match-simulation", "intermediate", "net play", "competitive"],
+      "diagramData": {
+        "p1": { "x": 200, "y": 510 },
+        "p2": { "x": 200, "y": 60 },
+        "shots": [
+          { "x1": 200, "y1": 70, "x2": 200, "y2": 520 },
+          { "x1": 200, "y1": 510, "x2": 95, "y2": 820 },
+          { "x1": 200, "y1": 70, "x2": 90, "y2": 550 },
+          { "x1": 200, "y1": 510, "x2": 305, "y2": 100 }
+        ],
+        "areas": [
+          { "x": 95, "y": 820, "r": 25 },
+          { "x": 305, "y": 100, "r": 25 }
+        ]
+      }
+    },
+    {
+      "id": "VL-018",
+      "name": "Backhand Volley Swing Volley",
+      "subcategory": "Backhand Volley",
+      "category": "Volley",
+      "skill_level": "advanced",
+      "player_count": 2,
+      "duration_minutes": 10,
+      "objective": "Develop the backhand swing volley — a full backhand groundstroke taken out of the air on the backhand side. Like the forehand swing volley, this shot is used to attack high, floating balls at the net that hang at shoulder height or above. The backhand swing volley converts what would be an awkward overhead attempt into an aggressive, controlled winner.",
+      "setup": "Player 2 feeds high, looping balls to Player 1's backhand side at the net. Player 1 must take the ball out of the air before it bounces using a full backhand swing volley.",
+      "instructions": [
+        "Player 1 positions inside the service line on the backhand side.",
+        "Player 2 feeds high, looping balls — hanging at shoulder height or above — to the backhand side.",
+        "Player 1 takes the ball out of the air with a full backhand swing, not a punch.",
+        "Target: put the ball away — cross-court or down-the-line.",
+        "Repeat 12 times. Focus on contact point and decisive direction."
+      ],
+      "coaching_cues": [
+        "Full backhand swing — this is a swing volley, not a punch volley.",
+        "Take the ball at the peak or just after — don't let it drop to waist height.",
+        "Step into the ball — use forward body momentum to generate pace.",
+        "Cross-court is usually the higher-percentage target from the backhand wing.",
+        "Keep your eyes on the ball — swing volleys are frequently mis-hit from premature eye movement."
+      ],
+      "common_errors": [
+        "Punching the ball instead of swinging — produces a weak, short reply.",
+        "Letting the ball drop too far — loses power and angle.",
+        "No step into the ball — arm-only swing lacks pace."
+      ],
+      "variations": [
+        "Both swing volleys: alternating forehand and backhand swing volleys in one set.",
+        "Swing volley challenge: 5 consecutive backhand swing volleys that land in the target zone.",
+        "Add movement: Player 2 feeds to different spots — Player 1 must adjust and swing volley."
+      ],
+      "tags": ["volley", "backhand volley", "swing volley", "advanced", "net play", "winner"],
+      "diagramData": {
+        "p1": { "x": 150, "y": 540 },
+        "p2": { "x": 120, "y": 60 },
+        "shots": [
+          { "x1": 120, "y1": 70, "x2": 145, "y2": 510 },
+          { "x1": 145, "y1": 535, "x2": 305, "y2": 120 }
+        ],
+        "areas": [{ "x": 305, "y": 120, "r": 25 }]
+      }
+    },
+    {
+      "id": "VL-019",
+      "name": "Reflex Volley at the Net: Rapid Feeds",
+      "subcategory": "Forehand Volley",
+      "category": "Volley",
+      "skill_level": "intermediate",
+      "player_count": 2,
+      "duration_minutes": 10,
+      "objective": "Build reflex speed and automatic volley response through extremely rapid feeds. Player 2 feeds balls back-to-back at pace, giving Player 1 almost no recovery time between volleys. This drill pushes the volley into the subconscious — there is no time to think, only to react. The faster the feeds, the more automatic the volley becomes.",
+      "setup": "Player 1 stands close to the net. Player 2 feeds balls in rapid succession from the service line — one every 2-3 seconds. Player 1 must volley each ball back and reset immediately. There is no rest between volleys.",
+      "instructions": [
+        "Player 1 positions 4-5 feet from the net.",
+        "Player 2 feeds balls rapidly from the service line — one every 2-3 seconds.",
+        "Player 1 volleys each ball back and immediately resets to the ready position.",
+        "Feed 10 consecutive rapid volleys, then rest 30 seconds. Repeat 5 rounds.",
+        "Increase the pace of the feeds each round — maximum pace by Round 5."
+      ],
+      "coaching_cues": [
+        "Racket stays up between every volley — never drops below the net level.",
+        "Small, precise punches — no time for anything elaborate.",
+        "Watch the next ball immediately after each volley — anticipate, don't react.",
+        "Feet stay active with tiny shuffles — be ready to move in any direction.",
+        "Breathe — rapid-fire drills create tension; conscious breathing keeps you loose."
+      ],
+      "common_errors": [
+        "Dropping the racket between volleys — must be recovered before the next ball arrives.",
+        "Large swings on rapid volleys — by the time the swing is complete, the next ball is already arriving.",
+        "Flat feet between volleys — cannot move quickly from a static stance."
+      ],
+      "variations": [
+        "Directional reflex: Player 2 feeds to alternating sides rapidly — Player 1 moves and volleys.",
+        "Blindside reflex: Player 2 feeds from unpredictable positions — Player 1 cannot anticipate direction.",
+        "Competition: how many consecutive reflex volleys can Player 1 keep in play?"
+      ],
+      "tags": ["volley", "reflex", "rapid fire", "intermediate", "hand speed", "net play"],
+      "diagramData": {
+        "p1": { "x": 200, "y": 510 },
+        "p2": { "x": 200, "y": 480 },
+        "shots": [
+          { "x1": 200, "y1": 490, "x2": 130, "y2": 520 },
+          { "x1": 130, "y1": 510, "x2": 270, "y2": 820 },
+          { "x1": 200, "y1": 490, "x2": 270, "y2": 520 },
+          { "x1": 270, "y1": 510, "x2": 95, "y2": 820 }
+        ],
+        "areas": [
+          { "x": 270, "y": 820, "r": 22 },
+          { "x": 95, "y": 820, "r": 22 }
+        ]
+      }
+    },
+    {
+      "id": "VL-020",
+      "name": "Overhead Lob Decision: Smash or Retreat",
+      "subcategory": "Overhead",
+      "category": "Volley",
+      "skill_level": "advanced",
+      "player_count": 2,
+      "duration_minutes": 12,
+      "objective": "Train the real-time decision between smashing an overhead and retreating — the most common tactical decision at the net. If the lob is short or medium depth, the player should smash. If the lob is very deep or very high, the player should retreat to the baseline and play a groundstroke. Making the wrong decision — trying to smash a lob that should be retreated — is one of the most costly errors in net play.",
+      "setup": "Player 2 mixes lobs: some short (clear overhead opportunity), some deep (must retreat). Player 1 must read the lob depth and decide instantly: smash or retreat. Player 2 does not signal which type is coming.",
+      "instructions": [
+        "Player 1 stands at the net in the ready position.",
+        "Player 2 feeds lobs of varying depths without signaling the type.",
+        "Short lob: Player 1 smashes the overhead immediately.",
+        "Deep lob: Player 1 retreats, lets it bounce, and plays a groundstroke.",
+        "Track: how many decisions are correct? Target: 12 out of 15."
+      ],
+      "coaching_cues": [
+        "Read the lob at the earliest point — watch the ball from the moment it leaves the racket.",
+        "Short lob decision cue: the ball apex is above you and in front — smash.",
+        "Deep lob decision cue: the ball apex is behind you or very high — retreat.",
+        "When in doubt, retreat — a smash error is more costly than a controlled groundstroke.",
+        "The retreat must begin immediately — waiting costs you both time and position."
+      ],
+      "common_errors": [
+        "Smashing deep lobs — usually goes into the net or out, completely preventable.",
+        "Retreating on short lobs — gives up a free point.",
+        "No clear decision — half retreating, half smashing — produces the worst of both options."
+      ],
+      "variations": [
+        "Player 2 signals which lob is coming — Player 1 focuses on technique rather than decision.",
+        "Score based on decision quality: +2 for smash winner, +1 for correct groundstroke on deep lob.",
+        "Random lob depths in a real point: Player 2 plays the point from the baseline using only lobs."
+      ],
+      "tags": ["volley", "overhead", "decision", "advanced", "tactical", "net play"],
+      "diagramData": {
+        "p1": { "x": 200, "y": 640 },
+        "p2": { "x": 200, "y": 60 },
+        "moves": [
+          { "x1": 200, "y1": 520, "x2": 200, "y2": 640 }
+        ],
+        "shots": [
+          { "x1": 200, "y1": 70, "x2": 200, "y2": 380 },
+          { "x1": 200, "y1": 520, "x2": 95, "y2": 820 },
+          { "x1": 200, "y1": 70, "x2": 200, "y2": 580 },
+          { "x1": 200, "y1": 638, "x2": 305, "y2": 820 }
+        ],
+        "areas": [
+          { "x": 95, "y": 820, "r": 25 },
+          { "x": 305, "y": 820, "r": 25 }
+        ]
+      }
+    },
+    {
+      "id": "VL-021",
+      "name": "Volley Movement: Wide Ball Recovery",
+      "subcategory": "Forehand Volley",
+      "category": "Volley",
+      "skill_level": "intermediate",
+      "player_count": 2,
+      "duration_minutes": 10,
+      "objective": "Train lateral movement at the net — specifically getting to wide volleys and recovering to the center after each one. Wide volleys are the most common volley that players fail to reach in time. This drill trains the movement pattern: split step, first step direction, cross-step to the ball, volley, recover to center, and repeat.",
+      "setup": "Player 2 feeds balls alternating wide to Player 1's forehand and backhand at the net. Player 1 must split step, move to each wide ball, volley, and recover to center before the next ball is fed.",
+      "instructions": [
+        "Player 1 positions at the net center.",
+        "Player 2 feeds wide to the forehand — Player 1 moves, volleys, recovers to center.",
+        "Player 2 feeds wide to the backhand — Player 1 moves, volleys, recovers to center.",
+        "Continue alternating for 10 exchanges, then rest 30 seconds. Repeat 4 rounds.",
+        "Focus on the recovery to center after each wide volley — this is as important as the volley itself."
+      ],
+      "coaching_cues": [
+        "Split step before every ball — even while recovering, must split before the next feed.",
+        "First step: lead with the foot on the side you are moving — cross-step for wide balls.",
+        "After the wide volley, push off the outer foot to recover.",
+        "Recovery must be complete before Player 2 feeds — don't cheat by stopping halfway.",
+        "Keep the racket up during recovery — ready for the next volley immediately."
+      ],
+      "common_errors": [
+        "No split step before the wide ball — cannot change direction effectively.",
+        "Not recovering to center — second wide ball is unreachable.",
+        "Dropping the racket during recovery — takes time to raise it back up."
+      ],
+      "variations": [
+        "Increase the width — Player 2 feeds further and further wide.",
+        "Add pace: Player 2 increases the speed of feeds — less recovery time.",
+        "Three-direction drill: wide forehand, center, wide backhand — Player 1 moves in three directions."
+      ],
+      "tags": ["volley", "movement", "lateral", "intermediate", "net play", "footwork"],
+      "diagramData": {
+        "p1": { "x": 200, "y": 510 },
+        "p2": { "x": 200, "y": 60 },
+        "moves": [
+          { "x1": 200, "y1": 510, "x2": 305, "y2": 510 },
+          { "x1": 305, "y1": 510, "x2": 200, "y2": 510 },
+          { "x1": 200, "y1": 510, "x2": 95, "y2": 510 }
+        ],
+        "shots": [
+          { "x1": 200, "y1": 70, "x2": 305, "y2": 520 },
+          { "x1": 305, "y1": 510, "x2": 305, "y2": 820 },
+          { "x1": 200, "y1": 60, "x2": 95, "y2": 520 },
+          { "x1": 95, "y1": 510, "x2": 95, "y2": 820 }
+        ],
+        "areas": [
+          { "x": 305, "y": 820, "r": 22 },
+          { "x": 95, "y": 820, "r": 22 }
+        ]
+      }
+    },
+    {
+      "id": "VL-022",
+      "name": "Punch Volley to Open Court: Direction Training",
+      "subcategory": "Backhand Volley",
+      "category": "Volley",
+      "skill_level": "beginner",
+      "player_count": 2,
+      "duration_minutes": 10,
+      "objective": "Train the ability to direct the volley to the open court — wherever the opponent is not. This is the fundamental tactical objective of every volley: not just getting it in, but getting it away from the opponent. This drill teaches players to read the opponent's position before contact and direct the volley accordingly — the most important tactical skill at the net.",
+      "setup": "Player 2 stands at the baseline and moves left or right before feeding the ball to Player 1 at the net. Player 1 must direct the volley to the side that Player 2 is moving away from — the open court.",
+      "instructions": [
+        "Player 2 feeds a ball to Player 1 at the net.",
+        "As the ball travels to Player 1, Player 2 moves visibly left or right.",
+        "Player 1 must direct the volley to the opposite side from where Player 2 moved.",
+        "If Player 2 moves left, Player 1 volleys right. If Player 2 moves right, Player 1 volleys left.",
+        "Repeat 20 times. Track: how many times does Player 1 correctly volley to the open court?"
+      ],
+      "coaching_cues": [
+        "Watch Player 2's movement as you prepare the volley — not after you hit.",
+        "Read Player 2's direction before contact — the racket face sets the direction.",
+        "Open court left: punch the racket face toward the left.",
+        "Open court right: punch the racket face toward the right.",
+        "Don't try to be too clever — a clean volley to open court wins the point."
+      ],
+      "common_errors": [
+        "Watching the ball and not Player 2 — misses the tactical information.",
+        "Deciding direction too late — contact happens before the direction is set.",
+        "Going where Player 2 is instead of where they aren't — opposite of the tactical goal."
+      ],
+      "variations": [
+        "Player 2 moves after Player 1 has already started the volley motion — tests peripheral awareness.",
+        "Player 2 doesn't move — Player 1 must independently choose the best open court.",
+        "Speed version: Player 2 moves quickly — Player 1 has less time to read."
+      ],
+      "tags": ["volley", "direction", "open court", "beginner", "tactical", "net play"],
+      "diagramData": {
+        "p1": { "x": 200, "y": 520 },
+        "p2": { "x": 120, "y": 60 },
+        "shots": [
+          { "x1": 120, "y1": 70, "x2": 198, "y2": 530 },
+          { "x1": 198, "y1": 520, "x2": 300, "y2": 820 },
+          { "x1": 198, "y1": 520, "x2": 95, "y2": 820 }
+        ],
+        "areas": [
+          { "x": 300, "y": 820, "r": 25 },
+          { "x": 95, "y": 820, "r": 25 }
+        ]
+      }
+    },
+    {
+      "id": "VL-023",
+      "name": "Net Battle: Consecutive Volleys Challenge",
+      "subcategory": "Forehand Volley",
+      "category": "Volley",
+      "skill_level": "beginner",
+      "player_count": 2,
+      "duration_minutes": 12,
+      "objective": "Build volley consistency and net presence through a count-based volley exchange challenge. Both players stand inside the service line and attempt to exchange as many consecutive volleys as possible without an error. The count creates mental pressure and forces each player to balance aggression with control — exactly the challenge faced at the net in match play.",
+      "setup": "Both players stand inside the service line — approximately 8-10 feet from the net. They volley cross-court to each other, counting consecutive volleys. Any ball that hits the net, goes out, or bounces before the player volleys it resets the count to zero.",
+      "instructions": [
+        "Both players position inside the service line.",
+        "Exchange cross-court volleys counting aloud.",
+        "Any error — net, out, or bounce — resets the count to zero immediately.",
+        "Target: 20 consecutive cross-court volleys without an error.",
+        "If 20 is reached, increase to 30. Record the personal best."
+      ],
+      "coaching_cues": [
+        "Aim cross-court — cross-court volleys travel over the lowest part of the net and have more room.",
+        "Keep the rally going — this is not the time for winners, it's the time for consistency.",
+        "Watch the ball from the moment it leaves the partner's strings — earliest read possible.",
+        "Small punch on every volley — no large swings at close range.",
+        "Breathe between volleys — tension builds as the count gets higher."
+      ],
+      "common_errors": [
+        "Going for a winner when the count is high — ego kills the rally.",
+        "Aiming down-the-line instead of cross-court — shorter distance over a higher part of the net.",
+        "Large swings on close-range volleys — no time for that at this range."
+      ],
+      "variations": [
+        "DTL version: both players volley down-the-line — shorter travel, harder to control.",
+        "Forehand only: both players move to use only forehand volleys.",
+        "Competitive: first player to miss loses a point — play to 10 points."
+      ],
+      "tags": ["volley", "consistency", "challenge", "beginner", "net play", "count"],
+      "diagramData": {
+        "p1": { "x": 250, "y": 600 },
+        "p2": { "x": 150, "y": 390 },
+        "shots": [
+          { "x1": 150, "y1": 400, "x2": 248, "y2": 590 },
+          { "x1": 248, "y1": 590, "x2": 152, "y2": 402 }
+        ],
+        "areas": [
+          { "x": 250, "y": 600, "r": 20 },
+          { "x": 150, "y": 390, "r": 20 }
+        ]
+      }
+    },
+    {
+      "id": "VL-024",
+      "name": "Approach Volley Finish: Baseline to Net in 3 Shots",
+      "subcategory": "Forehand Volley",
+      "category": "Volley",
+      "skill_level": "intermediate",
+      "player_count": 2,
+      "duration_minutes": 12,
+      "objective": "Train a complete three-shot baseline-to-net pattern: approach shot, transition volley, finishing volley. This three-shot sequence is the standard template for breaking down a baseliner and finishing at the net. Each shot in the sequence has a distinct tactical purpose — the approach creates position, the transition volley closes the net, and the finishing volley ends the point.",
+      "setup": "Player 2 feeds a short ball to Player 1 at the baseline. Player 1 approaches, hits a transition volley from mid-court, moves closer to the net, and finishes with a winning volley.",
+      "instructions": [
+        "Player 2 feeds a short ball to Player 1 at the baseline.",
+        "Shot 1 — approach: Player 1 drives the short ball deep and moves toward the net.",
+        "Shot 2 — transition volley: Player 2 hits a reply, Player 1 volleys from the service line area.",
+        "Shot 3 — finishing volley: Player 2 hits a second reply, Player 1 volleys the winner.",
+        "Repeat 15 three-shot sequences per set."
+      ],
+      "coaching_cues": [
+        "Shot 1 approach: drive it deep and move — don't stop to admire.",
+        "Shot 2 transition volley: deep and central — position, not winner.",
+        "Move aggressively forward after the transition volley — the third shot must come from close.",
+        "Shot 3 finishing volley: now create the angle or go DTL — you are close enough.",
+        "Think of it as: build, set up, finish — three distinct intentions."
+      ],
+      "common_errors": [
+        "Trying to win on the approach instead of building — too much risk from the baseline.",
+        "Not moving after the transition volley — third shot comes from the same mid-court position.",
+        "Finishing volley from too far back — angle is limited from the service line."
+      ],
+      "variations": [
+        "Player 2 can pass or lob on any ball — Player 1 must read and adapt.",
+        "Full point: after the three declared shots, play out freely.",
+        "Scoring: +3 for completing the full sequence, +1 for each shot executed as intended."
+      ],
+      "tags": ["volley", "approach", "sequence", "intermediate", "three-shot", "net play"],
+      "diagramData": {
+        "p1": { "x": 200, "y": 500 },
+        "p2": { "x": 200, "y": 60 },
+        "moves": [
+          { "x1": 200, "y1": 850, "x2": 200, "y2": 670 },
+          { "x1": 200, "y1": 670, "x2": 200, "y2": 500 }
+        ],
+        "shots": [
+          { "x1": 200, "y1": 70, "x2": 200, "y2": 690 },
+          { "x1": 200, "y1": 668, "x2": 95, "y2": 820 },
+          { "x1": 200, "y1": 70, "x2": 200, "y2": 580 },
+          { "x1": 200, "y1": 578, "x2": 100, "y2": 820 },
+          { "x1": 200, "y1": 70, "x2": 200, "y2": 560 },
+          { "x1": 200, "y1": 495, "x2": 305, "y2": 100 }
+        ],
+        "areas": [{ "x": 305, "y": 100, "r": 25 }]
+      }
+    },
+    {
+      "id": "VL-025",
+      "name": "Behind-the-Back Overhead Recovery",
+      "subcategory": "Overhead",
+      "category": "Volley",
+      "skill_level": "advanced",
+      "player_count": 2,
+      "duration_minutes": 10,
+      "objective": "Train the extreme overhead situation where the lob goes completely over the player's head and they are forced to turn and retrieve behind the baseline. This drill trains the specific skill set: full 180-degree turn, sprinting backward, finding the ball over the shoulder, and either smashing when possible or lobbing back to reset the point. Elite players treat this as a recoverable situation — recreational players treat it as a lost point.",
+      "setup": "Player 1 starts at the net. Player 2 lobs a ball well over Player 1's head — deep, behind the baseline. Player 1 must turn, sprint, and attempt to retrieve the ball.",
+      "instructions": [
+        "Player 1 starts at the net.",
+        "Player 2 lobs very deep — the ball should bounce well behind the baseline.",
+        "Player 1 turns immediately and sprints to retrieve the ball after the bounce.",
+        "If reachable: hit a drive or topspin lob to reset the point.",
+        "Play out each point after the retrieval. Repeat 12 times."
+      ],
+      "coaching_cues": [
+        "Turn 180 degrees immediately — facing the net while sprinting backward is inefficient.",
+        "Keep the ball in your peripheral vision as you turn — never completely lose sight of it.",
+        "After the bounce, aim a high topspin lob back over the opponent — buy time to reposition.",
+        "After the retrieval shot, sprint back toward the net — don't concede the baseline.",
+        "The retrieval shot is a reset, not a winner — get it in and fight for the next ball."
+      ],
+      "common_errors": [
+        "Not turning quickly enough — the ball bounces twice before the player gets there.",
+        "Giving up on the ball — the best players fight for every ball.",
+        "Trying to hit a winner from an impossible position — should reset with a lob."
+      ],
+      "variations": [
+        "Behind-the-back smash: Player 2 lobs slightly shorter — Player 1 can turn and smash after the bounce.",
+        "Recovery to net: after the retrieval lob, Player 2 hits a short ball — Player 1 must get back to net.",
+        "Count competition: how many lob retrievals can Player 1 keep in play out of 10?"
+      ],
+      "tags": ["volley", "overhead", "retrieval", "advanced", "athletic", "recovery"],
+      "diagramData": {
+        "p1": { "x": 200, "y": 820 },
+        "p2": { "x": 200, "y": 60 },
+        "moves": [
+          { "x1": 200, "y1": 520, "x2": 200, "y2": 820 }
+        ],
+        "shots": [
+          { "x1": 200, "y1": 70, "x2": 200, "y2": 700 },
+          { "x1": 200, "y1": 818, "x2": 200, "y2": 100 }
+        ],
+        "areas": [{ "x": 200, "y": 100, "r": 35 }]
+      }
+    },
+    {
+      "id": "VL-026",
+      "name": "Volley Under Pressure: Rapid Lob-Pass Combination",
+      "subcategory": "Forehand Volley",
+      "category": "Volley",
+      "skill_level": "advanced",
+      "player_count": 2,
+      "duration_minutes": 12,
+      "objective": "Train the net player to handle the most stressful combination used against them — a mix of passing shots and lobs delivered rapidly. Player 2 alternates between passing shots and lobs without signaling which is coming. Player 1 must read each ball early, decide to volley or overhead, and execute. This combination tests every skill developed in the volley category simultaneously.",
+      "setup": "Player 1 positions at the net. Player 2 mixes passing shots (low, fast) and lobs (high, over the net player's head) without any pattern. Player 1 must read and react to each ball correctly.",
+      "instructions": [
+        "Player 1 positions at the net, ready for any type of ball.",
+        "Player 2 mixes: passing shot then lob, or two passes then a lob — no predictable pattern.",
+        "Passing shot: Player 1 split steps and volleys.",
+        "Lob: Player 1 reads the lob early, decides smash or retreat, and executes.",
+        "Play 15 balls per round. Track: correct decisions and execution quality."
+      ],
+      "coaching_cues": [
+        "Watch the racket face angle of Player 2 — open face means lob, closed face means pass.",
+        "Low body and legs of Player 2 usually means pass — upright body often means lob.",
+        "Read the ball in the first 10 feet of its flight — that is when the decision must be made.",
+        "Commit fully to each decision — half-committed responses to lobs or passes produce errors.",
+        "Reset mentally after each ball — the sequence has no pattern."
+      ],
+      "common_errors": [
+        "Reacting to lobs and passes too late — always a step behind.",
+        "Treating lobs and passes the same — staying in place regardless of ball type.",
+        "Mental fatigue from the variety — concentration must stay high on every single ball."
+      ],
+      "variations": [
+        "Add a drive to the body: Player 2 can also hit hard at Player 1's body — tests close-range reaction.",
+        "Two-on-one: Player 2 and a third player alternate feeding — maximum variety and pressure.",
+        "Score by outcome: +1 for volley winner, +1 for overhead winner, -1 for any error."
+      ],
+      "tags": ["volley", "pressure", "lob", "passing shot", "advanced", "decision"],
+      "diagramData": {
+        "p1": { "x": 200, "y": 520 },
+        "p2": { "x": 200, "y": 60 },
+        "shots": [
+          { "x1": 200, "y1": 70, "x2": 200, "y2": 380 },
+          { "x1": 200, "y1": 520, "x2": 310, "y2": 820 },
+          { "x1": 200, "y1": 70, "x2": 90, "y2": 560 },
+          { "x1": 200, "y1": 520, "x2": 95, "y2": 820 }
+        ],
+        "areas": [
+          { "x": 310, "y": 820, "r": 22 },
+          { "x": 95, "y": 820, "r": 22 }
+        ]
+      }
+    },
+    {
+      "id": "VL-027",
+      "name": "Forehand Volley to Backhand Volley Transition",
+      "subcategory": "Backhand Volley",
+      "category": "Volley",
+      "skill_level": "intermediate",
+      "player_count": 2,
+      "duration_minutes": 10,
+      "objective": "Train the transition between forehand and backhand volleys — the most common volleying scenario at the net. Player 2 forces Player 1 to volley from the center, then redirects to the opposite side. The transition requires a grip change (from eastern forehand to continental), a sideways turn, and an immediate punch volley — all in less than one second.",
+      "setup": "Player 2 feeds to Player 1's forehand volley, then immediately feeds to the backhand side. Player 1 must transition grip and position between the two volleys.",
+      "instructions": [
+        "Player 2 feeds a forehand volley ball to Player 1.",
+        "Player 1 volleys — immediately after, Player 2 feeds to the backhand side.",
+        "Player 1 must change grip mid-transition and volley the backhand.",
+        "Continue alternating: forehand volley, backhand volley, forehand, backhand.",
+        "Run 10 exchanges per round, 4 rounds. Focus on the grip change speed."
+      ],
+      "coaching_cues": [
+        "The continental grip handles both forehand and backhand volleys without change — use it always.",
+        "If using Eastern forehand grip on volleys, the grip change must happen during the recovery step.",
+        "Turn your shoulder toward the backhand as you transition — body guides the direction.",
+        "Keep your eyes on the next ball during the transition — don't watch your volley land.",
+        "The transition is a shuffle, not a sprint — small lateral steps between volleys."
+      ],
+      "common_errors": [
+        "No grip change on the backhand — causes a late, weak volley with the wrong face angle.",
+        "Watching the forehand volley instead of looking for the next ball.",
+        "Over-rotating between volleys — too much body turn leaves the feet out of position."
+      ],
+      "variations": [
+        "Add a third ball: forehand, backhand, forehand — three-shot transition sequence.",
+        "Widen the feeds: Player 2 feeds further wide on each side — requires more lateral movement.",
+        "No-man's land transition: Player 1 positioned at mid-court must transition volley and advance."
+      ],
+      "tags": ["volley", "forehand volley", "backhand volley", "transition", "intermediate", "grip"],
+      "diagramData": {
+        "p1": { "x": 200, "y": 510 },
+        "p2": { "x": 200, "y": 60 },
+        "shots": [
+          { "x1": 200, "y1": 70, "x2": 270, "y2": 520 },
+          { "x1": 268, "y1": 510, "x2": 95, "y2": 820 },
+          { "x1": 200, "y1": 60, "x2": 130, "y2": 520 },
+          { "x1": 128, "y1": 510, "x2": 305, "y2": 820 }
+        ],
+        "areas": [
+          { "x": 95, "y": 820, "r": 22 },
+          { "x": 305, "y": 820, "r": 22 }
+        ]
+      }
+    },
+    {
+      "id": "VL-028",
+      "name": "Passing Shot Drilling: How to Beat the Net Player",
+      "subcategory": "Forehand Volley",
+      "category": "Volley",
+      "skill_level": "intermediate",
+      "player_count": 2,
+      "duration_minutes": 12,
+      "objective": "Train passing shots from the perspective of the baseliner — specifically, how to read the net player's position and hit the passing shot that beats them. Understanding how to pass is crucial for volleyers because it reveals what the net player must do to prevent each type of pass. This dual-perspective drill improves both the net play and the passing game simultaneously.",
+      "setup": "Player 2 is at the net. Player 1 is at the baseline and attempts passing shots. Both players rotate roles every 10 passes. Player 1 must vary: CC pass, DTL pass, and lob — choosing based on Player 2's net position.",
+      "instructions": [
+        "Player 2 positions at the net. Player 1 at the baseline gets a fed ball.",
+        "Player 1 must pass Player 2 — choosing CC, DTL, or lob based on Player 2's net position.",
+        "Player 2 volleys and tries to win every ball.",
+        "After 10 passing attempts, switch roles — Player 1 goes to the net, Player 2 passes.",
+        "Track passing success rate and volley success rate — compare both players."
+      ],
+      "coaching_cues": [
+        "Passer: watch the net player's starting position — cheat to one side = pass the other.",
+        "Passer: if the net player is close, a dipping topspin pass is most effective.",
+        "Passer: if the net player is far back, a sharp angled pass can sneak by.",
+        "Passer: lob when the net player is very close to the net — they cannot retreat fast enough.",
+        "Net player: take away the angle — position in the center, not too wide."
+      ],
+      "common_errors": [
+        "Passer going the same direction every time — predictable, net player cheats.",
+        "Net player not moving to cut off the angle — standing still and reaching.",
+        "Passer not reading net position — choosing pass direction without tactical basis."
+      ],
+      "variations": [
+        "Handicap: the passer must always go DTL — tests net player's ability to cut it off.",
+        "Lob only: the passer can only lob — tests overhead quality.",
+        "Full set: play a proper set with one player at net and one at baseline — complete tactical test."
+      ],
+      "tags": ["volley", "passing shot", "tactical", "intermediate", "dual-perspective", "net play"],
+      "diagramData": {
+        "p1": { "x": 280, "y": 800 },
+        "p2": { "x": 200, "y": 510 },
+        "shots": [
+          { "x1": 200, "y1": 70, "x2": 280, "y2": 830 },
+          { "x1": 278, "y1": 800, "x2": 95, "y2": 540 },
+          { "x1": 278, "y1": 800, "x2": 305, "y2": 540 }
+        ],
+        "areas": [
+          { "x": 95, "y": 540, "r": 22 },
+          { "x": 305, "y": 540, "r": 22 }
+        ]
+      }
+    },
+    {
+      "id": "VL-029",
+      "name": "Overhead Consistency: 10 in a Row Challenge",
+      "subcategory": "Overhead",
+      "category": "Volley",
+      "skill_level": "intermediate",
+      "player_count": 2,
+      "duration_minutes": 10,
+      "objective": "Build overhead consistency through a count-based challenge — 10 consecutive overheads without an error. The overhead is the most important shot to get right when you have the opportunity — a missed overhead from a smash position is one of the most demoralizing errors in tennis. This drill makes overhead consistency a priority by making every miss matter.",
+      "setup": "Player 2 feeds lobs from the baseline — varying height and position slightly but keeping them smashable. Player 1 must smash 10 consecutive overheads without hitting the net, going out, or missing the ball.",
+      "instructions": [
+        "Player 2 feeds lobs from the baseline — smashable height and depth.",
+        "Player 1 must smash 10 consecutive overheads into the court.",
+        "Any error resets the count to zero immediately.",
+        "Target: 10 consecutive in under 15 attempts.",
+        "If 10 is easy, increase to 15 or 20 consecutive."
+      ],
+      "coaching_cues": [
+        "Turn sideways on every overhead — even on easy lobs.",
+        "Point with the non-dominant arm on every overhead — it's not optional.",
+        "Contact with a full arm extension — don't let the ball drop too close to the body.",
+        "Aim for depth — the overhead should land near the baseline, not in the service box.",
+        "Follow through completely — a tentative overhead often goes into the net."
+      ],
+      "common_errors": [
+        "Facing the net instead of turning sideways — causes weak, off-center contacts.",
+        "Not pointing at the ball — misjudges the position and either jams or reaches.",
+        "Missing the count by going for too much — a reliable overhead beats a spectacular one."
+      ],
+      "variations": [
+        "Overhead target: all 10 must land in the back half of the court.",
+        "Directional overhead: alternate between left and right corners on each overhead.",
+        "Full point overhead: Player 2 can run to the overhead and return — Player 1 must then finish the point."
+      ],
+      "tags": ["volley", "overhead", "consistency", "intermediate", "challenge", "smash"],
+      "diagramData": {
+        "p1": { "x": 200, "y": 580 },
+        "p2": { "x": 200, "y": 60 },
+        "shots": [
+          { "x1": 200, "y1": 70, "x2": 200, "y2": 400 },
+          { "x1": 200, "y1": 575, "x2": 100, "y2": 820 },
+          { "x1": 200, "y1": 575, "x2": 300, "y2": 820 }
+        ],
+        "areas": [
+          { "x": 100, "y": 820, "r": 25 },
+          { "x": 300, "y": 820, "r": 25 }
+        ]
+      }
+    },
+    {
+      "id": "VL-030",
+      "name": "Volley Grand Finale: Net Domination Points",
+      "subcategory": "Forehand Volley",
+      "category": "Volley",
+      "skill_level": "intermediate",
+      "player_count": 2,
+      "duration_minutes": 20,
+      "objective": "Synthesize all volley skills in a competitive, match-style format where Player 1 must win all points at the net. Every point begins with Player 1 already positioned at the net — no approach needed. This puts full focus on the net skills: split step timing, volley direction, depth, angles, drop volleys, overheads, and decision-making. The goal is to win points clinically and efficiently at the net.",
+      "setup": "Player 1 starts every point at the net in the ready position. Player 2 starts every point from the baseline with a fed ball. Both players play the full point out. Player 1 must use the net — no retreating to the baseline allowed.",
+      "instructions": [
+        "Player 1 positions at the net. Player 2 feeds a ball from the baseline to start each point.",
+        "Both players play the full point — Player 1 must stay at or inside the service line at all times.",
+        "Player 2 uses any combination of passing shots and lobs.",
+        "Play to 15 points. Switch roles. Best of 3 rounds of 15 points.",
+        "Track: types of winners, types of errors — identify the specific net skill that needs more work."
+      ],
+      "coaching_cues": [
+        "Use the full arsenal: forehand, backhand, angles, drop volleys, overheads — don't default to one type.",
+        "Stay aggressive — retreating to the baseline negates the entire advantage of the net position.",
+        "Track which passing shots you consistently fail to handle — those need specific practice.",
+        "Track which volleys win points most often — build on your strengths.",
+        "Stay mentally sharp on every point — each one starts fresh."
+      ],
+      "common_errors": [
+        "Only using forehand volleys — backhand and angle volleys are underused.",
+        "Retreating after a tough volley instead of staying at the net.",
+        "Going for big winners from too far back — need to close the net before going for angles."
+      ],
+      "variations": [
+        "Handicap: Player 1 must win within 3 volleys or the point goes to Player 2.",
+        "No overhead: Player 1 must only volley — cannot use overheads.",
+        "Tracking: film the session and review which volleys produce winners vs errors."
+      ],
+      "tags": ["volley", "match-simulation", "competitive", "intermediate", "comprehensive", "net play"],
+      "diagramData": {
+        "p1": { "x": 200, "y": 510 },
+        "p2": { "x": 200, "y": 60 },
+        "shots": [
+          { "x1": 200, "y1": 70, "x2": 200, "y2": 522 },
+          { "x1": 200, "y1": 510, "x2": 95, "y2": 820 },
+          { "x1": 200, "y1": 70, "x2": 200, "y2": 400 },
+          { "x1": 200, "y1": 510, "x2": 305, "y2": 820 },
+          { "x1": 200, "y1": 70, "x2": 90, "y2": 560 },
+          { "x1": 200, "y1": 510, "x2": 65, "y2": 720 }
+        ],
+        "areas": [
+          { "x": 95, "y": 820, "r": 22 },
+          { "x": 305, "y": 820, "r": 22 },
+          { "x": 65, "y": 720, "r": 22 }
+        ]
+      }
+    }
+  ]
+}

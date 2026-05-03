@@ -1,0 +1,1382 @@
+{
+  "category": "Groundwork",
+  "subcategories": ["Forehand", "Backhand", "Slice"],
+  "description": "Drills focused on forehand, backhand, and slice groundstrokes. These are the foundation of every rally and tactical pattern in tennis.",
+  "batch": "1 of 2",
+  "drills": [
+    {
+      "id": "GW-001",
+      "name": "Cross-Court Forehand Consistency Rally",
+      "subcategory": "Forehand",
+      "skill_level": "beginner",
+      "player_count": 2,
+      "duration_minutes": 10,
+      "objective": "Build muscle memory and consistency for the cross-court forehand. The cross-court is the highest-percentage shot in tennis — it travels over the lowest part of the net, covers the longest distance of the court, and gives the most margin for error. This drill trains players to own that shot under low-pressure repetition until it becomes completely automatic.",
+      "setup": "Both players start at their respective baselines. Player 1 (Student, orange) stands on the deuce side. Player 2 (Coach, blue) stands on the ad side of the opposite baseline. Both players rally cross-court forehands only — no down-the-line shots allowed during this drill.",
+      "instructions": [
+        "Player 2 initiates with a medium-pace feed to Player 1's forehand wing on the deuce side.",
+        "Player 1 returns cross-court to Player 2's forehand wing, aiming for the shaded target area deep in the corner.",
+        "Both players continue rallying cross-court only, maintaining a steady rhythm.",
+        "If the ball lands outside the target zone or goes DTL, play resets with a new feed from Player 2.",
+        "Switch sides after 5 minutes so Player 1 practices from the ad side as well."
+      ],
+      "coaching_cues": [
+        "Unit turn early — rotate your shoulders as soon as the ball leaves the opponent's racket.",
+        "Contact point in front of your lead hip, not beside your body.",
+        "Finish high over the opposite shoulder — your racket should end near your left ear for right-handers.",
+        "Stay on your toes between shots — weight always forward, never flat-footed.",
+        "Aim 3 feet over the net, not just barely over it — give yourself a real margin."
+      ],
+      "common_errors": [
+        "Late preparation causing a blocked or pushed shot with no pace.",
+        "Hitting down on the ball instead of brushing up for topspin.",
+        "Standing flat-footed between shots, leading to late movement and rushed swings."
+      ],
+      "variations": [
+        "Add a cone at the target — award a point each time the cone is hit to build precision.",
+        "Play out the point freely after 4 successful cross-court shots have been landed.",
+        "Introduce a time limit: how many consecutive shots can both players land in the target zone in 60 seconds?"
+      ],
+      "tags": ["forehand", "cross-court", "consistency", "baseline", "topspin", "beginner"],
+      "diagramData": {
+        "p1": { "x": 280, "y": 860 },
+        "p2": { "x": 120, "y": 60 },
+        "shots": [
+          { "x1": 280, "y1": 850, "x2": 100, "y2": 90 },
+          { "x1": 100, "y1": 70, "x2": 270, "y2": 840 }
+        ],
+        "areas": [
+          { "x": 100, "y": 110, "r": 30 },
+          { "x": 280, "y": 820, "r": 30 }
+        ]
+      }
+    },
+    {
+      "id": "GW-002",
+      "name": "Inside-Out Forehand Attack",
+      "subcategory": "Forehand",
+      "skill_level": "intermediate",
+      "player_count": 2,
+      "duration_minutes": 12,
+      "objective": "Train the inside-out forehand — one of the most powerful offensive weapons in modern tennis. The player moves around their backhand to run a forehand cross-court to the opponent's backhand corner. This shot creates extreme angles, puts the opponent on the defensive immediately, and allows the stronger forehand to dominate the rally from a position that normally demands a backhand.",
+      "setup": "Player 2 stands at the baseline on the deuce side and feeds a ball toward Player 1's backhand (center-left area). Player 1 starts at the center mark and must move left to hit an inside-out forehand targeting the deep ad-side corner.",
+      "instructions": [
+        "Player 2 feeds a medium-paced ball to Player 1's backhand side, slightly left of center.",
+        "Player 1 reads the ball early and shuffles left, getting around the ball to hit a forehand instead of a backhand.",
+        "Player 1 hits the inside-out forehand cross-court, targeting the deep ad-side corner inside the target area.",
+        "Player 1 recovers back to the center of the baseline after the shot.",
+        "Repeat 15 times, then switch roles. Track how many balls land in the target zone."
+      ],
+      "coaching_cues": [
+        "Recognize the opportunity early — the ball must be short enough or slow enough to run around comfortably.",
+        "Move laterally first, then step forward into the ball — don't reach across your body.",
+        "Keep the swing path from low-to-high and inside-out — don't pull the ball accidentally down-the-line.",
+        "After contact, push off your outside foot and recover immediately to center.",
+        "The more open your stance, the easier and faster the recovery back to center."
+      ],
+      "common_errors": [
+        "Hitting DTL accidentally by pulling across the body too early in the swing.",
+        "Failing to recover to center after the shot, leaving the entire DTL side wide open.",
+        "Not getting far enough around the ball and ending up hitting a weak, cramped backhand instead."
+      ],
+      "variations": [
+        "Player 2 can choose any corner after Player 1 hits the inside-out — play the point out fully.",
+        "Constraint drill: Player 1 must hit 3 inside-out forehands in a row before being allowed to change direction.",
+        "Add a cone at the far corner target for precision tracking — count how many times the cone zone is hit."
+      ],
+      "tags": ["forehand", "inside-out", "offensive", "footwork", "intermediate", "pattern"],
+      "diagramData": {
+        "p1": { "x": 110, "y": 850 },
+        "p2": { "x": 200, "y": 60 },
+        "moves": [{ "x1": 200, "y1": 850, "x2": 110, "y2": 850 }],
+        "shots": [
+          { "x1": 200, "y1": 70, "x2": 160, "y2": 840 },
+          { "x1": 110, "y1": 840, "x2": 95, "y2": 100 }
+        ],
+        "areas": [{ "x": 95, "y": 100, "r": 30 }]
+      }
+    },
+    {
+      "id": "GW-003",
+      "name": "Backhand Cross-Court Consistency Rally",
+      "subcategory": "Backhand",
+      "skill_level": "beginner",
+      "player_count": 2,
+      "duration_minutes": 10,
+      "objective": "Build a reliable, consistent cross-court backhand. The backhand cross-court is the natural high-percentage response to a forehand attack from the deuce side and is essential for all neutral baseline play. Many players neglect this shot in practice, which is why it breaks down under match pressure — this drill fixes that by dedicating focused time to it.",
+      "setup": "Player 1 stands on the ad side of the baseline (left side for right-handers). Player 2 stands on the deuce side of the opposite baseline. Both rally cross-court backhands only — no down-the-line shots during this drill.",
+      "instructions": [
+        "Player 2 initiates with a relaxed, easy feed to Player 1's backhand on the ad side.",
+        "Player 1 returns cross-court, targeting the deep deuce corner inside the target zone.",
+        "Maintain a steady rally rhythm — no power, just controlled placement and depth.",
+        "If a shot lands outside the target zone, reset without stopping — both players learn from the miss.",
+        "Switch player positions after 5 minutes so both players drill the same pattern."
+      ],
+      "coaching_cues": [
+        "For two-handers: keep both hands on the racket through the entire swing — not just the backswing.",
+        "Shoulder turn is essential — get your front shoulder pointing toward the back fence.",
+        "Contact slightly in front of the lead hip, not behind it — this is where power comes from.",
+        "Follow through toward the target, then let the racket wrap around your shoulder naturally.",
+        "Use your legs — bend your knees on the backswing, then drive up through contact."
+      ],
+      "common_errors": [
+        "Dropping the non-dominant hand too early on a two-hander — creates a weak, arm-only shot with poor direction.",
+        "Not rotating the shoulders back far enough — results in a weak push with no power.",
+        "Hitting up on the ball instead of through it — causes the ball to float without depth."
+      ],
+      "variations": [
+        "Add a depth cone 6 feet inside the baseline — only balls landing past it count toward the target.",
+        "After 6 consecutive exchanges, play out the point freely with any shot.",
+        "One player hits topspin, the other flat — discuss how the different spins affect the bounce and timing."
+      ],
+      "tags": ["backhand", "cross-court", "consistency", "baseline", "beginner"],
+      "diagramData": {
+        "p1": { "x": 120, "y": 860 },
+        "p2": { "x": 280, "y": 60 },
+        "shots": [
+          { "x1": 120, "y1": 850, "x2": 290, "y2": 90 },
+          { "x1": 280, "y1": 70, "x2": 110, "y2": 840 }
+        ],
+        "areas": [
+          { "x": 290, "y": 110, "r": 30 },
+          { "x": 110, "y": 820, "r": 30 }
+        ]
+      }
+    },
+    {
+      "id": "GW-004",
+      "name": "Backhand Down-the-Line Attack",
+      "subcategory": "Backhand",
+      "skill_level": "intermediate",
+      "player_count": 2,
+      "duration_minutes": 12,
+      "objective": "Develop the ability to redirect the ball down-the-line off the backhand wing. This is a crucial change-of-direction shot — it switches the play entirely, opens the court, and is most effective when disguised to look like a cross-court ball until the very last moment. The ability to go DTL from the backhand is what separates intermediate players from competitive ones.",
+      "setup": "Player 2 feeds from the deuce side baseline toward Player 1's backhand side consistently. Player 1 must redirect the ball down-the-line to the deuce-side corner on their opponent's side, instead of hitting cross-court.",
+      "instructions": [
+        "Player 2 feeds a steady ball to Player 1's backhand corner at medium pace.",
+        "Player 1 sets up as if hitting cross-court, with shoulders closed and body angled cross-court.",
+        "At the last moment, Player 1 redirects down-the-line by delaying the hip rotation and driving through the ball.",
+        "Player 1 targets the deep deuce corner, aiming inside the singles sideline.",
+        "After 15 DTL attempts, switch to cross-court for 15 reps — the comparison builds awareness of the exact difference."
+      ],
+      "coaching_cues": [
+        "Disguise: your setup and backswing should look completely identical to your cross-court backhand.",
+        "To redirect DTL: delay hip rotation slightly and keep your shoulders more closed at contact.",
+        "Contact point is slightly further back than your cross-court swing — the ball stays on the strings a fraction longer.",
+        "Drive through the ball aggressively — DTL shots have less net clearance margin so add controlled pace.",
+        "Recover immediately to center after the DTL — your shot opens your own court on the CC side."
+      ],
+      "common_errors": [
+        "Opening up the hips too early — telegraphs the DTL direction to the opponent before contact.",
+        "Hitting too late and floating the ball — ends up mid-court or in the net from lack of drive.",
+        "Not recovering fast enough after the DTL — leaves the cross-court completely exposed."
+      ],
+      "variations": [
+        "Play out the point after the DTL — Player 2 can go anywhere they want to test Player 1's court coverage.",
+        "Score tracking: +2 for DTL winner, +1 for DTL that stays in and is deep, 0 for error.",
+        "Introduce a shadow: Player 2 starts moving as if expecting cross-court — Player 1 must still redirect DTL."
+      ],
+      "tags": ["backhand", "down-the-line", "redirection", "disguise", "intermediate"],
+      "diagramData": {
+        "p1": { "x": 120, "y": 820 },
+        "p2": { "x": 280, "y": 60 },
+        "moves": [{ "x1": 120, "y1": 850, "x2": 120, "y2": 820 }],
+        "shots": [
+          { "x1": 280, "y1": 70, "x2": 110, "y2": 780 },
+          { "x1": 120, "y1": 820, "x2": 90, "y2": 100 }
+        ],
+        "areas": [{ "x": 90, "y": 100, "r": 25 }]
+      }
+    },
+    {
+      "id": "GW-005",
+      "name": "Forehand Topspin Depth Control",
+      "subcategory": "Forehand",
+      "skill_level": "intermediate",
+      "player_count": 2,
+      "duration_minutes": 10,
+      "objective": "Train the forehand to consistently land deep in the court — between the service line and baseline. Deep groundstrokes push the opponent behind the baseline, reduce the angles available to them, and force short balls that can be attacked. This drill teaches players to treat depth as a deliberate tactical weapon, not just a byproduct of swinging hard.",
+      "setup": "Place a rope, cone line, or tape across the court 6 feet inside the baseline, creating a clearly marked target zone between the service line and the baseline. Player 2 feeds from the opposite baseline. Player 1 must land every forehand inside that final 6-foot deep zone.",
+      "instructions": [
+        "Player 2 feeds medium-paced balls alternating to Player 1's forehand side.",
+        "Player 1 must land every ball in the deep target zone — the last 6 feet before the baseline.",
+        "A ball landing between the service line and the target rope scores 1 point. A ball past the rope (deepest 6 feet) scores 2 points.",
+        "Balls landing short of the service line score 0. Balls going out score -1.",
+        "Play 20 balls per set. Target score: 25+ points per set."
+      ],
+      "coaching_cues": [
+        "Think net clearance first — aim 3-4 feet over the net to give the ball enough arc to land deep.",
+        "Full swing every time, not a poke — truncated swings consistently produce short balls.",
+        "Load your legs before every shot — power and depth come from the ground, not the arm.",
+        "Watch the ball land — train your eye to see depth and adjust in real-time.",
+        "Follow through all the way to the end — stopping early at the follow-through kills depth and spin."
+      ],
+      "common_errors": [
+        "Swinging too flat — ball skids fast but lacks enough arc to consistently land deep.",
+        "Short backswing resulting in a weak push shot that lands short.",
+        "Eyes off the ball at contact — leads to mis-hits and wildly inconsistent depth."
+      ],
+      "variations": [
+        "Increase pressure: only 2 errors allowed before resetting the score back to zero.",
+        "Player 1 must call 'deep' or 'short' before the ball bounces — builds real-time anticipatory depth awareness.",
+        "Player 2 varies pace and spin unpredictably — Player 1 must adjust depth control on every different ball."
+      ],
+      "tags": ["forehand", "depth", "topspin", "consistency", "intermediate", "tactical"],
+      "diagramData": {
+        "p1": { "x": 200, "y": 850 },
+        "p2": { "x": 200, "y": 60 },
+        "shots": [
+          { "x1": 200, "y1": 70, "x2": 200, "y2": 800 },
+          { "x1": 200, "y1": 840, "x2": 200, "y2": 120 }
+        ],
+        "areas": [
+          { "x": 200, "y": 110, "r": 35 },
+          { "x": 200, "y": 820, "r": 35 }
+        ]
+      }
+    },
+    {
+      "id": "GW-006",
+      "name": "Slice Backhand Neutralizer",
+      "subcategory": "Slice",
+      "skill_level": "intermediate",
+      "player_count": 2,
+      "duration_minutes": 10,
+      "objective": "Develop a reliable slice backhand that stays low, travels deep, and neutralizes the opponent's pace. The slice is an essential defensive and tactical tool — it changes rhythm, disrupts an aggressive baseliner, keeps the ball low on fast surfaces, and is critical on low balls or wide balls that simply cannot be hit with topspin. Every competitive player needs this shot.",
+      "setup": "Player 2 feeds from the baseline to Player 1's backhand side consistently. Player 1 returns with a slice backhand every single time — no topspin allowed. The target is the deep cross-court corner — the ball should bounce low and skid through the court without rising.",
+      "instructions": [
+        "Player 2 feeds balls to Player 1's backhand at medium pace.",
+        "Player 1 responds with a slice backhand every time — no topspin allowed during this drill.",
+        "Target: land the slice deep in the last 6 feet of the cross-court corner.",
+        "After 10 consecutive slices, Player 2 feeds a short ball — Player 1 approaches the net off the slice.",
+        "Reset and repeat the sequence. Focus on keeping the slice low and skidding through the court."
+      ],
+      "coaching_cues": [
+        "High to low racket path — start the racket well above the ball and finish below the contact point.",
+        "Open racket face at contact — roughly 30-40 degrees open, as if presenting a tray.",
+        "Don't chop down aggressively — think 'guide and slice' rather than 'slap downward'.",
+        "Stay sideways through contact — opening up the body early creates a floated, weak slice.",
+        "Aim for the net tape level, not 3 feet over — the slice should barely clear the net and stay low."
+      ],
+      "common_errors": [
+        "Floating the slice too high — gives the opponent an easy attack ball to drive.",
+        "Chopping down too aggressively — puts the ball straight into the net.",
+        "Opening the body too early — kills the direction control and pace of the slice."
+      ],
+      "variations": [
+        "Slice vs. topspin rally: Player 2 hits topspin, Player 1 must slice every ball — teaches managing different spins.",
+        "Defensive slice under pace: Player 2 hits hard and fast, Player 1 must absorb it and slice deep.",
+        "Approach off the slice: add a volley as the final shot after the approach to the net."
+      ],
+      "tags": ["slice", "backhand", "neutral", "defensive", "spin", "intermediate"],
+      "diagramData": {
+        "p1": { "x": 120, "y": 850 },
+        "p2": { "x": 280, "y": 60 },
+        "shots": [
+          { "x1": 280, "y1": 70, "x2": 110, "y2": 800 },
+          { "x1": 110, "y1": 830, "x2": 290, "y2": 100 }
+        ],
+        "areas": [{ "x": 290, "y": 110, "r": 30 }]
+      }
+    },
+    {
+      "id": "GW-007",
+      "name": "Forehand–Backhand Alternating Baseline Rally",
+      "subcategory": "Forehand",
+      "skill_level": "beginner",
+      "player_count": 2,
+      "duration_minutes": 12,
+      "objective": "Train both groundstrokes equally by alternating forehand and backhand in a structured, predictable pattern. This drill develops the transition footwork between wings, the split step timing, and the ability to switch between two completely different swing paths rapidly — a skill demanded on every single rally in a match.",
+      "setup": "Player 2 feeds alternating balls — first to Player 1's forehand, then to the backhand, then forehand again, creating a clear, predictable alternating pattern. Player 1 must move laterally between shots and hit each ball with full preparation, not just reaching.",
+      "instructions": [
+        "Player 1 starts at the center mark in the ready position.",
+        "Player 2 feeds to the forehand — Player 1 moves, hits with full swing, recovers back to center.",
+        "Player 2 immediately feeds to the backhand — Player 1 moves, hits with full swing, recovers back to center.",
+        "Continue alternating for 10 exchanges, then rest 30 seconds. Repeat 3 sets.",
+        "Increase the pace of the feeds after each set — the recovery window between shots gets shorter."
+      ],
+      "coaching_cues": [
+        "Split step as Player 2's racket contacts the ball — this is the exact timing cue to load and explode.",
+        "First step is always lateral, not forward or backward — move sideways to the ball.",
+        "Recover to center every single time — don't cheat by staying on one side anticipating.",
+        "Change your grip between forehand and backhand during the sprint — build the habit now.",
+        "Keep your eyes on the ball through the entire flight from Player 2's racket to yours."
+      ],
+      "common_errors": [
+        "Not recovering to center between shots — leaves one side completely open on the next ball.",
+        "Forgetting to change grip during the transition — results in hitting the backhand with a forehand grip.",
+        "Late split step — causes late preparation, rushed footwork, and poor contact on every shot."
+      ],
+      "variations": [
+        "Increase the width of the feeds progressively to push Player 1 further off the court.",
+        "Add a third ball down the middle — Player 1 must decide forehand or backhand based on court position.",
+        "Play out the point freely after the 4th alternating exchange — reward good rally work with real play."
+      ],
+      "tags": ["forehand", "backhand", "alternating", "footwork", "beginner", "transition"],
+      "diagramData": {
+        "p1": { "x": 200, "y": 850 },
+        "p2": { "x": 200, "y": 60 },
+        "moves": [
+          { "x1": 200, "y1": 850, "x2": 290, "y2": 850 },
+          { "x1": 290, "y1": 850, "x2": 200, "y2": 850 },
+          { "x1": 200, "y1": 850, "x2": 110, "y2": 850 }
+        ],
+        "shots": [
+          { "x1": 200, "y1": 70, "x2": 290, "y2": 840 },
+          { "x1": 200, "y1": 60, "x2": 110, "y2": 840 }
+        ],
+        "areas": [{ "x": 200, "y": 100, "r": 40 }]
+      }
+    },
+    {
+      "id": "GW-008",
+      "name": "Open-Stance Forehand Under Pressure",
+      "subcategory": "Forehand",
+      "skill_level": "intermediate",
+      "player_count": 2,
+      "duration_minutes": 10,
+      "objective": "Train the open-stance forehand — the shot used when there is not enough time to set up in a closed or semi-open stance. Modern tennis demands that players generate full power and spin from a wide, open stance. This drill simulates the pace and width that force an open-stance response and teaches players to rotate explosively from a planted outside foot.",
+      "setup": "Player 2 feeds fast balls wide to Player 1's forehand corner — well outside the singles sideline if possible. Player 1 must sprint wide, plant their outside foot, and hit from a fully open stance. Stepping into the ball is not allowed — the drill specifically trains the planted open-stance rotation.",
+      "instructions": [
+        "Player 2 hits a hard, wide ball to Player 1's forehand corner.",
+        "Player 1 sprints wide, plants the right foot (for right-handers), and hits from a fully open stance.",
+        "Player 1 must return cross-court — DTL is too risky from such a wide position.",
+        "Player 1 recovers quickly to the center mark immediately after the shot.",
+        "Repeat 12 times per set. Rest 60 seconds between sets. Play 3 sets."
+      ],
+      "coaching_cues": [
+        "Plant the outside foot firmly — your right foot is the pivot point for your entire rotation.",
+        "Drive explosively off the outside foot as you swing — it's your only power source from this stance.",
+        "Rotate hips fully through the shot — the legs do the work, the arm just guides.",
+        "Add topspin intentionally — open-stance forehands tend to float flat without a conscious brushing motion.",
+        "Cross-court is the right target: the angle is geometrically easier from a wide open stance."
+      ],
+      "common_errors": [
+        "Arm-swinging without hip rotation — produces a weak, arm-only shot that floats out.",
+        "Planting too close to the ball — no room to swing, causes a cramped, powerless contact.",
+        "Not recovering after the wide shot — leaves the entire court exposed for the next ball."
+      ],
+      "variations": [
+        "Add a recovery sprint: after the open-stance forehand, Player 2 immediately hits a winner to the other side.",
+        "Vary the pace — some balls fast, some medium — Player 1 must adjust and still use open stance.",
+        "Open-stance approach: on a slower wide ball, Player 1 can approach the net after the open-stance forehand."
+      ],
+      "tags": ["forehand", "open-stance", "wide ball", "pressure", "intermediate"],
+      "diagramData": {
+        "p1": { "x": 340, "y": 855 },
+        "p2": { "x": 120, "y": 60 },
+        "moves": [{ "x1": 200, "y1": 850, "x2": 340, "y2": 855 }],
+        "shots": [
+          { "x1": 120, "y1": 70, "x2": 340, "y2": 840 },
+          { "x1": 340, "y1": 848, "x2": 90, "y2": 100 }
+        ],
+        "areas": [{ "x": 90, "y": 100, "r": 30 }]
+      }
+    },
+    {
+      "id": "GW-009",
+      "name": "Slice Approach Shot Down the Line",
+      "subcategory": "Slice",
+      "skill_level": "intermediate",
+      "player_count": 2,
+      "duration_minutes": 12,
+      "objective": "Master the slice backhand as an approach shot — a low, skidding ball that forces the opponent to hit upward, making an easy volley for the approaching player. The slice approach is one of the most effective tools in baseline-to-net transitions because it stays low, moves through the court quickly, and gives the approaching player ample time to reach a solid net position.",
+      "setup": "Player 2 feeds a short ball (around the service line) to Player 1's backhand side. Player 1 must move in decisively, hit a slice approach shot down-the-line, and follow the shot to the net position.",
+      "instructions": [
+        "Player 2 feeds a short ball to Player 1's backhand landing around the service line area.",
+        "Player 1 moves forward aggressively — not cautiously — and hits a slice approach shot down-the-line.",
+        "After the slice, Player 1 continues moving forward and takes up a solid net position near the T.",
+        "Player 2 attempts a passing shot from behind the baseline — Player 1 volleys the finish.",
+        "Play out each exchange as a mini-point. Repeat 15 times per set."
+      ],
+      "coaching_cues": [
+        "Move forward into the ball — don't stop your feet and hit a static slice.",
+        "Keep the racket high on the backswing, then slice down and through the ball on contact.",
+        "Aim DTL with the slice approach — the net is lower on the DTL side and it cuts off the CC pass.",
+        "After the slice, keep moving toward the net — don't admire or watch the shot land.",
+        "Split step as Player 2 is about to hit the passing shot — react from a balanced position."
+      ],
+      "common_errors": [
+        "Stopping feet before hitting the slice — should be moving through the shot the whole time.",
+        "Floating the slice too high — gives the opponent a comfortable mid-height passing shot.",
+        "Staying at the baseline after the approach — defeats the entire tactical purpose of this pattern."
+      ],
+      "variations": [
+        "Player 2 can pass to either side — Player 1 must read and volley both directions.",
+        "Give Player 1 a choice: slice DTL or topspin CC — Player 2 must guess the direction before it lands.",
+        "Scoring match: Player 1 gets +1 for volley winners, Player 2 gets +1 for passing shot winners."
+      ],
+      "tags": ["slice", "approach", "net play", "down-the-line", "intermediate"],
+      "diagramData": {
+        "p1": { "x": 120, "y": 730 },
+        "p2": { "x": 280, "y": 60 },
+        "moves": [
+          { "x1": 120, "y1": 860, "x2": 120, "y2": 730 },
+          { "x1": 120, "y1": 720, "x2": 155, "y2": 530 }
+        ],
+        "shots": [
+          { "x1": 280, "y1": 70, "x2": 110, "y2": 690 },
+          { "x1": 115, "y1": 720, "x2": 90, "y2": 110 }
+        ],
+        "areas": [{ "x": 90, "y": 110, "r": 25 }]
+      }
+    },
+    {
+      "id": "GW-010",
+      "name": "High Topspin Backhand Loop",
+      "subcategory": "Backhand",
+      "skill_level": "advanced",
+      "player_count": 2,
+      "duration_minutes": 10,
+      "objective": "Train the high topspin backhand — the shot used against heavy topspin balls that bounce above chest or shoulder height. This is one of the most technically demanding shots in tennis because it requires generating topspin while swinging at an extreme upward angle. It is the essential response to Nadal-style heavy topspin to the backhand and is a weakness of nearly all intermediate players.",
+      "setup": "Player 2 feeds or hits heavy topspin balls designed to bounce between chest and shoulder height to Player 1's backhand. Player 1 must generate a looping topspin backhand back cross-court, keeping it deep.",
+      "instructions": [
+        "Player 2 hits a heavy topspin ball aimed at Player 1's backhand, bouncing between chest and shoulder height.",
+        "Player 1 takes the ball slightly late if possible — letting it drop makes it much easier to generate topspin.",
+        "Player 1 drives the racket aggressively from low to high, generating topspin on a high contact point.",
+        "Target: deep cross-court, landing within 3 feet of the baseline.",
+        "Repeat 15 times per set, 3 sets with 60-second rest between each."
+      ],
+      "coaching_cues": [
+        "Let the ball drop slightly after the peak if you can — chest height is far easier than shoulder height.",
+        "Loop the racket down and back below the ball completely before driving upward.",
+        "Drive through the ball and finish high — racket ends well above your head.",
+        "For two-handers: the dominant hand brushes up aggressively while the non-dominant hand guides the direction.",
+        "Create space with a small side step — hitting while cramped inside the ball kills all power."
+      ],
+      "common_errors": [
+        "Blocking the high ball instead of swinging through it — produces a weak, floated reply with no depth.",
+        "Not creating enough space laterally — body too close, cramped swing.",
+        "Swinging flat on a high ball — goes long without topspin to bring it back down."
+      ],
+      "variations": [
+        "Player 2 mixes shoulder-high and waist-high balls unpredictably — Player 1 adjusts swing path accordingly.",
+        "High backhand loop then run-around: after the high backhand, Player 1 runs around the next ball for a forehand.",
+        "Target bonus: +2 points for any high backhand landing within 2 feet of the baseline."
+      ],
+      "tags": ["backhand", "high ball", "topspin", "advanced", "heavy spin"],
+      "diagramData": {
+        "p1": { "x": 120, "y": 850 },
+        "p2": { "x": 280, "y": 60 },
+        "shots": [
+          { "x1": 280, "y1": 70, "x2": 100, "y2": 800 },
+          { "x1": 110, "y1": 840, "x2": 295, "y2": 95 }
+        ],
+        "areas": [{ "x": 295, "y": 110, "r": 30 }]
+      }
+    },
+    {
+      "id": "GW-011",
+      "name": "Forehand Inside-In Winner",
+      "subcategory": "Forehand",
+      "skill_level": "advanced",
+      "player_count": 2,
+      "duration_minutes": 10,
+      "objective": "Train the inside-in forehand — the companion and complement to the inside-out forehand. After luring the opponent to cover the inside-out cross-court, the inside-in forehand fires down-the-line to the deuce corner. This two-shot combination (inside-out followed by inside-in) is one of the most potent tactical patterns in modern professional tennis and virtually impossible to defend against when executed with good disguise.",
+      "setup": "Player 1 runs around their backhand and hits an inside-in forehand to the deuce side down-the-line. Player 2 feeds from the ad-side of the opposite baseline, simulating a ball that would normally draw a backhand.",
+      "instructions": [
+        "Player 2 feeds a ball to Player 1's backhand area, slightly left of center.",
+        "Player 1 runs around the ball and sets up as if hitting an inside-out forehand cross-court.",
+        "Instead of going cross-court, Player 1 fires down-the-line to the deuce corner — the inside-in.",
+        "Player 1 must disguise the shot — the setup and backswing should look identical to inside-out until contact.",
+        "Repeat 12 times per set. Focus entirely on the surprise element and on precise placement."
+      ],
+      "coaching_cues": [
+        "Same setup as inside-out — the disguise is the entire weapon. Identical preparation is non-negotiable.",
+        "To go inside-in: rotate hips through the ball more aggressively, driving the strings across the ball.",
+        "Your hips must fully clear to allow a down-the-line path from an open stance.",
+        "High-risk shot — always aim inside the line by at least 1 foot for a real margin.",
+        "Use inside-in sparingly in matches — overuse completely removes the surprise element that makes it work."
+      ],
+      "common_errors": [
+        "Going for inside-in from a defensive or stretched position — wrong tactical choice, extremely risky.",
+        "Not disguising the shot — the opponent reads the DTL direction early and covers it easily.",
+        "Hitting too close to the line with no margin — leads to unforced errors that hurt momentum."
+      ],
+      "variations": [
+        "Pattern drill: 2 inside-out forehands then 1 inside-in — simulates the exact combo used in match play.",
+        "Player 2 starts cheating toward the CC after the 2nd ball — Player 1 must exploit with inside-in on the 3rd.",
+        "Play the point after the inside-in — tests what happens when the inside-in doesn't end the point outright."
+      ],
+      "tags": ["forehand", "inside-in", "advanced", "pattern", "winner", "disguise"],
+      "diagramData": {
+        "p1": { "x": 120, "y": 850 },
+        "p2": { "x": 200, "y": 60 },
+        "moves": [{ "x1": 200, "y1": 850, "x2": 120, "y2": 850 }],
+        "shots": [
+          { "x1": 200, "y1": 70, "x2": 155, "y2": 840 },
+          { "x1": 120, "y1": 840, "x2": 300, "y2": 90 }
+        ],
+        "areas": [{ "x": 300, "y": 100, "r": 28 }],
+        "cones": [{ "x": 300, "y": 100 }]
+      }
+    },
+    {
+      "id": "GW-012",
+      "name": "Defensive Slice Under Full Pace",
+      "subcategory": "Slice",
+      "skill_level": "intermediate",
+      "player_count": 2,
+      "duration_minutes": 12,
+      "objective": "Train the ability to slice defensively under full-pace pressure — the match situation where the slice backhand is not a choice but a necessity. When pushed wide or severely stretched, the slice is often the only shot available. This drill teaches players to stay composed, absorb pace with a controlled slice, and reset the point rather than attempting too much from a compromised position.",
+      "setup": "Player 2 hits hard, wide balls to Player 1's backhand corner — as wide and fast as possible. Player 1 is forced to sprint and stretch for every ball and return with a slice backhand deep cross-court. The goal is not winning the point: it is getting the ball back deep and recovering position.",
+      "instructions": [
+        "Player 2 hits a hard, wide ball to Player 1's backhand, ideally past the singles sideline.",
+        "Player 1 sprints wide, stretches as needed, and slices the ball back deep cross-court.",
+        "Player 1 recovers immediately to center after the slice — no lingering at the sideline.",
+        "Player 2 keeps feeding hard wide balls — Player 1 must slice every single one.",
+        "Score: +1 for each slice landing in the target zone, -1 for each error. Play 15 balls per round."
+      ],
+      "coaching_cues": [
+        "Don't try to do too much from a stretched position — depth and neutral direction are the goals.",
+        "Reach across the body if needed — the slice allows more stretch than topspin ever can.",
+        "Open the racket face more when fully stretched — it lifts the ball safely over the net.",
+        "Priority order: get the ball back first, depth second, direction third.",
+        "Recovery after the defensive slice is equally as important as the slice itself — don't admire the shot."
+      ],
+      "common_errors": [
+        "Going for a winner from a stretched defensive position — the worst time to be aggressive.",
+        "Slice landing short — gives the opponent an easy attack ball on a plate.",
+        "Slow recovery after the stretch — concedes the open court completely."
+      ],
+      "variations": [
+        "Recovery sprint: after the defensive slice, Player 2 immediately hits to the opposite side — Player 1 must cover.",
+        "One-set challenge: Player 1 must slice 10 consecutive balls into the target zone without a single error.",
+        "Combine with counterattack: after 3 defensive slices, Player 1 is allowed to go offensive on the 4th."
+      ],
+      "tags": ["slice", "defensive", "wide ball", "recovery", "intermediate"],
+      "diagramData": {
+        "p1": { "x": 55, "y": 820 },
+        "p2": { "x": 280, "y": 60 },
+        "moves": [{ "x1": 150, "y1": 850, "x2": 55, "y2": 820 }],
+        "shots": [
+          { "x1": 280, "y1": 70, "x2": 50, "y2": 780 },
+          { "x1": 50, "y1": 810, "x2": 300, "y2": 120 }
+        ],
+        "areas": [{ "x": 300, "y": 130, "r": 35 }]
+      }
+    },
+    {
+      "id": "GW-013",
+      "name": "Two-Ball Forehand Sequence: Build then Attack",
+      "subcategory": "Forehand",
+      "skill_level": "intermediate",
+      "player_count": 2,
+      "duration_minutes": 12,
+      "objective": "Develop the ability to hit two consecutive forehands in a deliberate tactical sequence — first cross-court to build the point, then down-the-line to attack and end it. This simulates one of the most common point-winning patterns in competitive tennis at every level: use the CC forehand to draw the opponent wide, then redirect DTL to the open court.",
+      "setup": "Player 2 feeds two balls per sequence — both to Player 1's forehand side. Player 1 hits the first cross-court to establish the rally, and the second down-the-line to attack.",
+      "instructions": [
+        "Player 2 feeds the first ball to Player 1's forehand — Player 1 hits cross-court safely and deeply.",
+        "Player 2 immediately feeds the second ball to Player 1's forehand — Player 1 drives down-the-line.",
+        "Player 1 recovers to center after both shots.",
+        "Rest 10 seconds, then repeat. Do 15 sequences per set.",
+        "Progression: after 2 sets, play out the point freely after the DTL shot."
+      ],
+      "coaching_cues": [
+        "Shot 1 cross-court: aim deep and central — no risk here, just control and depth.",
+        "Shot 2 DTL: wait for a slightly shorter ball to attack — don't go DTL from behind the baseline.",
+        "Recovery between shots is crucial — split step before Shot 2 or you'll be caught flat-footed.",
+        "Disguise the DTL on Shot 2: preparation should look identical to Shot 1 until the last possible moment.",
+        "Breathe and exhale between shots — tension kills smooth strokes on both balls."
+      ],
+      "common_errors": [
+        "Going DTL on Shot 1 — misses the entire tactical purpose of building cross-court first.",
+        "Poor recovery between shots — leads to rushed, late preparation on Shot 2.",
+        "Telegraphing the DTL on Shot 2 with a different backswing or body position."
+      ],
+      "variations": [
+        "Reverse the pattern: DTL first then CC — tests directional flexibility in both orders.",
+        "Three-ball sequence: CC, CC, DTL — more realistic rally build-up before the attack.",
+        "Player 2 decides the second target randomly — Player 1 must adjust to the call."
+      ],
+      "tags": ["forehand", "sequence", "pattern", "cross-court", "down-the-line", "intermediate"],
+      "diagramData": {
+        "p1": { "x": 280, "y": 850 },
+        "p2": { "x": 200, "y": 60 },
+        "shots": [
+          { "x1": 200, "y1": 70, "x2": 285, "y2": 840 },
+          { "x1": 285, "y1": 840, "x2": 95, "y2": 110 }
+        ],
+        "areas": [
+          { "x": 95, "y": 110, "r": 25 },
+          { "x": 110, "y": 840, "r": 25 }
+        ]
+      }
+    },
+    {
+      "id": "GW-014",
+      "name": "Backhand Spin Variation Rally",
+      "subcategory": "Backhand",
+      "skill_level": "advanced",
+      "player_count": 2,
+      "duration_minutes": 15,
+      "objective": "Develop the ability to vary spin on the backhand deliberately during a live rally — alternating between topspin, flat, and slice within the same exchange. Spin variation is a high-level tactical weapon: it disrupts rhythm, creates unexpected bounces, forces opponents into uncomfortable positions, and hides your intentions until the last moment.",
+      "setup": "Both players rally cross-court backhands. Player 1 must verbally call the spin type before each shot — 'topspin', 'flat', or 'slice'. This vocal commitment forces deliberate spin selection rather than defaulting habitually to one spin type.",
+      "instructions": [
+        "Begin a cross-court backhand rally at medium pace.",
+        "Before each shot, Player 1 calls the spin they will use loudly — before starting the swing.",
+        "Player 1 alternates in a pattern: topspin, flat, slice, topspin, flat, slice — or any deliberate mix.",
+        "Player 2 simply rallies normally and observes how each different spin affects the bounce and rhythm.",
+        "After 10 minutes, Player 2 takes over the spin-calling role — Player 1 must execute on command."
+      ],
+      "coaching_cues": [
+        "Topspin: low-to-high swing path, slightly closed racket face at contact, finish high above the shoulder.",
+        "Flat: more horizontal swing path, slightly open racket face, drive aggressively through the ball.",
+        "Slice: high-to-low path, open face, stay sideways through contact — don't open the body.",
+        "Notice how each spin produces a distinctly different follow-through — they must feel different.",
+        "Advanced goal: use the same backswing for all three spins — the spin separation happens at contact only."
+      ],
+      "common_errors": [
+        "Defaulting to only one spin regardless of the call — completely defeats the purpose of the drill.",
+        "Using visibly different backswings for different spins — immediately telegraphs to smart opponents.",
+        "Not calling the spin before the shot — removes all intentionality and turns it into a random rally."
+      ],
+      "variations": [
+        "Player 2 calls the spin for Player 1 — removes Player 1's choice and demands real-time adaptability.",
+        "Disguise challenge: Player 1 calls one spin out loud but actually hits a different one — tests if Player 2 reads it.",
+        "Live match format: the point is played out freely, but Player 1 must use all three spins at least once per rally."
+      ],
+      "tags": ["backhand", "spin variation", "topspin", "slice", "flat", "advanced", "tactical"],
+      "diagramData": {
+        "p1": { "x": 120, "y": 850 },
+        "p2": { "x": 280, "y": 60 },
+        "shots": [
+          { "x1": 120, "y1": 840, "x2": 295, "y2": 100 },
+          { "x1": 290, "y1": 70, "x2": 110, "y2": 830 },
+          { "x1": 115, "y1": 830, "x2": 290, "y2": 100 }
+        ],
+        "areas": [
+          { "x": 295, "y": 115, "r": 30 },
+          { "x": 110, "y": 820, "r": 30 }
+        ]
+      }
+    },
+    {
+      "id": "GW-015",
+      "name": "Forehand Speed Escalation Rally",
+      "subcategory": "Forehand",
+      "skill_level": "intermediate",
+      "player_count": 2,
+      "duration_minutes": 10,
+      "objective": "Train the forehand to maintain technique and consistency as pace escalates progressively. Players start at slow pace and increase every 5 shots until they reach maximum speed. This drill reveals exactly at what pace technique breaks down for each player — and then trains them to push that personal threshold higher through repetition.",
+      "setup": "Both players rally cross-court forehands starting at 30% pace. Every 5 shots, both players increase one level: slow to medium to fast to maximum. No exceptions — both players increase together at the same time.",
+      "instructions": [
+        "Start the rally at 30% pace — very controlled, smooth strokes with full preparation.",
+        "After 5 shots, both players increase to 50% pace together.",
+        "After 5 more shots, increase to 75% pace.",
+        "After 5 more shots, go to absolute maximum pace.",
+        "When an error occurs, note the pace level — that is the current ceiling. Reset and rebuild from slow."
+      ],
+      "coaching_cues": [
+        "As pace increases, shorten the backswing slightly — there is simply less available time.",
+        "Keep your footwork sharp at high speeds — footwork is almost always the first thing to degrade.",
+        "At maximum pace, swing shorter but faster — not shorter and weaker.",
+        "Breathe consistently through the drill — tension builds at high speeds and kills consistency.",
+        "Watch the ball all the way to the strings at high speed — at pace, eyes tend to anticipate not track."
+      ],
+      "common_errors": [
+        "Using the same full backswing at maximum pace — inevitably leads to late contact.",
+        "Arms tensing up as pace increases — produces inconsistent mis-hits despite trying harder.",
+        "Stopping footwork when the rally gets fast — poor positioning causes every problem downstream."
+      ],
+      "variations": [
+        "Only one player escalates, the other stays steady — tests how one player handles asymmetric pressure.",
+        "Time-based version: increase pace every 10 seconds instead of every 5 shots.",
+        "Sudden drop: at maximum pace, one player suddenly drops to slow — the other must adjust immediately."
+      ],
+      "tags": ["forehand", "pace control", "escalation", "intermediate", "pressure"],
+      "diagramData": {
+        "p1": { "x": 280, "y": 850 },
+        "p2": { "x": 120, "y": 60 },
+        "shots": [
+          { "x1": 280, "y1": 840, "x2": 110, "y2": 90 },
+          { "x1": 120, "y1": 70, "x2": 275, "y2": 835 }
+        ],
+        "areas": [
+          { "x": 110, "y": 100, "r": 35 },
+          { "x": 280, "y": 820, "r": 35 }
+        ]
+      }
+    },
+    {
+      "id": "GW-016",
+      "name": "Moonball Forehand: High and Heavy",
+      "subcategory": "Forehand",
+      "skill_level": "intermediate",
+      "player_count": 2,
+      "duration_minutes": 10,
+      "objective": "Develop the moonball forehand — a high, looping topspin ball that lands deep in the court. The moonball is a critical tactical reset tool: it slows down aggressive opponents, pushes players behind the baseline, buys time to recover from a defensive position, and disrupts the rhythm of power hitters who want the ball low and fast. It is an underused yet highly effective weapon.",
+      "setup": "Player 2 feeds from the baseline. Player 1 must hit every forehand as a moonball — the ball must clear the net by at least 5 feet and land deep in the court near the baseline. A racket held above Player 2's head serves as a visual guide for the minimum arc height.",
+      "instructions": [
+        "Player 2 feeds medium-paced balls to Player 1's forehand.",
+        "Player 1 hits every forehand as a moonball — high arc, heavy topspin, deep landing.",
+        "The ball should clear the net by at least 5 feet (use a racket held above Player 2's head as a clearance guide).",
+        "Target: land within 4 feet of the baseline.",
+        "Play 20 moonballs per set. Target: 16 out of 20 in the target zone."
+      ],
+      "coaching_cues": [
+        "The moonball is NOT a soft shot — it is a heavy, spun ball hit with a full, committed swing.",
+        "Exaggerate the upward swing path dramatically — low-to-very-high finish above the head.",
+        "Brush aggressively up the back of the ball — the topspin is what brings it back down despite the high arc.",
+        "Aim your finish toward the sky, not toward the opponent — trust the topspin to bring it in.",
+        "The high bounce is confirmation of good topspin — it should jump up past the opponent's shoulder."
+      ],
+      "common_errors": [
+        "Hitting softly instead of brushing heavily — lands in the middle of the court with no depth.",
+        "Insufficient arc — ball sails long without enough topspin to bring it back down.",
+        "Using a moonball at the wrong tactical moment — inappropriate when close to the net or on a short ball."
+      ],
+      "variations": [
+        "Moonball rally: both players hit moonballs only — tests patience and deep court management.",
+        "Moonball then attack: Player 1 hits 3 moonballs to push Player 2 back, then attacks the short ball.",
+        "Match restriction: Player 1 must use at least one moonball in every rally during a practice set."
+      ],
+      "tags": ["forehand", "moonball", "topspin", "tactical", "intermediate", "high ball"],
+      "diagramData": {
+        "p1": { "x": 200, "y": 850 },
+        "p2": { "x": 200, "y": 60 },
+        "shots": [{ "x1": 200, "y1": 840, "x2": 200, "y2": 110 }],
+        "areas": [{ "x": 200, "y": 110, "r": 40 }],
+        "cones": [{ "x": 200, "y": 250 }]
+      }
+    },
+    {
+      "id": "GW-017",
+      "name": "Backhand Slice Keep-Away",
+      "subcategory": "Slice",
+      "skill_level": "intermediate",
+      "player_count": 2,
+      "duration_minutes": 10,
+      "objective": "Train the slice backhand as an offensive tactical keep-away tool — deliberately directing the ball to the area furthest from where the opponent is standing. Unlike the defensive slice, where the goal is simply surviving, the keep-away slice is a proactive, placement-first shot designed to exploit court position and create open court.",
+      "setup": "Player 2 stands at the net or T-position and moves visibly left or right. Player 1 must read Player 2's movement and slice to the opposite side of the court — wherever Player 2 is NOT.",
+      "instructions": [
+        "Player 2 stands at the net and feeds a short ball to Player 1's backhand.",
+        "Player 2 then moves visibly to one side of the net after feeding.",
+        "Player 1 must slice past Player 2 to the opposite, open side.",
+        "If Player 2 moves left, Player 1 slices right. If Player 2 moves right, Player 1 slices left.",
+        "Play 15 sequences per set. Score +1 for each successful keep-away slice that passes Player 2."
+      ],
+      "coaching_cues": [
+        "Read Player 2's movement as early as possible — don't wait until the last second to decide direction.",
+        "The slice is ideal for keep-away because it stays low and passes through the court quickly.",
+        "Guide the slice with your non-dominant hand — it steers the direction precisely.",
+        "No big, elaborate swings — a compact, directed slice is far more accurate than a full swing here.",
+        "Aim 1-2 feet inside the line at all times — always give yourself a real margin for error."
+      ],
+      "common_errors": [
+        "Hitting toward where Player 2 is standing — not reading the court positioning before swinging.",
+        "Floating the slice — gives Player 2 time to recover and cover the open side.",
+        "Overhitting aggressively — a controlled, precise slice beats a slapped winner attempt every time."
+      ],
+      "variations": [
+        "Player 2 moves after Player 1 has already started the swing — tests late-reading ability.",
+        "Player 2 does not move — Player 1 must independently choose the best angle.",
+        "Full point play: Player 2 at net versus Player 1 at baseline — Player 1 must use slice at least once."
+      ],
+      "tags": ["slice", "backhand", "tactical", "keep-away", "intermediate", "placement"],
+      "diagramData": {
+        "p1": { "x": 120, "y": 750 },
+        "p2": { "x": 250, "y": 480 },
+        "shots": [
+          { "x1": 250, "y1": 490, "x2": 110, "y2": 710 },
+          { "x1": 110, "y1": 740, "x2": 330, "y2": 150 }
+        ],
+        "areas": [{ "x": 330, "y": 150, "r": 25 }]
+      }
+    },
+    {
+      "id": "GW-018",
+      "name": "Backhand Redirect: Cross-Court to DTL",
+      "subcategory": "Backhand",
+      "skill_level": "advanced",
+      "player_count": 2,
+      "duration_minutes": 12,
+      "objective": "Master the backhand redirect — changing the direction of an incoming cross-court ball to go down-the-line. This is a signature move of elite players: drawing the opponent cross-court then redirecting DTL. The technical challenge is maintaining complete disguise and adjusting the contact point subtly while handling high-pace balls — the two skills that make this shot impossible to defend.",
+      "setup": "Player 2 hits cross-court to Player 1's backhand side at medium-high pace, creating a realistic cross-court ball. Player 1 must redirect every single ball down-the-line while keeping the setup completely identical.",
+      "instructions": [
+        "Player 2 initiates a cross-court backhand ball at medium-high pace.",
+        "Player 1 must redirect every shot down-the-line — changing the direction of a ball coming cross-court.",
+        "After 10 minutes of DTL-only, Player 1 is given freedom to choose CC or DTL per shot.",
+        "Player 2 must guess the direction before Player 1 hits each shot.",
+        "Score: +1 for Player 1 if Player 2 guesses wrong, +1 for Player 2 if correct."
+      ],
+      "coaching_cues": [
+        "Contact point is slightly later than cross-court — let the ball travel a fraction further toward you.",
+        "Keep shoulders closed longer to create the DTL redirect from the backhand side.",
+        "Do NOT overhit the redirect — the direction change itself is the weapon, not added pace.",
+        "Your preparation and backswing must look identical for both CC and DTL.",
+        "For two-handers: the non-dominant hand can push the follow-through direction subtly DTL."
+      ],
+      "common_errors": [
+        "Too-early contact — ball goes cross-court instead of DTL regardless of intent.",
+        "Opening the body to redirect — immediately telegraphs the DTL direction to the opponent.",
+        "Redirecting from a defensive or stretched position — should only redirect on neutral or offensive balls."
+      ],
+      "variations": [
+        "Continuous sequence: Player 2 goes CC, Player 1 redirects DTL, back and forth non-stop.",
+        "Player 2 hits short every 4th ball — Player 1 must approach the net after redirecting.",
+        "Full point: Player 2 must start CC but Player 1 can redirect at any point in the rally."
+      ],
+      "tags": ["backhand", "redirect", "DTL", "disguise", "advanced", "pattern"],
+      "diagramData": {
+        "p1": { "x": 120, "y": 850 },
+        "p2": { "x": 280, "y": 60 },
+        "shots": [
+          { "x1": 280, "y1": 70, "x2": 115, "y2": 820 },
+          { "x1": 115, "y1": 840, "x2": 90, "y2": 100 }
+        ],
+        "areas": [{ "x": 90, "y": 100, "r": 28 }],
+        "cones": [{ "x": 90, "y": 100 }]
+      }
+    },
+    {
+      "id": "GW-019",
+      "name": "Forehand Angled Short Cross",
+      "subcategory": "Forehand",
+      "skill_level": "advanced",
+      "player_count": 2,
+      "duration_minutes": 10,
+      "objective": "Develop the ability to create extreme angles with the forehand by stepping inside the court and hitting a sharp cross-court that lands inside the service box. The angled short cross is a point-ending shot when hit precisely — it pulls opponents completely off the court, opens the entire opposite side, and is one of the most aesthetically satisfying shots in tennis when executed cleanly.",
+      "setup": "Player 2 feeds a short ball (inside the service line) to Player 1's forehand side. Player 1 must step well inside the court and hit a sharply angled cross-court forehand that lands inside the service box area.",
+      "instructions": [
+        "Player 2 feeds a short ball inside Player 1's service line to the forehand.",
+        "Player 1 moves forward aggressively and steps inside the court before hitting.",
+        "Player 1 hits a sharp angled cross-court forehand — the ball must land inside the service box.",
+        "Player 1 recovers to center baseline immediately after the shot.",
+        "Play 15 times per set. Count how many balls land inside the target zone in the service box."
+      ],
+      "coaching_cues": [
+        "Step well inside the court before hitting — the inside-the-court position is what enables extreme angles.",
+        "Open the racket face and brush across the outside of the ball — create sidespin, not just topspin.",
+        "The swing path goes more sideways than forward — like a windshield wiper, not a straight drive.",
+        "Aim for the far doubles alley line at the net level — the angle from there creates the sharp landing.",
+        "This is a short-ball-only shot — never attempt it from behind or even near the baseline."
+      ],
+      "common_errors": [
+        "Attempting this shot from behind the baseline — geometrically impossible angle, always goes wide.",
+        "Swinging too straight — produces a regular cross-court with no extra angle.",
+        "Not stepping inside the court first — reduces the available angle dramatically."
+      ],
+      "variations": [
+        "Inside-out then short angle: Player 1 hits inside-out to open the court, then moves in for the angle.",
+        "Follow the angle to the net: after the angled shot, Player 1 rushes the net and finishes with a volley.",
+        "Two-shot combo: regular deep CC then sharp angle — forces opponent to cover completely different depths."
+      ],
+      "tags": ["forehand", "angle", "short cross", "advanced", "winner", "approach"],
+      "diagramData": {
+        "p1": { "x": 280, "y": 645 },
+        "p2": { "x": 200, "y": 60 },
+        "moves": [{ "x1": 280, "y1": 860, "x2": 280, "y2": 645 }],
+        "shots": [
+          { "x1": 200, "y1": 70, "x2": 280, "y2": 615 },
+          { "x1": 280, "y1": 635, "x2": 65, "y2": 375 }
+        ],
+        "areas": [{ "x": 65, "y": 375, "r": 22 }],
+        "cones": [{ "x": 65, "y": 375 }]
+      }
+    },
+    {
+      "id": "GW-020",
+      "name": "Forehand–Backhand Transition Under Pressure",
+      "subcategory": "Forehand",
+      "skill_level": "intermediate",
+      "player_count": 2,
+      "duration_minutes": 12,
+      "objective": "Train the rapid transition between forehand and backhand under genuine time pressure — simulating being pushed side to side rapidly in a match. This drill forces players to switch grips mid-sprint, adjust footwork patterns between completely different stances, and maintain stroke quality and depth under physical and mental fatigue — the conditions that cause most unforced errors in matches.",
+      "setup": "Player 2 feeds balls rapidly — alternating wide to the forehand then wide to the backhand with minimal rest between feeds. Player 1 must reach each ball at full sprint and return it into the court.",
+      "instructions": [
+        "Player 1 starts at center baseline in the ready position.",
+        "Player 2 feeds wide to the forehand — Player 1 runs at full sprint, hits, and sprints back to center.",
+        "Player 2 immediately feeds wide to the backhand — Player 1 sprints, hits, and returns to center.",
+        "Continue for 8 total balls (4 forehand, 4 backhand), then rest 45 seconds. Repeat 4 rounds.",
+        "Intentional focus: don't just return the ball — hit with direction and depth under fatigue."
+      ],
+      "coaching_cues": [
+        "Grip change must happen during the sprint — not after arriving at the ball.",
+        "Even when stretched, take a full swing — don't poke or jab defensively.",
+        "Your first step after hitting should always be directly back toward center.",
+        "Use your non-dominant arm as a counterbalance when sprinting wide — helps balance.",
+        "Your split step will be the first thing to suffer under fatigue — consciously fight to maintain it."
+      ],
+      "common_errors": [
+        "Forgetting to change grip during the sprint — causes hitting backhand with forehand grip.",
+        "Jogging to wide balls instead of sprinting — drills must replicate genuine match pace.",
+        "Failing to recover fully to center — stopping halfway allows easy exploitation."
+      ],
+      "variations": [
+        "Progressive rounds: 6 balls, then 8, then 10, then 12 — increasing workload each round.",
+        "Player 2 varies depth as well — some balls wide AND short, forcing diagonal sprints.",
+        "Bonus attack: Player 2 hits 4 wide balls then drops a short ball — Player 1 attacks the short ball."
+      ],
+      "tags": ["forehand", "backhand", "transition", "pressure", "fitness", "intermediate"],
+      "diagramData": {
+        "p1": { "x": 200, "y": 850 },
+        "p2": { "x": 200, "y": 60 },
+        "moves": [
+          { "x1": 200, "y1": 850, "x2": 335, "y2": 850 },
+          { "x1": 335, "y1": 850, "x2": 200, "y2": 850 },
+          { "x1": 200, "y1": 850, "x2": 65, "y2": 850 }
+        ],
+        "shots": [
+          { "x1": 200, "y1": 70, "x2": 335, "y2": 840 },
+          { "x1": 200, "y1": 60, "x2": 65, "y2": 840 }
+        ],
+        "areas": [{ "x": 200, "y": 120, "r": 45 }]
+      }
+    },
+    {
+      "id": "GW-021",
+      "name": "Backhand Block Return",
+      "subcategory": "Backhand",
+      "skill_level": "beginner",
+      "player_count": 2,
+      "duration_minutes": 8,
+      "objective": "Develop the backhand block — a compact, controlled stroke used to absorb pace and redirect hard incoming shots. The block is essential against flat, fast balls when there is not enough time for a full swing. It is the technical foundation of the return of serve and every defensive backhand situation in match play.",
+      "setup": "Player 2 hits hard, flat balls directly at Player 1's backhand from the service line — simulating a hard, fast serve or aggressive groundstroke. Player 1 must block every ball back using a compact swing with no big backswing.",
+      "instructions": [
+        "Player 2 stands at the service line and hits hard, flat balls to Player 1's backhand.",
+        "Player 1 uses a compact backhand block — no loop backswing, just a controlled redirect.",
+        "The goal is to keep the ball in play and redirect it back — not to hit a winner.",
+        "After 10 blocks, Player 2 adds more pace — Player 1 continues to block.",
+        "Switch roles after 8 minutes so both players train the block."
+      ],
+      "coaching_cues": [
+        "Start with your racket already up in the ready position — no loop backswing on a block.",
+        "Meet the ball in front of your body — not beside or behind your hip.",
+        "Keep a firm wrist throughout — a floppy wrist produces erratic, uncontrolled direction.",
+        "Open the racket face very slightly to lift the ball safely over the net.",
+        "Think of yourself as a redirecting wall: the ball comes at you, you redirect its energy."
+      ],
+      "common_errors": [
+        "Taking a full loop backswing — there is no time for it on fast balls.",
+        "Floppy or collapsing wrist — causes major mis-hits and unpredictable direction.",
+        "Not meeting the ball early enough — late contact causes the ball to jam the body."
+      ],
+      "variations": [
+        "Block and sprint: Player 2 hits to the backhand, Player 1 blocks and immediately sprints to the net.",
+        "Blind block: Player 1 closes their eyes for 1 second after the feed, then opens and blocks.",
+        "Block plus counter: after 3 blocks, Player 1 is allowed to counter-attack aggressively on the 4th."
+      ],
+      "tags": ["backhand", "block", "return", "compact swing", "beginner", "defensive"],
+      "diagramData": {
+        "p1": { "x": 120, "y": 850 },
+        "p2": { "x": 200, "y": 480 },
+        "shots": [
+          { "x1": 200, "y1": 490, "x2": 110, "y2": 820 },
+          { "x1": 110, "y1": 840, "x2": 290, "y2": 100 }
+        ],
+        "areas": [{ "x": 290, "y": 120, "r": 40 }]
+      }
+    },
+    {
+      "id": "GW-022",
+      "name": "Forehand Contact Point Awareness",
+      "subcategory": "Forehand",
+      "skill_level": "intermediate",
+      "player_count": 2,
+      "duration_minutes": 10,
+      "objective": "Isolate and improve the contact point for the forehand drive. Power and consistency on the forehand depend overwhelmingly on where the ball is contacted relative to the body — too close jams the swing, too far extends the arm awkwardly. This drill builds awareness and muscle memory for the ideal contact zone through varied feeds that force footwork adjustment.",
+      "setup": "Player 2 feeds balls from a basket to Player 1's forehand at deliberately varying speeds and spins — slow, medium, and fast. Player 1 must adjust footwork before every ball to ensure contact always happens at the same ideal point.",
+      "instructions": [
+        "Player 2 feeds varying balls: slow, medium, and fast — all to the forehand side.",
+        "Player 1 must adjust footwork to ensure every ball is contacted at the same point — roughly arm's length in front of the lead hip.",
+        "Player 1 calls 'contact!' out loud at the exact moment of hitting — forces conscious awareness.",
+        "After 20 balls, Player 2 adds topspin feeds to change the bounce height.",
+        "Repeat 3 rounds of 20 balls each."
+      ],
+      "coaching_cues": [
+        "Extend your dominant arm forward — that distance is roughly where contact should happen.",
+        "A crisp, clean sound at contact confirms the right spot. A dull thud often means too close.",
+        "Always adjust your feet to the ball — never adjust your arm to compensate for bad footwork.",
+        "On slow balls: step forward into the ball. On fast balls: allow the ball to come to you.",
+        "Keep your eyes focused on the ball all the way to the strings — never look away early."
+      ],
+      "common_errors": [
+        "Letting the ball get too close to the body — jams the entire swing and kills power.",
+        "Reaching too far out for the ball — extends the arm awkwardly and removes all power.",
+        "Using the arm to compensate for bad footwork — leads to inconsistent contact."
+      ],
+      "variations": [
+        "Eyes closed: Player 1 closes eyes, Player 2 calls 'hit' — Player 1 opens and makes contact.",
+        "Towel drill: place a small towel at the ideal contact point as a physical reference.",
+        "Add lateral movement before each feed — simulates realistic match conditions."
+      ],
+      "tags": ["forehand", "contact point", "technique", "power", "intermediate"],
+      "diagramData": {
+        "p1": { "x": 280, "y": 850 },
+        "p2": { "x": 200, "y": 480 },
+        "shots": [
+          { "x1": 200, "y1": 490, "x2": 285, "y2": 820 },
+          { "x1": 285, "y1": 840, "x2": 110, "y2": 100 }
+        ],
+        "areas": [{ "x": 110, "y": 100, "r": 30 }]
+      }
+    },
+    {
+      "id": "GW-023",
+      "name": "Slice Backhand: Low vs. High Ball Adaptation",
+      "subcategory": "Slice",
+      "skill_level": "advanced",
+      "player_count": 2,
+      "duration_minutes": 12,
+      "objective": "Train the slice technique adaptation for both very low balls and very high balls. The slice backhand changes significantly depending on ball height: a low slice requires bending the knees and getting below the ball, while a high slice requires an entirely different racket path from above the ball. Elite players manage both effortlessly — most club players handle only one comfortably.",
+      "setup": "Player 2 feeds balls alternating between very low (short, low-bouncing) and very high (heavy topspin). Player 1 must slice every single ball but use appropriate technique for each specific height.",
+      "instructions": [
+        "Player 2 feeds a low ball — Player 1 slices with bent knees, staying below the ball.",
+        "Player 2 feeds a high ball — Player 1 slices from above with a high-to-low path.",
+        "Alternate continuously for 10 pairs. Player 1 must read the height early and adjust completely.",
+        "After 10 pairs, Player 2 feeds randomly without signaling — Player 1 must identify and react.",
+        "Play 20 random balls, rest 60 seconds, repeat 3 sets."
+      ],
+      "coaching_cues": [
+        "Low ball: get your racket lower than the ball — bend the knees, never bend the back.",
+        "Low ball: swing slightly upward through contact and open the face more to lift over the net.",
+        "High ball: take the racket above the ball first, then slice down and through it.",
+        "High ball: take it early at the peak of the bounce — don't let it drop further.",
+        "Read the bounce height at the moment of the second bounce — gives ample time to adjust."
+      ],
+      "common_errors": [
+        "Using the same swing path for both heights — at least one will always be technically wrong.",
+        "Bending the back instead of the knees on low balls — causes spine strain and poor contact.",
+        "Letting the high ball drop too low before slicing — gives the opponent time to get into position."
+      ],
+      "variations": [
+        "Forehand slice on high balls, backhand slice on low — or vice versa for extra challenge.",
+        "Add approach to the net after every slice — Player 1 slices then follows into the net.",
+        "Live points: Player 2 can mix heights and depths freely — Player 1 must slice everything."
+      ],
+      "tags": ["slice", "backhand", "low ball", "high ball", "advanced", "technique"],
+      "diagramData": {
+        "p1": { "x": 120, "y": 850 },
+        "p2": { "x": 200, "y": 480 },
+        "shots": [
+          { "x1": 200, "y1": 490, "x2": 110, "y2": 800 },
+          { "x1": 110, "y1": 840, "x2": 290, "y2": 110 }
+        ],
+        "areas": [{ "x": 290, "y": 100, "r": 25 }]
+      }
+    },
+    {
+      "id": "GW-024",
+      "name": "Forehand Swing Volley",
+      "subcategory": "Forehand",
+      "skill_level": "advanced",
+      "player_count": 2,
+      "duration_minutes": 10,
+      "objective": "Develop the forehand swing volley — a full forehand groundstroke taken out of the air before the ball bounces. The swing volley is used to take moonballs and high floaters early at the net, creating extreme angles and ending points decisively. It requires perfect timing, deliberate footwork, and the mental commitment to take a full swing at the net rather than punching.",
+      "setup": "Player 2 feeds a relatively high, slow, looping ball (simulating a moonball or a lob that didn't go over). Player 1 is positioned inside the service line and must take the ball out of the air with a complete forehand swing.",
+      "instructions": [
+        "Player 1 positions inside the service line at the net.",
+        "Player 2 feeds a high, looping ball that would bounce around the service line.",
+        "Player 1 lets the ball drop to the correct strike zone and takes a full forehand swing volley.",
+        "Player 1 aims to put the ball away — the swing volley should be an offensive shot.",
+        "Repeat 12 times. Focus on timing and directing the ball away from Player 2."
+      ],
+      "coaching_cues": [
+        "Take the ball at the peak or just after the peak of its arc — don't let it drop too far.",
+        "Take a full forehand swing — not a punch. The swing is what creates pace and topspin.",
+        "Step into the ball just like a baseline groundstroke — use your body momentum.",
+        "Aim away from where Player 2 is standing — create angles to open court.",
+        "Keep your eye on the ball — swing volleys are often mis-hit when looking at the court."
+      ],
+      "common_errors": [
+        "Taking a short punch volley instead of a full swing — wastes the opportunity entirely.",
+        "Letting the ball drop too far before swinging — contact point is too low for power.",
+        "Standing flat-footed with no footwork — no momentum means no power."
+      ],
+      "variations": [
+        "Feeds from different positions — Player 1 must swing volley from anywhere inside the service line.",
+        "Swing volley then volley: Player 2 answers and Player 1 must finish with a regular punch volley.",
+        "High stakes: Player 2 can pass if Player 1 mis-hits the swing volley — adds real match stakes."
+      ],
+      "tags": ["forehand", "swing volley", "net", "advanced", "timing", "winner"],
+      "diagramData": {
+        "p1": { "x": 280, "y": 590 },
+        "p2": { "x": 120, "y": 60 },
+        "moves": [{ "x1": 280, "y1": 860, "x2": 280, "y2": 590 }],
+        "shots": [
+          { "x1": 120, "y1": 70, "x2": 280, "y2": 560 },
+          { "x1": 280, "y1": 580, "x2": 340, "y2": 100 }
+        ],
+        "areas": [{ "x": 340, "y": 110, "r": 25 }]
+      }
+    },
+    {
+      "id": "GW-025",
+      "name": "Forehand Short Angle Winner",
+      "subcategory": "Forehand",
+      "skill_level": "advanced",
+      "player_count": 2,
+      "duration_minutes": 10,
+      "objective": "Master the short-angle forehand winner — a sharply angled shot landing close to the doubles sideline inside the service box. This shot is the finishing blow after an inside-out pattern or any situation where the opponent has been pulled wide. It requires stepping inside the court and creating deliberate sidespin — making it one of the most lethal finishing shots in the game.",
+      "setup": "Player 2 feeds a short ball (inside the service line) to Player 1's forehand. Player 1 must sprint forward, step inside the court, and hit a sharp angled forehand that lands inside the service box.",
+      "instructions": [
+        "Player 2 feeds a short ball just inside the service line to Player 1's forehand side.",
+        "Player 1 sprints forward and steps well inside the court before contact.",
+        "Player 1 hits a sharp forehand angle — the ball must land between the singles sideline and center service line, inside the service box.",
+        "Player 1 recovers immediately to center baseline.",
+        "Repeat 15 times per set. Count how many land inside the target zone."
+      ],
+      "coaching_cues": [
+        "Step forward and inside the ball completely — your body's momentum must be moving through the shot.",
+        "Brush across the outside of the ball to create sidespin — this is what creates the sharp angle.",
+        "Follow through more sideways than upward — the racket path creates the angle, not the wrist.",
+        "Aim for the far doubles alley line at the net level — from inside the court, this creates a lethal angle.",
+        "This is a short-ball-only shot — never attempt from near or behind the baseline."
+      ],
+      "common_errors": [
+        "Attempting from behind the baseline — geometrically impossible angle, always goes wide.",
+        "Brushing too straight — produces a regular cross-court without the additional angle.",
+        "Not stepping inside the court — dramatically reduces the available angle."
+      ],
+      "variations": [
+        "Short angle then approach: after the angle, Player 1 rushes the net to finish.",
+        "Setup first: Player 1 must hit 2 deep baseline balls before the short angle on the 3rd.",
+        "Opposite side: Player 2 is pulled wide — Player 1 creates the angle to the open court."
+      ],
+      "tags": ["forehand", "angle", "winner", "short ball", "advanced"],
+      "diagramData": {
+        "p1": { "x": 200, "y": 640 },
+        "p2": { "x": 280, "y": 60 },
+        "moves": [{ "x1": 200, "y1": 860, "x2": 200, "y2": 640 }],
+        "shots": [
+          { "x1": 280, "y1": 70, "x2": 195, "y2": 610 },
+          { "x1": 195, "y1": 630, "x2": 65, "y2": 350 }
+        ],
+        "areas": [{ "x": 65, "y": 350, "r": 22 }],
+        "cones": [{ "x": 65, "y": 350 }]
+      }
+    },
+    {
+      "id": "GW-026",
+      "name": "Backhand Consistency: 50-Ball Challenge",
+      "subcategory": "Backhand",
+      "skill_level": "beginner",
+      "player_count": 2,
+      "duration_minutes": 15,
+      "objective": "Build deep concentration and consistency on the cross-court backhand through high-volume repetition and mental pressure. The 50-ball challenge forces players to maintain focus, technique, and intention long past the point where it feels comfortable — the exact conditions of long baseline rallies in match play. Any error resets the count, which creates real mental accountability.",
+      "setup": "Both players rally cross-court backhands. The challenge: complete 50 consecutive shots without any error. Any error — into the net, wide, or down-the-line — immediately resets the count back to zero.",
+      "instructions": [
+        "Begin a cross-court backhand rally. One player counts shots aloud, clearly.",
+        "Every shot must land in the correct cross-court half. DTL shots don't count and reset to 0.",
+        "Any net or out error resets the count immediately to 0.",
+        "Target: reach 50 consecutive shots in a single session.",
+        "If 50 becomes easy, progress to 75 or 100."
+      ],
+      "coaching_cues": [
+        "Focus only on the current shot — never think about the count when you're at 35 or 40.",
+        "Breathe between every shot — tension builds with the count and causes the errors you fear.",
+        "Reduce pace deliberately as the count gets high — consistency over ego.",
+        "Keep your footwork active — complacency and flat feet creep in on high counts.",
+        "If you miss at 48, restart with exactly the same mental freshness as shot 1."
+      ],
+      "common_errors": [
+        "Increasing pace as the count gets high — ego overriding the actual goal.",
+        "Mental tightness at 30+ causing tense shots that go long or wide.",
+        "Inconsistent depth — short balls break the rhythm and pressure the partner."
+      ],
+      "variations": [
+        "Depth rule: only shots landing past the service line count toward the total.",
+        "Direction alternation: alternate CC and DTL — must land correctly in both directions.",
+        "Time version: how many consecutive shots can both players land in exactly 3 minutes?"
+      ],
+      "tags": ["backhand", "consistency", "challenge", "cross-court", "mental", "beginner"],
+      "diagramData": {
+        "p1": { "x": 120, "y": 850 },
+        "p2": { "x": 280, "y": 60 },
+        "shots": [
+          { "x1": 120, "y1": 840, "x2": 290, "y2": 90 },
+          { "x1": 290, "y1": 70, "x2": 115, "y2": 835 }
+        ],
+        "areas": [
+          { "x": 290, "y": 110, "r": 35 },
+          { "x": 115, "y": 820, "r": 35 }
+        ]
+      }
+    },
+    {
+      "id": "GW-027",
+      "name": "Forehand Counterpunch at High Pace",
+      "subcategory": "Forehand",
+      "skill_level": "advanced",
+      "player_count": 2,
+      "duration_minutes": 12,
+      "objective": "Develop the forehand counterpunch — the ability to absorb extreme pace from an opponent and redirect it cross-court with equal or greater depth and spin. Counterpunching is a specific, trainable skill distinct from blocking (passive) and attacking (offensive) — it takes an aggressive incoming ball and drives it back just as hard, changing the direction and creating pressure rather than simply surviving.",
+      "setup": "Player 2 hits hard, flat balls to Player 1's forehand at 80-90% of their full pace. Player 1 must counterpunch every ball cross-court, matching or exceeding the pace of the incoming ball.",
+      "instructions": [
+        "Player 2 hits a hard forehand to Player 1's forehand side at near-maximum pace.",
+        "Player 1 must drive back a counterpunch cross-court — matching or exceeding the pace.",
+        "Both players hit near their maximum pace throughout the drill.",
+        "Play 10-ball sequences at full intensity. Rest 90 seconds between sequences.",
+        "Play 5 complete sequences. Track errors and winners from both players."
+      ],
+      "coaching_cues": [
+        "Don't back away from the pace — lean in and take the ball early, not late.",
+        "Shorten the backswing at high pace — use the incoming ball's energy intelligently.",
+        "Stay balanced at all times — the temptation to lean too far forward is strong under pace.",
+        "Drive your legs through contact — the lower body absorbs and redirects the force.",
+        "Reset your feet after every single exchange — never be flat-footed when the next ball arrives."
+      ],
+      "common_errors": [
+        "Backing off the ball — turns into a defensive block instead of a genuine counterpunch.",
+        "Arm-only swing without leg drive — lacks the power to match the incoming pace.",
+        "Leaning back at contact — sends the ball long consistently."
+      ],
+      "variations": [
+        "Counterpunch DTL: Player 1 must redirect down-the-line instead of cross-court — harder.",
+        "Add a winner: after 6 consecutive counterpunches, Player 1 can try to end the point.",
+        "Pressure set: Player 2 tries to win every point at full effort — maximum match intensity."
+      ],
+      "tags": ["forehand", "counterpunch", "pace", "advanced", "baseline", "power"],
+      "diagramData": {
+        "p1": { "x": 280, "y": 850 },
+        "p2": { "x": 120, "y": 60 },
+        "shots": [
+          { "x1": 120, "y1": 70, "x2": 280, "y2": 830 },
+          { "x1": 280, "y1": 845, "x2": 100, "y2": 90 }
+        ],
+        "areas": [
+          { "x": 100, "y": 100, "r": 30 },
+          { "x": 280, "y": 820, "r": 30 }
+        ]
+      }
+    },
+    {
+      "id": "GW-028",
+      "name": "Two-Ball Backhand: Build then Attack DTL",
+      "subcategory": "Backhand",
+      "skill_level": "intermediate",
+      "player_count": 2,
+      "duration_minutes": 12,
+      "objective": "Train the fundamental two-shot backhand sequence in competitive tennis: build the rally cross-court first, then attack down-the-line to finish the point. This is the backbone of backhand-dominant baseline play — use the CC backhand to move the opponent and create a slightly shorter ball, then drive DTL to the open court for a winner.",
+      "setup": "Player 2 feeds two consecutive balls to Player 1's backhand. Player 1 hits the first cross-court to neutralize, and the second down-the-line to attack.",
+      "instructions": [
+        "Player 2 feeds the first ball — Player 1 hits cross-court backhand safely and deeply.",
+        "Player 2 feeds the second ball — Player 1 drives down-the-line aggressively.",
+        "Player 1 recovers to center between both shots.",
+        "Run 15 two-ball sequences per set, 3 sets total.",
+        "Progression: play out the point after the DTL shot."
+      ],
+      "coaching_cues": [
+        "Shot 1 cross-court: safe, deep, and central — push Player 2 back. No risk on this shot.",
+        "Shot 2 DTL: step around if possible — being slightly forward makes DTL far safer.",
+        "Disguise: the setup and backswing for Shot 2 must look identical to Shot 1 until contact.",
+        "After the DTL, recover immediately — your own DTL opens your cross-court side completely.",
+        "Only attack DTL on a shorter ball — don't go DTL from behind the baseline."
+      ],
+      "common_errors": [
+        "Both shots going cross-court — not actually executing the DTL on Shot 2.",
+        "Going DTL on a ball that's too deep or too wide — too much risk from a bad position.",
+        "No recovery between shots — caught flat-footed on Shot 2."
+      ],
+      "variations": [
+        "Three-shot sequence: CC, CC, DTL — more realistic rally build-up before the attack.",
+        "Reverse: DTL first then CC — tests directional flexibility in the opposite order.",
+        "Player 2 plays the point out after the DTL — real consequence for good and bad execution."
+      ],
+      "tags": ["backhand", "sequence", "build", "attack", "DTL", "intermediate"],
+      "diagramData": {
+        "p1": { "x": 120, "y": 850 },
+        "p2": { "x": 200, "y": 60 },
+        "shots": [
+          { "x1": 200, "y1": 70, "x2": 110, "y2": 840 },
+          { "x1": 110, "y1": 840, "x2": 295, "y2": 110 }
+        ],
+        "areas": [
+          { "x": 295, "y": 115, "r": 25 },
+          { "x": 285, "y": 95, "r": 25 }
+        ]
+      }
+    },
+    {
+      "id": "GW-029",
+      "name": "Slice Serve + Slice Backhand Combo Pattern",
+      "subcategory": "Slice",
+      "skill_level": "advanced",
+      "player_count": 2,
+      "duration_minutes": 12,
+      "objective": "Combine the slice serve with a slice backhand follow-up shot — a tactically sophisticated two-shot pattern that keeps the ball consistently low. The slice serve pulls the opponent wide off the court. The slice backhand second shot continues the low-ball theme, forcing the opponent to hit upward twice in a row. This pattern is particularly effective on fast courts and is a hallmark of elite serve-and-volley and aggressive baseline players.",
+      "setup": "Player 1 serves wide (slice serve) to the ad court, pulling the opponent wide. Player 2 returns, and Player 1 must follow up with a slice backhand — not a topspin groundstroke — to continue the low-ball pattern.",
+      "instructions": [
+        "Player 1 serves a wide slice serve to the ad court.",
+        "Player 2 returns from a wide position — Player 1 must hit the next ball as a slice backhand.",
+        "Player 1 then plays out the point normally after the slice.",
+        "Focus on quality of both the serve and the slice follow-up.",
+        "Repeat 12 times, then switch servers."
+      ],
+      "coaching_cues": [
+        "Slice serve: brush across and down the ball at contact — a genuine slice motion, not a flat serve.",
+        "The slice serve should pull the opponent well outside the singles sideline.",
+        "On the follow-up slice: stay low and compact — the slice is the tempo-control shot.",
+        "The pattern works because both shots stay low — forces the opponent to hit upward both times.",
+        "After the slice follow-up, look for the inevitably short ball to attack."
+      ],
+      "common_errors": [
+        "Slice serve not curving enough — ends up flat and down the middle.",
+        "Following the slice serve with a topspin — defeats the low-ball rhythm of the entire pattern.",
+        "Slice follow-up floating too high — gives away the low-ball advantage."
+      ],
+      "variations": [
+        "Body serve plus slice follow-up: jam the opponent's body then slice to the open court.",
+        "Slice serve plus slice drop shot: extreme variation once the low-ball pattern is established.",
+        "Doubles version: serve wide plus slice, with partner poaching at the net."
+      ],
+      "tags": ["slice", "serve", "combination", "advanced", "pattern", "ad court"],
+      "diagramData": {
+        "p1": { "x": 160, "y": 860 },
+        "p2": { "x": 280, "y": 60 },
+        "moves": [{ "x1": 160, "y1": 850, "x2": 200, "y2": 820 }],
+        "shots": [
+          { "x1": 160, "y1": 850, "x2": 330, "y2": 370 },
+          { "x1": 280, "y1": 70, "x2": 200, "y2": 760 },
+          { "x1": 195, "y1": 810, "x2": 95, "y2": 120 }
+        ],
+        "areas": [{ "x": 95, "y": 120, "r": 28 }]
+      }
+    },
+    {
+      "id": "GW-030",
+      "name": "Forehand Rip: Maximum Power Training",
+      "subcategory": "Forehand",
+      "skill_level": "advanced",
+      "player_count": 2,
+      "duration_minutes": 10,
+      "objective": "Train hitting the forehand at absolute maximum power — 100% effort — without sacrificing technique. Most players unconsciously hold back in practice out of fear of errors. This drill gives explicit permission to swing as hard as possible and teaches players to find their personal line between power and control. Knowing where that line is — and being able to push it — is what separates competitive players from those who always play safe.",
+      "setup": "Player 2 feeds from the opposite service box using a basket. Player 1 hits every forehand at 100% power — absolutely no holding back. Errors are information, not failure.",
+      "instructions": [
+        "Player 2 feeds balls to Player 1's forehand from the opposite service box.",
+        "Player 1 rips every forehand at full power — full swing, full rotation, full commitment. No mental brake.",
+        "If balls go long: add more topspin by brushing up more aggressively, but maintain pace.",
+        "If balls go wide: adjust direction slightly but keep full pace.",
+        "Play 25 balls, rest 90 seconds, repeat 3 sets. Track how many land in the court."
+      ],
+      "coaching_cues": [
+        "Give yourself explicit permission to miss — this is training for aggression, not perfection.",
+        "Drive off the back foot completely — rotate everything: hips, torso, shoulder, arm.",
+        "Snap the wrist through contact — the wrist snap adds significant racket head speed.",
+        "Keep your eyes on the ball, not on the court — trust the swing, not the aim.",
+        "Most players discover they can hit significantly harder than they thought — let that be a revelation."
+      ],
+      "common_errors": [
+        "Holding back after a few early misses — completely defeats the entire purpose of this drill.",
+        "Tensing the arm while trying harder — actually reduces racket head speed.",
+        "Closing the stance too much — limits hip rotation and prevents full power."
+      ],
+      "variations": [
+        "Measure with a speed gun or SwingVision app — track forehand speed improvement over weeks.",
+        "Power rally: both players rip at 100% — who sustains the longest cross-court rally?",
+        "Power with placement: rip at 100%, but must land in one specific target zone."
+      ],
+      "tags": ["forehand", "power", "aggression", "maximum", "advanced"],
+      "diagramData": {
+        "p1": { "x": 280, "y": 850 },
+        "p2": { "x": 200, "y": 480 },
+        "shots": [
+          { "x1": 200, "y1": 490, "x2": 280, "y2": 820 },
+          { "x1": 280, "y1": 840, "x2": 100, "y2": 100 }
+        ],
+        "areas": [{ "x": 100, "y": 110, "r": 30 }]
+      }
+    }
+  ]
+}

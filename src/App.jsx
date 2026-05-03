@@ -16,6 +16,9 @@ import Settings from './pages/dashboard/Settings'
 import GymTraining from './pages/dashboard/GymTraining'
 import ServeMasterclass from './pages/dashboard/ServeMasterclass'
 import DoublesTactics from './pages/dashboard/DoublesTactics'
+import TermsOfService from './pages/TermsOfService'
+import PrivacyPolicy from './pages/PrivacyPolicy'
+import LegalNotice from './pages/LegalNotice'
 
 function ProtectedRoute({ children }) {
   const { user, loading } = useAuth()
@@ -54,6 +57,10 @@ export default function App() {
         <Route path="/en/obrigado" element={<ObrigadoEn />} />
         <Route path="/upsell-courtly" element={<UpsellEn />} />
         <Route path="/welcome" element={<Welcome />} />
+        <Route path="/terms" element={<TermsOfService />} />
+        <Route path="/privacy" element={<PrivacyPolicy />} />
+        <Route path="/legal" element={<LegalNotice />} />
+        <Route path="/aviso-legal" element={<LegalNotice />} />
 
         <Route
           path="/dashboard"

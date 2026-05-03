@@ -1,0 +1,1422 @@
+{
+  "batch": "Serve drills 11-40",
+  "category": "Serve",
+  "drills": [
+    {
+      "id": "SV-011",
+      "name": "Flat Serve Power Progression",
+      "subcategory": "Flat",
+      "category": "Serve",
+      "skill_level": "intermediate",
+      "player_count": 1,
+      "duration_minutes": 12,
+      "objective": "Build maximum flat serve power through a progressive warm-up ladder. Most players try to serve at full power from the very first ball, which creates tension, reduces racket head speed, and ingrams a tight motion. This drill starts at 50% effort and builds to 100% over several rounds, allowing the body to open up naturally and find maximum pace through a relaxed, fluid motion rather than forced muscle.",
+      "setup": "Player 1 serves from the deuce court baseline using a full basket of balls. No returner needed. Focus is purely on building pace progressively through a relaxed kinetic chain.",
+      "instructions": [
+        "Round 1: Serve 5 balls at 50% effort — smooth, relaxed, full motion but no pace.",
+        "Round 2: Serve 5 balls at 70% effort — add leg drive, keep the arm loose.",
+        "Round 3: Serve 5 balls at 85% effort — full pronation, snap through the ball.",
+        "Round 4: Serve 5 balls at 100% effort — maximum leg drive, full hip rotation, arm whip.",
+        "Rest 90 seconds between rounds. Track how many land in the service box at each level."
+      ],
+      "coaching_cues": [
+        "A relaxed arm moves faster than a tense one — looseness is the foundation of power.",
+        "Leg drive is the engine — at 100%, your heels should come completely off the ground.",
+        "Let the elbow lead on the way up — the racket head trails behind, creating a whip effect.",
+        "Pronate fully through contact — the racket face turns from tilted to facing forward.",
+        "Hold nothing back on Round 4 — swing through the ball as if trying to knock it through the fence."
+      ],
+      "common_errors": [
+        "Tensing the arm to generate more power — tension kills racket head speed.",
+        "Not using leg drive at higher effort levels — arm-only serves plateau quickly.",
+        "Short-arming the follow-through — stopping the swing before full completion kills pace."
+      ],
+      "variations": [
+        "Alternate between 50% and 100% every ball — teaches the feel of relaxed versus forced.",
+        "Add a returner at 100% round — tests if the power translates into actual unreturnable serves.",
+        "Measure with a speed gun or app — track the speed difference between rounds."
+      ],
+      "tags": ["serve", "flat", "power", "progression", "intermediate", "solo"],
+      "diagramData": {
+        "p1": { "x": 240, "y": 860 },
+        "shots": [
+          { "x1": 240, "y1": 850, "x2": 200, "y2": 370 },
+          { "x1": 240, "y1": 850, "x2": 315, "y2": 390 }
+        ],
+        "areas": [
+          { "x": 200, "y": 370, "r": 25 },
+          { "x": 315, "y": 390, "r": 25 }
+        ]
+      }
+    },
+    {
+      "id": "SV-012",
+      "name": "Slice Serve: Deuce Court Wide Pull",
+      "subcategory": "Slice",
+      "category": "Serve",
+      "skill_level": "intermediate",
+      "player_count": 2,
+      "duration_minutes": 12,
+      "objective": "Develop a wide slice serve from the deuce court that curves sharply and pulls the returner far outside the singles sideline. The wide deuce slice is the serve that opens the court most dramatically — when hit correctly, the returner is pulled 3-4 feet outside the sideline, leaving the entire deuce side completely open for the next shot. It is essential for right-handed servers on fast surfaces.",
+      "setup": "Player 1 serves from the deuce court baseline. Player 2 stands in the normal deuce-court return position. Three cones mark how far outside the sideline Player 2 is pulled — 1 foot, 2 feet, and 3 feet outside. The goal is to pull Player 2 to the 3-foot cone.",
+      "instructions": [
+        "Player 1 serves wide slice serves from the deuce court.",
+        "After each serve, Player 2 walks to the spot where they had to return from — marks it with a cone.",
+        "Track: is Player 2 being pulled 1 foot, 2 feet, or 3+ feet outside the sideline?",
+        "After 10 serves, play out the full point — Player 1 attacks the open deuce side on the plus-one.",
+        "Target: 7 out of 10 serves pulling Player 2 at least 2 feet outside the sideline."
+      ],
+      "coaching_cues": [
+        "Toss slightly to the right — further right than a T serve, which sets up the cross-body brush.",
+        "Contact the ball on the right side — at roughly 3 o'clock on the ball's face.",
+        "Brush firmly across and around — don't stab or push, sweep across with commitment.",
+        "Your follow-through goes left — the cross-body finish drives the rightward curve.",
+        "The wider the toss, the wider the serve — practice the toss separately to get the angle right."
+      ],
+      "common_errors": [
+        "Contacting the ball at 12 o'clock — produces a flat wide serve instead of a curving slice.",
+        "Follow-through going straight down — kills the horizontal spin.",
+        "Toss too far left — cannot get across the ball from that position."
+      ],
+      "variations": [
+        "Slice wide then inside-out forehand — the pull creates the perfect setup.",
+        "Mix with T serve — Player 2 must guess wide or T before the serve.",
+        "Speed test: maximum slice curve at 70% pace vs 90% — which creates more pull?"
+      ],
+      "tags": ["serve", "slice", "wide", "deuce court", "angle", "intermediate"],
+      "diagramData": {
+        "p1": { "x": 240, "y": 860 },
+        "p2": { "x": 290, "y": 60 },
+        "shots": [{ "x1": 240, "y1": 850, "x2": 328, "y2": 392 }],
+        "areas": [{ "x": 328, "y": 392, "r": 20 }],
+        "cones": [
+          { "x": 320, "y": 392 },
+          { "x": 335, "y": 392 },
+          { "x": 350, "y": 392 }
+        ]
+      }
+    },
+    {
+      "id": "SV-013",
+      "name": "Kick Serve Depth and Height Control",
+      "subcategory": "Kick",
+      "category": "Serve",
+      "skill_level": "advanced",
+      "player_count": 2,
+      "duration_minutes": 12,
+      "objective": "Refine the kick serve specifically for depth and bounce height — the two qualities that make the kick serve truly difficult to return. A kick serve that lands short gives the returner time to step in and attack. A kick serve with no height gives the returner a comfortable mid-height ball. This drill trains both qualities simultaneously, producing a kick serve that lands deep and kicks above the returner's shoulder.",
+      "setup": "Player 1 serves from both courts. Player 2 returns and calls out the bounce height after each serve: 'low' (below waist), 'medium' (waist to shoulder), or 'high' (above shoulder). A cone marks the depth target — 3 feet inside the baseline of the service box.",
+      "instructions": [
+        "Player 1 serves kick serves from the deuce court first.",
+        "Player 2 calls the bounce height after each serve — 'low', 'medium', or 'high'.",
+        "Player 1 also tracks whether each serve lands past the depth cone.",
+        "Score: +2 for 'high' plus deep, +1 for 'medium' plus deep, 0 for anything else.",
+        "Play 20 serves per court. Target: 25+ points on each court."
+      ],
+      "coaching_cues": [
+        "More topspin equals more height and more depth — both qualities come from the same motion.",
+        "Swing harder from 7 to 1 — more racket head speed through the spin zone means more kick.",
+        "Arch your back fully — the bigger the arch, the more your swing goes upward through the ball.",
+        "Snap your wrist completely at contact — the wrist snap is the final accelerator.",
+        "Land the serve in the back third of the service box — never short, always deep."
+      ],
+      "common_errors": [
+        "Kick serve landing short — not enough topspin to bring the ball down deep.",
+        "Kick bouncing low — not enough upward swing angle through the contact zone.",
+        "Inconsistent toss position — changes the ball contact point and ruins the kick."
+      ],
+      "variations": [
+        "Kick serve to body — same motion, different target — jams the returner on the hip at shoulder height.",
+        "Kick second serve challenge: must land 10 consecutive kick serves deep and 'high' — no exceptions.",
+        "Kick to backhand from ad court: combine depth, height, and placement for a complete second serve."
+      ],
+      "tags": ["serve", "kick", "depth", "height", "advanced", "second serve"],
+      "diagramData": {
+        "p1": { "x": 240, "y": 860 },
+        "p2": { "x": 150, "y": 60 },
+        "shots": [{ "x1": 240, "y1": 850, "x2": 175, "y2": 385 }],
+        "areas": [{ "x": 175, "y": 385, "r": 28 }],
+        "cones": [{ "x": 175, "y": 355 }]
+      }
+    },
+    {
+      "id": "SV-014",
+      "name": "Ad Court T Serve: Forehand Attacker",
+      "subcategory": "Flat",
+      "category": "Serve",
+      "skill_level": "intermediate",
+      "player_count": 2,
+      "duration_minutes": 10,
+      "objective": "Develop the ad court T serve — aimed at the center service line from the ad side. This serve goes directly to the returner's forehand but at an angle that eliminates their down-the-line return option. More importantly, it sets up the server's forehand on the plus-one by drawing the return back through the center, where the server is already in position. It is the tactical mirror of the deuce court wide slice.",
+      "setup": "Player 1 serves from the ad court baseline. Player 2 stands in the ad court return position. Player 1 targets the T — the center service line of the deuce service box. A cone marks the target landing zone.",
+      "instructions": [
+        "Player 1 serves flat or light-slice serves from the ad court to the T.",
+        "The serve should land within 1 foot of the center service line.",
+        "Player 2 returns — the return will likely come back through the center.",
+        "Player 1 attacks the plus-one with an aggressive forehand.",
+        "Track: how many T serves land in the target zone? Target: 7 out of 10."
+      ],
+      "coaching_cues": [
+        "Toss slightly to the left from the ad court — inside the baseline, toward the center.",
+        "From the ad court, T means going away from your body — you must drive across your body slightly.",
+        "Use flat or very light slice — heavy spin from the ad court sends the ball wide instead of T.",
+        "After serving, move right toward the center — position for the forehand plus-one.",
+        "The T serve from the ad court is often neglected — most players only serve wide from there."
+      ],
+      "common_errors": [
+        "Serve landing in the net — not enough pace to carry the ball to the back T from the ad side.",
+        "Serve going wide instead of T — too much leftward swing angle.",
+        "Not moving to position after the serve — caught behind on the plus-one forehand."
+      ],
+      "variations": [
+        "Ad court T then inside-in forehand: T serve draws returner in, inside-in finishes the point.",
+        "Mix ad T with ad wide: Player 2 must guess which side before the serve.",
+        "Second serve T: use a kick T from the ad court — extremely effective surprise second serve."
+      ],
+      "tags": ["serve", "flat", "ad court", "T serve", "intermediate", "pattern"],
+      "diagramData": {
+        "p1": { "x": 160, "y": 860 },
+        "p2": { "x": 120, "y": 60 },
+        "shots": [{ "x1": 160, "y1": 850, "x2": 200, "y2": 385 }],
+        "areas": [{ "x": 200, "y": 385, "r": 22 }],
+        "cones": [{ "x": 200, "y": 385 }]
+      }
+    },
+    {
+      "id": "SV-015",
+      "name": "Second Serve: Kick vs. Slice Selection",
+      "subcategory": "Kick",
+      "category": "Serve",
+      "skill_level": "advanced",
+      "player_count": 2,
+      "duration_minutes": 15,
+      "objective": "Train the deliberate selection between a kick second serve and a slice second serve depending on game context. The kick serve bounces high and is used against backhand returners and when more margin is needed. The slice second serve stays low and is used to prevent the returner from attacking, on fast surfaces, and as a surprise. Knowing when to use each — and being able to execute both — is an advanced server skill.",
+      "setup": "Player 1 serves second serves from both courts. Player 2 returns and calls 'kick' or 'slice' after each serve based on what they read from the spin. Player 1 must hit the intended serve type — mislabeling counts as an error.",
+      "instructions": [
+        "Player 1 calls 'kick' or 'slice' before each second serve — commits to the type.",
+        "Player 2 identifies which type was hit based on the ball behavior and calls it out.",
+        "If Player 2's call matches Player 1's call — correct execution.",
+        "If they don't match — Player 1 served the wrong type and counts as an error.",
+        "Play 20 second serves per set. Target: 17+ correct executions per set."
+      ],
+      "coaching_cues": [
+        "Kick: toss behind and to the left, swing 7 to 1, ball rises after bounce.",
+        "Slice: toss to the right, brush across the right side of the ball, ball stays low and curves.",
+        "Use the same pre-serve routine for both — disguise prevents the returner from reading early.",
+        "The kick generates more margin — use it when under pressure or on the second serve in big points.",
+        "The slice generates more horizontal movement — use it when you want to pull the returner wide."
+      ],
+      "common_errors": [
+        "Hitting a flat second serve instead of spin — results in double faults under pressure.",
+        "Always using the same type regardless of the call — not developing both spins.",
+        "Telegraphing the type through the toss — same toss for both is essential."
+      ],
+      "variations": [
+        "Player 2 calls the type they want — Player 1 must execute on command.",
+        "Serve out points: play full points with second serves only — kick or slice must be chosen before each.",
+        "Scoreboard: Player 1 loses a point for every double fault, Player 2 loses a point for misidentifying the spin."
+      ],
+      "tags": ["serve", "kick", "slice", "second serve", "selection", "advanced"],
+      "diagramData": {
+        "p1": { "x": 200, "y": 860 },
+        "p2": { "x": 200, "y": 60 },
+        "shots": [
+          { "x1": 200, "y1": 850, "x2": 240, "y2": 385 },
+          { "x1": 200, "y1": 850, "x2": 160, "y2": 385 }
+        ],
+        "areas": [
+          { "x": 240, "y": 385, "r": 22 },
+          { "x": 160, "y": 385, "r": 22 }
+        ]
+      }
+    },
+    {
+      "id": "SV-016",
+      "name": "Serve Under Match Pressure: Tiebreak Simulation",
+      "subcategory": "Flat",
+      "category": "Serve",
+      "skill_level": "intermediate",
+      "player_count": 2,
+      "duration_minutes": 15,
+      "objective": "Train the serve under the most pressure-intensive match condition — the tiebreak. The serve in a tiebreak is technically identical to any other serve, but most players tighten up, rush the motion, or completely change their approach under the stress of a close score. This drill replicates that pressure in practice so the serve becomes immune to tiebreak nerves.",
+      "setup": "Player 1 and Player 2 play a full tiebreak — 7 points, win by 2. Player 1 focuses specifically on serve quality: placement, first-serve percentage, and avoiding double faults. Player 2 returns aggressively and notes any changes in Player 1's serve under pressure.",
+      "instructions": [
+        "Play a full tiebreak from 0-0.",
+        "Player 1 tracks: first serve percentage, double faults, and placement accuracy.",
+        "Player 2 notes: does Player 1's serve change as the score gets tight?",
+        "After the tiebreak, review: what changed? Did pace drop? Did placement become safer?",
+        "Play 3 tiebreaks per session. Use the data to identify serve tendencies under pressure."
+      ],
+      "coaching_cues": [
+        "Breathe before the ball toss — one slow exhale resets the nervous system.",
+        "Use your first serve in the tiebreak — don't suddenly default to second-serve safety.",
+        "Slow your pre-serve routine down by one second — rushing is the first sign of nerves.",
+        "Stick to your planned placement — don't suddenly serve to a new location under pressure.",
+        "The serve motion under pressure should feel identical to practice — if it feels different, something changed."
+      ],
+      "common_errors": [
+        "Suddenly serving safely and short — giving the opponent easy attack balls at critical moments.",
+        "Rushing the ball toss — creates all the downstream problems in the swing.",
+        "Changing planned serve location at the last second — indecision causes errors."
+      ],
+      "variations": [
+        "Start the tiebreak at 5-5 — maximum pressure from the first point.",
+        "Triple consequence: Player 1 serves a 'serve set' — must win 5 consecutive serve games without double faults.",
+        "Partner tracking: Player 2 writes down every serve result — review after 3 tiebreaks."
+      ],
+      "tags": ["serve", "pressure", "tiebreak", "mental", "intermediate", "match-simulation"],
+      "diagramData": {
+        "p1": { "x": 200, "y": 860 },
+        "p2": { "x": 200, "y": 60 },
+        "shots": [
+          { "x1": 200, "y1": 850, "x2": 200, "y2": 370 },
+          { "x1": 200, "y1": 850, "x2": 315, "y2": 390 }
+        ],
+        "areas": [
+          { "x": 200, "y": 370, "r": 22 },
+          { "x": 315, "y": 390, "r": 22 }
+        ]
+      }
+    },
+    {
+      "id": "SV-017",
+      "name": "Serve Rhythm: Consistent Pre-Serve Routine",
+      "subcategory": "Flat",
+      "category": "Serve",
+      "skill_level": "beginner",
+      "player_count": 1,
+      "duration_minutes": 10,
+      "objective": "Develop a consistent, repeatable pre-serve routine that anchors focus, controls breathing, and creates reliable muscle memory before every single serve. The pre-serve routine is one of the most undercoached aspects of the game — every professional player has one, and the consistency of that routine directly contributes to the consistency of the serve itself. This drill builds the habit from scratch.",
+      "setup": "Player 1 serves from both courts with an empty basket. No returner needed. The focus is entirely on what happens before the ball toss — the routine, the breath, the bounce, and the reset.",
+      "instructions": [
+        "Player 1 establishes a pre-serve routine: bounce the ball 3 times, look at the target, exhale, toss.",
+        "Repeat this exact routine before every serve — no variations, no shortcuts.",
+        "Serve 20 balls maintaining the routine on every single one.",
+        "If Player 1 rushes or skips a step, they must stop and restart the routine from scratch.",
+        "After 20 serves, add a time pressure: Player 1 has exactly 25 seconds to complete the routine and serve."
+      ],
+      "coaching_cues": [
+        "The routine is not a delay — it is a reset. Use it as a tool, not a formality.",
+        "The exhale before the toss is the most important step — it releases shoulder tension.",
+        "Look at your target before the toss — your eyes set the aim before the motion starts.",
+        "Bounce the ball the same number of times every time — consistency in small things creates consistency in big things.",
+        "If you feel rushed, slow the routine down — never speed up the routine under pressure."
+      ],
+      "common_errors": [
+        "Skipping the routine when not under pressure — the routine only works if it is used every time.",
+        "Looking at the ground instead of the target before the toss.",
+        "Rushing through the routine — faster routine means more tension, not less."
+      ],
+      "variations": [
+        "Vary the bounce count — 2 bounces vs 5 bounces — find what feels best and stick with it.",
+        "Film the routine: check if it looks identical on every serve.",
+        "Partner times the routine: must be between 8-15 seconds from previous point ending to ball toss."
+      ],
+      "tags": ["serve", "routine", "mental", "beginner", "consistency", "solo"],
+      "diagramData": {
+        "p1": { "x": 200, "y": 860 },
+        "shots": [{ "x1": 200, "y1": 850, "x2": 200, "y2": 390 }],
+        "areas": [{ "x": 200, "y": 390, "r": 35 }]
+      }
+    },
+    {
+      "id": "SV-018",
+      "name": "Slice Serve Wide to Ad Court: Left-Hander's Weapon",
+      "subcategory": "Slice",
+      "category": "Serve",
+      "skill_level": "advanced",
+      "player_count": 2,
+      "duration_minutes": 12,
+      "objective": "Develop the wide slice serve from the ad court — a serve that curves sharply into the returner's backhand corner. For right-handers, this serve is the equivalent of the wide deuce-court slice but on the opposite side. It is used to pull opponents off the court, create open-court opportunities on the ad side, and disrupt two-handed backhand returners who need room to swing. When hit correctly, it is extremely difficult to attack.",
+      "setup": "Player 1 serves from the ad court baseline. Player 2 stands in the ad court return position. Player 1 targets the wide corner of the ad service box — as far toward the sideline as possible.",
+      "instructions": [
+        "Player 1 serves wide slice serves from the ad court, targeting the far corner of the ad service box.",
+        "The serve must curve outward toward the sideline — pulling Player 2 wide.",
+        "Player 2 returns from the wide position — Player 1 notes how wide Player 2 had to move.",
+        "After the return, Player 1 attacks the open ad side with the plus-one shot.",
+        "Track: how many slices pull Player 2 at least 2 feet outside the sideline? Target: 6 of 10."
+      ],
+      "coaching_cues": [
+        "From the ad court, toss to the left for a wide slice — left of your normal toss position.",
+        "Contact the ball on the right side (3 o'clock) — same as the deuce court wide slice.",
+        "Follow through to the left — the cross-body motion drives the rightward curve from the ad side.",
+        "The serve curves away from a right-handed returner's backhand — the discomfort is geometric.",
+        "After the serve, move right — the open court on the ad side is where the plus-one shot goes."
+      ],
+      "common_errors": [
+        "Toss too far right — cannot get across the ball from this position.",
+        "Serve going into the middle instead of wide — not enough cross-body brush.",
+        "Not following up the wide pull with a plus-one — wastes the opportunity."
+      ],
+      "variations": [
+        "Wide slice ad then drop shot: pull Player 2 wide then drop shot to the vacated ad side.",
+        "Mix ad wide and ad T: Player 2 must read which is coming.",
+        "Left-handed simulation: right-hander tries to replicate the left-hander's wide slice trajectory — educational perspective."
+      ],
+      "tags": ["serve", "slice", "wide", "ad court", "advanced", "angle"],
+      "diagramData": {
+        "p1": { "x": 160, "y": 860 },
+        "p2": { "x": 85, "y": 60 },
+        "shots": [{ "x1": 160, "y1": 850, "x2": 80, "y2": 388 }],
+        "areas": [{ "x": 80, "y": 388, "r": 20 }],
+        "cones": [{ "x": 80, "y": 388 }]
+      }
+    },
+    {
+      "id": "SV-019",
+      "name": "Serve First-Strike Tennis: Serve Plus Attack",
+      "subcategory": "Flat",
+      "category": "Serve",
+      "skill_level": "advanced",
+      "player_count": 2,
+      "duration_minutes": 15,
+      "objective": "Develop first-strike tennis — the tactical approach of winning the point on the serve or the very next shot. First-strike tennis requires both a quality serve that limits the return and a pre-planned plus-one that attacks the expected return location. This drill trains the complete serve-plus-one package: placement, read, move, and execute — all as one fluid, pre-planned sequence.",
+      "setup": "Before each point, Player 1 declares their planned pattern: for example, 'wide serve, plus-one forehand DTL'. Player 1 must execute exactly the declared pattern. Player 2 returns aggressively and plays out the point.",
+      "instructions": [
+        "Player 1 declares the pattern before each point: serve target and plus-one target.",
+        "Player 1 must execute both shots exactly as declared — wrong shot counts as a tactical error.",
+        "Player 2 returns aggressively and plays out the point regardless.",
+        "After 5 points, swap the server.",
+        "Track: how many declared patterns were executed correctly? Target: 4 out of 5."
+      ],
+      "coaching_cues": [
+        "Plan the plus-one before the serve — not after seeing where the return goes.",
+        "Move to the plus-one position during the serve — your feet should be moving immediately.",
+        "Serve to create the expected return: wide serve creates CC return, T serve creates CC or DTL return.",
+        "The plus-one must be aggressive — a neutral plus-one defeats the purpose of first-strike tennis.",
+        "If the return doesn't go where expected, adapt — but always have a default plan."
+      ],
+      "common_errors": [
+        "No pre-declaration — playing reactively instead of proactively.",
+        "Serve too weak — return is too aggressive to attack on the plus-one.",
+        "Plus-one not aggressive enough — giving the opponent a chance to reset."
+      ],
+      "variations": [
+        "Two-pattern alternation: Player 1 alternates between two declared patterns — keep Player 2 guessing.",
+        "First-strike points only: play a set where Player 1 must win within 3 shots or counts it as a loss.",
+        "Three-shot patterns: serve, plus-one, plus-two — declare all three before the point."
+      ],
+      "tags": ["serve", "first-strike", "pattern", "advanced", "tactical", "serve+1"],
+      "diagramData": {
+        "p1": { "x": 280, "y": 840 },
+        "p2": { "x": 100, "y": 60 },
+        "moves": [{ "x1": 240, "y1": 855, "x2": 280, "y2": 840 }],
+        "shots": [
+          { "x1": 240, "y1": 855, "x2": 315, "y2": 388 },
+          { "x1": 100, "y1": 70, "x2": 245, "y2": 800 },
+          { "x1": 278, "y1": 840, "x2": 310, "y2": 100 }
+        ],
+        "areas": [{ "x": 310, "y": 100, "r": 28 }]
+      }
+    },
+    {
+      "id": "SV-020",
+      "name": "No-Double-Fault Challenge: 20 Serves In a Row",
+      "subcategory": "Kick",
+      "category": "Serve",
+      "skill_level": "intermediate",
+      "player_count": 1,
+      "duration_minutes": 10,
+      "objective": "Build complete double-fault immunity through a high-volume, zero-tolerance second serve consistency challenge. Double faults are the most damaging unforced error in tennis — they give the opponent a free point without touching the ball. This drill isolates second serve quality under a simple but powerful mental constraint: zero double faults allowed in 20 consecutive second serves.",
+      "setup": "Player 1 serves from alternating courts using second serve motion only — spin serve, no flat serves allowed. Any ball that misses the service box counts as a double fault. Any double fault resets the count to zero.",
+      "instructions": [
+        "Player 1 serves from the deuce court with second-serve spin only.",
+        "Count consecutive makes — any miss resets the count to zero.",
+        "Alternate courts after every 5 serves: deuce, ad, deuce, ad.",
+        "Target: 20 consecutive second serves without a single double fault.",
+        "If 20 is reached, increase to 30. Record the personal best."
+      ],
+      "coaching_cues": [
+        "Commit fully to the spin — no flat second serves, no compromises.",
+        "A relaxed swing generates more spin than a tense one — breathe before each toss.",
+        "The double fault lives in hesitation — commit early and don't second-guess mid-swing.",
+        "Aim for the middle third of the service box — not the corners on second serves.",
+        "Treat every serve identically — no special tension because the count is at 18."
+      ],
+      "common_errors": [
+        "Going for too much placement on second serves — reliability first, placement second.",
+        "Hesitating mid-swing — commits to neither spin nor direction, goes into the net.",
+        "Mental tightness as the count gets high — exactly the situation this drill trains for."
+      ],
+      "variations": [
+        "Timed version: how many second serves can land in 90 seconds?",
+        "Target: must land in the back half of the service box only — no shallow second serves.",
+        "Add a returner: play only second serve points — tests if consistency holds against real returns."
+      ],
+      "tags": ["serve", "second serve", "consistency", "kick", "mental", "intermediate"],
+      "diagramData": {
+        "p1": { "x": 200, "y": 860 },
+        "shots": [
+          { "x1": 200, "y1": 850, "x2": 240, "y2": 385 },
+          { "x1": 160, "y1": 850, "x2": 160, "y2": 385 }
+        ],
+        "areas": [
+          { "x": 240, "y": 385, "r": 30 },
+          { "x": 160, "y": 385, "r": 30 }
+        ]
+      }
+    },
+    {
+      "id": "SV-021",
+      "name": "Serve Out Wide: Deuce Court Corner Precision",
+      "subcategory": "Flat",
+      "category": "Serve",
+      "skill_level": "intermediate",
+      "player_count": 2,
+      "duration_minutes": 10,
+      "objective": "Develop precision targeting for the wide corner of the deuce service box — the most dangerous serve position from the deuce side. A flat or slice serve that clips the corner of the service box near the sideline forces the returner into an impossible position: they must move quickly to reach it, have almost no angle for their return, and their footing is compromised. Corner serves win free points at every level of the game.",
+      "setup": "Place a cone in the corner of the deuce service box — 1 foot inside the sideline and 1 foot inside the service line. Player 1 serves from the deuce court baseline targeting the cone. Player 2 stands at the return position.",
+      "instructions": [
+        "Player 1 serves from the deuce court, targeting the corner cone.",
+        "Score based on proximity: within 6 inches of the cone = 3 points, within 1 foot = 2 points, in the correct service box = 1 point.",
+        "Serve 15 balls per set. Target: 20+ points out of a possible 45.",
+        "Play 3 sets. Track improvement across sets.",
+        "After each set, Player 2 returns any serves that land — notes which are unreturnable."
+      ],
+      "coaching_cues": [
+        "The corner serve requires precise toss placement — toss slightly right for a slice corner, center for flat.",
+        "Aim for the sideline at net level — the geometry of the angle makes the ball land in the corner.",
+        "Don't try to hit the cone directly — aim for the sideline, the angle takes the ball to the corner.",
+        "A slice corner serve curves away from the returner at the last moment — extremely difficult to reach.",
+        "Missing wide (outside the sideline) means you aimed correctly but need more topspin to bring it in."
+      ],
+      "common_errors": [
+        "Aiming at the cone directly instead of using the angle — sends the ball straight into the corner, not curving.",
+        "Missing the service box completely — toss position is too far right.",
+        "Going for the corner from a neutral serve position — need the right toss for each serve type."
+      ],
+      "variations": [
+        "Alternate corner and T: Player 2 must guess before each serve.",
+        "Corner serve percentage challenge: how high a percentage can Player 1 achieve across 30 serves?",
+        "Full point after corner: if the corner serve goes in, play the point — note how many win outright."
+      ],
+      "tags": ["serve", "flat", "precision", "deuce court", "corner", "intermediate"],
+      "diagramData": {
+        "p1": { "x": 240, "y": 860 },
+        "p2": { "x": 290, "y": 60 },
+        "shots": [{ "x1": 240, "y1": 850, "x2": 332, "y2": 398 }],
+        "areas": [{ "x": 332, "y": 398, "r": 18 }],
+        "cones": [{ "x": 332, "y": 398 }]
+      }
+    },
+    {
+      "id": "SV-022",
+      "name": "Kick Serve Consistency from Ad Court: 15 in a Row",
+      "subcategory": "Kick",
+      "category": "Serve",
+      "skill_level": "intermediate",
+      "player_count": 1,
+      "duration_minutes": 12,
+      "objective": "Build reliable kick serve consistency from the ad court through a count-based challenge that escalates mental pressure as the consecutive number grows. The ad court kick serve is the standard second serve for most players — it must be completely reliable because a double fault from the ad court at deuce or ad-out is especially costly. This drill forces the quality needed to make the kick an asset rather than a liability.",
+      "setup": "Player 1 serves kick serves only from the ad court. Count consecutive makes. Any ball missing the service box resets the count to zero immediately. No returner needed — focus is purely on serve landing accuracy.",
+      "instructions": [
+        "Player 1 serves kick serves from the ad court with consistent spin motion.",
+        "Count consecutive serves that land in the service box.",
+        "Any miss resets the count to zero — no exceptions.",
+        "Target: 15 consecutive kick serves without a miss.",
+        "Once 15 is achieved, move to the deuce court and repeat."
+      ],
+      "coaching_cues": [
+        "Toss consistently behind and slightly to the left — the foundation of every kick serve.",
+        "Commit fully to the 7-to-1 swing path on every ball — no flat-serve compromises.",
+        "Breathe between serves — the reset after a miss requires a mental and physical reset.",
+        "Spin is your safety net — the more topspin, the bigger the margin over the net.",
+        "Aim for the center of the service box — corners are for first serves, not second serves."
+      ],
+      "common_errors": [
+        "Going flat when the count is high and pressure builds — stick to the spin motion.",
+        "Rushing the toss — a hurried toss changes the contact point and kills the kick.",
+        "Giving up after resetting to zero — the mental recovery is part of the drill."
+      ],
+      "variations": [
+        "Target depth: kick serves must land past a cone placed halfway in the service box.",
+        "Both courts: 15 consecutive from ad, then immediately 15 from deuce — no break between.",
+        "Add location: odd-numbered serves to the wide corner, even-numbered to the center — placement plus consistency."
+      ],
+      "tags": ["serve", "kick", "consistency", "ad court", "intermediate", "second serve"],
+      "diagramData": {
+        "p1": { "x": 160, "y": 860 },
+        "shots": [
+          { "x1": 160, "y1": 850, "x2": 240, "y2": 385 },
+          { "x1": 160, "y1": 850, "x2": 200, "y2": 400 }
+        ],
+        "areas": [
+          { "x": 240, "y": 385, "r": 25 },
+          { "x": 165, "y": 390, "r": 25 }
+        ]
+      }
+    },
+    {
+      "id": "SV-023",
+      "name": "Serve Return Analysis: Reading the Server",
+      "subcategory": "Flat",
+      "category": "Serve",
+      "skill_level": "advanced",
+      "player_count": 2,
+      "duration_minutes": 15,
+      "objective": "Develop the ability to read and anticipate serve placement from early pre-serve cues — toss position, server's stance, shoulder angle, and ball contact point. Reading the serve is one of the highest-value skills in tennis: a returner who can guess the correct serve location even 30% better than randomly dramatically improves their return quality. This drill trains both the server to conceal and the returner to read.",
+      "setup": "Player 2 returns serves from Player 1. Player 2 must call the location before the ball lands — 'T', 'wide', or 'body'. Player 1 serves to varied locations attempting to disguise each one through identical pre-serve preparation.",
+      "instructions": [
+        "Player 1 serves to any of the three zones without pre-declaring the location.",
+        "Player 2 must call the location — 'T', 'wide', or 'body' — before the ball lands.",
+        "Track Player 2's accuracy: correct calls out of total serves.",
+        "After 15 serves, Player 1 reveals which cues Player 2 was reading — toss, stance, or shoulder.",
+        "Switch roles. Repeat 3 rounds."
+      ],
+      "coaching_cues": [
+        "Returner: watch the toss first — it is the earliest, most reliable cue to serve location.",
+        "Returner: a toss further right (for right-hander) usually means wide from deuce court.",
+        "Server: keep the toss in the same position for all three serves — the hardest skill in serving.",
+        "Returner: watch the server's shoulder at contact — where they face is often where the ball goes.",
+        "Server: use body rotation to disguise — turning the shoulder later hides the direction longer."
+      ],
+      "common_errors": [
+        "Returner guessing randomly instead of reading — not actually trying to read cues.",
+        "Server changing the toss for different serves — makes the serve too readable.",
+        "Returner reading the ball in flight instead of pre-contact cues — too late to adjust position."
+      ],
+      "variations": [
+        "Blindfold round: Player 1 covers their eyes during Player 2's serve — pure toss-reading test.",
+        "Video analysis: film serves from the returner's viewpoint — review which cues are visible.",
+        "Reading score: track Player 2's accuracy over 10 sessions — improvement is measurable."
+      ],
+      "tags": ["serve", "return", "reading", "advanced", "tactical", "match-simulation"],
+      "diagramData": {
+        "p1": { "x": 240, "y": 860 },
+        "p2": { "x": 170, "y": 60 },
+        "shots": [
+          { "x1": 240, "y1": 850, "x2": 200, "y2": 370 },
+          { "x1": 240, "y1": 850, "x2": 318, "y2": 390 },
+          { "x1": 240, "y1": 850, "x2": 155, "y2": 378 }
+        ],
+        "cones": [
+          { "x": 200, "y": 370 },
+          { "x": 318, "y": 390 },
+          { "x": 155, "y": 378 }
+        ]
+      }
+    },
+    {
+      "id": "SV-024",
+      "name": "Serve Then Baseline Rally: Full Point from the Start",
+      "subcategory": "Flat",
+      "category": "Serve",
+      "skill_level": "intermediate",
+      "player_count": 2,
+      "duration_minutes": 15,
+      "objective": "Train the mental and physical transition from serving to rallying — a skill that many players practice separately but rarely combine. After serving, the server must transition immediately from the service motion into a ready position for a full baseline rally. Many players are mentally and physically caught out on the plus-one because their body is still in the serve motion. This drill creates a seamless serve-to-rally transition.",
+      "setup": "Player 1 serves from both courts. Player 2 returns. Both players play out the full point from the serve — no fed balls, no second-chance practices. Every point starts with a real serve.",
+      "instructions": [
+        "Player 1 serves from the deuce court — first serve, then second serve if needed.",
+        "Both players play the full point out — no replays.",
+        "Player 1 tracks: first serve percentage, rallying quality after the serve, and points won.",
+        "After 10 points from the deuce court, switch to the ad court for 10 more.",
+        "Track whether points won on first serve differ from points won on second serve."
+      ],
+      "coaching_cues": [
+        "Complete the serve motion fully before thinking about the rally — premature focus kills the serve.",
+        "After the serve, recover to center baseline for the plus-one — don't stand near the service line.",
+        "Plan the plus-one before serving — know where you're going to hit before the return arrives.",
+        "Watch the return from the moment it leaves Player 2's racket — this is the key transition cue.",
+        "Stay physically loose after the serve — tension in the follow-through carries into the rally."
+      ],
+      "common_errors": [
+        "Not recovering to the baseline after the serve — gets caught at the service line for the rally.",
+        "Thinking about the rally during the serve — causes serving errors.",
+        "No pre-planned plus-one — reactive rally instead of proactive point construction."
+      ],
+      "variations": [
+        "Points only won on serve: Player 1 must win the point within 2 shots of the return or it counts as a loss.",
+        "Second serve only: forces use of spin serve then a real rally — harder transition.",
+        "Track 30 points: compare first serve win percentage vs second serve win percentage."
+      ],
+      "tags": ["serve", "rally", "transition", "match-simulation", "intermediate", "full point"],
+      "diagramData": {
+        "p1": { "x": 200, "y": 840 },
+        "p2": { "x": 200, "y": 60 },
+        "moves": [{ "x1": 240, "y1": 855, "x2": 200, "y2": 840 }],
+        "shots": [
+          { "x1": 240, "y1": 855, "x2": 200, "y2": 370 },
+          { "x1": 200, "y1": 70, "x2": 280, "y2": 810 },
+          { "x1": 200, "y1": 840, "x2": 100, "y2": 100 }
+        ],
+        "areas": [{ "x": 100, "y": 100, "r": 30 }]
+      }
+    },
+    {
+      "id": "SV-025",
+      "name": "Serve Into the Wind: Adapting Toss Under Conditions",
+      "subcategory": "Flat",
+      "category": "Serve",
+      "skill_level": "intermediate",
+      "player_count": 1,
+      "duration_minutes": 10,
+      "objective": "Train the ability to adapt the serve under difficult outdoor conditions — specifically wind. Wind is the most unpredictable external factor in tennis, and the serve is the most affected shot because the toss is exposed for 1-2 seconds in open air before contact. This drill builds the habit of reading wind conditions, adjusting the toss placement, and choosing the right serve type for the conditions.",
+      "setup": "This drill is designed for outdoor courts on a windy day. Player 1 serves into and with the wind from both courts. The drill teaches adaptation, not perfection — consistency under adverse conditions.",
+      "instructions": [
+        "Serve 10 balls into the wind — notice how it affects the toss and serve direction.",
+        "Adapt the toss: lower the toss into a headwind, keep it more controlled in a crosswind.",
+        "Serve 10 balls with the wind — notice that a flat serve may go long.",
+        "With the wind, add more topspin or aim deeper in the service box.",
+        "Track: first serve percentage into the wind vs with the wind."
+      ],
+      "coaching_cues": [
+        "Into the wind: lower the toss by 6-12 inches — less time in the air means less drift.",
+        "Into the wind: add more topspin — the headwind adds bounce height and keeps the serve in.",
+        "With the wind: aim slightly shorter in the service box — the wind will carry the ball longer.",
+        "Crosswind: adjust toss toward the wind so it drifts back to the ideal contact zone.",
+        "Never fight the wind — adapt to it. Trying to serve through conditions always causes more errors."
+      ],
+      "common_errors": [
+        "Keeping the same toss in windy conditions — the toss drifts and contact is wrong.",
+        "Getting frustrated instead of adapting — wind is equal for both players, use it strategically.",
+        "Not using more spin with the wind — flat serves go long when serving downwind."
+      ],
+      "variations": [
+        "Serve chart: track which serve types work best in each wind direction — build a personal wind reference.",
+        "Into-wind vs downwind serve percentage: compare first-serve in-percentage in both directions.",
+        "Use the wind as a weapon: kick serve into crosswind — the kick and wind combine for extreme curve."
+      ],
+      "tags": ["serve", "conditions", "wind", "adaptation", "intermediate", "outdoor"],
+      "diagramData": {
+        "p1": { "x": 200, "y": 860 },
+        "shots": [
+          { "x1": 200, "y1": 850, "x2": 200, "y2": 380 },
+          { "x1": 160, "y1": 850, "x2": 220, "y2": 388 }
+        ],
+        "areas": [
+          { "x": 200, "y": 380, "r": 35 },
+          { "x": 220, "y": 388, "r": 35 }
+        ]
+      }
+    },
+    {
+      "id": "SV-026",
+      "name": "Deuce Court Serve Variety: Four Patterns in One Session",
+      "subcategory": "Flat",
+      "category": "Serve",
+      "skill_level": "intermediate",
+      "player_count": 2,
+      "duration_minutes": 15,
+      "objective": "Develop four distinct serving patterns from the deuce court and train the ability to execute each one cleanly within the same practice session. Serving variety is what keeps returners guessing — a server who uses only one or two patterns becomes predictable and readable. This drill builds the habit of rotating between all four deuce court patterns: T flat, wide slice, body flat, and T kick.",
+      "setup": "Player 1 serves from the deuce court. Player 2 returns. Player 1 cycles through all four patterns in rotation — T flat, wide slice, body flat, T kick — without pre-declaring which is coming.",
+      "instructions": [
+        "Player 1 serves in a rotating pattern: T flat, wide slice, body flat, T kick — repeating the cycle.",
+        "Player 2 returns and calls the pattern after each serve: 'T flat', 'wide slice', etc.",
+        "If Player 2 identifies the pattern correctly, it reveals Player 1 is telegraphing — adjust.",
+        "After 20 serves (5 of each), play out full points in random order.",
+        "Track: first serve percentage for each pattern and which patterns Player 2 reads most often."
+      ],
+      "coaching_cues": [
+        "Each pattern requires a slightly different toss — practice the toss for each separately.",
+        "The body serve toss is the most similar to the T serve — use this similarity to disguise.",
+        "The kick toss goes furthest back — this is the hardest toss to hide.",
+        "Rotate patterns every point in a match — never serve to the same zone twice in a row.",
+        "If Player 2 reads 3 of 4 patterns, you are telegraphing — the toss is almost always the tell."
+      ],
+      "common_errors": [
+        "Only serving comfortably with 2 patterns — the other 2 become obvious when used.",
+        "Rotating predictably (always T, wide, body, kick in that order) — Player 2 anticipates the sequence.",
+        "Different pre-serve bouncing routine for different serves — an early giveaway."
+      ],
+      "variations": [
+        "Player 2 tries to guess each pattern before the serve lands — tracks reading accuracy.",
+        "Best pattern game: which pattern wins the most points in 20 serves? Track results.",
+        "Second serve variety: add kick and slice to the rotation — 6-pattern serve vocabulary."
+      ],
+      "tags": ["serve", "variety", "deuce court", "patterns", "intermediate", "tactical"],
+      "diagramData": {
+        "p1": { "x": 240, "y": 860 },
+        "p2": { "x": 160, "y": 60 },
+        "shots": [
+          { "x1": 240, "y1": 850, "x2": 200, "y2": 370 },
+          { "x1": 240, "y1": 850, "x2": 318, "y2": 390 },
+          { "x1": 240, "y1": 850, "x2": 148, "y2": 378 },
+          { "x1": 240, "y1": 850, "x2": 202, "y2": 375 }
+        ],
+        "cones": [
+          { "x": 200, "y": 370 },
+          { "x": 318, "y": 390 },
+          { "x": 148, "y": 378 }
+        ]
+      }
+    },
+    {
+      "id": "SV-027",
+      "name": "Slice Serve Plus Net Rush: Slice and Charge",
+      "subcategory": "Slice",
+      "category": "Serve",
+      "skill_level": "advanced",
+      "player_count": 2,
+      "duration_minutes": 12,
+      "objective": "Develop the slice serve and charge pattern — using a wide slice serve to pull the opponent off the court, then rushing the net behind it. The slice serve is ideal for this pattern because the wide angle it creates gives the server a direct path to the net while the returner is off-balance. This is a classic grass-court and fast-court tactic that creates immediate pressure and forces a difficult low pass.",
+      "setup": "Player 1 serves a wide slice from the deuce court, then immediately rushes the net. Player 2 returns from a wide position and attempts a passing shot. Player 1 must split step and volley.",
+      "instructions": [
+        "Player 1 serves a wide slice from the deuce court.",
+        "Immediately after the serve, Player 1 sprints toward the net.",
+        "Player 2 returns from an off-balance wide position — the return will likely be weak or floating.",
+        "Player 1 split steps as Player 2 contacts the return and volleys the finish.",
+        "Play out each point. Repeat 15 times. Track: how many net rushes after slice serve result in a won point?"
+      ],
+      "coaching_cues": [
+        "The wider the slice serve, the weaker the return — a great wide slice makes the net rush easy.",
+        "Start moving toward the net the instant the serve leaves the racket.",
+        "Sprint on a diagonal toward the net — not straight ahead, aim toward the expected return landing zone.",
+        "Split step right as Player 2's racket contacts the ball — before the ball is in the air.",
+        "From the wide volley position, aim cross-court into the open court — not down the line."
+      ],
+      "common_errors": [
+        "Not sprinting hard enough after the serve — arrives at the net too late for the volley.",
+        "Wide slice not wide enough — weak pull means Player 2 returns comfortably.",
+        "No split step — cannot change direction without the split, volley is always late."
+      ],
+      "variations": [
+        "Slice and charge from ad court — different angle, same pattern.",
+        "Kick serve and charge: kick to backhand then rush net — forces a high defensive return.",
+        "Double rush: serve and charge on both first and second serve — maximum aggression."
+      ],
+      "tags": ["serve", "slice", "net rush", "advanced", "volley", "deuce court"],
+      "diagramData": {
+        "p1": { "x": 310, "y": 560 },
+        "p2": { "x": 340, "y": 60 },
+        "moves": [{ "x1": 240, "y1": 855, "x2": 310, "y2": 560 }],
+        "shots": [
+          { "x1": 240, "y1": 855, "x2": 325, "y2": 388 },
+          { "x1": 340, "y1": 70, "x2": 275, "y2": 620 },
+          { "x1": 305, "y1": 555, "x2": 100, "y2": 120 }
+        ],
+        "areas": [{ "x": 100, "y": 120, "r": 25 }]
+      }
+    },
+    {
+      "id": "SV-028",
+      "name": "Serve Return Practice: Block and Drive",
+      "subcategory": "Flat",
+      "category": "Serve",
+      "skill_level": "intermediate",
+      "player_count": 2,
+      "duration_minutes": 12,
+      "objective": "Train two distinct return techniques — the block return (compact, absorbing pace) and the drive return (full swing, adding pace) — and develop the judgment to know when to use each. The block return is used on fast, wide serves when there is no time for a full swing. The drive return is used on slower, more central serves when there is room to step in and attack. Most players use one exclusively — this drill builds both.",
+      "setup": "Player 1 serves alternating fast and medium-pace serves to Player 2. Player 2 must identify which type is coming and use the correct return technique — block for fast serves, drive for slower ones.",
+      "instructions": [
+        "Player 1 alternates: one fast serve (Player 2 should block), then one medium serve (Player 2 should drive).",
+        "Player 2 calls 'block' or 'drive' before each return — commits to the technique.",
+        "After 10 alternating serves, Player 1 mixes randomly — Player 2 must read and react.",
+        "Track: how often does Player 2 choose the correct technique? Target: 8 of 10.",
+        "Play 4 rounds of 10 serves each."
+      ],
+      "coaching_cues": [
+        "Block return: racket up and firm before the ball arrives, short compact swing, redirect the pace.",
+        "Drive return: step in, take a full backswing, drive through the ball adding your own pace.",
+        "Key decision cue: how much time do you have? Fast serve = block. Time to set up = drive.",
+        "On the block return, the firm wrist is everything — a loose wrist kills direction control.",
+        "On the drive return, step forward into the ball — momentum drives the return deep."
+      ],
+      "common_errors": [
+        "Trying to drive a fast serve — results in a mis-hit or late contact.",
+        "Blocking a slow serve — wastes a free attack opportunity.",
+        "No decision before the serve — reacting instead of reading."
+      ],
+      "variations": [
+        "Block to specific target: block returns must go cross-court only.",
+        "Drive return aggression: drive return must be a winner or force an error within 2 shots.",
+        "Three-technique version: add a slice chipped return as a third option for wide serves."
+      ],
+      "tags": ["serve", "return", "block", "drive", "technique", "intermediate"],
+      "diagramData": {
+        "p1": { "x": 240, "y": 860 },
+        "p2": { "x": 160, "y": 60 },
+        "shots": [
+          { "x1": 240, "y1": 850, "x2": 310, "y2": 390 },
+          { "x1": 240, "y1": 850, "x2": 200, "y2": 375 },
+          { "x1": 310, "y1": 390, "x2": 240, "y2": 820 },
+          { "x1": 200, "y1": 375, "x2": 100, "y2": 800 }
+        ],
+        "areas": [
+          { "x": 240, "y": 820, "r": 25 },
+          { "x": 100, "y": 800, "r": 25 }
+        ]
+      }
+    },
+    {
+      "id": "SV-029",
+      "name": "Serve Percentage Tracking: First and Second",
+      "subcategory": "Flat",
+      "category": "Serve",
+      "skill_level": "beginner",
+      "player_count": 2,
+      "duration_minutes": 15,
+      "objective": "Measure and improve serve percentages through systematic tracking — the most data-driven serve drill available. Most players have no idea what their actual first and second serve percentages are, which makes it impossible to improve them deliberately. This drill creates immediate awareness through real-time tracking and identifies exactly where the serve breaks down: toss, swing, or placement.",
+      "setup": "Player 1 serves a full set of serves (30 first serves and 30 second serves). Player 2 tracks every serve: in or out, fault type (long, wide, net), and approximate landing location.",
+      "instructions": [
+        "Player 1 serves 30 first serves from alternating deuce and ad courts.",
+        "Player 2 records: in or out, and if out — long, wide, or net.",
+        "Calculate first serve percentage after 30 serves.",
+        "Player 1 serves 30 second serves — same tracking.",
+        "After the session, review the data: what is the most common fault type? Where does the ball land when it goes in?"
+      ],
+      "coaching_cues": [
+        "Long faults on flat serves: too much pace, not enough topspin to bring it down.",
+        "Wide faults: toss position too far to the side, or swing angle off.",
+        "Net faults: contact point too low, or not enough leg drive.",
+        "Use the data, not feelings — players almost always think their percentage is higher than it actually is.",
+        "Target first serve: 60%+ in. Target second serve: 90%+ in."
+      ],
+      "common_errors": [
+        "Not tracking honestly — every fault must be recorded, not just remembered selectively.",
+        "Serving differently because of tracking — must serve naturally for the data to be useful.",
+        "Ignoring the fault type data — knowing where it goes wrong is more valuable than just knowing the percentage."
+      ],
+      "variations": [
+        "Track placements: where in the service box does each serve land? Map patterns.",
+        "Weekly tracking: repeat this drill weekly for one month — measure the improvement.",
+        "Match day tracking: use a simple tally during a real match — compare practice vs match percentages."
+      ],
+      "tags": ["serve", "tracking", "percentage", "beginner", "data", "both courts"],
+      "diagramData": {
+        "p1": { "x": 200, "y": 860 },
+        "p2": { "x": 200, "y": 60 },
+        "shots": [
+          { "x1": 240, "y1": 855, "x2": 200, "y2": 370 },
+          { "x1": 160, "y1": 855, "x2": 160, "y2": 390 }
+        ],
+        "cones": [
+          { "x": 200, "y": 370 },
+          { "x": 310, "y": 390 },
+          { "x": 148, "y": 378 },
+          { "x": 160, "y": 390 }
+        ]
+      }
+    },
+    {
+      "id": "SV-030",
+      "name": "Kick Serve: Toss Position Isolation",
+      "subcategory": "Kick",
+      "category": "Serve",
+      "skill_level": "intermediate",
+      "player_count": 1,
+      "duration_minutes": 10,
+      "objective": "Isolate and train the ball toss specifically for the kick serve — the most different and most misunderstood toss in all of serving. The kick serve toss goes behind the head and slightly to the left (for right-handers), completely opposite from the flat or slice serve toss. Getting this toss position consistently correct is the single most important step in developing a reliable kick serve — without the right toss, no kick is possible.",
+      "setup": "Player 1 stands at the baseline with balls only — no racket for Phase 1. Player 1 practices tossing the ball to the kick serve position and letting it land, marking where it falls. A cone marks the ideal landing spot.",
+      "instructions": [
+        "Phase 1: Player 1 tosses to kick serve position without a racket — ball should land behind the left foot.",
+        "Toss 15 balls to the kick position. Mark where they land. Target: within 6 inches of the cone.",
+        "Phase 2: add the swing — toss and serve, using only kick serve motion.",
+        "Track: how many kick serves land in the service box vs how many flat serves would normally land in.",
+        "Notice the feel difference between the kick toss and the flat serve toss."
+      ],
+      "coaching_cues": [
+        "Kick toss goes behind your head and to the left — directly above or slightly left of the left foot.",
+        "Flat serve toss goes in front and to the right — the two tosses are in completely different positions.",
+        "If the kick toss lands in front of you, it is a flat serve toss — it must land behind.",
+        "Keep the tossing arm straight all the way up — bending creates inconsistency.",
+        "Practice the toss 50 times without hitting — perfect toss position before adding the swing."
+      ],
+      "common_errors": [
+        "Kick toss landing too far in front — makes it physically impossible to generate kick spin.",
+        "Tossing too far to the right — removes the ability to swing 7 to 1 across the ball.",
+        "Inconsistent toss height — too high or too low changes the swing timing completely."
+      ],
+      "variations": [
+        "Side-by-side toss comparison: alternate flat toss and kick toss — feel the difference clearly.",
+        "Film the toss: use slow motion video to verify the toss lands behind the left foot.",
+        "Partner hold: Player 2 holds a racket at the ideal kick toss position — Player 1 tosses to touch it."
+      ],
+      "tags": ["serve", "kick", "toss", "technique", "intermediate", "solo"],
+      "diagramData": {
+        "p1": { "x": 200, "y": 860 },
+        "shots": [{ "x1": 200, "y1": 850, "x2": 200, "y2": 388 }],
+        "areas": [{ "x": 200, "y": 388, "r": 30 }],
+        "cones": [{ "x": 185, "y": 830 }]
+      }
+    },
+    {
+      "id": "SV-031",
+      "name": "Serve Plus Two: Three-Shot Point Construction",
+      "subcategory": "Flat",
+      "category": "Serve",
+      "skill_level": "advanced",
+      "player_count": 2,
+      "duration_minutes": 15,
+      "objective": "Develop the three-shot point construction pattern: serve, plus-one, plus-two — all pre-planned and executed in sequence. While the serve-plus-one is the standard unit of offensive tennis, the plus-two extends the planning one shot further, creating more complex point constructions and training the ability to see multiple shots ahead. This is how professional players build and finish points tactically.",
+      "setup": "Before each point, Player 1 declares all three shots: serve target, plus-one target, plus-two target. Player 1 must execute all three shots as declared. Player 2 returns and plays the point out.",
+      "instructions": [
+        "Player 1 declares the full three-shot pattern before each point — for example: 'wide slice, plus-one cross-court forehand, plus-two DTL forehand'.",
+        "Player 1 must execute all three shots exactly as declared.",
+        "If Player 2's return goes to a different spot, Player 1 adapts but still tries to hit the declared plus-two target.",
+        "Play out the full point after the three declared shots.",
+        "Track: how many complete three-shot patterns were executed as declared? Target: 3 out of 5."
+      ],
+      "coaching_cues": [
+        "Visualize all three shots before the serve — see the full pattern before starting.",
+        "Serve to set up the plus-one, plus-one to set up the plus-two — each shot feeds the next.",
+        "The plus-two should be the most aggressive shot — the setup built to it.",
+        "If execution fails on shot one, adapt the pattern but keep going.",
+        "Advanced players plan to the plus-two — recreational players only plan to the plus-one."
+      ],
+      "common_errors": [
+        "Declaring an unrealistic pattern — serve wide, plus-one DTL, plus-two CC is not geometrically sound.",
+        "Abandoning the declared pattern after the first shot — defeats the planning purpose.",
+        "Not moving between declared shots — poor positioning makes execution of later shots impossible."
+      ],
+      "variations": [
+        "Random pattern: Player 2 calls all three shot targets before Player 1 serves — tests execution flexibility.",
+        "Pattern book: create 5 standard deuce-court and 5 ad-court patterns — practice all 10 every session.",
+        "Live competition: Player 1 gets bonus points for completing the declared three-shot pattern."
+      ],
+      "tags": ["serve", "serve+1", "three shot", "pattern", "advanced", "tactical"],
+      "diagramData": {
+        "p1": { "x": 280, "y": 820 },
+        "p2": { "x": 100, "y": 60 },
+        "moves": [{ "x1": 240, "y1": 855, "x2": 280, "y2": 820 }],
+        "shots": [
+          { "x1": 240, "y1": 855, "x2": 315, "y2": 388 },
+          { "x1": 100, "y1": 70, "x2": 250, "y2": 800 },
+          { "x1": 280, "y1": 820, "x2": 100, "y2": 100 },
+          { "x1": 100, "y1": 100, "x2": 295, "y2": 820 }
+        ],
+        "areas": [{ "x": 295, "y": 820, "r": 25 }]
+      }
+    },
+    {
+      "id": "SV-032",
+      "name": "Ace Zone Challenge: Target the Lines",
+      "subcategory": "Flat",
+      "category": "Serve",
+      "skill_level": "advanced",
+      "player_count": 1,
+      "duration_minutes": 12,
+      "objective": "Train pinpoint serve accuracy through a points-based target challenge where the closer to the line the serve lands, the more points it earns. This drill pushes serving precision to its absolute limit and trains the ability to intentionally serve near lines — a skill that separates club-level servers from competitive-level servers. Most players aim well inside the service box out of caution; this drill builds the confidence to serve close to lines.",
+      "setup": "Place cones at three target zones in the deuce service box: T (1 foot from center line), wide (1 foot from sideline), and body (center of box). Serve for points based on proximity to each zone.",
+      "instructions": [
+        "Player 1 serves 30 balls, alternating between T and wide targets.",
+        "Score: within 6 inches of the sideline or center line = 3 points. Within 1 foot = 2 points. In the service box = 1 point. Out = 0.",
+        "Track total score across 30 serves. Target: 55+ out of a possible 90.",
+        "Rest 2 minutes. Repeat from the ad court.",
+        "Compare deuce and ad court scores — most players have a weaker side."
+      ],
+      "coaching_cues": [
+        "Aim for the line at net level — the flight path creates the landing spot. Don't aim at the floor.",
+        "Use spin to give yourself margin: a slice serve can start outside the sideline and curve back in.",
+        "The toss position is the foundation — wrong toss means wrong angle no matter how well you swing.",
+        "Dare to serve close to lines in practice — if you never practice near-line serves, you'll never hit them in matches.",
+        "Near-misses (just wide) are good feedback — they mean the aim was right, adjust the spin to bring it in."
+      ],
+      "common_errors": [
+        "Aiming too conservatively — serving to the middle of the service box scores 1 point maximum.",
+        "Trying to aim at the floor instead of the line at net height — incorrect mental target.",
+        "Going for pace rather than placement — a well-placed 70% serve beats a wild 100% serve."
+      ],
+      "variations": [
+        "Partner version: Player 2 returns and calls the score — adds real accountability.",
+        "Five-round challenge: play 5 rounds of 20 serves — track improvement across rounds.",
+        "Serve ace leaderboard: track personal best score across weeks."
+      ],
+      "tags": ["serve", "accuracy", "precision", "advanced", "challenge", "solo"],
+      "diagramData": {
+        "p1": { "x": 240, "y": 860 },
+        "shots": [
+          { "x1": 240, "y1": 850, "x2": 200, "y2": 370 },
+          { "x1": 240, "y1": 850, "x2": 330, "y2": 395 }
+        ],
+        "cones": [
+          { "x": 200, "y": 370 },
+          { "x": 330, "y": 395 },
+          { "x": 265, "y": 382 }
+        ],
+        "areas": [
+          { "x": 200, "y": 370, "r": 18 },
+          { "x": 330, "y": 395, "r": 18 }
+        ]
+      }
+    },
+    {
+      "id": "SV-033",
+      "name": "Second Serve Attack: Returner Aggression Drill",
+      "subcategory": "Kick",
+      "category": "Serve",
+      "skill_level": "advanced",
+      "player_count": 2,
+      "duration_minutes": 15,
+      "objective": "Train the serve from the returner's attacking perspective — deliberately hitting second serves and having the returner practice attacking them aggressively. Understanding what makes a second serve attackable gives the server crucial feedback about what not to serve. It also trains the returner to recognize and exploit weak second serves in match play — a devastating skill against servers who don't have a reliable second serve.",
+      "setup": "Player 1 serves second serves only — kick and slice. Player 2 attacks every second serve aggressively — stepping in, taking early, driving the return with full intention to win the point. Player 1 plays the point out from the second serve position.",
+      "instructions": [
+        "Player 1 serves only second serves.",
+        "Player 2 steps in and attacks every single second serve — no defensive or neutral returns allowed.",
+        "Player 1 tries to win the point from a defensive position after the return.",
+        "Track: what percentage of second serves does Player 2 win the point on? Target for Player 1: keep it below 50%.",
+        "After 15 serves, Player 1 adjusts: use a better kick second serve to reduce attackability."
+      ],
+      "coaching_cues": [
+        "Server: a high-kicking second serve is far harder to attack than a flat or slow-spin second serve.",
+        "Server: depth matters — short second serves sit up and beg to be attacked.",
+        "Returner: step in early on second serves — the returner should almost always be inside the baseline.",
+        "Returner: aim the return cross-court with pace — the server's position is behind the baseline.",
+        "Server: if Player 2 is winning more than 60% on second serve, the second serve needs significant work."
+      ],
+      "common_errors": [
+        "Returner being too cautious — must genuinely attack every second serve.",
+        "Server giving up after the first missed second serve — resilience under attack is part of the drill.",
+        "Server not adjusting after feedback — if Player 2 attacks easily, the second serve quality is insufficient."
+      ],
+      "variations": [
+        "Switch roles after 15 serves — both players practice both sides.",
+        "Returner targets: must return DTL with the attack, not just cross-court.",
+        "Second serve contest: play a full set using only second serves — reveals true second serve quality."
+      ],
+      "tags": ["serve", "second serve", "return", "aggressive", "advanced", "match-simulation"],
+      "diagramData": {
+        "p1": { "x": 200, "y": 800 },
+        "p2": { "x": 160, "y": 100 },
+        "moves": [{ "x1": 160, "y1": 60, "x2": 160, "y2": 100 }],
+        "shots": [
+          { "x1": 200, "y1": 855, "x2": 200, "y2": 388 },
+          { "x1": 160, "y1": 100, "x2": 100, "y2": 800 },
+          { "x1": 200, "y1": 800, "x2": 295, "y2": 100 }
+        ],
+        "areas": [{ "x": 100, "y": 800, "r": 30 }]
+      }
+    },
+    {
+      "id": "SV-034",
+      "name": "Serve Without Looking: Kinesthetic Awareness",
+      "subcategory": "Flat",
+      "category": "Serve",
+      "skill_level": "advanced",
+      "player_count": 1,
+      "duration_minutes": 10,
+      "objective": "Develop kinesthetic awareness in the serve by reducing visual reliance. Most players over-depend on visual feedback during the serve — watching the ball land, watching the net, watching the opponent. This over-attention to visual information during the serve actually disrupts the motor pattern. Serving without watching the ball land forces the body to rely on feel and develops a more internally consistent, feel-based serve motion.",
+      "setup": "Player 1 serves from the baseline with a basket of balls. After each serve, Player 1 closes their eyes immediately after contact and calls out where they think the serve landed — wide, T, long, in the box, or net. Only then do they open their eyes.",
+      "instructions": [
+        "Player 1 serves from the deuce court.",
+        "Immediately after contact, Player 1 closes their eyes and calls the landing location: 'T', 'wide', 'long', 'net', 'in'.",
+        "Player 1 then opens their eyes and checks if the call was correct.",
+        "Track accuracy: how often does the body's feel match the actual landing? Target: 70%+ accuracy.",
+        "Serve 20 balls from each court. Rest 2 minutes between courts."
+      ],
+      "coaching_cues": [
+        "The feel at contact tells you where the ball will go — if you trust it, you can call it.",
+        "A serve that feels late at contact usually goes wide — the body knows.",
+        "A serve that feels low at contact usually hits the net — trust that feeling.",
+        "Build internal feedback: when you serve a great ball, memorize exactly what that felt like.",
+        "Kinesthetic serves are more consistent than visually-guided serves — less noise, more signal."
+      ],
+      "common_errors": [
+        "Opening the eyes immediately after contact — defeats the entire purpose.",
+        "Not actually committing to the call — saying 'I don't know' every time.",
+        "Changing the serving motion because of the exercise — must serve normally."
+      ],
+      "variations": [
+        "Extended version: close eyes for the last 3 ball bounces of the pre-serve routine as well.",
+        "Partner confirms: Player 2 calls out actual landing location after Player 1 calls — compares.",
+        "Feel comparison: serve 10 with full visual attention then 10 kinesthetic — compare accuracy."
+      ],
+      "tags": ["serve", "kinesthetic", "awareness", "advanced", "solo", "technique"],
+      "diagramData": {
+        "p1": { "x": 240, "y": 860 },
+        "shots": [{ "x1": 240, "y1": 850, "x2": 200, "y2": 380 }],
+        "areas": [{ "x": 200, "y": 380, "r": 35 }]
+      }
+    },
+    {
+      "id": "SV-035",
+      "name": "Serve Deuce Court: Wide vs T Alternation",
+      "subcategory": "Slice",
+      "category": "Serve",
+      "skill_level": "intermediate",
+      "player_count": 2,
+      "duration_minutes": 12,
+      "objective": "Build serve versatility from the deuce court by training strict alternation between the wide and T serve. These two serves are the primary weapons from the deuce court, and being able to execute both precisely — and switch between them with identical preparation — makes a server extremely difficult to return. The alternation removes predictability while training both placements equally.",
+      "setup": "Player 1 serves from the deuce court, alternating strictly between wide (even serves) and T (odd serves). Player 2 reads and returns. Cones mark both target zones. Neither serve location should be readable from the preparation.",
+      "instructions": [
+        "Serve 1 goes to the T. Serve 2 goes wide. Serve 3 goes to T. Repeat strictly alternating.",
+        "Player 2 must not know which is coming — identical preparation is required.",
+        "Player 2 calls the location before the ball lands — tracks how often they read it correctly.",
+        "After 10 alternating serves, play out full points in random order.",
+        "If Player 2 reads correctly more than 6 of 10 times, Player 1 is telegraphing — identify and fix the tell."
+      ],
+      "coaching_cues": [
+        "The toss must be in the same position for both serves — this is the hardest part of this drill.",
+        "Flat T serve: drive through the ball straight, slight inside toss.",
+        "Wide slice: brush the right side, slightly wider toss — minimize the toss difference.",
+        "Body position and weight transfer should look identical for both — disguise starts from the ground up.",
+        "If Player 2 reads 8 of 10, there is a major tell — most likely the toss or shoulder direction."
+      ],
+      "common_errors": [
+        "Different toss for wide vs T — immediately readable even to untrained returners.",
+        "Different body lean for the two serves — leans toward the target subconsciously.",
+        "Patterns within the alternation — Player 2 predicts because the alternation is too regular."
+      ],
+      "variations": [
+        "Random instead of alternating: Player 1 chooses freely, Player 2 must read.",
+        "Add body serve: now three options — T, wide, body — all with identical preparation.",
+        "Return quality: track not just where Player 2 goes but how aggressive each return is."
+      ],
+      "tags": ["serve", "deuce court", "wide", "T serve", "alternation", "intermediate"],
+      "diagramData": {
+        "p1": { "x": 240, "y": 860 },
+        "p2": { "x": 200, "y": 60 },
+        "shots": [
+          { "x1": 240, "y1": 850, "x2": 200, "y2": 370 },
+          { "x1": 240, "y1": 850, "x2": 320, "y2": 392 }
+        ],
+        "cones": [
+          { "x": 200, "y": 370 },
+          { "x": 320, "y": 392 }
+        ],
+        "areas": [
+          { "x": 200, "y": 370, "r": 22 },
+          { "x": 320, "y": 392, "r": 22 }
+        ]
+      }
+    },
+    {
+      "id": "SV-036",
+      "name": "Kick Serve into Running Forehand: Full Pattern",
+      "subcategory": "Kick",
+      "category": "Serve",
+      "skill_level": "advanced",
+      "player_count": 2,
+      "duration_minutes": 15,
+      "objective": "Develop the kick serve into a running forehand pattern — one of the most tactically complete patterns in modern tennis. The kick serve bounces high to the returner's backhand, forcing a weak reply that often comes back cross-court. The server, having anticipated this, has already moved to run around the weak return and hits an inside-out or inside-in forehand. This three-step sequence — kick, read, run-around forehand — is used constantly at the professional level.",
+      "setup": "Player 1 serves a kick to the returner's backhand from the ad court. Player 2 returns with the backhand — likely a cross-court or down the middle return. Player 1 anticipates the return and runs around to hit a forehand.",
+      "instructions": [
+        "Player 1 serves a kick from the ad court to Player 2's backhand.",
+        "Player 2 returns — the kick's high bounce makes an aggressive backhand return difficult.",
+        "Player 1 reads the likely weak cross-court return and runs around it for a forehand.",
+        "Player 1 hits an inside-out or inside-in forehand to end the point.",
+        "Repeat 15 times. Track: how many kick serves produce a weak enough return to run around?"
+      ],
+      "coaching_cues": [
+        "The kick serve quality determines everything — a high, deep kick produces a defensive return.",
+        "Read the return early — the moment the kick bounces high, Player 2's options are limited.",
+        "Move toward the center before running around — don't run around from the wide position.",
+        "Inside-out forehand goes to the ad side — the open court created by the kick.",
+        "If Player 2 returns DTL, Player 1 must adjust — not every kick produces a run-around opportunity."
+      ],
+      "common_errors": [
+        "Running around too early — before reading the return, leaving the DTL exposed.",
+        "Kick serve not high enough — Player 2 can attack the return aggressively.",
+        "Inside-out forehand going DTL accidentally — opens your own side."
+      ],
+      "variations": [
+        "Kick then inside-in: run around and go inside-in — varies the pattern.",
+        "Deuce court kick to backhand: serves T kick, runs around the return.",
+        "Three-shot: kick serve, run-around forehand, plus-two finish — full point construction."
+      ],
+      "tags": ["serve", "kick", "run-around", "forehand", "pattern", "advanced"],
+      "diagramData": {
+        "p1": { "x": 120, "y": 840 },
+        "p2": { "x": 280, "y": 60 },
+        "moves": [{ "x1": 160, "y1": 855, "x2": 120, "y2": 840 }],
+        "shots": [
+          { "x1": 160, "y1": 855, "x2": 250, "y2": 388 },
+          { "x1": 280, "y1": 70, "x2": 185, "y2": 810 },
+          { "x1": 120, "y1": 840, "x2": 95, "y2": 100 }
+        ],
+        "areas": [{ "x": 95, "y": 100, "r": 28 }]
+      }
+    },
+    {
+      "id": "SV-037",
+      "name": "Serve: Left-Right Alternating Court Practice",
+      "subcategory": "Flat",
+      "category": "Serve",
+      "skill_level": "beginner",
+      "player_count": 1,
+      "duration_minutes": 10,
+      "objective": "Build equal serve comfort and consistency from both the deuce and ad courts by alternating courts after every serve. Many players develop a dominant serving court — they are far more comfortable from one side than the other. This creates a predictable weakness that opponents exploit in matches. Alternating courts trains equal comfort and identifies which court needs more work.",
+      "setup": "Player 1 serves from alternating courts — deuce, then ad, then deuce, then ad — after every single serve. A basket of balls is placed at the center mark. Player 1 walks from side to side between each serve.",
+      "instructions": [
+        "Serve from the deuce court. Walk to the ad court position.",
+        "Serve from the ad court. Walk to the deuce court position.",
+        "Continue alternating every serve for 30 total serves.",
+        "Track separately: deuce court makes and misses, ad court makes and misses.",
+        "Calculate the percentage difference between courts — identify the weaker side."
+      ],
+      "coaching_cues": [
+        "The deuce court serves to the right half of the opposite service box.",
+        "The ad court serves to the left half of the opposite service box.",
+        "Body position changes slightly between courts — adjust your stance for each side.",
+        "Most players serve better from one court — notice which one and spend extra time on the weaker side.",
+        "The toss position adjusts slightly between courts: deuce toss is slightly more to the left than ad toss."
+      ],
+      "common_errors": [
+        "Serving too quickly on the unfamiliar court — slow down and reset the routine.",
+        "Using a different grip on one court than the other — same continental grip on both.",
+        "Not tracking which court is weaker — no awareness means no targeted improvement."
+      ],
+      "variations": [
+        "Track placement as well: are you serving T more on one court and wide more on the other?",
+        "5-minute deuce, 5-minute ad: dedicated time on each court rather than alternating.",
+        "Add a returner: Player 2 stands in the return position — does the weaker court produce weaker serves?"
+      ],
+      "tags": ["serve", "both courts", "consistency", "beginner", "solo", "alternating"],
+      "diagramData": {
+        "p1": { "x": 200, "y": 860 },
+        "shots": [
+          { "x1": 240, "y1": 855, "x2": 200, "y2": 370 },
+          { "x1": 160, "y1": 855, "x2": 200, "y2": 390 }
+        ],
+        "areas": [
+          { "x": 200, "y": 370, "r": 30 },
+          { "x": 200, "y": 390, "r": 30 }
+        ]
+      }
+    },
+    {
+      "id": "SV-038",
+      "name": "Serve: Dealing with Double-Fault Pressure at 30-40",
+      "subcategory": "Kick",
+      "category": "Serve",
+      "skill_level": "intermediate",
+      "player_count": 2,
+      "duration_minutes": 15,
+      "objective": "Train the specific high-pressure scenario of serving at 30-40 — the most critical serving situation in a game. At 30-40, the server must win the next point to stay in the game; a double fault gives the game away for free. This specific score creates maximum tension and reveals exactly how the serve changes under that pressure. Training this exact scenario in practice immunizes the serve against that specific pressure.",
+      "setup": "Every point begins at 30-40. Player 1 must serve and win the point or the game is lost. Player 2 returns aggressively — there is no mercy. Player 1 must use their best second serve on every second ball.",
+      "instructions": [
+        "Begin every point at 30-40. Player 1 serves.",
+        "Player 1 gets one first serve and one second serve — just like a real game.",
+        "Player 2 returns aggressively on every serve.",
+        "Track: first serve percentage, double faults, and games won vs lost at 30-40.",
+        "Play 20 points at 30-40. Target: win 12+ and zero double faults."
+      ],
+      "coaching_cues": [
+        "The second serve at 30-40 must be your best second serve — not your safest, your best.",
+        "Slow your pre-serve routine down by 1 second — the biggest mistake under pressure is rushing.",
+        "Commit to a specific placement before the serve — indecision at 30-40 causes double faults.",
+        "First serve: don't suddenly serve defensively — your first serve should not change under pressure.",
+        "If you miss the first serve, reset: take a breath, bounce the ball 3 times, and commit to the second."
+      ],
+      "common_errors": [
+        "Double-fault on the second serve at 30-40 — the drill is specifically designed to eliminate this.",
+        "Rushing the routine under pressure — the single most common cause of 30-40 double faults.",
+        "Suddenly serving to a safe location instead of an intentional one — reveals pressure response."
+      ],
+      "variations": [
+        "40-0 practice: start at 40-0 and serve without pressure — compare serves at 40-0 vs 30-40.",
+        "Deuce-ad practice: alternate 30-40 and deuce situations — different pressure levels.",
+        "Score progression: start at 0-0, play to 30-40 naturally, then practice the pressure moment authentically."
+      ],
+      "tags": ["serve", "pressure", "mental", "30-40", "intermediate", "match-simulation"],
+      "diagramData": {
+        "p1": { "x": 200, "y": 860 },
+        "p2": { "x": 200, "y": 60 },
+        "shots": [
+          { "x1": 240, "y1": 855, "x2": 200, "y2": 372 },
+          { "x1": 160, "y1": 855, "x2": 240, "y2": 388 }
+        ],
+        "areas": [
+          { "x": 200, "y": 372, "r": 28 },
+          { "x": 240, "y": 388, "r": 28 }
+        ]
+      }
+    },
+    {
+      "id": "SV-039",
+      "name": "Serve Disguise: Same Motion, Three Spins",
+      "subcategory": "Flat",
+      "category": "Serve",
+      "skill_level": "advanced",
+      "player_count": 2,
+      "duration_minutes": 15,
+      "objective": "Train the ability to generate three different serve spins — flat, slice, and kick — from the same visible preparation. The gold standard of serving disguise is when the returner cannot distinguish the serve type from the pre-contact motion. If all three spins begin from the same toss, stance, and swing initiation, the serve becomes essentially unreadable and the returner must react purely to ball behavior after contact.",
+      "setup": "Player 1 serves from the deuce court using three serve types in a random sequence. Player 2 must call the spin type — flat, slice, or kick — based only on the pre-contact cues, before the ball lands. Player 1 confirms after each serve.",
+      "instructions": [
+        "Player 1 serves in random order: flat, slice, kick — no declared sequence.",
+        "Player 2 calls 'flat', 'slice', or 'kick' before the ball lands.",
+        "Player 1 confirms which type was served.",
+        "Track Player 2's accuracy — if above 70%, Player 1 is telegraphing.",
+        "Play 30 serves. Target for disguise: Player 2 guesses correctly less than 50% of the time."
+      ],
+      "coaching_cues": [
+        "All three spins begin from the same toss height and position — this is the core disguise element.",
+        "The difference between spins happens at the last 6 inches of the swing — contact point and angle.",
+        "Flat: swing through the ball at 12 o'clock, drive forward.",
+        "Slice: swing at 3 o'clock, brush across the right side.",
+        "Kick: swing from 7 to 1 o'clock, brush across the back from below.",
+        "The shoulder turn at contact reveals the spin — minimize visible shoulder differences."
+      ],
+      "common_errors": [
+        "Different toss for each spin — the toss is the most common tell.",
+        "Different stance width for kick vs flat — stance reveals the spin.",
+        "Player 2 guessing more than 70% correctly — there is a significant tell somewhere in the motion."
+      ],
+      "variations": [
+        "Video analysis: film from Player 2's angle and analyze what cues are visible.",
+        "Partner experiment: Player 2 tries to read specific body parts — toss arm, shoulder, elbow — and reports.",
+        "Blind guess baseline: without any disguise, how often does Player 2 guess correctly? Compare to disguised version."
+      ],
+      "tags": ["serve", "disguise", "spin", "flat", "slice", "kick", "advanced"],
+      "diagramData": {
+        "p1": { "x": 240, "y": 860 },
+        "p2": { "x": 170, "y": 60 },
+        "shots": [
+          { "x1": 240, "y1": 850, "x2": 200, "y2": 370 },
+          { "x1": 240, "y1": 850, "x2": 315, "y2": 390 },
+          { "x1": 240, "y1": 850, "x2": 175, "y2": 380 }
+        ],
+        "cones": [
+          { "x": 200, "y": 370 },
+          { "x": 315, "y": 390 },
+          { "x": 175, "y": 380 }
+        ]
+      }
+    },
+    {
+      "id": "SV-040",
+      "name": "Serve Grand Finale: Full Match Serve Set",
+      "subcategory": "Flat",
+      "category": "Serve",
+      "skill_level": "intermediate",
+      "player_count": 2,
+      "duration_minutes": 20,
+      "objective": "Synthesize all serve skills developed across the serve category in a comprehensive match-style assessment. This drill simulates an entire service game set — using all serve types, all placements, both courts, and all pressure situations. It reveals how well serve skills transfer to real match play and identifies what still needs work under genuine competitive conditions.",
+      "setup": "Player 1 and Player 2 play a full practice set (first to 6 games, win by 2) where Player 1 focuses specifically on serve quality. Player 2 tracks every serve: type, placement, result, and whether it helped win the point.",
+      "instructions": [
+        "Play a full practice set. Player 1 serves in their normal service games.",
+        "Player 2 tracks: first serve percentage, double faults, which serve placements win points.",
+        "Player 1 focuses on using all serve types — flat, slice, kick — and all placements — T, wide, body.",
+        "After each service game, review what worked and what didn't.",
+        "After the set, create a specific serve improvement plan based on the data collected."
+      ],
+      "coaching_cues": [
+        "Use your full serve vocabulary — don't revert to 1-2 comfortable serves under match pressure.",
+        "Track which serve placement wins points most often — this is your 'go-to' serve.",
+        "Notice if your first serve percentage drops in tight games — that reveals a pressure serve problem.",
+        "The kick second serve should appear on every service game — not only when in trouble.",
+        "Serve with intention on every single ball — no random serves, always a declared target."
+      ],
+      "common_errors": [
+        "Defaulting to one serve type — reveals that the other serves need more isolated practice.",
+        "Double faults in big moments — the specific pressure scenario that needs dedicated training.",
+        "Not using the body serve — most players forget it exists during match play."
+      ],
+      "variations": [
+        "Serve-only scoring: Player 1 gets a bonus point for every ace or unreturnable serve.",
+        "Serve tracking sheet: write down every serve in real time — review after every game, not just the set.",
+        "Partner comparison: Player 2 also serves a set — compare first serve percentages and double fault rates."
+      ],
+      "tags": ["serve", "match-simulation", "assessment", "both courts", "intermediate", "comprehensive"],
+      "diagramData": {
+        "p1": { "x": 200, "y": 860 },
+        "p2": { "x": 200, "y": 60 },
+        "shots": [
+          { "x1": 240, "y1": 855, "x2": 200, "y2": 370 },
+          { "x1": 240, "y1": 855, "x2": 315, "y2": 388 },
+          { "x1": 160, "y1": 855, "x2": 240, "y2": 385 },
+          { "x1": 160, "y1": 855, "x2": 165, "y2": 388 }
+        ],
+        "cones": [
+          { "x": 200, "y": 370 },
+          { "x": 315, "y": 388 },
+          { "x": 165, "y": 388 }
+        ],
+        "areas": [
+          { "x": 260, "y": 378, "r": 50 },
+          { "x": 165, "y": 387, "r": 50 }
+        ]
+      }
+    }
+  ]
+}
