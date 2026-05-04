@@ -1,0 +1,1369 @@
+{
+  "batch": "Fitness drills 1-30",
+  "category": "Fitness",
+  "description": "Drills focused on tennis-specific physical conditioning: explosive power, aerobic endurance, anaerobic intervals, strength for tennis, agility, injury prevention, and mental toughness under physical load. Every drill in this category is designed around the actual physical demands of match play — short explosive bursts, lateral movement, overhead power, and the ability to sustain quality over long matches.",
+  "drills": [
+    {
+      "id": "FT-001",
+      "name": "On-Court Interval Sprints: Match-Pace Bursts",
+      "subcategory": "Aerobic Conditioning",
+      "category": "Fitness",
+      "skill_level": "intermediate",
+      "player_count": 1,
+      "duration_minutes": 15,
+      "objective": "Build tennis-specific aerobic and anaerobic capacity through on-court interval sprints that replicate the exact work-to-rest ratios of real match play. Tennis points last 4-10 seconds with 15-25 seconds of rest between them. This drill trains the body to work maximally for short bursts, recover quickly, and repeat that effort reliably throughout a full match.",
+      "setup": "Player 1 on a singles court. Mark the baseline, service line, and net as sprint targets. Use a stopwatch or phone timer. No partner needed.",
+      "instructions": [
+        "Sprint from the baseline to the net and back — that is 1 rep. Time: approximately 4 seconds.",
+        "Rest 20 seconds. This matches the average point-to-point rest time in match play.",
+        "Repeat for 10 consecutive reps without increasing the rest time.",
+        "Rest 90 seconds — simulating a changeover.",
+        "Complete 3 sets of 10 reps. Track whether sprint times stay consistent across all 30 reps."
+      ],
+      "coaching_cues": [
+        "Sprint at genuine match intensity — 85-90% of maximum effort on every rep.",
+        "The rest time is fixed at 20 seconds — don't take more, don't take less.",
+        "Touch the net post or net strap at the net — forces a full deceleration and direction change.",
+        "Breathe during the rest period — controlled breathing restores oxygen faster.",
+        "If sprint times are slowing by rep 8-10, fitness is the limiting factor — build it before increasing reps."
+      ],
+      "common_errors": [
+        "Jogging instead of sprinting — the drill only works at match intensity.",
+        "Taking more than 20 seconds rest — removes the fitness demand.",
+        "Sprinting 100% for 3 reps then collapsing — start at 85% to sustain quality."
+      ],
+      "variations": [
+        "Point simulation: 6-second sprint, 20-second rest — matches a longer baseline rally.",
+        "Ladder intervals: increase work time by 1 second per set — 4s, 5s, 6s across 3 sets.",
+        "Competition: compare sprint times across weeks — track fitness improvement."
+      ],
+      "tags": ["fitness", "interval", "sprint", "aerobic", "intermediate", "match-simulation"],
+      "diagramData": {
+        "p1": { "x": 200, "y": 850 },
+        "moves": [
+          { "x1": 200, "y1": 850, "x2": 200, "y2": 480 },
+          { "x1": 200, "y1": 480, "x2": 200, "y2": 850 }
+        ],
+        "cones": [
+          { "x": 200, "y": 480 },
+          { "x": 200, "y": 850 }
+        ]
+      }
+    },
+    {
+      "id": "FT-002",
+      "name": "Lateral Bound Training: Explosive Side Power",
+      "subcategory": "Explosive Power",
+      "category": "Fitness",
+      "skill_level": "intermediate",
+      "player_count": 1,
+      "duration_minutes": 12,
+      "objective": "Build explosive lateral power through single-leg lateral bounds — the primary power movement for covering wide balls and changing direction at the baseline. Tennis is predominantly a lateral sport, and the lateral bound trains the exact power output needed to cover ground quickly side-to-side. A stronger lateral bound means earlier arrival at wide balls, more time to set up, and better shot quality from wide positions.",
+      "setup": "Player 1 stands on the baseline. Use the singles sidelines and center mark as distance markers. No equipment needed beyond the court lines.",
+      "instructions": [
+        "Start at the center mark on the baseline.",
+        "Push off the right foot and bound laterally to the left as far as possible — land on the left foot.",
+        "Stick the landing on the left foot for one second — absorb and stabilize.",
+        "Push off the left foot and bound back to the right — land on the right foot.",
+        "Complete 10 bounds per side per set. Rest 60 seconds. Play 4 sets."
+      ],
+      "coaching_cues": [
+        "Drive off the outside edge of the foot — that is the primary push surface for lateral bounds.",
+        "Land softly and absorb the landing with a bent knee — loud landings waste energy.",
+        "The 'stick' (one-second hold) forces balance and prevents sloppy landings.",
+        "Drive the arms in the direction of the bound — they add 10-15% more power.",
+        "Cover maximum distance on each bound — aim for the singles sideline from center."
+      ],
+      "common_errors": [
+        "Two-foot landing — defeats the single-leg strength objective.",
+        "Not sticking the landing — rushing past the stabilization phase.",
+        "Short bounds — not enough lateral push effort."
+      ],
+      "variations": [
+        "Continuous bounds: remove the stick and bound continuously across the court and back.",
+        "Bound and swing: after each landing, perform a shadow swing — tennis-specific integration.",
+        "Triple bound: 3 consecutive bounds before the stick — builds distance and continuity."
+      ],
+      "tags": ["fitness", "lateral bound", "explosive power", "intermediate", "single-leg", "lateral"],
+      "diagramData": {
+        "p1": { "x": 200, "y": 850 },
+        "moves": [
+          { "x1": 200, "y1": 850, "x2": 65, "y2": 850 },
+          { "x1": 65, "y1": 850, "x2": 335, "y2": 850 },
+          { "x1": 335, "y1": 850, "x2": 200, "y2": 850 }
+        ],
+        "cones": [
+          { "x": 65, "y": 850 },
+          { "x": 335, "y": 850 }
+        ]
+      }
+    },
+    {
+      "id": "FT-003",
+      "name": "Medicine Ball Rotational Throw: Core Power for Groundstrokes",
+      "subcategory": "Strength",
+      "category": "Fitness",
+      "skill_level": "intermediate",
+      "player_count": 2,
+      "duration_minutes": 12,
+      "objective": "Build rotational core power — the primary physical quality that generates pace on groundstrokes. The medicine ball rotational throw replicates the exact hip and torso rotation pattern used on both forehand and backhand groundstrokes, but with heavy resistance that builds power not achievable with a racket alone. Players who develop rotational power directly translate that into faster racket head speed.",
+      "setup": "Player 1 stands sideways to a wall or rebounder. A 3-4kg medicine ball is used. Player 1 performs a rotational throw simulating the forehand rotation, catches the rebound, and repeats.",
+      "instructions": [
+        "Player 1 stands 3 feet from a solid wall or rebounder, sideways with the dominant side away from the wall.",
+        "Hold the medicine ball with both hands at hip level on the far side (forehand side).",
+        "Drive the hips toward the wall first, then rotate the torso, then throw the ball into the wall.",
+        "Catch the rebound and reset to the starting position.",
+        "Complete 12 reps per set. Rest 45 seconds. Play 4 sets per side."
+      ],
+      "coaching_cues": [
+        "Hips rotate first — the sequence is hips, torso, arms. Never arms first.",
+        "Drive off the back foot just like a real forehand.",
+        "The throw should feel like a forehand swing — same rotation pattern, different end point.",
+        "Don't arm-throw — the power comes from the rotation, not the arms.",
+        "Catch with soft hands — absorb the rebound to protect the joints."
+      ],
+      "common_errors": [
+        "Throwing with the arms only — defeats the rotational power purpose.",
+        "Not driving the hips first — produces a weaker throw and misses the training objective.",
+        "Ball too heavy — proper rotation is more important than maximum weight."
+      ],
+      "variations": [
+        "Backhand throw: same exercise with the non-dominant side closest to the wall.",
+        "Overhead slam: slam the medicine ball directly down — builds overhead smash power.",
+        "Standing throw for distance: throw the ball as far as possible sideways — maximum power expression."
+      ],
+      "tags": ["fitness", "medicine ball", "rotational power", "intermediate", "core", "groundstroke"],
+      "diagramData": {
+        "p1": { "x": 200, "y": 850 },
+        "p2": { "x": 200, "y": 480 },
+        "moves": [
+          { "x1": 200, "y1": 850, "x2": 260, "y2": 850 },
+          { "x1": 260, "y1": 850, "x2": 200, "y2": 850 }
+        ],
+        "areas": [{ "x": 200, "y": 850, "r": 25 }]
+      }
+    },
+    {
+      "id": "FT-004",
+      "name": "Baseline Suicide Runs: Court-Length Conditioning",
+      "subcategory": "Aerobic Conditioning",
+      "category": "Fitness",
+      "skill_level": "intermediate",
+      "player_count": 1,
+      "duration_minutes": 15,
+      "objective": "Build court-length endurance and deceleration strength through baseline suicide runs — the classic court conditioning drill adapted for tennis. Suicide runs force maximum deceleration at each line, which strengthens the quadriceps and develops the ability to stop quickly — a critical skill for reaching short balls and recovering from wide positions.",
+      "setup": "Player 1 starts at the baseline. Targets are: service line, baseline on the opposite side, service line on the opposite side, and net. Each represents a different distance. A stopwatch tracks time.",
+      "instructions": [
+        "Start at the baseline (your side).",
+        "Sprint to the service line — touch it — sprint back to start.",
+        "Sprint to the opposite baseline — touch it — sprint back to start.",
+        "Sprint to the opposite service line — touch it — sprint back to start.",
+        "Sprint to the net — touch it — sprint back to start.",
+        "That is 1 complete suicide run. Rest 90 seconds. Complete 5 suicide runs per session."
+      ],
+      "coaching_cues": [
+        "Touch each line with the hand — forces a true deceleration bend rather than a corner cut.",
+        "Sprint at full pace between all lines — no coasting on the longer distances.",
+        "Use the deceleration at each line as an active braking: plant and push off in one motion.",
+        "Breathe consistently — don't hold the breath during the sprints.",
+        "Track your time on every run — the last should be within 5% of the first."
+      ],
+      "common_errors": [
+        "Not touching the lines — shortcuts the deceleration training.",
+        "Slowing on the longer distances — must maintain sprint pace throughout.",
+        "Resting between lines instead of after the full sequence — breaks the intended demand."
+      ],
+      "variations": [
+        "Lateral suicide: shuffle sideways instead of sprinting — targets lateral conditioning.",
+        "Timed competition: personal best for the 4-line suicide — track weekly.",
+        "Partner race: two players run simultaneously — competition raises effort level."
+      ],
+      "tags": ["fitness", "suicide runs", "endurance", "intermediate", "deceleration", "conditioning"],
+      "diagramData": {
+        "p1": { "x": 200, "y": 850 },
+        "moves": [
+          { "x1": 200, "y1": 850, "x2": 200, "y2": 670 },
+          { "x1": 200, "y1": 670, "x2": 200, "y2": 850 },
+          { "x1": 200, "y1": 850, "x2": 200, "y2": 70 },
+          { "x1": 200, "y1": 70, "x2": 200, "y2": 850 }
+        ],
+        "cones": [
+          { "x": 200, "y": 670 },
+          { "x": 200, "y": 250 },
+          { "x": 200, "y": 70 },
+          { "x": 200, "y": 480 }
+        ]
+      }
+    },
+    {
+      "id": "FT-005",
+      "name": "Jump Rope Tennis Protocol: Footwork Speed and Rhythm",
+      "subcategory": "Foot Speed",
+      "category": "Fitness",
+      "skill_level": "beginner",
+      "player_count": 1,
+      "duration_minutes": 15,
+      "objective": "Build foot speed, rhythm, and cardiovascular fitness through a tennis-specific jump rope protocol. Jump rope training directly transfers to tennis footwork: the on-toes jumping position is the same as the split step landing position, the rapid foot turnover builds the neuromuscular speed needed for quick court coverage, and the continuous rhythm builds aerobic capacity specific to the demands of match play.",
+      "setup": "Player 1 has a jump rope and a stopwatch. The protocol alternates between standard jumping, lateral bounds, split step simulation, and high knees — each replicating a specific tennis footwork demand.",
+      "instructions": [
+        "2 minutes: standard two-foot jumping at medium pace — warms up the ankles and rhythm.",
+        "1 minute: alternating foot jumping — left, right, left, right — simulates running footwork.",
+        "1 minute: lateral jump: both feet jump left, then right, alternating — simulates lateral shuffle.",
+        "1 minute: split step simulation: jump, land wide — jump, land narrow, repeat.",
+        "1 minute: high knees through the rope — maximum foot speed.",
+        "Rest 60 seconds. Repeat the full 6-minute protocol 2 more times."
+      ],
+      "coaching_cues": [
+        "Stay on the balls of the feet throughout — heels never touch during jump rope.",
+        "Small, quick jumps — height is wasted energy. The goal is fast turns, not high jumps.",
+        "Relax the shoulders and arms — tension in the upper body slows the feet.",
+        "Eyes forward, not at the rope — trains the habit of eyes-up footwork.",
+        "The lateral jump directly simulates the split step direction change — keep it crisp."
+      ],
+      "common_errors": [
+        "Heel striking during jumps — significantly slows foot turnover.",
+        "Large jumps — the rope only needs 1-2 inches of clearance.",
+        "Tense upper body — arms stiffen and the rope rhythm breaks down."
+      ],
+      "variations": [
+        "Double unders: rope passes under twice per jump — extreme foot speed challenge.",
+        "Crossed arms: cross the arms on alternate jumps — coordination challenge.",
+        "Timed consistency: how many jumps without a miss in 2 minutes? Track weekly."
+      ],
+      "tags": ["fitness", "jump rope", "foot speed", "beginner", "rhythm", "cardiovascular"],
+      "diagramData": {
+        "p1": { "x": 200, "y": 850 },
+        "moves": [
+          { "x1": 200, "y1": 850, "x2": 230, "y2": 850 },
+          { "x1": 230, "y1": 850, "x2": 200, "y2": 850 },
+          { "x1": 200, "y1": 850, "x2": 170, "y2": 850 }
+        ],
+        "areas": [{ "x": 200, "y": 850, "r": 25 }]
+      }
+    },
+    {
+      "id": "FT-006",
+      "name": "Resistance Band Lateral Walk: Hip Strength Foundation",
+      "subcategory": "Strength",
+      "category": "Fitness",
+      "skill_level": "beginner",
+      "player_count": 1,
+      "duration_minutes": 12,
+      "objective": "Strengthen the hip abductors and glutes through resistance band lateral walks — the muscle groups most directly responsible for explosive lateral movement in tennis. Weak hips are the most common physical cause of slow court coverage and lower extremity injuries. This drill builds the hip strength foundation that makes all other footwork training more effective.",
+      "setup": "Player 1 wears a resistance band around the ankles or just above the knees. The band should provide noticeable resistance during lateral movement but not prevent it. Player 1 walks laterally across the baseline in a partial squat position.",
+      "instructions": [
+        "Place the resistance band around both ankles (lighter) or above both knees (heavier).",
+        "Assume a partial squat: knees bent to 30 degrees, hips pushed back, torso upright.",
+        "Walk laterally 10 steps to the right — keeping constant tension on the band.",
+        "Walk laterally 10 steps back to the left.",
+        "Complete 3 sets of 10 steps in each direction. Rest 30 seconds between sets."
+      ],
+      "coaching_cues": [
+        "Maintain the squat depth throughout — don't stand up to make the steps easier.",
+        "Keep the feet parallel — don't let the toes turn out as the hip flexors fatigue.",
+        "Push off the stepping foot first — don't drag the trailing foot.",
+        "Keep tension on the band at all times — the trailing foot should never fully close to the lead foot.",
+        "Feel the burn on the outside of the hip and glute — that is the target muscle."
+      ],
+      "common_errors": [
+        "Standing up during the walk — removes the hip loading.",
+        "Dragging the trailing foot until it touches the lead foot — releases band tension.",
+        "Toes turning outward — indicates hip abductor fatigue, reduce resistance."
+      ],
+      "variations": [
+        "Band lateral shuffle: perform the shuffle at faster pace rather than walking.",
+        "Band squat walk forward: walk diagonally forward — simulates approach footwork with resistance.",
+        "Band spider run: perform the spider run pattern with the band — extreme hip challenge."
+      ],
+      "tags": ["fitness", "resistance band", "hip strength", "beginner", "injury prevention", "lateral"],
+      "diagramData": {
+        "p1": { "x": 200, "y": 850 },
+        "moves": [
+          { "x1": 200, "y1": 850, "x2": 310, "y2": 850 },
+          { "x1": 310, "y1": 850, "x2": 200, "y2": 850 },
+          { "x1": 200, "y1": 850, "x2": 90, "y2": 850 }
+        ],
+        "areas": [{ "x": 200, "y": 850, "r": 20 }]
+      }
+    },
+    {
+      "id": "FT-007",
+      "name": "Plank Series: Core Stability for Tennis",
+      "subcategory": "Strength",
+      "category": "Fitness",
+      "skill_level": "beginner",
+      "player_count": 1,
+      "duration_minutes": 12,
+      "objective": "Build core stability through a plank series specifically designed for the demands of tennis. The core is the transfer point for all rotational power in tennis strokes — a weak core wastes the power generated by the legs and arms. The plank series trains the ability to maintain core rigidity under sustained load, which translates directly into more consistent, powerful groundstrokes across a full match.",
+      "setup": "Player 1 needs only a mat or flat surface. No equipment needed. The series covers: standard plank, side plank, plank with rotation, and plank with shoulder taps.",
+      "instructions": [
+        "Standard plank: forearms on the ground, body straight — hold 45 seconds.",
+        "Right side plank: right forearm on the ground, body straight — hold 30 seconds.",
+        "Left side plank: left forearm on the ground, body straight — hold 30 seconds.",
+        "Plank with rotation: from high plank, rotate the body to one side and back — 10 reps each side.",
+        "Plank with shoulder taps: from high plank, tap each shoulder alternately — 20 taps total.",
+        "Rest 60 seconds between exercises. Complete the full series 2 times."
+      ],
+      "coaching_cues": [
+        "Body must be completely straight — no sagging hips or piked hips.",
+        "Engage the glutes as well as the core — the glutes prevent hip sagging.",
+        "Breathe throughout — many players hold their breath during planks.",
+        "On the rotation plank, rotate from the shoulder, not the hip — targets the obliques.",
+        "On shoulder taps, resist the rotation with the core — the hips should not sway."
+      ],
+      "common_errors": [
+        "Sagging hips — reduces core activation and strains the lower back.",
+        "Raised hips — easier but doesn't train the correct muscles.",
+        "Holding breath — causes blood pressure spikes and reduces duration."
+      ],
+      "variations": [
+        "Plank hold progression: track maximum plank hold time weekly.",
+        "Dynamic plank: move from forearm plank to high plank and back — 15 reps.",
+        "Tennis ball tap: in high plank, tap a tennis ball forward and back with each hand — coordination challenge."
+      ],
+      "tags": ["fitness", "plank", "core", "beginner", "stability", "strength"],
+      "diagramData": {
+        "p1": { "x": 200, "y": 850 },
+        "areas": [{ "x": 200, "y": 850, "r": 30 }]
+      }
+    },
+    {
+      "id": "FT-008",
+      "name": "Box Jump Circuit: Explosive Leg Power",
+      "subcategory": "Explosive Power",
+      "category": "Fitness",
+      "skill_level": "intermediate",
+      "player_count": 1,
+      "duration_minutes": 15,
+      "objective": "Build explosive leg power through box jumps — the most effective single exercise for developing the power needed for explosive first steps, split steps, and overhead jumps in tennis. Box jumps train the stretch-shortening cycle: loading the legs rapidly and releasing that energy explosively. Players with strong box jump scores consistently move better on court.",
+      "setup": "Player 1 uses a sturdy box, bench, or step 12-18 inches high. The surface must be non-slip. Alternatively, mark a height on a wall and jump to touch it. Safety note: start with lower heights until the landing is controlled.",
+      "instructions": [
+        "Stand in front of the box, feet hip-width apart.",
+        "Lower into a quarter squat and immediately jump onto the box — land softly on both feet.",
+        "Step down carefully — don't jump down.",
+        "Complete 8 box jumps per set. Rest 60 seconds. Play 4 sets.",
+        "Focus on the speed of the jump, not the height — power is about how fast you can load and explode."
+      ],
+      "coaching_cues": [
+        "Load quickly — the squat dip should be fast, not a slow descent.",
+        "Drive the arms upward simultaneously with the leg push — they add 20% more power.",
+        "Land softly: absorb through the ankles, knees, and hips in sequence.",
+        "Full hip extension at the top — don't jump with bent hips.",
+        "Reset completely between jumps — this is a power drill, not an endurance drill."
+      ],
+      "common_errors": [
+        "Slow squat dip — a slow load produces a weak jump. Dip must be fast.",
+        "Hard landings — indicates poor absorption, increases injury risk.",
+        "Jumping down from the box — step down to protect the knees."
+      ],
+      "variations": [
+        "Lateral box jump: jump sideways onto the box — builds lateral explosive power.",
+        "Single-leg box jump: one-leg takeoff — extreme power and balance challenge.",
+        "Box jump to broad jump: land on the box, jump forward off the box onto the ground."
+      ],
+      "tags": ["fitness", "box jump", "explosive power", "intermediate", "legs", "plyometric"],
+      "diagramData": {
+        "p1": { "x": 200, "y": 850 },
+        "moves": [
+          { "x1": 200, "y1": 850, "x2": 200, "y2": 820 },
+          { "x1": 200, "y1": 820, "x2": 200, "y2": 850 }
+        ],
+        "areas": [{ "x": 200, "y": 835, "r": 20 }]
+      }
+    },
+    {
+      "id": "FT-009",
+      "name": "Shoulder Stability Circuit: Injury Prevention for Servers",
+      "subcategory": "Injury Prevention",
+      "category": "Fitness",
+      "skill_level": "beginner",
+      "player_count": 1,
+      "duration_minutes": 15,
+      "objective": "Strengthen the rotator cuff and shoulder stabilizers — the muscles most commonly injured in tennis players. The serve and overhead smash place enormous stress on the shoulder joint. Weak rotator cuff muscles cannot adequately decelerate the arm after contact, leading to tendinitis, tears, and chronic pain. This circuit provides the minimum shoulder maintenance work every tennis player should do.",
+      "setup": "Player 1 needs a light resistance band (yellow or green) or 1-2kg dumbbells. The exercises are performed standing or seated. These are low-weight, high-rep exercises — the goal is muscle endurance, not strength.",
+      "instructions": [
+        "External rotation: band around a post, elbow at 90 degrees, rotate the forearm outward — 3 x 15 reps.",
+        "Internal rotation: same setup, rotate inward — 3 x 15 reps.",
+        "Prone Y: lie face down, arms extended in Y shape, lift arms — 3 x 12 reps.",
+        "Prone T: same position, arms extended in T shape, lift arms — 3 x 12 reps.",
+        "Sleeper stretch: lying on the shoulder, gently press the forearm down — hold 30 seconds each side.",
+        "Complete the full circuit 2 times. Rest 30 seconds between exercises."
+      ],
+      "coaching_cues": [
+        "Light weight is correct — these exercises target tiny stabilizers, not big muscles.",
+        "Slow and controlled motion on every rep — ballistic movements defeat the purpose.",
+        "Feel the back of the shoulder working — if you feel it in the front, the weight is too heavy.",
+        "The sleeper stretch addresses internal rotation tightness — very common in dominant shoulders.",
+        "This circuit should be done 3 times per week, not just before matches."
+      ],
+      "common_errors": [
+        "Using too much weight — the stabilizers cannot handle heavy loads.",
+        "Fast, momentum-driven reps — removes the stabilizer activation.",
+        "Only doing this when injured — prevention is far more effective than rehabilitation."
+      ],
+      "variations": [
+        "Theraband rainbow: arm overhead, loop band around hand, trace a rainbow arc — advanced stabilizer.",
+        "Wall slide: forearms on wall, slide arms up and down — scapular stability training.",
+        "Side-lying external rotation: same motion lying on the side — pure isolator position."
+      ],
+      "tags": ["fitness", "shoulder", "injury prevention", "beginner", "rotator cuff", "stability"],
+      "diagramData": {
+        "p1": { "x": 200, "y": 850 },
+        "areas": [{ "x": 200, "y": 850, "r": 25 }]
+      }
+    },
+    {
+      "id": "FT-010",
+      "name": "High-Intensity Baseline Rally Fitness: 30-30 Protocol",
+      "subcategory": "Aerobic Conditioning",
+      "category": "Fitness",
+      "skill_level": "intermediate",
+      "player_count": 2,
+      "duration_minutes": 20,
+      "objective": "Build tennis-specific aerobic fitness through a structured high-intensity rally protocol. The 30-30 protocol — 30 seconds of maximum-intensity rallying followed by 30 seconds of rest — directly trains the cardiovascular system at the exact intensities required for competitive match play. Unlike isolated sprints, this drill combines the fitness demand with actual ball-striking.",
+      "setup": "Both players at the baseline. A timer signals start and stop. Both players rally at maximum sustainable pace for 30 seconds, then rest for 30 seconds. The rally must be kept alive — if the ball is missed, both players restart immediately.",
+      "instructions": [
+        "Both players rally at maximum pace for 30 seconds — every shot hit hard and deep.",
+        "Timer signals rest — both players stop immediately, breathe, and recover.",
+        "30 seconds rest — use it fully: breathe, relax the grip, walk.",
+        "Timer signals restart — immediate return to maximum pace.",
+        "Complete 10 rounds of 30-30. Total active time: 5 minutes. Total rest: 5 minutes."
+      ],
+      "coaching_cues": [
+        "Maximum pace means genuine maximum — not medium pace. This is a fitness drill.",
+        "Keep the rally alive at all costs — a dead rally means less fitness training time.",
+        "Use the rest period actively: walk, breathe deeply, shake out the arms.",
+        "If the pace drops in the last 3 rounds, fitness is the limiting factor.",
+        "This protocol should feel harder each round — that's the point."
+      ],
+      "common_errors": [
+        "Medium pace during the work interval — not developing match-specific fitness.",
+        "Continuing to rally during rest — the rest is as important as the work.",
+        "Stopping when the ball is missed instead of restarting immediately."
+      ],
+      "variations": [
+        "40-20 protocol: 40 seconds work, 20 seconds rest — more demanding.",
+        "20-10 Tabata protocol: 20 seconds max, 10 seconds rest — extreme intensity.",
+        "One directional: both players rally cross-court forehand only — adds a placement constraint."
+      ],
+      "tags": ["fitness", "30-30", "aerobic", "intermediate", "rally", "match-simulation"],
+      "diagramData": {
+        "p1": { "x": 280, "y": 850 },
+        "p2": { "x": 120, "y": 60 },
+        "shots": [
+          { "x1": 280, "y1": 840, "x2": 110, "y2": 90 },
+          { "x1": 120, "y1": 70, "x2": 275, "y2": 835 }
+        ],
+        "areas": [
+          { "x": 110, "y": 100, "r": 35 },
+          { "x": 275, "y": 820, "r": 35 }
+        ]
+      }
+    },
+    {
+      "id": "FT-011",
+      "name": "Single-Leg Romanian Deadlift: Hamstring and Balance",
+      "subcategory": "Strength",
+      "category": "Fitness",
+      "skill_level": "intermediate",
+      "player_count": 1,
+      "duration_minutes": 12,
+      "objective": "Strengthen the hamstrings, glutes, and single-leg balance through the single-leg Romanian deadlift — one of the most valuable exercises for tennis players. The single-leg RDL mimics the single-leg loading that occurs on every wide ball retrieval, approach shot, and split step. Weak hamstrings are directly linked to hamstring strains — the most common muscle injury in tennis.",
+      "setup": "Player 1 uses a dumbbell (5-10kg) or a tennis ball can for light resistance. One leg is the working leg; the other leg extends behind. Start with body weight if new to the movement.",
+      "instructions": [
+        "Stand on the right leg, slight bend in the knee.",
+        "Hinge forward at the hip, extending the left leg behind for balance.",
+        "Lower until the torso is parallel to the ground (or as far as hamstring flexibility allows).",
+        "Drive through the right heel to return to standing.",
+        "Complete 10 reps per leg per set. Rest 45 seconds. Play 3 sets."
+      ],
+      "coaching_cues": [
+        "Hinge at the hip — the back stays straight throughout, not rounded.",
+        "Feel the stretch in the standing leg's hamstring — that's the target muscle.",
+        "Keep the extended leg in line with the torso — like a seesaw.",
+        "Drive through the heel to stand — not through the toes.",
+        "Slow descent (3 seconds), controlled — not a fast drop."
+      ],
+      "common_errors": [
+        "Rounding the back — compresses the spine, removes hamstring activation.",
+        "Bending the standing knee too much — turns it into a squat, not a hip hinge.",
+        "Not going low enough — reduces hamstring range of motion training."
+      ],
+      "variations": [
+        "Two-leg RDL: beginner version with both feet on the ground.",
+        "Weighted single-leg RDL: add a dumbbell for progressive resistance.",
+        "Reach and return: at the bottom of the RDL, reach the hand toward the opposite foot."
+      ],
+      "tags": ["fitness", "Romanian deadlift", "hamstring", "intermediate", "strength", "balance"],
+      "diagramData": {
+        "p1": { "x": 200, "y": 850 },
+        "areas": [{ "x": 200, "y": 850, "r": 25 }]
+      }
+    },
+    {
+      "id": "FT-012",
+      "name": "Agility Ladder Advanced: Tennis-Specific Patterns",
+      "subcategory": "Agility",
+      "category": "Fitness",
+      "skill_level": "intermediate",
+      "player_count": 1,
+      "duration_minutes": 12,
+      "objective": "Build foot speed and movement pattern variety through advanced agility ladder sequences specifically chosen for tennis movements. Standard ladder drills are modified here to replicate tennis footwork: the icky shuffle simulates the baseline lateral, the in-out pattern simulates the split step, and the lateral run pattern simulates the crossover recovery. This is targeted agility training, not generic conditioning.",
+      "setup": "Player 1 uses a 6-10 rung agility ladder on the court surface. Each pattern is performed 3 times before moving to the next. Rest 20 seconds between patterns.",
+      "instructions": [
+        "Icky shuffle: two in, one out pattern laterally through the ladder — 3 passes.",
+        "In-out: both feet in each space, then out to the side and back in — 3 passes.",
+        "Lateral single-leg: one foot in each space, moving laterally — 3 passes each direction.",
+        "T-shape run: sprint to the top of the ladder, shuffle right, shuffle left, backpedal to start.",
+        "Rest 30 seconds between patterns. Complete all 4 patterns twice."
+      ],
+      "coaching_cues": [
+        "Arms drive every pattern — quiet arms produce slow feet.",
+        "Eyes forward at all times — not at the ladder rungs.",
+        "Accuracy before speed — hit every rung correctly before increasing speed.",
+        "The icky shuffle should feel like a baseline shuffle — same hip height, same foot width.",
+        "The T-shape run replicates the server's recovery footwork — practice it with serve footwork in mind."
+      ],
+      "common_errors": [
+        "Looking at the ladder — eyes must be up in all real footwork situations.",
+        "Rushing before accuracy is established — sloppy patterns don't transfer to court movement.",
+        "Arms staying still — arms are not optional in agility work."
+      ],
+      "variations": [
+        "Racket carry: perform all patterns while holding the racket — adds weight and specificity.",
+        "Reaction ladder: coach calls which pattern after Player 1 is already moving.",
+        "Ladder to sprint: complete a ladder pattern then immediately sprint to a cone 10 feet away."
+      ],
+      "tags": ["fitness", "agility ladder", "foot speed", "intermediate", "pattern", "movement"],
+      "diagramData": {
+        "p1": { "x": 200, "y": 850 },
+        "moves": [
+          { "x1": 200, "y1": 850, "x2": 200, "y2": 740 }
+        ],
+        "cones": [
+          { "x": 200, "y": 850 },
+          { "x": 200, "y": 830 },
+          { "x": 200, "y": 810 },
+          { "x": 200, "y": 790 },
+          { "x": 200, "y": 770 },
+          { "x": 200, "y": 750 }
+        ]
+      }
+    },
+    {
+      "id": "FT-013",
+      "name": "Wall Sit with Ball Toss: Leg Endurance Under Load",
+      "subcategory": "Strength",
+      "category": "Fitness",
+      "skill_level": "intermediate",
+      "player_count": 2,
+      "duration_minutes": 10,
+      "objective": "Build leg endurance and the ability to maintain technical quality under muscular fatigue through the wall sit with ball toss combination. The wall sit creates sustained quad and hip fatigue while the ball toss forces the upper body to continue functioning normally — exactly what happens in long baseline rallies where the legs tire but shots must remain consistent.",
+      "setup": "Player 1 performs a wall sit (back against a wall, thighs parallel to the floor). Player 2 tosses balls to Player 1 who must catch and toss them back while holding the wall sit position.",
+      "instructions": [
+        "Player 1 assumes a wall sit against a wall: back flat against the wall, thighs parallel to the floor.",
+        "Player 2 tosses balls to Player 1 from 6 feet away — varying height and side.",
+        "Player 1 catches and returns each ball while maintaining the wall sit.",
+        "Continue for 45 seconds. Rest 30 seconds. Repeat 4 rounds.",
+        "Increase to 60 seconds in subsequent sessions as strength improves."
+      ],
+      "coaching_cues": [
+        "Thighs must be parallel to the floor — higher is easier and defeats the purpose.",
+        "Back flat against the wall — no sliding down.",
+        "Don't hold the breath — breathe steadily throughout the hold.",
+        "Arm movement for the ball toss should be natural — don't tighten the legs to stabilize the arms.",
+        "This simulates the third-set leg fatigue while demanding continued arm function."
+      ],
+      "common_errors": [
+        "Thighs above parallel — reduces the quad loading.",
+        "Leaning forward — back must stay against the wall.",
+        "Dropping the position to catch difficult tosses — the legs must not move."
+      ],
+      "variations": [
+        "Wall sit with racket swings: Player 1 shadow swings a racket while holding the wall sit.",
+        "Timed challenge: maximum wall sit time without ball — personal record tracking.",
+        "Single-leg wall sit: extremely advanced — one leg extended, one in the wall sit position."
+      ],
+      "tags": ["fitness", "wall sit", "leg endurance", "intermediate", "fatigue", "strength"],
+      "diagramData": {
+        "p1": { "x": 200, "y": 850 },
+        "p2": { "x": 200, "y": 740 },
+        "shots": [
+          { "x1": 200, "y1": 750, "x2": 200, "y2": 840 },
+          { "x1": 200, "y1": 840, "x2": 200, "y2": 750 }
+        ],
+        "areas": [{ "x": 200, "y": 845, "r": 20 }]
+      }
+    },
+    {
+      "id": "FT-014",
+      "name": "Reaction Ball Drills: Unpredictable Bounce Training",
+      "subcategory": "Reactive Fitness",
+      "category": "Fitness",
+      "skill_level": "intermediate",
+      "player_count": 1,
+      "duration_minutes": 10,
+      "objective": "Build reactive speed and hand-eye coordination through reaction ball training. A reaction ball is an irregular-shaped rubber ball that bounces in unpredictable directions — exactly replicating the unpredictable nature of court bounces. Training with a reaction ball builds the reactive footwork speed that cannot be trained with a regular ball, and it forces the fast-twitch nervous system to operate at maximum speed.",
+      "setup": "Player 1 uses a reaction ball (available at sports stores). Stand 3-4 feet from a wall. Throw the reaction ball against the wall and react to wherever it bounces. No racket needed — catch with hands.",
+      "instructions": [
+        "Stand 3 feet from a wall.",
+        "Throw the reaction ball against the wall at medium force.",
+        "React to wherever it bounces — catch it before the second bounce.",
+        "Immediately rethrow against the wall and repeat.",
+        "Continue for 30 seconds. Rest 20 seconds. Complete 8 rounds."
+      ],
+      "coaching_cues": [
+        "Stay on the balls of the feet throughout — the reaction ball requires constant readiness.",
+        "Eyes on the ball from the moment it leaves the wall — the direction changes in the first foot of flight.",
+        "Move your feet to the ball — don't reach with the arms.",
+        "Soft hands on the catch — absorb the velocity.",
+        "React, don't anticipate — the reaction ball defeats anticipation deliberately."
+      ],
+      "common_errors": [
+        "Reaching with the arms instead of moving the feet — builds bad reactive habits.",
+        "Anticipating the direction — the reaction ball punishes this immediately with a miss.",
+        "Slow to react — must have weight on the balls of the feet to react quickly enough."
+      ],
+      "variations": [
+        "Two-wall: bounce between two walls at a corner — more unpredictable.",
+        "One-hand catch: alternate hands — tests each hand independently.",
+        "Racket reaction: use a racket to redirect the reaction ball — most tennis-specific version."
+      ],
+      "tags": ["fitness", "reaction ball", "reactive", "intermediate", "hand-eye", "speed"],
+      "diagramData": {
+        "p1": { "x": 200, "y": 750 },
+        "shots": [
+          { "x1": 200, "y1": 740, "x2": 200, "y2": 480 },
+          { "x1": 200, "y1": 470, "x2": 220, "y2": 730 }
+        ],
+        "areas": [{ "x": 200, "y": 480, "r": 20 }]
+      }
+    },
+    {
+      "id": "FT-015",
+      "name": "Split Squat Jump: Explosive Change of Direction",
+      "subcategory": "Explosive Power",
+      "category": "Fitness",
+      "skill_level": "advanced",
+      "player_count": 1,
+      "duration_minutes": 12,
+      "objective": "Build explosive change-of-direction power through split squat jumps — plyometric exercises that train the body to rapidly reverse direction from a loaded position. The split squat jump replicates the physical demand of the split step followed by an explosive first step: absorb force from one direction, immediately produce force in the opposite direction. This is the exact motor pattern of match-level court movement.",
+      "setup": "Player 1 in a split stance (one foot forward, one back). No equipment needed. This is a bodyweight plyometric exercise. Safety: requires good single-leg strength before attempting — complete the single-leg RDL drill first.",
+      "instructions": [
+        "Assume a split stance: right foot forward, left foot back, both knees bent to 90 degrees.",
+        "Drive off both feet and jump as high as possible.",
+        "While in the air, switch the feet — left foot lands forward, right foot lands back.",
+        "Absorb the landing softly and immediately jump again.",
+        "Complete 6 jumps per set (3 switches each leg). Rest 60 seconds. Play 4 sets."
+      ],
+      "coaching_cues": [
+        "Drive off both feet simultaneously — equal push from front and back.",
+        "Switch legs while in the air — the change happens at maximum height.",
+        "Soft landing — land as quietly as possible to maximize absorption.",
+        "Arms drive the jump — pump them upward aggressively.",
+        "Don't let the knee collapse inward on landing — it must track over the foot."
+      ],
+      "common_errors": [
+        "Insufficient jump height — not enough power production.",
+        "Knee caving inward on landing — dangerous, indicates glute weakness.",
+        "Not switching legs completely — landing without a true stance change."
+      ],
+      "variations": [
+        "No jump: static split squat — beginner version without the plyometric component.",
+        "Weighted vest: add 5-10% of body weight — increases power demands.",
+        "Continuous protocol: 10 consecutive split squat jumps without rest — tests endurance power."
+      ],
+      "tags": ["fitness", "split squat jump", "explosive", "advanced", "plyometric", "power"],
+      "diagramData": {
+        "p1": { "x": 200, "y": 850 },
+        "moves": [
+          { "x1": 200, "y1": 850, "x2": 200, "y2": 810 },
+          { "x1": 200, "y1": 810, "x2": 200, "y2": 850 }
+        ],
+        "areas": [{ "x": 200, "y": 850, "r": 25 }]
+      }
+    },
+    {
+      "id": "FT-016",
+      "name": "Wrist and Forearm Circuit: Racket Control Strength",
+      "subcategory": "Injury Prevention",
+      "category": "Fitness",
+      "skill_level": "beginner",
+      "player_count": 1,
+      "duration_minutes": 10,
+      "objective": "Strengthen the wrist flexors, extensors, and forearm muscles that control the racket face and prevent tennis elbow. Tennis elbow (lateral epicondylitis) is the most common tennis injury and is directly linked to weak forearm extensors and eccentric loading on the backhand. This circuit prevents tennis elbow and simultaneously improves racket head control and spin generation.",
+      "setup": "Player 1 uses a light dumbbell (0.5-1.5kg) or a heavy racket. The circuit is performed seated or standing. 4 exercises target all the relevant muscle groups.",
+      "instructions": [
+        "Wrist curl: forearm on thigh, palm up, curl the weight up and down — 3 x 15 reps.",
+        "Wrist extension: forearm on thigh, palm down, lift the weight and lower — 3 x 15 reps.",
+        "Radial deviation: thumb points up, move the weight up (thumb side) and down — 3 x 12 reps.",
+        "Ulnar deviation: same position, move the weight down (pinky side) and up — 3 x 12 reps.",
+        "Finger extensions: band around fingers, open and close against resistance — 3 x 20 reps."
+      ],
+      "coaching_cues": [
+        "Very light weight — these are small muscles. Even 0.5kg can be challenging.",
+        "Slow and controlled — ballistic wrist movements are dangerous.",
+        "Wrist extension is the most important for tennis elbow prevention — don't skip it.",
+        "The forearm should be stable — only the wrist moves during these exercises.",
+        "Do this 3x per week during active playing periods — prevention requires consistency."
+      ],
+      "common_errors": [
+        "Too much weight — causes compensation movements and injury risk.",
+        "Fast ballistic reps — the wrist extensors cannot handle rapid loading.",
+        "Only doing wrist curls and ignoring extensions — the imbalance causes tennis elbow."
+      ],
+      "variations": [
+        "Towel squeeze: squeeze a rolled towel as hard as possible, hold 5 seconds — grip endurance.",
+        "Pronation and supination: rotate the wrist palm up to palm down with a light weight.",
+        "Finger ladder: stretch rubber bands with increasing resistance using the fingers."
+      ],
+      "tags": ["fitness", "wrist", "forearm", "beginner", "injury prevention", "tennis elbow"],
+      "diagramData": {
+        "p1": { "x": 200, "y": 850 },
+        "areas": [{ "x": 200, "y": 850, "r": 20 }]
+      }
+    },
+    {
+      "id": "FT-017",
+      "name": "Multi-Ball Chase Fitness: Continuous Pressure",
+      "subcategory": "Aerobic Conditioning",
+      "category": "Fitness",
+      "skill_level": "advanced",
+      "player_count": 2,
+      "duration_minutes": 15,
+      "objective": "Build maximum aerobic capacity and stroke quality under extreme fatigue through continuous multi-ball feeding. Player 2 feeds balls in rapid succession to all areas of the court — Player 1 must reach and hit every ball. This drill combines the physical demand of maximum cardiovascular fitness with the technical demand of maintaining stroke quality under fatigue — the exact challenge of the third set of a competitive match.",
+      "setup": "Player 2 stands at the net with a large basket of 30+ balls. Player 1 is at the baseline. Player 2 feeds balls every 3-4 seconds to random positions. Player 1 must hit every ball.",
+      "instructions": [
+        "Player 2 feeds a ball to a random position on Player 1's side every 3-4 seconds.",
+        "Player 1 must reach and hit every ball — quality matters, but staying alive matters more.",
+        "If Player 1 misses a ball, they continue to the next — no stopping.",
+        "Complete the full basket without rest. That is 1 round.",
+        "Rest 2 minutes. Complete 3 rounds. Track how many balls Player 1 reached in each round."
+      ],
+      "coaching_cues": [
+        "Split step before every ball — don't skip it even when exhausted.",
+        "Shorten the swing under fatigue — compact swings are more reliable.",
+        "Breathe on every contact — don't hold your breath during sprints.",
+        "Recovery to center after every ball — even if imperfect, always recover.",
+        "Mental focus: each ball is a fresh start. Don't think about the balls you missed."
+      ],
+      "common_errors": [
+        "Giving up on far balls — always try to reach every ball.",
+        "Stopping to rest mid-basket — the fitness demand requires continuous movement.",
+        "Dropping the split step after 15 balls — the drill reveals exactly when footwork breaks down."
+      ],
+      "variations": [
+        "Targeted multi-ball: Player 1 must return all balls cross-court only — adds placement under fatigue.",
+        "Race the basket: how many balls in a 30-ball basket can Player 1 hit in the court? Track weekly.",
+        "Two-on-one: two feeders — one at each corner of the net — maximum coverage demand."
+      ],
+      "tags": ["fitness", "multi-ball", "aerobic", "advanced", "fatigue", "match-simulation"],
+      "diagramData": {
+        "p1": { "x": 200, "y": 850 },
+        "p2": { "x": 200, "y": 480 },
+        "shots": [
+          { "x1": 200, "y1": 490, "x2": 65, "y2": 840 },
+          { "x1": 200, "y1": 490, "x2": 335, "y2": 840 },
+          { "x1": 200, "y1": 490, "x2": 200, "y2": 660 },
+          { "x1": 200, "y1": 490, "x2": 200, "y2": 840 }
+        ],
+        "moves": [
+          { "x1": 200, "y1": 850, "x2": 65, "y2": 850 },
+          { "x1": 65, "y1": 850, "x2": 200, "y2": 850 },
+          { "x1": 200, "y1": 850, "x2": 335, "y2": 850 }
+        ]
+      }
+    },
+    {
+      "id": "FT-018",
+      "name": "Hip Flexor and Quad Mobility: Pre-Match Protocol",
+      "subcategory": "Mobility",
+      "category": "Fitness",
+      "skill_level": "beginner",
+      "player_count": 1,
+      "duration_minutes": 10,
+      "objective": "Develop a systematic pre-match mobility routine targeting the hip flexors and quadriceps — the two muscle groups most affected by the repetitive lunge and sprint demands of tennis. Tight hip flexors reduce stride length and lateral range of motion. Tight quads increase knee injury risk. This routine takes 10 minutes and should be performed before every practice or match.",
+      "setup": "Player 1 needs only the court surface or a mat. No equipment required. The routine covers 5 movements, held for appropriate durations.",
+      "instructions": [
+        "Hip flexor lunge stretch: deep lunge, back knee on ground, hold 45 seconds each side.",
+        "Dynamic hip circles: standing on one leg, circle the opposite hip — 10 circles each direction, each leg.",
+        "Quad stretch: standing, pull heel to glute — hold 30 seconds each side.",
+        "Walking lunge with twist: forward lunge and rotate the torso toward the front leg — 8 reps each side.",
+        "Lateral leg swing: hold a fence, swing the leg sideways across the body — 12 swings each leg.",
+        "Complete the full sequence once. On match days, repeat twice."
+      ],
+      "coaching_cues": [
+        "The hip flexor lunge is the most important exercise — hold it with a slight anterior pelvic tilt.",
+        "Dynamic movements should be controlled, not ballistic — mobility, not stretching.",
+        "Breathe into each stretch — exhale to deepen the position.",
+        "The walking lunge with twist activates the hip and core simultaneously — do it last.",
+        "This routine should be done warm — light cardio for 5 minutes before stretching."
+      ],
+      "common_errors": [
+        "Stretching cold — static stretching cold muscles is dangerous.",
+        "Rushing the stretches — each position needs at least 30 seconds to take effect.",
+        "Forgetting this before matches — this is not optional for injury prevention."
+      ],
+      "variations": [
+        "Add a foam roller: roll the quads and hip flexors before the stretch sequence.",
+        "Post-match version: static holds longer (60 seconds) — recovery focus.",
+        "Partner-assisted stretch: Player 2 assists the hip flexor stretch into deeper range."
+      ],
+      "tags": ["fitness", "mobility", "hip flexor", "beginner", "pre-match", "injury prevention"],
+      "diagramData": {
+        "p1": { "x": 200, "y": 850 },
+        "areas": [{ "x": 200, "y": 850, "r": 30 }]
+      }
+    },
+    {
+      "id": "FT-019",
+      "name": "Cone Shuffle and Sprint Combination: Match Movement",
+      "subcategory": "Agility",
+      "category": "Fitness",
+      "skill_level": "intermediate",
+      "player_count": 1,
+      "duration_minutes": 12,
+      "objective": "Build the combination of lateral agility and forward sprint — the two most common movement sequences in tennis. Most on-court movements combine lateral movement (to reach the ball) with a forward element (to attack a short ball) or a backward element (to retrieve a deep ball). This drill trains the physical transition between lateral and directional movement.",
+      "setup": "Place 3 cones in a triangle: cone A at center baseline, cone B 8 feet to the right, cone C 8 feet forward and right of center. Player 1 shuffles from A to B, sprints diagonally to C, then backpedals back to A.",
+      "instructions": [
+        "Start at cone A (center baseline).",
+        "Lateral shuffle from A to B (8 feet right) — touch cone B.",
+        "Sprint diagonally forward from B to C — touch cone C.",
+        "Backpedal diagonally from C back to A — touch cone A.",
+        "That is 1 rep. Complete 8 reps per set. Rest 45 seconds. Play 4 sets."
+      ],
+      "coaching_cues": [
+        "The shuffle must be genuine — don't crossover during the lateral segment.",
+        "Sprint explosively from B to C — this is the attack move after reaching the ball.",
+        "Backpedal from C to A using crossover steps — faster than a true backpedal.",
+        "Stay low throughout all three movement phases — no standing up between segments.",
+        "Touch each cone fully — the touch forces a complete deceleration before each direction change."
+      ],
+      "common_errors": [
+        "Crossing feet during the lateral shuffle — technically incorrect and slower.",
+        "Slow sprint from B to C — should be maximum effort.",
+        "Regular backpedal from C to A instead of crossover — slower."
+      ],
+      "variations": [
+        "Mirror triangle: repeat on the left side — cone B to the left.",
+        "Reverse triangle: sprint from A to C, shuffle C to B, backpedal B to A.",
+        "Racket in hand: perform the full pattern while carrying a racket in the ready position."
+      ],
+      "tags": ["fitness", "agility", "cone", "intermediate", "combination", "movement"],
+      "diagramData": {
+        "p1": { "x": 200, "y": 850 },
+        "moves": [
+          { "x1": 200, "y1": 850, "x2": 295, "y2": 850 },
+          { "x1": 295, "y1": 850, "x2": 295, "y2": 720 },
+          { "x1": 295, "y1": 720, "x2": 200, "y2": 850 }
+        ],
+        "cones": [
+          { "x": 200, "y": 850 },
+          { "x": 295, "y": 850 },
+          { "x": 295, "y": 720 }
+        ]
+      }
+    },
+    {
+      "id": "FT-020",
+      "name": "Calf Raise and Jump Complex: Lower Leg Power",
+      "subcategory": "Explosive Power",
+      "category": "Fitness",
+      "skill_level": "beginner",
+      "player_count": 1,
+      "duration_minutes": 10,
+      "objective": "Build calf strength and explosive ankle power through a calf raise and jump complex. The calves and ankles are the final link in the leg power chain — they are the last muscles to push off the ground before any tennis movement. Strong calves maintain the on-toes position required for split steps and quick first steps throughout an entire match.",
+      "setup": "Player 1 uses a step or the edge of the baseline if on court. A step provides a greater range of motion for the calves. No additional equipment needed.",
+      "instructions": [
+        "Stand on the edge of a step with heels hanging off — toes and ball of foot on the step.",
+        "Lower the heels as far as possible (calf stretch at the bottom).",
+        "Rise to maximum height on the toes.",
+        "Complete 20 slow calf raises per set. Rest 30 seconds.",
+        "After 2 sets of slow raises, transition to 2 sets of explosive calf jumps — both feet, maximum height, 10 reps."
+      ],
+      "coaching_cues": [
+        "Full range of motion — lower as far as the heel allows, rise as high as possible.",
+        "Slow on the way down — eccentric loading builds more strength than concentric.",
+        "On the jump complex: land on the balls of the feet and immediately re-launch — minimal ground contact.",
+        "Single-leg version: one foot on the step — dramatically increases the load.",
+        "Feel the difference between a flat-footed and toe-raised position — the toe position is faster."
+      ],
+      "common_errors": [
+        "Short range of motion — not lowering or rising fully.",
+        "Flat-footed jumps — defeats the purpose of the calf complex.",
+        "Slow jumps — must be explosive to train the fast-twitch calf fibers."
+      ],
+      "variations": [
+        "Single-leg calf raise: one leg only — doubles the resistance.",
+        "Weighted calf raise: hold a dumbbell — progressive resistance.",
+        "Jump rope in sets of 100: supersedes calf raises for calf endurance."
+      ],
+      "tags": ["fitness", "calf", "jump", "beginner", "lower leg", "explosive"],
+      "diagramData": {
+        "p1": { "x": 200, "y": 850 },
+        "moves": [
+          { "x1": 200, "y1": 850, "x2": 200, "y2": 820 },
+          { "x1": 200, "y1": 820, "x2": 200, "y2": 850 }
+        ],
+        "areas": [{ "x": 200, "y": 835, "r": 20 }]
+      }
+    },
+    {
+      "id": "FT-021",
+      "name": "Serve Power Circuit: Kinetic Chain Training",
+      "subcategory": "Strength",
+      "category": "Fitness",
+      "skill_level": "intermediate",
+      "player_count": 1,
+      "duration_minutes": 15,
+      "objective": "Develop the complete kinetic chain for the serve through a targeted circuit that trains every segment involved: legs (for drive), core (for transfer), shoulder (for rotation), and arm (for whip). The serve is a full-body movement and training it segment by segment before integrating the full swing creates greater power than practicing the serve alone.",
+      "setup": "Player 1 uses a resistance band, light dumbbells (2-4kg), and a medicine ball (2-3kg). The circuit rotates through 4 exercises targeting each kinetic chain segment.",
+      "instructions": [
+        "Squat jump: 3 x 8 — explosive leg drive, simulates the serve leg launch.",
+        "Overhead medicine ball slam: 3 x 8 — full body rotation into an overhead slam.",
+        "Resistance band internal/external shoulder rotation: 3 x 15 each direction.",
+        "Wrist snap with light dumbbell: 3 x 20 — hold dumbbell, pronate/supinate the wrist rapidly.",
+        "Rest 45 seconds between exercises. Complete 2 full circuit rotations."
+      ],
+      "coaching_cues": [
+        "Each exercise is a segment of the serve — think about the serve connection as you do each one.",
+        "The squat jump trains the leg drive that launches the serve.",
+        "The overhead slam trains the same overhead path as the racket on contact.",
+        "The wrist snap is the final acceleration of the serve — it adds 5-10 mph.",
+        "Integrate: after the circuit, hit 10 serves immediately — the activated kinetic chain transfers."
+      ],
+      "common_errors": [
+        "Training the segments in isolation without hitting serves immediately after — misses the integration.",
+        "Overhead slam: using the arms only — must involve hip rotation.",
+        "Wrist snap: too heavy a dumbbell — risks wrist injury."
+      ],
+      "variations": [
+        "Band-resisted serve: attach a light band to the wrist and practice the serve motion.",
+        "Weighted racket serve: practice serves with a weighted racket cover — builds arm strength.",
+        "Contrast method: 3 circuit exercises then 5 serves — alternate between strength and skill."
+      ],
+      "tags": ["fitness", "serve", "kinetic chain", "intermediate", "power", "strength"],
+      "diagramData": {
+        "p1": { "x": 240, "y": 860 },
+        "shots": [{ "x1": 240, "y1": 850, "x2": 200, "y2": 378 }],
+        "areas": [{ "x": 240, "y": 860, "r": 25 }]
+      }
+    },
+    {
+      "id": "FT-022",
+      "name": "Breathing Protocol: Controlled Recovery Between Points",
+      "subcategory": "Recovery",
+      "category": "Fitness",
+      "skill_level": "beginner",
+      "player_count": 1,
+      "duration_minutes": 10,
+      "objective": "Develop a systematic breathing protocol for the 20-second rest between points — the most underutilized recovery tool in tennis. Most players waste the between-point time by tension-holding, rapid shallow breathing, or mentally replaying errors. A controlled breathing protocol restores oxygen faster, reduces heart rate more quickly, and clears the mind for the next point. It is a physical and mental fitness skill.",
+      "setup": "Player 1 can practice this between any rally sequences or in isolation. A timer set for 20 seconds represents the between-point rest.",
+      "instructions": [
+        "After a point ends, turn away from the net — face the back fence.",
+        "Exhale completely — push all air out of the lungs.",
+        "Inhale for 4 counts through the nose — deep belly breath, not chest breath.",
+        "Hold for 2 counts.",
+        "Exhale for 6 counts through the mouth — controlled, slow.",
+        "Repeat 2 times within the 20-second window.",
+        "On the 20th second, turn back to the baseline ready to serve or return."
+      ],
+      "coaching_cues": [
+        "The 4-2-6 ratio is the optimal recovery breathing pattern — proven to reduce heart rate fastest.",
+        "Belly breathing (diaphragm) is more efficient than chest breathing — lower the shoulders.",
+        "Facing away from the net during breathing is not optional — it separates the point that was from the point ahead.",
+        "The exhale is where the heart rate drops — prioritize it over the inhale.",
+        "Practice this in non-pressure situations so it becomes automatic under pressure."
+      ],
+      "common_errors": [
+        "Shallow chest breathing — barely increases oxygen intake.",
+        "Looking at the opponent during recovery — extends the mental engagement with the previous point.",
+        "Not using the full 20 seconds — every second of controlled breathing has value."
+      ],
+      "variations": [
+        "Box breathing: 4-4-4-4 (inhale, hold, exhale, hold) — stronger mental reset.",
+        "Post-rally practice: after every rally in practice, perform 2 cycles before the next ball.",
+        "Under pressure: specifically practice the protocol at deuce and ad-out — high-pressure simulation."
+      ],
+      "tags": ["fitness", "breathing", "recovery", "beginner", "mental", "between points"],
+      "diagramData": {
+        "p1": { "x": 200, "y": 850 },
+        "areas": [{ "x": 200, "y": 850, "r": 20 }]
+      }
+    },
+    {
+      "id": "FT-023",
+      "name": "Deceleration Training: Stop on a Dime",
+      "subcategory": "Strength",
+      "category": "Fitness",
+      "skill_level": "intermediate",
+      "player_count": 1,
+      "duration_minutes": 12,
+      "objective": "Build deceleration strength — the ability to stop rapidly from full sprint without losing balance or joint integrity. Deceleration injuries (ACL, hamstring tears) occur most commonly when a player cannot absorb the forces of stopping quickly. Training deceleration specifically reduces injury risk and simultaneously improves the ability to change direction, which requires a complete stop before re-acceleration.",
+      "setup": "Player 1 sprints on the court between cones. The drill uses progressive deceleration distances — starting with 3 steps to stop, progressing to 1 step to stop as strength improves.",
+      "instructions": [
+        "Sprint from baseline to service line at full pace.",
+        "At the service line cone, decelerate and stop in exactly 3 steps.",
+        "Hold the stopped position for 1 second — check balance.",
+        "Sprint back to baseline, decelerate in 3 steps, hold.",
+        "After 5 reps at 3 steps, progress to 2 steps. After 5 more, progress to 1 step.",
+        "1-step stop: full sprint, plant both feet simultaneously on the line — extreme deceleration demand."
+      ],
+      "coaching_cues": [
+        "Lower the hips as you decelerate — high-body deceleration puts all stress on the knees.",
+        "Widen the base on the final step — wider feet create more braking surface.",
+        "The arms pull back during deceleration — they act as a brake.",
+        "1-step stop requires very strong quads and glutes — only progress when 3-step is controlled.",
+        "The held position must be balanced — any stumbling means deceleration was not under control."
+      ],
+      "common_errors": [
+        "Deceleration only through the upper body — upper body leans back while lower body continues forward.",
+        "No hip drop — joints absorb all the force without muscular assist.",
+        "Skipping the hold — the held position confirms control."
+      ],
+      "variations": [
+        "Lateral deceleration: sprint laterally and stop in 1-3 steps.",
+        "Stop and go: decelerate completely, then immediately re-accelerate — tests reactive power.",
+        "Sloped surface: practice decelerating on a slight downhill — increases the challenge."
+      ],
+      "tags": ["fitness", "deceleration", "strength", "intermediate", "injury prevention", "stopping"],
+      "diagramData": {
+        "p1": { "x": 200, "y": 670 },
+        "p2": { "x": 200, "y": 480 },
+        "moves": [
+          { "x1": 200, "y1": 850, "x2": 200, "y2": 670 },
+          { "x1": 200, "y1": 670, "x2": 200, "y2": 850 }
+        ],
+        "cones": [
+          { "x": 200, "y": 670 },
+          { "x": 200, "y": 850 }
+        ]
+      }
+    },
+    {
+      "id": "FT-024",
+      "name": "Long-Distance Court Run: Aerobic Base Building",
+      "subcategory": "Aerobic Conditioning",
+      "category": "Fitness",
+      "skill_level": "beginner",
+      "player_count": 1,
+      "duration_minutes": 20,
+      "objective": "Build the aerobic base — the fundamental cardiovascular fitness layer that supports all tennis-specific conditioning. Many club players lack sufficient aerobic base, causing them to fatigue early in matches and lose concentration. A strong aerobic base allows the body to recover more quickly between points and sets, sustain quality in the third set, and maintain tactical thinking under physical stress.",
+      "setup": "Player 1 runs around the perimeter of the court (or a larger area) at a steady, conversational pace. This is not a sprint — it is a sustained, moderate-effort run. Target heart rate: 60-70% of maximum (you should be able to speak in full sentences).",
+      "instructions": [
+        "Run continuously at a comfortable conversational pace for 20 minutes.",
+        "Maintain a pace where you could speak full sentences — not gasping.",
+        "If the court is too small, run around 3-4 courts or a nearby running area.",
+        "Keep pace consistent throughout — not faster at the start, not slower at the end.",
+        "After the run, note the heart rate — should be 120-140 BPM for most adults."
+      ],
+      "coaching_cues": [
+        "If you cannot speak, you are running too fast — slow down.",
+        "Consistent pace is the goal — this is base building, not interval training.",
+        "Land on the mid-foot — reduces impact forces compared to heel striking.",
+        "Breathe through the nose if possible — develops breathing efficiency.",
+        "This run should feel easy — the fitness comes from the duration, not the intensity."
+      ],
+      "common_errors": [
+        "Running too fast — turns it into an interval run, misses the aerobic base stimulus.",
+        "Too short — 20 minutes is the minimum for aerobic base stimulus.",
+        "Only doing this occasionally — aerobic base requires 3 runs per week to develop."
+      ],
+      "variations": [
+        "Increase duration progressively: 20 minutes → 25 → 30 over 3 weeks.",
+        "Fartlek: add 30-second surges every 5 minutes — maintains aerobic base while adding intensity.",
+        "Tennis-specific run: alternate 1 lap of jogging with 1 lap of lateral shuffles."
+      ],
+      "tags": ["fitness", "aerobic", "base building", "beginner", "endurance", "cardiovascular"],
+      "diagramData": {
+        "p1": { "x": 200, "y": 850 },
+        "moves": [
+          { "x1": 65, "y1": 850, "x2": 335, "y2": 850 },
+          { "x1": 335, "y1": 850, "x2": 335, "y2": 70 },
+          { "x1": 335, "y1": 70, "x2": 65, "y2": 70 },
+          { "x1": 65, "y1": 70, "x2": 65, "y2": 850 }
+        ]
+      }
+    },
+    {
+      "id": "FT-025",
+      "name": "Romanian Deadlift to Row: Posterior Chain Power",
+      "subcategory": "Strength",
+      "category": "Fitness",
+      "skill_level": "intermediate",
+      "player_count": 1,
+      "duration_minutes": 12,
+      "objective": "Strengthen the entire posterior chain — hamstrings, glutes, lower back, and upper back — through the Romanian deadlift to row combination. The posterior chain is the engine of all forward sprints, change-of-direction power, and the pulling motion of the backhand. A strong posterior chain also protects the lower back from the rotational stresses of match play.",
+      "setup": "Player 1 uses a barbell (preferred) or two dumbbells (10-20kg each, adjust to fitness level). Proper technique is mandatory — lighter is better than heavy with bad form.",
+      "instructions": [
+        "Stand with feet hip-width apart, holding the dumbbells.",
+        "Hinge at the hips, lower the dumbbells down the shins — straight back, soft knees.",
+        "At the bottom, perform a bent-over row: pull the dumbbells to the hips — squeeze the back.",
+        "Lower the row back to the hanging position.",
+        "Drive through the heels to stand upright — squeeze the glutes at the top.",
+        "Complete 8 reps per set. Rest 60 seconds. Play 4 sets."
+      ],
+      "coaching_cues": [
+        "The back must stay straight throughout — rounding is the most common error.",
+        "Row at the bottom — not at the top. The row happens when the torso is at 45 degrees.",
+        "Drive through the heels to stand — not through the toes.",
+        "Squeeze the glutes at the top — full hip extension is required.",
+        "This exercise is harder than it looks — start lighter than you think is necessary."
+      ],
+      "common_errors": [
+        "Rounding the back during the hinge — risk of lower back injury.",
+        "Row at the wrong position — rowing at the top or during the hinge loses the movement sequencing.",
+        "Partial hip extension at the top — not squeezing the glutes."
+      ],
+      "variations": [
+        "Single-arm dumbbell RDL to row: unilateral version — more balance demand.",
+        "Band RDL to row: resistance band under the feet — gentle starting version.",
+        "RDL only: remove the row if the combined movement is too complex initially."
+      ],
+      "tags": ["fitness", "deadlift", "posterior chain", "intermediate", "strength", "back"],
+      "diagramData": {
+        "p1": { "x": 200, "y": 850 },
+        "areas": [{ "x": 200, "y": 850, "r": 25 }]
+      }
+    },
+    {
+      "id": "FT-026",
+      "name": "Mental Toughness Drill: Play Through Physical Discomfort",
+      "subcategory": "Mental Fitness",
+      "category": "Fitness",
+      "skill_level": "advanced",
+      "player_count": 2,
+      "duration_minutes": 20,
+      "objective": "Build mental toughness by deliberately training through physical discomfort — the most direct preparation for the third set of a close competitive match. Most competitive matches are decided not by technique but by who can sustain quality under fatigue and discomfort. This drill creates genuine physical fatigue before each point and requires Players to continue competing at full quality despite the discomfort.",
+      "setup": "Player 1 and Player 2 alternate serving and returning. Before every single point, the serving player does 5 squat jumps. Before every return, the returning player does 5 lateral bounds. Then the point is played normally.",
+      "instructions": [
+        "Before every serve: server does 5 squat jumps immediately before tossing.",
+        "Before every return: returner does 5 lateral bounds immediately before the serve is hit.",
+        "Play the full point with genuine competitive intensity despite the physical load.",
+        "Play 15 consecutive points without stopping — the fatigue compounds.",
+        "Track score — winning while physically fatigued is the training goal."
+      ],
+      "coaching_cues": [
+        "The physical load is the point — embrace the discomfort rather than fighting it.",
+        "Maintain technique and tactical decisions despite fatigue — this is the drill's objective.",
+        "Breathe between the physical load and the point — use the serve routine to recover.",
+        "Notice which aspects of your game degrade first under fatigue — those need targeted work.",
+        "After the drill, ask: what score would you have if you felt fresh? The gap reveals the mental fitness work needed."
+      ],
+      "common_errors": [
+        "Not completing the full squat jump or bound load — cheating defeats the purpose.",
+        "Giving up competitive intensity after fatigue builds — the competitive intensity is the mental training.",
+        "Not tracking the score — the score creates the competitive pressure."
+      ],
+      "variations": [
+        "Increase the pre-point load: 10 squat jumps instead of 5 — more fatigue.",
+        "Staggered load: one player has the load, the other doesn't — simulates playing a fitter opponent.",
+        "Changeover: add 20 squat jumps at each changeover — compounds the fatigue over time."
+      ],
+      "tags": ["fitness", "mental toughness", "advanced", "fatigue", "competition", "resilience"],
+      "diagramData": {
+        "p1": { "x": 280, "y": 850 },
+        "p2": { "x": 120, "y": 60 },
+        "shots": [
+          { "x1": 240, "y1": 855, "x2": 200, "y2": 375 },
+          { "x1": 120, "y1": 70, "x2": 275, "y2": 830 },
+          { "x1": 275, "y1": 840, "x2": 100, "y2": 100 }
+        ],
+        "areas": [
+          { "x": 280, "y": 850, "r": 20 },
+          { "x": 120, "y": 60, "r": 20 }
+        ]
+      }
+    },
+    {
+      "id": "FT-027",
+      "name": "Ankle Stability and Proprioception: Court Surface Training",
+      "subcategory": "Injury Prevention",
+      "category": "Fitness",
+      "skill_level": "beginner",
+      "player_count": 1,
+      "duration_minutes": 12,
+      "objective": "Build ankle stability and proprioception to prevent the most common tennis injury: the ankle sprain. Tennis players change direction hundreds of times per match on surfaces that vary from hard to clay to grass. Ankle sprains occur when the ankle is loaded in an unstable position. This circuit trains the ankle stabilizing muscles to activate automatically under unexpected loads.",
+      "setup": "Player 1 needs only the court surface. Optional: a wobble board or Bosu ball for advanced progressions. The circuit is performed in barefoot or minimalist shoes for maximum proprioceptive feedback.",
+      "instructions": [
+        "Single-leg balance: stand on one foot with eyes open — hold 30 seconds each foot.",
+        "Single-leg balance with eyes closed: same position, close the eyes — 20 seconds each foot.",
+        "Single-leg calf raise: rise on the toes on one foot, lower — 15 reps each foot.",
+        "Ankle circles: lift the foot off the ground and circle the ankle — 10 circles each direction.",
+        "Single-leg hop and hold: jump off one foot, land on the same foot, hold 2 seconds — 8 reps each.",
+        "Complete the full circuit twice. Rest 30 seconds between exercises."
+      ],
+      "coaching_cues": [
+        "Eyes closed balance is significantly harder — the ankle stabilizers must work without visual aid.",
+        "The single-leg hop and hold simulates the landing forces of a split step — the most important exercise.",
+        "Focus on landing quality: ankle, knee, and hip all absorb the landing in sequence.",
+        "Progress each exercise only when the previous is controlled — don't rush the progression.",
+        "This circuit should be done 3 times per week as an injury prevention routine."
+      ],
+      "common_errors": [
+        "Skipping the eyes-closed version — the visual deprivation is the training stimulus.",
+        "Landing on a stiff leg — all force goes to the joint, not the muscles.",
+        "Not holding the balance — the hold activates the stabilizers."
+      ],
+      "variations": [
+        "Wobble board: all exercises on a wobble board — significant proprioception challenge.",
+        "Tennis-specific hop: hop in the shape of the split step — forward, land wide.",
+        "Partner disturbance: partner gently pushes Player 1 during single-leg balance — reactive stability."
+      ],
+      "tags": ["fitness", "ankle", "proprioception", "beginner", "injury prevention", "stability"],
+      "diagramData": {
+        "p1": { "x": 200, "y": 850 },
+        "areas": [{ "x": 200, "y": 850, "r": 20 }]
+      }
+    },
+    {
+      "id": "FT-028",
+      "name": "Ladder of Pain: Consecutive Point Fitness",
+      "subcategory": "Mental Fitness",
+      "category": "Fitness",
+      "skill_level": "advanced",
+      "player_count": 2,
+      "duration_minutes": 20,
+      "objective": "Build the competitive fitness to win consecutive points under cumulative fatigue — the exact demand of winning a game, a set, or a match from behind. The Ladder of Pain requires winning points in succession starting from a physical load; each missed point restarts the ladder. It trains both the physical fitness to sustain quality across consecutive efforts and the mental fitness to persevere after setbacks.",
+      "setup": "Player 1 must win 5 consecutive points to complete the ladder. Before each point, Player 1 does a physical load (5 squat jumps). If Player 1 loses any point, the consecutive count resets to zero — Player 1 must start over from point 1.",
+      "instructions": [
+        "Player 1 does 5 squat jumps before each point.",
+        "Player 1 must win the point to advance up the ladder.",
+        "Player 1 must win 5 consecutive points to complete the ladder.",
+        "Any lost point resets the count to 0 — Player 1 starts the squat jumps and the count again.",
+        "The drill ends when Player 1 completes 5 consecutive wins. Track total time and total points played."
+      ],
+      "coaching_cues": [
+        "The reset after a loss is the mental fitness challenge — accept it and start again with full commitment.",
+        "Use the physical load time (squat jumps) to breathe and mentally reset.",
+        "Play smart tennis under fatigue — aggressive shots should only come when the position warrants them.",
+        "The late stages (points 4 and 5) are when the mental training is most intense — don't tighten up.",
+        "A player who completes this ladder has trained both physical fitness and mental resilience."
+      ],
+      "common_errors": [
+        "Giving up mental intensity after resetting — the reset is not a punishment, it's a training stimulus.",
+        "Not completing the full squat jump load — cheating undermines the fitness component.",
+        "Panic-hitting to win points — under fatigue, smart tennis beats aggressive tennis."
+      ],
+      "variations": [
+        "Ladder of 7: must win 7 consecutive — more demanding.",
+        "Two-player ladder: both players must complete their own ladders simultaneously.",
+        "Tiebreak ladder: play a tiebreak where every serve requires a pre-point physical load."
+      ],
+      "tags": ["fitness", "ladder", "mental toughness", "advanced", "consecutive", "competition"],
+      "diagramData": {
+        "p1": { "x": 280, "y": 850 },
+        "p2": { "x": 120, "y": 60 },
+        "shots": [
+          { "x1": 240, "y1": 855, "x2": 200, "y2": 375 },
+          { "x1": 120, "y1": 70, "x2": 280, "y2": 820 },
+          { "x1": 280, "y1": 830, "x2": 100, "y2": 100 }
+        ],
+        "areas": [
+          { "x": 100, "y": 100, "r": 25 },
+          { "x": 280, "y": 850, "r": 20 }
+        ]
+      }
+    },
+    {
+      "id": "FT-029",
+      "name": "Yoga for Tennis: Flexibility and Recovery Session",
+      "subcategory": "Mobility",
+      "category": "Fitness",
+      "skill_level": "beginner",
+      "player_count": 1,
+      "duration_minutes": 20,
+      "objective": "Develop tennis-specific flexibility and accelerate muscle recovery through a targeted yoga sequence. Yoga is widely used by professional tennis players (Djokovic being the most famous advocate) because it addresses the specific tightness patterns of tennis: hip flexors from serving, thoracic rotation for groundstrokes, hamstrings from sprinting, and shoulder mobility from serving. This session covers all four areas.",
+      "setup": "Player 1 needs a yoga mat or soft surface. The sequence takes 20 minutes and targets all the major tennis-specific tightness patterns. This session is designed for post-practice or rest days.",
+      "instructions": [
+        "Downward dog: hold 60 seconds — stretches hamstrings, calves, and upper back.",
+        "Pigeon pose: right leg forward — hold 60 seconds. Switch to left — hold 60 seconds. Targets hip flexors.",
+        "Thread the needle: lying on back, cross right ankle over left knee, pull left knee to chest — 45 seconds each side.",
+        "Supine spinal twist: lying on back, bring right knee across to left side, arms out — 45 seconds each side.",
+        "Child's pose with lat stretch: child's pose, walk hands to one side — 30 seconds each side.",
+        "Repeat the full sequence once more."
+      ],
+      "coaching_cues": [
+        "Breathe into each pose — the exhale is what deepens the stretch.",
+        "Never force a position — discomfort is okay, pain is not.",
+        "Pigeon pose is the most important for tennis hip flexors — spend extra time here.",
+        "The spinal twist maintains thoracic rotation — important for groundstrokes.",
+        "This sequence is most effective when performed 4-5 times per week, not just once."
+      ],
+      "common_errors": [
+        "Forcing depth in poses — creates injury instead of flexibility.",
+        "Holding the breath — prevents the muscles from relaxing.",
+        "Doing yoga only after matches — should be 4-5 times per week for real benefit."
+      ],
+      "variations": [
+        "Yin yoga hold: hold each pose 3-5 minutes — deeper connective tissue release.",
+        "Morning yoga: lighter version first thing in the morning — mobility throughout the day.",
+        "Partner assist: partner gently assists each stretch into deeper range."
+      ],
+      "tags": ["fitness", "yoga", "flexibility", "beginner", "recovery", "mobility"],
+      "diagramData": {
+        "p1": { "x": 200, "y": 850 },
+        "areas": [{ "x": 200, "y": 850, "r": 30 }]
+      }
+    },
+    {
+      "id": "FT-030",
+      "name": "Fitness Grand Finale: The Complete Match Fitness Test",
+      "subcategory": "Assessment",
+      "category": "Fitness",
+      "skill_level": "advanced",
+      "player_count": 2,
+      "duration_minutes": 25,
+      "objective": "Assess and stress-test complete match fitness through a comprehensive simulation that combines all physical components: explosive power, aerobic endurance, deceleration, court coverage, and mental toughness under fatigue. This drill is a fitness assessment — the results reveal exactly which fitness components limit match performance and require priority in the next training block.",
+      "setup": "A structured 25-minute fitness circuit combining all the key physical demands of match play. Both players participate and track all data. Assessment categories: sprint speed, lateral speed, aerobic capacity, and match play quality under fatigue.",
+      "instructions": [
+        "Phase 1 (5 min): Spider run test — time 3 complete spider runs. Record time.",
+        "Phase 2 (5 min): 30-30 rally protocol — 5 rounds of 30 seconds rallying, 30 seconds rest.",
+        "Phase 3 (5 min): Multi-ball chase — full basket of 25 balls, record how many Player 1 reaches.",
+        "Phase 4 (5 min): Baseline suicide run — 3 complete suicides, record time.",
+        "Phase 5 (5 min): Competitive points under fatigue — play 10 points immediately after Phase 4.",
+        "Record all data. Compare across sessions monthly."
+      ],
+      "coaching_cues": [
+        "Phase 1 reveals footwork speed and deceleration quality — slow times mean footwork needs work.",
+        "Phase 2 reveals aerobic fitness — quality degradation reveals the aerobic ceiling.",
+        "Phase 3 reveals court coverage — missed balls late in the basket reveal the fitness gap.",
+        "Phase 4 reveals conditioning level — time degradation reveals anaerobic capacity.",
+        "Phase 5 reveals mental fitness — competitive quality under fatigue is the ultimate measure."
+      ],
+      "common_errors": [
+        "Not recording the data — the assessment only has value if results are tracked and compared.",
+        "Not going all-out in each phase — the assessment requires genuine maximum effort.",
+        "Doing the assessment when fresh — it should be done mid-practice, not at the start."
+      ],
+      "variations": [
+        "Monthly assessment: repeat every 4 weeks — chart fitness improvement.",
+        "Peer comparison: both players complete all 5 phases simultaneously — compare profiles.",
+        "Weakest link training: identify the phase with the worst score, train it specifically for 4 weeks, retest."
+      ],
+      "tags": ["fitness", "assessment", "comprehensive", "advanced", "match-simulation", "fitness test"],
+      "diagramData": {
+        "p1": { "x": 200, "y": 850 },
+        "p2": { "x": 200, "y": 60 },
+        "moves": [
+          { "x1": 200, "y1": 850, "x2": 200, "y2": 480 },
+          { "x1": 200, "y1": 480, "x2": 65, "y2": 480 },
+          { "x1": 65, "y1": 480, "x2": 65, "y2": 850 },
+          { "x1": 65, "y1": 850, "x2": 335, "y2": 850 },
+          { "x1": 335, "y1": 850, "x2": 335, "y2": 480 }
+        ],
+        "cones": [
+          { "x": 200, "y": 480 },
+          { "x": 65, "y": 480 },
+          { "x": 335, "y": 480 },
+          { "x": 65, "y": 850 },
+          { "x": 335, "y": 850 }
+        ],
+        "shots": [
+          { "x1": 280, "y1": 840, "x2": 110, "y2": 90 },
+          { "x1": 120, "y1": 70, "x2": 275, "y2": 830 }
+        ]
+      }
+    }
+  ]
+}

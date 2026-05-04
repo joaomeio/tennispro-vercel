@@ -1,0 +1,1462 @@
+{
+  "batch": "Matchplay drills 1-30",
+  "category": "Matchplay",
+  "description": "Drills focused on competitive match simulation, tactical decision-making under pressure, score-based scenarios, pattern play in points, mental toughness, and the complete integration of all technical skills into real-game contexts. Every drill in this category is designed around how points are actually won and lost in competitive tennis — not isolated technique, but live tactical execution.",
+  "drills": [
+    {
+      "id": "MP-001",
+      "name": "21-Point Baseline Tiebreak",
+      "subcategory": "Competitive Play",
+      "category": "Matchplay",
+      "skill_level": "beginner",
+      "player_count": 2,
+      "duration_minutes": 15,
+      "objective": "Introduce competitive match pressure in a condensed, high-repetition format. The 21-point tiebreak is the most efficient match simulation format available — it produces competitive pressure from the very first point, generates a winner quickly, and can be replicated many times in a single session. Unlike a full set, every point in a 21-point tiebreak carries significant weight, making it an excellent format for training competitive mentality without the time investment of a full match.",
+      "setup": "Both players rally from the baseline. Points are played out fully. The first player to reach 21 points wins. Win by 2 required. Serve alternates every 2 points. No let rules — all serves are live.",
+      "instructions": [
+        "Flip a coin or spin a racket to determine who serves first.",
+        "Serve alternates every 2 points throughout — same as a tiebreak.",
+        "Play each point fully from the serve — all strokes, volleys, and overheads are live.",
+        "Count points aloud after every point — both players must agree on the score.",
+        "First to 21 wins, win by 2. Play best of 3 sets of 21-point tiebreaks."
+      ],
+      "coaching_cues": [
+        "Every point matters — there are no warm-up points in a tiebreak format.",
+        "Track which patterns work: what serves win points? What rally patterns produce errors from the opponent?",
+        "Mental reset after each point — whether you won or lost the previous point is irrelevant.",
+        "Communication: say the score clearly before every serve — both players must agree.",
+        "The 21-point format reveals your competitive instincts quickly — trust them."
+      ],
+      "common_errors": [
+        "Playing casually instead of competitively — the tiebreak only works with genuine competition.",
+        "Score disputes — always agree on the score before serving.",
+        "Not tracking patterns — the tiebreak is a data source, not just a competition."
+      ],
+      "variations": [
+        "10-point tiebreak: faster format — first to 10, win by 2.",
+        "Handicap tiebreak: weaker player starts at +5 — levels the competition.",
+        "Constraint tiebreak: both players must stay behind the service line — tests baseline tactics only."
+      ],
+      "tags": ["matchplay", "tiebreak", "competitive", "beginner", "pressure", "baseline"],
+      "diagramData": {
+        "p1": { "x": 200, "y": 850 },
+        "p2": { "x": 200, "y": 60 },
+        "shots": [
+          { "x1": 240, "y1": 855, "x2": 200, "y2": 375 },
+          { "x1": 200, "y1": 60, "x2": 280, "y2": 820 },
+          { "x1": 280, "y1": 830, "x2": 100, "y2": 100 }
+        ],
+        "areas": [
+          { "x": 280, "y": 820, "r": 30 },
+          { "x": 100, "y": 100, "r": 30 }
+        ]
+      }
+    },
+    {
+      "id": "MP-002",
+      "name": "First Ball Attack: Win on the Plus-One",
+      "subcategory": "Tactical Patterns",
+      "category": "Matchplay",
+      "skill_level": "intermediate",
+      "player_count": 2,
+      "duration_minutes": 15,
+      "objective": "Develop the tactical habit of winning the point on the very first attack ball — the plus-one after the serve or the return. Modern tennis is dominated by first-ball attack: the server attacks the return, or the returner attacks the second serve. This drill trains the specific mindset and pattern of planning the first attack before the serve and executing it with decisive aggression.",
+      "setup": "Both players play full points. Player 1 serves. Before each point, Player 1 declares a pattern out loud: for example, 'wide serve, forehand inside-out on the plus-one'. Player 1 must execute the declared pattern. Player 2 plays freely.",
+      "instructions": [
+        "Player 1 declares the serve target and plus-one target before each point.",
+        "Player 1 serves and must execute the plus-one exactly as declared.",
+        "Player 2 returns aggressively and plays out the point.",
+        "If Player 1 wins the point on the plus-one: +2 points. If Player 1 wins beyond the plus-one: +1 point. If Player 2 wins: 0.",
+        "Play 15 points, then switch servers. First to 15 bonus points wins."
+      ],
+      "coaching_cues": [
+        "The declaration forces tactical thinking before the serve — not reactive thinking after.",
+        "Choose realistic patterns: wide serve + CC forehand is reliable. Wide serve + DTL is risky.",
+        "Move to the plus-one position during the serve — your feet should be moving before the return lands.",
+        "Commit to the declared shot — hesitation on the plus-one produces errors.",
+        "Over time, build a personal pattern library: 5 deuce court patterns and 5 ad court patterns."
+      ],
+      "common_errors": [
+        "Declaring patterns and then ignoring the declaration — defeats the entire tactical training.",
+        "Overly risky declarations — declaring serves and shots that are technically too difficult.",
+        "Plus-one not aggressive enough — must be a genuine attack ball, not a setup ball."
+      ],
+      "variations": [
+        "Return plus-one: Player 2 now declares the return plus-one pattern — tests return game planning.",
+        "Three-shot declaration: declare serve, plus-one, and plus-two — extends the tactical planning.",
+        "No declaration: play freely but count bonus points for winning on the plus-one — tracks natural tendencies."
+      ],
+      "tags": ["matchplay", "serve+1", "tactical", "intermediate", "first ball", "pattern"],
+      "diagramData": {
+        "p1": { "x": 280, "y": 840 },
+        "p2": { "x": 120, "y": 60 },
+        "moves": [{ "x1": 240, "y1": 855, "x2": 280, "y2": 840 }],
+        "shots": [
+          { "x1": 240, "y1": 855, "x2": 310, "y2": 385 },
+          { "x1": 120, "y1": 70, "x2": 255, "y2": 815 },
+          { "x1": 278, "y1": 838, "x2": 95, "y2": 100 }
+        ],
+        "areas": [{ "x": 95, "y": 100, "r": 28 }]
+      }
+    },
+    {
+      "id": "MP-003",
+      "name": "Deuce and Ad Court Pressure Points",
+      "subcategory": "Pressure Scenarios",
+      "category": "Matchplay",
+      "skill_level": "intermediate",
+      "player_count": 2,
+      "duration_minutes": 15,
+      "objective": "Train the two highest-pressure points in any game: deuce and ad-out. These are the points that determine whether a game is won or lost, and most players play them differently (worse) than non-pressure points. This drill creates concentrated repetitions of exactly these two scenarios, building the habit of playing your best tennis precisely when it matters most.",
+      "setup": "Every single point in this drill starts at either deuce or ad-out — never at any other score. Players alternate between the two scenarios: point 1 at deuce, point 2 at ad-out for Player 1, point 3 at ad-out for Player 2, and so on.",
+      "instructions": [
+        "Announce 'deuce' before the first point — play it fully from the serve.",
+        "Announce 'ad-out' (against Player 1) before the second point — play it fully.",
+        "Announce 'ad-in' (for Player 1) before the third point — play it fully.",
+        "Continue rotating these three pressure scenarios for 20 points.",
+        "Track: what percentage of deuce points does each player win? What percentage of ad-out points?"
+      ],
+      "coaching_cues": [
+        "The score before these points is irrelevant — this point is all that matters.",
+        "Use the pre-serve breathing protocol — exhale before the toss to release tension.",
+        "At deuce: play your best pattern, not your safest pattern. Safest is rarely best.",
+        "At ad-out: this is not the time for risky shots — play solid, deep, and let the opponent make an error.",
+        "Track the data: players who win 60%+ of deuce points are performing well under pressure."
+      ],
+      "common_errors": [
+        "Playing more conservatively at deuce than in practice — the mental response to the score is the enemy.",
+        "Serving to 'safe' locations at ad-out — often the most predictable and returnable serves.",
+        "Mental chatter during the point — must be in the present moment."
+      ],
+      "variations": [
+        "Deuce only: practice only deuce points — concentrated pressure.",
+        "Multiple deuce games: play full games where every game starts at 40-40.",
+        "Track the emotional response: journal what you were thinking at each deuce — reveals mental patterns."
+      ],
+      "tags": ["matchplay", "deuce", "pressure", "intermediate", "mental", "score scenarios"],
+      "diagramData": {
+        "p1": { "x": 200, "y": 850 },
+        "p2": { "x": 200, "y": 60 },
+        "shots": [
+          { "x1": 240, "y1": 855, "x2": 200, "y2": 375 },
+          { "x1": 200, "y1": 60, "x2": 110, "y2": 820 },
+          { "x1": 110, "y1": 830, "x2": 295, "y2": 100 }
+        ],
+        "areas": [
+          { "x": 110, "y": 820, "r": 28 },
+          { "x": 295, "y": 100, "r": 28 }
+        ]
+      }
+    },
+    {
+      "id": "MP-004",
+      "name": "Short Court Games: Service Box Only",
+      "subcategory": "Tactical Development",
+      "category": "Matchplay",
+      "skill_level": "beginner",
+      "player_count": 2,
+      "duration_minutes": 12,
+      "objective": "Develop touch, feel, net awareness, and short-ball tactics through service box-only matches. When the entire point is confined to the service boxes, players are forced to develop all the shots that most baseline-only players lack: drop shots, angles, half-volleys, drop volleys, and the touch needed for short-ball exchanges. These skills translate directly to all-court play.",
+      "setup": "Both players stand inside their respective service boxes. Points are played entirely within the service boxes — any ball landing outside the service box is out. Normal scoring applies.",
+      "instructions": [
+        "Both players position inside their service boxes.",
+        "Feed the ball underhand to start each point.",
+        "All shots must land inside the opponent's service box — baseline shots are out.",
+        "Play to 11 points, win by 2. Switch sides after each game.",
+        "Play best of 5 games of 11 points."
+      ],
+      "coaching_cues": [
+        "Soft hands are essential — full-swing groundstrokes always go long in this format.",
+        "Use all the short-court weapons: drop shots, angles, half-volleys, and touch volleys.",
+        "The service box format forces you to vary spin and pace — one-dimensional players lose quickly.",
+        "Approach the net whenever possible — the short court rewards net play heavily.",
+        "Watch where your opponent is positioned — angles become available when they are pulled wide."
+      ],
+      "common_errors": [
+        "Hitting too hard — all balls go long in the service box format.",
+        "Not varying spin — topspin balls that bounce high go long easily.",
+        "Staying at the baseline — must approach the net to create angles."
+      ],
+      "variations": [
+        "One player at net, one at baseline — pure net vs. passing shot competition.",
+        "Service box plus: include the service box and the first 3 feet of the backcourt.",
+        "Drop shot only: all shots must bounce twice within the service box — extreme touch training."
+      ],
+      "tags": ["matchplay", "short court", "touch", "beginner", "angles", "net play"],
+      "diagramData": {
+        "p1": { "x": 200, "y": 600 },
+        "p2": { "x": 200, "y": 390 },
+        "shots": [
+          { "x1": 200, "y1": 400, "x2": 150, "y2": 580 },
+          { "x1": 150, "y1": 570, "x2": 260, "y2": 420 },
+          { "x1": 260, "y1": 410, "x2": 100, "y2": 570 }
+        ],
+        "areas": [
+          { "x": 200, "y": 600, "r": 50 },
+          { "x": 200, "y": 390, "r": 50 }
+        ]
+      }
+    },
+    {
+      "id": "MP-005",
+      "name": "Cross-Court Rally then Open Court Attack",
+      "subcategory": "Tactical Patterns",
+      "category": "Matchplay",
+      "skill_level": "intermediate",
+      "player_count": 2,
+      "duration_minutes": 15,
+      "objective": "Train the foundational competitive rally pattern: build cross-court until a shorter ball appears, then attack the open court. This pattern appears in virtually every baseline exchange at the competitive level — it is not a coincidence that elite players rally cross-court and attack DTL. This drill trains the pattern deliberately, making it habitual and automatic.",
+      "setup": "Both players must rally cross-court for the first 4 shots of every point. After 4 cross-court shots, either player may attack in any direction. Both players must count the first 4 shots aloud.",
+      "instructions": [
+        "Feed or serve to start the point.",
+        "Both players must rally cross-court for the first 4 shots — DTL shots before shot 4 lose the point immediately.",
+        "After shot 4, either player may attack in any direction to try to win the point.",
+        "Continue playing until the point ends.",
+        "Play 20 points. Track: what direction does the first attack go? What percentage of attack shots win?"
+      ],
+      "coaching_cues": [
+        "The first 4 cross-court shots build the pattern — aim deep and to the corners.",
+        "Watch for the shorter ball within the first 4 shots — that is the attack trigger.",
+        "After shot 4: go DTL or angle if you have a short ball. Stay CC if the ball is deep.",
+        "Most points in competitive tennis are won after 4-9 shots — this drill replicates that.",
+        "Track which player attacks first after shot 4 — the first attacker usually wins the point."
+      ],
+      "common_errors": [
+        "Attacking before shot 4 — breaks the drill and doesn't train the pattern.",
+        "Continuing to rally CC after shot 4 even when a short ball appears — missing the attack trigger.",
+        "Attacking DTL from a neutral or defensive position — poor tactical judgment."
+      ],
+      "variations": [
+        "5-shot rule: must rally cross-court for 5 shots before attacking.",
+        "Bonus points: +2 for winning the point on the shot immediately after the 4th.",
+        "Single player constraint: only Player 1 must follow the cross-court rule — Player 2 plays freely."
+      ],
+      "tags": ["matchplay", "cross-court", "attack", "intermediate", "pattern", "tactical"],
+      "diagramData": {
+        "p1": { "x": 280, "y": 850 },
+        "p2": { "x": 120, "y": 60 },
+        "shots": [
+          { "x1": 280, "y1": 840, "x2": 110, "y2": 90 },
+          { "x1": 120, "y1": 70, "x2": 275, "y2": 835 },
+          { "x1": 275, "y1": 840, "x2": 95, "y2": 90 },
+          { "x1": 110, "y1": 70, "x2": 295, "y2": 100 }
+        ],
+        "areas": [
+          { "x": 95, "y": 90, "r": 28 },
+          { "x": 295, "y": 100, "r": 28 }
+        ]
+      }
+    },
+    {
+      "id": "MP-006",
+      "name": "The Serve Game: First Serve Percentage Under Score",
+      "subcategory": "Pressure Scenarios",
+      "category": "Matchplay",
+      "skill_level": "intermediate",
+      "player_count": 2,
+      "duration_minutes": 15,
+      "objective": "Train first serve percentage under real match score pressure. Most players hit their first serve percentage drops significantly in matches compared to practice because of score pressure. This drill attaches score consequences to every serve — double faults cost bonus points, first serves in earn bonus points — creating the mental environment where serve quality actually matters.",
+      "setup": "Play a practice game from 0-0. The serving player earns bonus points for first serves in and loses bonus points for double faults. Normal points are also counted. This creates a two-dimensional scoring system.",
+      "instructions": [
+        "Play a normal game from 0-0.",
+        "First serve in: +1 bonus point for the server (in addition to winning or losing the normal point).",
+        "Double fault: -2 bonus points for the server.",
+        "Second serve that is returned and won by the returner: -1 bonus point.",
+        "After the game, calculate bonus points alongside the game score. Track both over 10 games."
+      ],
+      "coaching_cues": [
+        "The bonus system forces attention to the serve without changing how you play the point.",
+        "A double fault costs 2 bonus points — it is the single most expensive error in this format.",
+        "First serve percentage below 50%: you are likely trying to serve too hard. Back off 10%.",
+        "Track where double faults happen: deuce or ad court? Pressure score or neutral score?",
+        "The serve should feel the same at 30-40 as it does at 40-0 — if it doesn't, this drill reveals why."
+      ],
+      "common_errors": [
+        "Serving more conservatively just for the bonus points — defeats the training purpose.",
+        "Only tracking bonus points, not the actual game score — both matter.",
+        "Not connecting serve patterns to specific scores — data collection without analysis."
+      ],
+      "variations": [
+        "Ace bonus: +3 bonus points for an ace — rewards aggressive serving.",
+        "Second serve only: play entire games with only second serves — extreme pressure.",
+        "First serve win rate only: only track whether first serves in result in won points — true effectiveness metric."
+      ],
+      "tags": ["matchplay", "serve", "percentage", "intermediate", "pressure", "data"],
+      "diagramData": {
+        "p1": { "x": 200, "y": 860 },
+        "p2": { "x": 200, "y": 60 },
+        "shots": [
+          { "x1": 240, "y1": 855, "x2": 200, "y2": 375 },
+          { "x1": 160, "y1": 855, "x2": 240, "y2": 388 }
+        ],
+        "cones": [
+          { "x": 200, "y": 375 },
+          { "x": 310, "y": 388 }
+        ]
+      }
+    },
+    {
+      "id": "MP-007",
+      "name": "Neutral, Attack, Defend: Three-State Rally",
+      "subcategory": "Tactical Awareness",
+      "category": "Matchplay",
+      "skill_level": "advanced",
+      "player_count": 2,
+      "duration_minutes": 15,
+      "objective": "Develop tactical awareness of the three rally states — neutral, offensive, and defensive — and the ability to transition between them deliberately. Elite players always know which state they are in: neutral (both players even), offensive (they have an advantage), or defensive (opponent has the advantage). This drill makes that awareness explicit by requiring players to call their state before each shot.",
+      "setup": "Both players rally from the baseline. Before each shot, the hitting player calls their state: 'neutral', 'attack', or 'defend'. The calls must be accurate — a player who calls 'attack' from behind the baseline is incorrect.",
+      "instructions": [
+        "Begin a baseline rally.",
+        "Before every shot, the hitting player calls their state: 'neutral', 'attack', or 'defend'.",
+        "Neutral: ball is deep, both players even. Hit a safe, deep shot.",
+        "Attack: a short or weak ball. Hit aggressively, go for the winner or force.",
+        "Defend: stretched, wide, or off-balance. Get the ball back safely.",
+        "Play full points. After each point, discuss: were the state calls accurate?"
+      ],
+      "coaching_cues": [
+        "Neutral calls from within a comfortable baseline position with a bouncy-enough ball.",
+        "Attack calls only when inside the baseline or on a ball below knee level from mid-court.",
+        "Defend calls when stretched wide, pulled deep, or under pace pressure.",
+        "The most common mistake: calling 'attack' from a neutral position and going for too much.",
+        "The second most common mistake: calling 'neutral' from an attack position and not taking the opportunity."
+      ],
+      "common_errors": [
+        "Calling 'attack' without the position to back it up — leads to unforced errors.",
+        "Calling 'defend' when neutral or even attacking — builds over-cautious habits.",
+        "Not calling at all — must commit to a state before every shot."
+      ],
+      "variations": [
+        "Silent version: don't call the state — play intuitively, then review the point and retroactively assign states.",
+        "Coach observes: a third person calls whether the state call was correct or incorrect.",
+        "State restriction: Player 1 can only use attack and defend (no neutral) — forces polarized decision-making."
+      ],
+      "tags": ["matchplay", "tactical awareness", "three states", "advanced", "decision", "rally"],
+      "diagramData": {
+        "p1": { "x": 200, "y": 850 },
+        "p2": { "x": 200, "y": 60 },
+        "shots": [
+          { "x1": 200, "y1": 840, "x2": 200, "y2": 100 },
+          { "x1": 200, "y1": 70, "x2": 200, "y2": 820 },
+          { "x1": 200, "y1": 640, "x2": 95, "y2": 100 }
+        ],
+        "areas": [
+          { "x": 200, "y": 100, "r": 35 },
+          { "x": 95, "y": 100, "r": 28 }
+        ]
+      }
+    },
+    {
+      "id": "MP-008",
+      "name": "Break Point Practice: Defender and Attacker",
+      "subcategory": "Pressure Scenarios",
+      "category": "Matchplay",
+      "skill_level": "intermediate",
+      "player_count": 2,
+      "duration_minutes": 15,
+      "objective": "Train the two sides of break point — defending a break point as the server, and converting a break point as the returner. Break points are the most decisive moments in any set, and most players perform significantly worse on break points than on other points. This drill creates concentrated repetitions of exactly this scenario, training both the serving and returning skills under maximum pressure.",
+      "setup": "Every point starts at 30-40 (break point for the returner). Player 1 serves, Player 2 returns. Play the full point out. Alternate who is the server after 10 points.",
+      "instructions": [
+        "Start every point at 30-40.",
+        "Player 1 serves — must hold serve to 'deuce' and defend the break point.",
+        "Player 2 returns — must win the point to 'break serve'.",
+        "Play the full point out after the serve.",
+        "Track separately: Player 1's break point save percentage and Player 2's break point conversion rate.",
+        "After 10 points, switch roles. Play 20 total points."
+      ],
+      "coaching_cues": [
+        "Server at break point: stick to your serve pattern — don't suddenly serve defensively.",
+        "Server: serve to a specific target, not just 'in' — intention beats desperation.",
+        "Returner at break point: focus on a deep, solid return — don't try to return for a winner.",
+        "Returner: step in on the second serve — attack the advantage you have.",
+        "Both players: breathe before the serve, stay in the present moment."
+      ],
+      "common_errors": [
+        "Server suddenly serving to a 'safe' location — telegraphed and predictable.",
+        "Returner getting tight and missing a return they would normally make.",
+        "Both players rushing the point — break points deserve the full serve routine."
+      ],
+      "variations": [
+        "Game point practice: start at 40-30 — same pressure but from the other direction.",
+        "Match point practice: announce it as match point — extreme psychological pressure.",
+        "Sequential break points: Player 1 must save 3 consecutive break points to 'win' the round."
+      ],
+      "tags": ["matchplay", "break point", "pressure", "intermediate", "serve", "return"],
+      "diagramData": {
+        "p1": { "x": 200, "y": 860 },
+        "p2": { "x": 200, "y": 60 },
+        "shots": [
+          { "x1": 240, "y1": 855, "x2": 310, "y2": 385 },
+          { "x1": 200, "y1": 70, "x2": 110, "y2": 820 },
+          { "x1": 110, "y1": 830, "x2": 295, "y2": 100 }
+        ],
+        "areas": [
+          { "x": 110, "y": 820, "r": 28 },
+          { "x": 295, "y": 100, "r": 28 }
+        ]
+      }
+    },
+    {
+      "id": "MP-009",
+      "name": "Approach and Net: Win the Point After Approaching",
+      "subcategory": "Tactical Patterns",
+      "category": "Matchplay",
+      "skill_level": "intermediate",
+      "player_count": 2,
+      "duration_minutes": 15,
+      "objective": "Develop the complete approach-to-net pattern in a match context — recognizing the short ball, approaching decisively, and finishing at the net. Many players know how to approach in isolation but freeze or make poor decisions when the point is live. This drill forces the approach decision into a real-point context with score pressure.",
+      "setup": "Player 2 mixes normal deep balls with occasional short balls. Player 1 must approach every time a short ball (inside the service line) is fed — no staying back on a short ball is allowed.",
+      "instructions": [
+        "Player 2 and Player 1 begin a baseline rally.",
+        "Player 2 will feed a short ball (inside the service line) at any point — Player 1 must immediately approach.",
+        "Player 1 must approach and come to the net — staying back on a short ball loses the point automatically.",
+        "Player 2 attempts to pass after the approach — Player 1 volleys or overheads.",
+        "Play 20 points. Track: how many approach points does Player 1 win? Target: 60%+."
+      ],
+      "coaching_cues": [
+        "Short ball recognition: the ball landing inside the service line is the trigger.",
+        "Move forward immediately — every second of delay reduces the approach quality.",
+        "Approach DTL as the default — it cuts off the cross-court passing angle.",
+        "After approaching, read the passer's swing: open face lob, closed face drive.",
+        "If winning less than 55% of approach points: approach shot is landing too short."
+      ],
+      "common_errors": [
+        "Staying back on short balls — the drill automatically penalizes this.",
+        "Approach shot landing in the service box — gives the passer an easy setup ball.",
+        "Not getting close enough to the net after the approach — allows too many passing angles."
+      ],
+      "variations": [
+        "Mandatory net: Player 1 must come to the net on every single point — forces net play.",
+        "Approach direction: Player 1 may only approach cross-court — tests the CC approach vs DTL.",
+        "Two-on-one approach: two baseline players vs. one net player — extreme passing pressure."
+      ],
+      "tags": ["matchplay", "approach", "net play", "intermediate", "tactical", "short ball"],
+      "diagramData": {
+        "p1": { "x": 200, "y": 540 },
+        "p2": { "x": 200, "y": 60 },
+        "moves": [
+          { "x1": 200, "y1": 850, "x2": 200, "y2": 680 },
+          { "x1": 200, "y1": 680, "x2": 200, "y2": 540 }
+        ],
+        "shots": [
+          { "x1": 200, "y1": 70, "x2": 200, "y2": 700 },
+          { "x1": 200, "y1": 678, "x2": 95, "y2": 100 },
+          { "x1": 200, "y1": 60, "x2": 195, "y2": 620 },
+          { "x1": 196, "y1": 536, "x2": 305, "y2": 120 }
+        ],
+        "areas": [{ "x": 305, "y": 120, "r": 25 }]
+      }
+    },
+    {
+      "id": "MP-010",
+      "name": "Counterpuncher vs. Aggressor: Role Assignment",
+      "subcategory": "Tactical Development",
+      "category": "Matchplay",
+      "skill_level": "advanced",
+      "player_count": 2,
+      "duration_minutes": 20,
+      "objective": "Develop tactical flexibility by assigning opposite tactical roles and playing out full points within those roles. One player is the aggressor — they must attack on every short ball, come to the net, and take risks. The other is the counterpuncher — they must redirect pace, use moonballs, and win through consistency and patience. These role assignments build tactical range beyond each player's natural game style.",
+      "setup": "Coin flip determines who is the aggressor and who is the counterpuncher. Both players play full points within their assigned roles for 10 points, then switch roles for 10 more points.",
+      "instructions": [
+        "Aggressor role: must attack every ball that lands at or inside the service line. Must come to the net at least once every 3 points. Any ball hit slowly or softly from a neutral position loses a bonus point.",
+        "Counterpuncher role: must use high topspin or slice to redirect. Must use at least one moonball per rally. Cannot attack — can only redirect and wait.",
+        "Play 10 points per role assignment. Switch and repeat.",
+        "Track: which role produces more won points? The data reveals the player's natural strength."
+      ],
+      "coaching_cues": [
+        "Aggressor: aggression must be based on ball quality, not ego — attack short balls, not deep balls.",
+        "Counterpuncher: patience is the weapon — wait for errors, don't chase them.",
+        "Aggressor: when coming to net, split step — aggressive play still requires correct footwork.",
+        "Counterpuncher: depth and direction are the weapons — wide and deep limits the aggressor's angles.",
+        "Most players will find one role easier — that reveals their default tactical profile."
+      ],
+      "common_errors": [
+        "Aggressor attacking from defensive positions — poor tactical judgment.",
+        "Counterpuncher abandoning patience and attacking — breaks the role assignment.",
+        "Both players reverting to neutral style — defeats the training purpose entirely."
+      ],
+      "variations": [
+        "Extended roles: play a full set with the assigned roles — deeper tactical immersion.",
+        "Role confusion: switch roles every 5 points without warning — tests tactical adaptability.",
+        "Natural game analysis: play 10 points with no roles, then compare to role assignments."
+      ],
+      "tags": ["matchplay", "counterpuncher", "aggressor", "advanced", "tactical", "roles"],
+      "diagramData": {
+        "p1": { "x": 200, "y": 850 },
+        "p2": { "x": 200, "y": 60 },
+        "shots": [
+          { "x1": 200, "y1": 840, "x2": 200, "y2": 110 },
+          { "x1": 200, "y1": 70, "x2": 200, "y2": 820 },
+          { "x1": 200, "y1": 650, "x2": 95, "y2": 100 }
+        ],
+        "areas": [
+          { "x": 200, "y": 110, "r": 40 },
+          { "x": 95, "y": 100, "r": 28 }
+        ]
+      }
+    },
+    {
+      "id": "MP-011",
+      "name": "Third Set Mental Toughness: Play When Tired",
+      "subcategory": "Mental Fitness",
+      "category": "Matchplay",
+      "skill_level": "advanced",
+      "player_count": 2,
+      "duration_minutes": 20,
+      "objective": "Train competitive quality specifically when physically and mentally fatigued — the conditions of the third set of a close match. Most competitive matches are decided in the third set, and the player who maintains their game plan, serve patterns, and tactical thinking under fatigue usually wins. This drill places both players in a genuinely fatigued state before beginning competitive play.",
+      "setup": "Both players complete a 10-minute physical circuit before the drill (spider runs, lateral shuffles, and suicide runs) until they are genuinely fatigued. Immediately after, they play competitive points.",
+      "instructions": [
+        "Phase 1 — Physical load: both players complete 3 spider runs, 3 lateral sideline-to-sideline shuffles, and 2 suicide runs without rest.",
+        "Phase 2 — Immediate competitive play: without rest, play 15 competitive points from scratch.",
+        "Both players must maintain full serve routines, between-point rituals, and tactical thinking.",
+        "Track: does serve quality degrade? Do tactical patterns simplify? Does competitive effort drop?",
+        "Debrief after the drill: what degraded first? What held up?"
+      ],
+      "coaching_cues": [
+        "Mental reset after the physical phase: use the breathing protocol to transition into competitive mode.",
+        "Maintain the between-point routine — this is the anchor when the body is fatigued.",
+        "Notice which technical skills degrade first under fatigue — those need specific targeted training.",
+        "Keep serving to your patterns — the serve is the one shot where you have full control.",
+        "A player who can maintain their game under fatigue has a significant competitive advantage."
+      ],
+      "common_errors": [
+        "Reducing the physical load to preserve match quality — the fatigue is the training stimulus.",
+        "Abandoning serve routines when tired — exactly when they are most needed.",
+        "Not tracking what degrades — the drill has no value without honest post-drill analysis."
+      ],
+      "variations": [
+        "Escalating fatigue: add one extra sprint before each group of 5 points — fatigue compounds.",
+        "Third set simulation: play full games with the physical load before every service game.",
+        "Fitness first: complete the full fitness drill from FT-025 then immediately compete."
+      ],
+      "tags": ["matchplay", "mental toughness", "fatigue", "advanced", "third set", "competition"],
+      "diagramData": {
+        "p1": { "x": 280, "y": 850 },
+        "p2": { "x": 120, "y": 60 },
+        "moves": [
+          { "x1": 200, "y1": 850, "x2": 200, "y2": 480 },
+          { "x1": 200, "y1": 480, "x2": 200, "y2": 850 }
+        ],
+        "shots": [
+          { "x1": 240, "y1": 855, "x2": 200, "y2": 375 },
+          { "x1": 120, "y1": 70, "x2": 280, "y2": 820 }
+        ]
+      }
+    },
+    {
+      "id": "MP-012",
+      "name": "No Unforced Error Game: Zero Tolerance Points",
+      "subcategory": "Tactical Development",
+      "category": "Matchplay",
+      "skill_level": "intermediate",
+      "player_count": 2,
+      "duration_minutes": 15,
+      "objective": "Build a zero-unforced-error mentality through a game where unforced errors cost double. Most club players lose far more points from unforced errors than from opponents' winners. Training under a zero-error penalty system forces a tactical shift: higher margin on all shots, deeper targets, more conservative attack timing, and a fundamentally more solid game style that transfers directly to match play.",
+      "setup": "Play normal points but with modified scoring: a normal error (close attempt) counts as 1 point lost. An unforced error (easy ball missed) counts as 2 points lost. Both players must agree before the match on what constitutes an unforced error.",
+      "instructions": [
+        "Define unforced error: a ball missed when in a comfortable position with time to set up.",
+        "Play normal points.",
+        "Normal point won/lost: +1/-1. Unforced error: -2 (the opponent gets 2 points instead of 1).",
+        "Players call their own unforced errors — honest self-assessment is required.",
+        "Play first to 15 bonus points. Track unforced error count throughout."
+      ],
+      "coaching_cues": [
+        "Aim 3 feet inside the lines — the penalty forces larger margins.",
+        "Attack only from positions of strength — a slightly short ball is not the same as a sitting ball.",
+        "When in doubt, add spin — topspin reduces unforced errors by creating a safety arc.",
+        "Track which shots produce your unforced errors — forehand, backhand, or volley?",
+        "Calling your own unforced errors honestly is the most valuable part of this drill."
+      ],
+      "common_errors": [
+        "Calling all errors 'forced' — dishonest self-assessment defeats the purpose.",
+        "Playing too defensively — the goal is fewer errors, not fewer shots.",
+        "Not tracking unforced error patterns — the data is more valuable than the game result."
+      ],
+      "variations": [
+        "Winner bonus: +2 for outright winners — balances the unforced error penalty.",
+        "Unforced error tracking only: don't change scoring, just count unforced errors — baseline data.",
+        "Double penalty game: unforced error = -3 — extreme version for players who are cavalier."
+      ],
+      "tags": ["matchplay", "unforced error", "consistency", "intermediate", "mental", "margin"],
+      "diagramData": {
+        "p1": { "x": 200, "y": 850 },
+        "p2": { "x": 200, "y": 60 },
+        "shots": [
+          { "x1": 200, "y1": 840, "x2": 190, "y2": 110 },
+          { "x1": 200, "y1": 70, "x2": 210, "y2": 820 }
+        ],
+        "areas": [
+          { "x": 190, "y": 110, "r": 40 },
+          { "x": 210, "y": 820, "r": 40 }
+        ]
+      }
+    },
+    {
+      "id": "MP-013",
+      "name": "Serve Pattern Library: Five Patterns Per Court",
+      "subcategory": "Tactical Patterns",
+      "category": "Matchplay",
+      "skill_level": "intermediate",
+      "player_count": 2,
+      "duration_minutes": 20,
+      "objective": "Build a personal serve pattern library — 5 specific serve-plus-one patterns from the deuce court and 5 from the ad court — and execute them under real match conditions. Most players serve reactively, choosing serve location after the serve rather than before. Building a deliberate pattern library forces tactical intentionality on every serve and produces significantly better serve game performance.",
+      "setup": "Player 1 writes down (on a sheet or in their mind) 5 patterns from each court. Example deuce patterns: T flat + inside-out FH, wide slice + CC FH, T kick + CC BH. Player 1 must use only their declared patterns during the drill.",
+      "instructions": [
+        "Player 1 selects 5 serve patterns from the deuce court (serve location + plus-one shot).",
+        "Player 1 serves from the deuce court, using only their 5 declared patterns.",
+        "Player 1 calls the pattern before each serve (quietly — they don't tell Player 2).",
+        "After 10 points, switch to ad court patterns. Play 10 more points.",
+        "Track: which patterns produce the most points won? Which produce the most errors?"
+      ],
+      "coaching_cues": [
+        "Each pattern must be a complete serve-plus-one sequence — not just a serve location.",
+        "Vary patterns across the 10 points — don't use the same pattern 5 times in a row.",
+        "The plus-one must be executed even if the return comes back differently than expected.",
+        "Some patterns will outperform others against specific opponents — note this.",
+        "After the drill: rank your 5 patterns by effectiveness. The top 2 are your 'go-to' patterns."
+      ],
+      "common_errors": [
+        "Declaring only serve locations without plus-one shots — incomplete pattern planning.",
+        "Using the same 1-2 patterns throughout — doesn't build the full library.",
+        "Abandoning the pattern when the serve is not ideal — the discipline is part of the training."
+      ],
+      "variations": [
+        "Pattern tournament: play 5 points with each pattern, score which wins most — find the best pattern.",
+        "Partner reads: Player 2 tries to guess the pattern from the serve — tests disguise quality.",
+        "Library expansion: build a library that includes second serve patterns as well."
+      ],
+      "tags": ["matchplay", "serve pattern", "library", "intermediate", "tactical", "planning"],
+      "diagramData": {
+        "p1": { "x": 240, "y": 860 },
+        "p2": { "x": 160, "y": 60 },
+        "shots": [
+          { "x1": 240, "y1": 850, "x2": 200, "y2": 375 },
+          { "x1": 240, "y1": 850, "x2": 315, "y2": 388 },
+          { "x1": 240, "y1": 850, "x2": 148, "y2": 382 }
+        ],
+        "cones": [
+          { "x": 200, "y": 375 },
+          { "x": 315, "y": 388 },
+          { "x": 148, "y": 382 }
+        ]
+      }
+    },
+    {
+      "id": "MP-014",
+      "name": "Winner or Error Analysis: Tracking Point-Ending Shots",
+      "subcategory": "Match Analysis",
+      "category": "Matchplay",
+      "skill_level": "intermediate",
+      "player_count": 2,
+      "duration_minutes": 20,
+      "objective": "Develop tactical self-awareness through real-time tracking of how each point ends: winner, forced error, or unforced error. The ratio of winners to unforced errors is the most important tactical metric in tennis. Most players believe they win through winners but actually win through opponents' unforced errors. This drill creates immediate clarity about how points are actually won and lost.",
+      "setup": "A third person observes (or Player 2 records on the next point) every point result: W (winner for either player), FE (forced error), UE (unforced error), and who committed it. Both players play normally.",
+      "instructions": [
+        "Play 20 competitive points from the serve.",
+        "Observer (or Player 2 on subsequent points) records: who won, and how — W, FE, or UE.",
+        "After 20 points, calculate: winner-to-unforced-error ratio for each player.",
+        "Discuss: what patterns emerge? Who wins through errors? Who wins through winners?",
+        "Set a specific goal for the next 20 points based on the data."
+      ],
+      "coaching_cues": [
+        "Winner: ball lands in the court and the opponent cannot touch it.",
+        "Forced error: opponent makes a mistake but only because of a quality shot that pushed them out of position.",
+        "Unforced error: ball missed when in a comfortable position with time to set up properly.",
+        "Elite players have a winner-to-UE ratio of 1:1 or better — most club players have 1:3 or worse.",
+        "The data is the coaching — the numbers tell you exactly what to work on."
+      ],
+      "common_errors": [
+        "Not recording honestly — calling forced errors unforced or vice versa.",
+        "Not using the data — playing 20 more points without adjusting based on what the data shows.",
+        "Only tracking one player — both players' data is equally valuable."
+      ],
+      "variations": [
+        "Rally length tracking: add rally length (number of shots) to the recording.",
+        "Shot type tracking: record which shot type ended the point — forehand, backhand, serve, volley.",
+        "Weekly comparison: run this drill monthly and compare UE/winner ratios over time."
+      ],
+      "tags": ["matchplay", "analysis", "winner", "unforced error", "intermediate", "data"],
+      "diagramData": {
+        "p1": { "x": 200, "y": 850 },
+        "p2": { "x": 200, "y": 60 },
+        "shots": [
+          { "x1": 200, "y1": 840, "x2": 95, "y2": 100 },
+          { "x1": 200, "y1": 70, "x2": 295, "y2": 820 }
+        ],
+        "areas": [
+          { "x": 95, "y": 100, "r": 28 },
+          { "x": 295, "y": 820, "r": 28 }
+        ]
+      }
+    },
+    {
+      "id": "MP-015",
+      "name": "Playing to a Weakness: Targeting the Opponent",
+      "subcategory": "Tactical Development",
+      "category": "Matchplay",
+      "skill_level": "advanced",
+      "player_count": 2,
+      "duration_minutes": 20,
+      "objective": "Develop the tactical habit of identifying and consistently targeting an opponent's weakness. One of the most effective match strategies is identifying the weaker wing, the weaker serve return, or the weaker movement direction and systematically directing play there. This requires tactical discipline — resisting the natural instinct to go to your own strength and instead going to the opponent's weakness.",
+      "setup": "Before the drill, both players declare their partner's weakness (e.g., 'your backhand' or 'your movement to the left'). Player 1 must direct at least 70% of shots to the declared weakness throughout the drill.",
+      "instructions": [
+        "Both players identify and declare each other's weakness before playing.",
+        "Player 1 must direct 70% of their shots to Player 2's declared weakness throughout the drill.",
+        "Player 2 plays freely — they know where the ball is coming, which replicates a prepared opponent.",
+        "Play 15 points. Track: what percentage of Player 1's shots actually went to the weakness?",
+        "Switch roles. Player 2 now targets Player 1's weakness."
+      ],
+      "coaching_cues": [
+        "Targeting a weakness requires changing your own comfortable patterns — that's the discipline challenge.",
+        "Even when Player 2 knows where it's coming, the weakness should still produce more errors.",
+        "The weakness might not be technical — it could be movement, position, or confidence.",
+        "Don't obsess so much on the weakness that you miss an obvious winning shot elsewhere.",
+        "After the drill: did targeting the weakness work? If not, why not? That answer is valuable."
+      ],
+      "common_errors": [
+        "Not going to the weakness consistently — defaulting to comfortable patterns.",
+        "Targeting the weakness even from impossible positions — must still make tactical sense.",
+        "Identifying the wrong weakness — the opponent may appear weak in one area but be well-prepared there."
+      ],
+      "variations": [
+        "Unknown weakness: Player 1 must identify the weakness through play (no pre-declaration) and target it.",
+        "Dynamic weakness: Player 2's weakness changes mid-drill — requires Player 1 to re-identify.",
+        "Weakness overload: 90% of shots to the weakness — extreme targeting discipline."
+      ],
+      "tags": ["matchplay", "weakness targeting", "tactical", "advanced", "strategy", "opponent analysis"],
+      "diagramData": {
+        "p1": { "x": 120, "y": 850 },
+        "p2": { "x": 120, "y": 60 },
+        "shots": [
+          { "x1": 120, "y1": 840, "x2": 110, "y2": 100 },
+          { "x1": 120, "y1": 60, "x2": 295, "y2": 820 },
+          { "x1": 295, "y1": 830, "x2": 110, "y2": 100 }
+        ],
+        "areas": [{ "x": 110, "y": 100, "r": 35 }]
+      }
+    },
+    {
+      "id": "MP-016",
+      "name": "Tiebreak from 6-6: Match Pressure Simulation",
+      "subcategory": "Pressure Scenarios",
+      "category": "Matchplay",
+      "skill_level": "advanced",
+      "player_count": 2,
+      "duration_minutes": 15,
+      "objective": "Train the full match tiebreak — the highest-pressure situation in tennis. A tiebreak at 6-6 in the third set represents the ultimate test of all tennis skills: technique, tactics, fitness, and mental composure. This drill creates that scenario repeatedly, building familiarity with the format, the pressure, and the mental demands of competing at maximum stakes.",
+      "setup": "Both players begin a standard tiebreak from 0-0. Normal tiebreak scoring: first to 7 points, win by 2. Serve alternates every 2 points, starting serve is determined by coin flip. Both players play as if the match depends on this tiebreak — it does.",
+      "instructions": [
+        "Announce 'tiebreak, 6-6 in the third set' before starting — creates the mental context.",
+        "Player 1 serves the first 1 point, then serve alternates every 2 points.",
+        "Play to 7 points, win by 2.",
+        "After the tiebreak, immediately play another — first player to win 3 tiebreaks wins the session.",
+        "Track every serve placement, return direction, and point-ending shot."
+      ],
+      "coaching_cues": [
+        "Tiebreaks are won through consistency and serve patterns — not through risky shots.",
+        "Use your strongest serve pattern — this is not the time for experimentation.",
+        "Return deep and cross-court on the first return — neutralize the serve advantage.",
+        "At 6-6 in the tiebreak: don't change anything. Trust what got you here.",
+        "Post-tiebreak review: which serve patterns won points? Which returns caused errors?"
+      ],
+      "common_errors": [
+        "Suddenly going for more on shots in the tiebreak — risk should decrease, not increase.",
+        "Forgetting the serve rotation — serves must alternate correctly.",
+        "Not using the between-point time for breathing and resetting."
+      ],
+      "variations": [
+        "Start the tiebreak at 5-5 — fewer points but more concentrated pressure.",
+        "Tiebreak series: play 7 tiebreaks in a row — builds tiebreak rhythm and pattern familiarity.",
+        "Super tiebreak: first to 10 (win by 2) — used as the third set in many pro formats."
+      ],
+      "tags": ["matchplay", "tiebreak", "advanced", "pressure", "match point", "mental"],
+      "diagramData": {
+        "p1": { "x": 200, "y": 860 },
+        "p2": { "x": 200, "y": 60 },
+        "shots": [
+          { "x1": 240, "y1": 855, "x2": 200, "y2": 375 },
+          { "x1": 200, "y1": 70, "x2": 280, "y2": 820 },
+          { "x1": 280, "y1": 830, "x2": 100, "y2": 100 }
+        ],
+        "areas": [
+          { "x": 280, "y": 820, "r": 28 },
+          { "x": 100, "y": 100, "r": 28 }
+        ]
+      }
+    },
+    {
+      "id": "MP-017",
+      "name": "No Backhand Game: Tactical Constraint Practice",
+      "subcategory": "Tactical Development",
+      "category": "Matchplay",
+      "skill_level": "intermediate",
+      "player_count": 2,
+      "duration_minutes": 15,
+      "objective": "Develop tactical creativity and forced pattern exploration through a constraint game where the backhand is not allowed. When the backhand is removed, players must use inside-out forehands, run around backhands, and create entirely different movement patterns to cover the court. This constraint forces tactics that are rarely used naturally and builds the inside-out forehand as a real weapon.",
+      "setup": "Both players play full points but neither player may hit a backhand. Any backhand shot hit into the court costs the hitter 1 bonus point. Players must run around every backhand and use a forehand, or let the ball go out. Both players must follow the rule.",
+      "instructions": [
+        "Both players are prohibited from hitting backhand shots.",
+        "Any backhand hit in the court: the hitter loses -1 bonus point.",
+        "Players must run around backhands to hit inside-out or inside-in forehands, or let the ball go out.",
+        "Play 20 points under this constraint.",
+        "Track: how many inside-out forehands does each player hit? Does the pattern change the tactics?"
+      ],
+      "coaching_cues": [
+        "The inside-out forehand becomes mandatory — use this drill to groove the run-around.",
+        "Court positioning changes: stand slightly further left (for right-handers) to cover the backhand.",
+        "The constraint reveals how often backhands are used — most players use them far more than they realize.",
+        "Serve from the deuce court wide — pulls the ball to your forehand on the plus-one.",
+        "Don't race around every backhand — let some balls go out rather than hitting a bad inside-out."
+      ],
+      "common_errors": [
+        "Panicking and hitting backhands — must accept losing some points to maintain the constraint.",
+        "Inside-out forehands with poor technique — better to let the ball go out than to hit a bad shot.",
+        "Not adjusting the serve to accommodate the constraint — serve wide to set up the forehand."
+      ],
+      "variations": [
+        "No forehand game: both players can only use backhand — forces the backhand as the dominant shot.",
+        "One-wing game: Player 1 has no backhand, Player 2 plays normally — asymmetric challenge.",
+        "Alternating wings: alternate no-backhand and no-forehand games — develops both wings."
+      ],
+      "tags": ["matchplay", "constraint", "forehand", "intermediate", "inside-out", "tactical"],
+      "diagramData": {
+        "p1": { "x": 120, "y": 850 },
+        "p2": { "x": 200, "y": 60 },
+        "moves": [{ "x1": 200, "y1": 850, "x2": 120, "y2": 850 }],
+        "shots": [
+          { "x1": 200, "y1": 70, "x2": 155, "y2": 840 },
+          { "x1": 120, "y1": 840, "x2": 95, "y2": 100 },
+          { "x1": 120, "y1": 840, "x2": 295, "y2": 100 }
+        ],
+        "areas": [
+          { "x": 95, "y": 100, "r": 25 },
+          { "x": 295, "y": 100, "r": 25 }
+        ]
+      }
+    },
+    {
+      "id": "MP-018",
+      "name": "Playing from Behind: 0-4 Comeback Drill",
+      "subcategory": "Mental Fitness",
+      "category": "Matchplay",
+      "skill_level": "advanced",
+      "player_count": 2,
+      "duration_minutes": 20,
+      "objective": "Build the mentality and tactical skills needed to come back from a deficit — one of the most important competitive skills in tennis. Starting from 0-4 down in a set forces players to compete under adversity, find ways to change momentum, and stay mentally present rather than collapsing. The ability to fight back from a deficit has decided countless major matches.",
+      "setup": "Player 1 starts at 0-4 in a set. Player 2 starts at 4-0. Both players play out the set from this score. Player 1 must try to come back and win the set. No gifts — Player 2 plays competitively to hold the lead.",
+      "instructions": [
+        "Begin the set at 0-4 (Player 1) vs 4-0 (Player 2).",
+        "Player 1 serves first from the 0-4 position.",
+        "Play full games with normal scoring from this starting position.",
+        "The set ends when one player reaches 6 games (win by 2) or a tiebreak at 6-6.",
+        "Track: does Player 1 successfully come back? What tactical changes (if any) helped the comeback?"
+      ],
+      "coaching_cues": [
+        "0-4 is not 0-0 — acknowledge the deficit without catastrophizing it.",
+        "Change one thing tactically: new serve location, different return position, or a new pattern.",
+        "Winning the next game is the only goal — not winning the set. One game at a time.",
+        "Player 2 should not give anything away — an honest test requires genuine competition.",
+        "The comeback mindset: 'one point at a time' is not a cliche — it is literally the only strategy."
+      ],
+      "common_errors": [
+        "Player 1 giving up mentally at 0-4 — the deficit is only 4 games, not the match.",
+        "Player 1 trying to change too many things at once — one tactical change, not five.",
+        "Player 2 easing up — the deficit only has training value if it is earned against real competition."
+      ],
+      "variations": [
+        "0-5 comeback: even more pressure — two games from losing the set.",
+        "Match comeback: start at 0-6, 0-4 in the second set — full match comeback simulation.",
+        "Comeback statistics: track over 10 sessions, how often does Player 1 come back from 0-4?"
+      ],
+      "tags": ["matchplay", "comeback", "mental toughness", "advanced", "deficit", "resilience"],
+      "diagramData": {
+        "p1": { "x": 200, "y": 850 },
+        "p2": { "x": 200, "y": 60 },
+        "shots": [
+          { "x1": 240, "y1": 855, "x2": 200, "y2": 375 },
+          { "x1": 200, "y1": 70, "x2": 110, "y2": 820 },
+          { "x1": 110, "y1": 830, "x2": 295, "y2": 100 }
+        ],
+        "areas": [
+          { "x": 200, "y": 850, "r": 20 }
+        ]
+      }
+    },
+    {
+      "id": "MP-019",
+      "name": "Rally Length Zones: Short, Medium, Long Point Training",
+      "subcategory": "Tactical Development",
+      "category": "Matchplay",
+      "skill_level": "intermediate",
+      "player_count": 2,
+      "duration_minutes": 15,
+      "objective": "Develop tactical competence across different rally length zones. Most players are comfortable in one rally length zone — either short points (attackers) or long points (baseliners) — but struggle in others. This drill trains all three zones explicitly and reveals the tactical and physical profile of each player.",
+      "setup": "Play three rounds of 10 points each. Round 1: short-point training (must win or lose within 4 shots). Round 2: medium-point training (point must last 5-8 shots). Round 3: long-point training (point must last 9+ shots). Any point ending outside the target zone is replayed.",
+      "instructions": [
+        "Round 1 (10 points): short rally — if the point is still going after 4 shots, the current shooter must attack aggressively.",
+        "Round 2 (10 points): medium rally — if the point ends before 5 shots, the point is replayed.",
+        "Round 3 (10 points): long rally — both players must rally for 9+ shots before a winner or error.",
+        "Track win rate in each zone. The zone with the lowest win rate is the tactical weakness.",
+        "Discuss: what tactics work in each zone? What fails?"
+      ],
+      "coaching_cues": [
+        "Short points favor aggressive servers and strong returners — take risks early.",
+        "Medium points require controlled aggression: build the first 3 shots, then attack on the 4th or 5th.",
+        "Long points favor consistent baseliners — depth, spin, and patience are the weapons.",
+        "Most competitive matches have a mix of all three — a balanced game wins more situations.",
+        "Your win rate in each zone is your tactical profile — know it and train the weak zone."
+      ],
+      "common_errors": [
+        "Not adjusting tactics between rounds — each zone requires a different approach.",
+        "Ending the long rally with a risky shot just because it's been many shots.",
+        "Forcing a short point in the medium round by hitting too hard."
+      ],
+      "variations": [
+        "Zone preference: each player must win in their weakest zone — targeted improvement.",
+        "Zone matching: two aggressors play the long-point round — tests adaptability.",
+        "Zone tracking over a match: count rally lengths in a real match — identify your natural zone."
+      ],
+      "tags": ["matchplay", "rally length", "tactical", "intermediate", "zones", "profiling"],
+      "diagramData": {
+        "p1": { "x": 200, "y": 850 },
+        "p2": { "x": 200, "y": 60 },
+        "shots": [
+          { "x1": 200, "y1": 840, "x2": 200, "y2": 100 },
+          { "x1": 200, "y1": 70, "x2": 200, "y2": 820 },
+          { "x1": 200, "y1": 820, "x2": 95, "y2": 100 }
+        ],
+        "areas": [{ "x": 200, "y": 460, "r": 50 }]
+      }
+    },
+    {
+      "id": "MP-020",
+      "name": "One Set Match with Structured Changeover Review",
+      "subcategory": "Match Assessment",
+      "category": "Matchplay",
+      "skill_level": "intermediate",
+      "player_count": 2,
+      "duration_minutes": 30,
+      "objective": "Play a complete practice set with structured tactical reviews at every changeover — building the habit of tactical adjustment within a match. Most players change nothing between games, even when a pattern is clearly not working. The structured changeover review forces reflection, adjustments, and plan re-execution — the skills that separate tactical players from reactive ones.",
+      "setup": "Play a full set (first to 6, win by 2). At every changeover (after every 2 games), both players spend 60 seconds on a structured 3-question review before continuing.",
+      "instructions": [
+        "Play 2 games. At the changeover (90-second maximum), both players answer 3 questions: What is working? What is not working? What is one thing I will change?",
+        "Write the answers down if possible, or state them aloud.",
+        "Play the next 2 games using the declared change.",
+        "Repeat at every changeover throughout the set.",
+        "After the set: review all changeover notes — did the changes help? What pattern emerged?"
+      ],
+      "coaching_cues": [
+        "Answer each question specifically: not 'serve better' — 'serve wide on deuce court more'.",
+        "One change at a time — multiple simultaneous changes cause confusion, not improvement.",
+        "The change must be tactical, not technical — you cannot fix your forehand in a changeover.",
+        "After implementing a change, give it 4 points to evaluate — don't abandon it after one miss.",
+        "The changeover review habit is a competitive skill — practice it so it becomes automatic in real matches."
+      ],
+      "common_errors": [
+        "Generic answers: 'play better' is not a tactical answer.",
+        "Too many changes: one change per changeover maximum.",
+        "Abandoning the review when leading — tactical review is most important when winning."
+      ],
+      "variations": [
+        "Pre-written strategy: both players write 3 pre-match tactics, track if they use them.",
+        "Partner review: both players share their changeover answers with each other — mutual feedback.",
+        "Post-match full review: review all changeover notes after the full set — identify patterns."
+      ],
+      "tags": ["matchplay", "set", "changeover", "intermediate", "tactical review", "adjustment"],
+      "diagramData": {
+        "p1": { "x": 200, "y": 850 },
+        "p2": { "x": 200, "y": 60 },
+        "shots": [
+          { "x1": 240, "y1": 855, "x2": 200, "y2": 375 },
+          { "x1": 200, "y1": 70, "x2": 280, "y2": 820 },
+          { "x1": 280, "y1": 830, "x2": 100, "y2": 100 },
+          { "x1": 100, "y1": 820, "x2": 295, "y2": 100 }
+        ],
+        "areas": [
+          { "x": 280, "y": 820, "r": 28 },
+          { "x": 100, "y": 100, "r": 28 }
+        ]
+      }
+    },
+    {
+      "id": "MP-021",
+      "name": "Second Serve Game: When First Serve Goes Out",
+      "subcategory": "Pressure Scenarios",
+      "category": "Matchplay",
+      "skill_level": "intermediate",
+      "player_count": 2,
+      "duration_minutes": 15,
+      "objective": "Train the tactical response to missing the first serve — how to serve, rally, and manage the point from the second serve disadvantage. Most players miss the first serve and immediately shift to a conservative, defensive mindset on the second serve. This drill makes second serve situations a training focus, building both second serve quality and the competitive mindset needed to play aggressively from a second serve.",
+      "setup": "All points in this drill begin with a second serve — no first serves allowed. The server must use their second serve motion (spin serve) for every delivery. Points are scored normally.",
+      "instructions": [
+        "Player 1 serves with only second serve motion (spin serve) — no flat first serves.",
+        "Player 2 returns aggressively — knowing it's always a second serve.",
+        "Both players play out the full point from the second serve start.",
+        "Play 15 points, then switch servers.",
+        "Track: Player 1's second serve win percentage. Target: 45%+ (even on second serves)."
+      ],
+      "coaching_cues": [
+        "Second serves must have quality: deep, with spin, and to a specific location.",
+        "The server should still have a plus-one plan — even on second serves.",
+        "Use the kick second serve to the backhand as the primary weapon.",
+        "After missing the first serve, the mental reset must be complete before the second serve routine.",
+        "A player who wins 45%+ on second serves has a dangerous second serve — strive for this."
+      ],
+      "common_errors": [
+        "Serving second serves to safe, predictable locations — easily attackable.",
+        "No plus-one plan on second serve — playing reactively from the start.",
+        "Short second serves that sit up — give the returner an easy attack opportunity."
+      ],
+      "variations": [
+        "Second serve only set: play a full set with only second serves — deep performance test.",
+        "Mixed: alternate first and second serve starts — compares win rates in each scenario.",
+        "Second serve attack: server must attack the plus-one on every second serve point — aggressive mindset."
+      ],
+      "tags": ["matchplay", "second serve", "intermediate", "pressure", "win rate", "mindset"],
+      "diagramData": {
+        "p1": { "x": 200, "y": 860 },
+        "p2": { "x": 200, "y": 60 },
+        "shots": [
+          { "x1": 200, "y1": 850, "x2": 240, "y2": 385 },
+          { "x1": 200, "y1": 60, "x2": 110, "y2": 820 }
+        ],
+        "areas": [{ "x": 240, "y": 385, "r": 30 }]
+      }
+    },
+    {
+      "id": "MP-022",
+      "name": "Handicap Match: Equalizing Competition",
+      "subcategory": "Competitive Play",
+      "category": "Matchplay",
+      "skill_level": "beginner",
+      "player_count": 2,
+      "duration_minutes": 20,
+      "objective": "Create competitive balance between players of different skill levels through a handicap scoring system, enabling high-quality competitive practice for both players. One-sided practice matches have limited value for the stronger player (too easy) and can be demoralizing for the weaker player. Handicap matches maximize the competitive pressure for both players simultaneously.",
+      "setup": "Determine the skill gap. For a 3-skill-level difference: the weaker player starts every game at 30-0 advantage. For a 1-level difference: weaker player starts every game at 15-0. This balances the competitive intensity.",
+      "instructions": [
+        "Assess the skill gap and assign the appropriate starting score advantage to the weaker player.",
+        "Both players play full points from the handicapped starting score.",
+        "The stronger player must win from behind more often — creates challenge and pressure.",
+        "The weaker player must still win the points — the handicap creates opportunity, not gifts.",
+        "Play a full set with the handicap. Adjust the handicap if the result is still too one-sided."
+      ],
+      "coaching_cues": [
+        "The handicap should produce a closely contested match — if one player wins easily, the handicap is wrong.",
+        "Stronger player: treat every point as competitive — don't relax because of the handicap.",
+        "Weaker player: the handicap creates opportunity. Earn the points — don't expect gifts.",
+        "Both players: the competitive intensity from a close match is the training stimulus.",
+        "Adjust the handicap after each match until the games are genuinely competitive."
+      ],
+      "common_errors": [
+        "Handicap too large — weaker player wins without working hard.",
+        "Handicap too small — still one-sided, weaker player gets frustrated.",
+        "Strong player not competing fully — reduces training value for both."
+      ],
+      "variations": [
+        "Game handicap: weaker player starts the set at 3-0 up.",
+        "Shot handicap: stronger player can only use one side (forehand or backhand) — technical limitation.",
+        "Double bounces: weaker player may let the ball bounce twice before hitting — time pressure equalizer."
+      ],
+      "tags": ["matchplay", "handicap", "competitive", "beginner", "equalization", "match practice"],
+      "diagramData": {
+        "p1": { "x": 200, "y": 850 },
+        "p2": { "x": 200, "y": 60 },
+        "shots": [
+          { "x1": 240, "y1": 855, "x2": 200, "y2": 375 },
+          { "x1": 200, "y1": 70, "x2": 280, "y2": 820 }
+        ],
+        "areas": [
+          { "x": 200, "y": 850, "r": 30 },
+          { "x": 200, "y": 60, "r": 30 }
+        ]
+      }
+    },
+    {
+      "id": "MP-023",
+      "name": "Doubles Formation: I-Formation Serve",
+      "subcategory": "Doubles Tactics",
+      "category": "Matchplay",
+      "skill_level": "advanced",
+      "player_count": 2,
+      "duration_minutes": 12,
+      "objective": "Develop the doubles I-formation — one of the most effective and underused tactical formations in doubles. The I-formation places the net player directly in the center at the net, and the server signals left or right to indicate which side they will move after the serve. This formation creates confusion for the returner (they cannot read where the net player will move) and often produces weak returns or outright winners.",
+      "setup": "Two players act as a doubles team. Player 1 serves. Player 2 (net player) crouches at the center strap of the net. Player 1 signals (left or right) with fingers behind the back — Player 2 moves that direction when the serve is hit. A third player (or a cone) represents the opposing returner.",
+      "instructions": [
+        "Player 2 crouches at the center strap, facing the net.",
+        "Player 1 signals the direction before serving — Player 2 must remember the signal.",
+        "Player 1 serves. The moment the ball leaves the racket, Player 2 moves to the signaled side.",
+        "If the return comes back, Player 1 is covering the other side.",
+        "Practice 15 I-formation serves from each court. Track: how many returns are intercepted by Player 2?"
+      ],
+      "coaching_cues": [
+        "Player 2: stay crouched until the serve is hit — moving early gives away the formation.",
+        "Player 1: serve as fast and accurate as possible — the I-formation loses value with a weak serve.",
+        "Player 2: move decisively and early after the signal — no hesitation.",
+        "The I-formation is most effective when used occasionally — overuse allows opponents to predict.",
+        "Player 1: cover the side Player 2 vacates — communication is essential."
+      ],
+      "common_errors": [
+        "Player 2 moving early — the returner reads the movement and aims the other way.",
+        "Player 1 forgetting to cover the vacated side.",
+        "Overusing the I-formation — becomes predictable after 3-4 uses per set."
+      ],
+      "variations": [
+        "Australian formation: Player 2 starts on the same side as the server — different positioning.",
+        "Signal variation: use multiple signals (not just left/right) to add complexity.",
+        "Real match I-formation: use it in a practice set — track how many times it produces a weak return."
+      ],
+      "tags": ["matchplay", "doubles", "I-formation", "advanced", "tactics", "serve"],
+      "diagramData": {
+        "p1": { "x": 240, "y": 860 },
+        "p2": { "x": 200, "y": 490 },
+        "moves": [
+          { "x1": 200, "y1": 490, "x2": 130, "y2": 490 }
+        ],
+        "shots": [
+          { "x1": 240, "y1": 850, "x2": 310, "y2": 385 },
+          { "x1": 280, "y1": 60, "x2": 200, "y2": 840 }
+        ],
+        "areas": [{ "x": 200, "y": 490, "r": 20 }]
+      }
+    },
+    {
+      "id": "MP-024",
+      "name": "Emotional Reset Protocol: Between-Point Routine",
+      "subcategory": "Mental Fitness",
+      "category": "Matchplay",
+      "skill_level": "intermediate",
+      "player_count": 2,
+      "duration_minutes": 15,
+      "objective": "Develop a structured emotional reset protocol that prevents the emotional spillover from bad points into subsequent points. The most common mental performance problem in competitive tennis is carrying the emotion of a bad point into the next point — creating errors that compound and produce losing streaks. A trained between-point routine prevents this by creating a psychological reset after every single point.",
+      "setup": "Both players play full points. After every single point — winner or loser — Player 1 must perform a specific 4-step between-point routine before the next serve. Player 2 observes and calls if Player 1 skips any step.",
+      "instructions": [
+        "Define Player 1's 4-step routine: Step 1: turn away from the net (face back fence). Step 2: breathe (exhale fully). Step 3: positive self-talk or trigger word. Step 4: decision (serve target or return position).",
+        "After every point, Player 1 must complete all 4 steps before serving or returning.",
+        "Player 2 calls 'incomplete' if Player 1 skips a step.",
+        "Play 20 points. Track: how many complete routines were executed without being called incomplete?",
+        "Target: 18 of 20 complete routines."
+      ],
+      "coaching_cues": [
+        "Step 1 (turn away): physically separates the past point from the present.",
+        "Step 2 (breathe): exhaling releases physical tension built up during the point.",
+        "Step 3 (trigger word): one word that centers your focus — 'ready', 'present', 'next'.",
+        "Step 4 (decision): the serve target or return position commits the mind to the next point.",
+        "The routine should take 8-12 seconds — not rushed, not slow."
+      ],
+      "common_errors": [
+        "Skipping the routine after good points — it is equally important after winning as losing.",
+        "Routine too long — players cannot sustain a 30-second routine under pressure.",
+        "Trigger words without meaning — the trigger must have a genuine centering effect."
+      ],
+      "variations": [
+        "Personalized routine: Player 1 develops their own 4 steps based on what helps them specifically.",
+        "Tracked over a real match: mark on a scorecard whether the routine was completed after each point.",
+        "Speed routine: the same 4 steps in 5 seconds — for players who naturally take too long between points."
+      ],
+      "tags": ["matchplay", "mental", "between points", "intermediate", "routine", "emotional reset"],
+      "diagramData": {
+        "p1": { "x": 200, "y": 850 },
+        "p2": { "x": 200, "y": 60 },
+        "moves": [
+          { "x1": 200, "y1": 850, "x2": 200, "y2": 870 }
+        ],
+        "areas": [{ "x": 200, "y": 850, "r": 20 }]
+      }
+    },
+    {
+      "id": "MP-025",
+      "name": "Pattern Recognition: What Does This Opponent Do?",
+      "subcategory": "Tactical Development",
+      "category": "Matchplay",
+      "skill_level": "advanced",
+      "player_count": 2,
+      "duration_minutes": 20,
+      "objective": "Develop real-time opponent pattern recognition — identifying what an opponent tends to do in specific situations and using that information to anticipate and exploit. Every player has patterns: a serve they use at break point, a rally shot they default to under pressure, or a movement they favor. The player who identifies and acts on patterns first gains a significant competitive advantage.",
+      "setup": "Play 10 points with Player 1 deliberately creating opportunities to recognize Player 2's patterns. After 10 points, Player 1 identifies 2-3 specific patterns they observed. Then play 10 more points using that information.",
+      "instructions": [
+        "Phase 1 (10 points): Player 1 actively watches for patterns. After each point, Player 1 mentally notes: What did Player 2 do? Was it a pattern?",
+        "Break after 10 points: Player 1 declares 2-3 patterns observed (e.g., 'Player 2 always goes DTL when pushed wide').",
+        "Phase 2 (10 more points): Player 1 uses the identified patterns to anticipate and position early.",
+        "Compare win rate in Phase 1 vs Phase 2. The improvement is the value of pattern recognition.",
+        "Switch roles and repeat."
+      ],
+      "coaching_cues": [
+        "Watch for serve patterns: same serve at deuce, same serve on break point.",
+        "Watch for pressure patterns: under pressure, most players default to cross-court.",
+        "Watch for movement patterns: does Player 2 always recover to the same spot?",
+        "Watch for toss-reveal patterns: the toss tells you where the serve is going before contact.",
+        "Act on patterns immediately — the sooner you move, the more valuable the read."
+      ],
+      "common_errors": [
+        "Identifying false patterns: one instance is not a pattern — need at least 3 repetitions.",
+        "Over-committing to patterns: if Player 2 breaks the pattern once, don't abandon the read.",
+        "Not tracking patterns during Phase 1 — must be actively observing, not just playing."
+      ],
+      "variations": [
+        "Blind pattern: Player 1 doesn't declare patterns — just uses them silently during Phase 2.",
+        "Pattern test: Player 2 deliberately creates a false pattern then breaks it — tests Player 1's commitment.",
+        "Match pattern journal: after every match, both players write down 3 patterns they identified."
+      ],
+      "tags": ["matchplay", "pattern recognition", "advanced", "tactical", "opponent reading", "anticipation"],
+      "diagramData": {
+        "p1": { "x": 200, "y": 850 },
+        "p2": { "x": 200, "y": 60 },
+        "shots": [
+          { "x1": 240, "y1": 855, "x2": 200, "y2": 375 },
+          { "x1": 200, "y1": 70, "x2": 295, "y2": 820 },
+          { "x1": 295, "y1": 830, "x2": 95, "y2": 100 }
+        ],
+        "areas": [{ "x": 295, "y": 820, "r": 28 }]
+      }
+    },
+    {
+      "id": "MP-026",
+      "name": "Lob or Pass Decision: Reading the Net Player",
+      "subcategory": "Tactical Development",
+      "category": "Matchplay",
+      "skill_level": "intermediate",
+      "player_count": 2,
+      "duration_minutes": 12,
+      "objective": "Develop the real-time decision between a lob and a passing shot when a net player is present. This is one of the most tactically complex decisions in tennis and one that most players make poorly under pressure. The decision depends on the net player's position, height, and movement, the baseliner's court position, and the ball quality. This drill creates the specific situations that demand this decision repeatedly.",
+      "setup": "Player 1 is at the baseline. Player 2 is at the net. Player 2 varies their net position: sometimes close to the net (inviting the lob), sometimes further back (inviting the pass). Player 1 must read the position and choose the correct option.",
+      "instructions": [
+        "Player 2 takes up a net position — sometimes close, sometimes mid-service box.",
+        "Player 1 is fed a ball from outside the court.",
+        "Player 1 must choose: lob or pass based on Player 2's position.",
+        "Close to net = lob. Mid-service box = pass. Both are valid against a centered position.",
+        "Play 20 repetitions. Player 2 must genuinely try to cut off passes and smash lobs."
+      ],
+      "coaching_cues": [
+        "Net player close: lob is the right choice — they cannot retreat fast enough.",
+        "Net player mid-court: pass is the right choice — they have too much court to cover for the pass.",
+        "The lob must go over the net player's racket with room to spare — aim for 2 feet above reach.",
+        "The pass must be low and angled — a high floated pass gives the net player time to volley.",
+        "Read the position before the ball is fed — the decision should be made before the ball arrives."
+      ],
+      "common_errors": [
+        "Same choice every time regardless of net player position — not actually reading the situation.",
+        "Lob too short — easily smashed from close to the net.",
+        "Pass too high — net player can reach it even from mid-court."
+      ],
+      "variations": [
+        "Mixed position: Player 2 moves to a new position after every 3 repetitions — Player 1 must re-read.",
+        "Full point version: play full points with Player 2 at net — real match conditions.",
+        "Topspin lob: specifically practice the topspin lob over a close net player."
+      ],
+      "tags": ["matchplay", "lob", "passing shot", "intermediate", "decision", "net player"],
+      "diagramData": {
+        "p1": { "x": 200, "y": 820 },
+        "p2": { "x": 200, "y": 510 },
+        "shots": [
+          { "x1": 200, "y1": 820, "x2": 200, "y2": 820 },
+          { "x1": 200, "y1": 815, "x2": 200, "y2": 100 },
+          { "x1": 200, "y1": 815, "x2": 95, "y2": 540 }
+        ],
+        "areas": [
+          { "x": 200, "y": 100, "r": 35 },
+          { "x": 95, "y": 540, "r": 25 }
+        ]
+      }
+    },
+    {
+      "id": "MP-027",
+      "name": "Momentum Shift: Win Three in a Row",
+      "subcategory": "Mental Fitness",
+      "category": "Matchplay",
+      "skill_level": "intermediate",
+      "player_count": 2,
+      "duration_minutes": 15,
+      "objective": "Train the ability to shift momentum by winning consecutive points under pressure. In match play, runs of consecutive points — not individual points — determine the outcome of games and sets. A player who can manufacture a run of 3-4 consecutive points at crucial moments consistently outperforms players who play every point in isolation. This drill specifically trains the consecutive winning mindset.",
+      "setup": "Play points freely. Player 1 must win 3 consecutive points at some stage to win the round. Any time Player 2 wins a point, Player 1's consecutive count resets to 0. First player to reach 3 consecutive wins the round. Play 5 rounds.",
+      "instructions": [
+        "Play competitive points from the serve.",
+        "Player 1 must win 3 consecutive points to win the round.",
+        "Any point won by Player 2 resets Player 1's consecutive count to 0.",
+        "First to 3 consecutive wins the round. Player 2 is also trying to win 3 consecutive.",
+        "Play 5 rounds. Track: how long does it take each player to reach 3 consecutive?"
+      ],
+      "coaching_cues": [
+        "Each point in a streak builds confidence — allow that confidence to grow, don't suppress it.",
+        "After losing a point and resetting: immediate mental reset, do not dwell on the reset.",
+        "To build a streak: play your best patterns, not risky shots. Streaks come from consistency.",
+        "Notice what stops streaks: unforced errors or forced errors? The answer points to the fix.",
+        "A player who can build 3-point runs against any opponent can win from behind."
+      ],
+      "common_errors": [
+        "Going for risky shots to quickly win consecutive points — impatience kills streaks.",
+        "Mental collapse after a reset — the drill is as much about reset speed as point-winning.",
+        "Not tracking consecutive count — must know where you are in the streak."
+      ],
+      "variations": [
+        "5 consecutive: raise the target — harder to achieve, more focus required.",
+        "Game streak: both players must win 3 consecutive games — extends the format.",
+        "Against the odds: Player 1 starts at -3 (has lost 3 in a row) — must turn it around."
+      ],
+      "tags": ["matchplay", "momentum", "consecutive", "intermediate", "mental", "streaks"],
+      "diagramData": {
+        "p1": { "x": 200, "y": 850 },
+        "p2": { "x": 200, "y": 60 },
+        "shots": [
+          { "x1": 240, "y1": 855, "x2": 200, "y2": 375 },
+          { "x1": 200, "y1": 70, "x2": 110, "y2": 820 },
+          { "x1": 110, "y1": 830, "x2": 295, "y2": 100 }
+        ],
+        "areas": [
+          { "x": 200, "y": 850, "r": 20 },
+          { "x": 200, "y": 60, "r": 20 }
+        ]
+      }
+    },
+    {
+      "id": "MP-028",
+      "name": "Full Match with Stat Tracking: Complete Performance Review",
+      "subcategory": "Match Assessment",
+      "category": "Matchplay",
+      "skill_level": "intermediate",
+      "player_count": 2,
+      "duration_minutes": 30,
+      "objective": "Play a full 3-set practice match with comprehensive statistics tracking — the most complete match assessment available in practice. Tracking stats during a match reveals the actual game profile: serve percentages, return rates, rally lengths, point-ending shot types, and winner-to-error ratios. Most players have wildly inaccurate self-assessments — the numbers correct this and drive specific, targeted practice.",
+      "setup": "Two players play a full 3-set match (or 2 sets + super tiebreak). A third person tracks all statistics, or players record key stats between changeovers. Standard scoring applies throughout.",
+      "instructions": [
+        "Play a full 3-set match with normal scoring.",
+        "Track: first serve %, second serve %, double faults, aces/service winners, return errors, return winners, winner/FE/UE for each player.",
+        "At every changeover, record the game score and any notable patterns.",
+        "After the match, calculate each tracked statistic.",
+        "Identify the top 2 areas where the match was won or lost — these drive the next week's training."
+      ],
+      "coaching_cues": [
+        "First serve below 55%: serve technique or nerve issue — needs dedicated serve practice.",
+        "Return error rate above 30%: return consistency is the priority — return confidence drills needed.",
+        "UE:Winner ratio worse than 2:1: tactical conservatism needed — train shot selection.",
+        "Win rate below 45% on second serve points: second serve quality is the highest priority issue.",
+        "The statistics tell you what to practice — don't rely on feeling alone."
+      ],
+      "common_errors": [
+        "Not tracking honestly — all stats must be recorded accurately, including your own errors.",
+        "Not acting on the data — the match stats have zero value without targeted follow-up practice.",
+        "Tracking too many statistics — focus on 5 key metrics, not 20."
+      ],
+      "variations": [
+        "Video match: film the full match alongside the stats — visual and statistical combined analysis.",
+        "Monthly comparison: run this drill monthly, compare stats over time.",
+        "Opponent profile: after the match, write a tactical report on the opponent — preparation for future matches."
+      ],
+      "tags": ["matchplay", "statistics", "assessment", "intermediate", "full match", "data"],
+      "diagramData": {
+        "p1": { "x": 200, "y": 850 },
+        "p2": { "x": 200, "y": 60 },
+        "shots": [
+          { "x1": 240, "y1": 855, "x2": 200, "y2": 375 },
+          { "x1": 160, "y1": 855, "x2": 240, "y2": 388 },
+          { "x1": 200, "y1": 70, "x2": 110, "y2": 820 },
+          { "x1": 200, "y1": 60, "x2": 295, "y2": 820 }
+        ],
+        "areas": [
+          { "x": 200, "y": 820, "r": 25 },
+          { "x": 200, "y": 100, "r": 25 }
+        ]
+      }
+    },
+    {
+      "id": "MP-029",
+      "name": "Ad Court Pressure: The Game-Deciding Points",
+      "subcategory": "Pressure Scenarios",
+      "category": "Matchplay",
+      "skill_level": "advanced",
+      "player_count": 2,
+      "duration_minutes": 15,
+      "objective": "Train specifically in the ad court — where most games are decided. The ad court sees the highest-pressure points: deuce, ad-in, and ad-out. Most players have asymmetric skill between deuce and ad courts on both serve and return. This drill isolates the ad court to build equal or superior ad court performance under the exact pressure conditions where games are won and lost.",
+      "setup": "All serves are from the ad court only. All returns are from the ad court position only. Both players play every point as if it is a pressure ad court point — treat each as deuce or ad.",
+      "instructions": [
+        "Player 1 serves from the ad court only.",
+        "Player 2 returns from the ad court return position only.",
+        "Play full points from the ad court start position.",
+        "After each point: Player 1 evaluates the serve quality and the tactical execution.",
+        "Play 20 ad court points. Track: first serve %, return consistency, and points won."
+      ],
+      "coaching_cues": [
+        "Ad court serve options: T to the forehand, wide to the backhand, body serve.",
+        "The wide kick serve to the backhand is the most effective ad court serve — train it.",
+        "Ad court return: the wide serve pulls the returner off the court. Chip cross-court is the safe response.",
+        "Ad court deuce: this is the game-point from behind. Breathe and commit.",
+        "Ad court ad-in: this is the game point in your favor. Don't suddenly become conservative."
+      ],
+      "common_errors": [
+        "Serving too often to the T from the ad court — the wide serve is underused.",
+        "Ad court return being more passive than deuce court — the returner advantage is the same.",
+        "Mental tightening in the ad court — happens most with players who have lost games here before."
+      ],
+      "variations": [
+        "Deuce court only version: same drill from the deuce side — compare win rates in both courts.",
+        "Ad court tiebreak: play a tiebreak where all serves come from the ad court — extreme focus.",
+        "Both courts alternating: serve one from deuce, one from ad — tests the transition in pressure."
+      ],
+      "tags": ["matchplay", "ad court", "advanced", "pressure", "game point", "decisive"],
+      "diagramData": {
+        "p1": { "x": 160, "y": 860 },
+        "p2": { "x": 120, "y": 60 },
+        "shots": [
+          { "x1": 160, "y1": 850, "x2": 80, "y2": 388 },
+          { "x1": 160, "y1": 850, "x2": 200, "y2": 385 },
+          { "x1": 120, "y1": 70, "x2": 295, "y2": 820 },
+          { "x1": 295, "y1": 830, "x2": 100, "y2": 100 }
+        ],
+        "areas": [
+          { "x": 80, "y": 388, "r": 22 },
+          { "x": 295, "y": 820, "r": 28 }
+        ]
+      }
+    },
+    {
+      "id": "MP-030",
+      "name": "Matchplay Grand Finale: The Practice Tournament",
+      "subcategory": "Competitive Play",
+      "category": "Matchplay",
+      "skill_level": "intermediate",
+      "player_count": 2,
+      "duration_minutes": 30,
+      "objective": "Synthesize all matchplay skills in a complete competitive practice tournament format that replicates the full mental and tactical demands of real tournament competition. This drill brings together every element trained in the matchplay category: tactical patterns, pressure point execution, between-point routines, changeover adjustments, serve patterns, return tactics, and mental reset protocols — all in a single competitive context.",
+      "setup": "Play a practice tournament match: 2 sets with a 10-point super tiebreak if needed. Both players bring their complete tactical toolkit — serve patterns, return positioning, emotional reset routine, and changeover review. This is a genuine competition, not a practice drill.",
+      "instructions": [
+        "Announce the format: best of 2 sets + 10-point tiebreak if 1-1.",
+        "Both players use their full between-point routines and changeover reviews.",
+        "Both players track their own: first serve %, double faults, and win rate on ad court points.",
+        "At every changeover, complete the 3-question tactical review (what works, what doesn't, one change).",
+        "After the match: both players provide one piece of specific tactical feedback to each other."
+      ],
+      "coaching_cues": [
+        "This is the integration test — every skill trained in every category should be present.",
+        "Between-point routine: non-negotiable. Complete it after every point.",
+        "Changeover review: answer all 3 questions at every changeover, even if winning.",
+        "Tactical feedback after the match should be specific: not 'play better' but 'use more kick serve on deuce court'.",
+        "The practice tournament is only valuable if played at full competitive intensity — there are no practice points."
+      ],
+      "common_errors": [
+        "Abandoning routines under competitive pressure — this is exactly when they are most needed.",
+        "Not doing the changeover review when winning — momentum can shift, adjustment is always relevant.",
+        "Not providing honest feedback after the match — growth requires honest communication."
+      ],
+      "variations": [
+        "Round robin tournament: 3-4 players, each plays everyone — more variety and more competition.",
+        "Recorded tournament: film the full match and review afterward — video analysis combined.",
+        "Monthly tournament: compete monthly with the same opponents, track win/loss records and stat improvement."
+      ],
+      "tags": ["matchplay", "tournament", "competitive", "intermediate", "comprehensive", "integration"],
+      "diagramData": {
+        "p1": { "x": 200, "y": 850 },
+        "p2": { "x": 200, "y": 60 },
+        "shots": [
+          { "x1": 240, "y1": 855, "x2": 200, "y2": 375 },
+          { "x1": 200, "y1": 70, "x2": 280, "y2": 820 },
+          { "x1": 280, "y1": 830, "x2": 95, "y2": 100 },
+          { "x1": 160, "y1": 855, "x2": 240, "y2": 388 },
+          { "x1": 200, "y1": 60, "x2": 110, "y2": 820 }
+        ],
+        "areas": [
+          { "x": 280, "y": 820, "r": 28 },
+          { "x": 95, "y": 100, "r": 28 },
+          { "x": 110, "y": 820, "r": 28 }
+        ]
+      }
+    }
+  ]
+}

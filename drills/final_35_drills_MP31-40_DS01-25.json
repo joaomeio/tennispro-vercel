@@ -1,0 +1,1694 @@
+{
+  "batch": "Final 35 drills: Matchplay 31-40 and Drop Shot & Lob 1-25",
+  "drills": [
+    {
+      "id": "MP-031",
+      "name": "Game Score Awareness: Playing Each Score Differently",
+      "subcategory": "Tactical Development",
+      "category": "Matchplay",
+      "skill_level": "advanced",
+      "player_count": 2,
+      "duration_minutes": 20,
+      "objective": "Develop the tactical habit of adjusting play based on the current game score. Professional players play 15-0 differently from 0-15, and 30-30 differently from 40-0. The game score dictates risk tolerance, target selection, and shot selection. Most club players play every point identically regardless of score — this drill builds score-awareness as a tactical instinct.",
+      "setup": "Play full games with normal scoring. Before every point, Player 1 must state their intended risk level based on the score: 'high risk', 'medium risk', or 'low risk'. Player 2 observes whether the executed shot matches the stated risk level.",
+      "instructions": [
+        "Player 1 calls their risk level before every point: 'high', 'medium', or 'low'.",
+        "High risk (15-0, 30-0, 40-0, 40-15): go for aggressive patterns, take on DTL shots.",
+        "Medium risk (0-0, 15-15, 30-30): play solid cross-court patterns, attack only clear short balls.",
+        "Low risk (0-15, 0-30, 15-30, 30-40, 0-40): maximize consistency, let the opponent make the error.",
+        "Player 2 calls 'mismatch' if the executed shot doesn't match the stated risk level. Play 15 points."
+      ],
+      "coaching_cues": [
+        "At 40-0: experiment, try patterns you haven't used. You can afford an error.",
+        "At 0-30: this is a critical point. Play solid, deep, and let the opponent create the opportunity.",
+        "At 30-30: the most important neutral score. Play your best percentage game.",
+        "Score awareness is about risk calibration — not about playing safe on every low-risk point.",
+        "If you cannot adjust your risk level based on score, you are playing reactively, not tactically."
+      ],
+      "common_errors": [
+        "Playing the same way on 40-0 as on 0-30 — missing the tactical opportunity in both directions.",
+        "Going too conservative on every medium-risk point — stifles natural game.",
+        "Calling 'low risk' but going for winners anyway — habit overriding tactical intention."
+      ],
+      "variations": [
+        "Silent version: Player 2 guesses the stated risk level after each point — tests execution clarity.",
+        "Score simulation: start games at specific scores — 30-30, 0-40 — for targeted practice.",
+        "Set-level risk: apply the same concept across a set — when up 5-1, what is the set-level risk level?"
+      ],
+      "tags": ["matchplay", "score awareness", "advanced", "tactical", "risk", "game score"],
+      "diagramData": {
+        "p1": { "x": 200, "y": 850 },
+        "p2": { "x": 200, "y": 60 },
+        "shots": [
+          { "x1": 240, "y1": 855, "x2": 200, "y2": 375 },
+          { "x1": 200, "y1": 70, "x2": 110, "y2": 820 },
+          { "x1": 110, "y1": 830, "x2": 295, "y2": 100 }
+        ],
+        "areas": [
+          { "x": 110, "y": 820, "r": 28 },
+          { "x": 295, "y": 100, "r": 28 }
+        ]
+      }
+    },
+    {
+      "id": "MP-032",
+      "name": "Doubles Return Positioning: Wide and T",
+      "subcategory": "Doubles Tactics",
+      "category": "Matchplay",
+      "skill_level": "intermediate",
+      "player_count": 2,
+      "duration_minutes": 15,
+      "objective": "Develop doubles-specific return positioning for both wide and T serves. In doubles, the return must account for the net player who can intercept cross-court returns. The returner must choose: return cross-court (past the net player), return DTL (lob or drive past the net player), or lob the return. This drill trains all three options against both wide and T serves in a doubles context.",
+      "setup": "Player 1 serves from both courts. Player 2 stands at the net (net player position). Player 3 (or Player 1 after serving) returns from the appropriate doubles return position. The return must be selected based on the net player's position and the serve location.",
+      "instructions": [
+        "Player 1 serves wide from the deuce court. Player 2 stands as net player.",
+        "The returner must choose: drive return cross-court past the net player, drive DTL, or lob.",
+        "Player 2 (net player) tries to intercept any cross-court return.",
+        "Play 10 returns from the deuce court wide serve, then 10 from the ad court.",
+        "Track: which return option is most successful against the net player?"
+      ],
+      "coaching_cues": [
+        "Net player cheating cross-court: go DTL or lob — don't give them the interception.",
+        "Net player centered: drive cross-court at their feet or below the net — force a low volley.",
+        "Against a strong net player: the low return at their feet is more effective than trying to pass them.",
+        "Lob return: flat toward the net player's backhand side — hardest to overhead.",
+        "Read the net player's position before the serve, not after."
+      ],
+      "common_errors": [
+        "Always returning cross-court in doubles — gives the net player an easy poach.",
+        "DTL return too high — net player can volley it away.",
+        "Lob too short — easy overhead from close to the net."
+      ],
+      "variations": [
+        "No lob version: only drive returns allowed — forces low, hard passing returns.",
+        "Net player moves on serve: net player signals where they're going just before serve — returner reads and reacts.",
+        "Full doubles point: play out the full point after the return — tests all four players."
+      ],
+      "tags": ["matchplay", "doubles", "return", "intermediate", "net player", "positioning"],
+      "diagramData": {
+        "p1": { "x": 240, "y": 860 },
+        "p2": { "x": 160, "y": 490 },
+        "shots": [
+          { "x1": 240, "y1": 850, "x2": 310, "y2": 385 },
+          { "x1": 280, "y1": 60, "x2": 295, "y2": 820 },
+          { "x1": 280, "y1": 60, "x2": 200, "y2": 820 }
+        ],
+        "areas": [
+          { "x": 295, "y": 820, "r": 25 },
+          { "x": 200, "y": 820, "r": 25 }
+        ]
+      }
+    },
+    {
+      "id": "MP-033",
+      "name": "Serve Out the Set: Hold Under Maximum Pressure",
+      "subcategory": "Pressure Scenarios",
+      "category": "Matchplay",
+      "skill_level": "advanced",
+      "player_count": 2,
+      "duration_minutes": 15,
+      "objective": "Train the specific scenario of serving out a set — the highest-pressure service game in tennis. Many players who reach 5-4 serving to close the set suddenly begin serving differently, returning to the baseline mentally, and tightening up technically. This drill creates concentrated repetitions of exactly this scenario, building the habit of serving at your best when it matters most.",
+      "setup": "Every game in this drill is announced as a set-closing game: 'you are serving at 5-4, serving to close the set.' Player 1 serves a full game. Player 2 returns aggressively — they are the player who must break. No relief on pressure.",
+      "instructions": [
+        "Announce before each game: '5-4 in the third set, Player 1 serving for the set.'",
+        "Player 1 serves a full game with normal scoring.",
+        "Player 2 returns with maximum intensity — this is their last chance to break.",
+        "Track: how many 'set-closing games' does Player 1 win out of 10?",
+        "Target: 7 or more out of 10. Below 6 indicates mental or technical work needed."
+      ],
+      "coaching_cues": [
+        "Serve to your best patterns — this is not the time to try new serves.",
+        "Between-point routine: slow it down by one second at 5-4. Rushing is the #1 mistake.",
+        "At 40-30: do not suddenly serve safe. Hit your serve, not a prayer.",
+        "At deuce in the set-closing game: exhale, commit, execute. No different from any other deuce.",
+        "Players who hold at 5-4 consistently have practiced this specific scenario. It is trainable."
+      ],
+      "common_errors": [
+        "Serving to different locations than normal — sudden conservatism gives away the advantage.",
+        "Skipping the between-point routine because of nerves — exactly when it is needed most.",
+        "Missing the first serve then double-faulting on the second — the most common collapse pattern."
+      ],
+      "variations": [
+        "Return to close the set: Player 2 serves at 5-4 instead — tests returning under pressure.",
+        "Match point practice: announce it as match point — maximum psychological intensity.",
+        "Tiebreak after 5-5: play a tiebreak immediately after the pressure game — tests recovery."
+      ],
+      "tags": ["matchplay", "serve out set", "advanced", "pressure", "closing", "mental"],
+      "diagramData": {
+        "p1": { "x": 200, "y": 860 },
+        "p2": { "x": 200, "y": 60 },
+        "shots": [
+          { "x1": 240, "y1": 855, "x2": 200, "y2": 375 },
+          { "x1": 200, "y1": 70, "x2": 110, "y2": 820 },
+          { "x1": 110, "y1": 830, "x2": 295, "y2": 100 }
+        ],
+        "areas": [{ "x": 200, "y": 860, "r": 20 }]
+      }
+    },
+    {
+      "id": "MP-034",
+      "name": "Match Review Protocol: Post-Match Analysis",
+      "subcategory": "Match Assessment",
+      "category": "Matchplay",
+      "skill_level": "intermediate",
+      "player_count": 2,
+      "duration_minutes": 15,
+      "objective": "Develop the habit of structured post-match analysis — reviewing tactical performance, identifying the real reasons behind the match result, and setting specific practice priorities. Most players either replay their errors mentally (unhelpful) or simply forget the match (wasted learning). A structured post-match review transforms match experience into actionable training priorities.",
+      "setup": "After any practice match or real match, both players sit down together (or Player 1 alone) and work through a structured 7-question review within 15 minutes of the match ending — while the memory is fresh.",
+      "instructions": [
+        "Question 1: What was the score and the overall result?",
+        "Question 2: What was your first serve percentage (estimate if not tracked)?",
+        "Question 3: Which serve patterns worked? Which did not?",
+        "Question 4: What was your most common unforced error — which shot and in what situation?",
+        "Question 5: Did you use your between-point routine consistently?",
+        "Question 6: What was the opponent's most effective pattern against you?",
+        "Question 7: What is ONE specific thing you will practice before the next match?",
+        "Write down the answer to Question 7 and act on it in the next practice session."
+      ],
+      "coaching_cues": [
+        "Be specific on every question — 'my forehand was bad' is not specific. 'My forehand DTL went wide 4 times when I was wide and stretching' is specific.",
+        "Question 7 is the most important — the whole review is for this one actionable insight.",
+        "Share Question 7 with a coach or practice partner — accountability increases follow-through.",
+        "Review immediately after the match, not the next day — the memory degrades quickly.",
+        "Do this review after every practice match, not just tournament matches."
+      ],
+      "common_errors": [
+        "Vague answers — specificity is the only thing that drives improvement.",
+        "Focusing only on errors — what worked is equally important for building confidence.",
+        "Not acting on Question 7 — the review has zero value without follow-through."
+      ],
+      "variations": [
+        "Video review: watch 10 minutes of match footage and answer the 7 questions about what you see.",
+        "Partner review: both players answer the questions about each other — external perspective.",
+        "Monthly review comparison: compare Question 7 answers across 4 consecutive months — track recurring issues."
+      ],
+      "tags": ["matchplay", "review", "analysis", "intermediate", "post-match", "learning"],
+      "diagramData": {
+        "p1": { "x": 200, "y": 850 },
+        "p2": { "x": 200, "y": 60 },
+        "shots": [
+          { "x1": 240, "y1": 855, "x2": 200, "y2": 375 },
+          { "x1": 200, "y1": 70, "x2": 280, "y2": 820 }
+        ],
+        "areas": [
+          { "x": 200, "y": 850, "r": 30 },
+          { "x": 200, "y": 60, "r": 30 }
+        ]
+      }
+    },
+    {
+      "id": "MP-035",
+      "name": "Pressure Tiebreak: Start at 5-6",
+      "subcategory": "Pressure Scenarios",
+      "category": "Matchplay",
+      "skill_level": "advanced",
+      "player_count": 2,
+      "duration_minutes": 15,
+      "objective": "Train the maximum tiebreak pressure scenario — starting at 5-6 in the tiebreak with the opponent one point from winning. This single-point scenario concentrates all the mental pressure of a competitive match into one moment: save the tiebreak point, or lose the set. Repeated concentrated exposure to this specific scenario builds the mental skills to perform under it.",
+      "setup": "Every sequence in this drill begins at 5-6 in a tiebreak — one point from Player 2 winning. Player 1 serves (at 5-6 in a tiebreak, the player who served last serves again). Player 2 returns. One point determines whether the sequence resets or Player 2 wins.",
+      "instructions": [
+        "Begin every sequence at tiebreak score 5-6 (Player 2 leads).",
+        "Player 1 serves — must win the point to stay in the tiebreak (reaching 6-6).",
+        "If Player 1 wins: announce '6-6, Player 1 serves' — play one more point.",
+        "If Player 2 wins: set is over. Reset to 5-6 and begin again.",
+        "Play 20 sequences. Track: how many times does Player 1 reach 7-5 or 8-6?"
+      ],
+      "coaching_cues": [
+        "The situation is not 5-6 — the situation is 'one point at a time'. No more, no less.",
+        "Breathe: one complete exhale before the serve toss. This is the most important physical reset.",
+        "Serve to your best pattern — this is not the moment to try a new location.",
+        "If Player 1 wins and reaches 6-6: the pressure resets. Play the next point as if it's a new tiebreak.",
+        "Track your win rate at 5-6. Improving this number is a measurable mental fitness outcome."
+      ],
+      "common_errors": [
+        "Over-thinking the serve at 5-6 — paralysis by analysis causes double faults.",
+        "Playing it safe on the return instead of attacking — returner has nothing to lose at 5-6.",
+        "Not using the pre-serve breathing routine — skipped precisely when it's most needed."
+      ],
+      "variations": [
+        "4-6 version: even more behind — must win 3 consecutive points.",
+        "Return side: Player 2 returns at 5-6 — tests the return under the same pressure.",
+        "Competition: track who reaches 7-5 or 8-6 more often over 50 sequences."
+      ],
+      "tags": ["matchplay", "tiebreak", "advanced", "pressure", "5-6", "mental"],
+      "diagramData": {
+        "p1": { "x": 200, "y": 860 },
+        "p2": { "x": 200, "y": 60 },
+        "shots": [
+          { "x1": 240, "y1": 855, "x2": 200, "y2": 375 },
+          { "x1": 200, "y1": 70, "x2": 280, "y2": 820 },
+          { "x1": 280, "y1": 830, "x2": 95, "y2": 100 }
+        ],
+        "areas": [{ "x": 200, "y": 860, "r": 20 }]
+      }
+    },
+    {
+      "id": "MP-036",
+      "name": "Serve and Rally Combination: Win the First 3 Shots",
+      "subcategory": "Tactical Patterns",
+      "category": "Matchplay",
+      "skill_level": "intermediate",
+      "player_count": 2,
+      "duration_minutes": 15,
+      "objective": "Train the tactical concept of winning the first 3 shots of each point — serve, plus-one, and plus-two. Research on professional tennis shows that over 65% of points end within the first 4 shots. Training the first 3 shots as a complete tactical unit rather than reactive play dramatically increases the percentage of points won in these early exchanges.",
+      "setup": "Player 1 must declare all 3 shots before each point: serve target, plus-one target, plus-two target. Player 2 plays freely. A bonus point is awarded if Player 1 wins within the 3 declared shots.",
+      "instructions": [
+        "Player 1 declares: serve target, plus-one, plus-two — quietly before each point.",
+        "Player 1 must execute all 3 shots as declared, then play the point out freely.",
+        "Bonus scoring: +2 if Player 1 wins within the 3 declared shots. +1 if Player 1 wins after shot 3.",
+        "Play 15 points. Switch servers. First player to 15 bonus points wins.",
+        "After the drill: which 3-shot pattern produced the most bonus points?"
+      ],
+      "coaching_cues": [
+        "Serve creates the plus-one: wide serve → CC return → inside-out forehand is a proven pattern.",
+        "The plus-two is typically the finishing shot — the plus-one sets it up.",
+        "If Player 2 doesn't give you the expected return, adapt but stay aggressive.",
+        "The declaration forces planning — reactive play doesn't produce consistent 3-shot patterns.",
+        "Build a personal library: 3 standard 3-shot patterns per court that you execute automatically."
+      ],
+      "common_errors": [
+        "Declaring but not executing — the declaration is meaningless without follow-through.",
+        "Overly complex declarations — simple patterns are executed better than complicated ones.",
+        "Abandoning the pattern after shot 1 if the return is not perfect."
+      ],
+      "variations": [
+        "2-shot version: serve + plus-one only — simpler for beginners.",
+        "Random partner: Player 2 is not told the declaration — tests execution under uncertainty.",
+        "Tournament pattern: use the 3-shot patterns in a full tiebreak — measures real match application."
+      ],
+      "tags": ["matchplay", "three-shot", "tactical", "intermediate", "pattern", "first 3 shots"],
+      "diagramData": {
+        "p1": { "x": 280, "y": 840 },
+        "p2": { "x": 120, "y": 60 },
+        "moves": [{ "x1": 240, "y1": 855, "x2": 280, "y2": 840 }],
+        "shots": [
+          { "x1": 240, "y1": 855, "x2": 310, "y2": 385 },
+          { "x1": 120, "y1": 70, "x2": 255, "y2": 815 },
+          { "x1": 278, "y1": 838, "x2": 95, "y2": 100 }
+        ],
+        "areas": [{ "x": 95, "y": 100, "r": 28 }]
+      }
+    },
+    {
+      "id": "MP-037",
+      "name": "Playing a Pusher: Patience Against Consistency",
+      "subcategory": "Tactical Development",
+      "category": "Matchplay",
+      "skill_level": "intermediate",
+      "player_count": 2,
+      "duration_minutes": 20,
+      "objective": "Develop the tactical and mental skills needed to beat a consistent baseline pusher — one of the most common and frustrating opponents at club level. A pusher wins through opponent errors, not through their own winners. Beating a pusher requires extreme patience, willingness to hit many balls before attacking, and the discipline to wait for the genuinely short ball rather than forcing the attack.",
+      "setup": "Player 2 plays as a pusher: high topspin, deep, consistent, no pace, high balls to the backhand. Player 1 must beat Player 2 through a tactical approach — not frustration-driven aggression.",
+      "instructions": [
+        "Player 2 pushes every ball: high topspin, deep, consistent, no pace.",
+        "Player 1 must play out full points against the pusher style.",
+        "Player 1's strategy: rally patiently until a ball lands short or below knee height, then attack.",
+        "If Player 1 attacks a deep ball and misses: Player 1 notes it as a tactical error.",
+        "Play 20 points. Track: how many points does Player 1 win by waiting vs forcing?"
+      ],
+      "coaching_cues": [
+        "The pusher wins when you get impatient — patience is the primary weapon against a pusher.",
+        "Short ball trigger: only attack when the ball lands inside the service line.",
+        "Moonball response: counter the pusher's high topspin with your own moonball — makes them hit up.",
+        "Vary the direction: cross-court then DTL, then cross-court again — move the pusher laterally.",
+        "A pushed ball that lands deep is a neutral ball, not an attack ball. Do not attack it."
+      ],
+      "common_errors": [
+        "Attacking deep balls out of frustration — leads to forced errors and exactly the outcome the pusher wants.",
+        "Going for too much on the short ball after waiting — after 10 patient balls, one aggressive shot is enough.",
+        "Not moving the pusher: staying cross-court all rally gives the pusher a comfortable position."
+      ],
+      "variations": [
+        "True pusher set: play a full set against the pusher style — tests sustained patience.",
+        "Moonball vs moonball: both players moonball — tests who has better high-ball patience.",
+        "Pusher with one weapon: Player 2 pushes but is allowed one drop shot per rally — adds a threat."
+      ],
+      "tags": ["matchplay", "pusher", "patience", "intermediate", "tactical", "opponent style"],
+      "diagramData": {
+        "p1": { "x": 200, "y": 850 },
+        "p2": { "x": 200, "y": 60 },
+        "shots": [
+          { "x1": 200, "y1": 840, "x2": 200, "y2": 110 },
+          { "x1": 200, "y1": 70, "x2": 200, "y2": 820 },
+          { "x1": 200, "y1": 640, "x2": 95, "y2": 100 }
+        ],
+        "areas": [
+          { "x": 200, "y": 110, "r": 40 },
+          { "x": 95, "y": 100, "r": 28 }
+        ]
+      }
+    },
+    {
+      "id": "MP-038",
+      "name": "Changing a Losing Game: Mid-Match Tactical Shift",
+      "subcategory": "Tactical Development",
+      "category": "Matchplay",
+      "skill_level": "advanced",
+      "player_count": 2,
+      "duration_minutes": 20,
+      "objective": "Develop the ability to identify what is not working and make a meaningful tactical change mid-match — one of the highest-level competitive skills in tennis. Most players who are losing continue doing the same things and hoping for different results. This drill trains the diagnostic skill (what is not working?) and the execution skill (implement a change immediately).",
+      "setup": "Player 1 plays 10 points using only one tactical style (e.g., aggressor who attacks early). Player 2 is instructed to defend effectively against that style. After 10 points, if Player 1 is losing, Player 1 must identify the problem and switch to a different tactical approach for the next 10 points.",
+      "instructions": [
+        "Phase 1 (10 points): Player 1 plays as an early-ball aggressor. Player 2 defends effectively.",
+        "After 10 points: Player 1 assesses — if losing, identify the specific tactical problem in one sentence.",
+        "Phase 2 (10 points): Player 1 switches to a contrasting style — patient baseliner or net attacker.",
+        "Compare win rates in Phase 1 vs Phase 2.",
+        "Debrief: was the tactical change effective? What would the next change be if Phase 2 also fails?"
+      ],
+      "coaching_cues": [
+        "Identifying the problem must be specific: 'they are reading my inside-out forehand' not 'I'm playing badly'.",
+        "The change must be a genuine tactical shift — not just hitting harder or softer.",
+        "One change per assessment: don't change everything at once.",
+        "Give the new tactic 4-5 points to evaluate — don't abandon it after one loss.",
+        "If losing, always consider: do I need to change the target? The pattern? The pace? The spin?"
+      ],
+      "common_errors": [
+        "Identifying the problem vaguely — 'I'm not playing well' is not an actionable diagnosis.",
+        "Changing everything simultaneously — creates confusion, makes it impossible to evaluate what worked.",
+        "Abandoning the new tactic after one bad point — any new tactic takes adjustment time."
+      ],
+      "variations": [
+        "Three phases: Phase 1 aggressor, Phase 2 baseliner, Phase 3 net attacker — tests all three styles.",
+        "Coach-directed change: coach identifies the problem and prescribes the change — builds tactical vocabulary.",
+        "Set simulation: play a set where Player 1 must make one tactical change per set — like a real match."
+      ],
+      "tags": ["matchplay", "tactical shift", "advanced", "adaptation", "losing game", "change"],
+      "diagramData": {
+        "p1": { "x": 200, "y": 850 },
+        "p2": { "x": 200, "y": 60 },
+        "shots": [
+          { "x1": 200, "y1": 840, "x2": 200, "y2": 640 },
+          { "x1": 200, "y1": 635, "x2": 95, "y2": 100 },
+          { "x1": 200, "y1": 70, "x2": 200, "y2": 820 }
+        ],
+        "areas": [
+          { "x": 95, "y": 100, "r": 28 },
+          { "x": 200, "y": 820, "r": 35 }
+        ]
+      }
+    },
+    {
+      "id": "MP-039",
+      "name": "Doubles Net Domination: Poach and Switch",
+      "subcategory": "Doubles Tactics",
+      "category": "Matchplay",
+      "skill_level": "advanced",
+      "player_count": 2,
+      "duration_minutes": 15,
+      "objective": "Develop the poach-and-switch doubles pattern — the most aggressive net tactic in doubles. When the net player poaches a cross-court ball, they must continue moving to the opposite side while the server covers the poached side. This switch creates confusion for the opposing team and is the hallmark of dominant doubles pairs.",
+      "setup": "Player 1 serves. Player 2 acts as the net partner. Player 2 poaches on every cross-court return. After the poach, Player 1 must immediately move to cover Player 2's vacated side. The switch must happen on every poach.",
+      "instructions": [
+        "Player 1 serves from the deuce court.",
+        "Returner (simulated by a third player or cone target) hits cross-court.",
+        "Player 2 poaches and volleys the cross-court return.",
+        "Player 1 simultaneously moves to cover Player 2's vacated side.",
+        "Play 15 poach-and-switch sequences. Track: how many volleys does Player 2 win? How many switches are correctly executed by Player 1?"
+      ],
+      "coaching_cues": [
+        "Player 2: commit to the poach before the return is hit — hesitation kills the poach.",
+        "Player 1: watch Player 2 move, then immediately mirror to the opposite side.",
+        "The switch must be a sprint, not a shuffle — coverage must be immediate.",
+        "Player 2 after the poach: continue moving forward toward the net, not laterally.",
+        "Communication: signal the poach before serving so Player 1 knows to expect a switch."
+      ],
+      "common_errors": [
+        "Player 1 not switching after the poach — leaves one whole side completely open.",
+        "Player 2 committing too late — poach intercepts where the ball is, not where it was.",
+        "No communication — unannounced poaches cause collisions and missed switches."
+      ],
+      "variations": [
+        "No switch: Player 2 poaches but Player 1 stays — tests the poach without the switch obligation.",
+        "Fake poach: Player 2 moves as if to poach, then retreats — returner redirects, Player 1 plays the result.",
+        "Full doubles point: play all 4 positions — poach-and-switch in a real 4-player context."
+      ],
+      "tags": ["matchplay", "doubles", "poach", "advanced", "switch", "net"],
+      "diagramData": {
+        "p1": { "x": 130, "y": 840 },
+        "p2": { "x": 130, "y": 500 },
+        "moves": [
+          { "x1": 240, "y1": 855, "x2": 130, "y2": 840 },
+          { "x1": 200, "y1": 500, "x2": 130, "y2": 500 }
+        ],
+        "shots": [
+          { "x1": 240, "y1": 855, "x2": 310, "y2": 385 },
+          { "x1": 280, "y1": 60, "x2": 180, "y2": 610 },
+          { "x1": 128, "y1": 495, "x2": 310, "y2": 820 }
+        ],
+        "areas": [{ "x": 310, "y": 820, "r": 25 }]
+      }
+    },
+    {
+      "id": "MP-040",
+      "name": "Matchplay Season Review: 10-Match Analysis",
+      "subcategory": "Match Assessment",
+      "category": "Matchplay",
+      "skill_level": "intermediate",
+      "player_count": 1,
+      "duration_minutes": 20,
+      "objective": "Conduct a comprehensive review of 10 recent matches to identify recurring patterns, consistent strengths, persistent weaknesses, and long-term tactical development priorities. Individual match reviews are valuable, but a 10-match pattern analysis reveals systemic issues that single-match reviews cannot show. This is the quarterly review that drives the next training block priorities.",
+      "setup": "Player 1 reviews notes, scores, or memories from their last 10 competitive matches. A structured worksheet covers: results, patterns, errors, and insights. No partner needed — this is a personal analysis session.",
+      "instructions": [
+        "List the 10 most recent matches: opponent, score, surface.",
+        "For each match: identify the single biggest tactical factor that determined the result.",
+        "After all 10: identify the 3 most common tactical patterns across wins.",
+        "Identify the 3 most common tactical patterns across losses.",
+        "Write down 2 specific training priorities for the next 4 weeks based on the loss patterns.",
+        "Set one measurable performance target: e.g., 'win 60% of second serve points' or 'hold serve at 70%'."
+      ],
+      "coaching_cues": [
+        "Patterns across wins reveal your strengths — double down on these in matches.",
+        "Patterns across losses reveal the tactical gaps — these drive the training priorities.",
+        "Be honest about the losses: was it fitness, technique, tactics, or mental? The answer determines the training.",
+        "A measurable target (60% second serve wins) is trainable. A vague target ('play better') is not.",
+        "Repeat this review every 10 matches — track whether the identified weaknesses are actually improving."
+      ],
+      "common_errors": [
+        "Only reviewing losses — wins contain equally valuable tactical information.",
+        "Vague pattern identification — 'I played badly' is not a pattern. Specific shot, situation, and score context are.",
+        "Setting too many training priorities — two specific priorities executed well beat six vague ones ignored."
+      ],
+      "variations": [
+        "Video review: watch clips from multiple matches and identify the same pattern visually.",
+        "Coach review: share the 10-match analysis with a coach — external perspective adds insight.",
+        "Competitor comparison: compare your patterns to a player you want to emulate — what specific skills do they have that you don't?"
+      ],
+      "tags": ["matchplay", "season review", "analysis", "intermediate", "10-match", "long-term"],
+      "diagramData": {
+        "p1": { "x": 200, "y": 850 },
+        "p2": { "x": 200, "y": 60 },
+        "shots": [
+          { "x1": 240, "y1": 855, "x2": 200, "y2": 375 },
+          { "x1": 160, "y1": 855, "x2": 240, "y2": 388 }
+        ],
+        "areas": [
+          { "x": 200, "y": 850, "r": 30 },
+          { "x": 200, "y": 60, "r": 30 }
+        ]
+      }
+    },
+    {
+      "id": "DS-001",
+      "name": "Drop Shot Foundation: Feel and Touch at the Net",
+      "subcategory": "Drop Shot Technique",
+      "category": "Drop Shot & Lob",
+      "skill_level": "beginner",
+      "player_count": 2,
+      "duration_minutes": 10,
+      "objective": "Build the basic touch and feel required for the drop shot — the most delicate shot in tennis. The drop shot requires absorbing all pace from the incoming ball and redirecting it with minimal pace over the net so it lands barely inside the service box and bounces no higher than the net height. This drill isolates the contact and follow-through of the drop shot before any disguise or tactical application.",
+      "setup": "Player 2 feeds medium-paced balls from the service line to Player 1 at the baseline or mid-court. Player 1 hits every ball as a drop shot — attempting to land it within 3 feet of the net inside the service box.",
+      "instructions": [
+        "Player 2 feeds medium balls from the service line — one every 5 seconds.",
+        "Player 1 receives the ball and executes a drop shot.",
+        "The drop shot must clear the net and land within 3 feet of the net on the other side.",
+        "Count successful drop shots: landing within the target zone.",
+        "Complete 20 drop shots per set. Target: 14 out of 20 in the zone. Rest 45 seconds. Play 3 sets."
+      ],
+      "coaching_cues": [
+        "Open the racket face significantly — the open face creates the backspin that stops the ball after landing.",
+        "Decelerate through contact — the key technical difference between a drop shot and a normal shot.",
+        "Slice action: high-to-low, soft contact. Think of catching the ball on the strings, not hitting it.",
+        "Aim for the tape: targeting just over the top of the net creates the shortest possible bounce.",
+        "Soft hands are non-negotiable — grip pressure must be the lightest of any shot in tennis."
+      ],
+      "common_errors": [
+        "Hitting through the ball instead of absorbing it — produces a mid-court floater.",
+        "Too closed a racket face — ball goes into the net.",
+        "Gripping too tightly — kills the delicate feel required for the drop shot."
+      ],
+      "variations": [
+        "Closer start: Player 1 starts at the service line — shorter distance makes the touch learning easier.",
+        "Target towel: place a towel just inside the service box near the net — aim for it.",
+        "Both wings: alternate forehand and backhand drop shots — both must be reliable."
+      ],
+      "tags": ["drop shot", "touch", "technique", "beginner", "feel", "soft hands"],
+      "diagramData": {
+        "p1": { "x": 200, "y": 720 },
+        "p2": { "x": 200, "y": 480 },
+        "shots": [
+          { "x1": 200, "y1": 490, "x2": 200, "y2": 715 },
+          { "x1": 200, "y1": 710, "x2": 200, "y2": 360 }
+        ],
+        "areas": [{ "x": 200, "y": 360, "r": 22 }],
+        "cones": [{ "x": 200, "y": 360 }]
+      }
+    },
+    {
+      "id": "DS-002",
+      "name": "Disguised Drop Shot: Identical Setup to Groundstroke",
+      "subcategory": "Drop Shot Technique",
+      "category": "Drop Shot & Lob",
+      "skill_level": "intermediate",
+      "player_count": 2,
+      "duration_minutes": 12,
+      "objective": "Develop a drop shot with perfect disguise — the setup and backswing must be completely indistinguishable from a normal groundstroke. A drop shot that looks different from a groundstroke in the preparation is read immediately and reached easily. This drill builds the specific skill of delaying the deceleration until the very last moment, making the drop shot a genuine tactical surprise.",
+      "setup": "Player 2 feeds from the baseline. Player 1 alternates: first hit a normal groundstroke, then a drop shot — with identical setup for both. Player 2 tries to read which is coming from the preparation alone.",
+      "instructions": [
+        "Player 2 feeds balls to Player 1 at mid-court or baseline.",
+        "Player 1 alternates: groundstroke, drop shot, groundstroke, drop shot — with identical setup each time.",
+        "Player 2 calls 'drop' or 'normal' before the ball lands — testing whether they read the preparation.",
+        "If Player 2 reads correctly more than 6 of 10 times: there is a tell in Player 1's preparation.",
+        "Play 20 balls. Target: Player 2 correctly reads 5 or fewer out of 10."
+      ],
+      "coaching_cues": [
+        "The entire backswing must be identical for both shots — the deceleration happens only at contact.",
+        "For the groundstroke: full follow-through forward.",
+        "For the drop shot: identical backswing, then decelerate at contact — the racket almost stops.",
+        "The eyes reveal intent — don't look at the drop shot landing spot before you hit.",
+        "Practice in slow motion first: normal swing → decelerate at contact. Feel the difference in the hands."
+      ],
+      "common_errors": [
+        "Different backswing for the drop shot — shortened backswing telegraphs the intent.",
+        "Looking at the drop shot target before swinging — eyes reveal intent before the ball.",
+        "Deceleration starting before contact — the open-face and slow-down should begin exactly at contact."
+      ],
+      "variations": [
+        "Three options: groundstroke, drop shot, or lob — Player 2 must read between three options.",
+        "Moving drop shot: Player 1 receives a ball while running forward — drop shot on the approach.",
+        "Disguise competition: count Player 2's correct reads over 30 shots — track disguise improvement."
+      ],
+      "tags": ["drop shot", "disguise", "intermediate", "technique", "deception", "touch"],
+      "diagramData": {
+        "p1": { "x": 200, "y": 720 },
+        "p2": { "x": 200, "y": 60 },
+        "shots": [
+          { "x1": 200, "y1": 70, "x2": 200, "y2": 710 },
+          { "x1": 200, "y1": 710, "x2": 200, "y2": 820 },
+          { "x1": 200, "y1": 710, "x2": 200, "y2": 355 }
+        ],
+        "areas": [
+          { "x": 200, "y": 820, "r": 28 },
+          { "x": 200, "y": 355, "r": 22 }
+        ]
+      }
+    },
+    {
+      "id": "DS-003",
+      "name": "Drop Shot Angle: Wide to the Doubles Alley",
+      "subcategory": "Drop Shot Technique",
+      "category": "Drop Shot & Lob",
+      "skill_level": "advanced",
+      "player_count": 2,
+      "duration_minutes": 10,
+      "objective": "Train the angled drop shot — landing in the doubles alley or very close to the sideline inside the service box. An angled drop shot that lands near the doubles alley forces the opponent to sprint diagonally forward and wide simultaneously — the most demanding movement combination in tennis. When the angle is sharp enough, even a quick player cannot reach it.",
+      "setup": "Player 2 feeds from the baseline. Player 1 executes drop shots specifically aimed at the wide corner of the service box — as close to the intersection of the sideline and service line as possible.",
+      "instructions": [
+        "Player 2 feeds from the baseline to Player 1 at mid-court or service line area.",
+        "Player 1 hits a drop shot aimed at the wide corner of the service box near the sideline.",
+        "Target zone: within 2 feet of the sideline and within 3 feet of the net.",
+        "Score: landing within the zone = 2 points. Landing inside the service box near the net but not wide = 1 point.",
+        "Play 20 drop shots per set. Target: 24+ points."
+      ],
+      "coaching_cues": [
+        "Angle the racket face toward the sideline at contact — the face directs the ball.",
+        "The more open the racket face, the more sidespin and the wider the angle.",
+        "Stand inside the baseline or at the service line — the angle from behind the baseline is insufficient.",
+        "Brush across and down the back of the ball — sidespin is what creates the wide angle.",
+        "The angled drop shot is short and wide simultaneously — double punishment for the opponent."
+      ],
+      "common_errors": [
+        "Drop shot going down the center — no angle created, easily reached.",
+        "Drop shot too long — lands past the service line, loses the short element.",
+        "Too much pace — the angled drop shot needs extremely soft hands."
+      ],
+      "variations": [
+        "Both-side angles: alternate wide forehand angle and wide backhand angle drop shots.",
+        "Set up then angle: Player 1 hits one deep groundstroke then the angled drop shot — more realistic.",
+        "Sprint test: Player 2 actually sprints for the angled drop shot — tests how wide is wide enough."
+      ],
+      "tags": ["drop shot", "angle", "advanced", "sideline", "technique", "touch"],
+      "diagramData": {
+        "p1": { "x": 200, "y": 700 },
+        "p2": { "x": 200, "y": 60 },
+        "shots": [
+          { "x1": 200, "y1": 70, "x2": 200, "y2": 690 },
+          { "x1": 200, "y1": 690, "x2": 330, "y2": 370 }
+        ],
+        "areas": [{ "x": 330, "y": 370, "r": 20 }],
+        "cones": [{ "x": 330, "y": 370 }]
+      }
+    },
+    {
+      "id": "DS-004",
+      "name": "Topspin Lob: Over the Net Player's Head",
+      "subcategory": "Lob Technique",
+      "category": "Drop Shot & Lob",
+      "skill_level": "intermediate",
+      "player_count": 2,
+      "duration_minutes": 12,
+      "objective": "Develop the topspin lob — the most effective passing lob in tennis. Unlike the slice lob (which floats slowly and gives the opponent time to overhead), the topspin lob is hit with a full groundstroke swing on an exaggerated upward path, creating a ball that arcs quickly over the net player and bounces far away with topspin. When executed correctly, the topspin lob is virtually unreachable even by a player positioned at the net.",
+      "setup": "Player 2 stands at the net in a dominant position (close to the net, simulating a successful approach). Player 1 is at the baseline. Player 1 hits topspin lobs over Player 2's head.",
+      "instructions": [
+        "Player 2 positions at the net — close to the net, arms raised to simulate reach.",
+        "Player 1 receives a feed from Player 2 and responds with a topspin lob.",
+        "The lob must clear Player 2's extended racket and land in the back half of the court.",
+        "Count: lobs that clear Player 2 AND land in the court.",
+        "Play 20 lobs per set. Target: 15 out of 20 successful."
+      ],
+      "coaching_cues": [
+        "Exaggerate the upward swing path — the racket must go from low to very high.",
+        "The topspin lob is not a defensive shot — swing fully and aggressively upward.",
+        "Open the racket face slightly at contact — helps the ball arc quickly over the net player.",
+        "The harder you swing upward, the more topspin you generate, and the faster the ball drops.",
+        "Aim 3-5 feet over the net player's extended reach — not barely over."
+      ],
+      "common_errors": [
+        "Swinging like a normal groundstroke — ball goes flat and fast, not looping.",
+        "Not enough height — ball clipped by the net player's racket.",
+        "Too high and too soft — ball bounces short and gives opponent time to overhead."
+      ],
+      "variations": [
+        "Running topspin lob: Player 1 receives a wide ball and hits the topspin lob on the run.",
+        "Both wings: topspin lob off the forehand and the backhand.",
+        "Lob and follow: after the topspin lob, Player 1 approaches the net — now two players are at the net."
+      ],
+      "tags": ["lob", "topspin lob", "intermediate", "technique", "passing", "net player"],
+      "diagramData": {
+        "p1": { "x": 200, "y": 830 },
+        "p2": { "x": 200, "y": 510 },
+        "shots": [
+          { "x1": 200, "y1": 480, "x2": 200, "y2": 820 },
+          { "x1": 200, "y1": 820, "x2": 200, "y2": 100 }
+        ],
+        "areas": [{ "x": 200, "y": 100, "r": 40 }]
+      }
+    },
+    {
+      "id": "DS-005",
+      "name": "Defensive Lob: Buying Time from Wide Positions",
+      "subcategory": "Lob Technique",
+      "category": "Drop Shot & Lob",
+      "skill_level": "beginner",
+      "player_count": 2,
+      "duration_minutes": 10,
+      "objective": "Develop the defensive lob — the high, slow, deep lob used to buy time and reset the point when stretched or in trouble. The defensive lob is not a glamorous shot but it is one of the most important in competitive tennis: it turns a losing position into a neutral one, forces the opponent to retreat from the net, and resets the rally. Many players fail to use it when they should.",
+      "setup": "Player 2 hits hard, wide balls to pull Player 1 off the court. Player 1 must respond with a defensive lob — high enough to buy time and deep enough to land near the baseline.",
+      "instructions": [
+        "Player 2 hits a hard, wide ball to Player 1's backhand or forehand side.",
+        "Player 1 sprints wide and responds with a high defensive lob.",
+        "The lob must clear the net by at least 8 feet and land within 4 feet of the baseline.",
+        "After the lob, Player 1 recovers to center baseline.",
+        "Repeat 15 times. Track: how many lobs land in the target deep zone?"
+      ],
+      "coaching_cues": [
+        "Open the racket face fully — the lob requires maximum face opening to go high.",
+        "Aim well above the net — at least 8 feet clearance from a stretched position.",
+        "Depth is more important than placement — a deep lob to the middle is better than a short lob to the corner.",
+        "After the lob, don't watch it — start recovering to center immediately.",
+        "The defensive lob buys 4-5 seconds of recovery time — use every second of it."
+      ],
+      "common_errors": [
+        "Lob not high enough — net player can smash from inside the service line.",
+        "Lob landing short — gives the opponent a mid-court overhead opportunity.",
+        "Watching the lob land instead of recovering immediately."
+      ],
+      "variations": [
+        "Defensive lob from the baseline (not stretched): uses the lob as a tactical reset, not a survival shot.",
+        "Defensive lob against a net rusher: Player 2 rushes the net after feeding — Player 1 lobs.",
+        "Defensive lob accuracy: must land within 3 feet of the baseline — depth precision."
+      ],
+      "tags": ["lob", "defensive", "beginner", "wide ball", "recovery", "reset"],
+      "diagramData": {
+        "p1": { "x": 55, "y": 820 },
+        "p2": { "x": 200, "y": 510 },
+        "moves": [{ "x1": 200, "y1": 850, "x2": 55, "y2": 820 }],
+        "shots": [
+          { "x1": 200, "y1": 490, "x2": 55, "y2": 810 },
+          { "x1": 55, "y1": 815, "x2": 200, "y2": 100 }
+        ],
+        "areas": [{ "x": 200, "y": 100, "r": 40 }]
+      }
+    },
+    {
+      "id": "DS-006",
+      "name": "Drop Shot Then Lob: The Classic One-Two",
+      "subcategory": "Combination",
+      "category": "Drop Shot & Lob",
+      "skill_level": "advanced",
+      "player_count": 2,
+      "duration_minutes": 12,
+      "objective": "Develop the drop shot and lob combination — one of the most tactically sophisticated two-shot patterns in tennis. The drop shot forces the opponent to sprint forward from behind the baseline. When they arrive at the drop shot and hit up defensively, the court behind them is completely open. A lob over the recovering opponent lands in an empty court and is virtually unreachable.",
+      "setup": "Player 1 and Player 2 rally from the baseline. Player 1 hits a drop shot, Player 2 sprints to reach it. The moment Player 2 hits the drop shot recovery ball (usually weak and floating), Player 1 lobs over Player 2's head.",
+      "instructions": [
+        "Both players begin a baseline rally.",
+        "Player 1 hits a drop shot from inside the service line or mid-court.",
+        "Player 2 sprints forward to retrieve the drop shot — usually hitting a defensive ball.",
+        "Player 1 reads Player 2's defensive ball and lobs over their head.",
+        "Play 15 drop-shot-and-lob sequences. Track: how many lobs land unreachable after the drop shot?"
+      ],
+      "coaching_cues": [
+        "The drop shot must be short enough that Player 2 cannot reach it comfortably — distance is the weapon.",
+        "After the drop shot, move forward — you need to be inside the baseline when Player 2 makes contact.",
+        "Read the recovery ball: if it's high and weak, lob immediately. If it's fast and low, volley instead.",
+        "The lob should go over the side Player 2 came from — the farthest point from where they are.",
+        "This combination only works when the drop shot is genuinely short — a mid-court drop shot is not enough."
+      ],
+      "common_errors": [
+        "Drop shot landing too deep — Player 2 reaches it comfortably and recovers.",
+        "Not moving forward after the drop shot — the lob from behind the baseline goes long.",
+        "Lobbing when a volley or drive is available — the lob is the right choice when Player 2 is at the net."
+      ],
+      "variations": [
+        "Drop shot then drive: instead of lobbing, Player 1 drives a groundstroke past Player 2.",
+        "Double drop shot: two drop shots in a row — second drop shot off Player 2's defensive recovery.",
+        "Drop lob volley: drop shot, lob over Player 2, Player 2 overhead, Player 1 passes — 3-shot battle."
+      ],
+      "tags": ["drop shot", "lob", "combination", "advanced", "one-two", "tactical"],
+      "diagramData": {
+        "p1": { "x": 200, "y": 680 },
+        "p2": { "x": 200, "y": 420 },
+        "moves": [
+          { "x1": 200, "y1": 850, "x2": 200, "y2": 680 },
+          { "x1": 200, "y1": 60, "x2": 200, "y2": 420 }
+        ],
+        "shots": [
+          { "x1": 200, "y1": 678, "x2": 200, "y2": 360 },
+          { "x1": 200, "y1": 415, "x2": 200, "y2": 650 },
+          { "x1": 200, "y1": 670, "x2": 200, "y2": 100 }
+        ],
+        "areas": [{ "x": 200, "y": 100, "r": 40 }]
+      }
+    },
+    {
+      "id": "DS-007",
+      "name": "Lob Overhead Battle: Net vs Baseline",
+      "subcategory": "Lob Technique",
+      "category": "Drop Shot & Lob",
+      "skill_level": "intermediate",
+      "player_count": 2,
+      "duration_minutes": 15,
+      "objective": "Develop the complete lob-overhead battle — the tactical contest between a baseliner lobbing and a net player overheading. This scenario occurs regularly in match play and requires both players to execute under pressure: the lobber must lob high enough and deep enough to force an overhead, and the net player must overhead cleanly from varying depths and heights. This drill trains both skills simultaneously.",
+      "setup": "Player 1 is at the net. Player 2 is at the baseline. Player 2 may only lob — no drive passing shots. Player 1 must overhead every lob. The point continues as a continuous lob-overhead battle until an error or winner occurs.",
+      "instructions": [
+        "Player 2 starts at the baseline. Player 1 at the net.",
+        "Player 2 feeds by lobbing. Player 1 overheads.",
+        "Player 2 can only lob — every shot. Player 1 must overhead every ball.",
+        "The point continues until someone makes an error — lob in the net, overhead out, etc.",
+        "Play first to 10 points. Switch roles. Best of 3 sets of 10."
+      ],
+      "coaching_cues": [
+        "Player 2 (lobber): vary the height and depth — some low, some very high.",
+        "Player 2: mix topspin lobs (fast-dropping) and slice lobs (slow-floating) — different timing for Player 1.",
+        "Player 1 (overheader): read the lob depth immediately — retreat for deep lobs, stay for short ones.",
+        "Player 1: alternate target corners on overheads — never smash to the same side twice in a row.",
+        "The lobber wins by being inconsistent — varying height, depth, and spin confuses the overhead."
+      ],
+      "common_errors": [
+        "Player 2 lobbing too predictably — same height and depth every time.",
+        "Player 1 smashing too hard — precision is more important than pace on overheads.",
+        "Player 1 retreating too far on short lobs — smash from inside the service line."
+      ],
+      "variations": [
+        "Defensive lob only: Player 2 must lob slice only — slower and higher.",
+        "Topspin lob only: Player 2 must lob with topspin only — faster and harder to overhead.",
+        "Scoring variation: Player 1 gets +2 for smash winners, Player 2 gets +2 for lob winners."
+      ],
+      "tags": ["lob", "overhead", "intermediate", "battle", "net vs baseline", "tactical"],
+      "diagramData": {
+        "p1": { "x": 200, "y": 580 },
+        "p2": { "x": 200, "y": 820 },
+        "shots": [
+          { "x1": 200, "y1": 820, "x2": 200, "y2": 390 },
+          { "x1": 200, "y1": 575, "x2": 95, "y2": 820 },
+          { "x1": 200, "y1": 820, "x2": 200, "y2": 450 },
+          { "x1": 200, "y1": 575, "x2": 305, "y2": 820 }
+        ],
+        "areas": [
+          { "x": 95, "y": 820, "r": 25 },
+          { "x": 305, "y": 820, "r": 25 }
+        ]
+      }
+    },
+    {
+      "id": "DS-008",
+      "name": "Drop Shot Disguise with Slice Backhand",
+      "subcategory": "Drop Shot Technique",
+      "category": "Drop Shot & Lob",
+      "skill_level": "advanced",
+      "player_count": 2,
+      "duration_minutes": 12,
+      "objective": "Train the drop shot specifically off the slice backhand — the most natural wing for the drop shot due to the high-to-low slice motion that naturally creates backspin. The slice backhand drop shot is the most disguised version of the drop shot because the slice backhand and the drop shot share the same basic motion up until the deceleration at contact. This drill isolates the slice backhand drop shot and trains its complete disguise.",
+      "setup": "Player 2 feeds cross-court to Player 1's backhand side. Player 1 alternates between a normal slice backhand (deep cross-court) and a slice backhand drop shot. Player 2 tries to read which is coming from the preparation.",
+      "instructions": [
+        "Player 2 feeds cross-court to Player 1's backhand from the baseline.",
+        "Player 1 alternates: deep slice backhand (shot 1), drop shot (shot 2), repeat.",
+        "Both shots must have identical preparation — backswing, shoulder position, and racket height.",
+        "Player 2 calls 'drop' or 'deep' before the ball lands — testing disguise quality.",
+        "Play 20 alternations. Target: Player 2 reads correctly 5 or fewer times out of 10."
+      ],
+      "coaching_cues": [
+        "Deep slice: full follow-through forward through the ball.",
+        "Drop shot: identical backswing, but decelerate and open the face more at contact.",
+        "The shoulder position must be the same for both — the shoulders often reveal the drop shot.",
+        "Aim the drop shot cross-court — the natural direction of the slice backhand.",
+        "Practice the deceleration until it feels natural — 'catching the ball on the strings'."
+      ],
+      "common_errors": [
+        "Shortened backswing on the drop shot — most obvious tell.",
+        "Slowing down the approach to the ball — body movement speed reveals intent.",
+        "Drop shot going into the net — face must be more open than a normal slice."
+      ],
+      "variations": [
+        "Three-option slice: deep slice, drop shot, or lob — Player 2 must read between three.",
+        "Moving drop shot: receive a wide backhand ball and execute the drop shot while moving.",
+        "Drop shot from deep: practice the drop shot from behind the baseline — harder but possible."
+      ],
+      "tags": ["drop shot", "slice backhand", "advanced", "disguise", "technique", "backspin"],
+      "diagramData": {
+        "p1": { "x": 120, "y": 820 },
+        "p2": { "x": 280, "y": 60 },
+        "shots": [
+          { "x1": 280, "y1": 70, "x2": 110, "y2": 790 },
+          { "x1": 110, "y1": 810, "x2": 290, "y2": 100 },
+          { "x1": 110, "y1": 810, "x2": 260, "y2": 345 }
+        ],
+        "areas": [
+          { "x": 290, "y": 100, "r": 28 },
+          { "x": 260, "y": 345, "r": 22 }
+        ],
+        "cones": [{ "x": 260, "y": 345 }]
+      }
+    },
+    {
+      "id": "DS-009",
+      "name": "Lob Return of Serve: Catching the Net Rusher",
+      "subcategory": "Lob Technique",
+      "category": "Drop Shot & Lob",
+      "skill_level": "intermediate",
+      "player_count": 2,
+      "duration_minutes": 10,
+      "objective": "Train the lob return of serve — used specifically against serve-and-volley players who rush the net. The lob return neutralizes the serve-and-volley by flying over the net player's head and landing deep, forcing the player who served to retreat from the net and play a groundstroke instead of a volley. It is the single best weapon against a committed serve-and-volleyer.",
+      "setup": "Player 2 serves and rushes the net on every serve — committed serve-and-volley. Player 1 must lob the return over Player 2's head. Player 1 cannot drive the return in this drill — all returns must be lobs.",
+      "instructions": [
+        "Player 2 serves from the deuce court and sprints to the net immediately.",
+        "Player 1 must lob the return — all returns are lobs, no drives.",
+        "The lob must go over Player 2's head and land in the back half of the court.",
+        "Track: how many lob returns land in the court behind Player 2? Target: 12 out of 15.",
+        "After 15, switch to ad court. Repeat."
+      ],
+      "coaching_cues": [
+        "Read the serve early — the lob return must be decided before the ball bounces.",
+        "Open the racket face on contact — a closed face produces a drive, not a lob.",
+        "High follow-through — the finish must go upward for the ball to arc correctly.",
+        "Aim for the back of the court on the opposite side from where the server runs — the most open space.",
+        "Topspin lob return: swing upward with full brushing — faster arc, lands deeper."
+      ],
+      "common_errors": [
+        "Deciding too late — the return swing starts as a drive then changes to a lob partway through.",
+        "Lob too flat — gets smashed from inside the service line.",
+        "Lob landing short — ideal overhead position for the net rusher."
+      ],
+      "variations": [
+        "Mix lob and drive: Player 1 chooses freely — Player 2 doesn't know if the lob or drive is coming.",
+        "Aggressive lob return: topspin lob off the return — aims to land as close to the baseline as possible.",
+        "Wide serve lob: specifically lob the wide serve — tests the most difficult lob return angle."
+      ],
+      "tags": ["lob", "return", "serve-and-volley", "intermediate", "tactical", "counter"],
+      "diagramData": {
+        "p1": { "x": 280, "y": 60 },
+        "p2": { "x": 200, "y": 560 },
+        "moves": [{ "x1": 240, "y1": 860, "x2": 200, "y2": 560 }],
+        "shots": [
+          { "x1": 240, "y1": 855, "x2": 310, "y2": 385 },
+          { "x1": 280, "y1": 65, "x2": 200, "y2": 100 }
+        ],
+        "areas": [{ "x": 200, "y": 100, "r": 40 }]
+      }
+    },
+    {
+      "id": "DS-010",
+      "name": "Drop Shot Accuracy Challenge: 5-Zone Scoring",
+      "subcategory": "Drop Shot Technique",
+      "category": "Drop Shot & Lob",
+      "skill_level": "intermediate",
+      "player_count": 2,
+      "duration_minutes": 12,
+      "objective": "Develop drop shot precision through a 5-zone scoring system that rewards increasingly shorter and more accurate landing positions. The precision of the drop shot determines its effectiveness — a drop shot landing near the service line gives the opponent time to reach it, while a drop shot landing within 1 foot of the net with good backspin is virtually unreachable even at a full sprint.",
+      "setup": "Divide the service box into 5 zones by distance from the net: zone 1 (within 1 foot of net) = 5 points, zone 2 (1-2 feet) = 4 points, zone 3 (2-3 feet) = 3 points, zone 4 (3-4 feet) = 2 points, zone 5 (near service line) = 1 point. Mark zones with cones or tape.",
+      "instructions": [
+        "Divide the service box into 5 zones using cones.",
+        "Player 2 feeds medium balls to Player 1 from the service line.",
+        "Player 1 executes a drop shot, aiming for the highest-scoring zone.",
+        "Player 2 calls the zone number and awards points.",
+        "Play 20 drop shots per set. Target: 60+ points out of a possible 100."
+      ],
+      "coaching_cues": [
+        "Zone 1 scoring (5 points) requires maximum deceleration — practice this feel specifically.",
+        "Shorter landing = more open racket face = more deceleration at contact.",
+        "The softer the hands, the shorter the bounce — think 'absorb and redirect'.",
+        "Backspin is what keeps the ball close to the net after landing — brush down and through.",
+        "Start by aiming for zone 3 consistently, then try to creep into zone 2, then zone 1."
+      ],
+      "common_errors": [
+        "Always landing in zone 4 or 5 — not enough deceleration or face angle.",
+        "Going for zone 1 prematurely — accuracy before maximum ambition.",
+        "Inconsistency between zones — sometimes zone 1, sometimes zone 5. Consistency is more important than maximum points."
+      ],
+      "variations": [
+        "Timed competition: how many zone 1 or 2 drop shots in 2 minutes?",
+        "Moving drop shot: Player 1 receives a moving feed — harder precision from a moving position.",
+        "Backhand zone challenge: same scoring system on the backhand drop shot."
+      ],
+      "tags": ["drop shot", "accuracy", "intermediate", "zones", "precision", "scoring"],
+      "diagramData": {
+        "p1": { "x": 200, "y": 700 },
+        "p2": { "x": 200, "y": 480 },
+        "shots": [
+          { "x1": 200, "y1": 490, "x2": 200, "y2": 690 },
+          { "x1": 200, "y1": 685, "x2": 200, "y2": 345 }
+        ],
+        "cones": [
+          { "x": 200, "y": 345 },
+          { "x": 200, "y": 360 },
+          { "x": 200, "y": 375 },
+          { "x": 200, "y": 390 },
+          { "x": 200, "y": 405 }
+        ]
+      }
+    },
+    {
+      "id": "DS-011",
+      "name": "Tactical Drop Shot: When and When Not To",
+      "subcategory": "Tactical Application",
+      "category": "Drop Shot & Lob",
+      "skill_level": "intermediate",
+      "player_count": 2,
+      "duration_minutes": 15,
+      "objective": "Develop the tactical judgment of when to use the drop shot and when to avoid it. The drop shot is one of the most misused shots in tennis — most players either never use it or use it at wrong moments (from behind the baseline, against a player inside the service line, or as a panic shot). This drill trains the decision-making by rewarding correct usage and penalizing incorrect usage.",
+      "setup": "Both players rally from the baseline. Player 1 may use a drop shot at any time. After each drop shot, Player 2 evaluates and calls: 'good time' or 'bad time' based on a set of criteria discussed before the drill.",
+      "instructions": [
+        "Before the drill: discuss the criteria for a 'good time' to drop shot: ball landing inside the service line, opponent behind the baseline, Player 1 inside the baseline.",
+        "Rally freely. Player 1 may drop shot at any time.",
+        "After each drop shot, Player 2 calls 'good time' or 'bad time'.",
+        "Good time drop shots that win the point: +2. Bad time drop shots: -1 (even if they land in).",
+        "Play 20 points. A positive total score means good tactical drop shot usage."
+      ],
+      "coaching_cues": [
+        "Good time triggers: opponent behind baseline + ball inside service line + player inside baseline.",
+        "Bad time triggers: player behind baseline, opponent inside the service line, or under defensive pressure.",
+        "The drop shot loses much of its effectiveness when the opponent is inside the baseline — they get there too quickly.",
+        "The setup for the drop shot should come from a neutral rally position, not from a defensive one.",
+        "Frequency: 1-2 drop shots per set is enough to keep the opponent guessing. More becomes predictable."
+      ],
+      "common_errors": [
+        "Drop shotting from behind the baseline — too far away for the ball to land short enough.",
+        "Drop shotting when the opponent is already inside the service line — easily reached.",
+        "Using the drop shot as a panic response to a difficult ball — should be used from a position of control."
+      ],
+      "variations": [
+        "Blind evaluation: Player 2 evaluates without Player 1 knowing the criteria — raw tactical test.",
+        "Score-weighted: at break point, bad time drop shots cost 3 points — increases tactical discipline.",
+        "Match tracking: track drop shot timing in a real match — how many were good vs bad times?"
+      ],
+      "tags": ["drop shot", "tactical", "intermediate", "decision", "when to use", "judgment"],
+      "diagramData": {
+        "p1": { "x": 200, "y": 720 },
+        "p2": { "x": 200, "y": 60 },
+        "moves": [{ "x1": 200, "y1": 850, "x2": 200, "y2": 720 }],
+        "shots": [
+          { "x1": 200, "y1": 70, "x2": 200, "y2": 810 },
+          { "x1": 200, "y1": 715, "x2": 200, "y2": 360 }
+        ],
+        "areas": [
+          { "x": 200, "y": 810, "r": 40 },
+          { "x": 200, "y": 360, "r": 22 }
+        ]
+      }
+    },
+    {
+      "id": "DS-012",
+      "name": "Lob Under Pressure: Wide and Stretched",
+      "subcategory": "Lob Technique",
+      "category": "Drop Shot & Lob",
+      "skill_level": "intermediate",
+      "player_count": 2,
+      "duration_minutes": 10,
+      "objective": "Train the lob from a wide, stretched position — the defensive lob used when pulled off the court and a net player is present. This is the most difficult lob scenario because the player is off-balance, stretched, and must still generate enough height and depth to buy time and ideally land the ball near the baseline.",
+      "setup": "Player 2 hits hard, wide balls to pull Player 1 off the court. Player 2 simultaneously positions at the net. Player 1 must sprint wide and lob over Player 2's head from the stretched position.",
+      "instructions": [
+        "Player 2 hits a hard, wide ball to Player 1's forehand corner.",
+        "Player 2 simultaneously advances to the net position.",
+        "Player 1 sprints wide, stretches, and lobs over Player 2's head.",
+        "The lob must clear Player 2's reach and land in the back half of the court.",
+        "Repeat 15 times per wing. Track: how many lobs land deep enough to be winning?"
+      ],
+      "coaching_cues": [
+        "From a stretched position: open the racket face as far as possible.",
+        "Use the arm only if necessary — a stretched lob often can't use the full body.",
+        "Aim well over the net player — from a wide position, the arc needs to be very high.",
+        "The back of the court anywhere is a successful lob — precision is less important than depth.",
+        "After the lob from wide: sprint back toward center. Don't watch it land."
+      ],
+      "common_errors": [
+        "Lob too short from the wide position — net player can smash from mid-service box.",
+        "Trying to drive from a stretched position instead of lobbing — very high-risk.",
+        "Not recovering after the wide lob — stays wide and concedes the center."
+      ],
+      "variations": [
+        "Wide backhand lob: same drill on the backhand side.",
+        "Running lob: receive the wide ball while sprinting — most realistic match simulation.",
+        "Lob accuracy from wide: must land within 4 feet of the baseline — depth precision."
+      ],
+      "tags": ["lob", "wide ball", "intermediate", "defensive", "stretched", "pressure"],
+      "diagramData": {
+        "p1": { "x": 345, "y": 845 },
+        "p2": { "x": 200, "y": 510 },
+        "moves": [
+          { "x1": 200, "y1": 850, "x2": 345, "y2": 845 },
+          { "x1": 240, "y1": 860, "x2": 200, "y2": 510 }
+        ],
+        "shots": [
+          { "x1": 200, "y1": 490, "x2": 348, "y2": 840 },
+          { "x1": 342, "y1": 840, "x2": 100, "y2": 100 }
+        ],
+        "areas": [{ "x": 100, "y": 100, "r": 40 }]
+      }
+    },
+    {
+      "id": "DS-013",
+      "name": "Drop Shot Off a Short Ball: The Unexpected",
+      "subcategory": "Tactical Application",
+      "category": "Drop Shot & Lob",
+      "skill_level": "advanced",
+      "player_count": 2,
+      "duration_minutes": 12,
+      "objective": "Develop the drop shot off a short ball — an unexpected tactical move where the player receives a short ball (which normally invites a drive) and instead hits a drop shot. This counter-intuitive use is devastatingly effective because the opponent expects an attack and is already retreating in anticipation, making the drop shot virtually unreachable.",
+      "setup": "Player 2 feeds short balls to Player 1 — expecting Player 1 to drive them. Player 1 alternates between driving the short ball (3 times) and drop-shotting the short ball (1 time). The ratio creates surprise on the drop shot.",
+      "instructions": [
+        "Player 2 feeds short balls inside the service line to Player 1.",
+        "Player 1 drives 3 consecutive short balls aggressively — establishing a pattern.",
+        "On the 4th short ball, Player 1 drop shots instead of driving.",
+        "Player 2, expecting a drive, is in motion backward — the drop shot is virtually unreachable.",
+        "Repeat 8 four-ball sequences. Track: how many drop shots are unreachable?"
+      ],
+      "coaching_cues": [
+        "The 3 drives create the pattern — don't skip them. The expectation is everything.",
+        "Setup for the drop shot must look identical to the drive — full sprint forward, same preparation.",
+        "Drop the shot just inside the service box — with a short ball approach, the target is even closer to the net.",
+        "Watch the opponent start to retreat — that's the confirmation that the drop shot will succeed.",
+        "This sequence is most effective once per set — overuse removes the surprise."
+      ],
+      "common_errors": [
+        "Drop shotting the first short ball — no pattern established, opponent can read it.",
+        "Different preparation for the drop shot — opponent reads it and reverses direction.",
+        "Drop shot landing too deep — opponent's backward movement actually helps them reach it."
+      ],
+      "variations": [
+        "Drive, drive, lob: same pattern but lob instead of drop shot on the 3rd.",
+        "4-drive, drop shot: even longer pattern — deeper opponent retreat before the drop shot.",
+        "Random placement: after 3 drives, Player 1 chooses freely: drive, drop shot, or lob."
+      ],
+      "tags": ["drop shot", "short ball", "advanced", "surprise", "tactical", "counter-intuitive"],
+      "diagramData": {
+        "p1": { "x": 200, "y": 660 },
+        "p2": { "x": 200, "y": 60 },
+        "moves": [{ "x1": 200, "y1": 850, "x2": 200, "y2": 660 }],
+        "shots": [
+          { "x1": 200, "y1": 70, "x2": 200, "y2": 680 },
+          { "x1": 200, "y1": 658, "x2": 95, "y2": 100 },
+          { "x1": 200, "y1": 658, "x2": 200, "y2": 345 }
+        ],
+        "areas": [
+          { "x": 95, "y": 100, "r": 25 },
+          { "x": 200, "y": 345, "r": 22 }
+        ]
+      }
+    },
+    {
+      "id": "DS-014",
+      "name": "Topspin Lob Passing Shot: Over the Charging Net Player",
+      "subcategory": "Lob Technique",
+      "category": "Drop Shot & Lob",
+      "skill_level": "advanced",
+      "player_count": 2,
+      "duration_minutes": 12,
+      "objective": "Train the offensive topspin lob used as a passing shot when a net player closes the net aggressively. When a net player comes in very close, the drive pass becomes increasingly difficult as angles are cut off. The topspin lob over a very close net player is the most effective counter — it goes over an unreachable height, lands near the baseline, and the topspin kicks the ball further away.",
+      "setup": "Player 2 approaches to a very close net position — 6 feet or less from the net, arms raised. Player 1 is at the baseline. Player 1 uses a topspin lob to pass Player 2.",
+      "instructions": [
+        "Player 2 positions extremely close to the net — 5-6 feet away, racket raised.",
+        "Player 1 receives a fed ball and executes a topspin lob.",
+        "The lob must clear Player 2's extended racket by at least 2 feet.",
+        "Target: topspin lob landing in the back 4 feet of the court.",
+        "Repeat 15 times. Track: how many clear Player 2 AND land in the target zone?"
+      ],
+      "coaching_cues": [
+        "Swing upward aggressively — this is not a defensive float, it is an offensive weapon.",
+        "The steeper the upward swing path, the faster the arc drops down — topspin is the gravity driver.",
+        "Aim 4-5 feet above Player 2's reaching height — leaves no margin for error at this close range.",
+        "The topspin lob should feel like a groundstroke — swing with the same commitment.",
+        "Best target: the backhand side of the opponent's court — hardest overhead direction."
+      ],
+      "common_errors": [
+        "Too soft of a swing — ball floats slowly and gives the net player time to retreat and smash.",
+        "Not enough height — Player 2 smashes from below their shoulder.",
+        "Ball landing short — net player can smash from inside the service line."
+      ],
+      "variations": [
+        "Backhand topspin lob: same drill on the backhand side — often more natural for topspin lobbers.",
+        "Running topspin lob: Player 1 receives a wide ball and hits the topspin lob while running.",
+        "Counter-overhead: Player 2 tries to overhead every lob — tests if the lob is genuinely unreachable."
+      ],
+      "tags": ["lob", "topspin", "advanced", "passing shot", "net player", "offensive"],
+      "diagramData": {
+        "p1": { "x": 200, "y": 820 },
+        "p2": { "x": 200, "y": 495 },
+        "shots": [
+          { "x1": 200, "y1": 490, "x2": 200, "y2": 810 },
+          { "x1": 200, "y1": 810, "x2": 200, "y2": 100 }
+        ],
+        "areas": [{ "x": 200, "y": 100, "r": 40 }]
+      }
+    },
+    {
+      "id": "DS-015",
+      "name": "Drop Shot Forehand: Touch on the Run",
+      "subcategory": "Drop Shot Technique",
+      "category": "Drop Shot & Lob",
+      "skill_level": "intermediate",
+      "player_count": 2,
+      "duration_minutes": 10,
+      "objective": "Develop the forehand drop shot — the forward-sprinting drop shot executed while moving toward the ball. Most players only practice drop shots from a stationary position, but the most effective drop shots in match play happen when moving forward on a short ball. Hitting a controlled drop shot while sprinting requires a specific combination of deceleration, footwork, and soft hands.",
+      "setup": "Player 2 feeds short balls inside the service line to Player 1's forehand. Player 1 must sprint forward and execute a forehand drop shot while still moving toward the ball.",
+      "instructions": [
+        "Player 2 feeds short balls inside the service line to Player 1's forehand.",
+        "Player 1 sprints forward from the baseline.",
+        "Player 1 must execute a forehand drop shot while moving forward — not stopping before contact.",
+        "Target: ball lands within 3 feet of the net inside the service box.",
+        "Repeat 15 times. Track: how many moving forehand drop shots land in the target zone?"
+      ],
+      "coaching_cues": [
+        "The body's forward momentum adds subtle pace — compensate by opening the face slightly more.",
+        "Decelerate the racket at contact even though the body is still moving forward.",
+        "Don't stop your feet before the drop shot — the movement through the shot makes it look like an attack.",
+        "The forward momentum contributes to the disguise — the opponent expects a drive.",
+        "After the drop shot, either stop and advance or retreat — don't stumble past the shot."
+      ],
+      "common_errors": [
+        "Stopping the feet before the drop shot — breaks the disguise and slows the approach.",
+        "Too much pace on the moving drop shot — body momentum adds pace, compensate with more deceleration.",
+        "Drop shot landing too deep — still in the service box but too far from the net."
+      ],
+      "variations": [
+        "Backhand moving drop shot: same drill on the backhand side.",
+        "Sprint and decision: Player 1 must decide drive or drop shot after starting the sprint.",
+        "Moving drop shot and volley: after the drop shot, continue to the net and volley the recovery ball."
+      ],
+      "tags": ["drop shot", "forehand", "intermediate", "moving", "sprint", "touch"],
+      "diagramData": {
+        "p1": { "x": 200, "y": 665 },
+        "p2": { "x": 200, "y": 480 },
+        "moves": [{ "x1": 200, "y1": 850, "x2": 200, "y2": 665 }],
+        "shots": [
+          { "x1": 200, "y1": 490, "x2": 200, "y2": 680 },
+          { "x1": 200, "y1": 660, "x2": 200, "y2": 355 }
+        ],
+        "areas": [{ "x": 200, "y": 355, "r": 22 }]
+      }
+    },
+    {
+      "id": "DS-016",
+      "name": "Lob Depth Control: Landing Zone Precision",
+      "subcategory": "Lob Technique",
+      "category": "Drop Shot & Lob",
+      "skill_level": "intermediate",
+      "player_count": 2,
+      "duration_minutes": 10,
+      "objective": "Develop precise lob depth control — the ability to land the lob in a specific zone near the baseline. A lob that lands near the service line gives the opponent an easy overhead. A lob that lands within 4 feet of the baseline is most effective — deep enough to prevent a comfortable overhead but still in the court. This drill trains the touch and arc control needed for consistent deep lobs.",
+      "setup": "Mark two zones: a target zone (last 4 feet before the baseline) and a safety zone (5-8 feet before the baseline). Player 2 feeds and Player 1 lobs. Scoring rewards landing in the target zone.",
+      "instructions": [
+        "Mark the target zone (last 4 feet) and safety zone (5-8 feet) on both baseline areas.",
+        "Player 2 feeds medium balls to Player 1.",
+        "Player 1 lobs every ball, targeting the deep zone.",
+        "Target zone: +3 points. Safety zone: +1 point. Anywhere else in the court: 0. Net or out: -1.",
+        "Play 20 lobs per set. Target: 40+ points per set."
+      ],
+      "coaching_cues": [
+        "The target zone requires judging the exact arc: too high goes out, too low lands short.",
+        "Aim 12-15 feet over the net for a standard court-length lob — visualize the apex of the arc.",
+        "More topspin = deeper landing because the ball drops faster. Use topspin for depth.",
+        "Slice lob: floats and hangs. Better for opponents who are already deep.",
+        "Practice both with and without a net player — adjust the arc based on the presence of a net player."
+      ],
+      "common_errors": [
+        "Consistent short landing (safety zone) — not enough arc. Add height to the lob.",
+        "Consistent long landing (out) — too much arc or pace. Reduce the follow-through.",
+        "Inconsistency — varying between short and deep. Consistency requires a repeatable arc."
+      ],
+      "variations": [
+        "Directional depth: lob must be both deep AND to a specific side.",
+        "Pressure depth: Player 2 positions at the net — lobber must hit the depth zone to prevent overhead.",
+        "Alternating depth: alternate between zone 1 (deep) and a short zone — tests arc control range."
+      ],
+      "tags": ["lob", "depth", "intermediate", "precision", "target zone", "arc"],
+      "diagramData": {
+        "p1": { "x": 200, "y": 820 },
+        "p2": { "x": 200, "y": 480 },
+        "shots": [
+          { "x1": 200, "y1": 490, "x2": 200, "y2": 810 },
+          { "x1": 200, "y1": 810, "x2": 200, "y2": 100 }
+        ],
+        "areas": [
+          { "x": 200, "y": 100, "r": 35 },
+          { "x": 200, "y": 120, "r": 50 }
+        ]
+      }
+    },
+    {
+      "id": "DS-017",
+      "name": "Drop Shot Rally: Both Players Drop Shot Only",
+      "subcategory": "Touch Development",
+      "category": "Drop Shot & Lob",
+      "skill_level": "advanced",
+      "player_count": 2,
+      "duration_minutes": 12,
+      "objective": "Develop extreme touch and feel through a drop shot-only rally — both players must drop shot every ball, creating a continuous exchange of ultra-soft shots. This drill builds the hands required for the most delicate shots in tennis and removes any reliance on pace or power. Players with great drop shot hands can sustain this rally indefinitely — players without feel will make errors within a few shots.",
+      "setup": "Both players stand inside their service lines — close to the net. Both must drop shot every ball back across the net. The ball must bounce inside the service box and stay alive. No drives, no lobs — only drop shots.",
+      "instructions": [
+        "Both players position inside their service lines.",
+        "Player 1 starts by feeding a drop shot across the net.",
+        "Player 2 must drop shot it back.",
+        "Both players continue drop-shotting every ball — aiming to keep the rally alive.",
+        "Count consecutive drops without an error. Target: 10 consecutive. Rest 30 seconds. Repeat 5 rounds."
+      ],
+      "coaching_cues": [
+        "The drop shot must bounce inside the service box and stay low — otherwise it bounces past the opponent.",
+        "Backspin is critical: the more backspin, the lower the bounce, the harder to reach.",
+        "Soft hands are everything — the lightest grip possible.",
+        "Read where the opponent's drop shot will land as early as possible — you need to move quickly.",
+        "This drill is harder than it looks — sustained soft touch requires genuine skill."
+      ],
+      "common_errors": [
+        "Ball bouncing past the service box — too much pace, not enough deceleration.",
+        "Ball going into the net — too much downward angle, not enough lift.",
+        "Trying too hard — the drop shot exchange requires relaxation, not effort."
+      ],
+      "variations": [
+        "Move to the baseline: start at service line, gradually step back — makes the exchange harder.",
+        "One player drives: one player drops, one player drives back — tests asymmetric shot exchange.",
+        "Drop shot target: only balls landing within 2 feet of the net count."
+      ],
+      "tags": ["drop shot", "rally", "advanced", "touch", "feel", "soft hands"],
+      "diagramData": {
+        "p1": { "x": 200, "y": 590 },
+        "p2": { "x": 200, "y": 400 },
+        "shots": [
+          { "x1": 200, "y1": 410, "x2": 200, "y2": 580 },
+          { "x1": 200, "y1": 580, "x2": 200, "y2": 420 }
+        ],
+        "areas": [
+          { "x": 200, "y": 590, "r": 20 },
+          { "x": 200, "y": 400, "r": 20 }
+        ]
+      }
+    },
+    {
+      "id": "DS-018",
+      "name": "Lob After Short Ball: The Reverse Attack",
+      "subcategory": "Tactical Application",
+      "category": "Drop Shot & Lob",
+      "skill_level": "advanced",
+      "player_count": 2,
+      "duration_minutes": 12,
+      "objective": "Develop the lob as a tactical weapon specifically off a short ball when the opponent is at the net or closing quickly. When the opponent feeds a short ball and follows it to the net expecting a drive, a well-executed topspin lob goes completely over their head and the court behind them is open. This is the reverse attack — using a soft shot to beat an aggressive position.",
+      "setup": "Player 2 feeds short balls to Player 1 and advances toward the net after feeding. Player 1 must read the advancing Player 2 and choose: drive (if Player 2 is still far from the net) or lob (if Player 2 is close enough that the lob passes them).",
+      "instructions": [
+        "Player 2 feeds a short ball inside the service line and advances to the net at different speeds.",
+        "If Player 2 advances quickly (close to the net): Player 1 must lob.",
+        "If Player 2 stays at the service line or further: Player 1 can drive.",
+        "The decision must be made before or immediately as Player 1 arrives at the short ball.",
+        "Play 20 sequences. Track: correct decision rate — did Player 1 read the right option?"
+      ],
+      "coaching_cues": [
+        "Read Player 2's feet: are they still running? How close are they to the net?",
+        "The decision threshold: if Player 2 is inside the service line and still moving, lob.",
+        "If Player 2 is outside the service line, drive is the better option.",
+        "The lob in this drill should be a topspin lob — not a defensive float.",
+        "Move forward to the short ball regardless of the decision — the ball still needs to be approached."
+      ],
+      "common_errors": [
+        "Lobbing when Player 2 is not yet close enough — Player 2 retreats and overheads.",
+        "Driving when Player 2 is already at the net — ball volleyed away easily.",
+        "Not reading Player 2's approach — deciding before seeing the net position."
+      ],
+      "variations": [
+        "Signal version: Player 2 signals their approach speed — trains the decision in isolation.",
+        "Full point version: play out the point after the lob or drive — all consequences are live.",
+        "Combination version: after the lob, Player 2 overheads and the point continues."
+      ],
+      "tags": ["lob", "short ball", "advanced", "tactical", "reverse attack", "decision"],
+      "diagramData": {
+        "p1": { "x": 200, "y": 680 },
+        "p2": { "x": 200, "y": 540 },
+        "moves": [
+          { "x1": 200, "y1": 850, "x2": 200, "y2": 680 },
+          { "x1": 200, "y1": 480, "x2": 200, "y2": 540 }
+        ],
+        "shots": [
+          { "x1": 200, "y1": 490, "x2": 200, "y2": 695 },
+          { "x1": 200, "y1": 675, "x2": 200, "y2": 100 }
+        ],
+        "areas": [{ "x": 200, "y": 100, "r": 40 }]
+      }
+    },
+    {
+      "id": "DS-019",
+      "name": "Drop Shot and Charge: Net Attack After the Drop",
+      "subcategory": "Tactical Application",
+      "category": "Drop Shot & Lob",
+      "skill_level": "advanced",
+      "player_count": 2,
+      "duration_minutes": 12,
+      "objective": "Develop the drop shot and charge pattern — hitting a drop shot and immediately following it to the net. This is the most aggressive use of the drop shot: the short ball forces the opponent to sprint forward and hit up defensively, while the drop-shot player has already arrived at the net and can finish with a decisive volley. It turns a soft touch shot into a net attack.",
+      "setup": "Player 1 hits a drop shot and immediately sprints to the net. Player 2 must reach the drop shot and hit a defensive ball. Player 1 volleys the finish.",
+      "instructions": [
+        "Player 1 and Player 2 begin a baseline rally.",
+        "Player 1 hits a drop shot from inside the service line or mid-court.",
+        "Immediately after the drop shot, Player 1 sprints to the net.",
+        "Player 2 sprints to reach the drop shot and hits a defensive ball.",
+        "Player 1 split steps and finishes with a volley. Play each as a full point."
+      ],
+      "coaching_cues": [
+        "Move to the net the instant the drop shot leaves the racket — no hesitation.",
+        "Sprint diagonally toward the net and the ball's expected return zone.",
+        "The drop shot must be genuinely short — if it lands deep, the charge is impossible.",
+        "Split step as Player 2 contacts the defensive return — must happen even mid-sprint.",
+        "Volley to the open court — Player 2 is sprinting forward and one side is always open."
+      ],
+      "common_errors": [
+        "Hesitating after the drop shot — arrives at the net too late for the volley.",
+        "Drop shot too deep — Player 2 reaches it comfortably and drives past the approaching Player 1.",
+        "No split step — cannot change direction for the volley."
+      ],
+      "variations": [
+        "Drop shot charge and lob: Player 2 lobs the defensive recovery — Player 1 must overhead.",
+        "Double drop shot charge: Player 1 drop shots, Player 2 drop shots back, Player 1 charges again.",
+        "Timed charge: Player 1 must reach inside the service line before Player 2 contacts the ball."
+      ],
+      "tags": ["drop shot", "charge", "advanced", "net play", "tactical", "volley"],
+      "diagramData": {
+        "p1": { "x": 200, "y": 530 },
+        "p2": { "x": 200, "y": 380 },
+        "moves": [
+          { "x1": 200, "y1": 700, "x2": 200, "y2": 530 },
+          { "x1": 200, "y1": 60, "x2": 200, "y2": 380 }
+        ],
+        "shots": [
+          { "x1": 200, "y1": 698, "x2": 200, "y2": 348 },
+          { "x1": 200, "y1": 375, "x2": 200, "y2": 640 },
+          { "x1": 200, "y1": 525, "x2": 305, "y2": 120 }
+        ],
+        "areas": [{ "x": 305, "y": 120, "r": 25 }]
+      }
+    },
+    {
+      "id": "DS-020",
+      "name": "Lob Consistency: 20-in-a-Row Challenge",
+      "subcategory": "Lob Technique",
+      "category": "Drop Shot & Lob",
+      "skill_level": "beginner",
+      "player_count": 2,
+      "duration_minutes": 10,
+      "objective": "Build lob consistency through a count-based challenge. The lob is often treated as an emergency shot — hit when desperate, inconsistently, and without confidence. The 20-in-a-row challenge builds the lob as a reliable, consistent weapon by requiring sustained accuracy. Any lob that fails to clear the net or land in the court resets the count to zero.",
+      "setup": "Player 2 feeds medium balls from the service line. Player 1 must lob every ball, landing inside the opposite baseline. Count consecutive successful lobs. Any miss or out resets to zero.",
+      "instructions": [
+        "Player 2 feeds medium balls from the service line to Player 1 at the baseline.",
+        "Player 1 lobs every ball — it must clear the net and land inside the baseline.",
+        "Count consecutive successful lobs.",
+        "Any net ball or ball landing out resets the count to zero.",
+        "Target: 20 consecutive lobs in the court. Once achieved, add a depth constraint."
+      ],
+      "coaching_cues": [
+        "Consistent lob height: every lob should clear the net by roughly the same margin.",
+        "Open the racket face the same amount on every lob — consistency starts with consistent setup.",
+        "Aim for a large target zone initially: anywhere in the back half of the court.",
+        "As the count builds, breathe — the same mental pressure as a long groundstroke rally.",
+        "Once 20 is consistent, add a constraint: all lobs must land within 4 feet of the baseline."
+      ],
+      "common_errors": [
+        "Varying lob height — inconsistent face angle at contact.",
+        "Too much tension at high counts — causes the same errors as a high groundstroke count.",
+        "Aiming at the line — creates unnecessary risk. Large target until consistency is automatic."
+      ],
+      "variations": [
+        "Directional lob: all lobs must go to the backhand corner — placement + consistency.",
+        "Moving lob: Player 2 moves Player 1 laterally before each lob — movement + lob consistency.",
+        "30-in-a-row: progress the target to 30 consecutive after achieving 20."
+      ],
+      "tags": ["lob", "consistency", "beginner", "challenge", "count", "reliability"],
+      "diagramData": {
+        "p1": { "x": 200, "y": 820 },
+        "p2": { "x": 200, "y": 480 },
+        "shots": [
+          { "x1": 200, "y1": 490, "x2": 200, "y2": 810 },
+          { "x1": 200, "y1": 810, "x2": 200, "y2": 100 }
+        ],
+        "areas": [{ "x": 200, "y": 100, "r": 50 }]
+      }
+    },
+    {
+      "id": "DS-021",
+      "name": "The Stop Drop Shot: Receiving a Fast Ball",
+      "subcategory": "Drop Shot Technique",
+      "category": "Drop Shot & Lob",
+      "skill_level": "advanced",
+      "player_count": 2,
+      "duration_minutes": 10,
+      "objective": "Develop the stop drop shot — absorbing a fast incoming ball and redirecting it with almost no pace as a drop shot. The stop drop shot is the most extreme use of the drop shot: the incoming ball has pace and the player must completely absorb it before releasing it softly over the net. This requires the ultimate soft hands and complete deceleration — the antithesis of meeting pace with pace.",
+      "setup": "Player 2 hits fast balls to Player 1. Player 1 must convert every ball into a drop shot — absorbing all the incoming pace. The drop shot should land as close to the net as possible despite the fast incoming ball.",
+      "instructions": [
+        "Player 2 hits fast, flat balls to Player 1 from the service line or baseline.",
+        "Player 1 must drop shot every ball — absorbing the pace and redirecting softly.",
+        "Target: ball lands within 2 feet of the net.",
+        "Play 20 stop drop shots per set. Track: how many land within the target zone?",
+        "Increase Player 2's pace each set — tests stop-drop ability under increasing pace."
+      ],
+      "coaching_cues": [
+        "Let the ball come onto a soft, open face — don't swing at it.",
+        "The racket should move backward slightly at contact — a controlled 'give' that absorbs pace.",
+        "Soft, open racket face plus slight backward give at contact = stop drop shot.",
+        "This is the hardest shot in terms of feel — it requires complete relaxation of the grip at contact.",
+        "On faster balls: open the face more and give more — pace is absorbed by the face angle."
+      ],
+      "common_errors": [
+        "Swinging at the fast ball — produces a normal groundstroke instead of a drop shot.",
+        "Tight grip — cannot absorb pace without soft hands.",
+        "Not enough face opening — ball goes into the net."
+      ],
+      "variations": [
+        "Pace progression: start slow, increase every 5 shots — builds confidence with pace.",
+        "Both wings: stop drop shot on forehand and backhand.",
+        "Competition: who can stop drop shot closer to the net on balls of equal pace?"
+      ],
+      "tags": ["drop shot", "stop drop", "advanced", "fast ball", "absorption", "soft hands"],
+      "diagramData": {
+        "p1": { "x": 200, "y": 720 },
+        "p2": { "x": 200, "y": 480 },
+        "shots": [
+          { "x1": 200, "y1": 490, "x2": 200, "y2": 710 },
+          { "x1": 200, "y1": 708, "x2": 200, "y2": 348 }
+        ],
+        "areas": [{ "x": 200, "y": 348, "r": 18 }],
+        "cones": [{ "x": 200, "y": 348 }]
+      }
+    },
+    {
+      "id": "DS-022",
+      "name": "Slice Lob: The Slow-Float Defensive Option",
+      "subcategory": "Lob Technique",
+      "category": "Drop Shot & Lob",
+      "skill_level": "intermediate",
+      "player_count": 2,
+      "duration_minutes": 10,
+      "objective": "Develop the slice lob — the defensive, floating lob with backspin that travels slowly, hangs in the air, and gives the baseliner maximum time to recover. The slice lob is distinct from the topspin lob: it floats higher and slower, giving more recovery time but less depth and less kick after landing. It is used primarily for time-buying in extreme defensive positions.",
+      "setup": "Player 2 positions at the net. Player 1 is at the baseline and receives wide, stretched balls from a separate feeder or feeds themselves. Player 1 executes slice lobs from wide, stretched positions.",
+      "instructions": [
+        "Player 1 receives wide balls from outside the court.",
+        "Player 2 is at the net — ready to overhead.",
+        "Player 1 must slice lob over Player 2's head from the wide stretched position.",
+        "Target: lob must hang above 15 feet at the apex and land within the baseline.",
+        "Repeat 15 times from each wing. Track: how many slice lobs land successfully in the court?"
+      ],
+      "coaching_cues": [
+        "Slice lob motion: high-to-low, open face, similar to a slice backhand but directed upward.",
+        "The ball should have significant backspin — it slows down and hangs at the top of the arc.",
+        "Aim very high — the slice lob needs extra height because it floats, not arcs.",
+        "Don't try to aim the slice lob precisely — depth and height over the player are the goals.",
+        "Use the slice lob when you need more recovery time — it buys 1-2 extra seconds over the topspin lob."
+      ],
+      "common_errors": [
+        "Not enough height — net player smashes from inside the service line.",
+        "Too much pace — removes the floating quality that defines the slice lob.",
+        "Slice lob landing too short — net player retreats and overheads from mid-court."
+      ],
+      "variations": [
+        "Slice vs topspin lob choice: alternate between slice and topspin lobs — different timing for the net player.",
+        "Slice lob depth control: must land within 5 feet of the baseline — difficult with the slice float.",
+        "Slice lob recovery: after lobbing, time how quickly Player 1 can recover to center."
+      ],
+      "tags": ["lob", "slice", "intermediate", "defensive", "floating", "time-buying"],
+      "diagramData": {
+        "p1": { "x": 55, "y": 820 },
+        "p2": { "x": 200, "y": 510 },
+        "moves": [{ "x1": 200, "y1": 850, "x2": 55, "y2": 820 }],
+        "shots": [
+          { "x1": 200, "y1": 490, "x2": 55, "y2": 810 },
+          { "x1": 55, "y1": 815, "x2": 200, "y2": 100 }
+        ],
+        "areas": [{ "x": 200, "y": 100, "r": 45 }]
+      }
+    },
+    {
+      "id": "DS-023",
+      "name": "Drop Shot in a Match: When, How Often, and Where",
+      "subcategory": "Tactical Application",
+      "category": "Drop Shot & Lob",
+      "skill_level": "intermediate",
+      "player_count": 2,
+      "duration_minutes": 20,
+      "objective": "Integrate the drop shot into full match play — using it tactically, tracking its effectiveness, and finding the optimal usage frequency and situation for each player's game. The drop shot is most dangerous when used sparingly and strategically. This drill plays a practice set where the drop shot is tracked, scored, and evaluated for tactical appropriateness.",
+      "setup": "Play a full practice set. A third person or Player 2 tracks every drop shot attempted: the score at the time, the player's court position, the opponent's position, whether it was 'good time' or 'bad time', and the outcome.",
+      "instructions": [
+        "Play a full practice set.",
+        "Track every drop shot: score, positions of both players, situation quality, and outcome.",
+        "After the set, calculate: drop shot win rate, proportion of 'good time' vs 'bad time' uses.",
+        "Identify the score at which drop shots were most effective — some scores are better than others.",
+        "Set a target: use the drop shot 3-4 times per set at 'good time' situations only."
+      ],
+      "coaching_cues": [
+        "3-4 drop shots per set is optimal for most players — more becomes predictable.",
+        "Best scores for drop shots: 30-0, 40-0, or when serving — low-risk points.",
+        "Best positions: inside the baseline on a ball that has landed inside the service line.",
+        "The drop shot should surprise, not panic — use it from a position of confidence.",
+        "Track whether the opponent starts moving in on subsequent points after a drop shot — this is tactical success."
+      ],
+      "common_errors": [
+        "Too many drop shots per set — becomes predictable and expected.",
+        "Drop shots at critical scores (break point, 0-30) — too high risk.",
+        "No variation in placement — all drop shots to the same side."
+      ],
+      "variations": [
+        "Drop shot set: every third point, Player 1 is required to attempt a drop shot — tests execution under obligation.",
+        "Drop shot ban: Player 1 cannot use drop shot for the first set, then may use it in the second — tests the opponent's adjustment.",
+        "Tournament tracking: keep a drop shot log across 5 tournament matches — real performance data."
+      ],
+      "tags": ["drop shot", "match integration", "intermediate", "tactical", "frequency", "tracking"],
+      "diagramData": {
+        "p1": { "x": 200, "y": 700 },
+        "p2": { "x": 200, "y": 60 },
+        "moves": [{ "x1": 200, "y1": 850, "x2": 200, "y2": 700 }],
+        "shots": [
+          { "x1": 200, "y1": 70, "x2": 200, "y2": 690 },
+          { "x1": 200, "y1": 688, "x2": 200, "y2": 820 },
+          { "x1": 200, "y1": 688, "x2": 200, "y2": 355 }
+        ],
+        "areas": [
+          { "x": 200, "y": 820, "r": 30 },
+          { "x": 200, "y": 355, "r": 22 }
+        ]
+      }
+    },
+    {
+      "id": "DS-024",
+      "name": "Lob or Drive: The Passing Shot Decision",
+      "subcategory": "Tactical Application",
+      "category": "Drop Shot & Lob",
+      "skill_level": "advanced",
+      "player_count": 2,
+      "duration_minutes": 15,
+      "objective": "Develop the complete passing shot decision — choosing between a lob and a drive based on the net player's position, height, and movement. This is the most tactically rich decision a baseliner makes: if the net player is close, lob. If they are positioned back, drive. If they are in between, read their body and choose. This drill trains both options and the split-second decision between them.",
+      "setup": "Player 2 is at the net at varying positions. Player 1 must read the position and choose lob or drive passing shot. Player 2 does not signal which position they will take — Player 1 must read in real time.",
+      "instructions": [
+        "Player 2 varies their net position: very close, mid-service box, or service line.",
+        "Player 1 is fed a ball from outside the court.",
+        "Player 1 must choose: lob (net player close) or drive pass (net player back).",
+        "Player 2 tries to volley every drive and smash every lob.",
+        "Play 20 repetitions. Track: correct decision rate and win rate by decision type."
+      ],
+      "coaching_cues": [
+        "Very close net player: topspin lob — they cannot retreat fast enough.",
+        "Mid-service box net player: drive low at their feet — they must half-volley.",
+        "Service line net player: drive cross-court with pace — they have limited angle coverage.",
+        "Read the net player's weight distribution: leaning forward = expect them to poach = lob.",
+        "The fastest decision wins: the longer the indecision, the worse the execution."
+      ],
+      "common_errors": [
+        "Same shot regardless of position — not reading the tactical situation.",
+        "Drive when the net player is close — gives them an easy volley.",
+        "Lob when the net player is far back — easy overhead, no advantage gained."
+      ],
+      "variations": [
+        "Three options: lob, drive wide, or drive at the body — adds the body pass.",
+        "Reaction time test: Player 2 moves to a position at the last second — tests fastest decision.",
+        "Full point: play out all consequences — lob, overhead, drive, volley, all live."
+      ],
+      "tags": ["lob", "drive pass", "advanced", "decision", "net player", "passing shot"],
+      "diagramData": {
+        "p1": { "x": 200, "y": 820 },
+        "p2": { "x": 200, "y": 510 },
+        "shots": [
+          { "x1": 200, "y1": 490, "x2": 200, "y2": 810 },
+          { "x1": 200, "y1": 810, "x2": 200, "y2": 100 },
+          { "x1": 200, "y1": 810, "x2": 95, "y2": 540 }
+        ],
+        "areas": [
+          { "x": 200, "y": 100, "r": 35 },
+          { "x": 95, "y": 540, "r": 25 }
+        ]
+      }
+    },
+    {
+      "id": "DS-025",
+      "name": "Drop Shot & Lob Grand Finale: The Touch Game",
+      "subcategory": "Match Integration",
+      "category": "Drop Shot & Lob",
+      "skill_level": "advanced",
+      "player_count": 2,
+      "duration_minutes": 20,
+      "objective": "Synthesize all drop shot and lob skills in a competitive match format where both shots are given extra scoring weight. The Touch Game rewards the creative, deceptive, and technically precise use of drop shots and lobs while maintaining the pressure of real match play. It is the complete integration test for every skill trained in this category.",
+      "setup": "Play a practice set or first-to-21 tiebreak with modified scoring. Drop shot winner: +3 points (instead of +1). Lob winner: +2 points. Opponent reaching a drop shot and winning the point: -1. All other points: +1/-1 as normal.",
+      "instructions": [
+        "Play competitive points using modified scoring.",
+        "Drop shot winner (unreachable): +3 points. Drop shot opponent reaches and wins: -1.",
+        "Lob winner (overhead-proof, unreachable): +2 points.",
+        "All other points: normal +1/-1 scoring.",
+        "Play first to 21. The bonus scoring rewards high-quality touch shots and punishes poorly timed ones."
+      ],
+      "coaching_cues": [
+        "The -1 penalty on poor drop shots forces tactical judgment — don't drop shot from bad positions.",
+        "The +3 bonus rewards properly executed and disguised drop shot winners.",
+        "Both players will use more creative shots because the reward justifies the risk.",
+        "Track: how many bonus points does each player accumulate over the match?",
+        "A player with more bonus points than their opponent has better touch shot quality."
+      ],
+      "common_errors": [
+        "Going for drop shots at bad times for the bonus points — the -1 penalty is the corrective.",
+        "Never using touch shots and playing the normal game — defeats the drill's integration purpose.",
+        "Using lobs only defensively — the +2 bonus incentivizes offensive topspin lobs."
+      ],
+      "variations": [
+        "Drop shot only bonus: only the drop shot earns a bonus — focus on one shot at a time.",
+        "Full 3-set match: play a complete match with bonus scoring — tests sustained integration.",
+        "Both players bonus: both can earn the same bonuses — creates a touch-shot battle."
+      ],
+      "tags": ["drop shot", "lob", "match integration", "advanced", "grand finale", "touch game"],
+      "diagramData": {
+        "p1": { "x": 200, "y": 700 },
+        "p2": { "x": 200, "y": 510 },
+        "moves": [
+          { "x1": 200, "y1": 850, "x2": 200, "y2": 700 },
+          { "x1": 240, "y1": 860, "x2": 200, "y2": 510 }
+        ],
+        "shots": [
+          { "x1": 200, "y1": 70, "x2": 200, "y2": 690 },
+          { "x1": 200, "y1": 688, "x2": 200, "y2": 348 },
+          { "x1": 200, "y1": 820, "x2": 200, "y2": 100 },
+          { "x1": 200, "y1": 505, "x2": 100, "y2": 820 }
+        ],
+        "areas": [
+          { "x": 200, "y": 348, "r": 22 },
+          { "x": 200, "y": 100, "r": 35 },
+          { "x": 100, "y": 820, "r": 25 }
+        ]
+      }
+    }
+  ]
+}

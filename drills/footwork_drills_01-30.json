@@ -1,0 +1,1485 @@
+{
+  "batch": "Footwork drills 1-30",
+  "category": "Footwork",
+  "description": "Drills focused on movement patterns, court coverage, split step timing, directional first steps, recovery positioning, and athletic footwork specific to tennis. Every drill in this category treats footwork as a trainable skill — not a byproduct of general athleticism. Great footwork is the foundation of every other technical skill in tennis: you cannot hit a good shot from a bad position.",
+  "drills": [
+    {
+      "id": "FW-001",
+      "name": "Split Step Isolation: Timing to a Visual Cue",
+      "subcategory": "Split Step",
+      "category": "Footwork",
+      "skill_level": "beginner",
+      "player_count": 2,
+      "duration_minutes": 10,
+      "objective": "Isolate and train the split step with perfect timing using a visual cue. The split step is the most important single movement in tennis — it loads the legs and allows the player to explode in any direction. Yet most players either skip it entirely or perform it at the wrong time. This drill builds the split step as an automatic, correctly-timed reflex rather than a conscious decision.",
+      "setup": "Player 1 stands at the baseline in the ready position. Player 2 stands across the net and simply raises their racket to signal the trigger. Player 1 split steps the moment Player 2's racket reaches the contact point. No balls are hit — this drill is purely footwork.",
+      "instructions": [
+        "Player 1 stands at the center baseline in the athletic ready position: knees bent, weight on balls of feet, racket centered.",
+        "Player 2 performs a slow-motion serve or groundstroke swing from across the net.",
+        "Player 1 must split step exactly as Player 2's racket reaches the point of contact with an imaginary ball.",
+        "After the split step, Player 1 takes one explosive first step in a called direction: left, right, forward, or back.",
+        "Repeat 20 times. Focus entirely on split step timing — not the first step direction."
+      ],
+      "coaching_cues": [
+        "The split step is a small, quick hop — not a large jump. 2-3 inches off the ground is enough.",
+        "Land softly on the balls of both feet simultaneously — heels never touch.",
+        "Land with knees slightly bent and body coiled — the landing position IS the explosive launch position.",
+        "The trigger is the opponent's contact — not the backswing, not the follow-through.",
+        "After landing, the first step must happen within 0.1 seconds — the split step loads the spring."
+      ],
+      "common_errors": [
+        "Splitting on the backswing — too early, lands flat before the ball direction is clear.",
+        "Splitting after the ball has passed — too late, no time to react.",
+        "Large jump — heavy landing kills the reactive energy instead of storing it.",
+        "Flat-footed landing — cannot redirect from a heel-down landing."
+      ],
+      "variations": [
+        "Sound cue: Player 2 claps instead of swinging — Player 1 splits on the clap sound.",
+        "Multiple split steps: Player 2 swings three times in a row — Player 1 splits on each contact.",
+        "Moving split step: Player 1 walks toward the net — must split step mid-movement on the cue."
+      ],
+      "tags": ["footwork", "split step", "beginner", "timing", "foundation", "movement"],
+      "diagramData": {
+        "p1": { "x": 200, "y": 850 },
+        "p2": { "x": 200, "y": 60 },
+        "moves": [
+          { "x1": 200, "y1": 850, "x2": 240, "y2": 850 },
+          { "x1": 240, "y1": 850, "x2": 200, "y2": 850 },
+          { "x1": 200, "y1": 850, "x2": 160, "y2": 850 }
+        ],
+        "areas": [{ "x": 200, "y": 850, "r": 25 }]
+      }
+    },
+    {
+      "id": "FW-002",
+      "name": "Lateral Shuffle: Side to Side Baseline Coverage",
+      "subcategory": "Lateral Movement",
+      "category": "Footwork",
+      "skill_level": "beginner",
+      "player_count": 1,
+      "duration_minutes": 10,
+      "objective": "Build the lateral shuffle — the primary movement pattern for covering the baseline. The lateral shuffle keeps the player facing the net at all times, maintains a low center of gravity, and allows rapid changes of direction. It is used to cover the vast majority of groundstrokes hit to the baseline. This drill builds the shuffle as a physical habit through pure repetition.",
+      "setup": "Player 1 stands at the center baseline. Two cones are placed 8 feet to the left and right of center — marking the forehand and backhand coverage zones. Player 1 shuffles between the cones without crossing their feet.",
+      "instructions": [
+        "Place a cone 8 feet to the left and right of the center baseline mark.",
+        "Player 1 starts at center, shuffles to the right cone, touches it, shuffles back to center, shuffles to the left cone, touches it, returns to center.",
+        "Keep the feet from crossing — pure lateral shuffle with no crossover steps.",
+        "Complete 10 full side-to-side sequences without stopping.",
+        "Rest 30 seconds. Repeat 4 rounds. Increase the cone distance by 2 feet each round."
+      ],
+      "coaching_cues": [
+        "Stay low throughout — knees bent, hips lower than normal standing height.",
+        "Push off the outside foot to initiate each shuffle — drive off the foot furthest from the target.",
+        "Keep the feet parallel to the baseline — no angling the feet toward the cones.",
+        "Racket up and in front at all times — simulate the ready position throughout.",
+        "Never cross the feet — crossing leads to stumbling and slower direction changes."
+      ],
+      "common_errors": [
+        "Crossing the feet during the shuffle — trips up the movement and slows direction changes.",
+        "Standing upright — the shuffle loses its low, reactive quality when the body is tall.",
+        "Dragging the back foot — the feet must move together, not one at a time."
+      ],
+      "variations": [
+        "Faster pace: increase the speed of the shuffle until the maximum controllable pace is found.",
+        "Wider cones: place cones at the doubles sidelines — full court lateral coverage.",
+        "Shuffle and swing: after reaching each cone, Player 1 performs a shadow forehand or backhand swing."
+      ],
+      "tags": ["footwork", "lateral shuffle", "beginner", "baseline coverage", "movement pattern"],
+      "diagramData": {
+        "p1": { "x": 200, "y": 850 },
+        "moves": [
+          { "x1": 200, "y1": 850, "x2": 310, "y2": 850 },
+          { "x1": 310, "y1": 850, "x2": 200, "y2": 850 },
+          { "x1": 200, "y1": 850, "x2": 90, "y2": 850 },
+          { "x1": 90, "y1": 850, "x2": 200, "y2": 850 }
+        ],
+        "cones": [
+          { "x": 310, "y": 850 },
+          { "x": 90, "y": 850 }
+        ]
+      }
+    },
+    {
+      "id": "FW-003",
+      "name": "First Step Explosiveness: React and Go",
+      "subcategory": "First Step",
+      "category": "Footwork",
+      "skill_level": "beginner",
+      "player_count": 2,
+      "duration_minutes": 10,
+      "objective": "Build explosive first step speed — the single most important physical quality for court coverage in tennis. The first step after the split step determines how quickly a player reaches the ball. A slow first step cannot be compensated for with a fast sprint because the ball waits for no one. This drill specifically isolates and trains the explosiveness of that first directional step.",
+      "setup": "Player 1 stands at the center baseline in the ready position. Player 2 points in a direction — left, right, forward, or back — and Player 1 must react with an explosive first step in that direction. The emphasis is on the speed of the first step, not on covering any particular distance.",
+      "instructions": [
+        "Player 1 stands at center baseline in the ready position.",
+        "Player 2 points a direction: left, right, forward, or backward.",
+        "Player 1 must take an explosive first step in the pointed direction within 0.2 seconds.",
+        "After the first step, Player 1 takes 2-3 more steps in the same direction, then returns to center.",
+        "Repeat 20 times. Rest 45 seconds. Play 4 rounds."
+      ],
+      "coaching_cues": [
+        "The first step is an explosive push, not a lift — drive off the ground like a sprinter.",
+        "Lead with the foot closest to the target direction — don't step across.",
+        "Stay low during the first step — driving up wastes energy that should go horizontal.",
+        "Arms drive the first step — pump the opposite arm to create momentum.",
+        "The first step covers 2-3 feet, not 6 inches — commit to a real explosive movement."
+      ],
+      "common_errors": [
+        "Taking a small, tentative first step — covers too little ground.",
+        "Stepping up instead of out — wastes energy going vertical.",
+        "Slow reaction — daydreaming between points is the enemy of first step speed."
+      ],
+      "variations": [
+        "Eyes-closed start: Player 1 closes eyes, Player 2 calls the direction — trains auditory reaction.",
+        "Add the swing: after the first step, Player 1 performs a shadow groundstroke.",
+        "Fastest first step competition: Player 2 times with a stopwatch — Player 1 tries to beat their own record."
+      ],
+      "tags": ["footwork", "first step", "explosiveness", "beginner", "reaction", "speed"],
+      "diagramData": {
+        "p1": { "x": 200, "y": 850 },
+        "p2": { "x": 200, "y": 480 },
+        "moves": [
+          { "x1": 200, "y1": 850, "x2": 300, "y2": 840 },
+          { "x1": 200, "y1": 850, "x2": 100, "y2": 840 },
+          { "x1": 200, "y1": 850, "x2": 200, "y2": 750 }
+        ],
+        "areas": [{ "x": 200, "y": 850, "r": 20 }]
+      }
+    },
+    {
+      "id": "FW-004",
+      "name": "Crossover Step: Covering Wide Balls Fast",
+      "subcategory": "Lateral Movement",
+      "category": "Footwork",
+      "skill_level": "intermediate",
+      "player_count": 2,
+      "duration_minutes": 10,
+      "objective": "Develop the crossover step — the fastest footwork technique for covering wide balls. When a ball is hit further than the shuffle can reach, the crossover step is used: the far foot crosses over the near foot, launching the body explosively in the target direction. The crossover covers 2-3 times more ground per step than the shuffle and is essential for reaching wide balls in time.",
+      "setup": "Player 1 stands at the center baseline. Player 2 feeds wide balls — beyond the reach of a normal shuffle. Player 1 must use crossover steps to reach each wide ball and shadow-swing at the contact point.",
+      "instructions": [
+        "Player 2 feeds a wide ball to Player 1's forehand side — further than a shuffle can reach.",
+        "Player 1 initiates with a crossover step: right foot crosses over left (for right-handers moving right).",
+        "Player 1 sprints to the wide position using crossover steps.",
+        "Player 1 shadow-swings at the imaginary ball, then recovery-sprints back to center.",
+        "Alternate wide forehand and wide backhand crossovers. Repeat 15 times each side."
+      ],
+      "coaching_cues": [
+        "The crossover step starts with the far foot crossing over the near foot — not the near foot stepping out.",
+        "Turn the hips in the direction of movement during the crossover — the whole body turns.",
+        "After the crossover, run normally — the crossover launches you, then sprint footwork takes over.",
+        "Recovery is equally important: after the shadow swing, sprint back to center using crossover steps.",
+        "The crossover is for distance; the shuffle is for adjustment. Know which to use."
+      ],
+      "common_errors": [
+        "Shuffling for wide balls — too slow to cover the distance in time.",
+        "Crossover without hip turn — produces a stiff, slow movement.",
+        "Not recovering after the wide movement — stands at the sideline."
+      ],
+      "variations": [
+        "With actual ball: Player 2 feeds real balls — Player 1 must hit from the wide position.",
+        "Timed crossover: how fast can Player 1 crossover from center to the sideline cone and back?",
+        "Crossover recovery: Player 1 crossovers wide, shadow swings, then crossovers back — all at full speed."
+      ],
+      "tags": ["footwork", "crossover step", "wide ball", "intermediate", "speed", "lateral"],
+      "diagramData": {
+        "p1": { "x": 330, "y": 855 },
+        "p2": { "x": 200, "y": 480 },
+        "moves": [
+          { "x1": 200, "y1": 850, "x2": 330, "y2": 855 },
+          { "x1": 330, "y1": 848, "x2": 200, "y2": 848 }
+        ],
+        "shots": [
+          { "x1": 200, "y1": 490, "x2": 335, "y2": 840 }
+        ],
+        "areas": [{ "x": 330, "y": 855, "r": 20 }]
+      }
+    },
+    {
+      "id": "FW-005",
+      "name": "Spider Run: Full Court Footwork Pattern",
+      "subcategory": "Court Coverage",
+      "category": "Footwork",
+      "skill_level": "intermediate",
+      "player_count": 1,
+      "duration_minutes": 12,
+      "objective": "Build complete court coverage endurance and movement efficiency through the spider run — the classic tennis footwork conditioning pattern. The spider run visits 5 target positions on the court from center baseline, testing every movement direction: forward, lateral, diagonal forward, and diagonal back. It replicates the distances and movement patterns of real match play and is the gold standard tennis footwork conditioning drill.",
+      "setup": "Place cones at 5 positions on the court from Player 1's baseline perspective: center net strap (T), left net post corner, right net post corner, left baseline corner, right baseline corner. Player 1 starts at center baseline and touches each cone in sequence, returning to center after every cone.",
+      "instructions": [
+        "Player 1 starts at center baseline.",
+        "Sprint to the center net strap (T position) — touch it — sprint back to center.",
+        "Sprint to the left net post corner — touch it — sprint back to center.",
+        "Sprint to the right net post corner — touch it — sprint back to center.",
+        "Sprint to the left baseline corner — touch it — sprint back to center.",
+        "Sprint to the right baseline corner — touch it — sprint back to center.",
+        "That is 1 complete spider run. Rest 90 seconds. Repeat 4 times. Track total time."
+      ],
+      "coaching_cues": [
+        "Touch each cone with the hand closest to it — this forces a full lean and reach.",
+        "Use crossover steps for diagonal sprints — faster than straight running for angular distances.",
+        "Sprint back to center as fast as the sprint out — the recovery is part of the drill.",
+        "Keep the body low throughout — upright running is slower on short court distances.",
+        "Breathe rhythmically — one exhale per 2 steps maintains oxygen flow."
+      ],
+      "common_errors": [
+        "Jogging instead of sprinting — must simulate match-pace movement.",
+        "Not returning to center after each cone — skipping the recovery defeats the drill.",
+        "Stopping to touch the cone — must touch on the run, not stop and touch."
+      ],
+      "variations": [
+        "Time-based: compete against personal best time for the 5-cone spider run.",
+        "Backward spider: sprint out forward, shuffle/backpedal back to center.",
+        "Shadow swing at each cone: simulate a shot at each position — adds tennis-specific specificity."
+      ],
+      "tags": ["footwork", "spider run", "court coverage", "intermediate", "conditioning", "agility"],
+      "diagramData": {
+        "p1": { "x": 200, "y": 850 },
+        "moves": [
+          { "x1": 200, "y1": 850, "x2": 200, "y2": 480 },
+          { "x1": 200, "y1": 480, "x2": 200, "y2": 850 },
+          { "x1": 200, "y1": 850, "x2": 65, "y2": 480 },
+          { "x1": 65, "y1": 480, "x2": 200, "y2": 850 },
+          { "x1": 200, "y1": 850, "x2": 335, "y2": 480 },
+          { "x1": 335, "y1": 480, "x2": 200, "y2": 850 },
+          { "x1": 200, "y1": 850, "x2": 65, "y2": 850 },
+          { "x1": 65, "y1": 850, "x2": 200, "y2": 850 },
+          { "x1": 200, "y1": 850, "x2": 335, "y2": 850 }
+        ],
+        "cones": [
+          { "x": 200, "y": 480 },
+          { "x": 65, "y": 480 },
+          { "x": 335, "y": 480 },
+          { "x": 65, "y": 850 },
+          { "x": 335, "y": 850 }
+        ]
+      }
+    },
+    {
+      "id": "FW-006",
+      "name": "Recovery to Center: The Habit of Repositioning",
+      "subcategory": "Recovery",
+      "category": "Footwork",
+      "skill_level": "beginner",
+      "player_count": 2,
+      "duration_minutes": 12,
+      "objective": "Build the automatic habit of recovering to the center baseline after every shot. Poor recovery positioning is one of the most common tactical and physical errors at all levels — players who stay where they hit leave massive gaps on the other side of the court. This drill makes recovery to center a trained reflex rather than an occasional afterthought.",
+      "setup": "Player 2 feeds balls alternating to Player 1's forehand and backhand. Player 1 must hit each ball and physically sprint back to the center cone before the next ball is fed. The center cone is non-negotiable — Player 1 must touch it.",
+      "instructions": [
+        "Place a cone at the center baseline mark.",
+        "Player 2 feeds to Player 1's forehand — Player 1 hits and immediately sprints to touch the center cone.",
+        "Player 2 feeds to Player 1's backhand — Player 1 hits and immediately sprints to touch the center cone.",
+        "Continue alternating. The center cone must be touched after every single shot.",
+        "Repeat 20 exchanges. Rest 60 seconds. Play 3 rounds."
+      ],
+      "coaching_cues": [
+        "Push off the outside foot the moment you complete the swing — this is the recovery launch.",
+        "Don't watch the ball land — start recovering as the shot leaves the racket.",
+        "Sprint to center, don't shuffle — the cone creates urgency that shuffling cannot.",
+        "Anticipate the next ball during the recovery — look for Player 2's preparation.",
+        "The center cone makes the recovery tangible — players cannot cheat by stopping halfway."
+      ],
+      "common_errors": [
+        "Watching the shot land before recovering — loses a full second of recovery time.",
+        "Shuffling to center instead of sprinting — too slow when the next ball comes quickly.",
+        "Not reaching center before the next feed — habitually giving up the center."
+      ],
+      "variations": [
+        "No cone: Player 1 must verbally call 'center' when they reach the recovery position.",
+        "Faster feeds: Player 2 decreases time between feeds — Player 1 must recover faster.",
+        "Wide and center: feeds go wide, Player 1 must recover all the way to center despite the extra distance."
+      ],
+      "tags": ["footwork", "recovery", "center baseline", "beginner", "positioning", "habit"],
+      "diagramData": {
+        "p1": { "x": 200, "y": 850 },
+        "p2": { "x": 200, "y": 480 },
+        "moves": [
+          { "x1": 280, "y1": 850, "x2": 200, "y2": 850 },
+          { "x1": 200, "y1": 850, "x2": 120, "y2": 850 },
+          { "x1": 120, "y1": 850, "x2": 200, "y2": 850 }
+        ],
+        "shots": [
+          { "x1": 200, "y1": 490, "x2": 280, "y2": 840 },
+          { "x1": 200, "y1": 490, "x2": 120, "y2": 840 }
+        ],
+        "cones": [{ "x": 200, "y": 850 }]
+      }
+    },
+    {
+      "id": "FW-007",
+      "name": "Forward Sprint to Short Ball: Closing Distance",
+      "subcategory": "Forward Movement",
+      "category": "Footwork",
+      "skill_level": "intermediate",
+      "player_count": 2,
+      "duration_minutes": 10,
+      "objective": "Train the forward sprint to a short ball — the movement pattern used to attack a ball that lands inside the service line. Recognizing the short ball early and sprinting decisively forward is one of the most high-value footwork skills in tennis. Players who close on short balls quickly put the opponent immediately on defense; players who hesitate or jog allow the short ball opportunity to vanish.",
+      "setup": "Player 1 starts at the baseline. Player 2 feeds short balls — landing inside the service line. Player 1 must sprint forward and hit the short ball before it bounces a second time. The quality of the shot is secondary to the speed of the movement.",
+      "instructions": [
+        "Player 1 starts at center baseline.",
+        "Player 2 feeds a short ball — landing inside the service line.",
+        "Player 1 must call 'short ball!' and sprint forward immediately.",
+        "Player 1 must contact the ball before it bounces a second time.",
+        "After the shot, Player 1 either approaches the net or recovers. Repeat 15 times."
+      ],
+      "coaching_cues": [
+        "The recognition trigger is the ball clearing the net at a low height — train your eye to see this.",
+        "First step must be forward — not sideways, not backward, directly forward.",
+        "Sprint in a straight line toward the ball — diagonal routes waste time.",
+        "Lean forward during the sprint — body momentum helps create the forward swing.",
+        "After the shot, read the situation: come to net if the shot was deep, recover if it was short."
+      ],
+      "common_errors": [
+        "Jogging to the short ball — by the time a jog arrives, the opportunity is smaller.",
+        "First step sideways instead of forward — loses distance in the wrong direction.",
+        "Stopping before the contact — momentum should carry through the shot, not stop before it."
+      ],
+      "variations": [
+        "Short ball from different positions: Player 2 feeds short balls to forehand, center, and backhand.",
+        "Short ball and volley: after the short ball attack, Player 1 approaches and volleys the next ball.",
+        "Race the short ball: Player 2 simultaneously feeds a short ball and starts a stopwatch — Player 1 must arrive within X seconds."
+      ],
+      "tags": ["footwork", "forward sprint", "short ball", "intermediate", "attack", "recognition"],
+      "diagramData": {
+        "p1": { "x": 200, "y": 660 },
+        "p2": { "x": 200, "y": 480 },
+        "moves": [
+          { "x1": 200, "y1": 850, "x2": 200, "y2": 660 }
+        ],
+        "shots": [
+          { "x1": 200, "y1": 490, "x2": 200, "y2": 680 },
+          { "x1": 200, "y1": 655, "x2": 95, "y2": 100 }
+        ],
+        "areas": [{ "x": 200, "y": 680, "r": 25 }],
+        "cones": [{ "x": 200, "y": 680 }]
+      }
+    },
+    {
+      "id": "FW-008",
+      "name": "Backpedal to Lob: Retreating Without Losing the Ball",
+      "subcategory": "Backward Movement",
+      "category": "Footwork",
+      "skill_level": "intermediate",
+      "player_count": 2,
+      "duration_minutes": 10,
+      "objective": "Develop the retreat technique for deep lobs — using crossover steps instead of backpedaling to move backward quickly. Most players backpedal (run backward facing the net) when chasing a lob, which is slow, unstable, and forces a completely blind run. Elite players turn sideways and use crossover steps to retreat faster and with better balance, tracking the ball over their shoulder.",
+      "setup": "Player 1 starts at the net. Player 2 throws or hits deep lobs over Player 1's head. Player 1 must turn sideways and retreat using crossover steps to reach the ball before it bounces twice.",
+      "instructions": [
+        "Player 1 starts at the net.",
+        "Player 2 throws a deep lob over Player 1's head.",
+        "Player 1 immediately turns sideways (90 degrees) and retreats using crossover steps.",
+        "Player 1 tracks the ball over the shoulder and either smashes or plays a groundstroke.",
+        "Repeat 15 times alternating deep lobs to left and right. Rest 60 seconds between sets."
+      ],
+      "coaching_cues": [
+        "Turn sideways immediately — facing the net while retreating is slow and unstable.",
+        "Use crossover steps to retreat: the foot furthest from the target crosses behind.",
+        "Keep your eyes on the ball by looking over the leading shoulder.",
+        "Point the non-dominant arm at the ball while retreating — maintains visual tracking.",
+        "Never take your eye off the ball during the retreat — losing sight of the ball ends the point."
+      ],
+      "common_errors": [
+        "Backpedaling facing the net — slow, unstable, and completely wrong for deep retreats.",
+        "Losing sight of the ball during the turn — causes complete misjudgment of depth.",
+        "Retreating in a straight line instead of diagonally toward the ball trajectory."
+      ],
+      "variations": [
+        "Timed retreat: how fast can Player 1 retreat from the net to the baseline using crossover steps?",
+        "Retreat and smash: lob is shallow enough to smash — Player 1 must recognize and smash.",
+        "Retreat and lob back: Player 1 retrieves deep lob and lobs back — sustains the drill."
+      ],
+      "tags": ["footwork", "backpedal", "retreat", "lob", "intermediate", "crossover"],
+      "diagramData": {
+        "p1": { "x": 200, "y": 750 },
+        "p2": { "x": 200, "y": 60 },
+        "moves": [
+          { "x1": 200, "y1": 520, "x2": 200, "y2": 750 }
+        ],
+        "shots": [
+          { "x1": 200, "y1": 70, "x2": 200, "y2": 600 },
+          { "x1": 200, "y1": 745, "x2": 200, "y2": 100 }
+        ],
+        "areas": [{ "x": 200, "y": 750, "r": 25 }]
+      }
+    },
+    {
+      "id": "FW-009",
+      "name": "Figure-Eight Footwork: Continuous Direction Changes",
+      "subcategory": "Agility",
+      "category": "Footwork",
+      "skill_level": "intermediate",
+      "player_count": 1,
+      "duration_minutes": 10,
+      "objective": "Build agility and continuous direction-change ability through the figure-eight footwork pattern. Tennis demands constant changes of direction — rarely do players move in a straight line for more than 3 steps. The figure-eight drill trains the body to decelerate, plant, and re-accelerate in a new direction rapidly and efficiently — the exact motor pattern needed for chasing wide balls and recovering to center.",
+      "setup": "Place two cones 8 feet apart on the baseline. Player 1 runs a figure-eight pattern around the cones continuously — going around the right cone, then around the left cone, forming a continuous figure-eight pattern.",
+      "instructions": [
+        "Place two cones 8 feet apart centered on the baseline.",
+        "Player 1 starts between the cones and begins the figure-eight: run around the right cone, then around the left cone.",
+        "Continue the figure-eight continuously for 20 seconds.",
+        "Rest 30 seconds. Repeat 6 rounds.",
+        "Focus on tight, controlled turns around each cone — not wide, sloppy arcs."
+      ],
+      "coaching_cues": [
+        "Plant the outside foot firmly to redirect — the plant stops momentum and launches in the new direction.",
+        "Stay low throughout the figure-eight — standing up on the turns kills momentum.",
+        "Drive the arms during the turns — arms generate angular momentum in tight turns.",
+        "Look through the pattern, not at your feet — eyes up at all times.",
+        "Tight turns are better than fast turns — precision before speed."
+      ],
+      "common_errors": [
+        "Wide, lazy turns around the cones — covers too much extra ground.",
+        "Slowing down to make the turns — should be able to turn at near-full speed.",
+        "Looking down at the feet — takes eyes off the court during real play."
+      ],
+      "variations": [
+        "Wider cones: increase to 12 feet apart — more ground to cover between turns.",
+        "Shadow swings at each cone: simulate a groundstroke at each cone during the figure-eight.",
+        "Timed figure-eight: how many complete figure-eights in 20 seconds? Compete against personal best."
+      ],
+      "tags": ["footwork", "figure eight", "agility", "intermediate", "direction change", "movement"],
+      "diagramData": {
+        "p1": { "x": 200, "y": 850 },
+        "moves": [
+          { "x1": 200, "y1": 850, "x2": 265, "y2": 810 },
+          { "x1": 265, "y1": 810, "x2": 280, "y2": 850 },
+          { "x1": 280, "y1": 850, "x2": 265, "y2": 890 },
+          { "x1": 265, "y1": 890, "x2": 200, "y2": 850 },
+          { "x1": 200, "y1": 850, "x2": 135, "y2": 810 },
+          { "x1": 135, "y1": 810, "x2": 120, "y2": 850 },
+          { "x1": 120, "y1": 850, "x2": 135, "y2": 890 },
+          { "x1": 135, "y1": 890, "x2": 200, "y2": 850 }
+        ],
+        "cones": [
+          { "x": 280, "y": 850 },
+          { "x": 120, "y": 850 }
+        ]
+      }
+    },
+    {
+      "id": "FW-010",
+      "name": "Three-Ball Lateral Pattern: Wide, Center, Wide",
+      "subcategory": "Lateral Movement",
+      "category": "Footwork",
+      "skill_level": "intermediate",
+      "player_count": 2,
+      "duration_minutes": 12,
+      "objective": "Train the most common lateral footwork pattern in tennis — wide forehand, recovery to center, wide backhand. This three-ball sequence replicates the exact movement demand of a baseline rally where the opponent alternates wide balls. It tests the speed of movement, the quality of the recovery, and the ability to maintain stroke quality under continuous lateral pressure.",
+      "setup": "Player 2 feeds three balls in sequence: wide to Player 1's forehand, center, wide to Player 1's backhand. Player 1 must hit all three balls and recover to center between each one. Player 2 feeds the next ball as soon as Player 1 recovers.",
+      "instructions": [
+        "Player 2 feeds wide to Player 1's forehand — Player 1 hits and recovers to center.",
+        "Player 2 immediately feeds center — Player 1 hits and recovers to center.",
+        "Player 2 immediately feeds wide to Player 1's backhand — Player 1 hits and recovers to center.",
+        "Rest 30 seconds. Repeat 10 three-ball sequences per set. Play 3 sets.",
+        "Increase pace and width of feeds each set."
+      ],
+      "coaching_cues": [
+        "Recovery after the wide forehand is the most critical — it sets up the center ball.",
+        "Don't watch the wide shot land — start recovering immediately after contact.",
+        "The center ball is often the hardest — Player 1 is mid-recovery and the ball arrives quickly.",
+        "After the wide backhand, the recovery covers the most ground — use crossover steps.",
+        "Breathe between all three shots — three rapid shots in sequence creates oxygen debt quickly."
+      ],
+      "common_errors": [
+        "Incomplete recovery after the first ball — center ball arrives before the player is ready.",
+        "Slow crossover steps on the wide backhand — the backhand side often has slower footwork.",
+        "No recovery after the third ball — sequence ends but body stays wide."
+      ],
+      "variations": [
+        "Four-ball sequence: wide FH, center, wide BH, center — adds a fourth ball.",
+        "Reverse sequence: wide BH, center, wide FH — same movement demands, opposite order.",
+        "No recovery rule: Player 2 feeds the next ball immediately without waiting for recovery — maximum pressure."
+      ],
+      "tags": ["footwork", "lateral", "three ball", "intermediate", "pattern", "recovery"],
+      "diagramData": {
+        "p1": { "x": 200, "y": 850 },
+        "p2": { "x": 200, "y": 480 },
+        "moves": [
+          { "x1": 200, "y1": 850, "x2": 330, "y2": 850 },
+          { "x1": 330, "y1": 850, "x2": 200, "y2": 850 },
+          { "x1": 200, "y1": 850, "x2": 70, "y2": 850 }
+        ],
+        "shots": [
+          { "x1": 200, "y1": 490, "x2": 330, "y2": 840 },
+          { "x1": 200, "y1": 490, "x2": 200, "y2": 840 },
+          { "x1": 200, "y1": 490, "x2": 70, "y2": 840 }
+        ]
+      }
+    },
+    {
+      "id": "FW-011",
+      "name": "Shadow Footwork: No Ball Movement Training",
+      "subcategory": "Movement Pattern",
+      "category": "Footwork",
+      "skill_level": "beginner",
+      "player_count": 2,
+      "duration_minutes": 10,
+      "objective": "Build complete movement patterns through shadow footwork — performing all the footwork of a real rally without any ball. Shadow footwork allows players to train movement at full intensity without the cognitive distraction of hitting a ball. It is the fastest way to ingrain new footwork habits because every repetition is pure movement, and the player can focus entirely on technique.",
+      "setup": "Player 2 acts as the 'director' — calling directions, pointing, or feeding phantom balls. Player 1 performs all footwork movements in response: split step, first step, movement, shadow swing, recovery. No ball is used.",
+      "instructions": [
+        "Player 2 stands across the net and calls directions rapidly: 'forehand!', 'backhand!', 'short!', 'wide forehand!', 'wide backhand!'.",
+        "Player 1 must perform the complete footwork for each called shot: split step, first step, move to position, shadow swing, recover.",
+        "Player 2 calls the next direction as soon as Player 1 returns to center.",
+        "Continue for 30 seconds on, 30 seconds rest. Repeat 6 rounds.",
+        "Focus entirely on the speed and quality of the footwork — not on the swing."
+      ],
+      "coaching_cues": [
+        "Split step on every call — even if you are already in position, split step before moving.",
+        "Exaggerate the first step — bigger, more explosive than you think is necessary.",
+        "Complete the shadow swing at every position — don't cut the motion short.",
+        "Recover to center after every shadow swing — even in the shadow drill, recovery matters.",
+        "Eyes up and forward — watch Player 2's signals, not the ground."
+      ],
+      "common_errors": [
+        "Skipping the split step — defeats the purpose of shadow footwork training.",
+        "Not recovering to center — builds bad habits in the shadow drill that transfer to real play.",
+        "Half-swings on the shadow — should be full swings to train the complete movement cycle."
+      ],
+      "variations": [
+        "Self-directed shadow: Player 1 calls their own shots aloud and moves accordingly.",
+        "Timed rounds: how many complete shadow movement cycles in 30 seconds?",
+        "Random direction: Player 2 points instead of calling — adds visual reaction to the drill."
+      ],
+      "tags": ["footwork", "shadow", "movement pattern", "beginner", "no ball", "habit"],
+      "diagramData": {
+        "p1": { "x": 200, "y": 850 },
+        "p2": { "x": 200, "y": 480 },
+        "moves": [
+          { "x1": 200, "y1": 850, "x2": 310, "y2": 850 },
+          { "x1": 310, "y1": 850, "x2": 200, "y2": 850 },
+          { "x1": 200, "y1": 850, "x2": 90, "y2": 850 },
+          { "x1": 90, "y1": 850, "x2": 200, "y2": 850 },
+          { "x1": 200, "y1": 850, "x2": 200, "y2": 720 }
+        ],
+        "areas": [{ "x": 200, "y": 850, "r": 20 }]
+      }
+    },
+    {
+      "id": "FW-012",
+      "name": "Diagonal Forward Sprint: The Attack Move",
+      "subcategory": "Forward Movement",
+      "category": "Footwork",
+      "skill_level": "intermediate",
+      "player_count": 2,
+      "duration_minutes": 10,
+      "objective": "Train the diagonal forward sprint — used to attack short balls that land wide and forward simultaneously. Unlike the purely lateral shuffle or the purely forward sprint, most short ball opportunities require a diagonal approach: forward and to the side at the same time. This drill isolates and trains that specific movement so it becomes natural and fast under match conditions.",
+      "setup": "Player 2 feeds short balls at diagonal angles — short and wide to the forehand, and short and wide to the backhand. Player 1 must sprint diagonally to each ball. Cones mark the target positions.",
+      "instructions": [
+        "Place cones at the two diagonal short ball positions: short-wide forehand and short-wide backhand.",
+        "Player 2 feeds a short-wide ball to Player 1's forehand — Player 1 sprints diagonally forward-right.",
+        "Player 1 hits the ball and recovers diagonally backward to center.",
+        "Player 2 feeds short-wide to the backhand — Player 1 sprints diagonally forward-left.",
+        "Alternate sides for 12 sequences. Rest 60 seconds. Play 3 sets."
+      ],
+      "coaching_cues": [
+        "The diagonal sprint starts with a forward-angled first step — not a sideways step.",
+        "Keep the body low during the diagonal sprint — standing up slows the approach.",
+        "Lean into the diagonal direction — body angle drives the sprint.",
+        "Recovery is also diagonal: back and toward center simultaneously.",
+        "The diagonal sprint is faster than going sideways then forward separately — commit to the angle."
+      ],
+      "common_errors": [
+        "Going sideways then forward separately — creates an L-shaped path instead of a diagonal.",
+        "Upright sprint — standing tall reduces sprint speed and compromises the swing on arrival.",
+        "Not committing to the diagonal angle — hesitating causes a late arrival."
+      ],
+      "variations": [
+        "Add a volley after the diagonal sprint: Player 1 hits the short ball and follows to the net.",
+        "Diagonal sprint competition: how fast can Player 1 reach each cone from center?",
+        "Both diagonals: Player 2 randomly feeds either short-wide FH or short-wide BH — Player 1 must read."
+      ],
+      "tags": ["footwork", "diagonal sprint", "forward", "intermediate", "attack", "short ball"],
+      "diagramData": {
+        "p1": { "x": 290, "y": 680 },
+        "p2": { "x": 200, "y": 480 },
+        "moves": [
+          { "x1": 200, "y1": 850, "x2": 290, "y2": 680 },
+          { "x1": 290, "y1": 670, "x2": 200, "y2": 850 }
+        ],
+        "shots": [
+          { "x1": 200, "y1": 490, "x2": 295, "y2": 695 },
+          { "x1": 285, "y1": 675, "x2": 95, "y2": 100 }
+        ],
+        "cones": [
+          { "x": 290, "y": 680 },
+          { "x": 110, "y": 680 }
+        ]
+      }
+    },
+    {
+      "id": "FW-013",
+      "name": "Open Stance vs Closed Stance Footwork Decision",
+      "subcategory": "Stance",
+      "category": "Footwork",
+      "skill_level": "intermediate",
+      "player_count": 2,
+      "duration_minutes": 12,
+      "objective": "Train the decision between open stance and closed stance footwork — knowing when each is appropriate and executing the footwork for each automatically. Open stance is used when there is not enough time to set up properly or when the ball is wide. Closed stance is used when there is time and the ball allows a step-in. Most players default to one stance regardless — this drill builds both and trains the decision.",
+      "setup": "Player 2 feeds balls varying in pace and width. Fast and wide balls demand open stance; slow and central balls invite closed stance. Player 1 must identify the appropriate stance and use the corresponding footwork.",
+      "instructions": [
+        "Player 2 feeds slow, central balls — Player 1 steps into a closed stance and hits.",
+        "Player 2 feeds fast, wide balls — Player 1 uses open stance and rotates from a planted foot.",
+        "After 5 each, Player 2 mixes without signaling — Player 1 must read and choose.",
+        "Play 20 random balls. Track: correct stance choice vs incorrect.",
+        "Focus on the quality of the footwork for each stance, not just getting the ball in."
+      ],
+      "coaching_cues": [
+        "Closed stance: step toward the ball with the front foot — weight transfers through the swing.",
+        "Open stance: plant the outside foot and rotate the hips and torso instead of stepping.",
+        "Decision trigger: if you have time to step in, use closed. If you are rushed or wide, use open.",
+        "The closed stance generates more power; the open stance is faster to set up and recover from.",
+        "Never mix the two: don't take a half-step in from an open stance — commit to one."
+      ],
+      "common_errors": [
+        "Using open stance on balls that allow closed stance — gives up available power.",
+        "Attempting closed stance on wide, fast balls — not enough time, produces a cramped swing.",
+        "Half-committing to either stance — the worst of both worlds."
+      ],
+      "variations": [
+        "Stance-specific practice: 10 minutes open stance only, then 10 minutes closed stance only.",
+        "Partner call: Player 2 calls 'open' or 'closed' before each feed — Player 1 executes on command.",
+        "Slow motion: practice the footwork for each stance in slow motion — build the proprioceptive feel."
+      ],
+      "tags": ["footwork", "stance", "open stance", "closed stance", "intermediate", "decision"],
+      "diagramData": {
+        "p1": { "x": 200, "y": 850 },
+        "p2": { "x": 200, "y": 480 },
+        "shots": [
+          { "x1": 200, "y1": 490, "x2": 200, "y2": 840 },
+          { "x1": 200, "y1": 490, "x2": 310, "y2": 840 }
+        ],
+        "moves": [
+          { "x1": 200, "y1": 850, "x2": 220, "y2": 840 },
+          { "x1": 200, "y1": 850, "x2": 310, "y2": 852 }
+        ],
+        "areas": [
+          { "x": 220, "y": 840, "r": 20 },
+          { "x": 310, "y": 852, "r": 20 }
+        ]
+      }
+    },
+    {
+      "id": "FW-014",
+      "name": "Cone Ladder: Rapid Foot Speed Training",
+      "subcategory": "Foot Speed",
+      "category": "Footwork",
+      "skill_level": "beginner",
+      "player_count": 1,
+      "duration_minutes": 10,
+      "objective": "Build rapid foot speed and coordination through a cone ladder sequence. Fast feet in tennis are not just about raw speed — they require precise, coordinated footwork that can be repeated hundreds of times per match without breaking down. The cone ladder builds the neuromuscular coordination that makes fast feet sustainable over long matches.",
+      "setup": "Place 6 cones in a straight line 2 feet apart. Player 1 performs various footwork patterns through the cone ladder: two feet in each space, one foot in each space, lateral steps through the ladder, and icky shuffle pattern.",
+      "instructions": [
+        "Pattern 1: two feet in each cone space — both feet enter and exit each space before moving to the next.",
+        "Pattern 2: one foot in each cone space — alternate feet, one per space.",
+        "Pattern 3: lateral run through the ladder — both feet enter each space moving sideways.",
+        "Pattern 4: icky shuffle — in, out, in, out through the ladder.",
+        "Repeat each pattern 3 times. Rest 20 seconds between patterns."
+      ],
+      "coaching_cues": [
+        "Focus on foot placement accuracy first — speed comes after consistency.",
+        "Arms pump with every step — the arms drive the legs.",
+        "Eyes forward, not down at the cones — looking down slows the pattern.",
+        "Land on the balls of the feet — heel striking is slow.",
+        "Keep the movements small and precise — high-stepping wastes energy."
+      ],
+      "common_errors": [
+        "Looking at the feet — takes eyes off the court in real play.",
+        "Heel striking — significantly slows foot speed.",
+        "Large, high steps — wastes energy and vertical movement."
+      ],
+      "variations": [
+        "Tennis-specific: hold a racket throughout the ladder — adds the weight and grip challenge.",
+        "Timed ladder: how fast can Player 1 complete each pattern? Track personal bests.",
+        "Ladder then sprint: after completing the ladder, sprint immediately to a cone 10 feet away."
+      ],
+      "tags": ["footwork", "cone ladder", "foot speed", "beginner", "coordination", "agility"],
+      "diagramData": {
+        "p1": { "x": 200, "y": 850 },
+        "moves": [
+          { "x1": 200, "y1": 850, "x2": 200, "y2": 740 }
+        ],
+        "cones": [
+          { "x": 200, "y": 850 },
+          { "x": 200, "y": 830 },
+          { "x": 200, "y": 810 },
+          { "x": 200, "y": 790 },
+          { "x": 200, "y": 770 },
+          { "x": 200, "y": 750 }
+        ]
+      }
+    },
+    {
+      "id": "FW-015",
+      "name": "Approach Footwork: Stop, Plant, and Drive",
+      "subcategory": "Forward Movement",
+      "category": "Footwork",
+      "skill_level": "intermediate",
+      "player_count": 2,
+      "duration_minutes": 12,
+      "objective": "Train the approach footwork sequence — the specific movement pattern used when approaching the net on a short ball. The approach requires three distinct footwork phases: sprint to the ball, stop with a planted foot, swing and drive forward into the net. Many players fail to plant before the approach shot, causing off-balance, weak approach shots. This drill isolates the plant-and-drive mechanism.",
+      "setup": "Player 2 feeds short balls inside the service line. Player 1 sprints forward, plants their foot before contact, hits the approach shot, and continues sprinting to the net. The plant step is mandatory — Player 1 must pause for one beat before hitting.",
+      "instructions": [
+        "Player 2 feeds a short ball inside Player 1's service line.",
+        "Player 1 sprints forward from the baseline.",
+        "Player 1 plants their dominant foot one step behind the ball position — stops the sprint for one beat.",
+        "Player 1 hits the approach shot from the planted position.",
+        "Player 1 continues sprinting to the net after contact. Repeat 15 times."
+      ],
+      "coaching_cues": [
+        "The plant foot lands one step behind the ideal contact point — creates space to swing.",
+        "Plant firmly — a soft plant shifts during the swing and changes the contact point.",
+        "After the plant, swing through the ball and simultaneously push off the plant foot toward the net.",
+        "The plant-and-drive creates approach shot power — passive approaches are weak because there is no drive.",
+        "The plant is a landing, not a stop — it decelerates, not halts, the forward movement."
+      ],
+      "common_errors": [
+        "No plant — hitting while still running at full speed creates terrible contact.",
+        "Too long a plant — stops the forward momentum completely, loses the drive.",
+        "Plant too close to the ball — jams the swing."
+      ],
+      "variations": [
+        "Plant to different sides: approach off forehand, plant, hit — approach off backhand, plant, hit.",
+        "Plant and volley: after the approach, Player 2 feeds a volley ball immediately.",
+        "Running approach: plant on the fly — gradually reduce the plant pause until it's seamless."
+      ],
+      "tags": ["footwork", "approach", "plant step", "intermediate", "net play", "drive"],
+      "diagramData": {
+        "p1": { "x": 200, "y": 680 },
+        "p2": { "x": 200, "y": 480 },
+        "moves": [
+          { "x1": 200, "y1": 850, "x2": 200, "y2": 700 },
+          { "x1": 200, "y1": 700, "x2": 200, "y2": 540 }
+        ],
+        "shots": [
+          { "x1": 200, "y1": 490, "x2": 200, "y2": 710 },
+          { "x1": 200, "y1": 695, "x2": 95, "y2": 100 }
+        ],
+        "areas": [{ "x": 200, "y": 700, "r": 20 }]
+      }
+    },
+    {
+      "id": "FW-016",
+      "name": "Hexagon Drill: 360-Degree Agility",
+      "subcategory": "Agility",
+      "category": "Footwork",
+      "skill_level": "intermediate",
+      "player_count": 1,
+      "duration_minutes": 10,
+      "objective": "Build multidirectional agility and balance through the hexagon drill — the most comprehensive single-player footwork exercise for tennis. The hexagon forces the body to move and change direction in 6 different directions, testing every movement plane used in match play. It also builds proprioception — the body's awareness of its position in space — which is essential for recovering balance after extreme positions.",
+      "setup": "Create a hexagon on the court using tape or cones — 6 sides, each 2 feet long. Player 1 stands inside the hexagon and jumps in and out of each side consecutively, rotating around the hexagon.",
+      "instructions": [
+        "Create a hexagon with 2-foot sides centered on the baseline.",
+        "Player 1 stands inside the hexagon.",
+        "Jump out over side 1, jump back in. Jump out over side 2, jump back in. Continue around all 6 sides.",
+        "Complete the full hexagon in one direction, then reverse.",
+        "Time the completion of one full hexagon rotation. Target: under 10 seconds. Rest 30 seconds. Repeat 5 times."
+      ],
+      "coaching_cues": [
+        "Two-foot jumps — both feet leave and land together on each jump.",
+        "Face forward at all times — don't turn to face each side.",
+        "Absorb each landing on the balls of the feet — quiet landing means good absorption.",
+        "Arms drive each jump — use them for power and balance.",
+        "Minimize time on the ground — the goal is explosive re-launch after each landing."
+      ],
+      "common_errors": [
+        "Turning the body to face each side — must stay facing the same direction throughout.",
+        "Heel landings — significantly slows re-launch time.",
+        "Sloppy shape — missing the sides of the hexagon defeats the drill."
+      ],
+      "variations": [
+        "Single-leg hexagon: one leg only — extreme balance and proprioception challenge.",
+        "Eyes closed hexagon: train the proprioceptive component without visual aid.",
+        "Racket hexagon: hold the racket throughout — adds the real-game equipment challenge."
+      ],
+      "tags": ["footwork", "hexagon", "agility", "intermediate", "balance", "multidirectional"],
+      "diagramData": {
+        "p1": { "x": 200, "y": 850 },
+        "moves": [
+          { "x1": 200, "y1": 850, "x2": 200, "y2": 820 },
+          { "x1": 200, "y1": 820, "x2": 200, "y2": 850 },
+          { "x1": 200, "y1": 850, "x2": 225, "y2": 825 },
+          { "x1": 225, "y1": 825, "x2": 200, "y2": 850 }
+        ],
+        "areas": [{ "x": 200, "y": 845, "r": 30 }]
+      }
+    },
+    {
+      "id": "FW-017",
+      "name": "Net Approach Footwork: T-Position Closing",
+      "subcategory": "Net Footwork",
+      "category": "Footwork",
+      "skill_level": "intermediate",
+      "player_count": 2,
+      "duration_minutes": 12,
+      "objective": "Train the net approach footwork sequence — specifically the split step position and closing movement that a net player uses to cut off passing angles. Many net players take a static position and wait for the ball to come to them. Elite net players are constantly moving: closing toward the ball, split stepping before each pass, and moving diagonally forward with each volley. This drill trains that active, dynamic net footwork.",
+      "setup": "Player 1 starts at the T (center service line and service line intersection). Player 2 hits balls from the baseline. Player 1 must split step, close toward the ball diagonally, volley, and recover to T position after every ball.",
+      "instructions": [
+        "Player 1 starts at the T position — at the service line center.",
+        "Player 2 hits a ball to Player 1's forehand volley side.",
+        "Player 1 split steps, takes one diagonal step forward toward the ball, volleys.",
+        "Player 1 recovers to the T position.",
+        "Player 2 immediately hits to the backhand side — Player 1 repeats. Continue for 10 exchanges, rest 30 seconds."
+      ],
+      "coaching_cues": [
+        "After each split step, step diagonally forward toward the ball — never backward.",
+        "Close the net with each volley — the T position should gradually move closer to the net.",
+        "Recover to T position quickly after each volley — the T is the default volley position.",
+        "Step into every volley — passive waiting produces weak, floated volleys.",
+        "The split step at the T is the foundation — without it, the diagonal step is impossible."
+      ],
+      "common_errors": [
+        "Standing still at T — waiting for the ball instead of closing toward it.",
+        "No recovery to T after the volley — drifts out of position.",
+        "No split step — must happen before every volley."
+      ],
+      "variations": [
+        "Rapid-fire T position: Player 2 hits faster — Player 1 must split step and close more quickly.",
+        "Move T closer: after 10 exchanges, Player 1 moves to mid-service box — shorter distances, sharper angles.",
+        "T position with lobs: Player 2 occasionally lobs — Player 1 must retreat instead of closing."
+      ],
+      "tags": ["footwork", "net", "T position", "intermediate", "closing", "split step"],
+      "diagramData": {
+        "p1": { "x": 200, "y": 640 },
+        "p2": { "x": 200, "y": 60 },
+        "moves": [
+          { "x1": 200, "y1": 640, "x2": 280, "y2": 600 },
+          { "x1": 280, "y1": 600, "x2": 200, "y2": 640 },
+          { "x1": 200, "y1": 640, "x2": 120, "y2": 600 },
+          { "x1": 120, "y1": 600, "x2": 200, "y2": 640 }
+        ],
+        "shots": [
+          { "x1": 200, "y1": 70, "x2": 285, "y2": 610 },
+          { "x1": 200, "y1": 60, "x2": 115, "y2": 610 }
+        ],
+        "areas": [{ "x": 200, "y": 640, "r": 20 }]
+      }
+    },
+    {
+      "id": "FW-018",
+      "name": "Deceleration and Plant: Stopping Under Control",
+      "subcategory": "Deceleration",
+      "category": "Footwork",
+      "skill_level": "intermediate",
+      "player_count": 2,
+      "duration_minutes": 10,
+      "objective": "Develop controlled deceleration — the ability to sprint to a ball and stop under control for the shot. Many players arrive at the ball but cannot stop properly — they over-run, stumble, or their momentum carries them past the ideal contact point. Controlled deceleration allows the player to arrive in balance, hit a quality shot, and immediately redirect. This is the difference between reaching the ball and being in position to hit the ball.",
+      "setup": "Player 2 feeds balls to various positions with a cone marking the ideal arrival point for each shot. Player 1 must sprint to the cone, stop under control, and hit the shot from the exact cone position.",
+      "instructions": [
+        "Player 2 places a cone at the ideal contact position for each shot (wide forehand, wide backhand, short ball).",
+        "Player 2 feeds the ball — Player 1 must sprint and stop with their dominant foot on the cone.",
+        "Player 1 hits the shot from the planted position on the cone.",
+        "If Player 1 over-runs the cone or under-runs it, the repetition is repeated.",
+        "Play 15 repetitions per cone position. 3 positions total."
+      ],
+      "coaching_cues": [
+        "Read the distance early — start the deceleration process before arriving, not at the cone.",
+        "Lower your center of gravity in the last 2 steps — dropping the hips decelerates the body.",
+        "Plant the dominant foot — this is the anchor for both the shot and the direction change.",
+        "Don't over-run by reaching — take one fewer step and stretch if needed.",
+        "Deceleration is a skill — it requires training, not just instinct."
+      ],
+      "common_errors": [
+        "Over-running the cone — momentum carries past the ideal contact point.",
+        "Under-running and reaching — the arm stretches to compensate for under-running.",
+        "No deceleration — arriving at full sprint and trying to hit is unstable."
+      ],
+      "variations": [
+        "Cones without balls: Player 1 sprints to cones from center and plants — pure deceleration training.",
+        "Variable cone distance: Player 2 moves the cone between repetitions — Player 1 reads and adjusts.",
+        "Deceleration to direction change: plant at the cone, immediately sprint to a second cone."
+      ],
+      "tags": ["footwork", "deceleration", "plant", "intermediate", "balance", "control"],
+      "diagramData": {
+        "p1": { "x": 310, "y": 850 },
+        "p2": { "x": 200, "y": 480 },
+        "moves": [
+          { "x1": 200, "y1": 850, "x2": 310, "y2": 850 }
+        ],
+        "shots": [
+          { "x1": 200, "y1": 490, "x2": 315, "y2": 840 },
+          { "x1": 308, "y1": 845, "x2": 100, "y2": 100 }
+        ],
+        "cones": [{ "x": 310, "y": 850 }]
+      }
+    },
+    {
+      "id": "FW-019",
+      "name": "5-Point Star Footwork: Baseline Coverage Pattern",
+      "subcategory": "Court Coverage",
+      "category": "Footwork",
+      "skill_level": "intermediate",
+      "player_count": 2,
+      "duration_minutes": 12,
+      "objective": "Build comprehensive baseline coverage through a structured 5-point movement pattern that visits every key baseline position. The 5-point star covers: center, wide forehand, wide backhand, deep forehand, and deep backhand — the five most important position zones for baseline play. Training this specific pattern develops the automatic ability to navigate every corner of the baseline efficiently.",
+      "setup": "Place cones at 5 positions: center baseline, wide left (doubles alley level), wide right, 3 feet left of center, 3 feet right of center. Player 2 calls or points to positions. Player 1 must move from center to each called position, shadow swing, and return to center.",
+      "instructions": [
+        "Player 1 starts at center baseline (cone 1).",
+        "Player 2 calls a cone number — Player 1 sprints to that cone, shadow swings, and returns to center.",
+        "Player 2 calls the next cone while Player 1 is still recovering — no rest between cones.",
+        "Continue for 30 seconds of continuous movement. Rest 45 seconds. Repeat 5 rounds.",
+        "Vary the calling speed — sometimes fast, sometimes slow — to test recovery speed."
+      ],
+      "coaching_cues": [
+        "Center cone is home — always return to center before the next call.",
+        "Different movement for different cones: lateral shuffle for short distances, crossover for wide ones.",
+        "Shadow swing at every cone — the drill is footwork AND shot simulation.",
+        "Read the next call while recovering — anticipate rather than react.",
+        "Track your recovery speed: are you arriving at center before the next call?"
+      ],
+      "common_errors": [
+        "Not returning to center between cones — must always return home.",
+        "Shuffling to wide cones — must use crossover steps for the wide cones.",
+        "Slow shadow swing — the swing should be quick and realistic, not slow and deliberate."
+      ],
+      "variations": [
+        "Real balls at each cone: Player 2 feeds a real ball to each called cone — Player 1 hits.",
+        "7-cone version: add 2 more cones for deep angled positions.",
+        "Randomized speed: Player 2 calls slowly for 10 seconds then rapidly for 10 seconds — alternating."
+      ],
+      "tags": ["footwork", "star pattern", "court coverage", "intermediate", "baseline", "movement"],
+      "diagramData": {
+        "p1": { "x": 200, "y": 850 },
+        "moves": [
+          { "x1": 200, "y1": 850, "x2": 65, "y2": 850 },
+          { "x1": 65, "y1": 850, "x2": 200, "y2": 850 },
+          { "x1": 200, "y1": 850, "x2": 335, "y2": 850 },
+          { "x1": 335, "y1": 850, "x2": 200, "y2": 850 }
+        ],
+        "cones": [
+          { "x": 200, "y": 850 },
+          { "x": 65, "y": 850 },
+          { "x": 335, "y": 850 },
+          { "x": 130, "y": 850 },
+          { "x": 270, "y": 850 }
+        ]
+      }
+    },
+    {
+      "id": "FW-020",
+      "name": "Serve Footwork: Trophy Position to Contact",
+      "subcategory": "Serve Footwork",
+      "category": "Footwork",
+      "skill_level": "beginner",
+      "player_count": 1,
+      "duration_minutes": 10,
+      "objective": "Isolate and train the serve footwork — specifically the weight transfer from the back foot to the front foot through the trophy position to contact. The serve is a full-body movement that begins from the feet, and most power and consistency problems on the serve stem from incorrect weight transfer timing. This drill builds the serve footwork in isolation before the full serve is assembled.",
+      "setup": "Player 1 stands at the baseline in the serving stance. No ball is used. Player 1 performs the serve motion in slow motion, pausing at each key footwork position: ready stance, trophy position, launch, follow-through.",
+      "instructions": [
+        "Player 1 stands in the serving stance: feet shoulder-width apart, front foot at 45 degrees to the baseline.",
+        "Shift weight to the back foot while raising the tossing arm — this is the coiling phase.",
+        "Rise to the trophy position: front leg bent, back leg pushing up, body arched.",
+        "Drive upward from both legs — heels leave the ground simultaneously.",
+        "Follow through and land on the front foot — weight has completely transferred.",
+        "Repeat 20 times in slow motion, then 20 at normal speed. Focus entirely on the feet."
+      ],
+      "coaching_cues": [
+        "Weight starts on both feet, transfers to the back foot, then drives through to the front foot.",
+        "Both heels come off the ground at contact — the serve is a jump.",
+        "Land on the front foot — if landing on both feet, the leg drive was incomplete.",
+        "The front foot pivots as the weight transfers — don't keep it locked.",
+        "Film from the side: you should see both heels leaving the ground at contact."
+      ],
+      "common_errors": [
+        "Flat feet throughout — never getting on the toes prevents proper leg drive.",
+        "Landing on the back foot — body stayed behind instead of driving through.",
+        "No pivot on the front foot — causes the hip turn to be blocked."
+      ],
+      "variations": [
+        "Slow-motion in front of a mirror: check each footwork position visually.",
+        "Add the full serve: once footwork is correct in isolation, add the swing.",
+        "Film comparison: film the footwork in isolation and with the full serve — check if they match."
+      ],
+      "tags": ["footwork", "serve", "weight transfer", "beginner", "technique", "foundation"],
+      "diagramData": {
+        "p1": { "x": 240, "y": 860 },
+        "shots": [{ "x1": 240, "y1": 850, "x2": 200, "y2": 380 }],
+        "areas": [{ "x": 240, "y": 860, "r": 20 }]
+      }
+    },
+    {
+      "id": "FW-021",
+      "name": "Two-Cone Reactive Shuffle: Read and React",
+      "subcategory": "Reactive Movement",
+      "category": "Footwork",
+      "skill_level": "intermediate",
+      "player_count": 2,
+      "duration_minutes": 10,
+      "objective": "Build reactive lateral movement speed through a two-cone drill with unpredictable direction cues. Unlike a structured shuffle drill where the pattern is known, this drill adds the element of visual reaction — the player doesn't know which direction is coming. This directly trains the split step-to-first-step reaction sequence that occurs on every groundstroke in a match.",
+      "setup": "Two cones placed 6 feet apart centered on the baseline. Player 2 stands facing Player 1 and points left or right randomly. Player 1 must shuffle to the pointed side cone, touch it, and shuffle back to center before the next direction is given.",
+      "instructions": [
+        "Player 1 stands between two cones 6 feet apart centered on the baseline.",
+        "Player 2 points left or right randomly — as soon as the point is visible, Player 1 moves.",
+        "Player 1 shuffles to the pointed cone, touches it, and shuffles back to center.",
+        "Player 2 points the next direction while Player 1 is recovering — continuous pressure.",
+        "Continue for 20 seconds of movement, 20 seconds rest. Repeat 6 rounds."
+      ],
+      "coaching_cues": [
+        "Eyes on Player 2's pointing hand — this is the reaction cue.",
+        "First movement must be immediate — no hesitation between the point and the first step.",
+        "Push off the center foot to initiate — don't wait to be in the direction before pushing.",
+        "Keep low throughout — even during the recovery, don't stand up.",
+        "The recovery must reach center — touching the center cone or mark between each shuffle."
+      ],
+      "common_errors": [
+        "Anticipating the direction — guessing before Player 2 points.",
+        "Slow first reaction — waiting for the full arm to extend before moving.",
+        "Not fully reaching center between shuffles — builds bad recovery habits."
+      ],
+      "variations": [
+        "Three-cone version: center, left, and right — Player 2 can point to any of the three.",
+        "Increase cone distance: 8, 10, 12 feet apart — more ground to cover per reaction.",
+        "Sound cue: Player 2 calls 'left' or 'right' with eyes closed — trains auditory reaction speed."
+      ],
+      "tags": ["footwork", "reactive", "shuffle", "intermediate", "reading", "lateral"],
+      "diagramData": {
+        "p1": { "x": 200, "y": 850 },
+        "p2": { "x": 200, "y": 480 },
+        "moves": [
+          { "x1": 200, "y1": 850, "x2": 290, "y2": 850 },
+          { "x1": 290, "y1": 850, "x2": 200, "y2": 850 },
+          { "x1": 200, "y1": 850, "x2": 110, "y2": 850 }
+        ],
+        "cones": [
+          { "x": 290, "y": 850 },
+          { "x": 110, "y": 850 }
+        ]
+      }
+    },
+    {
+      "id": "FW-022",
+      "name": "Net to Baseline: Transitioning Under Pressure",
+      "subcategory": "Transition Footwork",
+      "category": "Footwork",
+      "skill_level": "intermediate",
+      "player_count": 2,
+      "duration_minutes": 12,
+      "objective": "Train the transition footwork from the net to the baseline — used when a lob forces the net player to retreat. This is one of the least-practiced but most important movement sequences in tennis. Many players get lobbed and freeze or backpedal slowly, giving up the point without a fight. Elite players turn, use crossover steps, reach the ball, and often lob back or even smash — all while under maximum movement pressure.",
+      "setup": "Player 1 starts at the net. Player 2 alternates between passing shots and lobs. On a passing shot, Player 1 volleys. On a lob, Player 1 retreats to the baseline using crossover steps and plays the ball.",
+      "instructions": [
+        "Player 1 positions at the net.",
+        "Player 2 hits either a passing shot or a lob — Player 1 must read which.",
+        "Passing shot: Player 1 split steps and volleys.",
+        "Lob: Player 1 immediately turns sideways and retreats to play the ball.",
+        "After retreating and playing the ball, Player 1 must recover back to the net. Play each as a full point."
+      ],
+      "coaching_cues": [
+        "Lob recognition: the ball rises above Player 1's reaching height within the first 10 feet of flight.",
+        "On lob recognition: immediate 180-degree turn, crossover steps backward.",
+        "Don't give up on the point after being lobbed — fight for every ball.",
+        "After playing the lob retrieval: the server is likely at the net — Player 1 must lob back or pass.",
+        "Recovery to net after the lob retrieval is optional — judge based on court position."
+      ],
+      "common_errors": [
+        "Slow lob recognition — watching the ball go over instead of immediately retreating.",
+        "Backpedaling instead of crossover retreating — slow and unstable.",
+        "Giving up after being lobbed — missing the recovery lob or groundstroke."
+      ],
+      "variations": [
+        "Lob only: Player 2 only lobs — Player 1 practices the retreat movement repeatedly.",
+        "Retreat and smash: Player 2 lobs short enough for Player 1 to retreat and overhead.",
+        "Transition competition: Player 2 scores for every lob winner, Player 1 scores for every retrieval."
+      ],
+      "tags": ["footwork", "transition", "net to baseline", "intermediate", "lob", "retreat"],
+      "diagramData": {
+        "p1": { "x": 200, "y": 780 },
+        "p2": { "x": 200, "y": 60 },
+        "moves": [
+          { "x1": 200, "y1": 520, "x2": 200, "y2": 780 }
+        ],
+        "shots": [
+          { "x1": 200, "y1": 70, "x2": 200, "y2": 520 },
+          { "x1": 200, "y1": 70, "x2": 200, "y2": 600 },
+          { "x1": 200, "y1": 775, "x2": 200, "y2": 100 }
+        ],
+        "areas": [{ "x": 200, "y": 780, "r": 25 }]
+      }
+    },
+    {
+      "id": "FW-023",
+      "name": "Around the Court: Continuous Sprint Sequence",
+      "subcategory": "Court Coverage",
+      "category": "Footwork",
+      "skill_level": "advanced",
+      "player_count": 1,
+      "duration_minutes": 12,
+      "objective": "Build maximum aerobic and anaerobic court coverage fitness through a continuous around-the-court sprint sequence. Unlike the spider run which returns to center, this drill has no home base — the player sprints continuously from point to point around the perimeter and interior of the court. It builds the specific endurance needed to sustain quality footwork in the third set of a long match.",
+      "setup": "Mark 8 cones around the court: two baseline corners, two net corners, two service line corners, and two service box centers. Player 1 sprints from cone to cone in sequence, touching each cone.",
+      "instructions": [
+        "Place 8 cones: deuce baseline corner, ad baseline corner, deuce net post, ad net post, deuce service box center, ad service box center, deuce service line mid, ad service line mid.",
+        "Player 1 sprints from cone 1 to cone 2 to cone 3 and so on, touching each cone.",
+        "Complete the full 8-cone circuit without stopping.",
+        "Rest 90 seconds. Repeat 4 rounds. Track time per round."
+      ],
+      "coaching_cues": [
+        "Use the most efficient footwork for each segment — crossover for diagonals, sprint for straights.",
+        "Touch each cone with the hand closest to it — forces a full lean and direction change.",
+        "Breathe rhythmically — one breath per 3-4 strides maintains oxygen flow.",
+        "As fatigue builds, concentrate on foot placement — it degrades under fatigue first.",
+        "The last lap should be as fast as the first — if it's slower, build fitness first."
+      ],
+      "common_errors": [
+        "Wide arcs around cones — saves energy but doesn't replicate match footwork.",
+        "Slowing on the straight segments — all segments should be at full sprint.",
+        "Poor breathing — causes premature fatigue."
+      ],
+      "variations": [
+        "Shadow swing at each cone: simulate a shot before moving to the next cone.",
+        "Partner race: two players go simultaneously — creates competitive pressure.",
+        "Circuit with ball: Player 2 feeds a real ball at each cone — sprint, hit, sprint to next cone."
+      ],
+      "tags": ["footwork", "court coverage", "sprint", "advanced", "endurance", "fitness"],
+      "diagramData": {
+        "p1": { "x": 200, "y": 850 },
+        "moves": [
+          { "x1": 65, "y1": 850, "x2": 335, "y2": 850 },
+          { "x1": 335, "y1": 850, "x2": 335, "y2": 480 },
+          { "x1": 335, "y1": 480, "x2": 65, "y2": 480 },
+          { "x1": 65, "y1": 480, "x2": 65, "y2": 850 }
+        ],
+        "cones": [
+          { "x": 65, "y": 850 },
+          { "x": 335, "y": 850 },
+          { "x": 335, "y": 480 },
+          { "x": 65, "y": 480 },
+          { "x": 200, "y": 640 },
+          { "x": 200, "y": 850 }
+        ]
+      }
+    },
+    {
+      "id": "FW-024",
+      "name": "Serve and Recovery: Baseline Position After Serving",
+      "subcategory": "Serve Footwork",
+      "category": "Footwork",
+      "skill_level": "beginner",
+      "player_count": 2,
+      "duration_minutes": 10,
+      "objective": "Train the recovery footwork after the serve — getting back to the optimal baseline position before the return arrives. Most players serve and stand frozen where they served, which leaves them in poor position for the plus-one. The serve follow-through often leaves the player off-center or behind the baseline. This drill trains the automatic recovery to center baseline immediately after the serve.",
+      "setup": "Player 1 serves from both courts. A cone marks the optimal recovery position — center baseline, 1 foot behind the baseline. Player 1 must touch the cone after every serve before Player 2's return arrives.",
+      "instructions": [
+        "Player 1 serves from the deuce court.",
+        "Immediately after the serve follow-through, Player 1 sprints to the center baseline cone.",
+        "Player 2 hits a slow return — Player 1 must reach the cone before the return bounces.",
+        "After 10 serves from the deuce court, switch to the ad court.",
+        "Track: how many times does Player 1 reach the cone before the return bounces?"
+      ],
+      "coaching_cues": [
+        "The serve follow-through ends — the recovery begins simultaneously. No pause.",
+        "Sprint to center, not shuffle — the return arrives quickly.",
+        "The landing foot after the serve (front foot) is already in the forward direction — use it to launch.",
+        "If the serve is wide or T, the recovery distance to center changes — adjust accordingly.",
+        "A player who serves and stands gives away their position before the rally starts."
+      ],
+      "common_errors": [
+        "Watching the serve flight instead of recovering — loses 1-2 full seconds.",
+        "Slow walk to center instead of sprint — return arrives before position is reached.",
+        "Not returning to center — stopping where the serve landed."
+      ],
+      "variations": [
+        "Serve and attack: Player 1 serves, recovers to center, then attacks the short return.",
+        "Serve to different positions: each serve location (T, wide, body) requires a different recovery distance.",
+        "Serve return game: play full points — Player 1 must recover to center on every serve."
+      ],
+      "tags": ["footwork", "serve", "recovery", "center baseline", "beginner", "positioning"],
+      "diagramData": {
+        "p1": { "x": 200, "y": 850 },
+        "p2": { "x": 120, "y": 60 },
+        "moves": [
+          { "x1": 240, "y1": 855, "x2": 200, "y2": 848 }
+        ],
+        "shots": [
+          { "x1": 240, "y1": 855, "x2": 200, "y2": 375 },
+          { "x1": 120, "y1": 70, "x2": 245, "y2": 820 }
+        ],
+        "cones": [{ "x": 200, "y": 850 }]
+      }
+    },
+    {
+      "id": "FW-025",
+      "name": "Footwork Under Fatigue: The Third Set Drill",
+      "subcategory": "Fatigue Footwork",
+      "category": "Footwork",
+      "skill_level": "advanced",
+      "player_count": 2,
+      "duration_minutes": 15,
+      "objective": "Train footwork quality under genuine physical fatigue — the most honest footwork test available. Most footwork drills are done when fresh, but matches are often decided in the third set when legs are tired and footwork degrades. This drill uses a physical load before every footwork sequence, forcing players to maintain movement quality despite fatigue. The players who maintain their footwork under fatigue win more close matches.",
+      "setup": "Player 1 sprints a set distance (sideline to sideline or net to baseline) before every ball. Player 2 feeds the ball the moment Player 1 completes the sprint. Player 1 must hit quality shots despite being physically fatigued.",
+      "instructions": [
+        "Player 1 sprints from the singles sideline to the opposite singles sideline — one full width of the court.",
+        "The moment Player 1 touches the opposite sideline, Player 2 feeds a ball.",
+        "Player 1 must use correct footwork (split step, first step, recovery) despite fatigue.",
+        "Repeat 10 times. Rest 90 seconds. Play 3 rounds.",
+        "Track: does footwork quality degrade across the 10 repetitions? By how much?"
+      ],
+      "coaching_cues": [
+        "The split step must happen even when exhausted — it is the most important footwork element.",
+        "Shorten your stride under fatigue — compact steps are more controllable than big strides.",
+        "Breathe on contact — the exhale on contact releases tension built up during the sprint.",
+        "Focus on the footwork components you know: split, first step, plant, recover.",
+        "Players who maintain footwork under fatigue have trained this specifically — it doesn't happen by accident."
+      ],
+      "common_errors": [
+        "Skipping the split step when tired — the most dangerous footwork compromise.",
+        "Taking the sprint easy — must genuinely fatigue to replicate third-set conditions.",
+        "Mental resignation — continuing to compete with proper footwork despite fatigue is a competitive skill."
+      ],
+      "variations": [
+        "Baseline sprint: net to baseline instead of sideline to sideline — different fatigue pattern.",
+        "Burpee before ball: Player 1 does 5 burpees before the feed — extreme fatigue simulation.",
+        "Track degradation: score footwork quality 1-5 on each rep — chart how it changes."
+      ],
+      "tags": ["footwork", "fatigue", "third set", "advanced", "conditioning", "competition"],
+      "diagramData": {
+        "p1": { "x": 335, "y": 850 },
+        "p2": { "x": 200, "y": 480 },
+        "moves": [
+          { "x1": 65, "y1": 850, "x2": 335, "y2": 850 }
+        ],
+        "shots": [
+          { "x1": 200, "y1": 490, "x2": 335, "y2": 840 },
+          { "x1": 335, "y1": 845, "x2": 100, "y2": 100 }
+        ],
+        "areas": [{ "x": 335, "y": 850, "r": 20 }]
+      }
+    },
+    {
+      "id": "FW-026",
+      "name": "Return Footwork: Step Into the Box",
+      "subcategory": "Return Footwork",
+      "category": "Footwork",
+      "skill_level": "intermediate",
+      "player_count": 2,
+      "duration_minutes": 10,
+      "objective": "Train the return footwork specifically — the combination of positioning stance, weight transfer, and step into the ball that produces the best return contact. Many players return flat-footed or step away from the ball rather than into it. This drill isolates the footwork component of the return: starting with weight on the balls of the feet, loading on the split step, and driving forward into the ball on the return swing.",
+      "setup": "Player 2 serves medium-pace serves from both courts. Player 1 focuses exclusively on the footwork of the return: ready stance weight distribution, split step timing, and the step into the ball. No focus on where the return goes.",
+      "instructions": [
+        "Player 1 positions in the return ready stance: weight forward, feet slightly wider than shoulders.",
+        "Player 2 serves a medium-pace serve from the deuce court.",
+        "Player 1 split steps, first step toward the ball, and steps into the return with the front foot.",
+        "The return swing follows the footwork — not the other way around.",
+        "After 10 returns from deuce, switch to ad. Focus on whether the step goes toward or away from the ball."
+      ],
+      "coaching_cues": [
+        "Weight on balls of feet before the serve — not the heels.",
+        "The split step loads the legs — the landing is the coiled spring position.",
+        "First step: directly toward the ball, not sideways then toward.",
+        "Step into the ball with the front foot on the return swing — don't step away.",
+        "The forward step transfers weight through the return and adds pace automatically."
+      ],
+      "common_errors": [
+        "Stepping backward away from the ball — produces a defensive, weak return.",
+        "Flat feet in the ready position — cannot split step effectively.",
+        "Front foot stepping sideways instead of toward the ball — loses the weight transfer."
+      ],
+      "variations": [
+        "Footwork only: Player 1 performs the footwork without swinging — pure footwork training.",
+        "Step into slow serve: Player 2 serves slowly to give Player 1 more time to feel the step.",
+        "Film the step: check if the front foot is stepping toward or away from the ball on video."
+      ],
+      "tags": ["footwork", "return", "step in", "intermediate", "weight transfer", "technique"],
+      "diagramData": {
+        "p1": { "x": 265, "y": 60 },
+        "p2": { "x": 240, "y": 860 },
+        "moves": [
+          { "x1": 280, "y1": 60, "x2": 265, "y2": 60 }
+        ],
+        "shots": [
+          { "x1": 240, "y1": 850, "x2": 310, "y2": 385 },
+          { "x1": 265, "y1": 65, "x2": 110, "y2": 820 }
+        ],
+        "areas": [{ "x": 265, "y": 60, "r": 20 }]
+      }
+    },
+    {
+      "id": "FW-027",
+      "name": "Bosu Ball Footwork: Unstable Surface Balance",
+      "subcategory": "Balance",
+      "category": "Footwork",
+      "skill_level": "advanced",
+      "player_count": 2,
+      "duration_minutes": 10,
+      "objective": "Build proprioception, balance, and ankle stability through footwork training on an unstable surface. Tennis footwork demands exceptional balance because contact is often made while moving, off-balance, or on one foot. Training balance on an unstable surface like a Bosu ball or balance board strengthens the stabilizing muscles of the ankle, knee, and hip — reducing injury risk and improving on-court balance in extreme positions.",
+      "setup": "Player 1 stands on a Bosu ball (dome side up) or a folded towel for an unstable surface. Player 2 feeds light balls to Player 1 — Player 1 must shadow-volley or shadow-groundstroke while maintaining balance on the unstable surface.",
+      "instructions": [
+        "Player 1 stands on the dome of a Bosu ball — feet hip-width apart.",
+        "Player 2 slowly feeds or points in directions — Player 1 performs shadow swings on the Bosu ball.",
+        "Player 1 must maintain balance throughout every shadow swing.",
+        "Perform 15 forehand shadows and 15 backhand shadows. Rest 60 seconds. Repeat 3 rounds.",
+        "Progress to real ball feeding when balance is consistent."
+      ],
+      "coaching_cues": [
+        "Start with smaller shadow swings — full-power swings on an unstable surface require advanced balance.",
+        "Eyes fixed on a point at net level — focal point helps balance.",
+        "Ankle and core are the stabilizers — consciously engage both.",
+        "Progress from two feet to one foot — single-leg balance is the advanced version.",
+        "If balance is lost, step off — never fight a fall on an unstable surface."
+      ],
+      "common_errors": [
+        "Locking the knees — slightly bent knees are more stable than locked.",
+        "Looking down — takes the focal point away and kills balance.",
+        "Full-power swings before balance is established — causes falls."
+      ],
+      "variations": [
+        "Single-leg balance: Player 1 stands on one foot on the Bosu — then shadow swings.",
+        "Ball feeding on Bosu: Player 2 feeds real balls — Player 1 returns while balancing.",
+        "Bosu squat hold: Player 1 holds a squat position on the Bosu for 30 seconds — builds stability."
+      ],
+      "tags": ["footwork", "balance", "Bosu ball", "advanced", "proprioception", "stability"],
+      "diagramData": {
+        "p1": { "x": 200, "y": 850 },
+        "p2": { "x": 200, "y": 480 },
+        "shots": [
+          { "x1": 200, "y1": 490, "x2": 200, "y2": 840 }
+        ],
+        "areas": [{ "x": 200, "y": 850, "r": 20 }]
+      }
+    },
+    {
+      "id": "FW-028",
+      "name": "Running Forehand: Open Stance Sprint Contact",
+      "subcategory": "Movement Pattern",
+      "category": "Footwork",
+      "skill_level": "advanced",
+      "player_count": 2,
+      "duration_minutes": 10,
+      "objective": "Develop the running forehand — hitting a full forehand while sprinting at full speed without stopping. The running forehand is used when a wide ball requires a sprint to reach it and there is no time to stop and set up. The contact must happen while still moving. This requires a completely different footwork sequence than the standard forehand: the plant step is replaced by a continuous sprint through the contact point.",
+      "setup": "Player 2 feeds very wide balls to Player 1's forehand — designed to require a full sprint to reach. Player 1 must sprint to the ball and hit a running forehand without stopping, continuing the sprint through the contact.",
+      "instructions": [
+        "Player 1 starts at center baseline.",
+        "Player 2 feeds a very wide ball to Player 1's forehand — barely reachable.",
+        "Player 1 sprints to the ball and hits a running forehand — no stopping allowed.",
+        "Player 1 continues moving after contact — recovery sprint begins immediately.",
+        "Repeat 12 times. Focus on maintaining swing quality despite the running contact."
+      ],
+      "coaching_cues": [
+        "The plant foot is still the anchor — even while running, one foot plants for the swing.",
+        "The plant is a brief deceleration, not a full stop — the sprint continues through contact.",
+        "Keep the swing compact — a running forehand cannot use the same full backswing as a set forehand.",
+        "Aim cross-court from a running position — it's the highest-percentage direction.",
+        "After contact, the running momentum should carry you toward center, not further wide."
+      ],
+      "common_errors": [
+        "Stopping before the running forehand — changes it from a running stroke to a set stroke.",
+        "Full backswing on a running forehand — no time for it, contact passes before swing is ready.",
+        "Running further wide after contact instead of recovering toward center."
+      ],
+      "variations": [
+        "Running backhand: same drill on the backhand side.",
+        "Running forehand recovery: after the running forehand, Player 2 hits to the opposite side.",
+        "Running forehand and charge: after the running forehand, Player 1 sprints to the net."
+      ],
+      "tags": ["footwork", "running forehand", "advanced", "sprint contact", "wide ball"],
+      "diagramData": {
+        "p1": { "x": 345, "y": 840 },
+        "p2": { "x": 200, "y": 480 },
+        "moves": [
+          { "x1": 200, "y1": 850, "x2": 345, "y2": 840 }
+        ],
+        "shots": [
+          { "x1": 200, "y1": 490, "x2": 348, "y2": 850 },
+          { "x1": 342, "y1": 838, "x2": 95, "y2": 100 }
+        ],
+        "areas": [{ "x": 95, "y": 100, "r": 25 }]
+      }
+    },
+    {
+      "id": "FW-029",
+      "name": "Footwork Patterns for Doubles: Poach Movement",
+      "subcategory": "Doubles Footwork",
+      "category": "Footwork",
+      "skill_level": "intermediate",
+      "player_count": 2,
+      "duration_minutes": 12,
+      "objective": "Develop the poach movement pattern for doubles — the lateral movement toward the center of the net to intercept a cross-court ball. The poach is the most attacking net movement in doubles, but it requires specific footwork: a diagonal step toward the center and the net simultaneously, followed by an explosive intercept volley. This drill trains the poach footwork as a stand-alone movement before adding it to live doubles situations.",
+      "setup": "Player 1 stands at the net in the deuce-side net position (as a doubles net player). Player 2 hits cross-court balls from the deuce baseline. Player 1 must poach — move diagonally across the net and intercept each cross-court ball.",
+      "instructions": [
+        "Player 1 positions at the net on the deuce side — 4-5 feet from the net, near the center service line.",
+        "Player 2 hits cross-court balls from the deuce baseline.",
+        "Player 1 must poach: diagonal step forward and across, intercept the ball, volley to the open court.",
+        "After the poach, Player 1 returns to the starting position.",
+        "Repeat 15 times. Track: how many poaches result in a won point?"
+      ],
+      "coaching_cues": [
+        "Poach trigger: commit before the ball is hit — read Player 2's swing, not the ball's flight.",
+        "Diagonal step: move forward and across simultaneously — not just sideways.",
+        "Don't be afraid to miss the poach — hesitation is worse than an unsuccessful poach.",
+        "After the poach, keep moving — don't stop in the center of the court.",
+        "Recover to your side after the poach — if Player 1 is on the right, they switch to the left."
+      ],
+      "common_errors": [
+        "Moving laterally only — should always have a forward component.",
+        "Committing too late — the ball is already past the interception zone.",
+        "Not recovering — player stays in the center and leaves both sides open."
+      ],
+      "variations": [
+        "Fake poach: Player 1 moves as if to poach then retreats — Player 2 changes direction.",
+        "Signal poach: Player 2 signals the poach with a finger signal behind the back.",
+        "Full doubles: add a baseline player partner — poach creates open court for partner."
+      ],
+      "tags": ["footwork", "poach", "doubles", "intermediate", "net movement", "lateral"],
+      "diagramData": {
+        "p1": { "x": 140, "y": 510 },
+        "p2": { "x": 280, "y": 60 },
+        "moves": [
+          { "x1": 200, "y1": 510, "x2": 140, "y2": 510 }
+        ],
+        "shots": [
+          { "x1": 280, "y1": 70, "x2": 130, "y2": 600 },
+          { "x1": 135, "y1": 505, "x2": 300, "y2": 820 }
+        ],
+        "areas": [{ "x": 300, "y": 820, "r": 25 }]
+      }
+    },
+    {
+      "id": "FW-030",
+      "name": "Footwork Grand Finale: Full Court Multi-Ball Movement",
+      "subcategory": "Court Coverage",
+      "category": "Footwork",
+      "skill_level": "advanced",
+      "player_count": 2,
+      "duration_minutes": 20,
+      "objective": "Synthesize all footwork skills in a comprehensive multi-ball movement assessment that covers every court zone. This drill uses rapid-fire ball feeding to all areas of the court — baseline wide balls, short balls, net balls, and everything in between — forcing Player 1 to use every footwork pattern trained throughout this category: split step, shuffle, crossover, forward sprint, diagonal sprint, backpedal, and recovery. The quality of footwork across all patterns is the measure of success.",
+      "setup": "Player 2 stands at the net with a large basket of balls. Player 2 feeds balls rapidly to random positions across the entire court. Player 1 must cover every ball using the appropriate footwork for each position and return to center after every shot.",
+      "instructions": [
+        "Player 2 feeds balls rapidly from a full basket — one every 3-4 seconds — to random court positions.",
+        "Player 1 must use the correct footwork for each ball: crossover for wide, forward sprint for short, backpedal for lobs.",
+        "Player 1 must hit every ball and recover to center baseline after each one.",
+        "Continue until the basket is empty (20-25 balls). Rest 2 minutes. Repeat 3 rounds.",
+        "Track: how many balls does Player 1 reach in time? How many does Player 1 recover to center from? Aim for 90%+ on both."
+      ],
+      "coaching_cues": [
+        "Split step before every ball — even when exhausted, the split step must not be skipped.",
+        "Read the ball early — the first 10 feet of ball flight reveal the landing zone.",
+        "Match the footwork to the distance: shuffle for short moves, crossover for long ones.",
+        "Recovery to center is non-negotiable — every ball, without exception.",
+        "Breathe between shots — recovery breathing is as important as movement speed."
+      ],
+      "common_errors": [
+        "Defaulting to shuffling for all balls — incorrect footwork for wide and short balls.",
+        "Not recovering to center — stays wherever the last shot was hit.",
+        "Mental fatigue causing footwork shortcuts — the drill reveals where footwork degrades first."
+      ],
+      "variations": [
+        "Timed version: how many of 25 balls can Player 1 reach in time within one basket?",
+        "Footwork scoring: award 1 point for each ball reached with correct footwork, 0 for incorrect footwork.",
+        "Partner version: two players rotate — one recovers, one hits, creates social pressure."
+      ],
+      "tags": ["footwork", "multi-ball", "court coverage", "advanced", "comprehensive", "assessment"],
+      "diagramData": {
+        "p1": { "x": 200, "y": 850 },
+        "p2": { "x": 200, "y": 480 },
+        "moves": [
+          { "x1": 200, "y1": 850, "x2": 65, "y2": 850 },
+          { "x1": 65, "y1": 850, "x2": 200, "y2": 850 },
+          { "x1": 200, "y1": 850, "x2": 335, "y2": 850 },
+          { "x1": 335, "y1": 850, "x2": 200, "y2": 850 },
+          { "x1": 200, "y1": 850, "x2": 200, "y2": 660 },
+          { "x1": 200, "y1": 660, "x2": 200, "y2": 850 }
+        ],
+        "shots": [
+          { "x1": 200, "y1": 490, "x2": 65, "y2": 840 },
+          { "x1": 200, "y1": 490, "x2": 335, "y2": 840 },
+          { "x1": 200, "y1": 490, "x2": 200, "y2": 680 },
+          { "x1": 200, "y1": 490, "x2": 200, "y2": 840 }
+        ],
+        "areas": [{ "x": 200, "y": 850, "r": 20 }]
+      }
+    }
+  ]
+}
