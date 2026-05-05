@@ -1,4 +1,5 @@
 import { createClient } from '@supabase/supabase-js'
+import { Resend } from 'resend'
 
 const supabaseAdmin = createClient(
   process.env.SUPABASE_URL,
@@ -9,39 +10,37 @@ const supabaseAdmin = createClient(
 export default async function handler(req, res) {
   if (req.method !== 'POST') return res.status(405).end()
 
-  // Optional secret check — set INBOUND_EMAIL_SECRET env var in Vercel and append ?secret=... to your Resend webhook URL
+  // Validate secret before processing anything
   const secret = req.query.secret || req.headers['x-webhook-secret']
   if (process.env.INBOUND_EMAIL_SECRET && secret !== process.env.INBOUND_EMAIL_SECRET) {
     return res.status(401).json({ error: 'Unauthorized' })
   }
 
-  const body = req.body || {}
+  const event = req.body || {}
 
-  // Resend wraps inbound email data under a "data" key — fall back to flat format
-  const payload = body.data || body
+  // Only process inbound email events
+  if (event.type !== 'email.received') {
+    return res.status(200).json({ ok: true })
+  }
 
-  const rawFrom = payload.from || payload.sender || payload.from_email || ''
-  const subject = payload.subject || '(No Subject)'
+  const emailId = event.data?.email_id
+  if (!emailId) {
+    console.error('email.received event missing data.email_id', event)
+    return res.status(200).json({ ok: true })
+  }
 
-  // Try every field name variation Resend and other providers use for the body
-  const textBody =
-    payload.text ||
-    payload.plain ||
-    payload.plain_text ||
-    payload.body_text ||
-    payload.textBody ||
-    payload.text_body ||
-    payload.body ||
-    ''
+  // Fetch the full email body from Resend — webhook only delivers metadata
+  const resend = new Resend(process.env.RESEND_API_KEY)
+  const { data: email, error: fetchError } = await resend.emails.retrieve(emailId)
 
-  const htmlBody =
-    payload.html ||
-    payload.html_body ||
-    payload.body_html ||
-    payload.htmlBody ||
-    ''
+  if (fetchError || !email) {
+    console.error('Failed to retrieve email from Resend:', fetchError)
+    // Return 200 so Resend does not keep retrying an unrecoverable error
+    return res.status(200).json({ ok: true })
+  }
 
-  // Parse "Display Name <email@example.com>" format
+  // Parse "Display Name <email@example.com>" format from the from field
+  const rawFrom = email.from || ''
   let fromEmail = rawFrom
   let fromName = ''
   const nameEmailMatch = rawFrom.match(/^(.+?)\s*<([^>]+)>$/)
@@ -50,20 +49,19 @@ export default async function handler(req, res) {
     fromEmail = nameEmailMatch[2].trim()
   }
 
-  const { error } = await supabaseAdmin.from('support_emails').insert({
+  const { error: insertError } = await supabaseAdmin.from('support_emails').insert({
     from_email: fromEmail,
     from_name: fromName,
-    subject,
-    text_body: textBody,
-    html_body: htmlBody,
-    received_at: new Date().toISOString(),
-    raw_payload: body,
+    subject: email.subject || '(No Subject)',
+    html_body: email.html || '',
+    text_body: email.text || '',
+    received_at: event.created_at || new Date().toISOString(),
+    raw_payload: event,
     replied: false,
   })
 
-  if (error) {
-    console.error('Failed to store inbound email:', error)
-    return res.status(500).json({ error: 'Failed to store email' })
+  if (insertError) {
+    console.error('Failed to store inbound email:', insertError)
   }
 
   return res.status(200).json({ ok: true })
