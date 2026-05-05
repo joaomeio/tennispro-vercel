@@ -20,10 +20,26 @@ export default async function handler(req, res) {
   // Resend wraps inbound email data under a "data" key — fall back to flat format
   const payload = body.data || body
 
-  const rawFrom = payload.from || payload.sender || ''
+  const rawFrom = payload.from || payload.sender || payload.from_email || ''
   const subject = payload.subject || '(No Subject)'
-  const textBody = payload.text || payload.plain_text || ''
-  const htmlBody = payload.html || ''
+
+  // Try every field name variation Resend and other providers use for the body
+  const textBody =
+    payload.text ||
+    payload.plain ||
+    payload.plain_text ||
+    payload.body_text ||
+    payload.textBody ||
+    payload.text_body ||
+    payload.body ||
+    ''
+
+  const htmlBody =
+    payload.html ||
+    payload.html_body ||
+    payload.body_html ||
+    payload.htmlBody ||
+    ''
 
   // Parse "Display Name <email@example.com>" format
   let fromEmail = rawFrom

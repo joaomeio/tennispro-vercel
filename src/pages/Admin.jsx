@@ -4,8 +4,8 @@ import { useAuth } from '../context/AuthContext'
 import { supabase } from '../lib/supabase'
 import {
   BarChart3, Mail, Users, DollarSign, TrendingUp, RefreshCw,
-  Send, Inbox, Loader2, ShieldAlert, CheckCircle2, Clock,
-  ChevronRight, ArrowLeft, AlertCircle,
+  Send, Inbox, Loader2, ShieldAlert, CheckCircle2,
+  ChevronRight, ArrowLeft, AlertCircle, PenSquare, X,
 } from 'lucide-react'
 
 const ADMIN_EMAIL = 'joaopintobakermeio@gmail.com'
@@ -216,6 +216,131 @@ function EmailRow({ email, selected, onClick }) {
   )
 }
 
+// Extract displayable body from all possible locations in the email record
+function getBody(email) {
+  if (email.html_body) return { type: 'html', content: email.html_body }
+  if (email.text_body) return { type: 'text', content: email.text_body }
+
+  // Fallback: dig through raw_payload (Resend may use different field names)
+  const raw = email.raw_payload
+  if (raw && typeof raw === 'object') {
+    const p = raw.data || raw
+    const html = p.html || p.html_body || p.body_html || p.htmlBody
+    const text = p.text || p.plain || p.plain_text || p.body_text || p.textBody || p.body
+    if (html) return { type: 'html', content: html }
+    if (text) return { type: 'text', content: text }
+  }
+  return { type: 'empty', content: '' }
+}
+
+function EmailBody({ email }) {
+  const { type, content } = getBody(email)
+  if (type === 'html') {
+    return (
+      <div
+        className="text-gray-300 text-sm leading-relaxed [&_a]:text-green-400 [&_a]:underline"
+        dangerouslySetInnerHTML={{ __html: content }}
+      />
+    )
+  }
+  if (type === 'text') {
+    return (
+      <pre className="text-gray-300 text-sm whitespace-pre-wrap font-sans leading-relaxed">
+        {content}
+      </pre>
+    )
+  }
+  return <p className="text-gray-600 text-sm italic">(no content)</p>
+}
+
+// ─── Compose Modal ────────────────────────────────────────────────────────────
+
+function ComposeModal({ onClose, onSent }) {
+  const [to, setTo] = useState('')
+  const [subject, setSubject] = useState('')
+  const [body, setBody] = useState('')
+  const [sending, setSending] = useState(false)
+  const [error, setError] = useState(null)
+
+  async function handleSend(e) {
+    e.preventDefault()
+    if (!to.trim() || !subject.trim() || !body.trim()) return
+    setSending(true)
+    setError(null)
+    try {
+      await apiFetch('/api/admin-emails', {
+        method: 'POST',
+        body: JSON.stringify({ to: to.trim(), subject: subject.trim(), composeBody: body.trim() }),
+      })
+      onSent()
+      onClose()
+    } catch (e) {
+      setError(e.message)
+      setSending(false)
+    }
+  }
+
+  return (
+    <div className="fixed inset-0 z-50 flex items-end sm:items-center justify-center bg-black/60 backdrop-blur-sm px-4">
+      <div className="w-full max-w-lg bg-gray-900 rounded-2xl overflow-hidden shadow-2xl">
+        <div className="flex items-center justify-between px-5 py-4 border-b border-gray-800">
+          <span className="font-semibold text-white text-sm">New Email</span>
+          <button onClick={onClose} className="text-gray-500 hover:text-white transition-colors">
+            <X className="w-4 h-4" />
+          </button>
+        </div>
+        <form onSubmit={handleSend} className="p-5 space-y-3">
+          {[
+            { label: 'To', value: to, set: setTo, placeholder: 'recipient@example.com', type: 'email' },
+            { label: 'Subject', value: subject, set: setSubject, placeholder: 'Subject', type: 'text' },
+          ].map(({ label, value, set, placeholder, type }) => (
+            <div key={label}>
+              <label className="text-[10px] font-bold text-gray-500 uppercase tracking-wider block mb-1">{label}</label>
+              <input
+                type={type}
+                value={value}
+                onChange={e => set(e.target.value)}
+                placeholder={placeholder}
+                required
+                className="w-full bg-gray-800 text-white text-sm rounded-xl px-3 py-2.5 focus:outline-none focus:ring-2 focus:ring-green-500 placeholder-gray-600 border border-gray-700"
+              />
+            </div>
+          ))}
+          <div>
+            <label className="text-[10px] font-bold text-gray-500 uppercase tracking-wider block mb-1">Message</label>
+            <textarea
+              value={body}
+              onChange={e => setBody(e.target.value)}
+              placeholder="Write your message..."
+              rows={6}
+              required
+              className="w-full bg-gray-800 text-white text-sm rounded-xl px-3 py-2.5 focus:outline-none focus:ring-2 focus:ring-green-500 placeholder-gray-600 resize-none border border-gray-700"
+            />
+          </div>
+          {error && <p className="text-red-400 text-xs">{error}</p>}
+          <div className="flex gap-2 pt-1">
+            <button
+              type="button"
+              onClick={onClose}
+              className="flex-1 py-2.5 rounded-xl bg-gray-800 text-gray-400 hover:text-white text-sm font-medium transition-colors"
+            >
+              Cancel
+            </button>
+            <button
+              type="submit"
+              disabled={sending}
+              className="flex-1 py-2.5 rounded-xl bg-green-600 hover:bg-green-500 text-white font-bold text-sm flex items-center justify-center gap-2 disabled:opacity-50 transition-colors"
+            >
+              {sending ? <Loader2 className="w-4 h-4 animate-spin" /> : <Send className="w-4 h-4" />}
+              Send
+            </button>
+          </div>
+        </form>
+      </div>
+    </div>
+  )
+}
+
 function EmailDetail({ email, onReplied }) {
   const [reply, setReply] = useState('')
   const [sending, setSending] = useState(false)
@@ -260,16 +385,7 @@ function EmailDetail({ email, onReplied }) {
 
       {/* Body */}
       <div className="flex-1 overflow-y-auto px-5 py-4">
-        {email.html_body ? (
-          <div
-            className="prose prose-invert prose-sm max-w-none text-gray-300 text-sm leading-relaxed"
-            dangerouslySetInnerHTML={{ __html: email.html_body }}
-          />
-        ) : (
-          <pre className="text-gray-300 text-sm whitespace-pre-wrap font-sans leading-relaxed">
-            {email.text_body || '(no content)'}
-          </pre>
-        )}
+        <EmailBody email={email} />
       </div>
 
       {/* Previous reply */}
@@ -317,6 +433,7 @@ function MailboxTab() {
   const [loading, setLoading] = useState(true)
   const [selected, setSelected] = useState(null)
   const [error, setError] = useState(null)
+  const [composing, setComposing] = useState(false)
 
   const load = useCallback(async () => {
     setLoading(true)
@@ -356,6 +473,13 @@ function MailboxTab() {
   const unread = emails.filter(e => !e.replied).length
 
   return (
+    <>
+      {composing && (
+        <ComposeModal
+          onClose={() => setComposing(false)}
+          onSent={() => {}}
+        />
+      )}
     <div className="flex gap-0 -mx-4 h-[calc(100vh-180px)] min-h-[400px]">
       {/* Email list */}
       <div className={`flex flex-col border-r border-gray-800 ${selectedEmail ? 'hidden md:flex md:w-72 shrink-0' : 'flex-1'}`}>
@@ -363,9 +487,17 @@ function MailboxTab() {
           <span className="text-xs font-bold text-gray-400 uppercase tracking-widest">
             Inbox {unread > 0 && <span className="text-green-400">({unread})</span>}
           </span>
-          <button onClick={load} className="text-gray-600 hover:text-white transition-colors">
-            <RefreshCw className="w-3.5 h-3.5" />
-          </button>
+          <div className="flex items-center gap-2">
+            <button
+              onClick={() => setComposing(true)}
+              className="flex items-center gap-1 text-xs text-green-400 hover:text-green-300 font-medium transition-colors"
+            >
+              <PenSquare className="w-3.5 h-3.5" /> New
+            </button>
+            <button onClick={load} className="text-gray-600 hover:text-white transition-colors">
+              <RefreshCw className="w-3.5 h-3.5" />
+            </button>
+          </div>
         </div>
         <div className="flex-1 overflow-y-auto">
           {emails.length === 0 ? (
@@ -409,6 +541,7 @@ function MailboxTab() {
         </div>
       )}
     </div>
+    </>
   )
 }
 

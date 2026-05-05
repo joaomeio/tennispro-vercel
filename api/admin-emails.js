@@ -25,7 +25,7 @@ export default async function handler(req, res) {
   if (req.method === 'GET') {
     const { data, error } = await supabaseAdmin
       .from('support_emails')
-      .select('id, from_email, from_name, subject, text_body, html_body, received_at, replied, reply_body, replied_at')
+      .select('id, from_email, from_name, subject, text_body, html_body, raw_payload, received_at, replied, reply_body, replied_at')
       .order('received_at', { ascending: false })
       .limit(100)
 
@@ -34,8 +34,29 @@ export default async function handler(req, res) {
   }
 
   if (req.method === 'POST') {
-    const { emailId, replyBody } = req.body || {}
-    if (!emailId || !replyBody?.trim()) {
+    const { emailId, replyBody, to, subject: composeSubject, composeBody } = req.body || {}
+
+    // Compose a brand-new email (no emailId)
+    if (!emailId) {
+      if (!to || !composeSubject || !composeBody?.trim()) {
+        return res.status(400).json({ error: 'Missing to, subject, or body' })
+      }
+      const resend = new Resend(process.env.RESEND_API_KEY)
+      const { error: sendError } = await resend.emails.send({
+        from: 'Tennis Pro Support <support@tennispro.site>',
+        to,
+        subject: composeSubject,
+        html: `<div style="font-family:Arial,sans-serif;font-size:14px;color:#0f172a;line-height:1.6;">${composeBody.replace(/\n/g, '<br>')}</div>`,
+        text: composeBody,
+      })
+      if (sendError) {
+        console.error('Resend compose error:', sendError)
+        return res.status(500).json({ error: sendError.message || 'Failed to send email' })
+      }
+      return res.status(200).json({ ok: true })
+    }
+
+    if (!replyBody?.trim()) {
       return res.status(400).json({ error: 'Missing emailId or replyBody' })
     }
 
