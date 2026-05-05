@@ -139,60 +139,60 @@ export default function Pricing({ lang = 'pt', onPremiumClick }) {
 
         {/* Single offer — Pro Premium Plan */}
         <div className="max-w-md mx-auto">
-          <div className="bg-white p-8 md:p-10 rounded-3xl border-2 border-green-500 shadow-2xl shadow-green-900/10 relative overflow-hidden flex flex-col items-center text-center z-10">
-            <div className="absolute top-0 -inset-full h-full w-1/2 z-5 block transform -skew-x-12 bg-gradient-to-r from-transparent to-white opacity-40 animate-shine pointer-events-none" />
-            <div className="absolute top-0 right-0 left-0 mx-auto w-fit bg-green-100 text-green-700 text-[10px] font-bold px-4 py-2 rounded-b-xl uppercase tracking-wider z-20 shadow-sm">
-              {c.premiumBadge}
+          <div className="bg-white rounded-3xl border border-slate-200 shadow-xl overflow-hidden">
+            {/* Card header */}
+            <div className="bg-gradient-to-br from-green-600 to-green-700 px-8 py-8 text-center text-white">
+              <div className="inline-flex items-center gap-1.5 bg-white/20 px-3 py-1 rounded-full mb-4">
+                <Zap className="w-3.5 h-3.5 fill-current" />
+                <span className="text-[11px] font-bold uppercase tracking-widest">{c.premiumTag}</span>
+              </div>
+              <h3 className="text-2xl font-bold mb-1">{c.premiumTitle}</h3>
+              <p className="text-green-100 text-sm">{c.premiumSub}</p>
+              <div className="mt-6">
+                <span className="text-5xl font-extrabold">{c.premiumPrice}</span>
+                <p className="text-green-200 text-xs font-semibold mt-1">{c.premiumPayment}</p>
+              </div>
             </div>
-            <div className="relative z-10 w-full pt-6">
-              <div className="mb-6 flex flex-col items-center">
-                <div className="flex items-center gap-2 text-green-600 mb-2 justify-center bg-green-50 px-3 py-1 rounded-full">
-                  <Zap className="w-4 h-4 fill-current" />
-                  <span className="font-bold uppercase tracking-wide text-xs">{c.premiumTag}</span>
-                </div>
-                <h3 className="text-2xl font-bold text-slate-900 mt-2">{c.premiumTitle}</h3>
-                <p className="text-slate-500 text-sm mt-2">{c.premiumSub}</p>
-              </div>
-              <div className="mb-8">
-                <div className="flex items-baseline justify-center gap-1">
-                  <span className="text-5xl font-extrabold text-slate-900">{c.premiumPrice}</span>
-                </div>
-                <span className="text-green-600 text-xs font-bold block mt-1">{c.premiumPayment}</span>
-              </div>
-              <div className="space-y-4 mb-10 w-full">
+
+            {/* Card body */}
+            <div className="px-8 py-7 flex flex-col gap-6">
+              {/* Features */}
+              <ul className="space-y-3">
                 {c.premiumFeatures.map((f) => (
-                  <li key={f} className="flex items-center justify-center gap-3 text-slate-700 text-sm font-medium list-none">
-                    <div className="bg-green-100 p-0.5 rounded-full">
-                      <Check className="w-4 h-4 text-green-600 shrink-0" />
-                    </div>
+                  <li key={f} className="flex items-center gap-3 text-slate-700 text-sm font-medium">
+                    <Check className="w-4 h-4 text-green-600 shrink-0" />
                     <span>{f}</span>
                   </li>
                 ))}
-                <li className="flex items-center justify-center gap-3 text-slate-700 text-sm font-bold list-none">
-                  <div className="bg-green-100 p-0.5 rounded-full">
-                    <ShieldCheck className="w-4 h-4 text-green-600 shrink-0" />
-                  </div>
+                <li className="flex items-center gap-3 text-slate-700 text-sm font-semibold">
+                  <ShieldCheck className="w-4 h-4 text-green-600 shrink-0" />
                   <span>{c.premiumGuarantee}</span>
                 </li>
+              </ul>
 
-                <div className="bg-green-50 p-4 rounded-xl border border-green-100 my-2 hover:bg-green-100/50 transition-colors">
-                  <div className="flex items-center justify-center gap-2 mb-3 pb-2 border-b border-green-200/50">
-                    <Gift className="w-4 h-4 text-green-600" />
-                    <span className="text-xs font-bold text-green-700 uppercase">{c.bonusTitle}</span>
-                  </div>
-                  <div className="space-y-3">
-                    {c.bonusItems.map((b) => (
-                      <li key={b} className="flex items-center justify-center gap-3 text-slate-700 text-sm font-medium list-none">
-                        <Check className="w-4 h-4 text-green-500 shrink-0 mt-0.5" />
-                        <span>{b}</span>
-                      </li>
-                    ))}
-                  </div>
+              {/* Divider */}
+              <div className="border-t border-dashed border-slate-200" />
+
+              {/* Bonus */}
+              <div>
+                <div className="flex items-center gap-2 mb-3">
+                  <Gift className="w-4 h-4 text-amber-500" />
+                  <span className="text-xs font-bold text-slate-500 uppercase tracking-wider">{c.bonusTitle}</span>
                 </div>
+                <ul className="space-y-2">
+                  {c.bonusItems.map((b) => (
+                    <li key={b} className="flex items-center gap-3 text-slate-600 text-sm">
+                      <Check className="w-3.5 h-3.5 text-amber-500 shrink-0" />
+                      <span>{b}</span>
+                    </li>
+                  ))}
+                </ul>
               </div>
+
+              {/* CTA */}
               <button
                 onClick={onPremiumClick}
-                className="inline-flex items-center justify-center rounded-lg font-bold transition-all duration-200 transform hover:-translate-y-0.5 shadow-md animate-heartbeat bg-green-600 hover:bg-green-500 text-white shadow-green-500/30 py-4 px-8 text-lg md:text-xl w-full shadow-lg shadow-green-600/30 group"
+                className="inline-flex items-center justify-center rounded-xl font-bold transition-all duration-200 transform hover:-translate-y-0.5 animate-heartbeat bg-green-600 hover:bg-green-500 text-white py-4 px-8 text-lg w-full shadow-lg shadow-green-600/25 group"
               >
                 {lang === 'en' ? 'Get Pro Access — $27' : c.premiumBtn}
                 <ArrowRight className="ml-2 w-5 h-5 group-hover:translate-x-1 transition-transform" />

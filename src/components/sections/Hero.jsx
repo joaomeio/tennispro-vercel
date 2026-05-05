@@ -2,6 +2,10 @@ import { useEffect } from 'react'
 import { ArrowRight, ShieldCheck } from 'lucide-react'
 import GuaranteeBadge from '../GuaranteeBadge'
 
+function scrollToPricing() {
+  document.getElementById('pricing')?.scrollIntoView({ behavior: 'smooth' })
+}
+
 // PT hero with vturb video
 function HeroPt({ onCtaClick }) {
   useEffect(() => {
@@ -54,7 +58,7 @@ function HeroPt({ onCtaClick }) {
 
           <div className="flex flex-col items-center gap-6 w-full">
             <button
-              onClick={onCtaClick}
+              onClick={scrollToPricing}
               className="inline-flex items-center justify-center rounded-2xl font-bold transition-all duration-200 transform hover:-translate-y-0.5 animate-heartbeat bg-green-600 hover:bg-green-500 text-white shadow-xl shadow-green-500/30 px-10 py-5 text-lg md:text-xl w-auto group hover:shadow-2xl hover:shadow-green-500/40"
             >
               Quero Revolucionar Minhas Aulas
@@ -124,10 +128,10 @@ function HeroEn({ onPremiumClick }) {
 
           <div className="flex flex-col items-center w-full">
             <button
-              onClick={onPremiumClick}
+              onClick={scrollToPricing}
               className="inline-flex items-center justify-center rounded-2xl font-bold transition-all duration-200 transform hover:-translate-y-0.5 animate-heartbeat bg-green-600 hover:bg-green-500 text-white shadow-xl shadow-green-500/30 px-10 py-5 text-lg md:text-xl w-auto group hover:shadow-2xl hover:shadow-green-500/40"
             >
-              Get Pro Access — $27
+              See Pricing Plans
               <ArrowRight className="ml-2 w-5 h-5 group-hover:translate-x-1 transition-transform" />
             </button>
             <GuaranteeBadge />

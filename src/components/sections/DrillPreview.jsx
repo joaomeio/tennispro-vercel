@@ -109,7 +109,7 @@ export default function DrillPreview({ onCtaClick }) {
       <div className="text-center px-4">
         <p className="text-slate-400 text-sm mb-4">…and 190+ more drills inside the platform</p>
         <button
-          onClick={onCtaClick}
+          onClick={() => document.getElementById('pricing')?.scrollIntoView({ behavior: 'smooth' })}
           className="inline-flex items-center gap-2 bg-green-600 hover:bg-green-500 text-white font-bold px-6 py-3 rounded-xl text-sm shadow-lg shadow-green-500/20 transition-all duration-200 hover:-translate-y-0.5 group"
         >
           Unlock the full library — $27

@@ -11,17 +11,17 @@ const LEVEL_STYLES = {
 }
 
 const TYPE_LABELS = {
-  forehand:      'Forehand',
-  backhand:      'Backhand',
+  groundstrokes: 'Groundwork',
   serve:         'Serve',
   volley:        'Volley',
-  footwork:      'Footwork',
   return:        'Return',
-  groundstrokes: 'Groundstrokes',
-  'match play':  'Match Play',
+  footwork:      'Footwork',
+  fitness:       'Fitness',
+  matchplay:     'Match Play',
+  dropshot:      'Dropshot & Lob',
 }
 
-const TYPE_ORDER = ['forehand','backhand','serve','volley','footwork','return','groundstrokes','match play']
+const TYPE_ORDER = ['groundstrokes','serve','volley','return','footwork','fitness','matchplay','dropshot']
 
 // ── Drill detail modal ──────────────────────────────────────────────────────
 
@@ -205,7 +205,7 @@ export default function Drills() {
     return acc
   }, {})
 
-  const featured = drills.find((d) => d.type === 'forehand' && d.level === 'advanced') ?? drills[0]
+  const featured = drills.find((d) => d.type === 'groundstrokes' && d.level === 'advanced') ?? drills[0]
 
   return (
     <div className="min-h-full bg-gray-950 pt-14">

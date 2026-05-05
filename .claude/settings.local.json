@@ -7,7 +7,9 @@
       "Bash(git commit -m ' *)",
       "Bash(git push *)",
       "Bash(xargs wc *)",
-      "mcp__claude_ai_Vercel__get_runtime_logs"
+      "mcp__claude_ai_Vercel__get_runtime_logs",
+      "Bash(node -e ' *)",
+      "Bash(node scripts/push_drills.mjs)"
     ]
   }
 }
