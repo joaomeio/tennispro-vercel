@@ -25,8 +25,9 @@ async function apiFetch(path, options = {}) {
       ...(options.headers || {}),
     },
   })
-  if (!res.ok) throw new Error(`API error ${res.status}`)
-  return res.json()
+  const json = await res.json().catch(() => ({}))
+  if (!res.ok) throw new Error(json?.error || `API error ${res.status}`)
+  return json
 }
 
 // ─── Stat Card ──────────────────────────────────────────────────────────────

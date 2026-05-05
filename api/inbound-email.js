@@ -17,11 +17,13 @@ export default async function handler(req, res) {
 
   const body = req.body || {}
 
-  // Resend inbound email payload — handle both flat and nested formats
-  const rawFrom = body.from || body.sender || ''
-  const subject = body.subject || '(No Subject)'
-  const textBody = body.text || body.plain_text || ''
-  const htmlBody = body.html || ''
+  // Resend wraps inbound email data under a "data" key — fall back to flat format
+  const payload = body.data || body
+
+  const rawFrom = payload.from || payload.sender || ''
+  const subject = payload.subject || '(No Subject)'
+  const textBody = payload.text || payload.plain_text || ''
+  const htmlBody = payload.html || ''
 
   // Parse "Display Name <email@example.com>" format
   let fromEmail = rawFrom
@@ -39,7 +41,7 @@ export default async function handler(req, res) {
     text_body: textBody,
     html_body: htmlBody,
     received_at: new Date().toISOString(),
-    raw_payload: JSON.stringify(body),
+    raw_payload: body,
     replied: false,
   })
 

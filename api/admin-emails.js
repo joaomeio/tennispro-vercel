@@ -72,13 +72,18 @@ export default async function handler(req, res) {
       </div>
     `
 
-    await resend.emails.send({
+    const { error: sendError } = await resend.emails.send({
       from: 'Tennis Pro Support <support@tennispro.site>',
       to: original.from_email,
       subject: replySubject,
       html: replyHtml,
       text: replyBody,
     })
+
+    if (sendError) {
+      console.error('Resend send error:', sendError)
+      return res.status(500).json({ error: sendError.message || 'Failed to send reply' })
+    }
 
     await supabaseAdmin
       .from('support_emails')
