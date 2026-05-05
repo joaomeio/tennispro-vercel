@@ -19,6 +19,7 @@ import DoublesTactics from './pages/dashboard/DoublesTactics'
 import TermsOfService from './pages/TermsOfService'
 import PrivacyPolicy from './pages/PrivacyPolicy'
 import LegalNotice from './pages/LegalNotice'
+import Admin from './pages/Admin'
 
 function ProtectedRoute({ children }) {
   const { user, loading } = useAuth()
@@ -61,6 +62,7 @@ export default function App() {
         <Route path="/privacy" element={<PrivacyPolicy />} />
         <Route path="/legal" element={<LegalNotice />} />
         <Route path="/aviso-legal" element={<LegalNotice />} />
+        <Route path="/admin" element={<Admin />} />
 
         <Route
           path="/dashboard"
