@@ -1,4 +1,5 @@
 import { createClient } from '@supabase/supabase-js'
+import { Resend } from 'resend'
 
 const ADMIN_EMAIL = 'joaopintobakermeio@gmail.com'
 
@@ -63,7 +64,7 @@ export default async function handler(req, res) {
         return res.status(200).json({ email: { ...email, is_read: true } })
       }
 
-      // All emails in a thread (marks all as read, fire-and-forget)
+      // All emails in a thread — hydrates missing bodies from Resend, then caches
       if (thread_id) {
         const { data: emails, error } = await db
           .from('emails')
@@ -71,8 +72,31 @@ export default async function handler(req, res) {
           .eq('thread_id', thread_id)
           .order('received_at', { ascending: true })
         if (error) return res.status(500).json({ error: error.message })
+
+        // Mark thread as read (fire-and-forget)
         db.from('emails').update({ is_read: true }).eq('thread_id', thread_id).eq('is_read', false).then(() => {})
-        return res.status(200).json({ emails: emails || [] })
+
+        // For inbound emails with no body, fetch from Resend and cache
+        const resend = new Resend(process.env.RESEND_API_KEY)
+        const hydratedEmails = await Promise.all(
+          (emails || []).map(async (email) => {
+            const needsBody = email.direction === 'inbound' && email.resend_email_id && !email.body_html && !email.body_text
+            if (!needsBody) return email
+            try {
+              const { data: fetched, error: fetchErr } = await resend.emails.receiving.get(email.resend_email_id)
+              if (fetchErr || !fetched) return email
+              const bodyHtml = fetched.html || null
+              const bodyText = fetched.text || null
+              // Cache back so future loads are instant
+              db.from('emails').update({ body_html: bodyHtml, body_text: bodyText }).eq('id', email.id).then(() => {})
+              return { ...email, body_html: bodyHtml, body_text: bodyText }
+            } catch {
+              return email
+            }
+          })
+        )
+
+        return res.status(200).json({ emails: hydratedEmails })
       }
 
       // Email list by folder
