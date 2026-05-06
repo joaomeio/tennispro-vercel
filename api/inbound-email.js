@@ -25,27 +25,35 @@ export default async function handler(req, res) {
       return res.status(200).json({ ok: true })
     }
 
-    const resend = new Resend(process.env.RESEND_API_KEY)
-    const { data: email, error } = await resend.emails.get(emailId)
+    // Start with webhook payload data (Resend inbound webhooks include full email)
+    let emailData = event.data || {}
 
-    if (error || !email) {
-      console.error('resend.emails.get failed for', emailId, error)
-      return res.status(200).json({ ok: true })
+    // Try to enhance with full API response — but don't block on failure
+    try {
+      const resend = new Resend(process.env.RESEND_API_KEY)
+      const { data: fetched, error: fetchErr } = await resend.emails.get(emailId)
+      if (!fetchErr && fetched) {
+        emailData = { ...emailData, ...fetched }
+      } else {
+        console.log('resend.emails.get failed (using webhook payload):', fetchErr?.message)
+      }
+    } catch (fetchErr) {
+      console.log('resend.emails.get threw (using webhook payload):', fetchErr.message)
     }
 
     // Parse "Display Name <email@example.com>"
-    const rawFrom = email.from || ''
+    const rawFrom = emailData.from || ''
     let fromAddress = rawFrom, fromName = ''
     const m = rawFrom.match(/^(.+?)\s*<([^>]+)>$/)
     if (m) { fromName = m[1].trim(); fromAddress = m[2].trim() }
 
     // Extract threading headers
-    const headers = Array.isArray(email.headers) ? email.headers : []
+    const headers = Array.isArray(emailData.headers) ? emailData.headers : []
     const getHeader = (name) => headers.find(h => h.name?.toLowerCase() === name.toLowerCase())?.value || null
     const messageId = getHeader('message-id')?.trim() || null
     const inReplyTo = getHeader('in-reply-to')?.trim() || null
 
-    // Determine thread_id: follow In-Reply-To chain or start a new thread
+    // Determine thread_id
     let threadId = null
     if (inReplyTo) {
       const { data: parent } = await db
@@ -58,31 +66,39 @@ export default async function handler(req, res) {
       threadId = messageId || emailId
     }
 
-    const toArr = Array.isArray(email.to) ? email.to : (email.to ? [email.to] : [])
-    const ccArr = Array.isArray(email.cc) ? email.cc : (email.cc ? [email.cc] : [])
-    const bccArr = Array.isArray(email.bcc) ? email.bcc : (email.bcc ? [email.bcc] : [])
+    const toArr = Array.isArray(emailData.to) ? emailData.to : (emailData.to ? [emailData.to] : [])
+    const ccArr = Array.isArray(emailData.cc) ? emailData.cc : (emailData.cc ? [emailData.cc] : [])
+    const bccArr = Array.isArray(emailData.bcc) ? emailData.bcc : (emailData.bcc ? [emailData.bcc] : [])
 
-    const { error: insertError } = await db.from('emails').insert({
+    const row = {
       resend_email_id: emailId,
       message_id: messageId,
       thread_id: threadId,
-      from_address: fromAddress,
-      from_name: fromName,
+      from_address: fromAddress || emailData.from_address || '',
+      from_name: fromName || emailData.from_name || null,
       to_address: toArr,
       cc_address: ccArr,
       bcc_address: bccArr,
-      subject: email.subject || '(No Subject)',
-      body_html: email.html || null,
-      body_text: email.text || null,
+      subject: emailData.subject || '(No Subject)',
+      body_html: emailData.html || emailData.body_html || null,
+      body_text: emailData.text || emailData.body_text || null,
       direction: 'inbound',
       is_read: false,
       is_sent: false,
       received_at: event.created_at || new Date().toISOString(),
-    })
+    }
 
-    if (insertError) console.error('Failed to insert email:', insertError)
+    console.log('Inserting email row:', { emailId, subject: row.subject, fromAddress, threadId })
 
-    return res.status(200).json({ ok: true })
+    const { error: insertError } = await db.from('emails').insert(row)
+
+    if (insertError) {
+      console.error('Failed to insert email:', insertError)
+      // Return error detail in body (still 200 so Resend doesn't retry)
+      return res.status(200).json({ ok: false, insertError: insertError.message })
+    }
+
+    return res.status(200).json({ ok: true, emailId, subject: row.subject })
 
   } catch (err) {
     console.error('inbound-email unhandled error:', err)
