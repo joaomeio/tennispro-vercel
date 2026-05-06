@@ -65,12 +65,13 @@ export default async function handler(req, res) {
       .filter(s => s.payment_status === 'paid')
       .reduce((sum, s) => sum + (s.amount_total || 0), 0) / 100
 
-    // Unread emails from the new emails table
+    // Unread inbound emails
     const { count: unreadEmails } = await supabaseAdmin
       .from('emails')
       .select('id', { count: 'exact', head: true })
-      .eq('folder', 'inbox')
-      .eq('read', false)
+      .eq('direction', 'inbound')
+      .eq('is_read', false)
+      .eq('is_trash', false)
 
     return res.status(200).json({
       totalUsers,

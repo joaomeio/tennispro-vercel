@@ -26,8 +26,6 @@ export default async function handler(req, res) {
     }
 
     const resend = new Resend(process.env.RESEND_API_KEY)
-
-    // resend.emails.get() is the correct method name (not retrieve)
     const { data: email, error } = await resend.emails.get(emailId)
 
     if (error || !email) {
@@ -37,25 +35,49 @@ export default async function handler(req, res) {
 
     // Parse "Display Name <email@example.com>"
     const rawFrom = email.from || ''
-    let fromEmail = rawFrom, fromName = ''
+    let fromAddress = rawFrom, fromName = ''
     const m = rawFrom.match(/^(.+?)\s*<([^>]+)>$/)
-    if (m) { fromName = m[1].trim(); fromEmail = m[2].trim() }
+    if (m) { fromName = m[1].trim(); fromAddress = m[2].trim() }
 
-    const toEmail = Array.isArray(email.to) ? email.to[0] : (email.to || '')
+    // Extract threading headers
+    const headers = Array.isArray(email.headers) ? email.headers : []
+    const getHeader = (name) => headers.find(h => h.name?.toLowerCase() === name.toLowerCase())?.value || null
+    const messageId = getHeader('message-id')?.trim() || null
+    const inReplyTo = getHeader('in-reply-to')?.trim() || null
+
+    // Determine thread_id: follow In-Reply-To chain or start a new thread
+    let threadId = null
+    if (inReplyTo) {
+      const { data: parent } = await db
+        .from('emails')
+        .select('thread_id')
+        .eq('message_id', inReplyTo)
+        .maybeSingle()
+      threadId = parent?.thread_id || inReplyTo
+    } else {
+      threadId = messageId || emailId
+    }
+
+    const toArr = Array.isArray(email.to) ? email.to : (email.to ? [email.to] : [])
+    const ccArr = Array.isArray(email.cc) ? email.cc : (email.cc ? [email.cc] : [])
+    const bccArr = Array.isArray(email.bcc) ? email.bcc : (email.bcc ? [email.bcc] : [])
 
     const { error: insertError } = await db.from('emails').insert({
-      folder: 'inbox',
-      from_email: fromEmail,
+      resend_email_id: emailId,
+      message_id: messageId,
+      thread_id: threadId,
+      from_address: fromAddress,
       from_name: fromName,
-      to_email: toEmail,
+      to_address: toArr,
+      cc_address: ccArr,
+      bcc_address: bccArr,
       subject: email.subject || '(No Subject)',
-      html_body: email.html || '',
-      text_body: email.text || '',
-      resend_id: emailId,
-      created_at: event.created_at || new Date().toISOString(),
-      read: false,
-      starred: false,
-      replied: false,
+      body_html: email.html || null,
+      body_text: email.text || null,
+      direction: 'inbound',
+      is_read: false,
+      is_sent: false,
+      received_at: event.created_at || new Date().toISOString(),
     })
 
     if (insertError) console.error('Failed to insert email:', insertError)
@@ -64,7 +86,6 @@ export default async function handler(req, res) {
 
   } catch (err) {
     console.error('inbound-email unhandled error:', err)
-    // Always return 200 to prevent Resend from retrying indefinitely
     return res.status(200).json({ ok: true })
   }
 }
