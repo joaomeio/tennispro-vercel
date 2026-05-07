@@ -11,9 +11,9 @@ export const EN_PRICE_IDS = {
   PREMIUM: 'price_1T1s4cCz3W9Jpqrlwjyfat0e',
   DOWNSELL: 'price_1T1s5oCz3W9JpqrlGiQZSZIS',
   ORDER_BUMP: 'price_1T1sCECz3W9JpqrlOgQRiPot',
-  ADDON_GYM: 'price_1TPlP6EFtoy3ZjcS8uH4dKg7',
-  ADDON_SERVE: 'price_1TPlPFEFtoy3ZjcSQxuxPygO',
-  ADDON_DOUBLES: 'price_1TPlPNEFtoy3ZjcSaIG4dIGp',
+  ADDON_GYM: 'price_1TPoiVCz3W9Jpqrl5vuHA6RN',
+  ADDON_SERVE: 'price_1TPoihCz3W9Jpqrlf7oUs2J3',
+  ADDON_DOUBLES: 'price_1TPojKCz3W9JpqrltTSes10O',
   ADDON_LESSON_TEMPLATES: 'price_1T1sCECz3W9JpqrlOgQRiPot',
 }
 
