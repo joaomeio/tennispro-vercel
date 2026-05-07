@@ -3,14 +3,12 @@ import { createPostHogClient } from './lib/posthog.js'
 
 const stripe = new Stripe(process.env.STRIPE_SECRET_KEY)
 
-const ORDER_BUMP_PRICE_ID = 'price_1T1sCECz3W9JpqrlOgQRiPot'
-
 export default async function handler(req, res) {
   if (req.method !== 'POST') {
     return res.status(405).json({ error: 'Method not allowed' })
   }
 
-  const { priceId, orderBump = false, isAddon = false, customerEmail = null } = req.body
+  const { priceId, orderBumpIds = [], isAddon = false, customerEmail = null } = req.body
 
   if (!priceId) {
     return res.status(400).json({ error: 'priceId is required' })
@@ -20,8 +18,10 @@ export default async function handler(req, res) {
 
   const lineItems = [{ price: priceId, quantity: 1 }]
 
-  if (orderBump) {
-    lineItems.push({ price: ORDER_BUMP_PRICE_ID, quantity: 1 })
+  if (Array.isArray(orderBumpIds) && orderBumpIds.length > 0) {
+    for (const bumpId of orderBumpIds) {
+      lineItems.push({ price: bumpId, quantity: 1 })
+    }
   }
 
   try {
@@ -58,7 +58,7 @@ export default async function handler(req, res) {
         event: 'checkout_started',
         properties: {
           price_id: priceId,
-          order_bump: orderBump,
+          order_bump_ids: orderBumpIds,
           is_addon: isAddon,
           stripe_session_id: session.id,
         },

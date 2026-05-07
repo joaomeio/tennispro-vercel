@@ -28,11 +28,11 @@ export function handlePtCheckout(url) {
 
 // Calls /api/create-checkout and redirects to the returned Stripe session URL.
 // Returns a cleanup-friendly promise so callers can handle loading/error state.
-export async function createCheckoutSession(priceId, orderBump = false, isAddon = false, customerEmail = null) {
+export async function createCheckoutSession(priceId, orderBumpIds = [], isAddon = false, customerEmail = null) {
   const res = await fetch('/api/create-checkout', {
     method: 'POST',
     headers: { 'Content-Type': 'application/json' },
-    body: JSON.stringify({ priceId, orderBump, isAddon, customerEmail }),
+    body: JSON.stringify({ priceId, orderBumpIds, isAddon, customerEmail }),
   })
 
   if (!res.ok) {
