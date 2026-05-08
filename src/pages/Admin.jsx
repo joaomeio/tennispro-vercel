@@ -8,6 +8,12 @@ import {
   PenSquare, X, Star, Trash2, Reply, ArrowLeft, Minus,
   Archive, ChevronDown, ChevronUp, RotateCcw,
 } from 'lucide-react'
+import DateRangeSelector from '../components/admin/tracking/DateRangeSelector'
+import KpiCard from '../components/admin/tracking/KpiCard'
+import RevenueChart from '../components/admin/tracking/RevenueChart'
+import FunnelChart from '../components/admin/tracking/FunnelChart'
+import CampaignsTable from '../components/admin/tracking/CampaignsTable'
+import TransactionsTable from '../components/admin/tracking/TransactionsTable'
 
 const ADMIN_EMAIL = 'joaopintobakermeio@gmail.com'
 
@@ -801,6 +807,69 @@ function EmailApp() {
   )
 }
 
+// ── Tracking & Analytics Section ─────────────────────────────────────────────
+
+function TrackingSection() {
+  const [range, setRange] = useState(30)
+  const [summary, setSummary] = useState(null)
+  const [summaryLoading, setSummaryLoading] = useState(true)
+
+  useEffect(() => {
+    setSummaryLoading(true)
+    apiFetch(`/api/stripe/summary?range=${range}`)
+      .then(data => setSummary(data))
+      .catch(() => setSummary(null))
+      .finally(() => setSummaryLoading(false))
+  }, [range])
+
+  return (
+    <section
+      id="tracking-analytics"
+      className="max-w-5xl mx-auto px-4 pb-10"
+      style={{ borderTop: '1px solid #1f2937', paddingTop: '2rem', marginTop: '0.5rem' }}
+    >
+      <div className="flex items-center justify-between mb-5">
+        <h2 className="text-base font-bold text-white">Tracking &amp; Analytics</h2>
+        <DateRangeSelector value={range} onChange={setRange} />
+      </div>
+
+      <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-3 mb-5">
+        <KpiCard
+          title="Revenue (30d)"
+          value={summary?.revenue30d != null ? `$${Number(summary.revenue30d).toFixed(2)}` : null}
+          change={summary?.revenueChange}
+          loading={summaryLoading}
+        />
+        <KpiCard
+          title="Ad Spend"
+          value={summary?.adSpend != null ? `$${Number(summary.adSpend).toFixed(2)}` : null}
+          change={summary?.adSpendChange}
+          loading={summaryLoading}
+        />
+        <KpiCard
+          title="ROAS"
+          value={summary?.roas != null ? `${Number(summary.roas).toFixed(2)}x` : null}
+          change={summary?.roasChange}
+          loading={summaryLoading}
+        />
+        <KpiCard
+          title="New Customers"
+          value={summary?.newCustomers ?? null}
+          change={summary?.newCustomersChange}
+          loading={summaryLoading}
+        />
+      </div>
+
+      <div className="space-y-4">
+        <RevenueChart range={range} />
+        <FunnelChart range={range} />
+        <CampaignsTable range={range} />
+        <TransactionsTable range={range} />
+      </div>
+    </section>
+  )
+}
+
 // ── Admin Page ────────────────────────────────────────────────────────────────
 
 export default function Admin() {
@@ -869,6 +938,7 @@ export default function Admin() {
           <div className="max-w-2xl mx-auto px-4 py-6">
             <AnalyticsTab />
           </div>
+          <TrackingSection />
         </div>
       )}
     </div>
