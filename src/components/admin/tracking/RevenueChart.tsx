@@ -41,7 +41,7 @@ export default function RevenueChart({ range }: RevenueChartProps) {
   useEffect(() => {
     setLoading(true)
     setError(null)
-    trackingFetch(`/api/stripe/summary?range=${range}`)
+    trackingFetch(`/api/admin/analytics?source=stripe_summary&range=${range}`)
       .then(res => setData(res?.daily ?? []))
       .catch(e => setError(e?.response?.data?.error || e.message))
       .finally(() => setLoading(false))

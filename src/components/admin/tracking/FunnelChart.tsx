@@ -20,7 +20,7 @@ export default function FunnelChart({ range }: FunnelChartProps) {
   useEffect(() => {
     setLoading(true)
     setError(null)
-    trackingFetch(`/api/posthog/funnel?range=${range}`)
+    trackingFetch(`/api/admin/analytics?source=funnel&range=${range}`)
       .then(res => {
         const raw: FunnelStep[] = res?.steps ?? []
         if (!raw.length) {

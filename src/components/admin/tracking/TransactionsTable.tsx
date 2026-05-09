@@ -32,7 +32,7 @@ export default function TransactionsTable({ range }: TransactionsTableProps) {
   useEffect(() => {
     setLoading(true)
     setError(null)
-    trackingFetch(`/api/stripe/transactions?range=${range}`)
+    trackingFetch(`/api/admin/analytics?source=stripe_transactions&range=${range}`)
       .then(res => setTransactions((res?.transactions ?? []).slice(0, 20)))
       .catch(e => setError(e?.response?.data?.error || e.message))
       .finally(() => setLoading(false))

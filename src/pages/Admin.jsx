@@ -816,7 +816,7 @@ function TrackingSection() {
 
   useEffect(() => {
     setSummaryLoading(true)
-    apiFetch(`/api/stripe/summary?range=${range}`)
+    apiFetch(`/api/admin/analytics?source=stripe_summary&range=${range}`)
       .then(data => setSummary(data))
       .catch(() => setSummary(null))
       .finally(() => setSummaryLoading(false))

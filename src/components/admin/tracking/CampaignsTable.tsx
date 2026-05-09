@@ -47,7 +47,7 @@ export default function CampaignsTable({ range }: CampaignsTableProps) {
   useEffect(() => {
     setLoading(true)
     setError(null)
-    trackingFetch(`/api/meta/campaigns?range=${range}`)
+    trackingFetch(`/api/admin/analytics?source=meta_campaigns&range=${range}`)
       .then(res => setCampaigns(res?.campaigns ?? []))
       .catch(e => setError(e?.response?.data?.error || e.message))
       .finally(() => setLoading(false))
