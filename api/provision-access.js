@@ -11,6 +11,7 @@ const supabaseAdmin = createClient(
 )
 
 const PRICE_TO_MODULES = {
+  // Production
   'price_1T1s5JCz3W9Jpqrl8CV9AGqW': ['drills'],
   'price_1T1s4cCz3W9Jpqrlwjyfat0e': ['drills', 'tennis-kids', 'mental-game'],
   'price_1T1s5oCz3W9JpqrlGiQZSZIS': ['drills', 'tennis-kids', 'mental-game'],
@@ -18,6 +19,15 @@ const PRICE_TO_MODULES = {
   'price_1TPlP6EFtoy3ZjcS8uH4dKg7': ['gym-training'],
   'price_1TPlPFEFtoy3ZjcSQxuxPygO': ['serve-masterclass'],
   'price_1TPlPNEFtoy3ZjcSaIG4dIGp': ['doubles-tactics'],
+  'price_1TPoiVCz3W9Jpqrl5vuHA6RN': ['gym-training'],
+  'price_1TPoihCz3W9Jpqrlf7oUs2J3': ['serve-masterclass'],
+  'price_1TPojKCz3W9JpqrltTSes10O': ['doubles-tactics'],
+  // Test
+  'price_1T1spNCz3W9JpqrliooB8TI0': ['drills', 'tennis-kids', 'mental-game'],
+  'price_1T1spVCz3W9JpqrlD1BisICz': ['lesson-templates'],
+  'price_1TVBymCz3W9JpqrlS6HkXQFF': ['gym-training'],
+  'price_1TVBz3Cz3W9JpqrlmSXsPExo': ['serve-masterclass'],
+  'price_1TVBzNCz3W9Jpqrlh0fK9lMq': ['doubles-tactics'],
 }
 
 async function getOrCreateUser(email) {
@@ -76,8 +86,6 @@ export default async function handler(req, res) {
   }
   if (grantedModules.size === 0) grantedModules.add('drills')
 
-  const siteUrl = (process.env.SITE_URL || 'https://tennispro.site').replace(/\/$/, '')
-
   // Find or create the Supabase user
   let user, isNew
   try {
@@ -92,21 +100,6 @@ export default async function handler(req, res) {
       .from('user_modules')
       .upsert({ user_id: user.id, module_id: moduleId }, { onConflict: 'user_id,module_id' })
     if (error) return res.status(500).json({ error: `DB write failed for ${moduleId}: ${error.message}` })
-  }
-
-  // For new users, generate a recovery link the browser can navigate to directly
-  let accessLink = null
-  if (isNew) {
-    const { data: linkData, error: linkError } = await supabaseAdmin.auth.admin.generateLink({
-      type: 'recovery',
-      email,
-      options: { redirectTo: `${siteUrl}/welcome` },
-    })
-    if (!linkError && linkData?.properties?.hashed_token) {
-      const hashedToken = linkData.properties.hashed_token
-      const redirectTo = encodeURIComponent(`${siteUrl}/welcome`)
-      accessLink = `${process.env.SUPABASE_URL}/auth/v1/verify?token=${hashedToken}&type=recovery&redirect_to=${redirectTo}`
-    }
   }
 
   if (process.env.POSTHOG_API_KEY) {
@@ -135,7 +128,6 @@ export default async function handler(req, res) {
     modules: [...grantedModules],
     email,
     isNew,
-    accessLink,
     amount_total: session.amount_total,
     currency: session.currency,
   })

@@ -6,7 +6,7 @@ export const PT_LINKS = {
 }
 
 // EN checkout — Stripe price IDs
-export const EN_PRICE_IDS = {
+const PROD_PRICE_IDS = {
   BASIC: 'price_1T1s5JCz3W9Jpqrl8CV9AGqW',
   PREMIUM: 'price_1T1s4cCz3W9Jpqrlwjyfat0e',
   DOWNSELL: 'price_1T1s5oCz3W9JpqrlGiQZSZIS',
@@ -16,6 +16,19 @@ export const EN_PRICE_IDS = {
   ADDON_DOUBLES: 'price_1TPojKCz3W9JpqrltTSes10O',
   ADDON_LESSON_TEMPLATES: 'price_1T1sCECz3W9JpqrlOgQRiPot',
 }
+
+const TEST_PRICE_IDS = {
+  BASIC: 'price_1T1spNCz3W9JpqrliooB8TI0',
+  PREMIUM: 'price_1T1spNCz3W9JpqrliooB8TI0',
+  DOWNSELL: 'price_1T1spNCz3W9JpqrliooB8TI0',
+  ORDER_BUMP: 'price_1T1spVCz3W9JpqrlD1BisICz',
+  ADDON_GYM: 'price_1TVBymCz3W9JpqrlS6HkXQFF',
+  ADDON_SERVE: 'price_1TVBz3Cz3W9JpqrlmSXsPExo',
+  ADDON_DOUBLES: 'price_1TVBzNCz3W9Jpqrlh0fK9lMq',
+  ADDON_LESSON_TEMPLATES: 'price_1T1spVCz3W9JpqrlD1BisICz',
+}
+
+export const EN_PRICE_IDS = import.meta.env.DEV ? TEST_PRICE_IDS : PROD_PRICE_IDS
 
 export function handlePtCheckout(url) {
   const targetUrl = new URL(url)

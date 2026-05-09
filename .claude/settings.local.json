@@ -9,7 +9,9 @@
       "Bash(xargs wc *)",
       "mcp__claude_ai_Vercel__get_runtime_logs",
       "Bash(node -e ' *)",
-      "Bash(node scripts/push_drills.mjs)"
+      "Bash(node scripts/push_drills.mjs)",
+      "Bash(npx vercel *)",
+      "PowerShell(Stop-Process -Id 10940,20948 -Force -ErrorAction SilentlyContinue)"
     ]
   }
 }

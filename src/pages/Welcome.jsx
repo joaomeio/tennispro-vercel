@@ -202,24 +202,46 @@ function ForgotView({ onBack }) {
   )
 }
 
-// ─── View: Set password (after recovery link) ────────────────────────────────
-function SetPasswordView() {
+// ─── View: Create account (shown directly after purchase) ────────────────────
+function CreateAccountView({ email, sessionId }) {
   const navigate = useNavigate()
   const [password, setPassword] = useState('')
   const [confirm, setConfirm] = useState('')
   const [showPw, setShowPw] = useState(false)
+  const [acceptedTerms, setAcceptedTerms] = useState(false)
+  const [acceptedPrivacy, setAcceptedPrivacy] = useState(false)
   const [error, setError] = useState('')
   const [submitting, setSubmitting] = useState(false)
 
-  async function handleSetPassword(e) {
+  async function handleCreateAccount(e) {
     e.preventDefault()
     setError('')
     if (password.length < 8) { setError('Password must be at least 8 characters.'); return }
     if (password !== confirm) { setError("Passwords don't match."); return }
+    if (!acceptedTerms || !acceptedPrivacy) { setError('Please accept the Terms of Service and Privacy Policy to continue.'); return }
     setSubmitting(true)
-    const { error } = await supabase.auth.updateUser({ password })
-    if (error) { setError(error.message); setSubmitting(false); return }
-    navigate('/dashboard')
+    try {
+      if (sessionId) {
+        // New user from checkout — set password via admin API, then sign in
+        const r = await fetch('/api/activate-account', {
+          method: 'POST',
+          headers: { 'Content-Type': 'application/json' },
+          body: JSON.stringify({ sessionId, email, password }),
+        })
+        const data = await r.json()
+        if (!r.ok) { setError(data.error || 'Failed to create account.'); setSubmitting(false); return }
+        const { error: signInError } = await supabase.auth.signInWithPassword({ email, password })
+        if (signInError) { setError(signInError.message); setSubmitting(false); return }
+      } else {
+        // Forgot-password recovery flow — session already established by Supabase
+        const { error: updateError } = await supabase.auth.updateUser({ password })
+        if (updateError) { setError(updateError.message); setSubmitting(false); return }
+      }
+      navigate('/dashboard')
+    } catch {
+      setError('Something went wrong. Please try again.')
+      setSubmitting(false)
+    }
   }
 
   return (
@@ -227,7 +249,7 @@ function SetPasswordView() {
       <div className="text-center mb-8">
         <Logo />
         <h1 className="text-3xl font-extrabold text-white mb-2 leading-tight">
-          Welcome aboard,<br />Coach.
+          Create your account
         </h1>
         <p className="text-slate-400 text-sm leading-relaxed">
           Set a password to access your drills, plans, and modules.
@@ -235,7 +257,20 @@ function SetPasswordView() {
       </div>
 
       <div className="bg-slate-900 border border-slate-800 rounded-2xl p-6">
-        <form onSubmit={handleSetPassword} className="flex flex-col gap-4">
+        <form onSubmit={handleCreateAccount} className="flex flex-col gap-4">
+          <div>
+            <label className="block text-xs font-bold text-slate-400 mb-2 uppercase tracking-widest">Email</label>
+            <div className="relative">
+              <Mail className="absolute left-3.5 top-1/2 -translate-y-1/2 w-4 h-4 text-slate-600" />
+              <input
+                type="email"
+                value={email || ''}
+                disabled
+                className="w-full bg-slate-800/40 border border-slate-700/50 rounded-xl pl-10 pr-4 py-3 text-sm text-slate-500 cursor-not-allowed select-none"
+              />
+            </div>
+          </div>
+
           <div>
             <label className="block text-xs font-bold text-slate-400 mb-2 uppercase tracking-widest">Password</label>
             <div className="relative">
@@ -269,6 +304,37 @@ function SetPasswordView() {
             />
           </div>
 
+          <div className="flex flex-col gap-3 pt-1">
+            <label className="flex items-start gap-3 cursor-pointer group">
+              <input
+                type="checkbox"
+                checked={acceptedTerms}
+                onChange={(e) => setAcceptedTerms(e.target.checked)}
+                className="mt-0.5 w-4 h-4 accent-green-500 flex-shrink-0 cursor-pointer"
+              />
+              <span className="text-xs text-slate-400 leading-relaxed group-hover:text-slate-300 transition-colors">
+                I agree to the{' '}
+                <a href="/terms" target="_blank" rel="noopener noreferrer" className="text-green-400 hover:text-green-300 underline underline-offset-2">
+                  Terms of Service
+                </a>
+              </span>
+            </label>
+            <label className="flex items-start gap-3 cursor-pointer group">
+              <input
+                type="checkbox"
+                checked={acceptedPrivacy}
+                onChange={(e) => setAcceptedPrivacy(e.target.checked)}
+                className="mt-0.5 w-4 h-4 accent-green-500 flex-shrink-0 cursor-pointer"
+              />
+              <span className="text-xs text-slate-400 leading-relaxed group-hover:text-slate-300 transition-colors">
+                I agree to the{' '}
+                <a href="/privacy" target="_blank" rel="noopener noreferrer" className="text-green-400 hover:text-green-300 underline underline-offset-2">
+                  Privacy Policy
+                </a>
+              </span>
+            </label>
+          </div>
+
           {error && (
             <p className="text-red-400 text-sm bg-red-500/10 border border-red-500/20 rounded-xl px-4 py-3">
               {error}
@@ -281,7 +347,7 @@ function SetPasswordView() {
             className="bg-green-500 hover:bg-green-400 text-white font-extrabold py-3.5 rounded-xl text-sm transition-colors disabled:opacity-60 flex items-center justify-center gap-2 mt-1"
           >
             {submitting && <Loader2 className="w-4 h-4 animate-spin" />}
-            {submitting ? 'Setting up your account…' : 'Enter the Platform →'}
+            {submitting ? 'Creating your account…' : 'Enter the Platform →'}
           </button>
         </form>
       </div>
@@ -299,12 +365,16 @@ export default function Welcome() {
   const [session, setSession] = useState(null)
   const [isRecovery, setIsRecovery] = useState(false)
   const [initializing, setInitializing] = useState(true)
+  const [view, setView] = useState('login') // 'login' | 'forgot'
+
+  // Post-purchase state
   const [provisioning, setProvisioning] = useState(
     () => !!new URLSearchParams(window.location.search).get('session_id')
   )
+  const [newUserEmail, setNewUserEmail] = useState('')
+  const [newUserSessionId, setNewUserSessionId] = useState('')
   const [provisionError, setProvisionError] = useState('')
   const [provisionMessage, setProvisionMessage] = useState('')
-  const [view, setView] = useState('login') // 'login' | 'forgot'
 
   useEffect(() => {
     supabase.auth.getSession().then(({ data: { session } }) => {
@@ -332,12 +402,9 @@ export default function Welcome() {
       body: JSON.stringify({ sessionId }),
     })
       .then((r) => r.json())
-      .then(({ accessLink, error, amount_total, currency }) => {
-        if (error) {
-          setProvisionError(error)
-          setProvisioning(false)
-          return
-        }
+      .then(({ error, email, isNew, amount_total, currency }) => {
+        if (error) { setProvisionError(error); setProvisioning(false); return }
+
         if (typeof window.fbq === 'function') {
           const value = amount_total != null ? amount_total / 100 : undefined
           window.fbq('track', 'Purchase', {
@@ -346,11 +413,14 @@ export default function Welcome() {
             content_type: 'product',
           })
         }
-        if (accessLink) {
-          // New user — navigate to Supabase verify URL which bounces back here with a session
-          window.location.href = accessLink
+
+        if (isNew) {
+          // New user — show Create Account page directly with email pre-filled
+          setNewUserEmail(email)
+          setNewUserSessionId(sessionId)
+          setProvisioning(false)
         } else {
-          // Existing user buying an addon or re-purchasing — modules activated, just sign in
+          // Existing user — modules activated, just sign in
           setProvisionMessage('Your modules have been activated. Sign in to access them.')
           setProvisioning(false)
         }
@@ -365,25 +435,33 @@ export default function Welcome() {
     return (
       <div className="min-h-screen bg-slate-950 flex flex-col items-center justify-center gap-3">
         <Loader2 className="w-8 h-8 animate-spin text-green-400" />
-        {provisioning && (
-          <p className="text-slate-500 text-sm">Setting up your account…</p>
-        )}
+        {provisioning && <p className="text-slate-500 text-sm">Setting up your account…</p>}
       </div>
     )
   }
 
-  // Has active session
+  // New user just came from checkout — show Create Account directly
+  if (newUserEmail) {
+    return (
+      <div className="min-h-screen bg-slate-950 flex items-center justify-center px-4 relative overflow-hidden">
+        <Glow />
+        <CreateAccountView email={newUserEmail} sessionId={newUserSessionId} />
+      </div>
+    )
+  }
+
+  // Existing session + password recovery (forgot-password flow)
+  if (session && isRecovery) {
+    return (
+      <div className="min-h-screen bg-slate-950 flex items-center justify-center px-4 relative overflow-hidden">
+        <Glow />
+        <CreateAccountView email={session.user.email} sessionId={null} />
+      </div>
+    )
+  }
+
+  // Normal active session — go to dashboard
   if (session) {
-    // Recovery flow — user clicked a reset/access link, let them set a password
-    if (isRecovery) {
-      return (
-        <div className="min-h-screen bg-slate-950 flex items-center justify-center px-4 relative overflow-hidden">
-          <Glow />
-          <SetPasswordView />
-        </div>
-      )
-    }
-    // Normal session — send to dashboard
     navigate('/dashboard', { replace: true })
     return null
   }
@@ -401,10 +479,7 @@ export default function Welcome() {
             </div>
             <p className="text-white font-bold mb-1">Activation failed</p>
             <p className="text-slate-400 text-sm">{provisionError}</p>
-            <button
-              onClick={() => setProvisionError('')}
-              className="mt-4 text-xs text-slate-500 hover:text-slate-300 transition-colors"
-            >
+            <button onClick={() => setProvisionError('')} className="mt-4 text-xs text-slate-500 hover:text-slate-300 transition-colors">
               ← Back to sign in
             </button>
           </div>
