@@ -1,5 +1,6 @@
 import Stripe from 'stripe'
 import { createPostHogClient } from './lib/posthog.js'
+import { sendCapiEvent } from './lib/meta-capi.js'
 
 const stripe = new Stripe(process.env.STRIPE_SECRET_KEY)
 
@@ -8,13 +9,27 @@ export default async function handler(req, res) {
     return res.status(405).json({ error: 'Method not allowed' })
   }
 
-  const { priceId, orderBumpIds = [], isAddon = false, customerEmail = null } = req.body
+  const {
+    priceId,
+    orderBumpIds = [],
+    isAddon = false,
+    customerEmail = null,
+    // Attribution fingerprint from the browser
+    fbEventId = null,
+    fbp = null,
+    fbc = null,
+    userAgent = null,
+  } = req.body
 
   if (!priceId) {
     return res.status(400).json({ error: 'priceId is required' })
   }
 
   const siteUrl = process.env.SITE_URL || 'https://tennispro.site'
+  const clientIp =
+    (req.headers['x-forwarded-for'] || '').split(',')[0].trim() ||
+    req.socket?.remoteAddress ||
+    null
 
   const lineItems = [{ price: priceId, quantity: 1 }]
 
@@ -36,6 +51,15 @@ export default async function handler(req, res) {
       after_expiration: {
         recovery: { enabled: true, allow_promotion_codes: true },
       },
+      // Store attribution data so the webhook can include it in the CAPI
+      // Purchase event without relying on the browser being present.
+      metadata: {
+        ...(fbEventId && { fb_initiate_event_id: fbEventId }),
+        ...(fbp && { fbp }),
+        ...(fbc && { fbc }),
+        ...(clientIp && { client_ip: clientIp }),
+        ...(userAgent && { user_agent: userAgent }),
+      },
     }
 
     // For addon purchases, look up the existing Stripe customer to pre-fill
@@ -53,6 +77,23 @@ export default async function handler(req, res) {
     }
 
     const session = await stripe.checkout.sessions.create(sessionParams)
+
+    // ── Server-side CAPI: InitiateCheckout ───────────────────────────────────
+    // Fires in parallel with session creation — non-blocking.
+    // Uses the same fbEventId the browser pixel sent so Meta can deduplicate.
+    if (fbEventId) {
+      sendCapiEvent({
+        eventName: 'InitiateCheckout',
+        eventId: fbEventId,
+        userData: {
+          email: customerEmail,
+          ip: clientIp,
+          userAgent: userAgent || req.headers['user-agent'],
+          fbp,
+          fbc,
+        },
+      }).catch((err) => console.error('[Meta CAPI] InitiateCheckout failed:', err.message))
+    }
 
     if (process.env.POSTHOG_API_KEY) {
       const posthog = createPostHogClient()

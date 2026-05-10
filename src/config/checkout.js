@@ -1,3 +1,5 @@
+import { generateEventId, getFbp, getFbc, initPixelWithUser, trackPixelEvent } from '../lib/meta'
+
 // PT-BR checkout links (Cakto)
 export const PT_LINKS = {
   BASIC: 'https://pay.cakto.com.br/39qheuy_709366',
@@ -42,10 +44,30 @@ export function handlePtCheckout(url) {
 // Calls /api/create-checkout and redirects to the returned Stripe session URL.
 // Returns a cleanup-friendly promise so callers can handle loading/error state.
 export async function createCheckoutSession(priceId, orderBumpIds = [], isAddon = false, customerEmail = null) {
+  // Gather click-tracking fingerprint before the redirect wipes the page.
+  const fbEventId = generateEventId()
+  const fbp = getFbp()
+  const fbc = getFbc()
+
+  // Re-init pixel with advanced matching when we have an email (addon / returning user).
+  if (customerEmail) {
+    await initPixelWithUser({ email: customerEmail })
+  }
+
   const res = await fetch('/api/create-checkout', {
     method: 'POST',
     headers: { 'Content-Type': 'application/json' },
-    body: JSON.stringify({ priceId, orderBumpIds, isAddon, customerEmail }),
+    body: JSON.stringify({
+      priceId,
+      orderBumpIds,
+      isAddon,
+      customerEmail,
+      // Passed to backend so CAPI can fire a matching InitiateCheckout event.
+      fbEventId,
+      fbp,
+      fbc,
+      userAgent: navigator.userAgent,
+    }),
   })
 
   if (!res.ok) {
@@ -55,9 +77,8 @@ export async function createCheckoutSession(priceId, orderBumpIds = [], isAddon 
 
   const { url } = await res.json()
 
-  if (typeof window.fbq === 'function') {
-    window.fbq('track', 'InitiateCheckout')
-  }
+  // Fire client-side pixel event with deduplication ID.
+  trackPixelEvent('InitiateCheckout', {}, fbEventId)
 
   window.location.href = url
 }

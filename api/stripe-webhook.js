@@ -2,6 +2,7 @@ import Stripe from 'stripe'
 import { Resend } from 'resend'
 import { createClient } from '@supabase/supabase-js'
 import { createPostHogClient } from './lib/posthog.js'
+import { sendCapiEvent } from './lib/meta-capi.js'
 
 const stripe = new Stripe(process.env.STRIPE_SECRET_KEY)
 const resend = new Resend(process.env.RESEND_API_KEY)
@@ -223,6 +224,32 @@ export default async function handler(req, res) {
             })
             await posthog.shutdown()
           }
+
+          // ── Server-side CAPI: Purchase ─────────────────────────────────────
+          // event_id = session.id so Meta deduplicates against the client-side
+          // fbq('track', 'Purchase', {...}, { eventID: sessionId }) fired in
+          // Welcome.jsx / Dashboard.jsx.
+          // fbp and fbc were stored in session.metadata at checkout creation time
+          // so they survive the Stripe-hosted payment page redirect.
+          const meta = session.metadata || {}
+          sendCapiEvent({
+            eventName: 'Purchase',
+            eventId: session.id,
+            eventTime: Math.floor(Date.now() / 1000),
+            userData: {
+              email,
+              ip: meta.client_ip,
+              userAgent: meta.user_agent,
+              fbp: meta.fbp,
+              fbc: meta.fbc,
+            },
+            customData: {
+              currency: (session.currency || 'usd').toUpperCase(),
+              value: session.amount_total != null ? session.amount_total / 100 : undefined,
+              content_type: 'product',
+              contents: packages.map((p) => ({ id: p.price_id, quantity: 1 })),
+            },
+          }).catch((err) => console.error('[Meta CAPI] Purchase failed:', err.message))
 
           // Only send the "set your password" email to brand-new users
           if (accessLink) {

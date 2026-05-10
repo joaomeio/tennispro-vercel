@@ -2,6 +2,7 @@ import { useState, useRef, useEffect } from 'react'
 import { Outlet, useNavigate } from 'react-router-dom'
 import { LogOut, User, ChevronDown, Settings as SettingsIcon } from 'lucide-react'
 import { useAuth } from '../context/AuthContext'
+import { initPixelWithUser, trackPixelEvent } from '../lib/meta'
 
 function TopNav() {
   const { user, signOut } = useAuth()
@@ -94,15 +95,19 @@ export default function Dashboard() {
       body: JSON.stringify({ sessionId }),
     })
       .then((r) => r.json())
-      .then(({ amount_total, currency }) => {
-        if (typeof window.fbq === 'function') {
-          const value = amount_total != null ? amount_total / 100 : undefined
-          window.fbq('track', 'Purchase', {
+      .then(async ({ amount_total, currency, email }) => {
+        const value = amount_total != null ? amount_total / 100 : undefined
+        if (email) await initPixelWithUser({ email })
+        trackPixelEvent(
+          'Purchase',
+          {
             currency: (currency || 'USD').toUpperCase(),
             ...(value != null && { value }),
             content_type: 'product',
-          })
-        }
+            content_ids: [sessionId],
+          },
+          sessionId // event_id — matches the webhook CAPI call
+        )
       })
       .catch(() => {})
   }, [])

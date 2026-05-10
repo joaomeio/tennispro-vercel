@@ -2,6 +2,7 @@ import { useEffect, useState } from 'react'
 import { useNavigate } from 'react-router-dom'
 import { Eye, EyeOff, Loader2, Mail, CheckCircle2, AlertCircle } from 'lucide-react'
 import { supabase } from '../lib/supabase'
+import { initPixelWithUser, trackPixelEvent, getFbp, getFbc } from '../lib/meta'
 
 function Logo() {
   return (
@@ -405,14 +406,20 @@ export default function Welcome() {
       .then(({ error, email, isNew, amount_total, currency }) => {
         if (error) { setProvisionError(error); setProvisioning(false); return }
 
-        if (typeof window.fbq === 'function') {
-          const value = amount_total != null ? amount_total / 100 : undefined
-          window.fbq('track', 'Purchase', {
+        // Re-init pixel with advanced matching now that we know the buyer's email,
+        // then fire Purchase using the Stripe session ID as the deduplication key.
+        const value = amount_total != null ? amount_total / 100 : undefined
+        if (email) await initPixelWithUser({ email })
+        trackPixelEvent(
+          'Purchase',
+          {
             currency: (currency || 'USD').toUpperCase(),
             ...(value != null && { value }),
             content_type: 'product',
-          })
-        }
+            content_ids: [sessionId],
+          },
+          sessionId // event_id — matches the webhook CAPI call
+        )
 
         if (isNew) {
           // New user — show Create Account page directly with email pre-filled
