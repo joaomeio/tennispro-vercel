@@ -10,6 +10,7 @@ const [
   { default: provisionAccess },
   { default: activateAccount },
   { default: stripeWebhook },
+  { default: stripeRecoveryWebhook },
   { default: sendEmail },
   { default: adminStats },
   { default: inboundEmail },
@@ -20,6 +21,7 @@ const [
   import('./api/provision-access.js'),
   import('./api/activate-account.js'),
   import('./api/stripe-webhook.js'),
+  import('./api/stripe-recovery-webhook.js'),
   import('./api/send-email.js'),
   import('./api/admin-stats.js'),
   import('./api/inbound-email.js'),
@@ -29,9 +31,10 @@ const [
 
 const app = express()
 
-// Stripe webhook must be registered BEFORE the JSON body parser — its handler
-// reads the raw request stream itself to verify the Stripe signature.
+// Stripe webhooks must be registered BEFORE the JSON body parser — handlers
+// read the raw request stream themselves to verify Stripe signatures.
 app.post('/api/stripe-webhook', (req, res) => stripeWebhook(req, res))
+app.post('/api/stripe-recovery-webhook', (req, res) => stripeRecoveryWebhook(req, res))
 
 app.use(express.json())
 app.use(express.urlencoded({ extended: true }))

@@ -33,6 +33,9 @@ export default async function handler(req, res) {
         : `${siteUrl}/welcome?session_id={CHECKOUT_SESSION_ID}`,
       cancel_url: `${siteUrl}/`,
       allow_promotion_codes: true,
+      after_expiration: {
+        recovery: { enabled: true, allow_promotion_codes: true },
+      },
     }
 
     // For addon purchases, look up the existing Stripe customer to pre-fill
