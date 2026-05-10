@@ -403,7 +403,7 @@ export default function Welcome() {
       body: JSON.stringify({ sessionId }),
     })
       .then((r) => r.json())
-      .then(({ error, email, isNew, amount_total, currency }) => {
+      .then(async ({ error, email, isNew, amount_total, currency }) => {
         if (error) { setProvisionError(error); setProvisioning(false); return }
 
         // Re-init pixel with advanced matching now that we know the buyer's email,
