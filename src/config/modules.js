@@ -1,3 +1,5 @@
+import { EN_PRICE_IDS } from './checkout'
+
 // ─────────────────────────────────────────────────────────────────────────────
 // MODULE REGISTRY
 //
@@ -62,7 +64,7 @@ export const MODULES = [
     includedInAnyPurchase: false,
     isAddon: true,
     price: 9,
-    priceId: 'price_1T1sCECz3W9JpqrlOgQRiPot',
+    priceId: EN_PRICE_IDS.ADDON_LESSON_TEMPLATES,
     paywallBenefits: [
       'Ready-to-use lesson plans for 30, 45, 60, and 90-minute sessions',
       'Structured for beginner, intermediate, and advanced players',
@@ -85,8 +87,8 @@ export const MODULES = [
     color: 'from-teal-950 to-teal-900',
     includedInAnyPurchase: false,
     isAddon: true,
-    price: 17,
-    priceId: 'price_1TPlP6EFtoy3ZjcS8uH4dKg7',
+    price: 9,
+    priceId: EN_PRICE_IDS.ADDON_GYM,
     paywallBenefits: [
       '5 complete gym programs built around tennis performance',
       'Strength, agility, explosiveness & injury prevention',
@@ -107,8 +109,8 @@ export const MODULES = [
     color: 'from-rose-950 to-rose-900',
     includedInAnyPurchase: false,
     isAddon: true,
-    price: 17,
-    priceId: 'price_1TPlPFEFtoy3ZjcSQxuxPygO',
+    price: 9,
+    priceId: EN_PRICE_IDS.ADDON_SERVE,
     paywallBenefits: [
       'Full mechanics breakdown: flat, slice, and kick serves',
       'Spin and placement strategy for every court position',
@@ -129,8 +131,8 @@ export const MODULES = [
     color: 'from-indigo-950 to-indigo-900',
     includedInAnyPurchase: false,
     isAddon: true,
-    price: 17,
-    priceId: 'price_1TPlPNEFtoy3ZjcSaIG4dIGp',
+    price: 9,
+    priceId: EN_PRICE_IDS.ADDON_DOUBLES,
     paywallBenefits: [
       '40+ tactical patterns for competitive doubles play',
       'I-formation, Australian, and hybrid systems explained',

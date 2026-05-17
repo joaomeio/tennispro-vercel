@@ -1,65 +1,24 @@
 import { useEffect, useState } from 'react'
-import { X, Check, Lock, Zap, ShieldCheck } from 'lucide-react'
+import { X, Check, Lock, Zap, ShieldCheck, Loader2 } from 'lucide-react'
 import { createCheckoutSession } from '../config/checkout'
 import { useAuth } from '../context/AuthContext'
 
 const MODULE_VISUALS = {
-  'lesson-templates': {
-    gradient: 'from-blue-950 via-blue-900 to-blue-800',
-    accent: 'text-blue-400',
-    accentBg: 'bg-blue-500',
-    accentBorder: 'border-blue-500',
-    accentLight: 'bg-blue-50 text-blue-800',
-    ctaColor: 'bg-blue-600 hover:bg-blue-500',
-    icon: '📋',
-  },
-  'gym-training': {
-    gradient: 'from-teal-950 via-teal-900 to-teal-800',
-    accent: 'text-teal-400',
-    accentBg: 'bg-teal-500',
-    accentBorder: 'border-teal-500',
-    accentLight: 'bg-teal-50 text-teal-800',
-    ctaColor: 'bg-teal-600 hover:bg-teal-500',
-    icon: '🏋️',
-  },
-  'serve-masterclass': {
-    gradient: 'from-rose-950 via-rose-900 to-rose-800',
-    accent: 'text-rose-400',
-    accentBg: 'bg-rose-500',
-    accentBorder: 'border-rose-500',
-    accentLight: 'bg-rose-50 text-rose-800',
-    ctaColor: 'bg-rose-600 hover:bg-rose-500',
-    icon: '🎾',
-  },
-  'doubles-tactics': {
-    gradient: 'from-indigo-950 via-indigo-900 to-indigo-800',
-    accent: 'text-indigo-400',
-    accentBg: 'bg-indigo-500',
-    accentBorder: 'border-indigo-500',
-    accentLight: 'bg-indigo-50 text-indigo-800',
-    ctaColor: 'bg-indigo-600 hover:bg-indigo-500',
-    icon: '🏆',
-  },
+  'lesson-templates': { color: '#2563eb', icon: '📋' },
+  'gym-training':     { color: '#0d9488', icon: '🏋️' },
+  'serve-masterclass':{ color: '#e11d48', icon: '🎾' },
+  'doubles-tactics':  { color: '#4f46e5', icon: '🏆' },
 }
 
-const DEFAULT_VISUAL = {
-  gradient: 'from-gray-900 via-gray-800 to-gray-700',
-  accent: 'text-green-400',
-  accentBg: 'bg-green-500',
-  accentBorder: 'border-green-500',
-  accentLight: 'bg-green-50 text-green-800',
-  ctaColor: 'bg-green-600 hover:bg-green-500',
-  icon: '📚',
-}
+const DEFAULT_VISUAL = { color: '#22c55e', icon: '📚' }
 
 export default function AddonPaywallModal({ module, onClose }) {
   const { user } = useAuth()
   const [loading, setLoading] = useState(false)
   const [error, setError] = useState(null)
 
-  const visual = MODULE_VISUALS[module?.id] || DEFAULT_VISUAL
-  const price = module?.price ?? 17
-  const originalPrice = price * 2 + 12
+  const visual = MODULE_VISUALS[module?.id] ?? DEFAULT_VISUAL
+  const price = module?.price ?? 9
 
   useEffect(() => {
     const handleKey = (e) => { if (e.key === 'Escape') onClose() }
@@ -78,7 +37,7 @@ export default function AddonPaywallModal({ module, onClose }) {
     setLoading(true)
     setError(null)
     try {
-      await createCheckoutSession(module.priceId, false, true, user?.email ?? null)
+      await createCheckoutSession(module.priceId, [], true, user?.email ?? null)
     } catch (err) {
       setError(err.message || 'Something went wrong. Please try again.')
       setLoading(false)
@@ -88,121 +47,141 @@ export default function AddonPaywallModal({ module, onClose }) {
   if (!module) return null
 
   return (
-    <div
-      className="fixed inset-0 z-50 flex items-center justify-center p-4"
-      onClick={(e) => { if (e.target === e.currentTarget) onClose() }}
-    >
-      {/* Backdrop */}
-      <div className="absolute inset-0 bg-black/80 backdrop-blur-sm" />
+    <div className="fixed inset-0 z-50 flex items-end sm:items-center justify-center p-0 sm:p-4">
+      {/* Backdrop — click closes */}
+      <div
+        className="absolute inset-0 bg-black/70 backdrop-blur-sm"
+        onClick={onClose}
+      />
 
       {/* Modal */}
-      <div className="relative w-full max-w-lg bg-white rounded-2xl overflow-hidden shadow-2xl shadow-black/60">
+      <div className="relative w-full sm:max-w-md bg-gray-900 sm:rounded-2xl rounded-t-2xl shadow-2xl overflow-hidden border border-gray-800 flex flex-col"
+        style={{ maxHeight: 'min(92vh, 640px)' }}
+      >
         {/* Header */}
-        <div className={`bg-gradient-to-br ${visual.gradient} px-6 pt-6 pb-8 relative overflow-hidden`}>
-          {/* Background pattern */}
-          <div className="absolute inset-0 opacity-10">
-            <svg viewBox="0 0 400 200" className="w-full h-full" preserveAspectRatio="xMidYMid slice">
-              <circle cx="350" cy="50" r="120" fill="white" />
-              <circle cx="50" cy="180" r="80" fill="white" />
-            </svg>
-          </div>
+        <div
+          className="px-6 pt-6 pb-7 relative overflow-hidden shrink-0"
+          style={{ background: `linear-gradient(135deg, ${visual.color}22 0%, ${visual.color}08 100%)` }}
+        >
+          {/* Accent top border */}
+          <div className="absolute top-0 left-0 right-0 h-0.5" style={{ background: visual.color }} />
 
           <button
             onClick={onClose}
-            className="absolute top-4 right-4 w-8 h-8 rounded-full bg-white/10 hover:bg-white/20 flex items-center justify-center transition-colors"
+            className="absolute top-4 right-4 w-8 h-8 rounded-full bg-gray-800 hover:bg-gray-700 flex items-center justify-center transition-colors border border-gray-700"
           >
-            <X className="w-4 h-4 text-white" />
+            <X className="w-4 h-4 text-gray-400" />
           </button>
 
-          <div className="relative">
-            <div className="flex items-center gap-2 mb-3">
-              <span className="bg-white/20 text-white text-[9px] font-black px-2 py-0.5 rounded tracking-widest uppercase">Add-on Module</span>
-              <span className={`${visual.accentBg} text-white text-[9px] font-black px-2 py-0.5 rounded tracking-widest uppercase`}>
-                {module.badge}
-              </span>
+          <div className="flex items-start gap-4 pr-10">
+            <div
+              className="w-12 h-12 rounded-xl flex items-center justify-center text-2xl shrink-0"
+              style={{ background: `${visual.color}20` }}
+            >
+              {visual.icon}
             </div>
-
-            <div className="text-4xl mb-3">{visual.icon}</div>
-
-            <h2 className="text-white text-2xl font-extrabold leading-tight mb-2">
-              {module.title}
-            </h2>
-            <p className="text-white/70 text-sm leading-relaxed">
-              {module.description}
-            </p>
+            <div>
+              <div className="flex items-center gap-2 mb-1.5">
+                <span
+                  className="text-[10px] font-extrabold px-2 py-0.5 rounded-full uppercase tracking-widest"
+                  style={{ background: `${visual.color}25`, color: visual.color }}
+                >
+                  Add-on
+                </span>
+                {module.badge && (
+                  <span className="text-[10px] font-bold px-2 py-0.5 rounded-full bg-gray-800 text-gray-400 uppercase tracking-wide border border-gray-700">
+                    {module.badge}
+                  </span>
+                )}
+              </div>
+              <h2 className="text-white text-lg font-extrabold leading-tight">
+                {module.title}
+              </h2>
+              <p className="text-gray-400 text-xs leading-relaxed mt-1">
+                {module.description}
+              </p>
+            </div>
           </div>
         </div>
 
-        {/* Body */}
-        <div className="px-6 py-5">
+        {/* Body — scrollable */}
+        <div className="flex-1 min-h-0 overflow-y-auto px-6 py-5 flex flex-col gap-5">
           {/* Benefits */}
-          <div className="mb-5">
-            <p className="text-xs font-black text-slate-400 uppercase tracking-widest mb-3">What's inside</p>
-            <ul className="space-y-2.5">
-              {(module.paywallBenefits || []).map((benefit, i) => (
-                <li key={i} className="flex items-start gap-3">
-                  <div className={`w-5 h-5 rounded-full ${visual.accentBg} flex items-center justify-center shrink-0 mt-0.5`}>
-                    <Check className="w-3 h-3 text-white" strokeWidth={3} />
-                  </div>
-                  <p className="text-sm text-slate-700 leading-snug">{benefit}</p>
-                </li>
-              ))}
-            </ul>
-          </div>
-
-          {/* Price + CTA */}
-          <div className={`bg-slate-50 rounded-xl p-4 border ${visual.accentBorder} border-opacity-30 mb-4`}>
-            <div className="flex items-center justify-between gap-4 mb-3">
-              <div>
-                <div className="flex items-baseline gap-2">
-                  <span className="text-3xl font-extrabold text-slate-900">${price}</span>
-                  <span className="text-sm font-semibold text-slate-400 line-through">${originalPrice}</span>
-                </div>
-                <p className="text-xs text-slate-500 mt-0.5">One-time payment · Instant access</p>
-              </div>
-              <div className={`${visual.accentLight} px-3 py-1.5 rounded-lg text-center`}>
-                <p className="text-xs font-black uppercase tracking-wide">Save</p>
-                <p className="text-lg font-extrabold">{Math.round((1 - price / originalPrice) * 100)}%</p>
-              </div>
+          {(module.paywallBenefits || []).length > 0 && (
+            <div>
+              <p className="text-[10px] font-extrabold text-gray-500 uppercase tracking-widest mb-3">
+                What's inside
+              </p>
+              <ul className="space-y-2.5">
+                {module.paywallBenefits.map((benefit, i) => (
+                  <li key={i} className="flex items-start gap-3">
+                    <div
+                      className="w-5 h-5 rounded-full flex items-center justify-center shrink-0 mt-0.5"
+                      style={{ background: `${visual.color}20` }}
+                    >
+                      <Check className="w-3 h-3" style={{ color: visual.color }} strokeWidth={3} />
+                    </div>
+                    <p className="text-sm text-gray-300 leading-snug">{benefit}</p>
+                  </li>
+                ))}
+              </ul>
             </div>
+          )}
+        </div>
 
-            {error && (
-              <p className="text-xs text-red-600 mb-3 bg-red-50 rounded-lg px-3 py-2">{error}</p>
-            )}
-
-            {isPlaceholder ? (
-              <div className="w-full bg-slate-200 text-slate-500 font-bold py-3.5 rounded-xl text-sm flex items-center justify-center gap-2 cursor-not-allowed">
-                <Lock className="w-4 h-4" />
-                Coming Soon — Price not yet configured
+        {/* Footer — price + CTA */}
+        <div className="shrink-0 px-6 pb-6 pt-4 border-t border-gray-800 flex flex-col gap-3">
+          <div className="flex items-center justify-between">
+            <div>
+              <div className="flex items-baseline gap-2">
+                <span className="text-3xl font-extrabold text-white">${price}</span>
+                <span className="text-sm font-semibold text-gray-500 line-through">$27</span>
               </div>
-            ) : (
-              <button
-                onClick={handleUnlock}
-                disabled={loading}
-                className={`w-full ${visual.ctaColor} text-white font-extrabold py-3.5 rounded-xl transition-all text-sm flex items-center justify-center gap-2 disabled:opacity-60 disabled:cursor-not-allowed shadow-lg`}
-              >
-                {loading ? (
-                  <>
-                    <div className="w-4 h-4 border-2 border-white/30 border-t-white rounded-full animate-spin" />
-                    Processing…
-                  </>
-                ) : (
-                  <>
-                    <Zap className="w-4 h-4" />
-                    Unlock {module.title} — ${price}
-                  </>
-                )}
-              </button>
-            )}
+              <p className="text-xs text-gray-500 mt-0.5">One-time · Instant access</p>
+            </div>
+            <div
+              className="text-xs font-extrabold px-3 py-1.5 rounded-lg uppercase tracking-wide"
+              style={{ background: `${visual.color}20`, color: visual.color }}
+            >
+              Save {Math.round((1 - price / 27) * 100)}%
+            </div>
           </div>
 
-          {/* Trust signals */}
-          <div className="flex items-center justify-center gap-4 text-xs text-slate-400">
+          {error && (
+            <p className="text-xs text-red-400 bg-red-950/40 border border-red-900 rounded-lg px-3 py-2">
+              {error}
+            </p>
+          )}
+
+          {isPlaceholder ? (
+            <div className="w-full bg-gray-800 text-gray-500 font-bold py-3.5 rounded-xl text-sm flex items-center justify-center gap-2 cursor-not-allowed border border-gray-700">
+              <Lock className="w-4 h-4" />
+              Coming Soon
+            </div>
+          ) : (
+            <button
+              onClick={handleUnlock}
+              disabled={loading}
+              className="w-full text-white font-extrabold py-3.5 rounded-xl transition-all text-sm flex items-center justify-center gap-2 disabled:opacity-60 disabled:cursor-not-allowed"
+              style={{
+                background: loading ? `${visual.color}80` : visual.color,
+                boxShadow: `0 4px 20px ${visual.color}40`,
+              }}
+            >
+              {loading ? (
+                <><Loader2 className="w-4 h-4 animate-spin" /> Processing…</>
+              ) : (
+                <><Zap className="w-4 h-4" /> Unlock {module.title} — ${price}</>
+              )}
+            </button>
+          )}
+
+          <div className="flex items-center justify-center gap-4 text-xs text-gray-600">
             <div className="flex items-center gap-1.5">
               <ShieldCheck className="w-3.5 h-3.5" />
-              <span>30-day money-back guarantee</span>
+              <span>7-day money-back guarantee</span>
             </div>
-            <div className="w-1 h-1 rounded-full bg-slate-300" />
+            <div className="w-1 h-1 rounded-full bg-gray-700" />
             <div className="flex items-center gap-1.5">
               <Lock className="w-3.5 h-3.5" />
               <span>Secure checkout</span>
