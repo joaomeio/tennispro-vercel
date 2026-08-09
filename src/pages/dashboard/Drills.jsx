@@ -1,7 +1,11 @@
 import { useEffect, useRef, useState } from 'react'
-import { useNavigate } from 'react-router-dom'
-import { Search, X, Loader2, AlertCircle, ChevronRight, Clock, Users, ChevronLeft } from 'lucide-react'
+import { useNavigate, useSearchParams } from 'react-router-dom'
+import {
+  Search, X, Loader2, AlertCircle, ChevronRight, Clock, Users, ChevronLeft,
+  MapPin, Target, AlertTriangle, Shuffle, Quote, ListOrdered,
+} from 'lucide-react'
 import { supabase } from '../../lib/supabase'
+import { getDrillCategory, matchesFilter } from '../../config/catalog'
 import CourtDiagram, { CourtLegend } from '../../components/CourtDiagram'
 
 const LEVEL_STYLES = {
@@ -25,42 +29,154 @@ const TYPE_ORDER = ['groundstrokes','serve','volley','return','footwork','fitnes
 
 // ── Drill detail modal ──────────────────────────────────────────────────────
 
+// A drill is read on a phone, on court, mid-lesson. So the order below follows
+// the order a coach needs it: where everyone stands, what to run, what to say,
+// what to watch for, and only then how to progress it.
+
+function Section({ icon: Icon, title, accent = 'text-green-500', children }) {
+  return (
+    <section className="px-5 py-5 border-t border-gray-800 first:border-t-0">
+      <h3 className="flex items-center gap-2 text-[11px] font-bold uppercase tracking-widest text-gray-500 mb-3">
+        <Icon className={`w-3.5 h-3.5 ${accent}`} />
+        {title}
+      </h3>
+      {children}
+    </section>
+  )
+}
+
+// Numbered steps: the numeral is the anchor a coach uses to find their place
+// again after looking up at the court.
+function Steps({ items }) {
+  return (
+    <ol className="space-y-3">
+      {items.map((step, i) => (
+        <li key={i} className="flex gap-3">
+          <span className="shrink-0 w-6 h-6 rounded-full bg-green-500/15 text-green-400 text-xs font-bold flex items-center justify-center mt-px">
+            {i + 1}
+          </span>
+          <p className="text-gray-300 text-sm leading-relaxed">{step}</p>
+        </li>
+      ))}
+    </ol>
+  )
+}
+
+// Cues are the words a coach says out loud, so they're set as quotes.
+function Cues({ items }) {
+  return (
+    <ul className="space-y-2.5">
+      {items.map((cue, i) => (
+        <li
+          key={i}
+          className="border-l-2 border-green-500/40 pl-3 text-gray-300 text-sm leading-relaxed italic"
+        >
+          {cue}
+        </li>
+      ))}
+    </ul>
+  )
+}
+
+function Bullets({ items, dot }) {
+  return (
+    <ul className="space-y-2.5">
+      {items.map((item, i) => (
+        <li key={i} className="flex gap-2.5">
+          <span className={`shrink-0 w-1.5 h-1.5 rounded-full mt-1.5 ${dot}`} />
+          <p className="text-gray-300 text-sm leading-relaxed">{item}</p>
+        </li>
+      ))}
+    </ul>
+  )
+}
+
 function DrillModal({ drill, onClose }) {
+  // Escape to close, and lock the page behind the sheet so the drill scrolls
+  // instead of the library underneath it.
+  useEffect(() => {
+    function onKey(e) {
+      if (e.key === 'Escape') onClose()
+    }
+    const previous = document.body.style.overflow
+    document.body.style.overflow = 'hidden'
+    document.addEventListener('keydown', onKey)
+    return () => {
+      document.body.style.overflow = previous
+      document.removeEventListener('keydown', onKey)
+    }
+  }, [onClose])
+
   if (!drill) return null
+
+  const has = (arr) => Array.isArray(arr) && arr.length > 0
+
   return (
     <div
       className="fixed inset-0 z-50 flex items-end sm:items-center justify-center p-0 sm:p-4"
       onClick={onClose}
+      role="dialog"
+      aria-modal="true"
+      aria-label={drill.name}
     >
-      <div className="absolute inset-0 bg-black/75" />
+      <div className="absolute inset-0 bg-black/80 backdrop-blur-sm" />
+
       <div
-        className="relative z-10 bg-gray-900 rounded-t-2xl sm:rounded-2xl w-full sm:max-w-lg overflow-hidden shadow-2xl"
+        className="relative z-10 bg-gray-900 rounded-t-2xl sm:rounded-2xl w-full sm:max-w-2xl max-h-[92vh] sm:max-h-[88vh] flex flex-col overflow-hidden shadow-2xl animate-zoom-in"
         onClick={(e) => e.stopPropagation()}
       >
-        {/* Court diagram */}
-        <div className="h-64 sm:h-80 bg-gray-800">
-          <CourtDiagram type={drill.diagram_type} diagramData={drill.diagram_data} />
-        </div>
-
-        <div className="p-0 sm:p-2 bg-gray-950">
-          <CourtLegend />
-        </div>
-
-        <div className="p-5">
-          {/* Level + type */}
-          <div className="flex items-center gap-2 mb-2">
-            <span className={`text-[10px] font-bold px-2 py-0.5 rounded-full capitalize ${LEVEL_STYLES[drill.level] ?? 'bg-gray-700 text-gray-300'}`}>
-              {drill.level}
-            </span>
-            <span className="text-[10px] bg-gray-800 text-gray-400 font-semibold px-2 py-0.5 rounded-full capitalize">
-              {drill.type}
-            </span>
+        {/* Sticky header — the drill name stays visible while the body scrolls */}
+        <header className="shrink-0 flex items-start gap-3 px-5 py-4 border-b border-gray-800 bg-gray-900/95 backdrop-blur">
+          <div className="min-w-0 flex-1">
+            <div className="flex items-center gap-2 mb-1.5">
+              <span
+                className={`text-[10px] font-bold px-2 py-0.5 rounded-full capitalize ${
+                  LEVEL_STYLES[drill.level] ?? 'bg-gray-700 text-gray-300'
+                }`}
+              >
+                {drill.level}
+              </span>
+              <span className="text-[10px] bg-gray-800 text-gray-400 font-semibold px-2 py-0.5 rounded-full">
+                {TYPE_LABELS[drill.type] ?? drill.type}
+              </span>
+              {drill.subcategory && (
+                <span className="text-[10px] text-gray-500 font-medium hidden sm:inline">
+                  {drill.subcategory}
+                </span>
+              )}
+            </div>
+            <h2 className="text-base sm:text-lg font-extrabold text-white leading-snug">
+              {drill.name}
+            </h2>
           </div>
 
-          <h2 className="text-lg font-extrabold text-white mb-2">{drill.name}</h2>
-          <p className="text-gray-400 text-sm leading-relaxed mb-4">{drill.description}</p>
+          <button
+            onClick={onClose}
+            aria-label="Close drill"
+            className="shrink-0 w-8 h-8 rounded-full bg-gray-800 flex items-center justify-center text-gray-400 hover:bg-gray-700 hover:text-white transition-colors"
+          >
+            <X className="w-4 h-4" />
+          </button>
+        </header>
 
-          <div className="flex gap-4 text-sm text-gray-500">
+        <div className="overflow-y-auto overscroll-contain">
+          {/* Court diagram. The SVG is viewBox="0 0 400 920" — a real court seen
+              from above is roughly 1:2.3 — so the box is pinned to that ratio.
+              Left full-width it letterboxes, showing a small court stranded in a
+              wide green slab. */}
+          <div className="bg-gray-950 flex justify-center pt-5 pb-4">
+            <div className="h-[290px] sm:h-[360px] aspect-[400/920] rounded-xl overflow-hidden border border-emerald-500/10 shadow-lg">
+              <CourtDiagram type={drill.diagram_type} diagramData={drill.diagram_data} />
+            </div>
+          </div>
+          <div className="px-5 pb-5 bg-gray-950">
+            <div className="rounded-xl overflow-hidden">
+              <CourtLegend />
+            </div>
+          </div>
+
+          {/* At-a-glance meta */}
+          <div className="flex flex-wrap gap-x-5 gap-y-2 px-5 py-4 border-b border-gray-800 text-sm text-gray-400">
             <span className="flex items-center gap-1.5">
               <Clock className="w-3.5 h-3.5 text-green-500" />
               {drill.duration_min ?? 10} min
@@ -69,15 +185,67 @@ function DrillModal({ drill, onClose }) {
               <Users className="w-3.5 h-3.5 text-green-500" />
               <span className="capitalize">{drill.group_size}</span>
             </span>
+            {drill.category && (
+              <span className="flex items-center gap-1.5">
+                <Target className="w-3.5 h-3.5 text-green-500" />
+                {drill.category}
+              </span>
+            )}
           </div>
-        </div>
 
-        <button
-          onClick={onClose}
-          className="absolute top-3 right-3 w-8 h-8 rounded-full bg-black/40 flex items-center justify-center text-white hover:bg-black/60 transition-colors"
-        >
-          <X className="w-4 h-4" />
-        </button>
+          {/* Why run it. Falls back to `description` for rows seeded before the
+              objective column existed. */}
+          {(drill.objective || drill.description) && (
+            <Section icon={Target} title="Objective">
+              <p className="text-gray-300 text-sm leading-relaxed">
+                {drill.objective || drill.description}
+              </p>
+            </Section>
+          )}
+
+          {drill.setup && (
+            <Section icon={MapPin} title="Setup">
+              <p className="text-gray-300 text-sm leading-relaxed">{drill.setup}</p>
+            </Section>
+          )}
+
+          {has(drill.instructions) && (
+            <Section icon={ListOrdered} title="How to run it">
+              <Steps items={drill.instructions} />
+            </Section>
+          )}
+
+          {has(drill.coaching_cues) && (
+            <Section icon={Quote} title="Coaching cues">
+              <Cues items={drill.coaching_cues} />
+            </Section>
+          )}
+
+          {has(drill.common_errors) && (
+            <Section icon={AlertTriangle} title="Watch for" accent="text-amber-500">
+              <Bullets items={drill.common_errors} dot="bg-amber-500/70" />
+            </Section>
+          )}
+
+          {has(drill.variations) && (
+            <Section icon={Shuffle} title="Variations" accent="text-blue-400">
+              <Bullets items={drill.variations} dot="bg-blue-400/70" />
+            </Section>
+          )}
+
+          {has(drill.tags) && (
+            <div className="px-5 py-5 border-t border-gray-800 flex flex-wrap gap-1.5">
+              {drill.tags.map((tag) => (
+                <span
+                  key={tag}
+                  className="text-[10px] text-gray-500 bg-gray-800/70 px-2 py-1 rounded-full"
+                >
+                  {tag}
+                </span>
+              ))}
+            </div>
+          )}
+        </div>
       </div>
     </div>
   )
@@ -175,6 +343,7 @@ export default function Drills() {
   const [error, setError]     = useState('')
   const [search, setSearch]   = useState('')
   const [selected, setSelected] = useState(null)
+  const [searchParams, setSearchParams] = useSearchParams()
 
   useEffect(() => {
     async function fetchDrills() {
@@ -190,13 +359,19 @@ export default function Drills() {
     fetchDrills()
   }, [])
 
+  // A `?c=` param scopes the library to one dashboard card's slice, e.g.
+  // /dashboard/drills?c=forehand
+  const category = getDrillCategory(searchParams.get('c'))
+
+  const scoped = category ? drills.filter((d) => matchesFilter(d, category.filter)) : drills
+
   const filtered = search
-    ? drills.filter(
+    ? scoped.filter(
         (d) =>
           d.name.toLowerCase().includes(search.toLowerCase()) ||
           d.description?.toLowerCase().includes(search.toLowerCase()),
       )
-    : drills
+    : scoped
 
   // Group by type preserving category order
   const grouped = TYPE_ORDER.reduce((acc, type) => {
@@ -206,6 +381,19 @@ export default function Drills() {
   }, {})
 
   const featured = drills.find((d) => d.type === 'groundstrokes' && d.level === 'advanced') ?? drills[0]
+
+  function clearCategory() {
+    const next = new URLSearchParams(searchParams)
+    next.delete('c')
+    setSearchParams(next, { replace: true })
+  }
+
+  // Forehand/Backhand/Slice filter on `subcategory`, which only exists once
+  // scripts/002_drill_content.sql has been run and the drills re-pushed. Say so
+  // explicitly rather than showing a bare "no results".
+  const needsSubcategory = Boolean(category?.filter?.subcategory)
+  const subcategoryMissing =
+    needsSubcategory && drills.length > 0 && drills.every((d) => d.subcategory == null)
 
   return (
     <div className="min-h-full bg-gray-950 pt-14">
@@ -232,6 +420,17 @@ export default function Drills() {
             </button>
           )}
         </div>
+
+        {/* Active category, arrived at from a dashboard card */}
+        {category && (
+          <button
+            onClick={clearCategory}
+            className="ml-auto shrink-0 flex items-center gap-1.5 bg-green-500/15 text-green-300 text-xs font-semibold pl-3 pr-2 py-1.5 rounded-full hover:bg-green-500/25 transition-colors"
+          >
+            {category.title}
+            <X className="w-3.5 h-3.5" />
+          </button>
+        )}
       </div>
 
       {/* States */}
@@ -250,15 +449,48 @@ export default function Drills() {
 
       {!loading && !error && (
         <>
-          {/* Hero — only when not searching */}
-          {!search && <HeroDrill drill={featured} onClick={setSelected} />}
+          {/* Hero — full library only; a scoped category is its own context */}
+          {!search && !category && <HeroDrill drill={featured} onClick={setSelected} />}
+
+          {category && (
+            <div className="px-4 sm:px-6 pt-5 pb-1">
+              <h1 className="text-white font-extrabold text-xl sm:text-2xl">{category.title}</h1>
+              <p className="text-gray-500 text-xs mt-1">
+                {filtered.length} {filtered.length === 1 ? 'drill' : 'drills'}
+              </p>
+            </div>
+          )}
 
           {Object.keys(grouped).length === 0 ? (
-            <div className="text-center py-24">
-              <p className="text-gray-500 font-medium">No drills match your search.</p>
-              <button onClick={() => setSearch('')} className="mt-3 text-sm text-green-400 hover:underline">
-                Clear search
-              </button>
+            <div className="text-center py-24 px-6">
+              {subcategoryMissing ? (
+                <>
+                  <p className="text-gray-400 font-medium">
+                    This category needs the drill content migration.
+                  </p>
+                  <p className="text-gray-600 text-sm mt-2 max-w-md mx-auto leading-relaxed">
+                    {category.title} filters on each drill’s subcategory, which is
+                    populated by <code className="text-gray-500">scripts/002_drill_content.sql</code>{' '}
+                    and a re-push. Categories that filter on type alone work now.
+                  </p>
+                </>
+              ) : (
+                <p className="text-gray-500 font-medium">
+                  {search ? 'No drills match your search.' : 'No drills in this category yet.'}
+                </p>
+              )}
+              <div className="mt-4 flex items-center justify-center gap-4">
+                {search && (
+                  <button onClick={() => setSearch('')} className="text-sm text-green-400 hover:underline">
+                    Clear search
+                  </button>
+                )}
+                {category && (
+                  <button onClick={clearCategory} className="text-sm text-green-400 hover:underline">
+                    Show all drills
+                  </button>
+                )}
+              </div>
             </div>
           ) : (
             <div className="pt-2 pb-6">
