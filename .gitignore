@@ -3,3 +3,8 @@ dist/
 .env.local
 .vercel
 .env*.local
+.DS_Store
+
+# Full-resolution generated artwork, kept locally so optimisation can be re-run
+# from source. The optimised versions in public/cards/ are the ones that ship.
+public/cards/_original/
