@@ -155,13 +155,27 @@ function loadEnv() {
 }
 
 const env = { ...loadEnv(), ...process.env }
-if (!env.SUPABASE_URL || !env.SUPABASE_SERVICE_ROLE_KEY) {
-  console.error('\nMissing SUPABASE_URL or SUPABASE_SERVICE_ROLE_KEY in .env.local')
+
+// Supabase renamed its API keys: the legacy `service_role` JWT is now the
+// "secret key" (sb_secret_…). Accept either name so both eras work.
+const SERVICE_KEY = env.SUPABASE_SECRET_KEY || env.SUPABASE_SERVICE_ROLE_KEY
+
+if (!env.SUPABASE_URL || !SERVICE_KEY) {
+  console.error('\nMissing credentials in .env.local. Needed:')
+  console.error('  SUPABASE_URL')
+  console.error('  SUPABASE_SECRET_KEY   (or legacy SUPABASE_SERVICE_ROLE_KEY)')
+  process.exit(1)
+}
+
+// Writing to drills requires the secret key — the publishable key is subject to
+// RLS and the read-only policy, so it would fail on insert.
+if (/^sb_publishable_/.test(SERVICE_KEY)) {
+  console.error('\nThat is the publishable key, which cannot write. Use the secret key (sb_secret_…).')
   process.exit(1)
 }
 
 const { createClient } = await import('@supabase/supabase-js')
-const supabase = createClient(env.SUPABASE_URL, env.SUPABASE_SERVICE_ROLE_KEY, {
+const supabase = createClient(env.SUPABASE_URL, SERVICE_KEY, {
   auth: { persistSession: false },
 })
 
