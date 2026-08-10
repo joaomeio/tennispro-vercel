@@ -25,6 +25,7 @@
 export const DRILL_CATEGORIES = [
   {
     key: 'forehand',
+    groupBy: null,               // single subcategory — a flat grid reads better
     title: 'Forehand',
     count: 27,
     filter: { type: 'groundstrokes', subcategory: 'Forehand' },
@@ -33,6 +34,7 @@ export const DRILL_CATEGORIES = [
   },
   {
     key: 'backhand',
+    groupBy: null,
     title: 'Backhand',
     count: 14,
     filter: { type: 'groundstrokes', subcategory: 'Backhand' },
@@ -42,6 +44,7 @@ export const DRILL_CATEGORIES = [
   },
   {
     key: 'slice',
+    groupBy: null,
     title: 'Slice',
     count: 9,
     filter: { type: 'groundstrokes', subcategory: 'Slice' },
@@ -50,6 +53,7 @@ export const DRILL_CATEGORIES = [
   },
   {
     key: 'serve',
+    groupBy: 'subcategory',      // Flat / Kick / Slice
     title: 'Serve',
     count: 40,
     filter: { type: 'serve' },
@@ -58,6 +62,7 @@ export const DRILL_CATEGORIES = [
   },
   {
     key: 'return',
+    groupBy: 'subcategory',
     title: 'Return',
     count: 35,
     filter: { type: 'return' },
@@ -66,6 +71,7 @@ export const DRILL_CATEGORIES = [
   },
   {
     key: 'volley',
+    groupBy: 'subcategory',      // Forehand / Backhand / Overhead / Half volley
     title: 'Volley',
     count: 30,
     filter: { type: 'volley' },
@@ -74,6 +80,9 @@ export const DRILL_CATEGORIES = [
   },
   {
     key: 'physical',
+    // 28 subcategories across 60 drills would give useless groups of 1-4,
+    // so this one groups by its two source types instead.
+    groupBy: 'type',
     title: 'Physical',
     count: 60,
     // The only card spanning two types: Fitness (30) + Footwork (30).
@@ -83,6 +92,7 @@ export const DRILL_CATEGORIES = [
   },
   {
     key: 'match-play',
+    groupBy: 'subcategory',
     title: 'Match Play',
     count: 40,
     filter: { type: 'matchplay' },
@@ -92,6 +102,7 @@ export const DRILL_CATEGORIES = [
   },
   {
     key: 'drop-shot',
+    groupBy: 'subcategory',
     title: 'Drop Shot & Lob',
     count: 25,
     filter: { type: 'dropshot' },
