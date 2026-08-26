@@ -35,11 +35,15 @@ export default defineConfig(() => {
       },
     },
     define: {
+      // Supabase renamed its client keys; accept either name. The publishable
+      // key is the anon key's successor — RLS-scoped and safe in the browser.
       'import.meta.env.VITE_SUPABASE_URL': JSON.stringify(
-        env.VITE_SUPABASE_URL || process.env.VITE_SUPABASE_URL || ''
+        env.VITE_SUPABASE_URL || env.SUPABASE_URL ||
+        process.env.VITE_SUPABASE_URL || process.env.SUPABASE_URL || ''
       ),
       'import.meta.env.VITE_SUPABASE_ANON_KEY': JSON.stringify(
-        env.VITE_SUPABASE_ANON_KEY || process.env.VITE_SUPABASE_ANON_KEY || ''
+        env.VITE_SUPABASE_ANON_KEY || env.SUPABASE_PUBLISHABLE_KEY ||
+        process.env.VITE_SUPABASE_ANON_KEY || process.env.SUPABASE_PUBLISHABLE_KEY || ''
       ),
     },
   }

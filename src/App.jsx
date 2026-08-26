@@ -10,13 +10,9 @@ import Welcome from './pages/Welcome'
 import Dashboard from './pages/Dashboard'
 import DashboardHome from './pages/dashboard/Home'
 import Drills from './pages/dashboard/Drills'
-import TennisKids from './pages/dashboard/TennisKids'
-import LessonTemplates from './pages/dashboard/LessonTemplates'
-import MentalGame from './pages/dashboard/MentalGame'
 import Settings from './pages/dashboard/Settings'
-import GymTraining from './pages/dashboard/GymTraining'
-import ServeMasterclass from './pages/dashboard/ServeMasterclass'
-import DoublesTactics from './pages/dashboard/DoublesTactics'
+import ModuleLanding from './pages/dashboard/ModuleLanding'
+import ModulePart from './pages/dashboard/ModulePart'
 import TermsOfService from './pages/TermsOfService'
 import PrivacyPolicy from './pages/PrivacyPolicy'
 import LegalNotice from './pages/LegalNotice'
@@ -77,13 +73,22 @@ export default function App() {
         >
           <Route index element={<DashboardHome />} />
           <Route path="drills" element={<Drills />} />
-          <Route path="tennis-kids" element={<TennisKids />} />
-          <Route path="lesson-templates" element={<LessonTemplates />} />
-          <Route path="mental-game" element={<MentalGame />} />
           <Route path="settings" element={<Settings />} />
-          <Route path="gym-training" element={<GymTraining />} />
-          <Route path="serve-masterclass" element={<ServeMasterclass />} />
-          <Route path="doubles-tactics" element={<DoublesTactics />} />
+          {/* Content modules: a landing (part index) + one screen per part.
+              Part keys come from config/catalog.js via src/content/modules. */}
+          {[
+            'tennis-kids',
+            'lesson-templates',
+            'mental-game',
+            'gym-training',
+            'serve-masterclass',
+            'doubles-tactics',
+          ].map((id) => (
+            <Route key={id} path={id}>
+              <Route index element={<ModuleLanding moduleId={id} />} />
+              <Route path=":partKey" element={<ModulePart moduleId={id} />} />
+            </Route>
+          ))}
         </Route>
       </Routes>
       <Analytics />

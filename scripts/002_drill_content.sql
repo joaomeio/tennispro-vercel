@@ -19,6 +19,20 @@
 
 ALTER TABLE public.drills DROP CONSTRAINT IF EXISTS drills_type_check;
 
+-- Existing rows must satisfy the new constraint before it can be added --
+-- ADD CONSTRAINT ... CHECK validates the whole table, and the original seed
+-- contains ~103 rows the new list does not permit:
+--
+--   'match play' (40)  → renamed without the space
+--   'forehand'   (32)  → both are groundstrokes; the forehand/backhand split
+--   'backhand'   (31)    now lives in the subcategory column instead
+--
+-- Without this step the ALTER below fails and, because the editor runs the
+-- file in one transaction, the entire migration silently rolls back.
+
+UPDATE public.drills SET type = 'matchplay'     WHERE type = 'match play';
+UPDATE public.drills SET type = 'groundstrokes' WHERE type IN ('forehand', 'backhand');
+
 ALTER TABLE public.drills
   ADD CONSTRAINT drills_type_check CHECK (type IN (
     'groundstrokes','serve','volley','return',
@@ -82,8 +96,27 @@ CREATE POLICY "authenticated users can read drills"
   TO authenticated
   USING (true);
 
--- ── 7. After running this, reseed with: node scripts/push_drills.mjs ────────
--- Legacy rows from the original seed have no slug. Once the upsert has run and
--- you've confirmed the count, clear them out with:
+-- ── 7. Verify ───────────────────────────────────────────────────────────────
+-- Run this straight after. It should list only the eight permitted types, and
+-- `slug` should exist as a column (all NULL until the push runs).
+
+SELECT type, count(*) AS rows, count(slug) AS with_slug
+FROM public.drills
+GROUP BY type
+ORDER BY rows DESC;
+
+-- ── 8. Then reseed ──────────────────────────────────────────────────────────
 --
+--   node scripts/push_drills.mjs
+--
+-- IMPORTANT — the push upserts on `slug`, and every legacy row has slug NULL,
+-- so none of them get matched or overwritten. You end up with the ~253 old
+-- thin rows PLUS 280 new ones, and the library shows duplicates.
+--
+-- The legacy rows carry no instructions, cues, errors or variations, so the
+-- new rows fully supersede them. After the push reports "280 drills live",
+-- confirm the count and then remove them:
+--
+--   SELECT count(*) FROM public.drills WHERE slug IS NULL;   -- expect ~253
 --   DELETE FROM public.drills WHERE slug IS NULL;
+--   SELECT count(*) FROM public.drills;                      -- expect 280
