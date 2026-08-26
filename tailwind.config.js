@@ -23,9 +23,20 @@ export default {
           500: '#f59e0b',
           600: '#d97706',
         },
+        // Dashboard ("library") surfaces — a warm-neutral near-black ramp.
+        // gray-950 elsewhere is blue-tinted; the library sits on these instead.
+        ink: {
+          950: '#08090B',
+          900: '#0D0F12',
+          850: '#13161A',
+          800: '#1A1E24',
+          700: '#272C35',
+        },
       },
       fontFamily: {
         sans: ['Poppins', 'system-ui', 'sans-serif'],
+        // Dashboard/library UI face. Poppins stays on the marketing pages.
+        app: ['Inter', 'Poppins', 'system-ui', 'sans-serif'],
       },
       keyframes: {
         heartbeat: {
@@ -48,6 +59,10 @@ export default {
           '0%': { opacity: '0', transform: 'scale(0.95)' },
           '100%': { opacity: '1', transform: 'scale(1)' },
         },
+        slideUp: {
+          '0%': { opacity: '0', transform: 'translateY(24px)' },
+          '100%': { opacity: '1', transform: 'translateY(0)' },
+        },
         marquee: {
           '0%': { transform: 'translateX(0)' },
           '100%': { transform: 'translateX(-50%)' },
@@ -60,6 +75,7 @@ export default {
         shine: 'shine 3s infinite linear',
         'fade-in': 'fadeIn 0.2s ease-out',
         'zoom-in': 'zoomIn 0.3s ease-out',
+        'slide-up': 'slideUp 0.32s cubic-bezier(0.16, 1, 0.3, 1)',
         marquee: 'marquee 28s linear infinite',
         'marquee-slow': 'marquee 40s linear infinite',
       },

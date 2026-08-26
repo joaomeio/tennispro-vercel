@@ -3,9 +3,9 @@
 // visually consistent.
 
 export const LEVEL_STYLES = {
-  beginner:     'bg-green-900/60 text-green-300',
-  intermediate: 'bg-yellow-900/60 text-yellow-300',
-  advanced:     'bg-red-900/60 text-red-300',
+  beginner:     'bg-emerald-500/10 text-emerald-400 border border-emerald-500/25',
+  intermediate: 'bg-amber-500/10 text-amber-400 border border-amber-500/25',
+  advanced:     'bg-rose-500/10 text-rose-400 border border-rose-500/25',
 }
 
 // Dot colours for the compact level indicator on drill cards.

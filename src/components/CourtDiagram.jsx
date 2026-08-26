@@ -20,92 +20,141 @@
 
 import React from 'react'
 
+// Night-court palette. The surround fades into the app's ink background so a
+// diagram sits in any card without a visible slab boundary; markers carry the
+// colour.
 const C = {
-  sky:    '#0f2820',
-  grass:  '#1a3a2a',
-  lines:  '#e2e8f0',
-  net:    '#cbd5e1',
-  ball:   '#facc15',
-  p1:     '#f97316', // Student / Player 1 (Orange)
-  p2:     '#60a5fa', // Coach / Player 2 (Blue)
-  move:   '#34d399', // Movement Path (Green)
-  cone:   '#fb923c', // Target / Cone
-  target: 'rgba(250,204,21,0.18)',
+  surround: '#0A0F0D',
+  courtHi:  '#173B2E', // court surface gradient, top
+  courtLo:  '#102A21', // court surface gradient, bottom
+  lines:    '#DCE7E2',
+  net:      '#EDF2F0',
+  ball:     '#FACC15',
+  p1:       '#FB923C', // Student / Player 1 (Orange)
+  p2:       '#4AA8F0', // Coach / Player 2 (Blue)
+  move:     '#34D399', // Movement Path (Green)
+  cone:     '#FB923C', // Target / Cone
 }
 
 function Court({ children }) {
   return (
-    <div className="w-full h-full flex flex-col">
-      <svg viewBox="0 0 400 920" className="w-full flex-grow object-contain bg-[#0f2820] rounded-t-xl" xmlns="http://www.w3.org/2000/svg">
-        <defs>
-          {/* Arrowheads for Ball Path */}
-          <marker id="ay" markerWidth="6" markerHeight="6" refX="4" refY="3" orient="auto">
-            <path d="M0,0 L6,3 L0,6 Z" fill={C.ball} />
-          </marker>
-          {/* Arrowheads for Movement Path */}
-          <marker id="ag" markerWidth="6" markerHeight="6" refX="4" refY="3" orient="auto">
-            <path d="M0,0 L6,3 L0,6 Z" fill={C.move} />
-          </marker>
-        </defs>
+    <svg
+      viewBox="0 0 400 920"
+      className="w-full h-full"
+      preserveAspectRatio="xMidYMid meet"
+      xmlns="http://www.w3.org/2000/svg"
+    >
+      <defs>
+        {/* Shared ids across instances are fine — every court draws the same defs */}
+        <linearGradient id="court-surface" x1="0" y1="0" x2="0" y2="1">
+          <stop offset="0%" stopColor={C.courtHi} />
+          <stop offset="100%" stopColor={C.courtLo} />
+        </linearGradient>
+        <radialGradient id="court-glow" cx="50%" cy="50%" r="65%">
+          <stop offset="0%" stopColor="#2E6B52" stopOpacity="0.35" />
+          <stop offset="100%" stopColor="#2E6B52" stopOpacity="0" />
+        </radialGradient>
+        {/* Arrowheads for ball + movement paths */}
+        <marker id="ay" markerWidth="7" markerHeight="7" refX="4.5" refY="3.5" orient="auto">
+          <path d="M0,0 L7,3.5 L0,7 Z" fill={C.ball} />
+        </marker>
+        <marker id="ag" markerWidth="7" markerHeight="7" refX="4.5" refY="3.5" orient="auto">
+          <path d="M0,0 L7,3.5 L0,7 Z" fill={C.move} />
+        </marker>
+      </defs>
 
-        {/* Sky / background out of bounds */}
-        <rect width="400" height="920" fill={C.sky} />
+      {/* Surround, with a soft light pooling on the court */}
+      <rect width="400" height="920" fill={C.surround} />
+      <rect width="400" height="920" fill="url(#court-glow)" />
 
-        {/* Court surface (doubles bounds completely filled) */}
-        <rect x="20" y="70" width="360" height="780" fill={C.grass} />
+      {/* Court surface */}
+      <rect x="20" y="70" width="360" height="780" rx="3" fill="url(#court-surface)" />
 
-        {/* Court outline */}
-        <rect x="20" y="70" width="360" height="780" fill="none" stroke={C.lines} strokeWidth="2" />
+      {/* Line work — main outline strongest, interior lines quieter */}
+      <g stroke={C.lines} fill="none">
+        <rect x="20" y="70" width="360" height="780" rx="2" strokeWidth="2.5" opacity="0.75" />
+        <line x1="65" y1="70" x2="65" y2="850" strokeWidth="1.8" opacity="0.55" />
+        <line x1="335" y1="70" x2="335" y2="850" strokeWidth="1.8" opacity="0.55" />
+        <line x1="65" y1="250" x2="335" y2="250" strokeWidth="1.8" opacity="0.55" />
+        <line x1="65" y1="670" x2="335" y2="670" strokeWidth="1.8" opacity="0.55" />
+        <line x1="200" y1="250" x2="200" y2="670" strokeWidth="1.8" opacity="0.55" />
+        <line x1="200" y1="70" x2="200" y2="85" strokeWidth="2" opacity="0.6" />
+        <line x1="200" y1="835" x2="200" y2="850" strokeWidth="2" opacity="0.6" />
+      </g>
 
-        {/* Singles sidelines */}
-        <line x1="65" y1="70" x2="65" y2="850" stroke={C.lines} strokeWidth="2" />
-        <line x1="335" y1="70" x2="335" y2="850" stroke={C.lines} strokeWidth="2" />
+      {/* Net — a solid band with posts, not a dashed line */}
+      <g>
+        <line x1="8" y1="466" x2="392" y2="466" stroke="#000000" strokeWidth="6" opacity="0.35" />
+        <line x1="8" y1="460" x2="392" y2="460" stroke={C.net} strokeWidth="5" opacity="0.95" />
+        <circle cx="10" cy="460" r="5" fill={C.net} />
+        <circle cx="390" cy="460" r="5" fill={C.net} />
+      </g>
 
-        {/* Net */}
-        <line x1="10" y1="460" x2="390" y2="460" stroke={C.net} strokeWidth="4" strokeDasharray="6,4" />
-
-        {/* Service lines */}
-        <line x1="65" y1="250" x2="335" y2="250" stroke={C.lines} strokeWidth="2" />
-        <line x1="65" y1="670" x2="335" y2="670" stroke={C.lines} strokeWidth="2" />
-
-        {/* Center service line */}
-        <line x1="200" y1="250" x2="200" y2="670" stroke={C.lines} strokeWidth="2" />
-
-        {/* Center marks on baselines */}
-        <line x1="200" y1="70" x2="200" y2="85" stroke={C.lines} strokeWidth="2" />
-        <line x1="200" y1="835" x2="200" y2="850" stroke={C.lines} strokeWidth="2" />
-
-        {children}
-      </svg>
-    </div>
+      {children}
+    </svg>
   )
 }
 
 // ── Primitive helpers ─────────────────────────────────────────────────────────
 
+function Player({ x, y, fill }) {
+  return (
+    <g>
+      <circle cx={x} cy={y} r="17" fill={fill} opacity="0.18" />
+      <circle cx={x} cy={y} r="10" fill={fill} stroke="#FFFFFF" strokeWidth="2" />
+    </g>
+  )
+}
 function P1({ x, y }) {
-  return <circle cx={x} cy={y} r="10" fill={C.p1} stroke="white" strokeWidth="2" />
+  return <Player x={x} y={y} fill={C.p1} />
 }
 function P2({ x, y }) {
-  return <circle cx={x} cy={y} r="10" fill={C.p2} stroke="white" strokeWidth="2" />
+  return <Player x={x} y={y} fill={C.p2} />
 }
 function TargetCone({ x, y }) {
-  // Triangle pointing slightly up
-  return <polygon points={`${x},${y-8} ${x-6},${y+6} ${x+6},${y+6}`} fill={C.cone} />
+  return (
+    <polygon
+      points={`${x},${y - 9} ${x - 7},${y + 6} ${x + 7},${y + 6}`}
+      fill={C.cone}
+      stroke="#7C2D12"
+      strokeWidth="1"
+    />
+  )
 }
 function TargetArea({ x, y, r = 25 }) {
-  return <circle cx={x} cy={y} r={r} fill={C.target} stroke={C.ball} strokeWidth="2" strokeDasharray="4,2" />
+  return (
+    <g>
+      <circle cx={x} cy={y} r={r} fill={C.ball} opacity="0.09" />
+      <circle
+        cx={x} cy={y} r={r}
+        fill="none" stroke={C.ball} strokeWidth="2"
+        strokeDasharray="5,4" opacity="0.8"
+      />
+      <circle cx={x} cy={y} r="3.5" fill={C.ball} opacity="0.6" />
+    </g>
+  )
 }
+// Ball flight: a faint glow underlay below the dashed stroke keeps it luminous
+// at thumbnail size without SVG filters (cheap enough for long card grids).
 function Shot({ x1, y1, x2, y2 }) {
   return (
-    <line x1={x1} y1={y1} x2={x2} y2={y2}
-      stroke={C.ball} strokeWidth="3" strokeDasharray="8,4" markerEnd="url(#ay)" />
+    <g>
+      <line x1={x1} y1={y1} x2={x2} y2={y2} stroke={C.ball} strokeWidth="8" strokeLinecap="round" opacity="0.14" />
+      <line
+        x1={x1} y1={y1} x2={x2} y2={y2}
+        stroke={C.ball} strokeWidth="3" strokeLinecap="round"
+        strokeDasharray="9,6" markerEnd="url(#ay)"
+      />
+    </g>
   )
 }
 function Move({ x1, y1, x2, y2 }) {
   return (
-    <line x1={x1} y1={y1} x2={x2} y2={y2}
-      stroke={C.move} strokeWidth="2.5" strokeDasharray="5,5" markerEnd="url(#ag)" />
+    <line
+      x1={x1} y1={y1} x2={x2} y2={y2}
+      stroke={C.move} strokeWidth="2.5" strokeLinecap="round"
+      strokeDasharray="4,6" markerEnd="url(#ag)"
+    />
   )
 }
 
@@ -217,7 +266,11 @@ function ServeKickTAd() {
       <P1 x={160} y={860} />
       <P2 x={250} y={60} />
       <Shot x1={160} y1={850} x2={210} y2={350} />
-      <path d="M210,350 Q240,250 300,150" fill="none" stroke={C.ball} strokeWidth="3" strokeDasharray="8,4" markerEnd="url(#ay)" />
+      <path
+        d="M210,350 Q240,250 300,150"
+        fill="none" stroke={C.ball} strokeWidth="3" strokeLinecap="round"
+        strokeDasharray="9,6" markerEnd="url(#ay)"
+      />
     </Court>
   )
 }
@@ -239,7 +292,7 @@ function OverheadRetreat() {
     <Court>
       <P2 x={200} y={60} />
       <P1 x={200} y={500} />
-      <Shot x1={200} y1={70} x2={200} y2={650} /> 
+      <Shot x1={200} y1={70} x2={200} y2={650} />
       <Move x1={200} y1={510} x2={200} y2={650} />
       <Shot x1={200} y1={640} x2={100} y2={100} />
       <TargetArea x={100} y={100} r={30} />
@@ -290,30 +343,45 @@ const TYPES = {
   lateral_sprint_defense: LateralSprintDefense,
 }
 
-// ── Legend Component ────────────────────────────────────────────────────────
-export function CourtLegend() {
+// ── Legend ──────────────────────────────────────────────────────────────────
+// Quiet chip row rather than a coloured slab — the container decides spacing.
+
+function LegendDot({ color }) {
+  return <span className="w-2.5 h-2.5 rounded-full shrink-0" style={{ backgroundColor: color }} />
+}
+
+function LegendDash({ color }) {
   return (
-    <div className="bg-[#1a3a2a] border-t border-[#34d399]/20 rounded-b-xl p-4 flex flex-wrap gap-x-6 gap-y-3 justify-center text-xs lg:text-sm text-slate-300">
-      <div className="flex items-center gap-2">
-        <div className="w-3 h-3 lg:w-4 lg:h-4 rounded-full bg-[#f97316] border border-white" />
-        <span>Student</span>
-      </div>
-      <div className="flex items-center gap-2">
-        <div className="w-3 h-3 lg:w-4 lg:h-4 rounded-full bg-[#60a5fa] border border-white" />
-        <span>Coach</span>
-      </div>
-      <div className="flex items-center gap-2">
-        <svg width="24" height="6"><line x1="0" y1="3" x2="24" y2="3" stroke="#facc15" strokeWidth="2" strokeDasharray="8,4" /></svg>
-        <span>Ball Path</span>
-      </div>
-      <div className="flex items-center gap-2">
-        <svg width="24" height="6"><line x1="0" y1="3" x2="24" y2="3" stroke="#34d399" strokeWidth="2" strokeDasharray="5,5" /></svg>
-        <span>Movement</span>
-      </div>
-      <div className="flex items-center gap-2">
-        <div className="w-3 h-3 lg:w-4 lg:h-4 rounded-full border border-[#facc15] bg-[#facc15]/20 flex items-center justify-center border-dashed" />
-        <span>Target Area</span>
-      </div>
+    <svg width="18" height="4" className="shrink-0" aria-hidden="true">
+      <line x1="0" y1="2" x2="18" y2="2" stroke={color} strokeWidth="2.5" strokeDasharray="5,3" strokeLinecap="round" />
+    </svg>
+  )
+}
+
+export function CourtLegend() {
+  const items = [
+    { swatch: <LegendDot color={C.p1} />, label: 'Student' },
+    { swatch: <LegendDot color={C.p2} />, label: 'Coach' },
+    { swatch: <LegendDash color={C.ball} />, label: 'Ball path' },
+    { swatch: <LegendDash color={C.move} />, label: 'Movement' },
+    {
+      swatch: (
+        <span
+          className="w-2.5 h-2.5 rounded-full shrink-0 border border-dashed"
+          style={{ borderColor: C.ball, backgroundColor: 'rgba(250,204,21,0.15)' }}
+        />
+      ),
+      label: 'Target',
+    },
+  ]
+  return (
+    <div className="flex flex-wrap items-center justify-center gap-x-4 gap-y-1.5">
+      {items.map(({ swatch, label }) => (
+        <span key={label} className="inline-flex items-center gap-1.5 text-[11px] font-medium text-gray-400">
+          {swatch}
+          {label}
+        </span>
+      ))}
     </div>
   )
 }
@@ -343,7 +411,7 @@ export default function CourtDiagram({ type = 'crosscourt_fh_rally', diagramData
 
   if (showLegend) {
     return (
-      <div className="flex flex-col w-full h-full max-w-md mx-auto shadow-xl rounded-xl overflow-hidden border border-[#34d399]/10">
+      <div className="flex flex-col w-full h-full max-w-md mx-auto gap-3">
         <Diagram />
         <CourtLegend />
       </div>
