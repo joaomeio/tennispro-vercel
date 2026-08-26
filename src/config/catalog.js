@@ -112,9 +112,9 @@ export const DRILL_CATEGORIES = [
 ]
 
 // ── Cards for the remaining modules ─────────────────────────────────────────
-// Content for these is still to be produced, so the cards describe the intended
-// structure and route to the module page. `pending: true` renders a subtle
-// "Soon" marker instead of a drill count.
+// Each card is one part of its module and opens that part's own screen at
+// /dashboard/<module>/<key>. The part content lives in src/content/modules —
+// card keys and part keys must stay in sync.
 
 const KIDS_CARDS = [
   { key: 'red', title: 'Red Ball', subtitle: 'Ages 4–6', motif: 'kids', palette: { from: '#450a0a', to: '#b91c1c', accent: '#fca5a5' } },
@@ -178,9 +178,18 @@ export const MODULE_CARDS = {
   'doubles-tactics': DOUBLES_CARDS,
 }
 
-// Only the drills module has real content behind its cards today; the rest
-// route to their module page until their content is built.
-export const MODULES_WITH_CONTENT = new Set(['drills'])
+// Every module now has real content behind its cards. Drills scopes the
+// library with a query param; the content modules give each part its own
+// route segment.
+export const MODULES_WITH_CONTENT = new Set([
+  'drills',
+  'tennis-kids',
+  'mental-game',
+  'lesson-templates',
+  'gym-training',
+  'serve-masterclass',
+  'doubles-tactics',
+])
 
 export function getDrillCategory(key) {
   return DRILL_CATEGORIES.find((c) => c.key === key) ?? null
