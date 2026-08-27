@@ -3,6 +3,7 @@ import { Resend } from 'resend'
 import { createClient } from '@supabase/supabase-js'
 import { createPostHogClient } from './lib/posthog.js'
 import { sendCapiEvent } from './lib/meta-capi.js'
+import { buildPriceToModules } from '../stripe.config.js'
 
 const stripe = new Stripe(process.env.STRIPE_SECRET_KEY)
 const resend = new Resend(process.env.RESEND_API_KEY)
@@ -13,25 +14,9 @@ const supabaseAdmin = createClient(
   { auth: { autoRefreshToken: false, persistSession: false } }
 )
 
-const PRICE_TO_MODULES = {
-  // Production
-  'price_1T1s5JCz3W9Jpqrl8CV9AGqW': ['drills'],
-  'price_1T1s4cCz3W9Jpqrlwjyfat0e': ['drills', 'tennis-kids', 'mental-game'],
-  'price_1T1s5oCz3W9JpqrlGiQZSZIS': ['drills', 'tennis-kids', 'mental-game'],
-  'price_1T1sCECz3W9JpqrlOgQRiPot': ['lesson-templates'],
-  'price_1TPlP6EFtoy3ZjcS8uH4dKg7': ['gym-training'],
-  'price_1TPlPFEFtoy3ZjcSQxuxPygO': ['serve-masterclass'],
-  'price_1TPlPNEFtoy3ZjcSaIG4dIGp': ['doubles-tactics'],
-  'price_1TPoiVCz3W9Jpqrl5vuHA6RN': ['gym-training'],
-  'price_1TPoihCz3W9Jpqrlf7oUs2J3': ['serve-masterclass'],
-  'price_1TPojKCz3W9JpqrltTSes10O': ['doubles-tactics'],
-  // Test
-  'price_1T1spNCz3W9JpqrliooB8TI0': ['drills', 'tennis-kids', 'mental-game'],
-  'price_1T1spVCz3W9JpqrlD1BisICz': ['lesson-templates'],
-  'price_1TVBymCz3W9JpqrlS6HkXQFF': ['gym-training'],
-  'price_1TVBz3Cz3W9JpqrlmSXsPExo': ['serve-masterclass'],
-  'price_1TVBzNCz3W9Jpqrlh0fK9lMq': ['doubles-tactics'],
-}
+// Built from /stripe.config.js so a price id pasted there is honoured here
+// without a second edit — live, test and superseded ids all in one map.
+const PRICE_TO_MODULES = buildPriceToModules()
 
 
 export const config = { api: { bodyParser: false } }

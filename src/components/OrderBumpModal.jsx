@@ -1,6 +1,7 @@
 import { useState } from 'react'
 import { ArrowRight, Loader2, X, Shield, Check } from 'lucide-react'
 import { createCheckoutSession, EN_PRICE_IDS } from '../config/checkout'
+import { ADDON_PRICE, MODULE_REGULAR_PRICE } from '../config/plans'
 
 /* ── Mini icons (dashboard palette) ────────────────────────────────────── */
 
@@ -94,7 +95,7 @@ export default function OrderBumpModal({ isOpen, priceId, onCancel }) {
 
   const selectedBumps = BUMPS.filter((b) => selected[b.id])
   const count = selectedBumps.length
-  const total = count * 9
+  const total = count * ADDON_PRICE
 
   async function handleProceed() {
     setLoading(true)
@@ -122,9 +123,11 @@ export default function OrderBumpModal({ isOpen, priceId, onCancel }) {
           <div>
             <p className="text-[10px] font-bold uppercase tracking-widest text-slate-400 mb-1">One-time offer</p>
             <h2 className="text-slate-900 font-extrabold text-lg leading-tight">
-              Add a program for <span className="text-green-600">$9</span>
+              Add a program for <span className="text-green-600">${ADDON_PRICE}</span>
             </h2>
-            <p className="text-slate-500 text-sm mt-0.5">Each regularly $27 — only available right now.</p>
+            <p className="text-slate-500 text-sm mt-0.5">
+              Each regularly ${MODULE_REGULAR_PRICE} — only available right now.
+            </p>
           </div>
           {!loading && (
             <button
@@ -170,8 +173,8 @@ export default function OrderBumpModal({ isOpen, priceId, onCancel }) {
                 {/* Price + checkbox */}
                 <div className="flex-shrink-0 flex flex-col items-end gap-1.5 ml-1">
                   <div className="text-right leading-none">
-                    <p className="text-slate-400 line-through text-xs">$27</p>
-                    <p className="font-extrabold text-base" style={{ color: bump.color }}>$9</p>
+                    <p className="text-slate-400 line-through text-xs">${MODULE_REGULAR_PRICE}</p>
+                    <p className="font-extrabold text-base" style={{ color: bump.color }}>${ADDON_PRICE}</p>
                   </div>
                   <div
                     className="w-5 h-5 rounded flex items-center justify-center border-2 transition-all"

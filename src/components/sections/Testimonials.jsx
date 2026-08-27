@@ -29,7 +29,7 @@ const TESTIMONIALS = [
     initials: 'JO',
     stars: 5,
     quote:
-      "Best $27 I've ever spent on coaching resources. The Approach Shot Ladder drill alone transformed how my intermediate players handle mid-court situations.",
+      "Best money I've ever spent on coaching resources. The Approach Shot Ladder drill alone transformed how my intermediate players handle mid-court situations.",
   },
   {
     name: 'Sofia Andrade',

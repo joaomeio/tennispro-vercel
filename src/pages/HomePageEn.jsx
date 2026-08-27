@@ -1,6 +1,6 @@
 import { useState, useEffect } from 'react'
 import { useNavigate } from 'react-router-dom'
-import OrderBumpModal from '../components/OrderBumpModal'
+import PlanCheckoutModal from '../components/PlanCheckoutModal'
 import Hero from '../components/sections/Hero'
 import AuthorityBar from '../components/sections/AuthorityBar'
 import Features from '../components/sections/Features'
@@ -11,7 +11,8 @@ import Pricing from '../components/sections/Pricing'
 import FAQ from '../components/sections/FAQ'
 import FinalCTA from '../components/sections/FinalCTA'
 import Footer from '../components/Footer'
-import { EN_PRICE_IDS } from '../config/checkout'
+import { PLANS, getPlan, addonsForPlan } from '../config/plans'
+import { createCheckoutSession, isPlaceholderPrice } from '../config/checkout'
 
 export default function HomePageEn() {
   const navigate = useNavigate()
@@ -21,17 +22,33 @@ export default function HomePageEn() {
     }
   }, [navigate])
 
-  const [orderBumpPriceId, setOrderBumpPriceId] = useState(null)
+  // The plan whose add-on step is open. null = no modal.
+  const [planId, setPlanId] = useState(null)
+  const [busyPlanId, setBusyPlanId] = useState(null)
+  const [checkoutError, setCheckoutError] = useState(null)
 
   const scrollToPricing = () => {
     document.getElementById('pricing')?.scrollIntoView({ behavior: 'smooth' })
   }
 
-  function goToCheckout(priceId) {
-    setOrderBumpPriceId(priceId)
-  }
+  const featuredPlan = PLANS.find((p) => p.featured) ?? PLANS[0]
 
-  const onPremiumClick = () => goToCheckout(EN_PRICE_IDS.PREMIUM)
+  // A tier with modules left to offer opens the add-on step; the all-inclusive
+  // tier has nothing to choose, so an extra screen would only cost conversions.
+  async function selectPlan(plan) {
+    if (addonsForPlan(plan).length > 0 || isPlaceholderPrice(plan.priceId)) {
+      setPlanId(plan.id)
+      return
+    }
+    setBusyPlanId(plan.id)
+    setCheckoutError(null)
+    try {
+      await createCheckoutSession(plan.priceId)
+    } catch (err) {
+      setCheckoutError(err.message || 'Something went wrong. Please try again.')
+      setBusyPlanId(null)
+    }
+  }
 
   return (
     <div className="bg-white text-slate-800 w-full overflow-x-hidden relative">
@@ -45,23 +62,28 @@ export default function HomePageEn() {
         </button>
       </div>
 
-      <OrderBumpModal
-        isOpen={orderBumpPriceId !== null}
-        priceId={orderBumpPriceId}
-        onCancel={() => setOrderBumpPriceId(null)}
-        lang="en"
+      <PlanCheckoutModal
+        plan={getPlan(planId)}
+        onChangePlan={setPlanId}
+        onClose={() => setPlanId(null)}
       />
 
-      {/* Nav → Hero (with video) → Authority bar → Features → Drill preview → Testimonials → Pricing → FAQ → Final CTA → Footer */}
-      <Hero lang="en" onCtaClick={scrollToPricing} onPremiumClick={onPremiumClick} />
+      {/* Nav → Hero (app on a phone) → Authority bar → Features → Drill preview
+          → Testimonials → Pricing (3 tiers) → FAQ → Final CTA → Footer */}
+      <Hero lang="en" onCtaClick={scrollToPricing} />
       <AuthorityBar />
       <Features lang="en" />
       <Bonuses lang="en" />
-      <DrillPreview onCtaClick={onPremiumClick} />
+      <DrillPreview />
       <Testimonials />
-      <Pricing lang="en" onPremiumClick={onPremiumClick} />
+      <Pricing
+        lang="en"
+        onSelectPlan={selectPlan}
+        busyPlanId={busyPlanId}
+        error={checkoutError}
+      />
       <FAQ lang="en" />
-      <FinalCTA onPremiumClick={onPremiumClick} />
+      <FinalCTA plan={featuredPlan} onSelectPlan={() => selectPlan(featuredPlan)} />
       <Footer lang="en" />
 
     </div>

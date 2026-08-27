@@ -1,4 +1,5 @@
 import { EN_PRICE_IDS } from './checkout'
+import { PRODUCTS } from '../../stripe.config'
 
 // ─────────────────────────────────────────────────────────────────────────────
 // MODULE REGISTRY
@@ -38,6 +39,17 @@ export const MODULES = [
     route: '/dashboard/tennis-kids',
     color: 'from-orange-950 to-orange-900',
     includedInAnyPurchase: false,
+    // Included from the Coach Toolkit tier up; buyable on its own below that.
+    isAddon: true,
+    price: PRODUCTS.ADDON_KIDS.amount,
+    priceId: EN_PRICE_IDS.ADDON_KIDS,
+    paywallBenefits: [
+      'Red, orange, green and yellow ball progressions in one place',
+      'Games and drills that hold a 6-year-old’s attention',
+      'What to coach — and what to leave alone — at every stage',
+      'Group formats that work with one coach and eight kids',
+      'Parent-friendly explanations of why each stage matters',
+    ],
   },
   {
     id: 'mental-game',
@@ -50,6 +62,16 @@ export const MODULES = [
     route: '/dashboard/mental-game',
     color: 'from-purple-950 to-purple-900',
     includedInAnyPurchase: false,
+    isAddon: true,
+    price: PRODUCTS.ADDON_MENTAL.amount,
+    priceId: EN_PRICE_IDS.ADDON_MENTAL,
+    paywallBenefits: [
+      '8 sessions on focus, pressure, self-talk and confidence',
+      'Pre-match routines players can run without you courtside',
+      'A reset protocol for the point after an unforced error',
+      'Goal-setting frameworks that survive a losing streak',
+      'Language to use with juniors who fall apart in matches',
+    ],
   },
   {
     id: 'lesson-templates',
@@ -63,7 +85,7 @@ export const MODULES = [
     color: 'from-blue-950 to-blue-900',
     includedInAnyPurchase: false,
     isAddon: true,
-    price: 9,
+    price: PRODUCTS.ADDON_LESSON_TEMPLATES.amount,
     priceId: EN_PRICE_IDS.ADDON_LESSON_TEMPLATES,
     paywallBenefits: [
       'Ready-to-use lesson plans for 30, 45, 60, and 90-minute sessions',
@@ -87,7 +109,7 @@ export const MODULES = [
     color: 'from-teal-950 to-teal-900',
     includedInAnyPurchase: false,
     isAddon: true,
-    price: 9,
+    price: PRODUCTS.ADDON_GYM.amount,
     priceId: EN_PRICE_IDS.ADDON_GYM,
     paywallBenefits: [
       '5 complete gym programs built around tennis performance',
@@ -109,7 +131,7 @@ export const MODULES = [
     color: 'from-rose-950 to-rose-900',
     includedInAnyPurchase: false,
     isAddon: true,
-    price: 9,
+    price: PRODUCTS.ADDON_SERVE.amount,
     priceId: EN_PRICE_IDS.ADDON_SERVE,
     paywallBenefits: [
       'Full mechanics breakdown: flat, slice, and kick serves',
@@ -131,7 +153,7 @@ export const MODULES = [
     color: 'from-indigo-950 to-indigo-900',
     includedInAnyPurchase: false,
     isAddon: true,
-    price: 9,
+    price: PRODUCTS.ADDON_DOUBLES.amount,
     priceId: EN_PRICE_IDS.ADDON_DOUBLES,
     paywallBenefits: [
       '40+ tactical patterns for competitive doubles play',
