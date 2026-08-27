@@ -2,6 +2,7 @@ import { useEffect, useState } from 'react'
 import { X, Check, Lock, ShieldCheck, Loader2, Clock } from 'lucide-react'
 import CardArt from './dashboard/CardArt'
 import { createCheckoutSession } from '../config/checkout'
+import { ADDON_PRICE, MODULE_REGULAR_PRICE } from '../config/plans'
 import { useAuth } from '../context/AuthContext'
 import { getModuleContent } from '../content/modules'
 
@@ -28,7 +29,7 @@ export default function AddonPaywallModal({ module, onClose }) {
 
   const art = MODULE_ART[module?.id] ?? DEFAULT_ART
   const accent = art.palette.accent
-  const price = module?.price ?? 9
+  const price = module?.price ?? ADDON_PRICE
 
   const content = getModuleContent(module?.id)
   const totalMinutes = content?.parts.reduce((n, p) => n + (p.minutes ?? 0), 0) ?? 0
@@ -158,7 +159,7 @@ export default function AddonPaywallModal({ module, onClose }) {
             <div>
               <div className="flex items-baseline gap-2 tabular-nums">
                 <span className="text-3xl font-extrabold tracking-tight text-white">${price}</span>
-                <span className="text-sm font-semibold text-gray-600 line-through">$27</span>
+                <span className="text-sm font-semibold text-gray-600 line-through">${MODULE_REGULAR_PRICE}</span>
               </div>
               <p className="text-xs text-gray-500 mt-0.5">One-time payment · Instant access</p>
             </div>
@@ -166,7 +167,7 @@ export default function AddonPaywallModal({ module, onClose }) {
               className="text-[11px] font-black px-2.5 py-1 rounded-full uppercase tracking-wide tabular-nums"
               style={{ backgroundColor: `${accent}1f`, color: accent }}
             >
-              Save {Math.round((1 - price / 27) * 100)}%
+              Save {Math.round((1 - price / MODULE_REGULAR_PRICE) * 100)}%
             </span>
           </div>
 

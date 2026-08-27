@@ -1,7 +1,10 @@
 import { ArrowRight } from 'lucide-react'
 import GuaranteeBadge from '../GuaranteeBadge'
+import { PLANS } from '../../config/plans'
 
-export default function FinalCTA({ onPremiumClick }) {
+export default function FinalCTA({ plan = PLANS[1], onSelectPlan }) {
+  const from = Math.min(...PLANS.map((p) => p.price))
+
   return (
     <section className="py-24 bg-gradient-to-b from-white to-brand-50">
       <div className="container mx-auto px-4 max-w-2xl text-center">
@@ -10,15 +13,21 @@ export default function FinalCTA({ onPremiumClick }) {
         </h2>
         <p className="text-slate-500 text-lg mb-10 max-w-lg mx-auto leading-relaxed">
           Join coaches in 30+ countries who&rsquo;ve already upgraded their sessions with
-          TennisPro. One-time $27. Lifetime access.
+          TennisPro. One-time from ${from}. Lifetime access.
         </p>
         <div className="flex flex-col items-center">
           <button
-            onClick={onPremiumClick}
+            onClick={onSelectPlan}
             className="inline-flex items-center justify-center rounded-2xl font-bold transition-all duration-200 transform hover:-translate-y-0.5 animate-heartbeat bg-green-600 hover:bg-green-500 text-white shadow-xl shadow-green-500/30 px-10 py-5 text-lg md:text-xl group hover:shadow-2xl hover:shadow-green-500/40"
           >
-            Get Pro Access — $27
+            {plan.cta} — ${plan.price}
             <ArrowRight className="ml-2 w-5 h-5 group-hover:translate-x-1 transition-transform" />
+          </button>
+          <button
+            onClick={() => document.getElementById('pricing')?.scrollIntoView({ behavior: 'smooth' })}
+            className="mt-4 text-sm font-medium text-slate-400 hover:text-slate-600 transition-colors underline underline-offset-4 cursor-pointer"
+          >
+            Compare all three packs
           </button>
           <GuaranteeBadge />
         </div>

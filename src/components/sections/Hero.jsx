@@ -1,6 +1,7 @@
 import { useEffect } from 'react'
 import { ArrowRight, ShieldCheck } from 'lucide-react'
 import GuaranteeBadge from '../GuaranteeBadge'
+import AppPhone from './AppPhone'
 
 function scrollToPricing() {
   document.getElementById('pricing')?.scrollIntoView({ behavior: 'smooth' })
@@ -83,7 +84,7 @@ function HeroPt({ onCtaClick }) {
 }
 
 // EN hero
-function HeroEn({ onPremiumClick }) {
+function HeroEn() {
   return (
     <section className="relative bg-gradient-to-b from-white to-brand-50 pt-20 pb-24 md:pt-32 md:pb-40 overflow-hidden">
       <div className="container mx-auto px-4 max-w-6xl relative z-10">
@@ -111,19 +112,9 @@ function HeroEn({ onPremiumClick }) {
             Walk on court prepared — every single session.
           </p>
 
-          <div className="w-full max-w-xs mx-auto mb-8 rounded-2xl overflow-hidden shadow-2xl shadow-slate-900/20">
-            <div style={{ position: 'relative', paddingTop: '177.77777777777777%' }}>
-              <iframe
-                id="panda-9ec11cb3-d85c-45c8-89b1-36327f18f729"
-                src="https://player-vz-c4a70263-7a1.tv.pandavideo.com.br/embed/?v=9ec11cb3-d85c-45c8-89b1-36327f18f729"
-                style={{ border: 'none', position: 'absolute', top: 0, left: 0 }}
-                allow="accelerometer;gyroscope;autoplay;encrypted-media;picture-in-picture"
-                allowFullScreen
-                width="100%"
-                height="100%"
-                fetchpriority="high"
-              />
-            </div>
+          {/* The product itself, open on a phone — replaces the sales video */}
+          <div className="w-full mb-10">
+            <AppPhone />
           </div>
 
           <div className="flex flex-col items-center w-full">
@@ -147,7 +138,7 @@ function HeroEn({ onPremiumClick }) {
   )
 }
 
-export default function Hero({ lang = 'pt', onCtaClick, onPremiumClick }) {
-  if (lang === 'en') return <HeroEn onPremiumClick={onPremiumClick} />
+export default function Hero({ lang = 'pt', onCtaClick }) {
+  if (lang === 'en') return <HeroEn />
   return <HeroPt onCtaClick={onCtaClick} />
 }

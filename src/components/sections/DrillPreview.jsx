@@ -1,5 +1,6 @@
 import CourtDiagram from '../CourtDiagram'
 import { ArrowRight } from 'lucide-react'
+import { PLANS } from '../../config/plans'
 
 const DRILLS = [
   {
@@ -72,7 +73,9 @@ const LEVEL_COLORS = {
 
 const DOUBLED = [...DRILLS, ...DRILLS]
 
-export default function DrillPreview({ onCtaClick }) {
+export default function DrillPreview() {
+  const from = Math.min(...PLANS.map((p) => p.price))
+
   return (
     <section className="py-16 bg-white overflow-hidden">
       <div className="text-center mb-10 px-4">
@@ -112,7 +115,7 @@ export default function DrillPreview({ onCtaClick }) {
           onClick={() => document.getElementById('pricing')?.scrollIntoView({ behavior: 'smooth' })}
           className="inline-flex items-center gap-2 bg-green-600 hover:bg-green-500 text-white font-bold px-6 py-3 rounded-xl text-sm shadow-lg shadow-green-500/20 transition-all duration-200 hover:-translate-y-0.5 group"
         >
-          Unlock the full library — $27
+          Unlock the full library — from ${from}
           <ArrowRight className="w-4 h-4 group-hover:translate-x-1 transition-transform" />
         </button>
       </div>

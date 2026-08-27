@@ -1,4 +1,5 @@
 import { generateEventId, getFbp, getFbc, initPixelWithUser, trackPixelEvent } from '../lib/meta'
+import { priceIdsFor, isPlaceholderPriceId } from '../../stripe.config'
 
 // PT-BR checkout links (Cakto)
 export const PT_LINKS = {
@@ -7,30 +8,12 @@ export const PT_LINKS = {
   PREMIUM_DISCOUNT: 'https://pay.cakto.com.br/zddro2t',
 }
 
-// EN checkout — Stripe price IDs
-const PROD_PRICE_IDS = {
-  BASIC: 'price_1T1s5JCz3W9Jpqrl8CV9AGqW',
-  PREMIUM: 'price_1T1s4cCz3W9Jpqrlwjyfat0e',
-  DOWNSELL: 'price_1T1s5oCz3W9JpqrlGiQZSZIS',
-  ORDER_BUMP: 'price_1T1sCECz3W9JpqrlOgQRiPot',
-  ADDON_GYM: 'price_1TPoiVCz3W9Jpqrl5vuHA6RN',
-  ADDON_SERVE: 'price_1TPoihCz3W9Jpqrlf7oUs2J3',
-  ADDON_DOUBLES: 'price_1TPojKCz3W9JpqrltTSes10O',
-  ADDON_LESSON_TEMPLATES: 'price_1T1sCECz3W9JpqrlOgQRiPot',
-}
+// Stripe ids, amounts and module grants all live in /stripe.config.js — the
+// same file the webhook reads, so the browser and the server can never
+// disagree about what a price unlocks. Add or edit prices there, not here.
+export const EN_PRICE_IDS = priceIdsFor(import.meta.env.DEV ? 'test' : 'live')
 
-const TEST_PRICE_IDS = {
-  BASIC: 'price_1T1spNCz3W9JpqrliooB8TI0',
-  PREMIUM: 'price_1T1spNCz3W9JpqrliooB8TI0',
-  DOWNSELL: 'price_1T1spNCz3W9JpqrliooB8TI0',
-  ORDER_BUMP: 'price_1T1spVCz3W9JpqrlD1BisICz',
-  ADDON_GYM: 'price_1TVBymCz3W9JpqrlS6HkXQFF',
-  ADDON_SERVE: 'price_1TVBz3Cz3W9JpqrlmSXsPExo',
-  ADDON_DOUBLES: 'price_1TVBzNCz3W9Jpqrlh0fK9lMq',
-  ADDON_LESSON_TEMPLATES: 'price_1T1spVCz3W9JpqrlD1BisICz',
-}
-
-export const EN_PRICE_IDS = import.meta.env.DEV ? TEST_PRICE_IDS : PROD_PRICE_IDS
+export const isPlaceholderPrice = isPlaceholderPriceId
 
 export function handlePtCheckout(url) {
   const targetUrl = new URL(url)
@@ -71,8 +54,11 @@ export async function createCheckoutSession(priceId, orderBumpIds = [], isAddon 
   })
 
   if (!res.ok) {
-    const { error } = await res.json()
-    throw new Error(error || 'Failed to create checkout session')
+    // The body isn't always JSON (a proxy 404, an HTML error page), and the
+    // message now renders on the sales page — don't let a parse failure
+    // replace a readable error with "Unexpected end of JSON input".
+    const { error } = await res.json().catch(() => ({}))
+    throw new Error(error || "We couldn't start the checkout. Please try again.")
   }
 
   const { url } = await res.json()
