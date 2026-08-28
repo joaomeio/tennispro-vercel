@@ -1,4 +1,5 @@
 import { Link } from 'react-router-dom'
+import Logo from './Logo'
 
 export default function Footer({ lang = 'pt' }) {
   const year = new Date().getFullYear()
@@ -7,6 +8,7 @@ export default function Footer({ lang = 'pt' }) {
     return (
       <footer className="bg-brand-900 text-brand-100 py-12 text-sm text-center">
         <div className="container mx-auto px-4 max-w-6xl">
+          <Logo block size={34} className="justify-center mb-8" wordmarkClass="text-white text-xl" />
           <div className="grid md:grid-cols-2 gap-8 mb-8 items-center">
             <div className="flex flex-col items-center">
               <p className="max-w-sm opacity-80 mx-auto">
@@ -52,6 +54,7 @@ export default function Footer({ lang = 'pt' }) {
   return (
     <footer className="bg-brand-900 text-brand-100 py-12 text-sm text-center">
       <div className="container mx-auto px-4 max-w-6xl">
+        <Logo block size={34} className="justify-center mb-8" wordmarkClass="text-white text-xl" />
         <div className="grid md:grid-cols-2 gap-8 mb-8 items-center">
           <div className="flex flex-col items-center">
             <p className="max-w-sm opacity-80 mx-auto">

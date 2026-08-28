@@ -1,6 +1,7 @@
 import { useState } from 'react'
 import { CheckCircle2, ChevronRight, Play, Calendar, DollarSign, Users, BookOpen } from 'lucide-react'
 import { Link } from 'react-router-dom'
+import Logo from '../components/Logo'
 
 export default function UpsellEn() {
   const [selectedPlan, setSelectedPlan] = useState('annual') // 'monthly' | 'annual'
@@ -30,6 +31,7 @@ export default function UpsellEn() {
       <div className="max-w-4xl mx-auto px-4 pt-12 md:pt-16">
         {/* Main Headline */}
         <div className="text-center mb-12">
+          <Logo block size={26} className="justify-center mb-6" wordmarkClass="text-slate-900 text-base" />
           <h1 className="text-3xl md:text-5xl font-extrabold text-slate-900 mb-6 leading-tight">
             How The <span className="text-emerald-600">Top 1%</span> Of Coaches Manage Their Business
           </h1>

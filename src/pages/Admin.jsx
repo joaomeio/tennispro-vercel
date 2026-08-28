@@ -8,6 +8,7 @@ import {
   PenSquare, X, Star, Trash2, Reply, ArrowLeft, Minus,
   Archive, ChevronDown, ChevronUp, RotateCcw,
 } from 'lucide-react'
+import Logo from '../components/Logo'
 import DateRangeSelector from '../components/admin/tracking/DateRangeSelector'
 import KpiCard from '../components/admin/tracking/KpiCard'
 import RevenueChart from '../components/admin/tracking/RevenueChart'
@@ -909,9 +910,7 @@ export default function Admin() {
       <div className="shrink-0 bg-gray-950/95 backdrop-blur border-b border-gray-800">
         <div className="px-4 py-3 flex items-center justify-between">
           <div className="flex items-center gap-2">
-            <div className="w-7 h-7 rounded-lg bg-green-900/50 flex items-center justify-center">
-              <ShieldAlert className="w-3.5 h-3.5 text-green-400" />
-            </div>
+            <Logo size={22} wordmark={false} />
             <span className="font-bold text-sm text-white">Admin Panel</span>
           </div>
           <span className="text-xs text-gray-600 hidden sm:block">{user.email}</span>

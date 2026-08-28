@@ -1,4 +1,5 @@
 import CardArt, { HeroArt } from '../dashboard/CardArt'
+import Logo from '../Logo'
 import { DRILL_CATEGORIES, MODULE_CARDS } from '../../config/catalog'
 import { DRILL_COUNT } from '../../config/plans'
 
@@ -84,12 +85,7 @@ export default function AppPhone() {
 
             {/* App top nav */}
             <div className="flex items-center justify-between px-3.5 pt-1.5 pb-2">
-              <div className="flex items-center gap-1.5">
-                <span className="w-[15px] h-[15px] rounded-[5px] bg-gradient-to-br from-green-400 to-green-600 flex items-center justify-center">
-                  <span className="text-ink-950 text-[6px] font-extrabold leading-none">TP</span>
-                </span>
-                <span className="text-white text-[9px] font-extrabold tracking-tight">TennisPro</span>
-              </div>
+              <Logo size={14} className="gap-1.5" wordmarkClass="text-white text-[9px]" />
               <span className="w-[15px] h-[15px] rounded-full bg-green-500/15 border border-green-500/30 flex items-center justify-center">
                 <span className="text-green-400 text-[6px] font-bold leading-none">J</span>
               </span>

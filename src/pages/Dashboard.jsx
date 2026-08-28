@@ -2,6 +2,7 @@ import { useState, useRef, useEffect } from 'react'
 import { Outlet, useNavigate } from 'react-router-dom'
 import { LogOut, User, ChevronDown, Settings as SettingsIcon } from 'lucide-react'
 import { useAuth } from '../context/AuthContext'
+import Logo from '../components/Logo'
 import { initPixelWithUser, trackPixelEvent } from '../lib/meta'
 
 function TopNav() {
@@ -30,12 +31,10 @@ function TopNav() {
       {/* Logo — clickable, goes to home */}
       <button
         onClick={() => navigate('/dashboard')}
-        className="flex items-center gap-2.5 pointer-events-auto cursor-pointer"
+        aria-label="TennisPro home"
+        className="pointer-events-auto cursor-pointer"
       >
-        <div className="w-7 h-7 rounded-lg bg-gradient-to-br from-green-400 to-green-600 flex items-center justify-center shadow-lg shadow-green-500/20">
-          <span className="text-ink-950 text-xs font-extrabold">TP</span>
-        </div>
-        <span className="text-white font-extrabold text-[17px] tracking-tight hidden sm:block">TennisPro</span>
+        <Logo size={26} className="gap-2.5" wordmarkClass="text-white text-[17px] hidden sm:block" />
       </button>
 
       {/* Profile menu */}

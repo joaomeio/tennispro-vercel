@@ -11,6 +11,7 @@ import Pricing from '../components/sections/Pricing'
 import FAQ from '../components/sections/FAQ'
 import FinalCTA from '../components/sections/FinalCTA'
 import Footer from '../components/Footer'
+import Logo from '../components/Logo'
 import { PLANS, getPlan, addonsForPlan } from '../config/plans'
 import { createCheckoutSession, isPlaceholderPrice } from '../config/checkout'
 
@@ -52,7 +53,10 @@ export default function HomePageEn() {
 
   return (
     <div className="bg-white text-slate-800 w-full overflow-x-hidden relative">
-      {/* Discrete sign-in link */}
+      {/* Brand mark, and a discrete sign-in link */}
+      <div className="fixed top-3 left-4 z-50">
+        <Logo size={24} wordmarkClass="text-slate-900 text-[15px]" />
+      </div>
       <div className="fixed top-3 right-4 z-50">
         <button
           onClick={() => navigate('/welcome')}

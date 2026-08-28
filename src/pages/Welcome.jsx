@@ -3,16 +3,11 @@ import { useNavigate } from 'react-router-dom'
 import { Eye, EyeOff, Loader2, Mail, CheckCircle2, AlertCircle } from 'lucide-react'
 import { supabase } from '../lib/supabase'
 import { initPixelWithUser, trackPixelEvent, getFbp, getFbc } from '../lib/meta'
+import BrandLogo from '../components/Logo'
 
+// Every auth screen leads with the same centred lockup.
 function Logo() {
-  return (
-    <div className="inline-flex items-center gap-2 mb-6">
-      <div className="w-8 h-8 bg-green-500 rounded-lg flex items-center justify-center">
-        <span className="text-white font-black text-sm">T</span>
-      </div>
-      <span className="text-white font-extrabold text-lg tracking-tight">TennisPro</span>
-    </div>
-  )
+  return <BrandLogo block size={30} className="justify-center mb-6" wordmarkClass="text-white text-lg" />
 }
 
 function Glow() {
