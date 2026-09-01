@@ -14,6 +14,8 @@ export default async function handler(req, res) {
     orderBumpIds = [],
     isAddon = false,
     customerEmail = null,
+    // Which price ladder the buyer was shown (stripe.config.js PRICE_VARIANTS)
+    priceVariant = 'control',
     // Attribution fingerprint from the browser
     fbEventId = null,
     fbp = null,
@@ -54,6 +56,9 @@ export default async function handler(req, res) {
       // Store attribution data so the webhook can include it in the CAPI
       // Purchase event without relying on the browser being present.
       metadata: {
+        // Survives the redirect to Stripe's payment page, so the webhook can
+        // attribute revenue to a variant without inferring it from the price id.
+        price_variant: priceVariant,
         ...(fbEventId && { fb_initiate_event_id: fbEventId }),
         ...(fbp && { fbp }),
         ...(fbc && { fbc }),
@@ -105,6 +110,7 @@ export default async function handler(req, res) {
           order_bump_ids: orderBumpIds,
           is_addon: isAddon,
           stripe_session_id: session.id,
+          price_variant: priceVariant,
         },
       })
       await posthog.shutdown()

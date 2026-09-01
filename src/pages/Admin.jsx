@@ -3,7 +3,7 @@ import { useNavigate } from 'react-router-dom'
 import { useAuth } from '../context/AuthContext'
 import { supabase } from '../lib/supabase'
 import {
-  BarChart3, Mail, Users, DollarSign, TrendingUp, RefreshCw,
+  BarChart3, Mail, Users, DollarSign, TrendingUp, RefreshCw, FlaskConical,
   Send, Inbox, Loader2, ShieldAlert, AlertCircle,
   PenSquare, X, Star, Trash2, Reply, ArrowLeft, Minus,
   Archive, ChevronDown, ChevronUp, RotateCcw,
@@ -15,6 +15,7 @@ import RevenueChart from '../components/admin/tracking/RevenueChart'
 import FunnelChart from '../components/admin/tracking/FunnelChart'
 import CampaignsTable from '../components/admin/tracking/CampaignsTable'
 import TransactionsTable from '../components/admin/tracking/TransactionsTable'
+import PricingExperiment from '../components/admin/PricingExperiment'
 
 const ADMIN_EMAIL = 'joaopintobakermeio@gmail.com'
 
@@ -901,8 +902,9 @@ export default function Admin() {
   }
 
   const TABS = [
-    { id: 'mail',      label: 'Mail',      icon: Mail      },
-    { id: 'analytics', label: 'Analytics', icon: BarChart3 },
+    { id: 'mail',      label: 'Mail',      icon: Mail         },
+    { id: 'analytics', label: 'Analytics', icon: BarChart3    },
+    { id: 'pricing',   label: 'Pricing',   icon: FlaskConical },
   ]
 
   return (
@@ -938,6 +940,11 @@ export default function Admin() {
             <AnalyticsTab />
           </div>
           <TrackingSection />
+        </div>
+      )}
+      {tab === 'pricing' && (
+        <div className="flex-1 overflow-y-auto">
+          <PricingExperiment apiFetch={apiFetch} />
         </div>
       )}
     </div>

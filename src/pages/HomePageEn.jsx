@@ -12,7 +12,8 @@ import FAQ from '../components/sections/FAQ'
 import FinalCTA from '../components/sections/FinalCTA'
 import Footer from '../components/Footer'
 import Logo from '../components/Logo'
-import { PLANS, getPlan, addonsForPlan } from '../config/plans'
+import { addonsForPlan } from '../config/plans'
+import { usePricing } from '../context/PricingContext'
 import { createCheckoutSession, isPlaceholderPrice } from '../config/checkout'
 
 export default function HomePageEn() {
@@ -32,7 +33,8 @@ export default function HomePageEn() {
     document.getElementById('pricing')?.scrollIntoView({ behavior: 'smooth' })
   }
 
-  const featuredPlan = PLANS.find((p) => p.featured) ?? PLANS[0]
+  const { plans, getPlan } = usePricing()
+  const featuredPlan = plans.find((p) => p.featured) ?? plans[0]
 
   // A tier with modules left to offer opens the add-on step; the all-inclusive
   // tier has nothing to choose, so an extra screen would only cost conversions.

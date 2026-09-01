@@ -205,6 +205,10 @@ export default async function handler(req, res) {
                 is_new_user: accessLink !== null,
                 amount_total: session.amount_total,
                 currency: session.currency,
+                // Set at checkout creation. Pair with amount_total to compare
+                // revenue per visitor across test legs, not just conversion —
+                // a cheaper ladder can win on conversion and still lose money.
+                price_variant: session.metadata?.price_variant ?? 'control',
               },
             })
             await posthog.shutdown()

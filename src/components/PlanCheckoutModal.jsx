@@ -2,7 +2,8 @@ import { useState, useEffect, useMemo } from 'react'
 import { X, Check, ArrowRight, Loader2, ShieldCheck, Lock, Sparkles } from 'lucide-react'
 import CardArt from './dashboard/CardArt'
 import { createCheckoutSession, isPlaceholderPrice } from '../config/checkout'
-import { ADDON_PRICE, MODULE_REGULAR_PRICE, addonsForPlan, betterPlanFor } from '../config/plans'
+import { ADDON_PRICE, MODULE_REGULAR_PRICE, addonsForPlan } from '../config/plans'
+import { usePricing } from '../context/PricingContext'
 
 // ─────────────────────────────────────────────────────────────────────────────
 // The step between a pricing card and Stripe.
@@ -65,6 +66,8 @@ function AddonRow({ addon, selected, disabled, onToggle }) {
 }
 
 export default function PlanCheckoutModal({ plan, onChangePlan, onClose }) {
+  // Above the `if (!plan)` bail-out below — hooks can't sit behind a return.
+  const { betterPlanFor } = usePricing()
   const [selected, setSelected] = useState([])
   const [loading, setLoading] = useState(false)
   const [error, setError] = useState(null)
