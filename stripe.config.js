@@ -205,7 +205,7 @@ export const PRICE_VARIANTS = {
 
   low: {
     PLAN_DRILLS: { amount: 12, live: 'price_1UAd3vCz3W9JpqrlLd1cIPuv', test: '' },
-    PLAN_TOOLKIT: { amount: 24, live: 'price_1T1s4cCz3W9Jpqrlwjyfat0e', test: '' },
+    PLAN_TOOLKIT: { amount: 24, live: 'price_1UAgmrCz3W9Jpqrlihg9siGI', test: '' },
     PLAN_COMPLETE: { amount: 45, live: 'price_1UAd4uCz3W9JpqrlObuZZDwR', test: '' },
   },
 }
