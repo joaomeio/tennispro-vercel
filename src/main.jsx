@@ -3,6 +3,7 @@ import ReactDOM from 'react-dom/client'
 import posthog from 'posthog-js'
 import App from './App'
 import { AuthProvider } from './context/AuthContext'
+import { PricingProvider } from './context/PricingContext'
 import './index.css'
 
 if (import.meta.env.VITE_POSTHOG_API_KEY) {
@@ -15,7 +16,9 @@ if (import.meta.env.VITE_POSTHOG_API_KEY) {
 ReactDOM.createRoot(document.getElementById('root')).render(
   <React.StrictMode>
     <AuthProvider>
-      <App />
+      <PricingProvider>
+        <App />
+      </PricingProvider>
     </AuthProvider>
   </React.StrictMode>
 )

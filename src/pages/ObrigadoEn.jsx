@@ -1,4 +1,5 @@
 import { Check, Mail, KeyRound, LayoutGrid } from 'lucide-react'
+import Logo from '../components/Logo'
 
 export default function ObrigadoEn() {
   const date = new Date().toLocaleDateString('en-US')
@@ -11,6 +12,7 @@ export default function ObrigadoEn() {
         <div className="p-8 md:p-12">
           {/* Success Header */}
           <div className="text-center mb-10">
+            <Logo block size={28} className="justify-center mb-8" wordmarkClass="text-slate-900 text-lg" />
             <div className="inline-flex items-center justify-center w-20 h-20 bg-emerald-100 rounded-full mb-6 shadow-inner">
               <Check className="w-10 h-10 text-emerald-600" strokeWidth={3} />
             </div>

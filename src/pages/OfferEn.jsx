@@ -2,6 +2,7 @@ import { useState, useEffect, useRef } from 'react'
 import { ArrowRight, Check, ShieldCheck, Zap, Star, ChevronDown, ChevronUp, Lock, Gift, Clock, X } from 'lucide-react'
 import { EN_PRICE_IDS } from '../config/checkout'
 import OrderBumpModal from '../components/OrderBumpModal'
+import Logo from '../components/Logo'
 
 /* ─── Countdown ─────────────────────────────────────────────────────────── */
 
@@ -167,6 +168,7 @@ export default function OfferEn() {
       {/* ── Hero ───────────────────────────────────────────────── */}
       <section className="relative bg-gradient-to-b from-white to-slate-50 pt-14 pb-16 md:pt-20 md:pb-24 overflow-hidden">
         <div className="container mx-auto px-4 max-w-2xl text-center relative z-10">
+          <Logo block size={26} className="justify-center mb-6" wordmarkClass="text-slate-900 text-base" />
           <div className="inline-flex items-center gap-2 bg-orange-50 border border-orange-200 px-4 py-1.5 rounded-full mb-6">
             <span className="w-2 h-2 rounded-full bg-orange-400 animate-pulse" />
             <span className="text-xs font-bold text-orange-600 uppercase tracking-widest">Returning Visitor Offer</span>

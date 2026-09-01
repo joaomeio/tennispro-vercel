@@ -1,13 +1,13 @@
 import { Link } from 'react-router-dom'
+import Logo from '../components/Logo'
 
 export default function PrivacyPolicy() {
   return (
     <div className="min-h-screen bg-white text-gray-800 font-sans">
       <header className="border-b border-gray-200 py-4 px-6">
         <div className="max-w-4xl mx-auto flex items-center justify-between">
-          <Link to="/" className="flex items-center gap-2 text-brand-700 font-bold text-lg hover:text-brand-900 transition-colors">
-            <span className="bg-brand-700 text-white text-xs font-bold px-2 py-1 rounded">TP</span>
-            TennisPro
+          <Link to="/" className="hover:opacity-80 transition-opacity">
+            <Logo size={26} wordmarkClass="text-brand-700 text-lg" />
           </Link>
           <Link to="/" className="text-sm text-gray-500 hover:text-gray-800 transition-colors">
             ← Back to Home

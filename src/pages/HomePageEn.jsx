@@ -11,7 +11,9 @@ import Pricing from '../components/sections/Pricing'
 import FAQ from '../components/sections/FAQ'
 import FinalCTA from '../components/sections/FinalCTA'
 import Footer from '../components/Footer'
-import { PLANS, getPlan, addonsForPlan } from '../config/plans'
+import Logo from '../components/Logo'
+import { addonsForPlan } from '../config/plans'
+import { usePricing } from '../context/PricingContext'
 import { createCheckoutSession, isPlaceholderPrice } from '../config/checkout'
 
 export default function HomePageEn() {
@@ -31,7 +33,8 @@ export default function HomePageEn() {
     document.getElementById('pricing')?.scrollIntoView({ behavior: 'smooth' })
   }
 
-  const featuredPlan = PLANS.find((p) => p.featured) ?? PLANS[0]
+  const { plans, getPlan } = usePricing()
+  const featuredPlan = plans.find((p) => p.featured) ?? plans[0]
 
   // A tier with modules left to offer opens the add-on step; the all-inclusive
   // tier has nothing to choose, so an extra screen would only cost conversions.
@@ -52,7 +55,10 @@ export default function HomePageEn() {
 
   return (
     <div className="bg-white text-slate-800 w-full overflow-x-hidden relative">
-      {/* Discrete sign-in link */}
+      {/* Brand mark, and a discrete sign-in link */}
+      <div className="fixed top-3 left-4 z-50">
+        <Logo size={24} wordmarkClass="text-slate-900 text-[15px]" />
+      </div>
       <div className="fixed top-3 right-4 z-50">
         <button
           onClick={() => navigate('/welcome')}

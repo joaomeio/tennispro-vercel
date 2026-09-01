@@ -1,6 +1,6 @@
 import CourtDiagram from '../CourtDiagram'
 import { ArrowRight } from 'lucide-react'
-import { PLANS } from '../../config/plans'
+import { usePricing } from '../../context/PricingContext'
 
 const DRILLS = [
   {
@@ -74,7 +74,8 @@ const LEVEL_COLORS = {
 const DOUBLED = [...DRILLS, ...DRILLS]
 
 export default function DrillPreview() {
-  const from = Math.min(...PLANS.map((p) => p.price))
+  const { plans } = usePricing()
+  const from = Math.min(...plans.map((p) => p.price))
 
   return (
     <section className="py-16 bg-white overflow-hidden">

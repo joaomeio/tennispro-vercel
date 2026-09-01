@@ -1,7 +1,8 @@
 import { useState, useEffect } from 'react'
 import { Zap, Check, ShieldCheck, Gift, ArrowRight, Plus, Lock, CreditCard, Loader2 } from 'lucide-react'
 import GuaranteeBadge from '../GuaranteeBadge'
-import { PLANS, ADDON_PRICE, addonsForPlan, separateTotal } from '../../config/plans'
+import { ADDON_PRICE, addonsForPlan } from '../../config/plans'
+import { usePricing } from '../../context/PricingContext'
 
 function useCountdown() {
   const [time, setTime] = useState({ hours: 11, minutes: 20, seconds: 59 })
@@ -92,6 +93,7 @@ function Countdown() {
 }
 
 function PlanCard({ plan, onSelect, busy }) {
+  const { separateTotal } = usePricing()
   const featured = !!plan.featured
   const compareAt = separateTotal(plan)
   const saving = compareAt - plan.price
@@ -257,7 +259,33 @@ function PlanCard({ plan, onSelect, busy }) {
   )
 }
 
+// Held for the fraction of a second a first-time visitor waits to be bucketed.
+// Returning visitors resolve from localStorage and never see this. Matching the
+// real card's footprint keeps the section from jumping when prices arrive.
+function PlanCardSkeleton({ featured }) {
+  return (
+    <div
+      className={`relative flex flex-col rounded-3xl border p-8 ${
+        featured
+          ? 'bg-ink-950 border-white/[0.08] lg:-my-4 lg:scale-[1.03]'
+          : 'bg-white border-slate-200'
+      }`}
+      aria-hidden="true"
+    >
+      <div className="animate-pulse space-y-4">
+        <div className={`h-3 w-24 rounded ${featured ? 'bg-white/10' : 'bg-slate-200'}`} />
+        <div className={`h-10 w-32 rounded ${featured ? 'bg-white/10' : 'bg-slate-200'}`} />
+        <div className={`h-3 w-full rounded ${featured ? 'bg-white/10' : 'bg-slate-200'}`} />
+        <div className={`h-3 w-4/5 rounded ${featured ? 'bg-white/10' : 'bg-slate-200'}`} />
+        <div className={`mt-6 h-12 w-full rounded-xl ${featured ? 'bg-white/10' : 'bg-slate-200'}`} />
+      </div>
+    </div>
+  )
+}
+
 function PricingEn({ onSelectPlan, busyPlanId, error }) {
+  const { plans, ready } = usePricing()
+
   return (
     <section id="pricing" className="font-app relative bg-white py-24">
       <div className="container mx-auto max-w-6xl px-4">
@@ -276,14 +304,16 @@ function PricingEn({ onSelectPlan, busyPlanId, error }) {
         </div>
 
         <div className="grid items-stretch gap-6 md:grid-cols-3 lg:gap-5">
-          {PLANS.map((plan) => (
-            <PlanCard
-              key={plan.id}
-              plan={plan}
-              onSelect={onSelectPlan}
-              busy={busyPlanId === plan.id}
-            />
-          ))}
+          {ready
+            ? plans.map((plan) => (
+                <PlanCard
+                  key={plan.id}
+                  plan={plan}
+                  onSelect={onSelectPlan}
+                  busy={busyPlanId === plan.id}
+                />
+              ))
+            : [0, 1, 2].map((i) => <PlanCardSkeleton key={i} featured={i === 1} />)}
         </div>
 
         {error && (

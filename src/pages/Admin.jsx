@@ -3,17 +3,19 @@ import { useNavigate } from 'react-router-dom'
 import { useAuth } from '../context/AuthContext'
 import { supabase } from '../lib/supabase'
 import {
-  BarChart3, Mail, Users, DollarSign, TrendingUp, RefreshCw,
+  BarChart3, Mail, Users, DollarSign, TrendingUp, RefreshCw, FlaskConical,
   Send, Inbox, Loader2, ShieldAlert, AlertCircle,
   PenSquare, X, Star, Trash2, Reply, ArrowLeft, Minus,
   Archive, ChevronDown, ChevronUp, RotateCcw,
 } from 'lucide-react'
+import Logo from '../components/Logo'
 import DateRangeSelector from '../components/admin/tracking/DateRangeSelector'
 import KpiCard from '../components/admin/tracking/KpiCard'
 import RevenueChart from '../components/admin/tracking/RevenueChart'
 import FunnelChart from '../components/admin/tracking/FunnelChart'
 import CampaignsTable from '../components/admin/tracking/CampaignsTable'
 import TransactionsTable from '../components/admin/tracking/TransactionsTable'
+import PricingExperiment from '../components/admin/PricingExperiment'
 
 const ADMIN_EMAIL = 'joaopintobakermeio@gmail.com'
 
@@ -900,8 +902,9 @@ export default function Admin() {
   }
 
   const TABS = [
-    { id: 'mail',      label: 'Mail',      icon: Mail      },
-    { id: 'analytics', label: 'Analytics', icon: BarChart3 },
+    { id: 'mail',      label: 'Mail',      icon: Mail         },
+    { id: 'analytics', label: 'Analytics', icon: BarChart3    },
+    { id: 'pricing',   label: 'Pricing',   icon: FlaskConical },
   ]
 
   return (
@@ -909,9 +912,7 @@ export default function Admin() {
       <div className="shrink-0 bg-gray-950/95 backdrop-blur border-b border-gray-800">
         <div className="px-4 py-3 flex items-center justify-between">
           <div className="flex items-center gap-2">
-            <div className="w-7 h-7 rounded-lg bg-green-900/50 flex items-center justify-center">
-              <ShieldAlert className="w-3.5 h-3.5 text-green-400" />
-            </div>
+            <Logo size={22} wordmark={false} />
             <span className="font-bold text-sm text-white">Admin Panel</span>
           </div>
           <span className="text-xs text-gray-600 hidden sm:block">{user.email}</span>
@@ -939,6 +940,11 @@ export default function Admin() {
             <AnalyticsTab />
           </div>
           <TrackingSection />
+        </div>
+      )}
+      {tab === 'pricing' && (
+        <div className="flex-1 overflow-y-auto">
+          <PricingExperiment apiFetch={apiFetch} />
         </div>
       )}
     </div>

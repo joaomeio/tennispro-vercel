@@ -1,9 +1,13 @@
 import { ArrowRight } from 'lucide-react'
 import GuaranteeBadge from '../GuaranteeBadge'
-import { PLANS } from '../../config/plans'
+import { usePricing } from '../../context/PricingContext'
 
-export default function FinalCTA({ plan = PLANS[1], onSelectPlan }) {
-  const from = Math.min(...PLANS.map((p) => p.price))
+export default function FinalCTA({ plan, onSelectPlan }) {
+  const { plans } = usePricing()
+  // Was a `plan = PLANS[1]` default arg; the ladder is per-visitor now, so the
+  // fallback has to be picked inside the component rather than at import.
+  const featured = plan ?? plans.find((p) => p.featured) ?? plans[1]
+  const from = Math.min(...plans.map((p) => p.price))
 
   return (
     <section className="py-24 bg-gradient-to-b from-white to-brand-50">
@@ -20,7 +24,7 @@ export default function FinalCTA({ plan = PLANS[1], onSelectPlan }) {
             onClick={onSelectPlan}
             className="inline-flex items-center justify-center rounded-2xl font-bold transition-all duration-200 transform hover:-translate-y-0.5 animate-heartbeat bg-green-600 hover:bg-green-500 text-white shadow-xl shadow-green-500/30 px-10 py-5 text-lg md:text-xl group hover:shadow-2xl hover:shadow-green-500/40"
           >
-            {plan.cta} — ${plan.price}
+            {featured.cta} — ${featured.price}
             <ArrowRight className="ml-2 w-5 h-5 group-hover:translate-x-1 transition-transform" />
           </button>
           <button
