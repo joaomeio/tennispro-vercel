@@ -1,6 +1,6 @@
 import Stripe from 'stripe'
-import { createPostHogClient } from './lib/posthog.js'
-import { sendCapiEvent } from './lib/meta-capi.js'
+import { createPostHogClient } from './_lib/posthog.js'
+import { sendCapiEvent } from './_lib/meta-capi.js'
 
 const stripe = new Stripe(process.env.STRIPE_SECRET_KEY)
 

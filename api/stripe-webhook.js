@@ -1,8 +1,8 @@
 import Stripe from 'stripe'
 import { Resend } from 'resend'
 import { createClient } from '@supabase/supabase-js'
-import { createPostHogClient } from './lib/posthog.js'
-import { sendCapiEvent } from './lib/meta-capi.js'
+import { createPostHogClient } from './_lib/posthog.js'
+import { sendCapiEvent } from './_lib/meta-capi.js'
 import { buildPriceToModules } from '../stripe.config.js'
 
 const stripe = new Stripe(process.env.STRIPE_SECRET_KEY)

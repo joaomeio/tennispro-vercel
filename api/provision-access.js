@@ -1,6 +1,6 @@
 import Stripe from 'stripe'
 import { createClient } from '@supabase/supabase-js'
-import { createPostHogClient } from './lib/posthog.js'
+import { createPostHogClient } from './_lib/posthog.js'
 import { buildPriceToModules } from '../stripe.config.js'
 
 const stripe = new Stripe(process.env.STRIPE_SECRET_KEY)
